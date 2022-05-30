@@ -1,0 +1,44 @@
+.GetInTouchContainer {
+  padding-top: 4rem;
+  padding-left: 8.5rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+}
+.GetInTouchHead {
+  font-weight: 600;
+  font-size: 50px;
+}
+.GetInTouchCol {
+  padding-left: 0%;
+}
+.GetInTouchInputs {
+  margin: 0%;
+}
+.GetInTouchInputs input {
+  margin-top: 2rem;
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.GetInTouchInputs input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.GetInTouchInputs textarea {
+  margin-top: 2rem;
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.GetInTouchBtn {
+  margin-top: 2rem;
+  border: 1px solid #a21d34;
+  border-radius: 22px;
+  color: #a21d34;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}

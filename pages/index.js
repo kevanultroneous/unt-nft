@@ -3,6 +3,12 @@ import styles from "@/styles/homepage.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { MdKeyboardArrowRight } from "react-icons/md";
+
+import Footer from "@/components/Footer";
+import Achievements from "@/components/Achievments";
+import Process from "@/components/Process";
+import GetInTouch from "@/components/GetInTouch";
+import TalkToExpert from "@/components/TalkToExpert";
 export default function Home() {
   return (
     <div>
@@ -161,6 +167,35 @@ export default function Home() {
             </Row>
           </div>
         </div>
+        {/* Our Products */}
+        <div className={styles.OurProductsContainer}>
+          <h3 className={styles.OurProductsHeading}>Our Products</h3>
+          <div className={styles.OurProductsCardsContainer}>
+            {/* card */}
+
+            {/*  */}
+          </div>
+        </div>
+        <TalkToExpert />
+        <Process />
+        {/* be a part of future choice */}
+        <div className={styles.FutureChoiceContainer}>
+          <p className={styles.ReadBlog}>READ BLOGS</p>
+          <h6 className={styles.BeApartOf}>BE A PART OF</h6>
+          <h5 className={styles.FutureChoice}>FUTURE'S CHOICE!</h5>
+          <div>
+            <div className={styles.WannaReadBtn}>
+              I wanna Read{" "}
+              <HiOutlineExternalLink style={{ marginLeft: "1rem" }} />
+            </div>
+          </div>
+        </div>
+        {/* Achievements */}
+        <Achievements />
+        <GetInTouch />
+        {/* Footer */}
+        <Footer />
+        {/* */}
       </main>
     </div>
   );

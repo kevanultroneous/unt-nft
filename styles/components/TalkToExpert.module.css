@@ -1,0 +1,44 @@
+.TalkToExpertContainer {
+  padding-top: 4rem;
+  padding-left: 8.5rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+}
+.TalkToExpertHead {
+  font-weight: 600;
+  font-size: 50px;
+}
+.TalkToExpertCol {
+  padding-left: 0%;
+}
+.TalkToExpertInputs {
+  margin: 0%;
+}
+.TalkToExpertInputs input {
+  margin-top: 2rem;
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.TalkToExpertInputs input::placeholder {
+  color: rgba(0, 0, 0, 0.5);
+}
+.TalkToExpertInputs textarea {
+  margin-top: 2rem;
+  background: none;
+  width: 100%;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.TalkToExpertBtn {
+  margin-top: 2rem;
+  border: 1px solid #a21d34;
+  border-radius: 22px;
+  color: #a21d34;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}

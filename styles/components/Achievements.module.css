@@ -1,0 +1,46 @@
+.AchievementsContainer {
+  padding-top: 2.5rem;
+  padding-left: 8.5rem;
+  padding-right: 3rem;
+  padding-bottom: 4rem;
+  background: rgba(26, 28, 60, 0.03);
+}
+.AchievementsHead {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 70px;
+  text-align: center;
+  color: #a21d34;
+  margin: 0%;
+}
+.AchievementsTitle {
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  color: #000000;
+  margin: 0%;
+}
+.AchievementBoxContainer {
+  padding-top: 4rem;
+}
+.AchievementBox {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0px 0px 14px rgba(208, 208, 208, 0.15);
+  border-radius: 10px;
+  height: 186px;
+  width: 100%;
+}
+/*  */
+@media (min-width: 320px) and (max-width: 450px) {
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
+}
