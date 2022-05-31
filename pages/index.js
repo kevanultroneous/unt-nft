@@ -11,6 +11,7 @@ import GetInTouch from "@/components/GetInTouch";
 import TalkToExpert from "@/components/TalkToExpert";
 import Inspiredby from "@/components/Inspiredby";
 import Speciality from "@/components/Speciality";
+import TechnologyStack from "@/components/TechnologyStack";
 export default function Home() {
   return (
     <div>
@@ -173,12 +174,33 @@ export default function Home() {
         <div className={styles.OurProductsContainer}>
           <h3 className={styles.OurProductsHeading}>Our Products</h3>
           <div className={styles.OurProductsCardsContainer}>
-            {/* card */}
-
-            {/*  */}
+            <div className={styles.OurProductsCard}>
+              {/*  */}
+              {[1, 2, 3, 4, 5, 6, 7, 8].map((value, index) => (
+                <div className={styles.OurProductsCardsMain}>
+                  <div className={styles.OurProductsCardSub}>
+                    <div className={styles.OurProductsCardImage}>
+                      <Image src="/assets/images/machine-1.svg" />
+                    </div>
+                    <div className={styles.OurProductsCardDetail}>
+                      <h4 className={styles.OurProductsHead}>NFT</h4>
+                      <p className={styles.OurProductsParagraph}>
+                        Lorem Ipsum is simply dummy text of the printing and
+                        typesetting industry. Lorem Ipsum has been the
+                        industry's standard dummy text ever since the 1500s,
+                        when an unknown printer took a galley of type and
+                        scrambled.
+                      </p>
+                      <div className={styles.LearnMore}>Learn More</div>
+                    </div>
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
         </div>
         <TalkToExpert />
+        <TechnologyStack />
         <Speciality />
         <Inspiredby />
         <Process />

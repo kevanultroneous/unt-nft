@@ -40,28 +40,38 @@ const Speciality = () => {
   ];
   return (
     <Row className={styles.SpecialityContainer}>
-      <Col xl={6}>
+      <div className={styles.SpecialityBoard1}>
         {datalist.map((value, index) => (
-          <div>{value.key / 2 == 0 ? <h1>no</h1> : <h1>yo</h1>}</div>
-          // <Row
-          //   className={`d-flex
-          //     justify-content-end
-          //   `}
-          // >
-          //   <div className={styles.SpecialityBox}>
-          //     <h6>{value.countend + value.sign}</h6>
-          //     <p>{value.text}</p>
-          //   </div>
-          // </Row>
+          <div className={styles.Speciality}>
+            {value.key % 2 === 0 ? (
+              <Row className={`d-flex justify-content-end`}>
+                <div className={styles.SpecialityBox}>
+                  <h6 className={styles.Count}>
+                    {value.countend + value.sign}
+                  </h6>
+                  <p className={styles.Text}>{value.text}</p>
+                </div>
+              </Row>
+            ) : (
+              <Row className={`d-flex`}>
+                <div className={styles.SpecialityBox}>
+                  <h6 className={styles.Count}>
+                    {value.countend + value.sign}
+                  </h6>
+                  <p className={styles.Text}>{value.text}</p>
+                </div>
+              </Row>
+            )}
+          </div>
         ))}
-      </Col>
-      <Col xl={6}>
+      </div>
+      <div className={styles.SpecialityBoard2}>
         <p className={styles.SpecialityParagraph}>
           "In 2017, MobifinX, with his experience with technologies, helped in a
           project aimed at streamlining production operations. That's how
           Flowbox came about. ”
         </p>
-      </Col>
+      </div>
     </Row>
   );
 };

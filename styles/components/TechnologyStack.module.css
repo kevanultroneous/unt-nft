@@ -1,0 +1,46 @@
+.TechnologyStackContainer {
+  text-align: center;
+  background: #1a1c3b;
+  padding-left: 8.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+.TechnologyStackHeading {
+  font-weight: 600;
+  font-size: 50px;
+  color: #ffffff;
+}
+.TechnologyStack {
+  padding-top: 3rem;
+  display: flex;
+  justify-content: space-evenly;
+}
+.Stack {
+  width: fit-content;
+  height: fit-content;
+  /* margin-right: rem; */
+}
+.Back1 {
+  padding: 1rem;
+  background: url("/assets/images/shadow1.png");
+  background-size: 100% 100%;
+  width: fit-content;
+  height: fit-content;
+  animation: shadowanim 1s infinite;
+}
+.Back2 {
+  padding: 1rem;
+  background: url("/assets/images/shadow2.png");
+  background-size: 100% 100%;
+  width: fit-content;
+  height: fit-content;
+  animation: shadowanim 1s infinite;
+}
+.Back3 {
+  padding: 1rem;
+  background: url("/assets/images/shadow3.png");
+  background-size: 100% 100%;
+  width: fit-content;
+  height: fit-content;
+  animation: shadowanim 1s infinite;
+}
