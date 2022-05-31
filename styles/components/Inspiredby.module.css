@@ -1,0 +1,48 @@
+.InspiredContainer {
+  padding-top: 4rem;
+  padding-left: 8.5rem;
+  padding-bottom: 4rem;
+  padding-right: 3rem;
+}
+.MainTitle {
+  font-weight: 600;
+  font-size: 50px;
+  color: #000000;
+  width: 23rem;
+}
+.InspiredCard {
+}
+.InspiredCardAbout {
+  margin: 0%;
+}
+.InspiredCardAbout {
+  padding-top: 1rem;
+  font-weight: 500;
+  font-size: 18px;
+  width: 10.5rem;
+}
+.ImageInspired {
+  width: 15rem;
+}
+.InspiredCardText {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  opacity: 1;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 23px;
+  color: #a21d34;
+  transition: all 1s ease;
+}
+.InspiredCardText span {
+  margin-left: 0.5rem;
+}
+.Viewallbtn {
+  margin-top: 2rem;
+  border: 1px solid #a21d34;
+  border-radius: 22px;
+  color: #a21d34;
+  width: fit-content;
+  padding: 0.4rem 2rem;
+}

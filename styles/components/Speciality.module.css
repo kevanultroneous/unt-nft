@@ -1,0 +1,19 @@
+.SpecialityContainer {
+  margin: 0%;
+  padding: 4rem 3rem 4rem 8.5rem;
+  background: rgba(26, 28, 60, 0.03);
+}
+.SpecialityParagraph {
+  font-weight: 500;
+  font-size: 50px;
+  color: rgba(0, 0, 0, 0.12);
+}
+.CountRight {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: right;
+}
+.SpecialityBox {
+  width: fit-content;
+}

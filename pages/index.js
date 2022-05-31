@@ -9,6 +9,8 @@ import Achievements from "@/components/Achievments";
 import Process from "@/components/Process";
 import GetInTouch from "@/components/GetInTouch";
 import TalkToExpert from "@/components/TalkToExpert";
+import Inspiredby from "@/components/Inspiredby";
+import Speciality from "@/components/Speciality";
 export default function Home() {
   return (
     <div>
@@ -177,6 +179,8 @@ export default function Home() {
           </div>
         </div>
         <TalkToExpert />
+        <Speciality />
+        <Inspiredby />
         <Process />
         {/* be a part of future choice */}
         <div className={styles.FutureChoiceContainer}>
