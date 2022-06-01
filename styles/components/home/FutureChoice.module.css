@@ -1,0 +1,41 @@
+.FutureChoiceContainer {
+  background: #1a1c3c;
+  padding: 4rem 0;
+  padding-left: 8.5rem;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ReadBlog {
+  font-weight: 600;
+  font-size: 16px;
+  color: #a21d34;
+  text-align: center;
+}
+.BeApartOf {
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.3);
+  margin: 0%;
+}
+.FutureChoice {
+  text-align: center;
+  font-weight: 600;
+  font-size: 50px;
+  text-align: center;
+  color: #ffffff;
+  margin: 0%;
+}
+.WannaReadBtn {
+  display: flex;
+  align-items: center;
+  margin-top: 2rem;
+  text-align: center;
+  width: fit-content;
+  background: #a21d34;
+  border-radius: 22px;
+  color: #ffffff;
+  padding: 0.7rem 2rem;
+}

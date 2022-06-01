@@ -1,4 +1,4 @@
-import styles from "@/styles/components/TalkToExpert.module.css";
+import styles from "@/styles/components/home/TalkToExpert.module.css";
 import { Col, Row } from "react-bootstrap";
 const TalkToExpert = () => {
   return (

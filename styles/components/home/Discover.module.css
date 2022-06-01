@@ -1,0 +1,75 @@
+.DiscoverMobifinixContainer {
+  padding-top: 6rem;
+  padding-left: 8.5rem;
+  padding-bottom: 6rem;
+}
+.DiscoverMobifinixSubContainer {
+  margin: 0%;
+  text-align: center;
+}
+.DiscoverMobifinxBtn {
+  color: #a21d34;
+  border: 1px solid #a21d34;
+  padding-top: 0.5rem;
+  display: flex;
+  align-items: center;
+  padding-bottom: 0.5rem;
+  padding-right: 1.5rem;
+  padding-left: 1.5rem;
+  border-radius: 22px;
+
+  width: fit-content;
+}
+.DiscoverMobifinxBtn span {
+  padding-left: 0.5rem;
+}
+.DiscoverMobifinxBtnContainer {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: center;
+}
+.DiscoverMobifinixPara1 {
+  font-weight: 600;
+  font-size: 22px;
+  width: 48rem;
+}
+.DiscoverMobifinixPara2 {
+  width: 53.75rem;
+  font-weight: 400;
+  font-size: 16px;
+  color: #2e3159;
+  font-style: normal;
+  margin: 0%;
+}
+.DiscoverMobifinixPara1Container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.DiscoverBox {
+}
+.DiscoverMobifinixPara2Container {
+  padding: 2rem 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.DiscoverItemParagraph {
+  padding-top: 2rem;
+  width: 13rem;
+  font-weight: 400;
+  font-size: 18px;
+  color: #000000;
+}
+.DiscoverItemsRow {
+  margin: 0%;
+}
+.DiscoverItemCol {
+  display: flex;
+  justify-content: center;
+}
+.DiscoverItemsContainer {
+  padding-top: 4rem;
+  display: flex;
+  justify-content: end;
+}

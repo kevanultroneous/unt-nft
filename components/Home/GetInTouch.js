@@ -1,4 +1,4 @@
-import styles from "@/styles/components/GetInTouch.module.css";
+import styles from "@/styles/components/home/GetInTouch.module.css";
 import { Col, Row } from "react-bootstrap";
 const GetInTouch = () => {
   return (

@@ -1,4 +1,4 @@
-import styles from "@/styles/components/Achievements.module.css";
+import styles from "@/styles/components/home/Achievements.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 const Achievements = () => {
   const listAch = [

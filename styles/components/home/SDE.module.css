@@ -1,0 +1,117 @@
+.SoftwareDevelopmentExpertsContainer {
+  background: linear-gradient(90deg, #1a1c3b 28.05%, #a21d34 148.07%);
+  color: #ffffff;
+  padding-top: 2.5rem;
+  padding-left: 8.5rem;
+  padding-bottom: 2.5rem;
+  height: 100vh;
+}
+.SoftwareDevelopmentExpertsHead {
+}
+.HomeMiniLine {
+  width: 40px;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid #ffffff;
+}
+.RequestDemoButton {
+  border: 1px solid #ffffff;
+  border-radius: 22px;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  padding-top: 0.2rem;
+  padding-bottom: 0.2rem;
+  margin-right: 2rem;
+  width: fit-content;
+}
+.SoftwareDevelopmentExpertsSmallHead {
+  display: flex;
+  align-items: center;
+}
+.HomeSmallHeading {
+  font-weight: 400;
+  font-size: 22px;
+}
+.SoftwareDevelopmentExpertsRow {
+  margin: 0%;
+}
+.SoftwareDevelopmentExpertsBigHeadingContainer {
+}
+.SoftwareDevelopmentExpertsBigHeading {
+  font-weight: 600;
+  font-size: 70px;
+  padding-top: 4rem;
+  padding-bottom: 5rem;
+}
+.SoftwareDevelopmentExpertsBtnCol {
+  display: flex;
+  justify-content: end;
+}
+/* .SoftwareDevelopmentExpertsSliderContainer {
+  display: flex;
+  align-items: center;
+} */
+.SoftwareDevelopmentExpertSliderHeading {
+  display: flex;
+  align-items: center;
+  /* padding-left: 2rem; */
+}
+.SoftwareDevelopmentExpertSliderBtnLeft {
+  padding-right: 1rem;
+}
+.SoftwareDevelopmentExpertSliderBtnRight {
+  padding-right: 1rem;
+}
+.SliderCard {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 17px;
+  height: 200px;
+  width: 200px !important;
+  display: flex !important;
+  justify-content: center;
+  text-align: center;
+  align-items: flex-end;
+}
+.SliderGround {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.Scrolldowncontainer {
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  animation: scrolldowntotop 4s ease-in 0s infinite normal;
+  animation-direction: alternate;
+}
+@keyframes scrolldowntotop {
+  0% {
+    top: 20px;
+  }
+  25% {
+    top: -40px;
+  }
+  50% {
+    top: 20px;
+  }
+  75% {
+    top: -40px;
+  }
+  100% {
+    top: 20px;
+  }
+}
+.ScrolldownCol {
+  justify-content: flex-start;
+  display: flex;
+  align-items: end;
+  padding-bottom: 1rem;
+}
+.ScrolldownText {
+  margin: 0%;
+  padding-left: 1rem;
+}
+.ImageDown {
+  transform: rotate(90deg);
+}

@@ -1,4 +1,4 @@
-import styles from "@/styles/components/Inspiredby.module.css";
+import styles from "@/styles/components/home/Inspiredby.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 const Inspiredby = () => {
   const listOfInspired = [

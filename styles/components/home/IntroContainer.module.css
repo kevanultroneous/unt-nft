@@ -1,0 +1,7 @@
+.IntroContainer {
+  background: linear-gradient(90deg, #1a1c3b 28.05%, #a21d34 148.07%);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

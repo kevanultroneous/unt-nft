@@ -1,4 +1,4 @@
-import styles from "@/styles/components/TechnologyStack.module.css";
+import styles from "@/styles/components/home/TechnologyStack.module.css";
 import { Image } from "react-bootstrap";
 const TechnologyStack = () => {
   const listOfStack = [

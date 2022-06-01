@@ -1,0 +1,84 @@
+.OurProductsContainer {
+  background: #1a1c3c;
+  padding: 4rem 3rem 4rem 8.5rem;
+}
+.borderHide {
+  border-bottom: none !important;
+}
+.OurProductsHeadContainer {
+  display: flex;
+  width: 80%;
+}
+.BtnContainer {
+  justify-content: end;
+}
+.OurProductsCardsMain:hover .RequestDemo {
+  opacity: 1;
+  transition: all 1s ease;
+}
+.RequestDemo {
+  opacity: 0;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: #a21d34;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.RequestDemo:hover {
+  box-shadow: 0px 0px 10px 0px #a21d34;
+  transition: all 1s ease;
+}
+.OurProductsHeading {
+  width: 50%;
+  font-weight: 600;
+  font-size: 70px;
+  color: #ffffff;
+}
+.OurProductsCardsContainer {
+  padding-top: 2.5rem;
+}
+.OurProductsCard {
+  width: 100%;
+  align-items: end;
+  display: flex;
+  flex-direction: column;
+}
+/* ----card product */
+.OurProductsCardsMain {
+  border-top: 1px solid #ffffff;
+  color: #ffffff;
+  width: 70%;
+  border-bottom: 1px solid #ffffff;
+}
+.OurProductsCardSub {
+  padding-top: 2rem;
+  display: flex;
+  padding-bottom: 2rem;
+}
+.OurProductsCardImage {
+  padding-right: 2rem;
+}
+.OurProductsCardDetail {
+}
+.OurProductsHead {
+}
+.OurProductsParagraph {
+  font-weight: 300;
+  font-size: 16px;
+  width: 26.4rem;
+}
+.LearnMore {
+  transition: all 1s ease;
+}
+.LearnMore:hover {
+  color: #a21d34;
+  transition: all 1s ease;
+}

@@ -3,6 +3,12 @@ html,
 body {
   padding: 0;
   margin: 0;
+  scroll-behavior: auto;
+  overscroll-behavior-y: none;
+  user-select: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -14,6 +20,26 @@ a {
   font-family: "Jost", sans-serif;
   box-sizing: border-box;
 }
+.slick-slider {
+  padding: 0% !important;
+}
+/* the slides */
+.slick-slide {
+  margin: 0 -4.5px;
+  /* padding-right: 5rem; */
+}
+.scroll-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  will-change: transform;
+}
+/* the parent */
+/* .slick-list {
+  margin: 0 -10px;
+} */
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
 @media (min-width: 320px) and (max-width: 450px) {
 }

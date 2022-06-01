@@ -1,4 +1,4 @@
-import styles from "@/styles/components/Footer.module.css";
+import styles from "@/styles/components/home/Footer.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
