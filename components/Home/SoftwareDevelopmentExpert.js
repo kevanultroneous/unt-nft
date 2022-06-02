@@ -4,7 +4,9 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-const SDE = () => {
+import AOS from "aos";
+import { useEffect } from "react";
+const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
     speed: 500,
@@ -22,13 +24,23 @@ const SDE = () => {
     "Private Blockchain & Tokenization",
     "Fund Raising Launchpad (IEO/ICO/IDO/IGO)",
   ];
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <div className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}>
       <Row className={styles.SoftwareDevelopmentExpertsRow}>
         <Col xl={6}>
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
-            <span className={styles.HomeSmallHeading}>MobifinX Home</span>
+            <span
+              className={styles.HomeSmallHeading}
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
+              MobifinX Home
+            </span>
           </div>
         </Col>
         <Col xl={6} className={styles.SoftwareDevelopmentExpertsBtnCol}>
@@ -38,7 +50,11 @@ const SDE = () => {
         </Col>
       </Row>
 
-      <div className={styles.SoftwareDevelopmentExpertsBigHeadingContainer}>
+      <div
+        className={styles.SoftwareDevelopmentExpertsBigHeadingContainer}
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
         <h3 className={styles.SoftwareDevelopmentExpertsBigHeading}>
           We’re Crypto Coin Trading
           <br />
@@ -47,7 +63,10 @@ const SDE = () => {
       </div>
       <Row className="mx-0">
         <Col xl={4} className={styles.ScrolldownCol}>
-          <div className={styles.Scrolldowncontainer}>
+          <div
+            className={styles.Scrolldowncontainer}
+            onClick={() => handleClick()}
+          >
             <Image
               src="/assets/images/scrollarrow.svg"
               className={styles.ImageDown}

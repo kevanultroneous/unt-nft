@@ -1,7 +1,13 @@
 import { Image } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/home/Products.module.css";
+import AOS from "aos";
+import { useEffect } from "react";
 const Products = () => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   const ProductsList = [
     {
       name: "Derivatives Trading",
@@ -70,12 +76,20 @@ const Products = () => {
   ];
   return (
     <div className={styles.OurProductsContainer}>
-      <h3 className={styles.OurProductsHeading}>Our Products</h3>
+      <h3
+        className={styles.OurProductsHeading}
+        data-aos="zoom-in"
+        data-aos-duration="2000"
+      >
+        Our Products
+      </h3>
       <div className={styles.OurProductsCardsContainer}>
         <div className={styles.OurProductsCard}>
           {/*  */}
           {ProductsList.map((value, index) => (
             <div
+              data-aos="zoom-in"
+              data-aos-duration="2000"
               className={`${styles.OurProductsCardsMain} ${
                 ProductsList.length - 1 === index ? styles.borderHide : null
               }`}

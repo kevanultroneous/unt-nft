@@ -1,18 +1,32 @@
 const { Row, Image, Col } = require("react-bootstrap");
 const { HiOutlineExternalLink } = require("react-icons/hi");
 import styles from "@/styles/components/home/Discover.module.css";
+import AOS from "aos";
+import { useEffect } from "react";
 const Discover = () => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <div className={styles.DiscoverMobifinixContainer}>
       <Row className={styles.DiscoverMobifinixSubContainer}>
         <div className={styles.DiscoverMobifinixPara1Container}>
-          <p className={styles.DiscoverMobifinixPara1}>
+          <p
+            className={styles.DiscoverMobifinixPara1}
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             MobifinX have expertise in serving on-demand business solutions with
             a special focus on safety, scale as well as performance.
           </p>
         </div>
         <div className={styles.DiscoverMobifinixPara2Container}>
-          <p className={styles.DiscoverMobifinixPara2}>
+          <p
+            className={styles.DiscoverMobifinixPara2}
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             We are a leading Crypto Exchange Software Development company based
             in USA. We are fintech expert established in 2011 to deliver
             next-generation trading platforms to the businesses who want to take
@@ -22,7 +36,11 @@ const Discover = () => {
           </p>
         </div>
         <div className={styles.DiscoverMobifinxBtnContainer}>
-          <div className={styles.DiscoverMobifinxBtn}>
+          <div
+            className={styles.DiscoverMobifinxBtn}
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             Discover MobifinX
             <span>
               <HiOutlineExternalLink />
@@ -33,7 +51,11 @@ const Discover = () => {
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
           <Col xl={6}>
-            <div className={styles.DiscoverBox}>
+            <div
+              className={styles.DiscoverBox}
+              data-aos="zoom-in"
+              data-aos-duration="2000"
+            >
               <div className={styles.DiscoverItemBox}>
                 <Image src="/assets/images/24hrfull.svg" />
               </div>

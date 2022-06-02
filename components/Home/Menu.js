@@ -2,7 +2,7 @@ import styles from "@/styles/components/home/Menu.module.css";
 import { Image } from "react-bootstrap";
 const Menu = ({ opacity }) => {
   return (
-    <div className={styles.NftMenu}>
+    <div className={styles.NftMenu} style={{ opacity: opacity, zIndex: "100" }}>
       <div>
         <Image src="/assets/images/xicon.svg" fluid />
       </div>
