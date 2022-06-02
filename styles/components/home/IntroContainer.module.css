@@ -5,3 +5,13 @@
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 450px) {
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
+}

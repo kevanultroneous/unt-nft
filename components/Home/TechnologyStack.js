@@ -1,4 +1,6 @@
 import styles from "@/styles/components/home/TechnologyStack.module.css";
+import AOS from "aos";
+import { useEffect } from "react";
 import { Image } from "react-bootstrap";
 const TechnologyStack = () => {
   const listOfStack = [
@@ -9,20 +11,22 @@ const TechnologyStack = () => {
     "/assets/images/stack5.png",
     "/assets/images/stack6.png",
   ];
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <div className={styles.TechnologyStackContainer}>
       <h4 className={styles.TechnologyStackHeading}>Technology Stack</h4>
       <div className={styles.TechnologyStack}>
         {listOfStack.map((value, index) => (
-          <div className={styles.Stack}>
-            {/* <div className={styles.Back1}>
-              <div className={styles.Back2}>
-                <div className={styles.Back3}> */}
+          <div
+            className={styles.Stack}
+            data-aos={"zoom-in"}
+            data-aos-duration="2000"
+          >
             <Image src={value} />
           </div>
-          //     </div>
-          //   </div>
-          // </div>
         ))}
       </div>
     </div>

@@ -18,6 +18,7 @@
   color: #ffffff;
   outline: none;
   width: 100%;
+  cursor: none;
 }
 .MailContainer input::placeholder {
   color: rgba(255, 255, 255, 0.7);
@@ -40,6 +41,15 @@
   -webkit-text-stroke: 0.5px #fff;
   font-weight: 600;
   font-size: 70px;
+  transition: all 1s ease;
+}
+.FooterContactusLink:hover {
+  font-family: Poppins, sans-serif;
+  color: rgba(162, 29, 52, 1);
+  -webkit-text-stroke: 0.5px rgba(162, 29, 52, 1);
+  font-weight: 600;
+  font-size: 70px;
+  transition: all 1s ease;
 }
 .ContactusIcon {
   font-size: 60px;
@@ -58,6 +68,11 @@
 }
 .MainLinks li {
   padding-bottom: 0.5rem;
+  transition: all 1s ease;
+}
+.MainLinks li:hover {
+  color: rgba(162, 29, 52, 1);
+  transition: all 1s ease;
 }
 .SubLinks {
   list-style: none;
@@ -67,6 +82,11 @@
   font-weight: 400;
   font-size: 14px;
   color: rgba(255, 255, 255, 0.6);
+  transition: all 1s ease;
+}
+.SubLinks li:hover {
+  color: rgba(162, 29, 52, 1);
+  transition: all 1s ease;
 }
 /*  */
 @media (min-width: 320px) and (max-width: 450px) {

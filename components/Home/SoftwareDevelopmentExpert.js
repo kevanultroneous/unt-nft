@@ -5,7 +5,7 @@ import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
@@ -13,6 +13,45 @@ const SDE = ({ handleClick }) => {
     slidesToShow: 3,
     slidesToScroll: 4,
     centerMode: true,
+    responsive: [
+      {
+        breakpoint: 1920,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          centerMode: true,
+          // centerPadding: "75px",
+        },
+      },
+      {
+        breakpoint: 885,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          centerMode: false,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          centerMode: false,
+        },
+      },
+    ],
   };
   const sliderList = [
     "Derivatives Trading",
@@ -28,10 +67,11 @@ const SDE = ({ handleClick }) => {
     AOS.refresh();
     AOS.init();
   }, []);
+  const sliderRef = useRef();
   return (
     <div className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}>
       <Row className={styles.SoftwareDevelopmentExpertsRow}>
-        <Col xl={6}>
+        <Col xl={6} xs={12}>
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
             <span
@@ -62,11 +102,12 @@ const SDE = ({ handleClick }) => {
         </h3>
       </div>
       <Row className="mx-0">
-        <Col xl={4} className={styles.ScrolldownCol}>
-          <div
-            className={styles.Scrolldowncontainer}
-            onClick={() => handleClick()}
-          >
+        <Col
+          xl={4}
+          className={styles.ScrolldownCol}
+          onClick={() => handleClick()}
+        >
+          <div className={styles.Scrolldowncontainer}>
             <Image
               src="/assets/images/scrollarrow.svg"
               className={styles.ImageDown}
@@ -79,11 +120,13 @@ const SDE = ({ handleClick }) => {
             <Col xl={3}>
               <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
                 <Image
+                  onClick={() => sliderRef.current.slickPrev()}
                   fluid
                   src={"/assets/images/left-sb.svg"}
                   className={styles.SoftwareDevelopmentExpertSliderBtnLeft}
                 />
                 <Image
+                  onClick={() => sliderRef.current.slickNext()}
                   fluid
                   src={"/assets/images/right-sb.svg"}
                   className={styles.SoftwareDevelopmentExpertSliderBtnRight}
@@ -94,14 +137,28 @@ const SDE = ({ handleClick }) => {
               xl={8}
               className={styles.SoftwareDevelopmentExpertSliderHeading}
             >
-              <div className={styles.HomeMiniLine} />
-              <span className={styles.HomeSmallHeading}>Explore Products</span>
+              <div
+                className={styles.HomeMiniLine}
+                data-aos="fade-right"
+                data-aos-duration="2000"
+              />
+              <span
+                className={styles.HomeSmallHeading}
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
+                Explore Products
+              </span>
             </Col>
           </Row>
           <Row className={styles.SliderGround}>
-            <Slider {...settings} arrows={false}>
+            <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
-                <div className={styles.SliderCard}>
+                <div
+                  className={styles.SliderCard}
+                  data-aos="slide-up"
+                  data-aos-duration="2000"
+                >
                   <p>{v}</p>
                 </div>
               ))}

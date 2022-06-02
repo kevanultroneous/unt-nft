@@ -88,11 +88,9 @@ const Products = () => {
           {/*  */}
           {ProductsList.map((value, index) => (
             <div
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-              className={`${styles.OurProductsCardsMain} ${
-                ProductsList.length - 1 === index ? styles.borderHide : null
-              }`}
+              data-aos={"zoom-in"}
+              data-aos-duration="3000"
+              className={`${styles.OurProductsCardsMain}`}
             >
               <div className={styles.OurProductsCardSub}>
                 <div className={styles.OurProductsCardImage}>

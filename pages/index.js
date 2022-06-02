@@ -84,7 +84,7 @@ export default function Home() {
         {/* Achievements */}
         <Achievements />
         {/* GetInTouch */}
-        <GetInTouch />
+        {/* <GetInTouch /> */}
         {/* Footer */}
         <Footer />
       </SmoothScroll>

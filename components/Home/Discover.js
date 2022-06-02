@@ -3,11 +3,30 @@ const { HiOutlineExternalLink } = require("react-icons/hi");
 import styles from "@/styles/components/home/Discover.module.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import ActionButton from "../Common/ActionButton";
 const Discover = () => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
+  const arrayBox = [
+    {
+      image: "/assets/images/24hrfull.svg",
+      text: "Partnership based on Common Goals and Trust",
+    },
+    {
+      image: "/assets/images/24hrfull.svg",
+      text: "Localization Expertise with Global Footprint",
+    },
+    {
+      image: "/assets/images/24hrfull.svg",
+      text: "IT Security Certified to protect customer data",
+    },
+    {
+      image: "/assets/images/24hrfull.svg",
+      text: "Reduced Capex & Opex using Agile tools",
+    },
+  ];
   return (
     <div className={styles.DiscoverMobifinixContainer}>
       <Row className={styles.DiscoverMobifinixSubContainer}>
@@ -36,64 +55,37 @@ const Discover = () => {
           </p>
         </div>
         <div className={styles.DiscoverMobifinxBtnContainer}>
-          <div
-            className={styles.DiscoverMobifinxBtn}
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          >
-            Discover MobifinX
-            <span>
-              <HiOutlineExternalLink />
-            </span>
+          <div data-aos="zoom-in" data-aos-duration="2000">
+            <ActionButton
+              text={
+                <>
+                  Discover MobifinX&nbsp;&nbsp;
+                  <span>
+                    <HiOutlineExternalLink />
+                  </span>
+                </>
+              }
+            />
           </div>
         </div>
       </Row>
+
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
-          <Col xl={6}>
-            <div
-              className={styles.DiscoverBox}
-              data-aos="zoom-in"
-              data-aos-duration="2000"
-            >
-              <div className={styles.DiscoverItemBox}>
-                <Image src="/assets/images/24hrfull.svg" />
+          {arrayBox.map((value, index) => (
+            <Col xl={6} xs={6} key={index}>
+              <div
+                className={styles.DiscoverBox}
+                data-aos="zoom-in"
+                data-aos-duration="2000"
+              >
+                <div className={styles.DiscoverItemBox}>
+                  <Image src={value.image} />
+                </div>
+                <p className={styles.DiscoverItemParagraph}>{value.text}</p>
               </div>
-              <p className={styles.DiscoverItemParagraph}>
-                Partnership based on Common Goals and Trust
-              </p>
-            </div>
-          </Col>
-          <Col xl={6}>
-            <div className={styles.DiscoverBox}>
-              <div className={styles.DiscoverItemBox}>
-                <Image src="/assets/images/24hrfull.svg" />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>
-                Localization Expertise with Global Footprint
-              </p>
-            </div>
-          </Col>
-          <Col xl={6}>
-            <div className={styles.DiscoverBox}>
-              <div className={styles.DiscoverItemBox}>
-                <Image src="/assets/images/24hrfull.svg" />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>
-                IT Security Certified to protect customer data
-              </p>
-            </div>
-          </Col>
-          <Col xl={6}>
-            <div className={styles.DiscoverBox}>
-              <div className={styles.DiscoverItemBox}>
-                <Image src="/assets/images/24hrfull.svg" />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>
-                Reduced Capex & Opex using Agile tools
-              </p>
-            </div>
-          </Col>
+            </Col>
+          ))}
         </Row>
       </div>
     </div>

@@ -4,7 +4,6 @@
   padding-top: 2.5rem;
   padding-left: 8.5rem;
   padding-bottom: 2.5rem;
-  height: 100vh;
 }
 .SoftwareDevelopmentExpertsHead {
 }
@@ -36,6 +35,9 @@
   margin: 0%;
 }
 .SoftwareDevelopmentExpertsBigHeadingContainer {
+  padding-top: 2.5rem;
+  padding-left: 8.5rem;
+  padding-bottom: 2.5rem;
 }
 .SoftwareDevelopmentExpertsBigHeading {
   font-weight: 600;
@@ -58,15 +60,25 @@
 }
 .SoftwareDevelopmentExpertSliderBtnLeft {
   padding-right: 1rem;
+  transition: all 1s ease;
+}
+.SoftwareDevelopmentExpertSliderBtnLeft:hover {
+  transform: scale(0.8);
+  transition: all 1s ease;
 }
 .SoftwareDevelopmentExpertSliderBtnRight {
   padding-right: 1rem;
+  transition: all 1s ease;
+}
+.SoftwareDevelopmentExpertSliderBtnRight:hover {
+  transform: scale(0.8);
+  transition: all 1s ease;
 }
 .SliderCard {
   background: rgba(255, 255, 255, 0.1);
   border-radius: 17px;
   height: 200px;
-  width: 200px !important;
+  width: 284px !important;
   display: flex !important;
   justify-content: center;
   text-align: center;
@@ -114,4 +126,42 @@
 }
 .ImageDown {
   transform: rotate(90deg);
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .SoftwareDevelopmentExpertsContainer {
+    padding-top: 2.5rem;
+    padding-left: 1rem;
+    padding-bottom: 2.5rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeadingContainer {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 0rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-weight: 600;
+    font-size: 26px;
+    /* padding-top: 4rem; */
+    /* padding-bottom: 5rem; */
+  }
+
+  .SoftwareDevelopmentExpertsBtnCol {
+    justify-content: start;
+    margin-top: 2rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .Scrolldowncontainer {
+    display: none;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
 }

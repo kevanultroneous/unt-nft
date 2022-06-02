@@ -1,0 +1,25 @@
+.ActionButton {
+  margin-top: 2rem;
+  border: 1px solid #a21d34;
+  border-radius: 22px;
+  color: #a21d34;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+  transition: all 1s ease;
+}
+.ActionButton:hover {
+  box-shadow: 0px 0px 10px 0px #a21d34;
+  background-color: #a21d34;
+  color: #ffffff;
+  transition: all 1s ease;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
+}

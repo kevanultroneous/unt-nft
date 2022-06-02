@@ -17,9 +17,15 @@
   padding-right: 1.5rem;
   padding-left: 1.5rem;
   border-radius: 22px;
-
   width: fit-content;
+  transition: all 1s ease;
 }
+/* .DiscoverMobifinxBtn:hover {
+  color: #ffffff;
+  background-color: #a21d34;
+  box-shadow: ;
+  transition: all 1s ease;
+} */
 .DiscoverMobifinxBtn span {
   padding-left: 0.5rem;
 }
@@ -72,4 +78,24 @@
   padding-top: 4rem;
   display: flex;
   justify-content: end;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .DiscoverMobifinixContainer {
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+  }
+  .DiscoverItemParagraph {
+    padding-top: 2rem;
+    width: 10rem;
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
 }
