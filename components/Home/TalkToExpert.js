@@ -11,7 +11,7 @@ const TalkToExpert = () => {
   return (
     <div className={styles.TalkToExpertContainer}>
       <Row>
-        <Col xl={6}>
+        <Col xl={6} md={6}>
           <h5
             className={styles.TalkToExpertHead}
             data-aos="flip-down"
@@ -20,7 +20,7 @@ const TalkToExpert = () => {
             Wanna talk to our Expert?
           </h5>
         </Col>
-        <Col xl={6} className={styles.TalkToExpertBtnContainer}>
+        <Col xl={6} md={6} className={styles.TalkToExpertBtnContainer}>
           <ActionButton text={"Send a Message"} handleAction={() => null} />
         </Col>
       </Row>

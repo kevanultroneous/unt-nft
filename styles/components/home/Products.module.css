@@ -16,6 +16,7 @@
   opacity: 1;
   transition: all 1s ease;
 }
+
 .RequestDemo {
   opacity: 0;
   width: fit-content;
@@ -32,7 +33,28 @@
   cursor: pointer;
   transition: all 1s ease;
 }
+.RequestDemo1 {
+  display: none;
+  opacity: 0;
+  width: fit-content;
+  font-weight: 400;
+  font-size: 14px;
+  color: #ffffff;
+  background: #a21d34;
+  border-radius: 22px;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  transition: all 1s ease;
+}
 .RequestDemo:hover {
+  box-shadow: 0px 0px 10px 0px #a21d34;
+  transition: all 1s ease;
+}
+.RequestDemo1:hover {
   box-shadow: 0px 0px 10px 0px #a21d34;
   transition: all 1s ease;
 }
@@ -105,11 +127,60 @@
   width: 1500px;
   height: 1500px;
   position: fixed;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -65%);
 }
 @media (min-width: 320px) and (max-width: 450px) {
+  .OurProductsContainer {
+    padding: 3rem 1rem;
+  }
+  .OurProductsHeading {
+    width: 100%;
+    font-size: 50px;
+  }
+  .OurProductsCard {
+    align-items: flex-start;
+  }
+  .OurProductsCardsMain {
+    width: 100%;
+  }
+  .OurProductsHead {
+    font-size: 16px;
+  }
+  .OurProductsCardImage {
+    padding-right: 1rem;
+  }
+  .OurProductsCardImage img {
+    height: 90px !important;
+  }
+  .OurProductsParagraph {
+    font-size: 12px;
+    width: 12.4rem;
+  }
+  .RequestDemo {
+    display: none;
+  }
+  .RequestDemo1 {
+    display: block;
+  }
+
+  .OurProductsCardsMain:hover .RequestDemo1 {
+    opacity: 1;
+    transition: all 1s ease;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .OurProductsHeading {
+    width: auto;
+  }
+  .OurProductsCard {
+    align-items: center;
+  }
+  .OurProductsParagraph {
+    width: 100%;
+  }
+  .OurProductsCardsMain {
+    width: 100%;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

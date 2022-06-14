@@ -9,14 +9,16 @@ const IntroContainer = ({ handleclick }) => {
   }, []);
   return (
     <div className={styles.IntroContainer}>
-      <Image
-        data-aos="zoom-in"
-        data-aos-duration="2000"
-        src="/assets/images/mainicon.svg"
-        fluid
-        draggable={false}
-        onClick={() => handleclick()}
-      />
+      <div className="p-5 p-xl-0 p-md-0 p-lg-0 p-xxl-0">
+        <Image
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+          src="/assets/images/mainicon.svg"
+          fluid
+          draggable={false}
+          onClick={() => handleclick()}
+        />
+      </div>
     </div>
   );
 };

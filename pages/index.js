@@ -23,29 +23,28 @@ import SmoothScroll from "@/components/SmoothScroll.component";
 import { motion } from "framer-motion";
 export default function Home() {
   //
-  const [on, setOn] = useState("0");
+  const [on, setOn] = useState("1");
   const section1 = useRef(null);
   const section2 = useRef(null);
   const section3 = useRef(null);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-  useEffect(() => {
-    window.addEventListener("scroll", () => {
-      let elem = document.getElementsByClassName("frame1")[0];
-      let rect = elem.getBoundingClientRect();
+  // useEffect(() => {
+  //   window.addEventListener("scroll", () => {
+  //     let elem = document.getElementsByClassName("frame1")[0];
+  //     let rect = elem.getBoundingClientRect();
 
-      if (rect.y <= 132) {
-        setOn("1");
-      } else {
-        setOn("0");
-      }
-    });
-  });
+  //     if (rect.y <= 132) {
+  //       setOn("1");
+  //     } else {
+  //       setOn("0");
+  //     }
+  //   });
+  // });
 
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
-
       <Menu opacity={on} />
       <SmoothScroll>
         <section>
@@ -67,11 +66,10 @@ export default function Home() {
         {/* Our Products */}
         <Products />
         {/* Expert */}
-        {/* <TalkToExpert /> */}
+        <TalkToExpert />
         {/* TechnologyStack */}
-        <TechnologyStack />
-        {/* Speciality */}
-        <Speciality />
+        {/* <TechnologyStack /> */}
+
         {/* Inspiredby */}
         <Inspiredby />
         {/* Process */}
@@ -79,7 +77,9 @@ export default function Home() {
         {/* be a part of future choice */}
         <FutureChoice />
         {/* Achievements */}
-        <Achievements />
+        {/* <Achievements /> */}
+        {/* Speciality */}
+        <Speciality />
         {/* GetInTouch */}
         {/* <GetInTouch /> */}
         {/* Footer */}

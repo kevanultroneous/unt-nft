@@ -16,6 +16,9 @@
 @media (min-width: 320px) and (max-width: 450px) {
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .ActionButton {
+    margin-top: 0%;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

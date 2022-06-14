@@ -3,14 +3,10 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
-const CardInspired = () => {
+const CardInspired = ({ style, srcimg }) => {
   return (
-    <div className={styles.InspiredCardcontainer}>
-      <Image
-        src="/assets/images/inspiration1.png"
-        alt="Avatar"
-        className={styles.InspiredCardImage}
-      />
+    <div className={`${styles.InspiredCardcontainer} ${style}`}>
+      <Image src={srcimg} alt="Avatar" className={styles.InspiredCardImage} />
       <div className={styles.InspiredDis}>
         <p className={styles.InspiredDisTitle}>
           Private Blockchain & Tokenization
@@ -64,9 +60,32 @@ const Inspiredby = () => {
   }, []);
   return (
     <div className={styles.InspiredContainer}>
-      <Row>
-        <Col xl={8} xs={12}>
-          <CardInspired />
+      <Row className={styles.InspiredCardRow}>
+        {/* left */}
+        <Col xl={5} xs={12} md={6} className={styles.InspiredCardCol}>
+          <CardInspired
+            srcimg={"/assets/images/inspiration1.png"}
+            style={styles.InspiredCardSpace}
+          />
+          <CardInspired srcimg={"/assets/images/inspiration3.png"} />
+          <div className={styles.InspiredCardView}>
+            <p className={styles.Viewall}>View All</p>
+            <Image
+              src="/assets/images/grad.svg"
+              className={styles.InspiredCardImg}
+            />
+          </div>
+        </Col>
+        {/* right */}
+        <Col xl={5} xs={12} md={6}>
+          <h3 className={styles.InspiredCardDes}>
+            Get Inspired by Case Studies
+          </h3>
+          <CardInspired
+            srcimg={"/assets/images/inspiration2.png"}
+            style={styles.InspiredCardSpace}
+          />
+          <CardInspired srcimg={"/assets/images/insp4.png"} />
         </Col>
       </Row>
     </div>

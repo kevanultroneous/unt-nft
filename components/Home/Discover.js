@@ -73,7 +73,7 @@ const Discover = () => {
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
           {arrayBox.map((value, index) => (
-            <Col xl={6} xs={6} key={index}>
+            <Col xl={6} xs={6} md={6} key={index}>
               <div
                 className={styles.DiscoverBox}
                 data-aos="zoom-in"

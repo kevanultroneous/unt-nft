@@ -54,7 +54,10 @@ const Process = () => {
           <div className={styles.ProcessBoxesContainer}>
             {dataProcess.map((v, i) => (
               <div className={styles.ProcessBox}>
-                <div className={styles.ProcessBlinkMain}>
+                <div
+                  className={styles.ProcessBlinkMain}
+                  onMouseEnter={() => alert("yr")}
+                >
                   <div
                     className={styles.ProcessBlink}
                     style={{

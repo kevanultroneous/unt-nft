@@ -71,7 +71,7 @@ const SDE = ({ handleClick }) => {
   return (
     <div className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}>
       <Row className={styles.SoftwareDevelopmentExpertsRow}>
-        <Col xl={6} xs={12}>
+        <Col xl={6} xs={6} md={6}>
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
             <span
@@ -83,7 +83,12 @@ const SDE = ({ handleClick }) => {
             </span>
           </div>
         </Col>
-        <Col xl={6} className={styles.SoftwareDevelopmentExpertsBtnCol}>
+        <Col
+          xl={6}
+          md={6}
+          xs={6}
+          className={styles.SoftwareDevelopmentExpertsBtnCol}
+        >
           <div className={styles.RequestDemoButton}>
             Request a Demo <HiOutlineExternalLink />
           </div>
@@ -117,7 +122,7 @@ const SDE = ({ handleClick }) => {
         </Col>
         <Col xl={8}>
           <Row>
-            <Col xl={3}>
+            <Col xl={3} md={3} xs={6}>
               <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
                 <Image
                   onClick={() => sliderRef.current.slickPrev()}
@@ -135,6 +140,8 @@ const SDE = ({ handleClick }) => {
             </Col>
             <Col
               xl={8}
+              md={8}
+              xs={6}
               className={styles.SoftwareDevelopmentExpertSliderHeading}
             >
               <div

@@ -26,7 +26,7 @@
     rgba(0, 0, 0, 0.8) 15.7%,
     rgba(26, 28, 59, 0) 140.06%
   );
-  height: 170px;
+  height: 130px;
   width: 300px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -77,6 +77,43 @@
   padding-right: 1rem;
   position: absolute;
 }
+.InspiredCardCol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.InspiredCardSpace {
+  margin-bottom: 3rem;
+  margin-top: 2rem;
+}
+.InspiredCardDes {
+  font-weight: 600;
+  font-size: 45px;
+  width: 20rem;
+}
+.InspiredCardRow {
+  justify-content: center;
+}
+.InspiredCardView {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+  padding-right: 2rem;
+}
+.InspiredCardImg {
+  height: 70px;
+}
+.InspiredCardText {
+  color: #fff;
+  margin: 0%;
+}
+.Viewall {
+  margin: 0%;
+  padding-right: 1rem;
+  color: #a21d34;
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .InspiredContainer {
     padding-top: 2rem;
@@ -86,6 +123,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .InspiredCardCol {
+    align-items: start;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

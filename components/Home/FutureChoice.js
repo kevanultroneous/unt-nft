@@ -12,7 +12,7 @@ const FutureChoice = () => {
   return (
     <div className={styles.FutureChoiceContainer}>
       <Row>
-        <Col xl={7}>
+        <Col xl={7} md={12}>
           <div className={styles.CardBg}>
             <Row>
               <Col xl={12}>
@@ -26,7 +26,7 @@ const FutureChoice = () => {
               </Col>
             </Row>
             <Row className={styles.ProfileContainer}>
-              <Col xl={10}>
+              <Col xl={10} md={10}>
                 <div className={styles.CardProfile}>
                   <div>
                     <Image src="/assets/images/model.png" />
@@ -37,13 +37,13 @@ const FutureChoice = () => {
                   </div>
                 </div>
               </Col>
-              <Col>
+              <Col xl={2} md={2}>
                 <Image src="/assets/images/right-sb.svg" />
               </Col>
             </Row>
           </div>
         </Col>
-        <Col xl={5}>
+        <Col xl={5} md={12}>
           <div className={styles.MainHungry}>
             <div className={styles.HungryCard}>
               <h5 className={styles.HungryHeading}>Hungry for more?</h5>

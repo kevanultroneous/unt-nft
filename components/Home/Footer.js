@@ -42,9 +42,9 @@ const Footer = () => {
             />
           </div>
         </Col>
-        <Col xl={6}>
+        <Col xl={6} md={12} xs={12}>
           <Row className="mx-0">
-            <Col xl={3} className="p-0">
+            <Col xl={3} md={3} xs={6} className="p-0">
               <ul className={styles.MainLinks}>
                 <li>Home</li>
                 <li>About us</li>
@@ -53,7 +53,12 @@ const Footer = () => {
                 <li>Contact us</li>
               </ul>
             </Col>
-            <Col xl={4} className="p-0">
+            <Col
+              xl={4}
+              md={5}
+              xs={6}
+              className="p-0 pt-md-5 p-xl-0 p-lg-0 pt-4"
+            >
               <p>Product List</p>
 
               <ul className={styles.SubLinks}>
