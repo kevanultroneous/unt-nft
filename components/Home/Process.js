@@ -89,14 +89,6 @@ const Process = () => {
           </p>
         </div>
       </div>
-      {/* <div className={styles.ProcessImage}>
-        <Image
-          fluid
-          src={"/assets/images/process.svg"}
-          data-aos={"slide-up"}
-          data-aos-duration="3000"
-        />
-      </div> */}
     </div>
   );
 };
