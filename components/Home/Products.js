@@ -1,9 +1,12 @@
-import { Image } from "react-bootstrap";
+import { Alert, Image } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 const Products = () => {
+  const [xcord, setXcord] = useState(0);
+  const [ycord, setYcord] = useState(0);
+  const [opacitycord, setOpacitycord] = useState("0");
   useEffect(() => {
     AOS.refresh();
     AOS.init();
@@ -76,47 +79,63 @@ const Products = () => {
   ];
   return (
     <div className={styles.OurProductsContainer}>
-      <h3
-        className={styles.OurProductsHeading}
-        data-aos="zoom-in"
-        data-aos-duration="2000"
+      <div
+        className={styles.FollowerLight}
+        style={{ left: xcord, top: ycord, opacity: opacitycord }}
+      ></div>
+      <div
+        onMouseMove={(e) => {
+          setXcord(e.pageX);
+          setYcord(e.pageY);
+          setOpacitycord("0.8");
+        }}
+        onMouseOut={() => setOpacitycord("0")}
+        onMouseLeave={() => setOpacitycord("0")}
       >
-        Our Products
-      </h3>
-      <div className={styles.OurProductsCardsContainer}>
-        <div className={styles.OurProductsCard}>
-          {/*  */}
-          {ProductsList.map((value, index) => (
-            <div
-              data-aos={"zoom-in"}
-              data-aos-duration="3000"
-              className={`${styles.OurProductsCardsMain}`}
-            >
-              <div className={styles.OurProductsCardSub}>
-                <div className={styles.OurProductsCardImage}>
-                  <Image src={value.img} />
-                </div>
-                <div className={styles.OurProductsCardDetail}>
-                  <h4 className={styles.OurProductsHead}>{value.name}</h4>
-                  <p className={styles.OurProductsParagraph}>{value.detail}</p>
-                  <div className={styles.LearnMore}>
-                    Learn More{" "}
-                    <Image src="/assets/images/sendBtn.svg" height={15} />
+        <h3
+          className={styles.OurProductsHeading}
+          data-aos="zoom-in"
+          data-aos-duration="2000"
+        >
+          Our Products
+        </h3>
+        <div className={styles.OurProductsCardsContainer}>
+          <div className={styles.OurProductsCard}>
+            {/*  */}
+            {ProductsList.map((value, index) => (
+              <div
+                data-aos={"zoom-in"}
+                data-aos-duration="3000"
+                className={`${styles.OurProductsCardsMain}`}
+              >
+                <div className={styles.OurProductsCardSub}>
+                  <div className={styles.OurProductsCardImage}>
+                    <Image src={value.img} />
                   </div>
-                </div>
-                <div>
-                  <div className={styles.BtnContainer}>
-                    <div
-                      className={styles.RequestDemo}
-                      // style={{ opacity: "0" }}
-                    >
-                      Request a Demo <HiOutlineExternalLink />
+                  <div className={styles.OurProductsCardDetail}>
+                    <h4 className={styles.OurProductsHead}>{value.name}</h4>
+                    <p className={styles.OurProductsParagraph}>
+                      {value.detail}
+                    </p>
+                    <div className={styles.LearnMore}>
+                      Learn More{" "}
+                      <Image src="/assets/images/sendBtn.svg" height={15} />
+                    </div>
+                  </div>
+                  <div>
+                    <div className={styles.BtnContainer}>
+                      <div
+                        className={styles.RequestDemo}
+                        // style={{ opacity: "0" }}
+                      >
+                        Request a Demo <HiOutlineExternalLink />
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </div>

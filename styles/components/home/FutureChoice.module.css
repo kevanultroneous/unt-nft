@@ -1,11 +1,8 @@
 .FutureChoiceContainer {
-  background: #1a1c3c;
+  background: #f5f5f5;
   padding: 4rem 0;
   padding-left: 8.5rem;
-
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  padding-right: 4rem;
 }
 .ReadBlog {
   font-weight: 600;
@@ -38,6 +35,60 @@
   border-radius: 22px;
   color: #ffffff;
   padding: 0.7rem 2rem;
+}
+.CardBg {
+  height: 22rem;
+  background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
+  border-radius: 20px;
+  color: #ffffff;
+  padding: 4rem 2rem 4rem 2rem;
+}
+.CardTitle {
+  font-weight: 600;
+  font-size: 50px;
+}
+.CardProfile {
+  display: flex;
+  align-items: center;
+}
+.CardProfileName {
+  margin: 0%;
+  font-weight: 500;
+  font-size: 16px;
+}
+.CardProfileDOB {
+  margin: 0%;
+  font-weight: 300;
+  font-size: 12px;
+}
+.CardProfileDetailContainer {
+  padding-left: 1.5rem;
+}
+.ProfileContainer {
+  padding-top: 2.5rem;
+}
+.HungryCard {
+  height: 22rem;
+  padding: 3.5rem;
+  color: white;
+  border-width: 3px;
+  background-color: #ffffff;
+  border-radius: 20px;
+}
+.MainHungry {
+  padding: 2px;
+  background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
+  border-radius: 20px;
+}
+.HungryHeading {
+  font-weight: 600;
+  font-size: 50px;
+  color: #000000;
+}
+.HungryParagraph {
+  font-weight: 400;
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 320px) and (max-width: 450px) {
 }

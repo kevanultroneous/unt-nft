@@ -3,8 +3,21 @@
   padding-left: 8.5rem;
   padding-bottom: 2.5rem;
   justify-content: center;
-  height: 100vh;
+  /* height: 100vh; */
   background: rgba(26, 28, 60, 0.03);
+}
+.ProcessBoxesContainer {
+  display: flex;
+  justify-content: space-between;
+}
+.MainProcess {
+  padding-top: 6rem;
+  /* padding-right: 4rem; */
+  display: flex;
+  justify-content: center;
+}
+.MainPs {
+  width: 40rem;
 }
 .ProcessHead {
   font-weight: 600;
@@ -27,7 +40,80 @@
   display: flex;
   justify-content: center;
 }
-
+.ProcessDot {
+  padding: 0rem;
+  border: 3px solid #e27625;
+  width: 1px;
+  border-radius: 100%;
+}
+.ProcessShadow {
+  border-radius: 100%;
+  padding: 1.5rem;
+  height: 3.5rem;
+  width: fit-content;
+  background: #fff1e8;
+  border: 0.8px solid #e27625;
+}
+.ProcessParagraph {
+  padding-top: 3rem;
+  width: 92px;
+  font-weight: 400;
+  font-size: 14px;
+  text-align: center;
+}
+.ProcessBox {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.ProcessLine {
+  border: 2px dashed rgba(0, 0, 0, 0.1);
+}
+.ProcessLineContainer {
+  display: flex;
+  padding-bottom: 2rem;
+  padding-top: 2rem;
+  position: absolute;
+  width: 35rem;
+  margin-left: 2rem;
+  flex-direction: column;
+}
+.ProcessBlink {
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  transition: all 1s ease;
+}
+.ProcessBox:hover .ProcessBlink {
+  height: 4rem;
+  width: 4rem;
+  transition: all 1s ease;
+}
+.ProcessBlinkMain {
+  display: flex;
+  height: 4rem;
+  align-items: center;
+}
+.YourNeedContainer {
+  padding-top: 6rem;
+  text-align: center;
+}
+.YourNeedHeading {
+  font-weight: 600;
+  font-size: 22px;
+}
+.YourNeedPContainer {
+  display: flex;
+  justify-content: center;
+}
+.YourNeedPContainer p {
+  width: 44.93rem;
+}
 /*  */
 @media (min-width: 320px) and (max-width: 450px) {
 }

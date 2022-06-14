@@ -6,9 +6,9 @@ const Menu = ({ opacity }) => {
       <div>
         <Image src="/assets/images/xicon.svg" fluid />
       </div>
-      <div>
+      {/* <div>
         <Image src="/assets/images/menuicon.svg" fluid />
-      </div>
+      </div> */}
       <div>
         <p className={styles.BlockchainTechnologyText}>BLOCKCHAIN TECHNOLOGY</p>
       </div>

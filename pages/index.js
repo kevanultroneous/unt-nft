@@ -1,5 +1,4 @@
 import Head from "next/head";
-import styles from "@/styles/homepage.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 
@@ -22,7 +21,6 @@ import Products from "@/components/Home/Products";
 import Layout from "@/components/Common/Layout";
 import SmoothScroll from "@/components/SmoothScroll.component";
 import { motion } from "framer-motion";
-import Cursor from "@/components/Common/Cursor";
 export default function Home() {
   //
   const [on, setOn] = useState("0");
@@ -47,7 +45,7 @@ export default function Home() {
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
-      <Cursor />
+
       <Menu opacity={on} />
       <SmoothScroll>
         <section>
@@ -58,7 +56,6 @@ export default function Home() {
           />
         </section>
         {/* Menu Sections */}
-
         {/* frame 1 -software development Experts*/}
         <section ref={section1}>
           <SDE handleClick={() => scrollToRef(section2)} />
@@ -70,7 +67,7 @@ export default function Home() {
         {/* Our Products */}
         <Products />
         {/* Expert */}
-        <TalkToExpert />
+        {/* <TalkToExpert /> */}
         {/* TechnologyStack */}
         <TechnologyStack />
         {/* Speciality */}

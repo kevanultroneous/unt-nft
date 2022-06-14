@@ -4,47 +4,78 @@
   padding-bottom: 4rem;
   padding-right: 3rem;
 }
-.MainTitle {
-  font-weight: 600;
-  font-size: 50px;
-  color: #000000;
-  width: 23rem;
+.InspiredCardcontainer {
+  position: relative;
+  width: 50%;
 }
-.InspiredCard {
+
+.InspiredCardImage {
+  display: block;
+  height: auto;
+  width: 300px;
+  height: 400px;
 }
-.InspiredCardAbout {
-  margin: 0%;
+.InspiredDis {
+  padding: 1rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  height: 170px;
+  width: 300px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
 }
-.InspiredCardAbout {
-  padding-top: 1rem;
+.InspiredDisTitle {
   font-weight: 500;
   font-size: 18px;
-  width: 10.5rem;
+  margin: 0%;
 }
-.ImageInspired {
-  width: 15rem;
-}
-.InspiredCardText {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  opacity: 1;
+.InspiredDisParagraph {
   font-weight: 400;
   font-size: 16px;
-  line-height: 23px;
-  color: #a21d34;
+  margin: 0%;
+}
+.InspiredCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  opacity: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  width: 300px;
   transition: all 1s ease;
 }
-.InspiredCardText span {
-  margin-left: 0.5rem;
+
+.InspiredCardcontainer:hover .InspiredCardOverlay {
+  height: 100%;
+  border-radius: 20px;
+  background: rgba(162, 29, 52, 0.9);
+  transition: all 1s ease;
+  opacity: 1;
 }
-.Viewallbtn {
-  margin-top: 2rem;
-  border: 1px solid #a21d34;
-  border-radius: 22px;
-  color: #a21d34;
-  width: fit-content;
-  padding: 0.4rem 2rem;
+
+.InspiredCardText {
+  color: white;
+  font-size: 20px;
+  padding-top: 4rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  position: absolute;
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .InspiredContainer {
@@ -52,9 +83,6 @@
     padding-left: 1rem;
     padding-bottom: 2rem;
     padding-right: 1rem;
-  }
-  .ImageInspired {
-    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

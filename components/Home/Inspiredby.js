@@ -3,6 +3,43 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
+const CardInspired = () => {
+  return (
+    <div className={styles.InspiredCardcontainer}>
+      <Image
+        src="/assets/images/inspiration1.png"
+        alt="Avatar"
+        className={styles.InspiredCardImage}
+      />
+      <div className={styles.InspiredDis}>
+        <p className={styles.InspiredDisTitle}>
+          Private Blockchain & Tokenization
+        </p>
+        <p className={styles.InspiredDisParagraph}>
+          Lorem Ipsum has been the industry's standard dummy text ever since the
+          1500s, when an unknown.
+        </p>
+      </div>
+      <div className={styles.InspiredCardOverlay}>
+        <div className={styles.InspiredCardText}>
+          <p
+            className={styles.InspiredDisTitle}
+            style={{ paddingBottom: "1rem" }}
+          >
+            Private Blockchain & Tokenization
+          </p>
+          <p className={styles.InspiredDisParagraph}>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English.
+          </p>
+        </div>
+      </div>
+    </div>
+  );
+};
 const Inspiredby = () => {
   const listOfInspired = [
     {
@@ -28,41 +65,8 @@ const Inspiredby = () => {
   return (
     <div className={styles.InspiredContainer}>
       <Row>
-        <Col xl={4} xs={12}>
-          <h6
-            className={styles.MainTitle}
-            data-aos={"fade-right"}
-            data-aos-duration="2000"
-          >
-            Get Inspired by Case Studies
-          </h6>
-          <div>
-            <ActionButton text={"View All"} handleAction={() => null} />
-            {/* <div className={styles.Viewallbtn}>View All</div> */}
-          </div>
-        </Col>
         <Col xl={8} xs={12}>
-          <Row>
-            {listOfInspired.map((v, i) => (
-              <Col xl={4}>
-                <div
-                  className={styles.InspiredCard}
-                  data-aos={"zoom-in"}
-                  data-aos-duration="2000"
-                >
-                  <Image src={v.img} className={styles.ImageInspired} />
-                  <p className={styles.InspiredCardAbout}>{v.iname}</p>
-
-                  <div className={styles.InspiredCardText}>
-                    Learn More
-                    <span>
-                      <Image src="/assets/images/sendBtn.svg" height={15} />
-                    </span>
-                  </div>
-                </div>
-              </Col>
-            ))}
-          </Row>
+          <CardInspired />
         </Col>
       </Row>
     </div>

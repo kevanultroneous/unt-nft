@@ -82,6 +82,31 @@
   color: #a21d34;
   transition: all 1s ease;
 }
+.FollowerLight {
+  background: -webkit-radial-gradient(
+    44.17% 56.2%,
+    36.88% 29.95%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  background: -o-radial-gradient(
+    44.17% 56.2%,
+    36.88% 29.95%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  background: radial-gradient(
+    36.88% 29.95% at 44.17% 56.2%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  pointer-events: none;
+  padding: 10px;
+  width: 1500px;
+  height: 1500px;
+  position: fixed;
+  transform: translate(-50%, -50%);
+}
 @media (min-width: 320px) and (max-width: 450px) {
 }
 @media (min-width: 768px) and (max-width: 1080px) {
