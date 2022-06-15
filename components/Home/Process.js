@@ -34,15 +34,15 @@ const Process = () => {
     <div className={styles.ProcessContainer}>
       <p
         className={styles.ProcessHead}
-        data-aos={"zoom-in"}
-        data-aos-duration="3000"
+        // data-aos={"zoom-in"}
+        // data-aos-duration="3000"
       >
         PROCESS
       </p>
       <h4
         className={styles.ProcessTitle}
-        data-aos={"zoom-in"}
-        data-aos-duration="3000"
+        // data-aos={"zoom-in"}
+        // data-aos-duration="3000"
       >
         It’ll make everything easy for you
       </h4>
@@ -54,10 +54,7 @@ const Process = () => {
           <div className={styles.ProcessBoxesContainer}>
             {dataProcess.map((v, i) => (
               <div className={styles.ProcessBox}>
-                <div
-                  className={styles.ProcessBlinkMain}
-                  onMouseEnter={() => alert("yr")}
-                >
+                <div className={styles.ProcessBlinkMain}>
                   <div
                     className={styles.ProcessBlink}
                     style={{

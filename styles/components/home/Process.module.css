@@ -87,7 +87,13 @@
   align-items: center;
   justify-content: center;
   border-radius: 100%;
-  transition: all 1s ease;
+  transition: all 0.8s ease;
+  z-index: 5;
+}
+
+.ProcessBlink:hover {
+  width: 3rem;
+  height: 3rem;
 }
 
 .ProcessBlinkMain {
@@ -114,6 +120,25 @@
 }
 /*  */
 @media (min-width: 320px) and (max-width: 450px) {
+  .ProcessContainer {
+    padding: 3rem 1rem;
+  }
+  .ProcessTitle {
+    font-size: 34px;
+  }
+  .MainPs {
+    width: 100%;
+  }
+  .ProcessLineContainer {
+    width: 70%;
+  }
+  .ProcessParagraph {
+    padding-top: 1rem;
+    width: 80px;
+    font-weight: 400;
+    font-size: 11px;
+    text-align: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .ProcessContainer {

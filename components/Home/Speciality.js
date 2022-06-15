@@ -52,8 +52,8 @@ const Speciality = () => {
             {value.key % 2 === 0 ? (
               <Row
                 className={`d-flex justify-content-end`}
-                data-aos={"fade-right"}
-                data-aos-duration="2000"
+                // data-aos={"fade-right"}
+                // data-aos-duration="2000"
               >
                 <div className={styles.SpecialityBox}>
                   <h6 className={styles.Count}>
@@ -65,8 +65,8 @@ const Speciality = () => {
             ) : (
               <Row
                 className={`d-flex`}
-                data-aos={"fade-left"}
-                data-aos-duration="2000"
+                // data-aos={"fade-left"}
+                // data-aos-duration="2000"
               >
                 <div className={styles.SpecialityBox}>
                   <h6 className={styles.Count}>
@@ -82,8 +82,8 @@ const Speciality = () => {
       <div className={styles.SpecialityBoard2}>
         <p
           className={styles.SpecialityParagraph}
-          data-aos={"zoom-in"}
-          data-aos-duration="2000"
+          // data-aos={"zoom-in"}
+          // data-aos-duration="2000"
         >
           "In 2017, MobifinX, with his experience with technologies, helped in a
           project aimed at streamlining production operations. That's how

@@ -119,15 +119,15 @@
   );
   background: radial-gradient(
     36.88% 29.95% at 44.17% 56.2%,
-    #16155e 0%,
+    #16155e -0%,
     rgba(22, 21, 94, 0) 100%
   );
   pointer-events: none;
   padding: 10px;
-  width: 1500px;
-  height: 1500px;
+  width: 1000px;
+  height: 1000px;
   position: fixed;
-  transform: translate(-50%, -65%);
+  transform: translate(-50%, -50%);
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .OurProductsContainer {
@@ -153,8 +153,9 @@
     height: 90px !important;
   }
   .OurProductsParagraph {
-    font-size: 12px;
-    width: 12.4rem;
+    font-size: 11px;
+    width: 10.4rem;
+    text-align: justify;
   }
   .RequestDemo {
     display: none;

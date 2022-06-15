@@ -33,18 +33,17 @@ const Discover = () => {
         <div className={styles.DiscoverMobifinixPara1Container}>
           <p
             className={styles.DiscoverMobifinixPara1}
-            data-aos="zoom-in"
-            data-aos-duration="2000"
+            // data-aos="zoom-in"
+            // data-aos-duration="2000"
           >
-            MobifinX have expertise in serving on-demand business solutions with
-            a special focus on safety, scale as well as performance.
+            Redefining Trading Technologies
           </p>
         </div>
         <div className={styles.DiscoverMobifinixPara2Container}>
           <p
             className={styles.DiscoverMobifinixPara2}
-            data-aos="zoom-in"
-            data-aos-duration="2000"
+            // data-aos="zoom-in"
+            // data-aos-duration="2000"
           >
             We are a leading Crypto Exchange Software Development company based
             in USA. We are fintech expert established in 2011 to deliver
@@ -55,7 +54,9 @@ const Discover = () => {
           </p>
         </div>
         <div className={styles.DiscoverMobifinxBtnContainer}>
-          <div data-aos="zoom-in" data-aos-duration="2000">
+          <div
+          // data-aos="zoom-in" data-aos-duration="2000"
+          >
             <ActionButton
               text={
                 <>
@@ -73,11 +74,11 @@ const Discover = () => {
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
           {arrayBox.map((value, index) => (
-            <Col xl={6} xs={6} md={6} key={index}>
+            <Col xl={5} xs={6} md={6} key={index}>
               <div
                 className={styles.DiscoverBox}
-                data-aos="zoom-in"
-                data-aos-duration="2000"
+                // data-aos="zoom-in"
+                // data-aos-duration="2000"
               >
                 <div className={styles.DiscoverItemBox}>
                   <Image src={value.image} />

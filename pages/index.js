@@ -1,17 +1,10 @@
-import Head from "next/head";
-import { Col, Image, Row } from "react-bootstrap";
-import { HiOutlineExternalLink } from "react-icons/hi";
-
 import Footer from "@/components/Home/Footer";
-import Achievements from "@/components/Home/Achievments";
 import Process from "@/components/Home/Process";
-import GetInTouch from "@/components/Home/GetInTouch";
 import TalkToExpert from "@/components/Home/TalkToExpert";
 import Inspiredby from "@/components/Home/Inspiredby";
 import Speciality from "@/components/Home/Speciality";
-import TechnologyStack from "@/components/Home/TechnologyStack";
 
-import React, { useContext, useEffect, useRef, useState } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import IntroContainer from "@/components/Home/IntroContainer";
 import Menu from "@/components/Home/Menu";
 import FutureChoice from "@/components/Home/FutureChoice";
@@ -20,71 +13,80 @@ import SDE from "@/components/Home/SoftwareDevelopmentExpert";
 import Products from "@/components/Home/Products";
 import Layout from "@/components/Common/Layout";
 import SmoothScroll from "@/components/SmoothScroll.component";
-import { motion } from "framer-motion";
 export default function Home() {
   //
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
   const section2 = useRef(null);
   const section3 = useRef(null);
+  const [pos1, setPos1] = useState(null);
+  const [pos2, setPos2] = useState(null);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
   // useEffect(() => {
-  //   window.addEventListener("scroll", () => {
-  //     let elem = document.getElementsByClassName("frame1")[0];
-  //     let rect = elem.getBoundingClientRect();
-
-  //     if (rect.y <= 132) {
-  //       setOn("1");
-  //     } else {
-  //       setOn("0");
-  //     }
-  //   });
-  // });
-
+  //   const timer1 = setTimeout(() => {
+  //     setPos2(true);
+  //     console.log("called");
+  //   }, 10);
+  //   const timer2 = setTimeout(() => {
+  //     clearTimeout(timer1);
+  //     setPos1(true);
+  //   }, 1000);
+  //   const timer3 = setTimeout(() => {
+  //     clearTimeout(timer2);
+  //     setPos2(false);
+  //   }, 5000);
+  //   return () => clearTimeout(timer3);
+  // }, []);
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
+      {/* {pos1 ? <Menu opacity={on} /> : null} */}
       <Menu opacity={on} />
-      <SmoothScroll>
+      {/* <SmoothScroll> */}
+      {/* {pos2 ? (
         <section>
-          <IntroContainer
-            handleclick={() => {
-              scrollToRef(section1);
-            }}
-          />
+          <IntroContainer />
         </section>
-        {/* Menu Sections */}
-        {/* frame 1 -software development Experts*/}
-        <section ref={section1}>
-          <SDE handleClick={() => scrollToRef(section2)} />
-        </section>
-        {/* Discover MOBIFINIX */}
-        <section ref={section2}>
-          <Discover />
-        </section>
-        {/* Our Products */}
-        <Products />
-        {/* Expert */}
-        <TalkToExpert />
-        {/* TechnologyStack */}
-        {/* <TechnologyStack /> */}
+      ) : pos2 !== null ? (
+        <> */}
+      <section ref={section1}>
+        <SDE handleClick={() => scrollToRef(section2)} />
+      </section>
 
-        {/* Inspiredby */}
-        <Inspiredby />
-        {/* Process */}
-        <Process />
-        {/* be a part of future choice */}
-        <FutureChoice />
-        {/* Achievements */}
-        {/* <Achievements /> */}
-        {/* Speciality */}
-        <Speciality />
-        {/* GetInTouch */}
-        {/* <GetInTouch /> */}
-        {/* Footer */}
-        <Footer />
-      </SmoothScroll>
+      {/* handleclick={() => {
+     scrollToRef(section1);
+   }} */}
+      {/* Menu Sections */}
+      {/* frame 1 -software development Experts*/}
+      {/* Discover MOBIFINIX */}
+      <section ref={section2}>
+        <Discover />
+      </section>
+      {/* Our Products */}
+      <Products />
+      {/* Expert */}
+      {/* <TalkToExpert /> */}
+      {/* TechnologyStack */}
+      {/* <TechnologyStack /> */}
+
+      {/* Inspiredby */}
+      <Inspiredby />
+      {/* Process */}
+      <Process />
+      {/* be a part of future choice */}
+      <FutureChoice />
+      {/* Achievements */}
+      {/* <Achievements /> */}
+      {/* Speciality */}
+      <Speciality />
+      {/* GetInTouch */}
+      {/* <GetInTouch /> */}
+      {/* Footer */}
+      <Footer />
+      {/* </>
+      ) : null} */}
+      {/* </SmoothScroll> */}
     </Layout>
   );
 }

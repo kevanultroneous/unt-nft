@@ -11,17 +11,17 @@ const SDE = ({ handleClick }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 4,
+    slidesToScroll: 1,
     centerMode: true,
     responsive: [
       {
         breakpoint: 1920,
         settings: {
-          slidesToShow: 2,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           centerMode: true,
-          // centerPadding: "75px",
+          centerPadding: "40px",
         },
       },
       {
@@ -69,15 +69,19 @@ const SDE = ({ handleClick }) => {
   }, []);
   const sliderRef = useRef();
   return (
-    <div className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}>
+    <div
+      // data-aos="fade-up"
+      // data-aos-duration="2000"
+      className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}
+    >
       <Row className={styles.SoftwareDevelopmentExpertsRow}>
         <Col xl={6} xs={6} md={6}>
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
             <span
               className={styles.HomeSmallHeading}
-              data-aos="zoom-in"
-              data-aos-duration="2000"
+              // data-aos="zoom-in"
+              // data-aos-duration="2000"
             >
               MobifinX Home
             </span>
@@ -90,15 +94,15 @@ const SDE = ({ handleClick }) => {
           className={styles.SoftwareDevelopmentExpertsBtnCol}
         >
           <div className={styles.RequestDemoButton}>
-            Request a Demo <HiOutlineExternalLink />
+            Explore Product <HiOutlineExternalLink />
           </div>
         </Col>
       </Row>
 
       <div
         className={styles.SoftwareDevelopmentExpertsBigHeadingContainer}
-        data-aos="zoom-in"
-        data-aos-duration="2000"
+        // data-aos="zoom-in"
+        // data-aos-duration="2000"
       >
         <h3 className={styles.SoftwareDevelopmentExpertsBigHeading}>
           We’re Crypto Coin Trading
@@ -146,15 +150,15 @@ const SDE = ({ handleClick }) => {
             >
               <div
                 className={styles.HomeMiniLine}
-                data-aos="fade-right"
-                data-aos-duration="2000"
+                // data-aos="fade-right"
+                // data-aos-duration="2000"
               />
               <span
                 className={styles.HomeSmallHeading}
-                data-aos="fade-left"
-                data-aos-duration="2000"
+                // data-aos="fade-left"
+                // data-aos-duration="2000"
               >
-                Explore Products
+                Products we are providing
               </span>
             </Col>
           </Row>
@@ -163,8 +167,8 @@ const SDE = ({ handleClick }) => {
               {sliderList.map((v, i) => (
                 <div
                   className={styles.SliderCard}
-                  data-aos="slide-up"
-                  data-aos-duration="2000"
+                  // data-aos="slide-up"
+                  // data-aos-duration="2000"
                 >
                   <p>{v}</p>
                 </div>

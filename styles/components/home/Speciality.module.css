@@ -44,7 +44,25 @@
   padding-right: 4rem;
 }
 @media (min-width: 320px) and (max-width: 450px) {
+  .SpecialityContainer {
+    padding: 3rem 1rem;
+  }
+  .SpecialityBoard1 {
+    width: 100%;
+  }
+  .SpecialityBoard2 {
+    width: 100%;
+    text-align: center;
+    padding-top: 2rem;
+  }
+  .Speciality {
+    padding: 0%;
+  }
+  .SpecialityParagraph {
+    font-size: 25px;
+  }
 }
+
 @media (min-width: 768px) and (max-width: 1080px) {
   .SpecialityBoard1 {
     width: 100%;

@@ -3,10 +3,19 @@ import { Col, Image, Row } from "react-bootstrap";
 import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
-
+import { useEffect, useState } from "react";
+import AOS from "aos";
 const Footer = () => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
-    <div className={styles.FooterContainer}>
+    <div
+      className={styles.FooterContainer}
+      // data-aos="fade-up"
+      // data-aos-duration="2000"
+    >
       <Row className="mx-0">
         <Col xl={6}>
           <h4 className={styles.SubscribeHeading}>

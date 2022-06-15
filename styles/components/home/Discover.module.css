@@ -36,11 +36,11 @@
 }
 .DiscoverMobifinixPara1 {
   font-weight: 600;
-  font-size: 22px;
+  font-size: 50px;
   width: 48rem;
 }
 .DiscoverMobifinixPara2 {
-  width: 53.75rem;
+  width: 48.9rem;
   font-weight: 400;
   font-size: 16px;
   color: #2e3159;
@@ -81,16 +81,13 @@
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .DiscoverMobifinixContainer {
-    padding-top: 1rem;
-    padding-left: 1rem;
-    padding-bottom: 1rem;
-    padding-right: 1rem;
+    padding: 3rem 1rem;
   }
   .DiscoverItemParagraph {
     padding-top: 2rem;
-    width: 10rem;
+    width: 8rem;
     font-weight: 400;
-    font-size: 14px;
+    font-size: 12px;
     color: #000000;
   }
 }

@@ -91,6 +91,12 @@
   font-size: 45px;
   width: 20rem;
 }
+.InspiredCardDesMob {
+  font-weight: 600;
+  font-size: 45px;
+  width: 20rem;
+  display: none;
+}
 .InspiredCardRow {
   justify-content: center;
 }
@@ -102,8 +108,35 @@
   justify-content: end;
   padding-right: 2rem;
 }
+.InspiredCardView2 {
+  padding-top: 3rem;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: end;
+  padding-right: 2rem;
+  opacity: 0;
+}
+.Viewall2 {
+  margin: 0%;
+  padding-right: 1rem;
+  color: #a21d34;
+}
+.InspiredCardImg2 {
+  height: 70px;
+  transition: all 1s ease;
+}
+.InspiredCardImg2:hover {
+  transform: scale(0.6);
+  transition: all 1s ease;
+}
 .InspiredCardImg {
   height: 70px;
+  transition: all 1s ease;
+}
+.InspiredCardImg:hover {
+  transform: scale(0.6);
+  transition: all 1s ease;
 }
 .InspiredCardText {
   color: #fff;
@@ -120,6 +153,19 @@
     padding-left: 1rem;
     padding-bottom: 2rem;
     padding-right: 1rem;
+  }
+  .InspiredCardCol {
+    align-items: flex-start;
+  }
+  .InspiredCardView,
+  .InspiredCardDes {
+    display: none;
+  }
+  .InspiredCardDesMob {
+    display: block;
+  }
+  .InspiredCardView2 {
+    opacity: 1;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

@@ -3,9 +3,13 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
-const CardInspired = ({ style, srcimg }) => {
+const CardInspired = ({ style, srcimg, animtype }) => {
   return (
-    <div className={`${styles.InspiredCardcontainer} ${style}`}>
+    <div
+      className={`${styles.InspiredCardcontainer} ${style}`}
+      data-aos={animtype}
+      data-aos-duration="3000"
+    >
       <Image src={srcimg} alt="Avatar" className={styles.InspiredCardImage} />
       <div className={styles.InspiredDis}>
         <p className={styles.InspiredDisTitle}>
@@ -63,11 +67,18 @@ const Inspiredby = () => {
       <Row className={styles.InspiredCardRow}>
         {/* left */}
         <Col xl={5} xs={12} md={6} className={styles.InspiredCardCol}>
+          <h3 className={styles.InspiredCardDesMob}>
+            Get Inspired by Case Studies
+          </h3>
           <CardInspired
+            // animtype={"fade-down"}
             srcimg={"/assets/images/inspiration1.png"}
             style={styles.InspiredCardSpace}
           />
-          <CardInspired srcimg={"/assets/images/inspiration3.png"} />
+          <CardInspired
+            // animtype={"fade-up"}
+            srcimg={"/assets/images/inspiration3.png"}
+          />
           <div className={styles.InspiredCardView}>
             <p className={styles.Viewall}>View All</p>
             <Image
@@ -82,10 +93,21 @@ const Inspiredby = () => {
             Get Inspired by Case Studies
           </h3>
           <CardInspired
+            // animtype={"fade-right"}
             srcimg={"/assets/images/inspiration2.png"}
             style={styles.InspiredCardSpace}
           />
-          <CardInspired srcimg={"/assets/images/insp4.png"} />
+          <CardInspired
+            // animtype={"fade-left"}
+            srcimg={"/assets/images/insp4.png"}
+          />
+          <div className={styles.InspiredCardView2}>
+            <p className={styles.Viewall2}>View All</p>
+            <Image
+              src="/assets/images/grad.svg"
+              className={styles.InspiredCardImg2}
+            />
+          </div>
         </Col>
       </Row>
     </div>

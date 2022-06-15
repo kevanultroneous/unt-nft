@@ -22,7 +22,7 @@ const Cursor = () => {
 
   return (
     <div>
-      <div
+      {/* <div
         style={{
           transform: `translate(${position.x}px, ${position.y}px)`,
         }}
@@ -33,7 +33,7 @@ const Cursor = () => {
           transform: `translate(${position.x}px, ${position.y}px)`,
         }}
         className="cursor-follower"
-      ></div>
+      ></div> */}
     </div>
   );
 };

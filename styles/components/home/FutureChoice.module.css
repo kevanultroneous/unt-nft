@@ -91,6 +91,42 @@
   color: rgba(0, 0, 0, 0.8);
 }
 @media (min-width: 320px) and (max-width: 450px) {
+  .FutureChoiceContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .CardTitle {
+    font-size: 27px;
+  }
+  .CardBg {
+    height: auto;
+    padding: 2rem;
+  }
+  .MainHungry {
+    margin-top: 2rem;
+  }
+  .HungryCard {
+    height: auto;
+    padding: 2rem;
+  }
+  .HungryHeading {
+    font-size: 30px;
+  }
+  .HungryParagraph {
+    font-size: 15px;
+  }
+  .CardProfileName {
+    font-size: 15px;
+  }
+  .CardProfileDOB {
+    font-size: 11px;
+  }
+  .rightSb {
+    height: 36px;
+  }
+  .ModelF {
+    height: 40px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .MainHungry {

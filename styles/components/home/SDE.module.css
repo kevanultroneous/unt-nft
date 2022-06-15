@@ -18,8 +18,8 @@
   border-radius: 22px;
   padding-left: 1.5rem;
   padding-right: 1.5rem;
-  padding-top: 0.2rem;
-  padding-bottom: 0.2rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
   margin-right: 2rem;
   width: fit-content;
 }
@@ -36,12 +36,11 @@
 }
 .SoftwareDevelopmentExpertsBigHeadingContainer {
   padding-top: 2.5rem;
-  padding-left: 8.5rem;
   padding-bottom: 2.5rem;
 }
 .SoftwareDevelopmentExpertsBigHeading {
   font-weight: 600;
-  font-size: 70px;
+  font-size: 60px;
   padding-top: 4rem;
   padding-bottom: 5rem;
 }
@@ -78,11 +77,14 @@
   background: rgba(255, 255, 255, 0.1);
   border-radius: 17px;
   height: 200px;
-  width: 284px !important;
+  width: 190px !important;
   display: flex !important;
-  justify-content: center;
-  text-align: center;
+  justify-content: left;
+  text-align: left;
   align-items: flex-end;
+}
+.SliderCard p {
+  padding-left: 1rem;
 }
 .SliderGround {
   padding-top: 2rem;
@@ -94,8 +96,8 @@
   align-items: center;
   justify-content: end;
   position: relative;
-  animation: scrolldowntotop 4s ease-in 0s infinite normal;
-  animation-direction: alternate;
+  /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+  animation-direction: alternate; */
 }
 @keyframes scrolldowntotop {
   0% {
@@ -118,7 +120,7 @@
   justify-content: flex-start;
   display: flex;
   align-items: end;
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
 }
 .ScrolldownText {
   margin: 0%;
@@ -129,7 +131,14 @@
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .HomeSmallHeading {
-    font-size: 16px;
+    font-size: 0.86rem;
+  }
+  .HomeMiniLine {
+    width: 27px;
+  }
+  .SoftwareDevelopmentExpertSliderBtnLeft,
+  .SoftwareDevelopmentExpertSliderBtnRight {
+    height: 40px;
   }
   .SoftwareDevelopmentExpertsContainer {
     padding-top: 2.5rem;
@@ -162,8 +171,11 @@
   }
   .RequestDemoButton {
     margin-right: -1rem;
-    padding-right: 1rem;
-    padding-left: 1rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+  }
+  .SliderCard {
+    width: 95% !important;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

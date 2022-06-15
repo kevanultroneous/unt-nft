@@ -13,68 +13,68 @@ const Products = () => {
   }, []);
   const ProductsList = [
     {
-      name: "Derivatives Trading",
+      name: "MxMarket",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "A Centralized Trading platform for Spot trading, OTC desk, and P2P Trading. Offers world-class trading technology, robust legal and compliance solutions, and round-the-clock support. Automate trades without involving a central authority and connect buyers and sellers directly.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-1.svg",
+      img: "/assets/images/mh1.svg",
     },
     {
-      name: "Spot Trading",
+      name: "MxSuper",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "A Top-notch derivative and Margin exchange platform that promises to open up new investment avenues for traders. Gain access to a pool of untapped crypto holders and accelerate the transaction process with automated smart contracts.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-2.svg",
+      img: "/assets/images/mh2.svg",
     },
     {
-      name: "NFT",
+      name: "MxDex",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "We help you facilitate the large-scale trading of crypto assets between many users with a decentralized trading platform. A fast and transparent solution enables users to have complete control over their accounts and assets.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-3.svg",
+      img: "/assets/images/mh3.svg",
     },
     {
-      name: "DeFi",
+      name: "MxFi",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "Take a shift from traditional and centralized finance to peer-to-peer and decentralized technologies based on the Ethereum blockchain. The DeFi ecosystem includes banking, payments and settlements, lending and borrowing platforms.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-4.svg",
+      img: "/assets/images/mh4.svg",
     },
     {
-      name: "OTC Desk",
+      name: "MxFund",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "A digital asset fundraising platform will boost fundraising opportunities for IEO, ICO, IDO, and IGO development. Helps to know more about the product and its roadmap.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-5.svg",
+      img: "/assets/images/mh5.svg",
     },
     {
-      name: "P2P Trading",
+      name: "MxWallet",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "Wallets not just allow you to send and receive digital currency but also monitor and manage your cryptocurrency assets. It can store one or multiple currencies at just one time. Its features offer a chance to level up cryptocurrency transactions.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-6.svg",
+      img: "/assets/images/mh6.svg",
     },
     {
-      name: "Private Blockchain & Tokenization",
+      name: "MxBlock",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "Our experts have a knack for making end-users' life simple. With the help of MxBlock, physical assets can be converted into digital tokens and traded on exchanges through tokenization. and blockchain helps you manage ownership transfer efficiently.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-7.svg",
+      img: "/assets/images/mh7.svg",
     },
     {
-      name: "Fund Raising Launchpad",
+      name: "MxNFT",
       detail:
-        "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,when an unknown printer took a galley of type and scrambled.",
+        "A custom NFT ecosystem infused with cutting-edge technology and transparent accessibility allows creators, collectors, and dealers to benefit from liquid investments.",
       link1: "",
       link2: "",
-      img: "/assets/images/machine-8.svg",
+      img: "/assets/images/mh8.svg",
     },
   ];
   return (
@@ -83,29 +83,30 @@ const Products = () => {
         className={styles.FollowerLight}
         style={{ left: xcord, top: ycord, opacity: opacitycord }}
       ></div>
-      <div
-        onMouseMove={(e) => {
-          setXcord(e.pageX);
-          setYcord(e.pageY);
-          setOpacitycord("0.8");
-        }}
-        onMouseOut={() => setOpacitycord("0")}
-        onMouseLeave={() => setOpacitycord("0")}
-      >
+      <div>
         <h3
           className={styles.OurProductsHeading}
-          data-aos="zoom-in"
-          data-aos-duration="2000"
+          // data-aos="zoom-in"
+          // data-aos-duration="2000"
         >
           Our Products
         </h3>
         <div className={styles.OurProductsCardsContainer}>
-          <div className={styles.OurProductsCard}>
+          <div
+            className={styles.OurProductsCard}
+            onMouseMove={(e) => {
+              setXcord(e.pageX);
+              setYcord(e.pageY);
+              setOpacitycord("0.8");
+            }}
+            onMouseOut={() => setOpacitycord("0")}
+            onMouseLeave={() => setOpacitycord("0")}
+          >
             {/*  */}
             {ProductsList.map((value, index) => (
               <div
-                data-aos={"zoom-in"}
-                data-aos-duration="3000"
+                // data-aos={"fade-left"}
+                // data-aos-duration="3000"
                 className={`${styles.OurProductsCardsMain}`}
               >
                 <div className={styles.OurProductsCardSub}>
@@ -131,7 +132,7 @@ const Products = () => {
                         className={styles.RequestDemo}
                         // style={{ opacity: "0" }}
                       >
-                        Request a Demo <HiOutlineExternalLink />
+                        Explore Product <HiOutlineExternalLink />
                       </div>
                     </div>
                   </div>
