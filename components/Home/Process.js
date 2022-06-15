@@ -78,14 +78,16 @@ const Process = () => {
         </div>
       </div>
       <div className={styles.YourNeedContainer}>
-        <h6 className={styles.YourNeedHeading}>Understanding Your Needs</h6>
+        <h6 className={styles.YourNeedHeading}>
+          Analyze & Understand the Needs
+        </h6>
         <div className={styles.YourNeedPContainer}>
           <p>
-            A Centralized Trading platform for Spot trading, OTC desk, and P2P
-            Trading. Offers world-class trading technology, robust legal and
-            compliance solutions, and round-the-clock support. Automate trades
-            without involving a central authority and connect buyers and sellers
-            directly.
+            We help you walk through by giving you detailed insights into what
+            we offer and what are the industry standardizations. So you can get
+            acquainted with the product that suits your preferences. This will
+            help you understand why you should select MobifinX as your tech
+            partner.
           </p>
         </div>
       </div>

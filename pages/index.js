@@ -13,6 +13,7 @@ import SDE from "@/components/Home/SoftwareDevelopmentExpert";
 import Products from "@/components/Home/Products";
 import Layout from "@/components/Common/Layout";
 import SmoothScroll from "@/components/SmoothScroll.component";
+import Exchange from "@/components/Home/Exchange";
 export default function Home() {
   //
   const [on, setOn] = useState("1");
@@ -65,6 +66,8 @@ export default function Home() {
       </section>
       {/* Our Products */}
       <Products />
+      {/* Exchange */}
+      <Exchange />
       {/* Expert */}
       {/* <TalkToExpert /> */}
       {/* TechnologyStack */}

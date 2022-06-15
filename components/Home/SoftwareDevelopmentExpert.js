@@ -12,7 +12,7 @@ const SDE = ({ handleClick }) => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
-    centerMode: true,
+    centerMode: false,
     responsive: [
       {
         breakpoint: 1920,
@@ -27,10 +27,11 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
+          slidesToShow: 3,
+          slidesToScroll: 1,
           initialSlide: 2,
-          centerMode: false,
+          centerMode: true,
+          centerPadding: "0px",
         },
       },
       {
@@ -45,7 +46,7 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
           centerMode: false,
@@ -126,7 +127,7 @@ const SDE = ({ handleClick }) => {
         </Col>
         <Col xl={8}>
           <Row>
-            <Col xl={3} md={3} xs={6}>
+            <Col xl={3} md={4} xs={6}>
               <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
                 <Image
                   onClick={() => sliderRef.current.slickPrev()}

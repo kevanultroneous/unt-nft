@@ -11,6 +11,7 @@
 }
 .BtnContainer {
   justify-content: end;
+  width: 100%;
 }
 .OurProductsCardsMain:hover .RequestDemo {
   opacity: 1;
@@ -77,18 +78,19 @@
 .OurProductsCardsMain {
   border-top: 1px solid #ffffff;
   color: #ffffff;
-  width: 70%;
+  width: 75%;
   /* border-bottom: 1px solid #ffffff; */
 }
 .OurProductsCardSub {
-  padding-top: 2rem;
+  padding-top: 5rem;
   display: flex;
-  padding-bottom: 2rem;
+  padding-bottom: 5rem;
 }
 .OurProductsCardImage {
-  padding-right: 2rem;
+  padding-right: 5rem;
 }
 .OurProductsCardDetail {
+  width: 100%;
 }
 .OurProductsHead {
 }
@@ -147,14 +149,14 @@
     font-size: 16px;
   }
   .OurProductsCardImage {
-    padding-right: 1rem;
+    padding-right: 2rem;
   }
   .OurProductsCardImage img {
     height: 90px !important;
   }
   .OurProductsParagraph {
     font-size: 11px;
-    width: 10.4rem;
+    width: 14.4rem;
     text-align: justify;
   }
   .RequestDemo {
@@ -181,6 +183,17 @@
   }
   .OurProductsCardsMain {
     width: 100%;
+  }
+  .RequestDemo {
+    display: none;
+  }
+  .RequestDemo1 {
+    display: block;
+  }
+
+  .OurProductsCardsMain:hover .RequestDemo1 {
+    opacity: 1;
+    transition: all 1s ease;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

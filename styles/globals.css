@@ -113,6 +113,14 @@ a {
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .slick-slider {
+    padding: 0% !important;
+  }
+  /* the slides */
+  .slick-slide {
+    margin: 0 0px !important;
+    /* padding-right: 5rem; */
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

@@ -11,20 +11,20 @@ const Discover = () => {
   }, []);
   const arrayBox = [
     {
-      image: "/assets/images/24hrfull.svg",
+      image: "/assets/images/24h2.svg",
+      text: "15+ years of experience in blockchain and fintech services",
+    },
+    {
+      image: "/assets/images/24h2.svg",
       text: "Partnership based on Common Goals and Trust",
     },
     {
-      image: "/assets/images/24hrfull.svg",
-      text: "Localization Expertise with Global Footprint",
+      image: "/assets/images/24h2.svg",
+      text: "24*7 Multilingual Customer Support Service",
     },
     {
-      image: "/assets/images/24hrfull.svg",
+      image: "/assets/images/24h2.svg",
       text: "IT Security Certified to protect customer data",
-    },
-    {
-      image: "/assets/images/24hrfull.svg",
-      text: "Reduced Capex & Opex using Agile tools",
     },
   ];
   return (
@@ -73,20 +73,40 @@ const Discover = () => {
 
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
-          {arrayBox.map((value, index) => (
-            <Col xl={5} xs={6} md={6} key={index}>
-              <div
-                className={styles.DiscoverBox}
-                // data-aos="zoom-in"
-                // data-aos-duration="2000"
-              >
-                <div className={styles.DiscoverItemBox}>
-                  <Image src={value.image} />
-                </div>
-                <p className={styles.DiscoverItemParagraph}>{value.text}</p>
+          <Col xl={6} xs={6} md={6}>
+            <div className={styles.DiscoverBox}>
+              <div className={styles.DiscoverItemBox}>
+                <Image src={arrayBox[0].image} />
               </div>
-            </Col>
-          ))}
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[0].text}</p>
+            </div>
+          </Col>
+          <Col xl={6} xs={6} md={6}>
+            <div className={styles.DiscoverBox}>
+              <div className={styles.DiscoverItemBox}>
+                <Image src={arrayBox[1].image} />
+              </div>
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[1].text}</p>
+            </div>
+          </Col>
+        </Row>
+        <Row className={styles.DiscoverItemsRow}>
+          <Col xl={6} xs={6} md={6}>
+            <div className={styles.DiscoverBox}>
+              <div className={styles.DiscoverItemBox}>
+                <Image src={arrayBox[0].image} />
+              </div>
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[0].text}</p>
+            </div>
+          </Col>
+          <Col xl={6} xs={6} md={6}>
+            <div className={styles.DiscoverBox}>
+              <div className={styles.DiscoverItemBox}>
+                <Image src={arrayBox[1].image} />
+              </div>
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[1].text}</p>
+            </div>
+          </Col>
         </Row>
       </div>
     </div>

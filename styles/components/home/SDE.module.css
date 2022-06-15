@@ -33,6 +33,7 @@
 }
 .SoftwareDevelopmentExpertsRow {
   margin: 0%;
+  align-items: center;
 }
 .SoftwareDevelopmentExpertsBigHeadingContainer {
   padding-top: 2.5rem;
@@ -42,7 +43,7 @@
   font-weight: 600;
   font-size: 60px;
   padding-top: 4rem;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
 }
 .SoftwareDevelopmentExpertsBtnCol {
   display: flex;
@@ -175,7 +176,8 @@
     padding-left: 0.5rem;
   }
   .SliderCard {
-    width: 95% !important;
+    width: 90% !important;
+    height: 150px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

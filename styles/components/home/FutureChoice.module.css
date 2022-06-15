@@ -132,6 +132,9 @@
   .MainHungry {
     margin-top: 4rem;
   }
+  .CardTitle {
+    font-size: 45px;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

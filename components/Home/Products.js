@@ -125,14 +125,15 @@ const Products = () => {
                   </div>
                   <div>
                     <div className={styles.BtnContainer}>
-                      <div className={styles.RequestDemo1}>
-                        <HiOutlineExternalLink />
-                      </div>
                       <div
                         className={styles.RequestDemo}
                         // style={{ opacity: "0" }}
                       >
-                        Explore Product <HiOutlineExternalLink />
+                        Explore Product&nbsp;&nbsp;
+                        <HiOutlineExternalLink />
+                      </div>
+                      <div className={styles.RequestDemo1}>
+                        <HiOutlineExternalLink />
                       </div>
                     </div>
                   </div>
