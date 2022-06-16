@@ -41,11 +41,11 @@
   background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
   border-radius: 20px;
   color: #ffffff;
-  padding: 4rem 2rem 4rem 2rem;
+  padding: 4rem 2rem 4rem 4rem;
 }
 .CardTitle {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
 }
 .CardProfile {
   display: flex;
@@ -82,7 +82,7 @@
 }
 .HungryHeading {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 40px;
   color: #000000;
 }
 .HungryParagraph {

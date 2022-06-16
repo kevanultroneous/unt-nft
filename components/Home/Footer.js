@@ -38,7 +38,7 @@ const Footer = () => {
       <Row className={styles.FooterLinksContainer}>
         <Col xl={6}>
           <div className="d-flex align-items-center">
-            <div className={styles.FooterContactusLink}>Contact us</div>
+            <div className={styles.FooterContactusLink}>Explore</div>
             <HiOutlineExternalLink className={styles.ContactusIcon} />
           </div>
           <div>
@@ -76,18 +76,14 @@ const Footer = () => {
               <p>Product List</p>
 
               <ul className={styles.SubLinks}>
-                <li>Derivatives Trading</li>
-                <li>Spot Trading</li>
-                <li>NFT</li>
-                <li>DeFi</li>
-                <li>OTC Desk</li>
-                <li>P2P Trading</li>
-                <li>Private Blockchain and Tokenization</li>
-                <li>
-                  Fund Raising Launchpad
-                  <br />
-                  (IEO/ICO/IDO/IGO)
-                </li>
+                <li>MxTrade: Centralized Trading for Spot, OTC, P2P</li>
+                <li>MxFuture: Margin and Derivatives</li>
+                <li>MxDex: Decentralized Trading</li>
+                <li>MxFi: Defi Products and Use-cases</li>
+                <li>MxFund: Fundraising Platform</li>
+                <li>MxWallet: Wallet product</li>
+                <li>MxBlock: Enterprise blockchain and tokenization</li>
+                <li>MxNFT: NFT product use cases</li>
               </ul>
             </Col>
           </Row>

@@ -85,9 +85,8 @@ const Speciality = () => {
           // data-aos={"zoom-in"}
           // data-aos-duration="2000"
         >
-          "In 2017, MobifinX, with his experience with technologies, helped in a
-          project aimed at streamlining production operations. That's how
-          Flowbox came about. ”
+          "Our key USP is an excellent model of project management, which helps
+          in providing the most advanced crypto exchange software development.”
         </p>
       </div>
     </Row>

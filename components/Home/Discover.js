@@ -11,19 +11,19 @@ const Discover = () => {
   }, []);
   const arrayBox = [
     {
-      image: "/assets/images/24h2.svg",
+      image: "/assets/images/trading4.svg",
       text: "15+ years of experience in blockchain and fintech services",
     },
     {
-      image: "/assets/images/24h2.svg",
+      image: "/assets/images/trading3.svg",
       text: "Partnership based on Common Goals and Trust",
     },
     {
-      image: "/assets/images/24h2.svg",
+      image: "/assets/images/trading2.svg",
       text: "24*7 Multilingual Customer Support Service",
     },
     {
-      image: "/assets/images/24h2.svg",
+      image: "/assets/images/trading1.svg",
       text: "IT Security Certified to protect customer data",
     },
   ];

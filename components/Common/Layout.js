@@ -1,4 +1,5 @@
 import Head from "next/head";
+import Footer from "../Home/Footer";
 import Cursor from "./Cursor";
 const Layout = ({ title, children }) => {
   return (
@@ -10,6 +11,7 @@ const Layout = ({ title, children }) => {
         <Cursor />
         {children}
       </main>
+      <Footer />
     </div>
   );
 };

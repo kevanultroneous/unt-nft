@@ -13,7 +13,7 @@ const Products = () => {
   }, []);
   const ProductsList = [
     {
-      name: "MxMarket",
+      name: "MxTrade",
       detail:
         "A Centralized Trading platform for Spot trading, OTC desk, and P2P Trading. Offers world-class trading technology, robust legal and compliance solutions, and round-the-clock support. Automate trades without involving a central authority and connect buyers and sellers directly.",
       link1: "",
@@ -21,7 +21,7 @@ const Products = () => {
       img: "/assets/images/mh1.svg",
     },
     {
-      name: "MxSuper",
+      name: "MxFuture",
       detail:
         "A Top-notch derivative and Margin exchange platform that promises to open up new investment avenues for traders. Gain access to a pool of untapped crypto holders and accelerate the transaction process with automated smart contracts.",
       link1: "",
@@ -31,7 +31,7 @@ const Products = () => {
     {
       name: "MxDex",
       detail:
-        "We help you facilitate the large-scale trading of crypto assets between many users with a decentralized trading platform. A fast and transparent solution enables users to have complete control over their accounts and assets.",
+        "We help you facilitate the large-scale trading of crypto assets between many users with a decentralized trading platform. A fast and transparent solution enables users to have complete control over their accounts and assets. ",
       link1: "",
       link2: "",
       img: "/assets/images/mh3.svg",

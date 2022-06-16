@@ -1,12 +1,15 @@
 import styles from "@/styles/components/home/Process.module.css";
 import AOS from "aos";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 const Process = () => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
+
+  const [value, setValue] = useState(0);
+
   const dataProcess = [
     {
       name: "understand",
@@ -27,6 +30,25 @@ const Process = () => {
       name: "Go-Live",
       bcolor: "#A199FF",
       bkcolor: "#FFF1E8",
+    },
+  ];
+
+  const completeText = [
+    {
+      heading: "Analyze and understand the needs",
+      text: "We help you walk through by giving you detailed insights into what we offer and what are the industry standardizations. So you can get acquainted with the product that suits your preferences. This will help you understand why you should select MobifinX as your tech partner.",
+    },
+    {
+      heading: "Explore all the features",
+      text: "In this phase, you can sign up for the platform and experience enhanced performance. Check out all the features live, familiarize yourself with all the functions, and trade by yourself. We create and implement specific FAQs and tutorials for convenience and guidance.",
+    },
+    {
+      heading: "Customize the configuration and theme",
+      text: "In this step, you can choose products as well as specify the configurations and layouts that suit your requirements perfectly. We customize the parameters according to your preferences.",
+    },
+    {
+      heading: "Launch and Start earning",
+      text: "Once all of the requirements have been met, all you need to do is pay and choose the particular domain and cloud. And you can start generating revenue.",
     },
   ];
 
@@ -53,7 +75,10 @@ const Process = () => {
           </div>
           <div className={styles.ProcessBoxesContainer}>
             {dataProcess.map((v, i) => (
-              <div className={styles.ProcessBox}>
+              <div
+                className={styles.ProcessBox}
+                onMouseEnter={() => setValue(i)}
+              >
                 <div className={styles.ProcessBlinkMain}>
                   <div
                     className={styles.ProcessBlink}
@@ -69,10 +94,13 @@ const Process = () => {
                     ></div>
                   </div>
                 </div>
-                <div>
+                <div className={styles.ProcessBlinkParent}>
                   <p
                     className={styles.ProcessParagraph}
-                    style={{ color: v.bcolor }}
+                    style={
+                      i === value ? { color: v.bcolor } : { color: "#000" }
+                    }
+                    onClick={() => setValue(i)}
                   >
                     {v.name}
                   </p>
@@ -84,16 +112,10 @@ const Process = () => {
       </div>
       <div className={styles.YourNeedContainer}>
         <h6 className={styles.YourNeedHeading}>
-          Analyze & Understand the Needs
+          {completeText[value].heading}
         </h6>
         <div className={styles.YourNeedPContainer}>
-          <p>
-            We help you walk through by giving you detailed insights into what
-            we offer and what are the industry standardizations. So you can get
-            acquainted with the product that suits your preferences. This will
-            help you understand why you should select MobifinX as your tech
-            partner.
-          </p>
+          <p>{completeText[value].text}</p>
         </div>
       </div>
     </div>

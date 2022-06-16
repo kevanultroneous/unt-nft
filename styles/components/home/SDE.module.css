@@ -72,6 +72,7 @@
 .SoftwareDevelopmentExpertsBtnCol {
   display: flex;
   justify-content: end;
+  padding-right: 4rem;
 }
 /* .SoftwareDevelopmentExpertsSliderContainer {
   display: flex;
