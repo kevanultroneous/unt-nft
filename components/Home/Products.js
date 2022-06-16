@@ -3,6 +3,8 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
 import { useEffect, useState } from "react";
+import LearnMore from "../Common/LearnMore";
+import { MdKeyboardArrowRight } from "react-icons/md";
 const Products = () => {
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
@@ -121,10 +123,14 @@ const Products = () => {
                     <p className={styles.OurProductsParagraph}>
                       {value.detail}
                     </p>
-                    <div className={styles.LearnMore}>
+                    {/* <div className={styles.LearnMore}>
                       Learn More{" "}
                       <Image src="/assets/images/sendBtn.svg" height={15} />
-                    </div>
+                    </div> */}
+                    <LearnMore
+                      t1={<MdKeyboardArrowRight />}
+                      t2={<MdKeyboardArrowRight />}
+                    />
                   </div>
                   <div>
                     <div className={styles.BtnContainer}>
