@@ -24,72 +24,72 @@ export default function Home() {
   const [pos2, setPos2] = useState(null);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
-  // useEffect(() => {
-  //   const timer1 = setTimeout(() => {
-  //     setPos2(true);
-  //     console.log("called");
-  //   }, 10);
-  //   const timer2 = setTimeout(() => {
-  //     clearTimeout(timer1);
-  //     setPos1(true);
-  //   }, 1000);
-  //   const timer3 = setTimeout(() => {
-  //     clearTimeout(timer2);
-  //     setPos2(false);
-  //   }, 5000);
-  //   return () => clearTimeout(timer3);
-  // }, []);
+  useEffect(() => {
+    const timer1 = setTimeout(() => {
+      setPos2(true);
+      console.log("called");
+    }, 10);
+    const timer2 = setTimeout(() => {
+      clearTimeout(timer1);
+      setPos1(true);
+    }, 1000);
+    const timer3 = setTimeout(() => {
+      clearTimeout(timer2);
+      setPos2(false);
+    }, 5000);
+    return () => clearTimeout(timer3);
+  }, []);
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
-      {/* {pos1 ? <Menu opacity={on} /> : null} */}
-      <Menu opacity={on} />
-      {/* <SmoothScroll> */}
-      {/* {pos2 ? (
-        <section>
-          <IntroContainer />
-        </section>
-      ) : pos2 !== null ? (
-        <> */}
-      <section ref={section1}>
-        <SDE handleClick={() => scrollToRef(section2)} />
-      </section>
+      {pos1 ? <Menu opacity={on} /> : null}
 
-      {/* handleclick={() => {
-     scrollToRef(section1);
-   }} */}
-      {/* Menu Sections */}
-      {/* frame 1 -software development Experts*/}
-      {/* Discover MOBIFINIX */}
-      <section ref={section2}>
-        <Discover />
-      </section>
-      {/* Our Products */}
-      <Products />
-      {/* Exchange */}
-      <Exchange />
-      {/* Expert */}
-      {/* <TalkToExpert /> */}
-      {/* TechnologyStack */}
-      {/* <TechnologyStack /> */}
+      <SmoothScroll>
+        {pos2 ? (
+          <section>
+            <IntroContainer />
+          </section>
+        ) : pos2 !== null ? (
+          <>
+            <section ref={section1}>
+              <SDE handleClick={() => scrollToRef(section2)} />
+            </section>
+            {/* Menu Sections */}
+            {/* frame 1 -software development Experts*/}
+            {/* Discover MOBIFINIX */}
+            <section ref={section2}>
+              <Discover />
+            </section>
+            {/* Our Products */}
+            <Products />
+            {/* Exchange */}
+            <Exchange />
+            {/* Expert */}
+            {/* <TalkToExpert /> */}
+            {/* TechnologyStack */}
+            {/* <TechnologyStack /> */}
 
-      {/* Inspiredby */}
-      <Inspiredby />
-      {/* Process */}
-      <Process />
-      {/* be a part of future choice */}
-      <FutureChoice />
-      {/* Achievements */}
-      {/* <Achievements /> */}
-      {/* Speciality */}
-      <Speciality />
-      {/* GetInTouch */}
-      {/* <GetInTouch /> */}
-      {/* Footer */}
-      <Footer />
-      {/* </>
-      ) : null} */}
-      {/* </SmoothScroll> */}
+            {/* Inspiredby */}
+            <Inspiredby />
+            {/* Process */}
+            <Process />
+            {/* be a part of future choice */}
+            <FutureChoice />
+            {/* Achievements */}
+            {/* <Achievements /> */}
+            {/* Speciality */}
+            <Speciality />
+            {/* GetInTouch */}
+            {/* <GetInTouch /> */}
+            {/* Footer */}
+            <Footer />
+          </>
+        ) : null}
+      </SmoothScroll>
     </Layout>
   );
 }
+/*
+
+
+*/

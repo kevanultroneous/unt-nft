@@ -11,14 +11,14 @@ const SDE = ({ handleClick }) => {
     infinite: true,
     speed: 500,
     slidesToShow: 3,
-    slidesToScroll: 1,
+    slidesToScroll: 4,
     centerMode: false,
     responsive: [
       {
         breakpoint: 1920,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 4,
           initialSlide: 2,
           centerMode: true,
           centerPadding: "40px",
@@ -28,7 +28,7 @@ const SDE = ({ handleClick }) => {
         breakpoint: 885,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 1,
+          slidesToScroll: 4,
           initialSlide: 2,
           centerMode: true,
           centerPadding: "0px",
@@ -37,8 +37,8 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           initialSlide: 2,
           centerMode: false,
         },
@@ -47,7 +47,7 @@ const SDE = ({ handleClick }) => {
         breakpoint: 480,
         settings: {
           slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToScroll: 2,
           initialSlide: 2,
           centerMode: false,
         },
@@ -70,13 +70,9 @@ const SDE = ({ handleClick }) => {
   }, []);
   const sliderRef = useRef();
   return (
-    <div
-      // data-aos="fade-up"
-      // data-aos-duration="2000"
-      className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}
-    >
+    <div className={`${styles.SoftwareDevelopmentExpertsContainer} frame1`}>
       <Row className={styles.SoftwareDevelopmentExpertsRow}>
-        <Col xl={6} xs={6} md={6}>
+        <Col xl={6} xs={6} md={6} className="p-0">
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
             <span
@@ -105,7 +101,11 @@ const SDE = ({ handleClick }) => {
         // data-aos="zoom-in"
         // data-aos-duration="2000"
       >
-        <h3 className={styles.SoftwareDevelopmentExpertsBigHeading}>
+        <h3
+          className={styles.SoftwareDevelopmentExpertsBigHeading}
+          data-aos="fade"
+          data-aos-duration="2000"
+        >
           We’re Crypto Coin Trading
           <br />
           Software Development Experts.
@@ -123,6 +123,7 @@ const SDE = ({ handleClick }) => {
               className={styles.ImageDown}
             />
             <p className={styles.ScrolldownText}>Scroll Down</p>
+            {/*  */}
           </div>
         </Col>
         <Col xl={8}>

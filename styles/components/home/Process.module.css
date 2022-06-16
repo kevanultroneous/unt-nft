@@ -17,7 +17,7 @@
   justify-content: center;
 }
 .MainPs {
-  width: 40rem;
+  width: 35rem;
 }
 .ProcessHead {
   font-weight: 600;
@@ -55,10 +55,12 @@
   border: 0.8px solid #e27625;
 }
 .ProcessParagraph {
-  padding-top: 1rem;
+  /* padding-top: 1rem; */
   width: 92px;
+  text-transform: uppercase;
   font-weight: 400;
   font-size: 14px;
+  letter-spacing: 0.2em;
   text-align: center;
 }
 .ProcessBox {
@@ -76,13 +78,14 @@
   padding-bottom: 2rem;
   padding-top: 2rem;
   position: absolute;
-  width: 35rem;
-  margin-left: 2rem;
+  width: 32rem;
+  margin-left: 2.5rem;
+  padding-right: 2rem;
   flex-direction: column;
 }
 .ProcessBlink {
-  width: 2rem;
-  height: 2rem;
+  width: 1rem;
+  height: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -90,12 +93,14 @@
   transition: all 0.8s ease;
   z-index: 5;
 }
-
-.ProcessBlink:hover {
+.ProcessBox:hover .ProcessBlink {
   width: 3rem;
   height: 3rem;
+  transition: all 0.8s ease;
 }
-
+.ProcessBox:hover .ProcessParagraph {
+  font-weight: 700;
+}
 .ProcessBlinkMain {
   display: flex;
   height: 4rem;
@@ -110,6 +115,8 @@
 .YourNeedHeading {
   font-weight: 600;
   font-size: 22px;
+  margin: 0%;
+  padding-bottom: 2rem;
 }
 .YourNeedPContainer {
   display: flex;
@@ -130,7 +137,7 @@
     width: 100%;
   }
   .ProcessLineContainer {
-    width: 70%;
+    width: 80%;
   }
   .ProcessParagraph {
     padding-top: 1rem;

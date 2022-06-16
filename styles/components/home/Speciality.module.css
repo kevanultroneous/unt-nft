@@ -1,7 +1,7 @@
 .SpecialityContainer {
   margin: 0%;
   display: flex;
-  padding: 4rem 3rem 4rem 8.5rem;
+  padding: 8rem 3rem 8rem 8.5rem;
   background: rgba(26, 28, 60, 0.03);
 }
 .SpecialityParagraph {
@@ -17,6 +17,8 @@
 }
 .SpecialityBox {
   width: fit-content;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
 .Count {
   font-weight: 500;

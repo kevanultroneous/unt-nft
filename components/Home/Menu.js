@@ -16,7 +16,7 @@ const Menu = ({ opacity }) => {
       style={{ opacity: opacity, zIndex: "100" }}
     >
       <div>
-        <Image src="/assets/images/xicon.svg" fluid />
+        <Image src="/assets/images/xicon.svg" fluid className="pt-4" />
       </div>
       {/* <div>
         <Image src="/assets/images/menuicon.svg" fluid />

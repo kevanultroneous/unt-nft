@@ -9,22 +9,22 @@ const Process = () => {
   }, []);
   const dataProcess = [
     {
-      name: "Understanding Your Needs",
+      name: "understand",
       bcolor: "#E27625",
       bkcolor: "#FFF1E8",
     },
     {
-      name: "Formulating a Scheme",
+      name: "Experience",
       bcolor: "#00ACD7",
       bkcolor: "#FFF1E8",
     },
     {
-      name: "Signing Contracts",
+      name: "Customize",
       bcolor: "#763E1A",
       bkcolor: "#FFF1E8",
     },
     {
-      name: "Gathering Domain Names",
+      name: "Go-Live",
       bcolor: "#A199FF",
       bkcolor: "#FFF1E8",
     },
@@ -70,7 +70,12 @@ const Process = () => {
                   </div>
                 </div>
                 <div>
-                  <p className={styles.ProcessParagraph}>{v.name}</p>
+                  <p
+                    className={styles.ProcessParagraph}
+                    style={{ color: v.bcolor }}
+                  >
+                    {v.name}
+                  </p>
                 </div>
               </div>
             ))}

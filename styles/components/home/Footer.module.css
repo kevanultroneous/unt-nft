@@ -37,20 +37,35 @@
 .MailBtn {
 }
 .FooterContactusLink {
-  font-family: Poppins, sans-serif;
-  color: #1a1c3c;
-  -webkit-text-stroke: 0.5px #fff;
-  font-weight: 600;
-  font-size: 70px;
-  transition: all 1s ease;
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px #ffffff;
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.6s ease-in-out;
+  -o-transition: background-position 0.6s ease-in-out;
+  transition: background-position 0.6s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #a21d34e5),
+    color-stop(50%, #1a1c3c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #a21d34e5 50%, #1a1c3c 50%);
+  background-image: -o-linear-gradient(bottom, #a21d34e5 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #a21d34e5 50%, #1a1c3c 50%);
 }
 .FooterContactusLink:hover {
-  font-family: Poppins, sans-serif;
-  color: rgba(162, 29, 52, 1);
-  -webkit-text-stroke: 0.5px rgba(162, 29, 52, 1);
-  font-weight: 600;
-  font-size: 70px;
-  transition: all 1s ease;
+  background-position: bottom;
 }
 .ContactusIcon {
   font-size: 60px;
@@ -58,7 +73,7 @@
   color: rgba(255, 255, 255, 0.2);
 }
 .FooterLinksContainer {
-  padding-top: 2rem;
+  padding-top: 5rem;
   margin: 0%;
 }
 .MainLinks {
@@ -86,6 +101,14 @@
   transition: all 1s ease;
 }
 .SubLinks li:hover {
+  color: rgba(162, 29, 52, 1);
+  transition: all 1s ease;
+}
+
+.IconHover {
+  margin-top: 2rem;
+}
+.IconHover:hover {
   color: rgba(162, 29, 52, 1);
   transition: all 1s ease;
 }

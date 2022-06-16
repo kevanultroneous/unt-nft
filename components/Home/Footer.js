@@ -42,12 +42,17 @@ const Footer = () => {
             <HiOutlineExternalLink className={styles.ContactusIcon} />
           </div>
           <div>
-            <IoLogoLinkedin style={{ fontSize: "30px" }} />
+            <IoLogoLinkedin
+              style={{ fontSize: "30px" }}
+              className={styles.IconHover}
+            />
             <IoLogoFacebook
               style={{ fontSize: "30px", borderRadius: "1rem" }}
+              className={styles.IconHover}
             />
             <AiFillTwitterSquare
               style={{ fontSize: "30px", borderRadius: "0.8rem" }}
+              className={styles.IconHover}
             />
           </div>
         </Col>

@@ -97,7 +97,7 @@ const Products = () => {
             onMouseMove={(e) => {
               setXcord(e.pageX);
               setYcord(e.pageY);
-              setOpacitycord("0.8");
+              setOpacitycord("0.7");
             }}
             onMouseOut={() => setOpacitycord("0")}
             onMouseLeave={() => setOpacitycord("0")}
@@ -105,8 +105,11 @@ const Products = () => {
             {/*  */}
             {ProductsList.map((value, index) => (
               <div
-                // data-aos={"fade-left"}
-                // data-aos-duration="3000"
+                data-aos="fade-left"
+                data-aos-duration="500"
+                data-aos-easing="ease-in-out"
+                data-aos-mirror="true"
+                data-aos-offset="300"
                 className={`${styles.OurProductsCardsMain}`}
               >
                 <div className={styles.OurProductsCardSub}>

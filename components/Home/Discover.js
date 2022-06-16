@@ -74,7 +74,14 @@ const Discover = () => {
       <div className={styles.DiscoverItemsContainer}>
         <Row className={styles.DiscoverItemsRow}>
           <Col xl={6} xs={6} md={6}>
-            <div className={styles.DiscoverBox}>
+            <div
+              className={styles.DiscoverBox}
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+              data-aos-mirror="true"
+            >
               <div className={styles.DiscoverItemBox}>
                 <Image src={arrayBox[0].image} />
               </div>
@@ -82,7 +89,14 @@ const Discover = () => {
             </div>
           </Col>
           <Col xl={6} xs={6} md={6}>
-            <div className={styles.DiscoverBox}>
+            <div
+              className={styles.DiscoverBox}
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+              data-aos-mirror="true"
+            >
               <div className={styles.DiscoverItemBox}>
                 <Image src={arrayBox[1].image} />
               </div>
@@ -92,19 +106,33 @@ const Discover = () => {
         </Row>
         <Row className={styles.DiscoverItemsRow}>
           <Col xl={6} xs={6} md={6}>
-            <div className={styles.DiscoverBox}>
+            <div
+              className={styles.DiscoverBox}
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-delay="800"
+              data-aos-easing="ease"
+              data-aos-mirror="true"
+            >
               <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[0].image} />
+                <Image src={arrayBox[2].image} />
               </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[0].text}</p>
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[2].text}</p>
             </div>
           </Col>
           <Col xl={6} xs={6} md={6}>
-            <div className={styles.DiscoverBox}>
+            <div
+              className={styles.DiscoverBox}
+              data-aos="fade-left"
+              data-aos-duration="3000"
+              data-aos-delay="800"
+              data-aos-easing="ease"
+              data-aos-mirror="true"
+            >
               <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[1].image} />
+                <Image src={arrayBox[3].image} />
               </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[1].text}</p>
+              <p className={styles.DiscoverItemParagraph}>{arrayBox[3].text}</p>
             </div>
           </Col>
         </Row>

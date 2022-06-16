@@ -1,6 +1,6 @@
 .OurProductsContainer {
   background: #1a1c3c;
-  padding: 4rem 3rem 4rem 8.5rem;
+  padding: 8rem 3rem 8rem 8.5rem;
 }
 .borderHide {
   border-bottom: none !important;
@@ -23,6 +23,7 @@
   width: fit-content;
   font-weight: 400;
   font-size: 14px;
+  width: 10rem;
   color: #ffffff;
   background: #a21d34;
   border-radius: 22px;
@@ -37,7 +38,7 @@
 .RequestDemo1 {
   display: none;
   opacity: 0;
-  width: fit-content;
+  width: 2.5rem;
   font-weight: 400;
   font-size: 14px;
   color: #ffffff;
@@ -66,7 +67,7 @@
   color: #ffffff;
 }
 .OurProductsCardsContainer {
-  padding-top: 2.5rem;
+  padding-top: 6rem;
 }
 .OurProductsCard {
   width: 100%;
@@ -107,6 +108,9 @@
   transition: all 1s ease;
 }
 .FollowerLight {
+  pointer-events: none;
+  width: 900px;
+  height: 900px;
   background: -webkit-radial-gradient(
     44.17% 56.2%,
     36.88% 29.95%,
@@ -121,14 +125,10 @@
   );
   background: radial-gradient(
     36.88% 29.95% at 44.17% 56.2%,
-    #16155e -0%,
+    #16155e 0%,
     rgba(22, 21, 94, 0) 100%
   );
-  pointer-events: none;
-  padding: 10px;
-  width: 1000px;
-  height: 1000px;
-  position: fixed;
+  position: absolute;
   transform: translate(-50%, -50%);
 }
 @media (min-width: 320px) and (max-width: 450px) {

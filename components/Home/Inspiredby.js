@@ -3,12 +3,16 @@ import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
-const CardInspired = ({ style, srcimg, animtype }) => {
+const CardInspired = ({ style, srcimg, animtype, animdelay }) => {
   return (
     <div
       className={`${styles.InspiredCardcontainer} ${style}`}
       data-aos={animtype}
       data-aos-duration="3000"
+      data-aos-delay={animdelay}
+      data-aos-easing="ease-in-out"
+      data-aos-mirror="true"
+      // data-aos-offset={animOf}
     >
       <Image src={srcimg} alt="Avatar" className={styles.InspiredCardImage} />
       <div className={styles.InspiredDis}>
@@ -71,13 +75,15 @@ const Inspiredby = () => {
             Get Inspired by Case Studies
           </h3>
           <CardInspired
-            // animtype={"fade-down"}
+            animtype={"fade-up"}
             srcimg={"/assets/images/inspiration1.png"}
             style={styles.InspiredCardSpace}
+            animdelay={"400"}
           />
           <CardInspired
-            // animtype={"fade-up"}
+            animtype={"fade-up"}
             srcimg={"/assets/images/inspiration3.png"}
+            animdelay={"1200"}
           />
           <div className={styles.InspiredCardView}>
             <p className={styles.Viewall}>View All</p>
@@ -93,13 +99,15 @@ const Inspiredby = () => {
             Get Inspired by Case Studies
           </h3>
           <CardInspired
-            // animtype={"fade-right"}
+            animtype={"fade-up"}
             srcimg={"/assets/images/inspiration2.png"}
             style={styles.InspiredCardSpace}
+            animdelay={"800"}
           />
           <CardInspired
-            // animtype={"fade-left"}
+            animtype={"fade-up"}
             srcimg={"/assets/images/insp4.png"}
+            animdelay={"1600"}
           />
           <div className={styles.InspiredCardView2}>
             <p className={styles.Viewall2}>View All</p>
