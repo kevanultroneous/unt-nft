@@ -90,7 +90,7 @@
   height: 3rem;
 }
 .SoftwareDevelopmentExpertSliderBtnLeft:hover {
-  transform: scale(0.8);
+  transform: scale(0.9);
   transition: all 1s ease;
 }
 .SoftwareDevelopmentExpertSliderBtnRight {
@@ -99,7 +99,7 @@
   height: 3rem;
 }
 .SoftwareDevelopmentExpertSliderBtnRight:hover {
-  transform: scale(0.8);
+  transform: scale(0.9);
   transition: all 1s ease;
 }
 .SliderCard {

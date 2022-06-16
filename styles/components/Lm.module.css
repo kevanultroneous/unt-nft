@@ -1,0 +1,93 @@
+.ulc ul {
+  display: flex;
+  align-items: center;
+  margin: 0;
+}
+.ulc p {
+  margin: 0%;
+  padding-right: 0.5rem;
+}
+.ulc a {
+  color: #fff;
+}
+.menu {
+  display: flex;
+  justify-content: center;
+  height: 30px;
+  width: 30px;
+  background-color: #a21d34;
+  border-radius: 100%;
+}
+
+.menu li {
+  margin-right: 70px;
+  width: fit-content;
+}
+
+.menu a {
+  position: relative;
+  display: block;
+  overflow: hidden;
+}
+
+.menu a span {
+  transition: transform 0.2s ease-out;
+}
+
+.menu a span:first-child {
+  display: inline-block;
+  padding-top: 0.1rem;
+  padding-left: 0.3rem;
+}
+
+.menu a span:last-child {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%);
+}
+
+.menu i {
+  font-size: 30px;
+}
+
+.menu a:hover span:first-child {
+  transform: translateY(100%);
+}
+
+.menu a:hover span:last-child,
+.menu[data-animation] a:hover span:last-child {
+  transform: none;
+}
+
+/* ANIMATIONS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.menu[data-animation="to-right"] a span:last-child {
+  transform: translateX(-100%);
+}
+
+.menu[data-animation="to-right"] a:hover span:first-child {
+  transform: translateX(100%);
+}
+
+.para:hover {
+  color: #a21d34;
+}
+/* FOOTER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.page-footer {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  font-size: 1rem;
+}
+
+.page-footer span {
+  color: var(--red);
+}

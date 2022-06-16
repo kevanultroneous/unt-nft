@@ -12,8 +12,8 @@
 .InspiredCardImage {
   display: block;
   height: auto;
-  width: 300px;
-  height: 400px;
+  width: 400px;
+  height: 500px;
 }
 .InspiredDis {
   padding: 1rem;
@@ -27,7 +27,7 @@
     rgba(26, 28, 59, 0) 140.06%
   );
   height: 130px;
-  width: 300px;
+  width: 400px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   color: #fff;
@@ -41,6 +41,7 @@
   font-weight: 400;
   font-size: 16px;
   margin: 0%;
+  padding-bottom: 1rem;
 }
 .InspiredCardOverlay {
   position: absolute;
@@ -57,10 +58,20 @@
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
   overflow: hidden;
-  width: 300px;
+  width: 400px;
   transition: all 1s ease;
 }
-
+.InspiredDishead1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0%;
+}
+.Inspired {
+  width: 3rem;
+  height: 2px;
+  background: #ffffff;
+  margin-bottom: 1rem;
+}
 .InspiredCardcontainer:hover .InspiredCardOverlay {
   height: 100%;
   border-radius: 20px;
@@ -68,11 +79,13 @@
   transition: all 1s ease;
   opacity: 1;
 }
-
+.InspiredCardcontainer:hover .InspiredDis {
+  opacity: 0;
+}
 .InspiredCardText {
   color: white;
   font-size: 20px;
-  padding-top: 4rem;
+  padding-top: 2rem;
   padding-left: 1rem;
   padding-right: 1rem;
   position: absolute;
@@ -80,7 +93,6 @@
 .InspiredCardCol {
   display: flex;
   flex-direction: column;
-  align-items: center;
 }
 .InspiredCardSpace {
   margin-bottom: 3rem;
