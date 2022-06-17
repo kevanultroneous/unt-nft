@@ -20,7 +20,6 @@ const IntroContainer = ({ handleclick, hidden }) => {
           src="/assets/images/mainicon.svg"
           fluid
           draggable={false}
-          onClick={() => handleclick()}
         />
       </div>
     </div>

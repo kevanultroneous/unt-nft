@@ -1,0 +1,64 @@
+.WhatWillYouGetWithUs {
+  background: url("/assets/images/Whatwillyouget.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-left: 8.5rem;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  height: 100vh;
+}
+
+.WhatWillYouGetWithUsLeft {
+  padding: 2rem;
+}
+
+.WhatWillYouGetWithUsLeft h2 {
+  font-weight: 600;
+  font-size: 50px;
+  color: #fff;
+  margin-bottom: 3rem;
+}
+
+.WhatWillYouGetText {
+  color: #5f6076;
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  padding-left: 0.7rem;
+  border-left: 3px solid transparent;
+}
+
+.WhatWillYouGetText:hover,
+.WhatWillYouGetTextActive {
+  transition: all 0.3s ease;
+  font-size: 16px;
+  font-weight: 500;
+  margin-bottom: 1.3rem;
+  padding-left: 0.7rem;
+  color: #fff;
+  border-left: 3px solid #fff;
+}
+
+.SmallImage {
+  width: 15rem;
+  position: relative;
+  bottom: 3rem;
+  left: 15rem;
+}
+
+.SmallImage img,
+.BigImage img {
+  height: auto;
+  width: 100%;
+  border-radius: 25px 0 0 25px;
+}
+
+.WhatWillYouGetWithUsRight {
+  padding: 0;
+  display: flex;
+  justify-content: right;
+  align-items: center;
+  padding-bottom: 5rem;
+}

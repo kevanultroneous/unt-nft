@@ -1,4 +1,3 @@
-import Footer from "@/components/Home/Footer";
 import Process from "@/components/Home/Process";
 import TalkToExpert from "@/components/Home/TalkToExpert";
 import Inspiredby from "@/components/Home/Inspiredby";
@@ -14,6 +13,7 @@ import Products from "@/components/Home/Products";
 import Layout from "@/components/Common/Layout";
 import SmoothScroll from "@/components/SmoothScroll.component";
 import Exchange from "@/components/Home/Exchange";
+import WhatWillYouGetWithUs from "@/components/Home/WhatWillYouGetWithUs";
 export default function Home() {
   //
   const [on, setOn] = useState("1");
@@ -44,48 +44,48 @@ export default function Home() {
       {/* Intro container */}
       {pos1 ? <Menu opacity={on} /> : null}
 
-      <SmoothScroll>
-        {pos2 ? (
-          <section>
-            <IntroContainer />
+      {/* <SmoothScroll> */}
+      {pos2 ? (
+        <section>
+          <IntroContainer />
+        </section>
+      ) : pos2 !== null ? (
+        <>
+          <section ref={section1}>
+            <SDE handleClick={() => scrollToRef(section2)} />
           </section>
-        ) : pos2 !== null ? (
-          <>
-            <section ref={section1}>
-              <SDE handleClick={() => scrollToRef(section2)} />
-            </section>
-            {/* Menu Sections */}
-            {/* frame 1 -software development Experts*/}
-            {/* Discover MOBIFINIX */}
-            <section ref={section2}>
-              <Discover />
-            </section>
-            {/* Our Products */}
-            <Products />
-            {/* Exchange */}
-            <Exchange />
-            {/* Expert */}
-            {/* <TalkToExpert /> */}
-            {/* TechnologyStack */}
-            {/* <TechnologyStack /> */}
+          {/* Menu Sections */}
+          {/* frame 1 -software development Experts*/}
+          {/* Discover MOBIFINIX */}
+          <section ref={section2}>
+            <Discover />
+          </section>
+          {/* Our Products */}
+          <Products />
+          {/* Exchange */}
+          <Exchange />
+          {/* Expert */}
+          {/* <TalkToExpert /> */}
+          {/* TechnologyStack */}
+          {/* <TechnologyStack /> */}
+          <WhatWillYouGetWithUs />
 
-            {/* Inspiredby */}
-            <Inspiredby />
-            {/* Process */}
-            <Process />
-            {/* be a part of future choice */}
-            <FutureChoice />
-            {/* Achievements */}
-            {/* <Achievements /> */}
-            {/* Speciality */}
-            <Speciality />
-            {/* GetInTouch */}
-            {/* <GetInTouch /> */}
-            {/* Footer */}
-            <Footer />
-          </>
-        ) : null}
-      </SmoothScroll>
+          {/* Inspiredby */}
+          <Inspiredby />
+          {/* Process */}
+          <Process />
+          {/* be a part of future choice */}
+          <FutureChoice />
+          {/* Achievements */}
+          {/* <Achievements /> */}
+          {/* Speciality */}
+          <Speciality />
+          {/* GetInTouch */}
+          {/* <GetInTouch /> */}
+          {/* Footer */}
+        </>
+      ) : null}
+      {/* </SmoothScroll> */}
     </Layout>
   );
 }

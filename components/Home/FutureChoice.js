@@ -12,7 +12,7 @@ const FutureChoice = () => {
   return (
     <div className={styles.FutureChoiceContainer}>
       <Row>
-        <Col xl={7} md={12}>
+        <Col xl={8} md={12}>
           <div
             className={styles.CardBg}
             // data-aos="flip-left"
@@ -53,7 +53,7 @@ const FutureChoice = () => {
             </Row>
           </div>
         </Col>
-        <Col xl={5} md={12}>
+        <Col xl={4} md={12}>
           <div className={styles.MainHungry}>
             <div
               className={styles.HungryCard}
