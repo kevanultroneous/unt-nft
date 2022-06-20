@@ -6,8 +6,9 @@
 }
 .SpecialityParagraph {
   font-weight: 500;
-  font-size: 40px;
-  color: rgba(0, 0, 0, 0.12);
+  font-size: 51px;
+  padding-right: 1rem;
+  color: rgba(0, 0, 0, 0.11);
 }
 .CountRight {
   width: 100%;

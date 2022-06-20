@@ -48,7 +48,7 @@ const CardInspired = ({
           <div className={styles.Inspired}></div>
 
           <p className={styles.InspiredDisParagraph}>{disp2}</p>
-          <p>
+          {/* <p>
             Learn More{" "}
             <MdKeyboardArrowRight
               style={{
@@ -57,7 +57,7 @@ const CardInspired = ({
                 borderRadius: "100%",
               }}
             />
-          </p>
+          </p> */}
         </div>
       </div>
     </div>

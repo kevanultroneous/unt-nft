@@ -4,6 +4,7 @@ import { useEffect } from "react";
 import AOS from "aos";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
+import Gb from "../Common/Gb";
 const FutureChoice = () => {
   useEffect(() => {
     AOS.refresh();

@@ -5,6 +5,7 @@ import AOS from "aos";
 import { useEffect, useState } from "react";
 import LearnMore from "../Common/LearnMore";
 import { MdKeyboardArrowRight } from "react-icons/md";
+import ActionButtonV3 from "../Common/ActionButtonV3";
 const Products = () => {
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
@@ -21,6 +22,8 @@ const Products = () => {
       link1: "",
       link2: "",
       img: "/assets/images/mh1.svg",
+      btnc: "linear-gradient(to right, #F27E63 50%, transparent 50%)",
+      border: "1px solid #F27E63",
     },
     {
       name: "MxFuture",
@@ -28,7 +31,9 @@ const Products = () => {
         "A Top-notch derivative and Margin exchange platform that promises to open up new investment avenues for traders. Gain access to a pool of untapped crypto holders and accelerate the transaction process with automated smart contracts.",
       link1: "",
       link2: "",
-      img: "/assets/images/mh2.svg",
+      img: "/assets/images/MF.png",
+      btnc: "linear-gradient(to right, #00ACD7 50%, transparent 50%)",
+      border: "1px solid #00ACD7",
     },
     {
       name: "MxDex",
@@ -37,6 +42,8 @@ const Products = () => {
       link1: "",
       link2: "",
       img: "/assets/images/mh3.svg",
+      btnc: "linear-gradient(to right, #F2AB27 50%, transparent 50%)",
+      border: "1px solid #F2AB27",
     },
     {
       name: "MxFi",
@@ -45,14 +52,18 @@ const Products = () => {
       link1: "",
       link2: "",
       img: "/assets/images/mh4.svg",
+      btnc: "linear-gradient(to right, #4BA6A6 50%, transparent 50%)",
+      border: "1px solid #4BA6A6",
     },
     {
-      name: "MxFund",
+      name: "MxLaunch",
       detail:
         "A digital asset fundraising platform will boost fundraising opportunities for IEO, ICO, IDO, and IGO development. Helps to know more about the product and its roadmap.",
       link1: "",
       link2: "",
       img: "/assets/images/mh5.svg",
+      btnc: "linear-gradient(to right, #9E9BF2 50%, transparent 50%)",
+      border: "1px solid #9E9BF2",
     },
     {
       name: "MxWallet",
@@ -61,6 +72,8 @@ const Products = () => {
       link1: "",
       link2: "",
       img: "/assets/images/mh6.svg",
+      btnc: "linear-gradient(to right, #BF9A78 50%, transparent 50%)",
+      border: "1px solid #BF9A78",
     },
     {
       name: "MxBlock",
@@ -69,6 +82,8 @@ const Products = () => {
       link1: "",
       link2: "",
       img: "/assets/images/mh7.svg",
+      btnc: "linear-gradient(to right, #4B99FF 50%, transparent 50%)",
+      border: "1px solid #4B99FF",
     },
     {
       name: "MxNFT",
@@ -76,7 +91,9 @@ const Products = () => {
         "A custom NFT ecosystem infused with cutting-edge technology and transparent accessibility allows creators, collectors, and dealers to benefit from liquid investments.",
       link1: "",
       link2: "",
-      img: "/assets/images/mh8.svg",
+      img: "/assets/images/nfti.png",
+      btnc: "linear-gradient(to right, #D95276 50%, transparent 50%)",
+      border: "1px solid #D95276",
     },
   ];
   return (
@@ -134,13 +151,29 @@ const Products = () => {
                   </div>
                   <div>
                     <div className={styles.BtnContainer}>
-                      <div
+                      <ActionButtonV3
+                        stylebtn={{
+                          background: value.btnc,
+                          backgroundSize: "200% 100%",
+                          backgroundPosition: "right bottom",
+                          color: "#fff",
+                          border: value.border,
+                          display: "block",
+                        }}
+                        text={
+                          <>
+                            Explore Product&nbsp;
+                            <HiOutlineExternalLink />
+                          </>
+                        }
+                      />
+                      {/* <div
                         className={styles.RequestDemo}
                         // style={{ opacity: "0" }}
                       >
                         Explore Product&nbsp;&nbsp;
                         <HiOutlineExternalLink />
-                      </div>
+                      </div> */}
                       <div className={styles.RequestDemo1}>
                         <HiOutlineExternalLink />
                       </div>

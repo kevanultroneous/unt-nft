@@ -1,5 +1,5 @@
-import styles from "@/styles/components/ActionButton.module.css";
-const ActionButton = ({ text, handleAction = null }) => {
+import styles from "@/styles/components/ActionButtonV2.module.css";
+const ActionButtonV2 = ({ text }) => {
   return (
     <div className={styles.outer}>
       <div className={styles.button}>
@@ -8,4 +8,4 @@ const ActionButton = ({ text, handleAction = null }) => {
     </div>
   );
 };
-export default ActionButton;
+export default ActionButtonV2;

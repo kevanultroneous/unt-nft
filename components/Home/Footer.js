@@ -73,18 +73,25 @@ const Footer = () => {
               xs={6}
               className="p-0 pt-md-5 p-xl-0 p-lg-0 pt-4"
             >
-              <p>Product List</p>
-
-              <ul className={styles.SubLinks}>
-                <li>MxTrade: Centralized Trading for Spot, OTC, P2P</li>
-                <li>MxFuture: Margin and Derivatives</li>
-                <li>MxDex: Decentralized Trading</li>
-                <li>MxFi: Defi Products and Use-cases</li>
-                <li>MxFund: Fundraising Platform</li>
-                <li>MxWallet: Wallet product</li>
-                <li>MxBlock: Enterprise blockchain and tokenization</li>
-                <li>MxNFT: NFT product use cases</li>
-              </ul>
+              <p>Product</p>
+              <Row>
+                <Col>
+                  <ul className={styles.SubLinks}>
+                    <li>MxTrade</li>
+                    <li>MxFuture</li>
+                    <li>MxDex</li>
+                    <li>MxFi</li>
+                  </ul>
+                </Col>
+                <Col>
+                  <ul className={`${styles.SubLinks}`}>
+                    <li>MxFund</li>
+                    <li>MxWallet</li>
+                    <li>MxBlock</li>
+                    <li>MxNFT</li>
+                  </ul>
+                </Col>
+              </Row>
             </Col>
           </Row>
         </Col>

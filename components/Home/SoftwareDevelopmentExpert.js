@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import { useEffect, useRef } from "react";
+import ActionButtonV2 from "../Common/ActionButtonV2";
 const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
@@ -21,7 +22,7 @@ const SDE = ({ handleClick }) => {
           slidesToScroll: 4,
           initialSlide: 2,
           centerMode: true,
-          centerPadding: "40px",
+          centerPadding: "45px",
         },
       },
       {
@@ -55,14 +56,14 @@ const SDE = ({ handleClick }) => {
     ],
   };
   const sliderList = [
-    "Derivatives Trading",
-    "Spot Trading",
-    "NFT",
-    "DeFi",
-    "OTC Desk",
-    "P2P Trading",
-    "Private Blockchain & Tokenization",
-    "Fund Raising Launchpad (IEO/ICO/IDO/IGO)",
+    { name: "MxTrade", img: "/assets/images/MXX1.svg" },
+    { name: "MxFuture", img: "/assets/images/mxx2.svg" },
+    { name: "MxDex", img: "/assets/images/mxx3.svg" },
+    { name: "MxFi", img: "/assets/images/mxx4.svg" },
+    { name: "MxLaunch", img: "/assets/images/mxx5.svg" },
+    { name: "MxWallet", img: "/assets/images/mxx6.svg" },
+    { name: "MxBlock", img: "/assets/images/mxx7.svg" },
+    { name: "MxNFT", img: "/assets/images/mxx8.svg" },
   ];
   useEffect(() => {
     AOS.refresh();
@@ -90,9 +91,13 @@ const SDE = ({ handleClick }) => {
           xs={6}
           className={styles.SoftwareDevelopmentExpertsBtnCol}
         >
-          <div className={styles.RequestDemoButton}>
-            Explore Product <HiOutlineExternalLink />
-          </div>
+          <ActionButtonV2
+            text={
+              <>
+                Explore Product <HiOutlineExternalLink />
+              </>
+            }
+          />
         </Col>
       </Row>
 
@@ -172,7 +177,8 @@ const SDE = ({ handleClick }) => {
                   // data-aos="slide-up"
                   // data-aos-duration="2000"
                 >
-                  <p>{v}</p>
+                  <Image src={v.img} className={styles.SliderImg} />
+                  <p>{v.name}</p>
                 </div>
               ))}
             </Slider>

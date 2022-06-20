@@ -3,7 +3,7 @@
   color: #ffffff;
   padding-top: 2.5rem;
   padding-left: 8.5rem;
-  height: 110vh;
+  height: 115vh;
   padding-bottom: 2.5rem;
 }
 .SoftwareDevelopmentExpertsHead {
@@ -107,10 +107,21 @@
   border-radius: 17px;
   height: 200px;
   width: 190px !important;
-  display: flex !important;
+  /* display: flex !important; */
   justify-content: left;
   text-align: left;
+  overflow: hidden;
   align-items: flex-end;
+}
+.SliderCard:hover .SliderImg {
+  opacity: 1;
+  transition: all 0.5s ease;
+}
+.SliderImg {
+  opacity: 0;
+  width: 114%;
+  height: 160px;
+  transition: all 0.5s ease;
 }
 .SliderCard p {
   padding-left: 1rem;

@@ -131,6 +131,38 @@
   position: absolute;
   transform: translate(-50%, -50%);
 }
+.outer {
+}
+
+.button {
+  border-radius: 20px;
+  width: 11rem;
+  padding: 0.5rem 1rem;
+  opacity: 0;
+  transition: all 0.8s ease-out;
+}
+.OurProductsCardsMain:hover .button {
+  opacity: 1;
+  transition: all 0.8s ease;
+}
+.button:hover {
+  color: #fff !important;
+  background-position: left bottom !important;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  transition: all 0.6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: #fff;
+}
+
 @media (min-width: 320px) and (max-width: 450px) {
   .OurProductsContainer {
     padding: 3rem 1rem;

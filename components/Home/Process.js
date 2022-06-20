@@ -19,17 +19,17 @@ const Process = () => {
     {
       name: "Experience",
       bcolor: "#00ACD7",
-      bkcolor: "#FFF1E8",
+      bkcolor: "#EAFBFF",
     },
     {
       name: "Customize",
-      bcolor: "#763E1A",
-      bkcolor: "#FFF1E8",
+      bcolor: "#D95276",
+      bkcolor: "#FFEEF3",
     },
     {
       name: "Go-Live",
       bcolor: "#A199FF",
-      bkcolor: "#FFF1E8",
+      bkcolor: "#F6F5FF",
     },
   ];
 

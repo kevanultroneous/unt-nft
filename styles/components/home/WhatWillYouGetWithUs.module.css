@@ -46,8 +46,26 @@
   position: relative;
   bottom: 3rem;
   left: 15rem;
+  animation: scrolldowntotop 5s ease-in 0s infinite normal;
+  animation-direction: alternate;
 }
-
+@keyframes scrolldowntotop {
+  0% {
+    top: 10px;
+  }
+  25% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
 .SmallImage img,
 .BigImage img {
   height: auto;

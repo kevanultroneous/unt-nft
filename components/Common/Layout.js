@@ -11,7 +11,6 @@ const Layout = ({ title, children }) => {
         <Cursor />
         {children}
       </main>
-      <Footer />
     </div>
   );
 };
