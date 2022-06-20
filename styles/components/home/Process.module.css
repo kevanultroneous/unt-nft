@@ -92,11 +92,12 @@
   justify-content: center;
   border-radius: 100%;
   z-index: 5;
-  transition: all 0.5s ease;
+  transition: all 2s ease;
 }
 .ProcessBox:hover .ProcessBlink {
   width: 7rem;
   height: 7rem;
+  transition: all 2s ease;
 }
 
 .ProcessBlinkMain {

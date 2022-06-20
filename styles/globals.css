@@ -89,10 +89,11 @@ a {
   padding: 0% !important;
 }
 /* the slides */
-.slick-slide {
-  margin: 0 -4.5px;
-  /* padding-right: 5rem; */
+
+.SliderGroundCss .slick-initialized .slick-slide {
+  width: 245px !important;
 }
+
 .scroll-container {
   position: fixed;
   top: 0;
@@ -116,7 +117,21 @@ a {
   background: #323232;
   border-radius: 20px;
 }
+@keyframes fadeInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
 
+.fadeInRight {
+  -webkit-animation-name: fadeInRight;
+  animation-name: fadeInRight;
+}
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb:hover {
   background:;

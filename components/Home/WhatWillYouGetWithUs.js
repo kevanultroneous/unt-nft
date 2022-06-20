@@ -1,7 +1,7 @@
 import { Col, Row } from "react-bootstrap";
 import styles from "@/styles/components/home/WhatWillYouGetWithUs.module.css";
-import { useState } from "react";
-
+import { useEffect, useState } from "react";
+import AOS from "aos";
 function WhatWillYouGetWithUs() {
   const [value, setValue] = useState(0);
   const arrText = [
@@ -17,7 +17,10 @@ function WhatWillYouGetWithUs() {
     "/assets/images/exchange.svg",
     "/assets/images/feature.svg",
   ];
-
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <Row className={styles.WhatWillYouGetWithUs}>
       <Col xs={12} sm={12} md={6} className={styles.WhatWillYouGetWithUsLeft}>

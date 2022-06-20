@@ -11,49 +11,50 @@ const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
     speed: 500,
-    slidesToShow: 3,
+    slidesToShow: 3.1,
     slidesToScroll: 4,
     centerMode: false,
-    responsive: [
-      {
-        breakpoint: 1920,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 4,
-          initialSlide: 2,
-          centerMode: true,
-          centerPadding: "45px",
-        },
-      },
-      {
-        breakpoint: 885,
-        settings: {
-          slidesToShow: 3,
-          slidesToScroll: 4,
-          initialSlide: 2,
-          centerMode: true,
-          centerPadding: "0px",
-        },
-      },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          centerMode: false,
-        },
-      },
-      {
-        breakpoint: 480,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          centerMode: false,
-        },
-      },
-    ],
+
+    // responsive: [
+    //   {
+    //     breakpoint: 1400,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 4,
+    //       initialSlide: 2,
+    //       centerMode: false,
+    //       // centerPadding: "45px",
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 885,
+    //     settings: {
+    //       slidesToShow: 3,
+    //       slidesToScroll: 4,
+    //       initialSlide: 2,
+    //       centerMode: true,
+    //       centerPadding: "0px",
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 600,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //       centerMode: false,
+    //     },
+    //   },
+    //   {
+    //     breakpoint: 480,
+    //     settings: {
+    //       slidesToShow: 2,
+    //       slidesToScroll: 2,
+    //       initialSlide: 2,
+    //       centerMode: false,
+    //     },
+    //   },
+    // ],
   };
   const sliderList = [
     { name: "MxTrade", img: "/assets/images/MXX1.svg" },
@@ -169,7 +170,7 @@ const SDE = ({ handleClick }) => {
               </span>
             </Col>
           </Row>
-          <Row className={styles.SliderGround}>
+          <Row className={`${styles.SliderGround} SliderGroundCss`}>
             <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
                 <div

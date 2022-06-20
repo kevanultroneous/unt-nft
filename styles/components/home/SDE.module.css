@@ -112,6 +112,7 @@
   text-align: left;
   overflow: hidden;
   align-items: flex-end;
+  margin-left: 2rem;
 }
 .SliderCard:hover .SliderImg {
   opacity: 1;
@@ -160,7 +161,10 @@
   justify-content: flex-start;
   display: flex;
   align-items: end;
+  padding-right: 0;
+  padding-left: 0;
   padding-bottom: 2rem;
+  margin-left: -3rem;
 }
 .ScrolldownText {
   margin: 0%;
