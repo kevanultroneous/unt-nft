@@ -43,6 +43,7 @@
   color: #ffffff;
   padding: 4rem 2rem 4rem 4rem;
 }
+
 .CardTitle {
   font-weight: 600;
   font-size: 40px;
@@ -79,21 +80,9 @@
   padding: 3px;
   /* background: linear-gradient(138deg, #1a1c3b #a21d34 ); */
   border-radius: 20px;
-  background: linear-gradient(-90deg, #1a1c3b 60%, #a21d34 40%);
+  background: linear-gradient(-90deg, #1a1c3b 100%, #a21d34 100%);
   background-size: 400% 400%;
-  animation: gradient 4s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+  /* transform: matrix(0, -1, -1, 0, 0, 0); */
 }
 
 .HungryHeading {

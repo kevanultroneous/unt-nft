@@ -1,10 +1,9 @@
 import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/home/FutureChoice.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import AOS from "aos";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
-import Gb from "../Common/Gb";
 const FutureChoice = () => {
   useEffect(() => {
     AOS.refresh();
@@ -16,6 +15,7 @@ const FutureChoice = () => {
         <Col xl={8} md={12}>
           <div
             className={styles.CardBg}
+
             // data-aos="flip-left"
             // data-aos-duration="2000"
           >

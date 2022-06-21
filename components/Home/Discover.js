@@ -3,7 +3,9 @@ const { HiOutlineExternalLink } = require("react-icons/hi");
 import styles from "@/styles/components/home/Discover.module.css";
 import AOS from "aos";
 import { useEffect } from "react";
+import Lottie from "react-lottie";
 import ActionButton from "../Common/ActionButton";
+import animdata from "../Home/anim";
 const Discover = () => {
   useEffect(() => {
     AOS.refresh();
@@ -27,8 +29,19 @@ const Discover = () => {
       text: "IT Security Certified to protect customer data",
     },
   ];
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animdata,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   return (
     <div className={styles.DiscoverMobifinixContainer}>
+      {/* <Row>
+        <Lottie options={defaultOptions} height={400} width={400} />
+      </Row> */}
       <Row className={styles.DiscoverMobifinixSubContainer}>
         <div className={styles.DiscoverMobifinixPara1Container}>
           <p

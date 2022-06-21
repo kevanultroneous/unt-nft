@@ -1,6 +1,8 @@
 .OurProductsContainer {
   background: #1a1c3c;
   padding: 8rem 3rem 17rem 8.5rem;
+  width: 100% !important;
+  height: 200vh;
 }
 .borderHide {
   border-bottom: none !important;
@@ -17,7 +19,17 @@
   opacity: 1;
   transition: all 1s ease;
 }
+.progressContainer {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
 
+.progressBar {
+  height: 8px;
+  background: #04aa6d;
+  width: 0%;
+}
 .RequestDemo {
   opacity: 0;
   width: fit-content;

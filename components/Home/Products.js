@@ -10,9 +10,71 @@ const Products = () => {
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
   const [opacitycord, setOpacitycord] = useState("0");
+  const [targetd, setTargetD] = useState("");
+  const [currentItem, setCurrentItem] = useState(0);
+  const upper = (per) => {
+    if (per > 26) {
+      setCurrentItem(1);
+    } else if (per > 27) {
+      setCurrentItem(2);
+    } else if (per > 28) {
+      setCurrentItem(3);
+    } else if (per > 29) {
+      setCurrentItem(4);
+    } else if (per > 30) {
+      setCurrentItem(5);
+    } else if (per > 31) {
+      setCurrentItem(6);
+    } else if (per > 32) {
+      setCurrentItem(7);
+    }
+  };
+  const lower = (per) => {
+    if (per < 26) {
+      setCurrentItem(0);
+    } else if (per < 27) {
+      setCurrentItem(1);
+    } else if (per < 28) {
+      setCurrentItem(2);
+    } else if (per < 29) {
+      setCurrentItem(3);
+    } else if (per < 30) {
+      setCurrentItem(4);
+    } else if (per < 31) {
+      setCurrentItem(5);
+    } else if (per < 32) {
+      setCurrentItem(6);
+    } else if (per < 33) {
+      setCurrentItem(7);
+    } else {
+      setCurrentItem(0);
+    }
+  };
   useEffect(() => {
     AOS.refresh();
     AOS.init();
+    window.addEventListener("scroll", () => {
+      var findProduct = document.getElementsByClassName(
+        styles.OurProductsContainer
+      )[0];
+      var targetSection = findProduct.getBoundingClientRect();
+      if (targetSection.y <= 0) {
+        setTargetD("fixed");
+        const winScroll =
+          document.body.scrollTop || document.documentElement.scrollTop;
+
+        const height =
+          document.documentElement.scrollHeight -
+          document.documentElement.clientHeight;
+
+        const scrolled = winScroll / height;
+        const per = scrolled * 100;
+
+        upper(per);
+        lower(per);
+      } else {
+      }
+    });
   }, []);
   const ProductsList = [
     {
@@ -97,11 +159,15 @@ const Products = () => {
     },
   ];
   return (
-    <div className={styles.OurProductsContainer}>
+    <div
+      className={styles.OurProductsContainer}
+      style={{ position: targetd, top: "0" }}
+    >
       <div
         className={styles.FollowerLight}
         style={{ left: xcord, top: ycord, opacity: opacitycord }}
       ></div>
+
       <div>
         <h3
           className={styles.OurProductsHeading}
@@ -122,66 +188,52 @@ const Products = () => {
             onMouseLeave={() => setOpacitycord("0")}
           >
             {/*  */}
-            {ProductsList.map((value, index) => (
-              <div
-                data-aos="fade-left"
-                data-aos-duration="500"
-                data-aos-easing="ease-in-out"
-                data-aos-mirror="true"
-                data-aos-offset="300"
-                className={`${styles.OurProductsCardsMain}`}
-              >
-                <div className={styles.OurProductsCardSub}>
-                  <div className={styles.OurProductsCardImage}>
-                    <Image src={value.img} />
-                  </div>
-                  <div className={styles.OurProductsCardDetail}>
-                    <h4 className={styles.OurProductsHead}>{value.name}</h4>
-                    <p className={styles.OurProductsParagraph}>
-                      {value.detail}
-                    </p>
-                    {/* <div className={styles.LearnMore}>
-                      Learn More{" "}
-                      <Image src="/assets/images/sendBtn.svg" height={15} />
-                    </div> */}
-                    <LearnMore
-                      t1={<MdKeyboardArrowRight />}
-                      t2={<MdKeyboardArrowRight />}
+            {/* {ProductsList.map((value, index) => ( */}
+
+            <div className={`${styles.OurProductsCardsMain} fadeInRight`}>
+              <div className={styles.OurProductsCardSub}>
+                <div className={styles.OurProductsCardImage}>
+                  <Image src={ProductsList[currentItem].img} />
+                </div>
+                <div className={styles.OurProductsCardDetail}>
+                  <h4 className={styles.OurProductsHead}>
+                    {ProductsList[currentItem].name}
+                  </h4>
+                  <p className={styles.OurProductsParagraph}>
+                    {ProductsList[currentItem].detail}
+                  </p>
+
+                  <LearnMore
+                    t1={<MdKeyboardArrowRight />}
+                    t2={<MdKeyboardArrowRight />}
+                  />
+                </div>
+                <div>
+                  <div className={styles.BtnContainer}>
+                    <ActionButtonV3
+                      stylebtn={{
+                        background: ProductsList[currentItem].btnc,
+                        backgroundSize: "200% 100% !important",
+                        backgroundPosition: "right bottom !important",
+                        color: "#fff",
+                        border: ProductsList[currentItem].border,
+                        display: "block",
+                      }}
+                      text={
+                        <>
+                          Explore Product&nbsp;
+                          <HiOutlineExternalLink />
+                        </>
+                      }
                     />
-                  </div>
-                  <div>
-                    <div className={styles.BtnContainer}>
-                      <ActionButtonV3
-                        stylebtn={{
-                          background: value.btnc,
-                          backgroundSize: "200% 100%",
-                          backgroundPosition: "right bottom",
-                          color: "#fff",
-                          border: value.border,
-                          display: "block",
-                        }}
-                        text={
-                          <>
-                            Explore Product&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                      />
-                      {/* <div
-                        className={styles.RequestDemo}
-                        // style={{ opacity: "0" }}
-                      >
-                        Explore Product&nbsp;&nbsp;
-                        <HiOutlineExternalLink />
-                      </div> */}
-                      <div className={styles.RequestDemo1}>
-                        <HiOutlineExternalLink />
-                      </div>
+                    <div className={styles.RequestDemo1}>
+                      <HiOutlineExternalLink />
                     </div>
                   </div>
                 </div>
               </div>
-            ))}
+            </div>
+            {/* ))} */}
           </div>
         </div>
       </div>
