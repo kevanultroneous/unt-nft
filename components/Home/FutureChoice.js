@@ -82,8 +82,8 @@ const FutureChoice = () => {
               className={`${styles.HungryCard} ${
                 c1 ? styles.HungryCard2 : null
               }`}
-              onMouseOver={() => setC1(true)}
-              onMouseLeave={() => setC1(false)}
+              onMouseOver={() => setC2(true)}
+              onMouseLeave={() => setC2(false)}
             >
               <h5
                 className={`${styles.HungryHeading} ${
