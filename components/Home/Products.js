@@ -233,7 +233,11 @@ const Products = ({ targetposition }) => {
           >
             {/*  */}
             {/* {ProductsList.map((value, index) => ( */}
+<<<<<<< HEAD
             <h4 className={styles.NumTxt}>{ProductsList[currentItem].num}</h4>
+=======
+
+>>>>>>> aba41037a7fbea3f5adb89b5b23ea8913953a83a
             <div className={`${styles.OurProductsCardsMain} fadeInRight`}>
               <div className={styles.OurProductsCardSub}>
                 <div className={styles.OurProductsCardImage}>

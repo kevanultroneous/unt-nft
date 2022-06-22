@@ -57,6 +57,9 @@
   color: #000000;
   transition: all 1s ease;
 }
+.CardTitle2 {
+  color: #000000;
+}
 .CardProfile {
   display: flex;
   align-items: center;
@@ -90,12 +93,20 @@
   background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
   transition: all 1s ease;
 }
+.HungryCard2 {
+  background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
+  transition: all 1s ease;
+}
 .MainHungry {
   padding: 3px;
   border-radius: 20px;
   background: linear-gradient(-90deg, #1a1c3b 100%, #a21d34 100%);
   background-size: 400% 400%;
+<<<<<<< HEAD
   transition: all 1s ease;
+=======
+  /* transform: matrix(0, -1, -1, 0, 0, 0); */
+>>>>>>> aba41037a7fbea3f5adb89b5b23ea8913953a83a
 }
 
 .HungryHeading {
@@ -110,6 +121,11 @@
   color: #fff;
   transition: all 1s ease;
 }
+.HungryHeading2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+}
 .HungryParagraph {
   font-weight: 400;
   font-size: 22px;
@@ -119,6 +135,31 @@
 .HungryParagraph2 {
   color: #fff;
   transition: all 1s ease;
+}
+.outer {
+  margin-top: 2.5rem;
+}
+
+.button {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 12rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #fff;
+  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.8s ease-out;
+}
+
+.button:hover {
+  color: #a21d34;
+  background-position: left bottom;
+}
+.HungryParagraph2 {
+  color: #fff;
 }
 .outer {
   margin-top: 2.5rem;
