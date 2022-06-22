@@ -39,9 +39,6 @@ const Discover = () => {
   };
   return (
     <div className={styles.DiscoverMobifinixContainer}>
-      {/* <Row>
-        <Lottie options={defaultOptions} height={400} width={400} />
-      </Row> */}
       <Row className={styles.DiscoverMobifinixSubContainer}>
         <div className={styles.DiscoverMobifinixPara1Container}>
           <p
@@ -83,73 +80,89 @@ const Discover = () => {
           </div>
         </div>
       </Row>
-
-      <div className={styles.DiscoverItemsContainer}>
-        <Row className={styles.DiscoverItemsRow}>
-          <Col xl={6} xs={6} md={6}>
-            <div
-              className={styles.DiscoverBox}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="500"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-            >
-              <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[0].image} />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[0].text}</p>
-            </div>
-          </Col>
-          <Col xl={6} xs={6} md={6}>
-            <div
-              className={styles.DiscoverBox}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="500"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-            >
-              <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[1].image} />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[1].text}</p>
-            </div>
-          </Col>
-        </Row>
-        <Row className={styles.DiscoverItemsRow}>
-          <Col xl={6} xs={6} md={6}>
-            <div
-              className={styles.DiscoverBox}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="800"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-            >
-              <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[2].image} />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[2].text}</p>
-            </div>
-          </Col>
-          <Col xl={6} xs={6} md={6}>
-            <div
-              className={styles.DiscoverBox}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="800"
-              data-aos-easing="ease"
-              data-aos-mirror="true"
-            >
-              <div className={styles.DiscoverItemBox}>
-                <Image src={arrayBox[3].image} />
-              </div>
-              <p className={styles.DiscoverItemParagraph}>{arrayBox[3].text}</p>
-            </div>
-          </Col>
-        </Row>
-      </div>
+      <Row>
+        <Col>
+          <Row>
+            <Lottie options={defaultOptions} height={400} width={400} />
+          </Row>
+        </Col>
+        <Col>
+          <div className={styles.DiscoverItemsContainer}>
+            <Row className={styles.DiscoverItemsRow}>
+              <Col xl={6} xs={6} md={6}>
+                <div
+                  className={styles.DiscoverBox}
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  data-aos-delay="500"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                >
+                  <div className={styles.DiscoverItemBox}>
+                    <Image src={arrayBox[0].image} />
+                  </div>
+                  <p className={styles.DiscoverItemParagraph}>
+                    {arrayBox[0].text}
+                  </p>
+                </div>
+              </Col>
+              <Col xl={6} xs={6} md={6}>
+                <div
+                  className={styles.DiscoverBox}
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  data-aos-delay="500"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                >
+                  <div className={styles.DiscoverItemBox}>
+                    <Image src={arrayBox[1].image} />
+                  </div>
+                  <p className={styles.DiscoverItemParagraph}>
+                    {arrayBox[1].text}
+                  </p>
+                </div>
+              </Col>
+            </Row>
+            <Row className={styles.DiscoverItemsRow}>
+              <Col xl={6} xs={6} md={6}>
+                <div
+                  className={styles.DiscoverBox}
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  data-aos-delay="800"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                >
+                  <div className={styles.DiscoverItemBox}>
+                    <Image src={arrayBox[2].image} />
+                  </div>
+                  <p className={styles.DiscoverItemParagraph}>
+                    {arrayBox[2].text}
+                  </p>
+                </div>
+              </Col>
+              <Col xl={6} xs={6} md={6}>
+                <div
+                  className={styles.DiscoverBox}
+                  data-aos="fade-left"
+                  data-aos-duration="3000"
+                  data-aos-delay="800"
+                  data-aos-easing="ease"
+                  data-aos-mirror="true"
+                >
+                  <div className={styles.DiscoverItemBox}>
+                    <Image src={arrayBox[3].image} />
+                  </div>
+                  <p className={styles.DiscoverItemParagraph}>
+                    {arrayBox[3].text}
+                  </p>
+                </div>
+              </Col>
+            </Row>
+          </div>
+        </Col>
+      </Row>
     </div>
   );
 };

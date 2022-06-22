@@ -1,8 +1,8 @@
 .OurProductsContainer {
   background: #1a1c3c;
-  padding: 8rem 3rem 17rem 8.5rem;
+  padding: 4rem 3rem 17rem 8.5rem;
   width: 100% !important;
-  height: 200vh;
+  height: 100vh;
 }
 .borderHide {
   border-bottom: none !important;
@@ -149,7 +149,9 @@
 .button {
   border-radius: 20px;
   width: 11rem;
+  background-position: right bottom !important;
   padding: 0.5rem 1rem;
+  background-size: 200% 100% !important;
   opacity: 0;
   transition: all 0.8s ease-out;
 }
@@ -174,7 +176,26 @@
 .text:hover {
   color: #fff;
 }
-
+.highlight {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 2rem;
+  margin: 0%;
+  padding-top: 1rem;
+}
+.question {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0%;
+  padding-bottom: 0.5rem;
+}
+.tags {
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 1rem;
+  width: 34.25rem;
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .OurProductsContainer {
     padding: 3rem 1rem;

@@ -6,11 +6,10 @@ import { useEffect, useState } from "react";
 import LearnMore from "../Common/LearnMore";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ActionButtonV3 from "../Common/ActionButtonV3";
-const Products = () => {
+const Products = ({ targetposition }) => {
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
   const [opacitycord, setOpacitycord] = useState("0");
-  const [targetd, setTargetD] = useState("");
   const [currentItem, setCurrentItem] = useState(0);
   const upper = (per) => {
     if (per > 26) {
@@ -50,119 +49,156 @@ const Products = () => {
       setCurrentItem(0);
     }
   };
+  const mouseHandler = () => {
+    var findProduct = document.getElementsByClassName(
+      styles.OurProductsContainer
+    )[0];
+    var targetSection = findProduct.getBoundingClientRect();
+
+    if (targetSection.y <= 0) {
+      const winScroll =
+        document.body.scrollTop || document.documentElement.scrollTop;
+
+      const height =
+        document.documentElement.scrollHeight -
+        document.documentElement.clientHeight;
+
+      const scrolled = winScroll / height;
+      const per = scrolled * 100;
+
+      upper(per);
+      lower(per);
+    }
+  };
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
-    window.addEventListener("scroll", () => {
+    if (currentItem === 7) {
+      window.removeEventListener("scroll", mouseHandler());
       var findProduct = document.getElementsByClassName(
         styles.OurProductsContainer
       )[0];
-      var targetSection = findProduct.getBoundingClientRect();
-      if (targetSection.y <= 0) {
-        setTargetD("fixed");
-        const winScroll =
-          document.body.scrollTop || document.documentElement.scrollTop;
-
-        const height =
-          document.documentElement.scrollHeight -
-          document.documentElement.clientHeight;
-
-        const scrolled = winScroll / height;
-        const per = scrolled * 100;
-
-        upper(per);
-        lower(per);
-      } else {
-      }
-    });
+    }
+  }, [currentItem]);
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+    window.addEventListener("scroll", () => mouseHandler());
   }, []);
   const ProductsList = [
     {
       name: "MxTrade",
       detail:
-        "A Centralized Trading platform for Spot trading, OTC desk, and P2P Trading. Offers world-class trading technology, robust legal and compliance solutions, and round-the-clock support. Automate trades without involving a central authority and connect buyers and sellers directly.",
+        "This is a centralized crypto trading terminal with 350+ feature-rich back office panels where a variety of methods are owned by the admin. It allows to settle trades between peers using a central order book for utility tokens, reward tokens, and security tokens to ensure seamless transactions.",
       link1: "",
       link2: "",
       img: "/assets/images/mh1.svg",
       btnc: "linear-gradient(to right, #F27E63 50%, transparent 50%)",
       border: "1px solid #F27E63",
+      color: "#F27E63",
+      highlight: "USP:- Dynamic Scaling Engines",
+      question: "Who can benefit?",
+      tags: "New coin owners | Banks | Exchanges | Traders | FX Brokers | Community Marketers ",
     },
     {
       name: "MxFuture",
       detail:
-        "A Top-notch derivative and Margin exchange platform that promises to open up new investment avenues for traders. Gain access to a pool of untapped crypto holders and accelerate the transaction process with automated smart contracts.",
+        "Open up new investment avenues with a leverage-based centralized trading environment designed for institutional traders and high-risk appetite retail audiences. It has features such as 100x spot leverage trade, perpetual swaps, inverse futures, American options, and European options.",
       link1: "",
       link2: "",
       img: "/assets/images/MF.png",
       btnc: "linear-gradient(to right, #00ACD7 50%, transparent 50%)",
       border: "1px solid #00ACD7",
+      highlight: "USP: VaR (Value at Risk) based Risk Engines",
+      question: "Who can benefit?",
+      tags: "Institutional traders | Hedge funds | Family office | Banks | Tier 2-3 exchanges | Forex platform owners",
+      color: "#00ACD7",
     },
     {
       name: "MxDex",
       detail:
-        "We help you facilitate the large-scale trading of crypto assets between many users with a decentralized trading platform. A fast and transparent solution enables users to have complete control over their accounts and assets. ",
+        "A complete blockchain-driven trading platform with smart contracts matches direct peers and settles orders on the blockchain for utility tokens and DeFi tokens without involving third parties and institutionalized control. With features such as 9 Blockchain support, a Blockchain bridge, and an inbuilt liquidity pool for optimal user experience.",
       link1: "",
       link2: "",
       img: "/assets/images/mh3.svg",
       btnc: "linear-gradient(to right, #F2AB27 50%, transparent 50%)",
       border: "1px solid #F2AB27",
+      highlight: "USP: Highly Scalable, Modular and Secure Implementations ",
+      question: "Who can benefit?",
+      tags: "Coin Owners | DAOs (Decentralized autonomous organizations) | DeFi Projects",
+      color: "#F2AB27",
     },
     {
       name: "MxFi",
       detail:
-        "Take a shift from traditional and centralized finance to peer-to-peer and decentralized technologies based on the Ethereum blockchain. The DeFi ecosystem includes banking, payments and settlements, lending and borrowing platforms.",
+        "Creating a digital ecosystem of decentralized finance using decentralized blockchain networks for lending, stacking, borrowing, lotteries, farming, etc. Additionally, it supports all smart contracts and private EVM chains to deliver a wide array of services without fraudulent activities.",
       link1: "",
       link2: "",
       img: "/assets/images/mh4.svg",
       btnc: "linear-gradient(to right, #4BA6A6 50%, transparent 50%)",
       border: "1px solid #4BA6A6",
+      highlight: "USP: Transparency of Transactions",
+      question: "Who can benefit?",
+      tags: "Coin Owners | DAOs (Decentralized autonomous organizations) | DeFi Projects",
+      color: "#4BA6A6",
     },
     {
       name: "MxLaunch",
       detail:
-        "A digital asset fundraising platform will boost fundraising opportunities for IEO, ICO, IDO, and IGO development. Helps to know more about the product and its roadmap.",
+        "An all blockchain-supported fundraising platform for Utility, DeFi, Security, and NFT Tokens with various models like IEO, IDO, IGO, and STOs. Boost crowdfunding opportunities with customized centralized and decentralized fundraising dashboards and a bonus and discount setup.",
       link1: "",
       link2: "",
       img: "/assets/images/mh5.svg",
       btnc: "linear-gradient(to right, #9E9BF2 50%, transparent 50%)",
       border: "1px solid #9E9BF2",
+      highlight: "USP: A KYC/AML Compliant Dashboard",
+      question: "Who can benefit?",
+      tags: "New coin owners | Exchanges | FX brokers | Banks | Traders | Community marketers | DAO | DeFi Projects | VC firms",
+      color: "#9E9BF2",
     },
     {
       name: "MxWallet",
       detail:
-        "Wallets not just allow you to send and receive digital currency but also monitor and manage your cryptocurrency assets. It can store one or multiple currencies at just one time. Its features offer a chance to level up cryptocurrency transactions.",
+        "Based on a modular architecture setup, its use case includes a hot multi-sig centralized wallet and an all blockchain-compatible decentralized wallet. Enables users to Hold, Swap, and Invest in their favorite utility, DeFi, or reward tokens with payment gateway integration.",
       link1: "",
       link2: "",
       img: "/assets/images/mh6.svg",
       btnc: "linear-gradient(to right, #BF9A78 50%, transparent 50%)",
       border: "1px solid #BF9A78",
+      highlight: "USP: 180+ crypto support",
+      question: "Who can benefit?",
+      tags: "New coin owners | Exchanges | FX brokers | Banks | Traders | Community marketers | DAO | DeFi Projects | VC firms",
+      color: "#BF9A78",
     },
     {
       name: "MxBlock",
       detail:
-        "Our experts have a knack for making end-users' life simple. With the help of MxBlock, physical assets can be converted into digital tokens and traded on exchanges through tokenization. and blockchain helps you manage ownership transfer efficiently.",
+        "A customized Layer 1 and Layer 2 blockchain use case designed for specific niche needs and tokenizes any asset over the private network of setup blockchain. For professional investors, the Blockchain Consensus setup and enhanced layered security facilitate efficient transactions.",
       link1: "",
       link2: "",
       img: "/assets/images/mh7.svg",
       btnc: "linear-gradient(to right, #4B99FF 50%, transparent 50%)",
       border: "1px solid #4B99FF",
+      highlight: "USP: Private Blockchain and Consensus Modeling",
+      question: "Who can benefit?",
+      tags: "New coin owners | FX brokers | Traders | Community marketers | DAO | DeFi Projects | VC firms",
+      color: "#4B99FF",
     },
     {
       name: "MxNFT",
       detail:
-        "A custom NFT ecosystem infused with cutting-edge technology and transparent accessibility allows creators, collectors, and dealers to benefit from liquid investments.",
+        "An all blockchain compatible NFT suite infused with cutting-edge technology for the creation, auction, and trading of all non-fungible tokens within a single platform over any EVM public chain or private chain allows creators, collectors, and dealers to benefit from liquid investments. This complete 8+ use case implemented template saves you from unnecessary development time and cost.",
       link1: "",
       link2: "",
       img: "/assets/images/nfti.png",
       btnc: "linear-gradient(to right, #D95276 50%, transparent 50%)",
       border: "1px solid #D95276",
+      highlight: "USP: Enterprise Ready with full Suit Customizations",
+      question: "Who can benefit?",
+      tags: "Artist group | Cultural importance organizations  | Sports franchise owners | FMCG brands",
+      color: "#D95276",
     },
   ];
   return (
-    <div
-      className={styles.OurProductsContainer}
-      style={{ position: targetd, top: "0" }}
-    >
+    <div className={styles.OurProductsContainer} style={targetposition}>
       <div
         className={styles.FollowerLight}
         style={{ left: xcord, top: ycord, opacity: opacitycord }}
@@ -202,32 +238,33 @@ const Products = () => {
                   <p className={styles.OurProductsParagraph}>
                     {ProductsList[currentItem].detail}
                   </p>
-
-                  <LearnMore
-                    t1={<MdKeyboardArrowRight />}
-                    t2={<MdKeyboardArrowRight />}
-                  />
-                </div>
-                <div>
-                  <div className={styles.BtnContainer}>
-                    <ActionButtonV3
-                      stylebtn={{
-                        background: ProductsList[currentItem].btnc,
-                        backgroundSize: "200% 100% !important",
-                        backgroundPosition: "right bottom !important",
-                        color: "#fff",
-                        border: ProductsList[currentItem].border,
-                        display: "block",
-                      }}
-                      text={
-                        <>
-                          Explore Product&nbsp;
-                          <HiOutlineExternalLink />
-                        </>
-                      }
-                    />
-                    <div className={styles.RequestDemo1}>
-                      <HiOutlineExternalLink />
+                  <p
+                    className={styles.highlight}
+                    style={{ color: ProductsList[currentItem].color }}
+                  >
+                    {ProductsList[currentItem].highlight}
+                  </p>
+                  <p className={styles.question}>
+                    {ProductsList[currentItem].question}
+                  </p>
+                  <p className={styles.tags}>
+                    {ProductsList[currentItem].tags}
+                  </p>
+                  <div>
+                    <div className={styles.BtnContainer}>
+                      <ActionButtonV3
+                        backc={ProductsList[currentItem].btnc}
+                        borderc={ProductsList[currentItem].border}
+                        text={
+                          <>
+                            Explore Product&nbsp;
+                            <HiOutlineExternalLink />
+                          </>
+                        }
+                      />
+                      <div className={styles.RequestDemo1}>
+                        <HiOutlineExternalLink />
+                      </div>
                     </div>
                   </div>
                 </div>
