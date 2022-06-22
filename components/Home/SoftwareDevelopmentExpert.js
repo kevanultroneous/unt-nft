@@ -14,47 +14,54 @@ const SDE = ({ handleClick }) => {
     slidesToShow: 3.1,
     slidesToScroll: 4,
     centerMode: false,
-
-    // responsive: [
-    //   {
-    //     breakpoint: 1400,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 4,
-    //       initialSlide: 2,
-    //       centerMode: false,
-    //       // centerPadding: "45px",
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 885,
-    //     settings: {
-    //       slidesToShow: 3,
-    //       slidesToScroll: 4,
-    //       initialSlide: 2,
-    //       centerMode: true,
-    //       centerPadding: "0px",
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 600,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //       centerMode: false,
-    //     },
-    //   },
-    //   {
-    //     breakpoint: 480,
-    //     settings: {
-    //       slidesToShow: 2,
-    //       slidesToScroll: 2,
-    //       initialSlide: 2,
-    //       centerMode: false,
-    //     },
-    //   },
-    // ],
+    autoplay: true,
+    autoplaySpeed: 2000,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 3.1,
+          slidesToScroll: 4,
+          initialSlide: 2,
+          centerMode: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          // centerPadding: "45px",
+        },
+      },
+      {
+        breakpoint: 885,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 4,
+          initialSlide: 2,
+          centerMode: true,
+          centerPadding: "0px",
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          centerMode: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+          initialSlide: 2,
+          centerMode: false,
+          autoplay: true,
+          autoplaySpeed: 2000,
+        },
+      },
+    ],
   };
   const sliderList = [
     { name: "MxTrade", img: "/assets/images/MXX1.svg" },

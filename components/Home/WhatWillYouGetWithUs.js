@@ -4,11 +4,12 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 function WhatWillYouGetWithUs() {
   const [value, setValue] = useState(0);
+  const [visibility, setVisibility] = useState(false);
   const arrText = [
-    "200k TPS match engine",
-    "Modular System Architecture",
-    "100+ Exchange Liquidity",
-    "350+ feature rich backoffice",
+    "HFT Match Engine",
+    "Scalable Technology",
+    "Powerfull Settlements",
+    "Enhanced Administration",
   ];
 
   const arrImage = [
@@ -34,18 +35,28 @@ function WhatWillYouGetWithUs() {
                 ? styles.WhatWillYouGetTextActive
                 : styles.WhatWillYouGetText
             }
-            onClick={() => setValue(ind)}
+            onClick={() => {
+              setValue(ind);
+              setVisibility(true);
+              setTimeout(() => {
+                setVisibility(false);
+              }, 600);
+            }}
           >
             {el}
           </p>
         ))}
-        <div className={styles.SmallImage}>
+        <div
+          className={`${styles.SmallImage} ${
+            visibility ? styles.SmallImageAnim : ""
+          }`}
+        >
           <img src={arrImage[value]} alt="Map Image" />
         </div>
       </Col>
       <Col xs={12} sm={12} md={6} className={styles.WhatWillYouGetWithUsRight}>
-        <div className={styles.BigImage}>
-          <img src={"/assets/images/200kBig.png"} alt="Graph Image" />
+        <div className={`${styles.BigImage}`}>
+          <img src={"/assets/images/main.gif"} alt="Graph Image" />
         </div>
       </Col>
     </Row>

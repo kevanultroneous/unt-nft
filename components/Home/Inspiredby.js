@@ -95,16 +95,14 @@ const Inspiredby = () => {
           </h3>
           <CardInspired
             animtype={"fade-up"}
-            srcimg={"/assets/images/inspiration1.png"}
+            srcimg={"/assets/images/case1.png"}
             style={styles.InspiredCardSpace}
-            inspireTitle={"A blockchain-based fundraising platform"}
-            inspireParagraph={
-              "In this case, the client wanted a blockchain-based fundraising platform that allows investors"
-            }
-            disTitle={"A blockchain-based fundraising platform"}
+            inspireTitle={"EtherGo blockchain-based fundraising platform"}
+            inspireParagraph={"In this case, the client wanted a blockchai"}
+            disTitle={"EtherGo blockchain-based fundraising platform"}
             dish1={"Problem"}
             disp1={
-              "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising. "
+              "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising."
             }
             dish2={"Solution"}
             disp2={
@@ -114,21 +112,21 @@ const Inspiredby = () => {
 
           <CardInspired
             animtype={"fade-up"}
-            srcimg={"/assets/images/inspiration3.png"}
+            srcimg={"/assets/images/case2.png"}
             inspireTitle={
-              "A network-driven platform integrating e-commerce, a wallet, and trading features"
+              "TRON Private Chain and Centralized Blockchain Ecosystem"
             }
-            inspireParagraph={"An ecosystem where all the gambling platforms"}
-            disTitle={
-              "A network-driven platform integrating e-commerce, a wallet, and trading features"
+            inspireParagraph={
+              "A private blockchain network where all the gambling"
             }
+            disTitle={"TRON Private Chain and Centralized Blockchain Ecosystem"}
             dish1={"Problem"}
             disp1={
-              "The client wanted a network-driven platform that integrates a network marketing platform, E-commerce, a wallet, and trading capabilities, allowing loyalty rewards and tracking systems over the blockchain. "
+              "A private blockchain network where all the gambling platforms can come and provide faster settlements with no slippage and compel customers to respend the won amount also allows them to use the money for other services."
             }
             dish2={"Solution"}
             disp2={
-              "We provided a solution that facilitates centralized fiat and crypto exchange with leverage along with an Ether-based public blockchain, a utility token that works as a loyalty token, a EURO-based stable coin, and a single SSO system for a 6+ blockchain-based product."
+              "We offered an HFT exchange for fiat and crypto trading with Tron-based private blockchain, in-house blockchain-based utility tokens, WebSocket-based open APIs for 3rd party platform plug-ins, and a vendor payment system for crypto processing."
             }
           />
           <div className={styles.InspiredCardView}>
@@ -146,14 +144,35 @@ const Inspiredby = () => {
           </h3>
           <CardInspired
             animtype={"fade-up"}
-            srcimg={"/assets/images/inspiration2.png"}
+            srcimg={"/assets/images/case3.png"}
             style={styles.InspiredCardSpace}
             inspireTitle={
-              "A highly scalable trading system with a VaR-based risk engine for Bitcoin-based derivatives"
+              "Public Ether Blockchain based Centralized Product Ecosystem"
+            }
+            inspireParagraph={
+              "The client wanted a network-driven platform that integrates"
+            }
+            disTitle={
+              "Public Ether Blockchain based Centralized Product Ecosystem"
+            }
+            dish1={"Problem"}
+            disp1={
+              "The client wanted a network-driven platform that integrates a network marketing platform, E-commerce, a wallet, and trading capabilities, allowing loyalty rewards and tracking systems over the blockchain."
+            }
+            dish2={"Solution"}
+            disp2={
+              "We provided a solution that facilitates centralized fiat and crypto exchange with leverage along with an Ether-based public blockchain, a utility token that works as a loyalty token, a EURO-based stable coin, and a single SSO system for a 6+ blockchain-based product."
+            }
+          />
+          <CardInspired
+            animtype={"fade-up"}
+            srcimg={"/assets/images/case4.png"}
+            inspireTitle={
+              "HFT Derivatives Platform with Risk Engine and Custom Contracts"
             }
             inspireParagraph={""}
             disTitle={
-              "A highly scalable trading system with a VaR-based risk engine for Bitcoin-based derivatives"
+              "HFT Derivatives Platform with Risk Engine and Custom Contracts"
             }
             dish1={"Problem"}
             disp1={
@@ -161,24 +180,7 @@ const Inspiredby = () => {
             }
             dish2={"Solution"}
             disp2={
-              "We offered a bitcoin-based derivative product with a trading system with VaR-based Risk Engine and 100X leverage Engine."
-            }
-          />
-          <CardInspired
-            animtype={"fade-up"}
-            srcimg={"/assets/images/insp4.png"}
-            inspireTitle={"A blockchain-based fundraising platform"}
-            inspireParagraph={
-              "In this case, the client wanted a blockchain-based fundraising platform that allows investors"
-            }
-            disTitle={"A blockchain-based fundraising platform"}
-            dish1={"Problem"}
-            disp1={
-              "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising. "
-            }
-            dish2={"Solution"}
-            disp2={
-              "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors."
+              "We offered a bitcoin-based derivative product with a trading system along with VaR-based Risk Engine and 100X leverage Engine."
             }
           />
           <div className={styles.InspiredCardView2}>

@@ -1,6 +1,8 @@
 .OurProductsContainer {
   background: #1a1c3c;
-  padding: 8rem 3rem 17rem 8.5rem;
+  padding: 4rem 3rem 17rem 8.5rem;
+  width: 100% !important;
+  height: 100vh;
 }
 .borderHide {
   border-bottom: none !important;
@@ -17,7 +19,17 @@
   opacity: 1;
   transition: all 1s ease;
 }
+.progressContainer {
+  width: 100%;
+  height: 8px;
+  background: #ccc;
+}
 
+.progressBar {
+  height: 8px;
+  background: #04aa6d;
+  width: 0%;
+}
 .RequestDemo {
   opacity: 0;
   width: fit-content;
@@ -75,6 +87,13 @@
   display: flex;
   flex-direction: column;
 }
+.NumTxt {
+  color: rgb(255, 255, 255);
+  position: relative;
+  right: -2rem;
+  margin: 0;
+  top: 1rem;
+}
 /* ----card product */
 .OurProductsCardsMain {
   border-top: 1px solid #ffffff;
@@ -109,8 +128,9 @@
 }
 .FollowerLight {
   pointer-events: none;
-  width: 900px;
-  height: 900px;
+  width: 800px;
+  z-index: 1;
+  height: 800px;
   background: -webkit-radial-gradient(
     44.17% 56.2%,
     36.88% 29.95%,
@@ -137,7 +157,9 @@
 .button {
   border-radius: 20px;
   width: 11rem;
+  background-position: right bottom !important;
   padding: 0.5rem 1rem;
+  background-size: 200% 100% !important;
   opacity: 0;
   transition: all 0.8s ease-out;
 }
@@ -162,7 +184,26 @@
 .text:hover {
   color: #fff;
 }
-
+.highlight {
+  font-style: italic;
+  font-weight: 400;
+  font-size: 18px;
+  padding-bottom: 2rem;
+  margin: 0%;
+  padding-top: 1rem;
+}
+.question {
+  font-weight: 600;
+  font-size: 18px;
+  margin-bottom: 0%;
+  padding-bottom: 0.5rem;
+}
+.tags {
+  font-weight: 300;
+  font-size: 16px;
+  padding-bottom: 1rem;
+  width: 34.25rem;
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .OurProductsContainer {
     padding: 3rem 1rem;
