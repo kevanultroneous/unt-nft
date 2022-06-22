@@ -32,13 +32,13 @@ const Speciality = () => {
       sign: "+",
       text: "Unique Blockchain Experience",
     },
-    {
-      key: 5,
-      countstart: 0,
-      countend: 30,
-      sign: "+",
-      text: "Project Implementation",
-    },
+    // {
+    //   key: 5,
+    //   countstart: 0,
+    //   countend: 30,
+    //   sign: "+",
+    //   text: "Project Implementation",
+    // },
   ];
   useEffect(() => {
     AOS.refresh();

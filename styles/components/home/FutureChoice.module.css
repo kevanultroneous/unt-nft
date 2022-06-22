@@ -43,9 +43,22 @@
   color: #ffffff;
   padding: 4rem 2rem 4rem 4rem;
 }
+.CardBg2 {
+  background: #ffffff;
+  border: 1px solid #1a1c3b;
+  transition: all 1s ease;
+}
 .CardTitle {
   font-weight: 600;
   font-size: 40px;
+  transition: all 1s ease;
+}
+.CardTitle2 {
+  color: #000000;
+  transition: all 1s ease;
+}
+.CardTitle2 {
+  color: #000000;
 }
 .CardProfile {
   display: flex;
@@ -74,39 +87,115 @@
   border-width: 3px;
   background-color: #ffffff;
   border-radius: 20px;
+  transition: all 1s ease;
+}
+.HungryCard2 {
+  background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
+  transition: all 1s ease;
+}
+.HungryCard2 {
+  background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
+  transition: all 1s ease;
 }
 .MainHungry {
   padding: 3px;
-  /* background: linear-gradient(138deg, #1a1c3b #a21d34 ); */
   border-radius: 20px;
-  background: linear-gradient(-90deg, #1a1c3b 60%, #a21d34 40%);
+  background: linear-gradient(-90deg, #1a1c3b 100%, #a21d34 100%);
   background-size: 400% 400%;
-  animation: gradient 4s ease infinite;
-}
-
-@keyframes gradient {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
+<<<<<<< HEAD
+  transition: all 1s ease;
+=======
+  /* transform: matrix(0, -1, -1, 0, 0, 0); */
+>>>>>>> aba41037a7fbea3f5adb89b5b23ea8913953a83a
 }
 
 .HungryHeading {
   font-weight: 600;
   font-size: 40px;
   color: #000000;
+  transition: all 1s ease;
+}
+.HungryHeading2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
+  transition: all 1s ease;
+}
+.HungryHeading2 {
+  font-weight: 600;
+  font-size: 40px;
+  color: #fff;
 }
 .HungryParagraph {
   font-weight: 400;
   font-size: 22px;
   color: rgba(0, 0, 0, 0.8);
+  transition: all 1s ease;
+}
+.HungryParagraph2 {
+  color: #fff;
+  transition: all 1s ease;
+}
+.outer {
+  margin-top: 2.5rem;
 }
 
+.button {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 12rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #fff;
+  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.8s ease-out;
+}
+
+.button:hover {
+  color: #a21d34;
+  background-position: left bottom;
+}
+.HungryParagraph2 {
+  color: #fff;
+}
+.outer {
+  margin-top: 2.5rem;
+}
+
+.button {
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  width: fit-content;
+  max-width: 12rem;
+  padding: 0.5rem 1rem;
+  display: block;
+  color: #fff;
+  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  transition: all 0.8s ease-out;
+}
+
+.button:hover {
+  color: #a21d34;
+  background-position: left bottom;
+}
+
+.text {
+  text-align: center;
+  font-size: 16px;
+  line-height: 30px;
+  color: #fff;
+  transition: all 0.6s ease-out;
+  display: block;
+}
+
+.text:hover {
+  color: #a21d34;
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .FutureChoiceContainer {
     padding-left: 1rem;
