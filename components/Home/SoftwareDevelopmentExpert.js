@@ -10,22 +10,22 @@ import ActionButtonV2 from "../Common/ActionButtonV2";
 const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
-    speed: 500,
+    speed: 2000,
     slidesToShow: 3.1,
-    slidesToScroll: 4,
+    slidesToScroll: 3,
     centerMode: false,
     autoplay: true,
-    autoplaySpeed: 2000,
+    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1400,
         settings: {
           slidesToShow: 3.1,
-          slidesToScroll: 4,
+          slidesToScroll: 3,
           initialSlide: 2,
           centerMode: false,
           autoplay: true,
-          autoplaySpeed: 2000,
+          cssEase: "linear",
           // centerPadding: "45px",
         },
       },

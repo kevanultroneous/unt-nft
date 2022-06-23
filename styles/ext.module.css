@@ -1,0 +1,18 @@
+.Box {
+  height: 100vh !important;
+  width: 100vh !important;
+  background-color: aquamarine;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  border-radius: 100%;
+  text-align: center;
+}
+.Box p {
+  font-size: 25rem;
+}
+.Main {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+}

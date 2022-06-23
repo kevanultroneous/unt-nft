@@ -17,15 +17,15 @@ const FutureChoice = () => {
       <Row>
         <Col xl={8} md={12}>
           <div
-            className={`${styles.CardBg} ${c1 ? styles.CardBg2 : null}`}
-            onMouseLeave={() => setC1(false)}
-            onMouseOver={() => setC1(true)}
+            className={`${styles.CardBg} ${c2 ? styles.CardBg2 : null}`}
+            // onMouseLeave={() => setC1(false)}
+            // onMouseOver={() => setC1(true)}
           >
             <Row>
               <Col xl={12}>
                 <h5
                   className={`${styles.CardTitle}  ${
-                    c1 ? styles.CardTitle2 : null
+                    c2 ? styles.CardTitle2 : null
                   }`}
                 >
                   <span style={{ color: "#7E7F91" }}>
@@ -48,14 +48,14 @@ const FutureChoice = () => {
                   <div className={styles.CardProfileDetailContainer}>
                     <p
                       className={`${styles.CardProfileName} ${
-                        c1 ? styles.CardTitle2 : null
+                        c2 ? styles.CardTitle2 : null
                       }`}
                     >
                       Hayen Phan
                     </p>
                     <p
                       className={`${styles.CardProfileDOB} ${
-                        c1 ? styles.CardTitle2 : null
+                        c2 ? styles.CardTitle2 : null
                       }`}
                     >
                       10th June 2022
@@ -66,7 +66,7 @@ const FutureChoice = () => {
               <Col xl={2} md={2} xs={4}>
                 <Image
                   src={
-                    c1
+                    c2
                       ? "/assets/images/darkb.svg"
                       : "/assets/images/right-sb.svg"
                   }
@@ -80,26 +80,26 @@ const FutureChoice = () => {
           <div className={styles.MainHungry}>
             <div
               className={`${styles.HungryCard} ${
-                c1 ? styles.HungryCard2 : null
+                c2 ? styles.HungryCard2 : null
               }`}
               onMouseOver={() => setC2(true)}
               onMouseLeave={() => setC2(false)}
             >
               <h5
                 className={`${styles.HungryHeading} ${
-                  c1 ? styles.HungryHeading2 : null
+                  c2 ? styles.HungryHeading2 : null
                 }`}
               >
                 Hungry for more?
               </h5>
               <p
                 className={`${styles.HungryParagraph} ${
-                  c1 ? styles.HungryParagraph2 : null
+                  c2 ? styles.HungryParagraph2 : null
                 }`}
               >
                 Read more articles on our blog.
               </p>
-              {c1 ? (
+              {c2 ? (
                 <div className={styles.outer}>
                   <div className={styles.button}>
                     <div classNane={styles.text}>Visit Blog Page</div>

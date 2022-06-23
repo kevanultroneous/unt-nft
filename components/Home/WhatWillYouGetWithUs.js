@@ -40,7 +40,7 @@ function WhatWillYouGetWithUs() {
               setVisibility(true);
               setTimeout(() => {
                 setVisibility(false);
-              }, 600);
+              }, 1500);
             }}
           >
             {el}

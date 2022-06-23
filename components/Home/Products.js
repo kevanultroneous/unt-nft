@@ -3,85 +3,83 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
 import { useEffect, useState } from "react";
-import LearnMore from "../Common/LearnMore";
-import { MdKeyboardArrowRight } from "react-icons/md";
 import ActionButtonV3 from "../Common/ActionButtonV3";
 const Products = ({ targetposition }) => {
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
   const [opacitycord, setOpacitycord] = useState("0");
   const [currentItem, setCurrentItem] = useState(0);
-  const upper = (per) => {
-    if (per > 26) {
-      setCurrentItem(1);
-    } else if (per > 27) {
-      setCurrentItem(2);
-    } else if (per > 28) {
-      setCurrentItem(3);
-    } else if (per > 29) {
-      setCurrentItem(4);
-    } else if (per > 30) {
-      setCurrentItem(5);
-    } else if (per > 31) {
-      setCurrentItem(6);
-    } else if (per > 32) {
-      setCurrentItem(7);
-    }
-  };
-  const lower = (per) => {
-    if (per < 26) {
-      setCurrentItem(0);
-    } else if (per < 27) {
-      setCurrentItem(1);
-    } else if (per < 28) {
-      setCurrentItem(2);
-    } else if (per < 29) {
-      setCurrentItem(3);
-    } else if (per < 30) {
-      setCurrentItem(4);
-    } else if (per < 31) {
-      setCurrentItem(5);
-    } else if (per < 32) {
-      setCurrentItem(6);
-    } else if (per < 33) {
-      setCurrentItem(7);
-    } else {
-      setCurrentItem(0);
-    }
-  };
-  const mouseHandler = () => {
-    var findProduct = document.getElementsByClassName(
-      styles.OurProductsContainer
-    )[0];
-    var targetSection = findProduct.getBoundingClientRect();
+  // const upper = (per) => {
+  //   if (per > 26) {
+  //     setCurrentItem(1);
+  //   } else if (per > 27) {
+  //     setCurrentItem(2);
+  //   } else if (per > 28) {
+  //     setCurrentItem(3);
+  //   } else if (per > 29) {
+  //     setCurrentItem(4);
+  //   } else if (per > 30) {
+  //     setCurrentItem(5);
+  //   } else if (per > 31) {
+  //     setCurrentItem(6);
+  //   } else if (per > 32) {
+  //     setCurrentItem(7);
+  //   }
+  // };
+  // const lower = (per) => {
+  //   if (per < 26) {
+  //     setCurrentItem(0);
+  //   } else if (per < 27) {
+  //     setCurrentItem(1);
+  //   } else if (per < 28) {
+  //     setCurrentItem(2);
+  //   } else if (per < 29) {
+  //     setCurrentItem(3);
+  //   } else if (per < 30) {
+  //     setCurrentItem(4);
+  //   } else if (per < 31) {
+  //     setCurrentItem(5);
+  //   } else if (per < 32) {
+  //     setCurrentItem(6);
+  //   } else if (per < 33) {
+  //     setCurrentItem(7);
+  //   } else {
+  //     setCurrentItem(0);
+  //   }
+  // };
+  // const mouseHandler = () => {
+  //   var findProduct = document.getElementsByClassName(
+  //     styles.OurProductsContainer
+  //   )[0];
+  //   var targetSection = findProduct.getBoundingClientRect();
 
-    if (targetSection.y <= 0) {
-      const winScroll =
-        document.body.scrollTop || document.documentElement.scrollTop;
+  //   if (targetSection.y <= 0) {
+  //     const winScroll =
+  //       document.body.scrollTop || document.documentElement.scrollTop;
 
-      const height =
-        document.documentElement.scrollHeight -
-        document.documentElement.clientHeight;
+  //     const height =
+  //       document.documentElement.scrollHeight -
+  //       document.documentElement.clientHeight;
 
-      const scrolled = winScroll / height;
-      const per = scrolled * 100;
+  //     const scrolled = winScroll / height;
+  //     const per = scrolled * 100;
 
-      upper(per);
-      lower(per);
-    }
-  };
-  useEffect(() => {
-    if (currentItem === 7) {
-      window.removeEventListener("scroll", mouseHandler());
-      var findProduct = document.getElementsByClassName(
-        styles.OurProductsContainer
-      )[0];
-    }
-  }, [currentItem]);
+  //     upper(per);
+  //     lower(per);
+  //   }
+  // };
+  // useEffect(() => {
+  //   if (currentItem === 7) {
+  //     window.removeEventListener("scroll", mouseHandler());
+  //     var findProduct = document.getElementsByClassName(
+  //       styles.OurProductsContainer
+  //     )[0];
+  //   }
+  // }, [currentItem]);
   useEffect(() => {
     AOS.refresh();
     AOS.init();
-    window.addEventListener("scroll", () => mouseHandler());
+    // window.addEventListener("scroll", () => mouseHandler());
   }, []);
   const ProductsList = [
     {
@@ -207,14 +205,14 @@ const Products = ({ targetposition }) => {
   ];
   return (
     <div className={styles.OurProductsContainer} style={targetposition}>
-      <div
+      {/* <div
         className={styles.FollowerLight}
         style={{ left: xcord, top: ycord, opacity: opacitycord }}
-      ></div>
+      ></div> */}
 
       <div>
         <h3
-          className={styles.OurProductsHeading}
+          className={`${styles.OurProductsHeading}`}
           // data-aos="zoom-in"
           // data-aos-duration="2000"
         >
@@ -232,57 +230,61 @@ const Products = ({ targetposition }) => {
             onMouseLeave={() => setOpacitycord("0")}
           >
             {/*  */}
-            {/* {ProductsList.map((value, index) => ( */}
-<<<<<<< HEAD
-            <h4 className={styles.NumTxt}>{ProductsList[currentItem].num}</h4>
-=======
-
->>>>>>> aba41037a7fbea3f5adb89b5b23ea8913953a83a
-            <div className={`${styles.OurProductsCardsMain} fadeInRight`}>
-              <div className={styles.OurProductsCardSub}>
-                <div className={styles.OurProductsCardImage}>
-                  <Image src={ProductsList[currentItem].img} />
-                </div>
-                <div className={styles.OurProductsCardDetail}>
-                  <h4 className={styles.OurProductsHead}>
-                    {ProductsList[currentItem].name}
-                  </h4>
-                  <p className={styles.OurProductsParagraph}>
-                    {ProductsList[currentItem].detail}
-                  </p>
-                  <p
-                    className={styles.highlight}
-                    style={{ color: ProductsList[currentItem].color }}
-                  >
-                    {ProductsList[currentItem].highlight}
-                  </p>
-                  <p className={styles.question}>
-                    {ProductsList[currentItem].question}
-                  </p>
-                  <p className={styles.tags}>
-                    {ProductsList[currentItem].tags}
-                  </p>
-                  <div>
-                    <div className={styles.BtnContainer}>
-                      <ActionButtonV3
-                        backc={ProductsList[currentItem].btnc}
-                        borderc={ProductsList[currentItem].border}
-                        text={
-                          <>
-                            Explore Product&nbsp;
+            {ProductsList.map((value, index) => (
+              <>
+                <h4
+                  className={styles.NumTxt}
+                  data-aos="fade-left"
+                  data-aos-offset="400"
+                  data-aos-delay="50"
+                >
+                  {value.num}
+                </h4>
+                <div
+                  className={`${styles.OurProductsCardsMain}`}
+                  data-aos="fade-left"
+                  data-aos-offset="500"
+                  data-aos-delay="50"
+                >
+                  <div className={styles.OurProductsCardSub}>
+                    <div className={styles.OurProductsCardImage}>
+                      <Image src={value.img} />
+                    </div>
+                    <div className={styles.OurProductsCardDetail}>
+                      <h4 className={styles.OurProductsHead}>{value.name}</h4>
+                      <p className={styles.OurProductsParagraph}>
+                        {value.detail}
+                      </p>
+                      <p
+                        className={styles.highlight}
+                        style={{ color: value.color }}
+                      >
+                        {value.highlight}
+                      </p>
+                      <p className={styles.question}>{value.question}</p>
+                      <p className={styles.tags}>{value.tags}</p>
+                      <div>
+                        <div className={styles.BtnContainer}>
+                          <ActionButtonV3
+                            backc={value.btnc}
+                            borderc={value.border}
+                            text={
+                              <>
+                                Explore Product&nbsp;
+                                <HiOutlineExternalLink />
+                              </>
+                            }
+                          />
+                          <div className={styles.RequestDemo1}>
                             <HiOutlineExternalLink />
-                          </>
-                        }
-                      />
-                      <div className={styles.RequestDemo1}>
-                        <HiOutlineExternalLink />
+                          </div>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            </div>
-            {/* ))} */}
+              </>
+            ))}
           </div>
         </div>
       </div>

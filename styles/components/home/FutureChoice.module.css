@@ -44,8 +44,11 @@
   padding: 4rem 2rem 4rem 4rem;
 }
 .CardBg2 {
+  height: 22rem;
+  border-radius: 20px;
   background: #ffffff;
   border: 1px solid #1a1c3b;
+  padding: 4rem 2rem 4rem 4rem;
   transition: all 1s ease;
 }
 .CardTitle {
@@ -98,15 +101,11 @@
   transition: all 1s ease;
 }
 .MainHungry {
-  padding: 3px;
+  padding: 1px;
   border-radius: 20px;
   background: linear-gradient(-90deg, #1a1c3b 100%, #a21d34 100%);
   background-size: 400% 400%;
-<<<<<<< HEAD
   transition: all 1s ease;
-=======
-  /* transform: matrix(0, -1, -1, 0, 0, 0); */
->>>>>>> aba41037a7fbea3f5adb89b5b23ea8913953a83a
 }
 
 .HungryHeading {

@@ -48,7 +48,7 @@
   left: 15rem;
 }
 .SmallImageAnim {
-  animation: fadeInRight 0.6s ease;
+  animation: fadeInRight 2s ease;
   animation-direction: alternate;
 }
 @keyframes fadeInRight {

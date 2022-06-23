@@ -2,7 +2,8 @@
   background: #1a1c3c;
   padding: 4rem 3rem 17rem 8.5rem;
   width: 100% !important;
-  height: 100vh;
+}
+.sticky {
 }
 .borderHide {
   border-bottom: none !important;
@@ -78,8 +79,10 @@
   font-size: 70px;
   color: #ffffff;
 }
+
 .OurProductsCardsContainer {
   padding-top: 6rem;
+  padding-bottom: 6rem;
 }
 .OurProductsCard {
   width: 100%;
