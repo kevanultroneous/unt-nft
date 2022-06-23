@@ -16,7 +16,6 @@ import Exchange from "@/components/Home/Exchange";
 import WhatWillYouGetWithUs from "@/components/Home/WhatWillYouGetWithUs";
 import Footer from "@/components/Home/Footer";
 export default function Home() {
-  //
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
   const section2 = useRef(null);
@@ -25,6 +24,8 @@ export default function Home() {
   const [pos2, setPos2] = useState(null);
 
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+
+  // useEffect for  Animated Section
   useEffect(() => {
     const timer1 = setTimeout(() => {
       setPos2(true);
@@ -40,6 +41,7 @@ export default function Home() {
     }, 5000);
     return () => clearTimeout(timer3);
   }, []);
+
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
@@ -55,8 +57,7 @@ export default function Home() {
           <section ref={section1}>
             <SDE handleClick={() => scrollToRef(section2)} />
           </section>
-          {/* Menu Sections */}
-          {/* frame 1 -software development Experts*/}
+
           {/* Discover MOBIFINIX */}
           <section ref={section2}>
             <Discover />
@@ -91,7 +92,3 @@ export default function Home() {
     </Layout>
   );
 }
-/*
-
-
-*/

@@ -4,6 +4,7 @@ import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect, useState } from "react";
+import { ImMail } from "react-icons/im";
 import AOS from "aos";
 const Footer = () => {
   useEffect(() => {
@@ -41,19 +42,32 @@ const Footer = () => {
             <div className={styles.FooterContactusLink}>Explore</div>
             <HiOutlineExternalLink className={styles.ContactusIcon} />
           </div>
-          <div>
-            <IoLogoLinkedin
-              style={{ fontSize: "30px" }}
-              className={styles.IconHover}
-            />
-            <IoLogoFacebook
-              style={{ fontSize: "30px", borderRadius: "1rem" }}
-              className={styles.IconHover}
-            />
-            <AiFillTwitterSquare
-              style={{ fontSize: "30px", borderRadius: "0.8rem" }}
-              className={styles.IconHover}
-            />
+        </Col>
+        <Col xl={6} className={styles.FooterIconCol}>
+          <div
+            className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
+          >
+            <div className="d-flex">
+              <ImMail
+                style={{ fontSize: "30px" }}
+                className={styles.IconHover}
+              />
+              <span className={styles.MailText}>Sales@mobifinx.com</span>
+            </div>
+            <div>
+              <IoLogoLinkedin
+                style={{ fontSize: "30px" }}
+                className={styles.IconHover}
+              />
+              <IoLogoFacebook
+                style={{ fontSize: "30px", borderRadius: "1rem" }}
+                className={styles.IconHover}
+              />
+              <AiFillTwitterSquare
+                style={{ fontSize: "30px", borderRadius: "0.8rem" }}
+                className={styles.IconHover}
+              />
+            </div>
           </div>
         </Col>
         {/* <Col xl={6} md={12} xs={12}>

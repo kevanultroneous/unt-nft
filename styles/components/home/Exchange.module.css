@@ -11,11 +11,41 @@
 }
 .ExchnageHead {
   font-weight: 600;
-  font-size: 50px;
+  font-size: 80px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-style: normal;
+  -webkit-text-stroke: 1px #a21d34;
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.6s ease-in-out;
+  -o-transition: background-position 0.6s ease-in-out;
+  transition: background-position 0.6s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #a21d34),
+    color-stop(50%, #a21d34)
+  );
+  background-image: -webkit-linear-gradient(bottom, #a21d34 50%, #fff 50%);
+  background-image: -o-linear-gradient(bottom, #a21d34 50%, #fff 50%);
+  background-image: linear-gradient(to top, #a21d34 50%, #fff 50%);
+}
+.ExchnageHead:hover {
+  background-position: bottom;
+}
+.ContactusIcon {
+  color: #a21d34;
 }
 .ExchnageParagraph {
   font-weight: 400;
   font-size: 22px;
+
+  color: rgba(162, 29, 52, 0.6);
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .ExchnageContainer {
