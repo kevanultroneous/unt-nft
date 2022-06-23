@@ -12,7 +12,7 @@ const SDE = ({ handleClick }) => {
     infinite: true,
     speed: 2000,
     slidesToShow: 3.1,
-    slidesToScroll: 3,
+    slidesToScroll: 1,
     centerMode: false,
     autoplay: true,
     cssEase: "linear",
@@ -21,7 +21,7 @@ const SDE = ({ handleClick }) => {
         breakpoint: 1400,
         settings: {
           slidesToShow: 3.1,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           initialSlide: 2,
           centerMode: false,
           autoplay: true,
@@ -32,8 +32,8 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 3,
-          slidesToScroll: 4,
+          slidesToShow: 3.1,
+          slidesToScroll: 2,
           initialSlide: 2,
           centerMode: true,
           centerPadding: "0px",

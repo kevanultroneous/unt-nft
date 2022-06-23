@@ -56,7 +56,7 @@ const Footer = () => {
             />
           </div>
         </Col>
-        <Col xl={6} md={12} xs={12}>
+        {/* <Col xl={6} md={12} xs={12}>
           <Row className="mx-0">
             <Col xl={3} md={3} xs={6} className="p-0">
               <ul className={styles.MainLinks}>
@@ -94,7 +94,7 @@ const Footer = () => {
               </Row>
             </Col>
           </Row>
-        </Col>
+        </Col> */}
       </Row>
     </div>
   );
