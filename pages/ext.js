@@ -18,9 +18,7 @@ const Ext = () => {
     // beforeChange: (current, next) =>
     //   console.log({ before: "before", oldSlide: current, activeSlide: next }),
     afterChange: (current) => {
-      ary.indexOf(ary[ary.length - 1]) === current
-        ? alert("DO something Magic")
-        : null;
+      ary.indexOf(ary[ary.length - 1]) === current ? 2 : null;
     },
     responsive: [
       {
@@ -158,15 +156,119 @@ const Ext = () => {
         without involving a central authority and connect buyers and sellers
         directly.
       </p>
-      <Slider {...settings} ref={sliderRef}>
-        {ary.map((v, i) => (
-          <div className={styles.Main}>
-            <div className={styles.Box}>
-              <p>{v}</p>
+      <div className={styles.SliderContainer}>
+        <Slider {...settings} ref={sliderRef}>
+          {ary.map((v, i) => (
+            <div className={styles.Main}>
+              <div className={styles.Box}>
+                <p>{v}</p>
+              </div>
             </div>
-          </div>
-        ))}
-      </Slider>
+          ))}
+        </Slider>
+      </div>
+      <p>
+        A Centralized Trading platform for Spot trading, OTC desk, and P2P
+        Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly.
+      </p>
+      <p>
+        A Centralized Trading platform for Spot trading, OTC desk, and P2P
+        Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly. A Centralized Trading platform for Spot trading, OTC desk, and
+        P2P Trading. Offers world-class trading technology, robust legal and
+        compliance solutions, and round-the-clock support. Automate trades
+        without involving a central authority and connect buyers and sellers
+        directly.
+      </p>
       <p>
         A Centralized Trading platform for Spot trading, OTC desk, and P2P
         Trading. Offers world-class trading technology, robust legal and

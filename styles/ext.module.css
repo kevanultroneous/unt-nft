@@ -4,7 +4,6 @@
   background-color: aquamarine;
   display: flex !important;
   align-items: center !important;
-  justify-content: center !important;
   border-radius: 100%;
   text-align: center;
 }
@@ -13,6 +12,11 @@
 }
 .Main {
   display: flex !important;
-  align-items: center !important;
+}
+.SliderContainer {
+  height: 100vh;
+  display: flex;
+  position: fixed;
   justify-content: center !important;
+  /* align-items: center; */
 }
