@@ -1,6 +1,6 @@
 .Box {
-  height: 100vh !important;
-  width: 100vh !important;
+  height: 10vh !important;
+  width: 10vh !important;
   background-color: aquamarine;
   display: flex !important;
   align-items: center !important;
@@ -9,7 +9,7 @@
   text-align: center;
 }
 .Box p {
-  font-size: 25rem;
+  font-size: small;
 }
 .Main {
   display: flex !important;

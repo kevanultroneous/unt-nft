@@ -44,11 +44,11 @@
 .SmallImage {
   width: 15rem;
   position: relative;
-  bottom: 1.5rem;
-  left: 15rem;
+  bottom: -2.5rem;
+  left: 12rem;
 }
 .SmallImageAnim {
-  animation: fadeInRight 0.6s ease;
+  animation: fadeInRight 0.9s ease;
   animation-direction: alternate;
 }
 @keyframes fadeInRight {
