@@ -116,10 +116,17 @@
   color: rgba(162, 29, 52, 1);
   transition: all 1s ease;
 }
-
+.MailIconHover {
+  font-size: 27px;
+  margin-right: 0.5rem;
+}
+.MailText:hover {
+  color: rgba(162, 29, 52, 1);
+  transition: all 1s ease;
+}
 .IconHover {
   margin-top: 0rem;
-  margin-right: 1rem;
+  margin-right: 0.3rem;
 }
 .MailText {
   font-weight: 600;
@@ -127,10 +134,10 @@
   margin-right: 2rem;
   transition: all 1s ease;
 }
-.MailText:hover {
+/* .MailText:hover {
   color: rgba(162, 29, 52, 1);
   transition: all 1s ease;
-}
+} */
 .FooterIconHelper {
   display: flex;
   align-items: end;

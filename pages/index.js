@@ -1,8 +1,6 @@
 import Process from "@/components/Home/Process";
-import TalkToExpert from "@/components/Home/TalkToExpert";
 import Inspiredby from "@/components/Home/Inspiredby";
 import Speciality from "@/components/Home/Speciality";
-
 import React, { useEffect, useRef, useState } from "react";
 import IntroContainer from "@/components/Home/IntroContainer";
 import Menu from "@/components/Home/Menu";
@@ -11,10 +9,10 @@ import Discover from "@/components/Home/Discover";
 import SDE from "@/components/Home/SoftwareDevelopmentExpert";
 import Products from "@/components/Home/Products";
 import Layout from "@/components/Common/Layout";
-import SmoothScroll from "@/components/SmoothScroll.component";
 import Exchange from "@/components/Home/Exchange";
 import WhatWillYouGetWithUs from "@/components/Home/WhatWillYouGetWithUs";
 import Footer from "@/components/Home/Footer";
+import SmoothScroll from "@/components/SmoothScroll.component";
 export default function Home() {
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
@@ -46,7 +44,6 @@ export default function Home() {
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
       {pos1 ? <Menu opacity={on} /> : null}
-
       {/* <SmoothScroll> */}
       {pos2 ? (
         <section>
@@ -57,7 +54,6 @@ export default function Home() {
           <section ref={section1}>
             <SDE handleClick={() => scrollToRef(section2)} />
           </section>
-
           {/* Discover MOBIFINIX */}
           <section ref={section2}>
             <Discover />
@@ -66,24 +62,16 @@ export default function Home() {
           <Products />
           {/* Exchange */}
           <Exchange />
-          {/* Expert */}
-          {/* <TalkToExpert /> */}
-          {/* TechnologyStack */}
-          {/* <TechnologyStack /> */}
+          {/* Get with us */}
           <WhatWillYouGetWithUs />
-
           {/* Inspiredby */}
           <Inspiredby />
           {/* Process */}
           <Process />
           {/* be a part of future choice */}
           <FutureChoice />
-          {/* Achievements */}
-          {/* <Achievements /> */}
           {/* Speciality */}
           <Speciality />
-          {/* GetInTouch */}
-          {/* <GetInTouch /> */}
           {/* Footer */}
           <Footer />
         </>

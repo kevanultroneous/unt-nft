@@ -5,7 +5,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import Lottie from "react-lottie";
 import ActionButton from "../Common/ActionButton";
-import animdata from "../Home/anim";
+import animdata from "../../utils/anim.json";
 const Discover = () => {
   useEffect(() => {
     AOS.refresh();

@@ -1,158 +1,98 @@
-.OurProductsContainer {
+.headline {
+  position: fixed;
+  font-size: 70px;
+  font-weight: 600;
+  color: #fff;
+}
+.SectionCards .SectionContent {
+  padding-bottom: 22px;
+  padding-top: 140px;
+  text-align: center;
   background: #1a1c3c;
-  padding: 4rem 3rem 17rem 8.5rem;
-  width: 100% !important;
 }
-.sticky {
+.SectionCards .SectionContent ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
-.borderHide {
-  border-bottom: none !important;
+.SectionCards .SectionContent li {
+  transform: translateZ(0);
+  will-change: transform, opacity;
+  height: 800px;
+  position: sticky;
+  top: calc(50vh + 52px - 215px - 40px);
 }
-.OurProductsHeadContainer {
-  display: flex;
-  width: 80%;
+.SectionCards .SectionContent li .CardContainer {
+  position: absolute;
+  top: 50px;
+  /* left: 50%; */
+  width: 750px;
+  height: 530px;
+  /* margin-left: -375px; */
+  transform: translateZ(0);
 }
-.BtnContainer {
-  justify-content: end;
+.SectionCards .SectionContent li .CardContainer {
   width: 100%;
+  height: 570px;
+  /* margin-left: -412.5px; */
 }
-.OurProductsCardsMain:hover .RequestDemo {
-  opacity: 1;
-  transition: all 1s ease;
+.SectionCards .SectionContent li {
+  z-index: 1;
+  background-color: #1a1c3c;
 }
-.progressContainer {
+.SectionCards .SectionContent li .card {
   width: 100%;
-  height: 8px;
-  background: #ccc;
+  height: 100%;
+  overflow: hidden;
+  z-index: 2;
+  background-repeat: no-repeat;
+  transform-origin: top center;
+  background-position: center center;
+  box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
 }
-
-.progressBar {
-  height: 8px;
-  background: #04aa6d;
-  width: 0%;
+.card01 {
+  background: #ffff;
 }
-.RequestDemo {
-  opacity: 0;
-  width: fit-content;
-  font-weight: 400;
-  font-size: 14px;
-  width: 10rem;
-  color: #ffffff;
-  background: #a21d34;
-  border-radius: 22px;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 1s ease;
+.card02 {
+  background: #ffff;
 }
-.RequestDemo1 {
-  display: none;
-  opacity: 0;
-  width: 2.5rem;
-  font-weight: 400;
-  font-size: 14px;
-  color: #ffffff;
-  background: #a21d34;
-  border-radius: 22px;
-  display: flex;
-  align-items: center;
-  padding: 0.5rem 0.8rem 0.5rem 0.8rem;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-  transition: all 1s ease;
+.card03 {
+  background: #ffff;
 }
-.RequestDemo:hover {
-  box-shadow: 0px 0px 10px 0px #a21d34;
-  transition: all 1s ease;
+.card04 {
+  background: #ffff;
 }
-.RequestDemo1:hover {
-  box-shadow: 0px 0px 10px 0px #a21d34;
-  transition: all 1s ease;
+.card05 {
+  background: #ffff;
+}
+.card06 {
+  background: #ffff;
+}
+.card07 {
+  background: #ffff;
+}
+.card08 {
+  background: #ffff;
+}
+.ProductDetails {
+  color: #fff;
+  text-align: left;
 }
 .OurProductsHeading {
-  width: 50%;
   font-weight: 600;
   font-size: 70px;
   color: #ffffff;
+  position: sticky;
+  top: 20px;
+  width: fit-content;
+  padding-left: 8.5rem;
 }
-
-.OurProductsCardsContainer {
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+.Carddetail {
+  width: 45%;
 }
-.OurProductsCard {
-  width: 100%;
-  align-items: end;
-  display: flex;
-  flex-direction: column;
-}
-.NumTxt {
-  color: rgb(255, 255, 255);
-  position: relative;
-  right: -2rem;
-  margin: 0;
-  top: 1rem;
-}
-/* ----card product */
-.OurProductsCardsMain {
-  border-top: 1px solid #ffffff;
-  color: #ffffff;
-  width: 75%;
-  /* border-bottom: 1px solid #ffffff; */
-}
-.OurProductsCardSub {
-  padding-top: 5rem;
-  display: flex;
-  padding-bottom: 5rem;
-}
-.OurProductsCardImage {
-  padding-right: 5rem;
-}
-.OurProductsCardDetail {
-  width: 100%;
-}
-.OurProductsHead {
-}
-.OurProductsParagraph {
-  font-weight: 300;
-  font-size: 16px;
-  width: 26.4rem;
-}
-.LearnMore {
-  transition: all 1s ease;
-}
-.LearnMore:hover {
-  color: #a21d34;
-  transition: all 1s ease;
-}
-.FollowerLight {
-  pointer-events: none;
-  width: 800px;
-  z-index: 1;
-  height: 800px;
-  background: -webkit-radial-gradient(
-    44.17% 56.2%,
-    36.88% 29.95%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
-  background: -o-radial-gradient(
-    44.17% 56.2%,
-    36.88% 29.95%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
-  background: radial-gradient(
-    36.88% 29.95% at 44.17% 56.2%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
-  position: absolute;
-  transform: translate(-50%, -50%);
+.ProductImages {
+  text-align: end !important;
+  padding-right: 4rem;
 }
 .outer {
 }
@@ -207,74 +147,19 @@
   padding-bottom: 1rem;
   width: 34.25rem;
 }
-@media (min-width: 320px) and (max-width: 450px) {
-  .OurProductsContainer {
-    padding: 3rem 1rem;
-  }
-  .OurProductsHeading {
-    width: 100%;
-    font-size: 50px;
-  }
-  .OurProductsCard {
-    align-items: flex-start;
-  }
-  .OurProductsCardsMain {
-    width: 100%;
-  }
-  .OurProductsHead {
-    font-size: 16px;
-  }
-  .OurProductsCardImage {
-    padding-right: 2rem;
-  }
-  .OurProductsCardImage img {
-    height: 90px !important;
-  }
-  .OurProductsParagraph {
-    font-size: 11px;
-    width: 14.4rem;
-    text-align: justify;
-  }
-  .RequestDemo {
-    display: none;
-  }
-  .RequestDemo1 {
-    display: block;
-  }
-
-  .OurProductsCardsMain:hover .RequestDemo1 {
-    opacity: 1;
-    transition: all 1s ease;
-  }
+.HRcontainer {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
-@media (min-width: 768px) and (max-width: 1080px) {
-  .OurProductsHeading {
-    width: auto;
-  }
-  .OurProductsCard {
-    align-items: center;
-  }
-  .OurProductsParagraph {
-    width: 100%;
-  }
-  .OurProductsCardsMain {
-    width: 100%;
-  }
-  .RequestDemo {
-    display: none;
-  }
-  .RequestDemo1 {
-    display: block;
-  }
-
-  .OurProductsCardsMain:hover .RequestDemo1 {
-    opacity: 1;
-    transition: all 1s ease;
-  }
+.HrBorder {
+  color: rgb(255, 255, 255);
+  width: 65% !important;
+  /* float: right; */
+  border: 1.5px solid;
 }
-@media (min-width: 650px) and (max-width: 740px) {
-}
-@media (min-width: 1200px) and (max-width: 1730px) {
-}
-@media (min-width: 1920px) and (max-height: 1080px) {
+.HRcontainer span {
+  color: #fff;
+  padding-right: 1rem;
+  padding-left: 1rem;
 }

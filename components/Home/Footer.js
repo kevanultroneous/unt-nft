@@ -3,7 +3,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { ImMail } from "react-icons/im";
 import AOS from "aos";
 const Footer = () => {
@@ -12,11 +12,7 @@ const Footer = () => {
     AOS.init();
   }, []);
   return (
-    <div
-      className={styles.FooterContainer}
-      // data-aos="fade-up"
-      // data-aos-duration="2000"
-    >
+    <div className={styles.FooterContainer}>
       <Row className="mx-0">
         <Col xl={6}>
           <h4 className={styles.SubscribeHeading}>
@@ -48,23 +44,22 @@ const Footer = () => {
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >
             <div className="d-flex">
-              <ImMail
-                style={{ fontSize: "30px" }}
-                className={styles.IconHover}
-              />
-              <span className={styles.MailText}>Sales@mobifinx.com</span>
+              <span className={styles.MailText}>
+                <ImMail className={styles.MailIconHover} />
+                Sales@mobifinx.com
+              </span>
             </div>
             <div>
               <IoLogoLinkedin
-                style={{ fontSize: "30px" }}
+                style={{ fontSize: "35px" }}
                 className={styles.IconHover}
               />
               <IoLogoFacebook
-                style={{ fontSize: "30px", borderRadius: "1rem" }}
+                style={{ fontSize: "35px", borderRadius: "1rem" }}
                 className={styles.IconHover}
               />
               <AiFillTwitterSquare
-                style={{ fontSize: "30px", borderRadius: "0.8rem" }}
+                style={{ fontSize: "35px", borderRadius: "0.8rem" }}
                 className={styles.IconHover}
               />
             </div>

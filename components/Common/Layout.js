@@ -8,7 +8,7 @@ const Layout = ({ title, children }) => {
         <title>{title}</title>
       </Head>
       <main>
-        <Cursor />
+        {/* <Cursor /> */}
         {children}
       </main>
     </div>

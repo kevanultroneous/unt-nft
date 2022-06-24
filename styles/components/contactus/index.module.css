@@ -1,0 +1,77 @@
+.ContactUsMainContainer {
+  padding: 2rem 4rem 6rem 8.5rem;
+}
+.FirstSection {
+  display: flex;
+  width: 100%;
+  align-items: flex-end;
+}
+.FirstSectionSentence1 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0%;
+}
+.FirstSectionInput {
+  border: none;
+  width: 20rem;
+  outline: none;
+  margin-bottom: 1rem;
+  margin-right: 2rem;
+  margin-left: 2rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.FirstSectionSentence2 {
+  font-weight: 400;
+  font-size: 40px;
+  margin: 0%;
+}
+.SecondSection {
+  padding-top: 1rem;
+  display: flex;
+}
+.SubjectInput {
+  margin-top: 1rem;
+  border: none;
+  outline: none;
+  padding-bottom: 1.5rem;
+  width: 97%;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.WantSentence {
+  padding-top: 1.5rem;
+  font-weight: 400;
+  font-size: 40px;
+}
+.MiniLine {
+  width: 40px;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid #1a1c3b;
+}
+.SmallHeading {
+  font-weight: 400;
+  font-size: 20px;
+  color: #1a1c3b;
+}
+.ContactUsHeading {
+  display: flex;
+  align-items: center;
+}
+.SectionsRow {
+  padding-top: 6rem;
+}
+.ButtonSpace {
+  padding-top: 3rem;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .ContactUsMainContainer {
+    padding: 1rem 4rem 6rem 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
