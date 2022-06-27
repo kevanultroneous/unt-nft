@@ -13,6 +13,7 @@ import Exchange from "@/components/Home/Exchange";
 import WhatWillYouGetWithUs from "@/components/Home/WhatWillYouGetWithUs";
 import Footer from "@/components/Home/Footer";
 import SmoothScroll from "@/components/SmoothScroll.component";
+import MenuBar from "@/components/Common/MenuBar";
 export default function Home() {
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
@@ -20,7 +21,7 @@ export default function Home() {
   const section3 = useRef(null);
   const [pos1, setPos1] = useState(null);
   const [pos2, setPos2] = useState(null);
-
+  const [menubaropacity, setMenuBarOpacity] = useState("0");
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
 
   // useEffect for  Animated Section
@@ -43,7 +44,18 @@ export default function Home() {
   return (
     <Layout title={"Mobifinx | Home"}>
       {/* Intro container */}
-      {pos1 ? <Menu opacity={on} /> : null}
+      <MenuBar opacity={menubaropacity} />
+      {pos1 ? (
+        <Menu
+          opacity={on}
+          handleClick={() =>
+            menubaropacity === "1"
+              ? setMenuBarOpacity("0")
+              : setMenuBarOpacity("1")
+          }
+          change={menubaropacity == "1" ? true : false}
+        />
+      ) : null}
       {/* <SmoothScroll> */}
       {pos2 ? (
         <section>

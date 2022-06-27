@@ -163,3 +163,33 @@
   padding-right: 1rem;
   padding-left: 1rem;
 }
+.FollowerLight {
+  position: absolute;
+  transform: translate(-50%, -50%);
+  z-index: 80;
+  background: radial-gradient(
+    36.88% 29.95% at 44.17% 56.2%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  pointer-events: none;
+  width: 1000px;
+  height: 1000px;
+  background: -webkit-radial-gradient(
+    44.17% 56.2%,
+    36.88% 29.95%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  background: -o-radial-gradient(
+    44.17% 56.2%,
+    36.88% 29.95%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+  background: radial-gradient(
+    36.88% 29.95% at 44.17% 56.2%,
+    #16155e 0%,
+    rgba(22, 21, 94, 0) 100%
+  );
+}

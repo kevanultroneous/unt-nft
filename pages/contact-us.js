@@ -5,7 +5,11 @@ import { Col, Row } from "react-bootstrap";
 import styles from "@/styles/components/contactus/index.module.css";
 import ActionButton from "@/components/Common/ActionButton";
 import SmoothScroll from "@/components/SmoothScroll.component";
+import PhoneInput from "react-phone-input-2";
+import "react-phone-input-2/lib/style.css";
+import { useState } from "react";
 const ContactUs = () => {
+  const [phoneValue, setPhoneValue] = useState("");
   return (
     <Layout title={"Mobifinx | Contact Us"}>
       <Menu />
@@ -32,10 +36,12 @@ const ContactUs = () => {
             <Col xl={12}>
               <div className={styles.SecondSection}>
                 <p className={styles.FirstSectionSentence1}>with me through</p>
-                <input
-                  type={"text"}
-                  placeholder="Subject"
-                  className={styles.FirstSectionInput}
+                <PhoneInput
+                  value={phoneValue}
+                  onChange={(phoneValue) => setPhoneValue(phoneValue)}
+                  country={"in"}
+                  placeholder="Phone number"
+                  enableSearch={true}
                 />
                 <p className={styles.FirstSectionSentence1}>or</p>
                 <input

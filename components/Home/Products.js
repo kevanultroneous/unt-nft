@@ -12,77 +12,10 @@ const Products = ({ targetposition }) => {
   const [ycord, setYcord] = useState(0);
   const [opacitycord, setOpacitycord] = useState("0");
   const [currentItem, setCurrentItem] = useState(0);
-  // const upper = (per) => {
-  //   if (per > 26) {
-  //     setCurrentItem(1);
-  //   } else if (per > 27) {
-  //     setCurrentItem(2);
-  //   } else if (per > 28) {
-  //     setCurrentItem(3);
-  //   } else if (per > 29) {
-  //     setCurrentItem(4);
-  //   } else if (per > 30) {
-  //     setCurrentItem(5);
-  //   } else if (per > 31) {
-  //     setCurrentItem(6);
-  //   } else if (per > 32) {
-  //     setCurrentItem(7);
-  //   }
-  // };
-  // const lower = (per) => {
-  //   if (per < 26) {
-  //     setCurrentItem(0);
-  //   } else if (per < 27) {
-  //     setCurrentItem(1);
-  //   } else if (per < 28) {
-  //     setCurrentItem(2);
-  //   } else if (per < 29) {
-  //     setCurrentItem(3);
-  //   } else if (per < 30) {
-  //     setCurrentItem(4);
-  //   } else if (per < 31) {
-  //     setCurrentItem(5);
-  //   } else if (per < 32) {
-  //     setCurrentItem(6);
-  //   } else if (per < 33) {
-  //     setCurrentItem(7);
-  //   } else {
-  //     setCurrentItem(0);
-  //   }
-  // };
-  // const mouseHandler = () => {
-  //   var findProduct = document.getElementsByClassName(
-  //     styles.OurProductsContainer
-  //   )[0];
-  //   var targetSection = findProduct.getBoundingClientRect();
 
-  //   if (targetSection.y <= 0) {
-  //     const winScroll =
-  //       document.body.scrollTop || document.documentElement.scrollTop;
-
-  //     const height =
-  //       document.documentElement.scrollHeight -
-  //       document.documentElement.clientHeight;
-
-  //     const scrolled = winScroll / height;
-  //     const per = scrolled * 100;
-
-  //     upper(per);
-  //     lower(per);
-  //   }
-  // };
-  // useEffect(() => {
-  //   if (currentItem === 7) {
-  //     window.removeEventListener("scroll", mouseHandler());
-  //     var findProduct = document.getElementsByClassName(
-  //       styles.OurProductsContainer
-  //     )[0];
-  //   }
-  // }, [currentItem]);
   useEffect(() => {
     AOS.refresh();
     AOS.init();
-    // window.addEventListener("scroll", () => mouseHandler());
   }, []);
   const ProductsList = [
     {
@@ -208,9 +141,22 @@ const Products = ({ targetposition }) => {
   ];
   return (
     <div className={styles.SectionCards} data-anim-scroll-group="cards">
-      <div className={styles.SectionContent}>
+      <div
+        className={styles.SectionContent}
+        onMouseMove={(e) => {
+          setXcord(e.pageX);
+          setYcord(e.pageY);
+          setOpacitycord("0.7");
+        }}
+        onMouseOut={() => setOpacitycord("0")}
+        onMouseLeave={() => setOpacitycord("0")}
+      >
         <h3 className={styles.OurProductsHeading}>Our Products</h3>
         <div className={styles.CardsSwrapper}>
+          <div
+            className={styles.FollowerLight}
+            style={{ left: xcord, top: ycord, opacity: opacitycord }}
+          />
           <ul>
             <li
               className={styles.card01}
@@ -226,7 +172,7 @@ const Products = ({ targetposition }) => {
               </div>
 
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[0].img} />
                   </Col>
@@ -270,7 +216,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[1].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[1].img} />
                   </Col>
@@ -314,7 +260,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[2].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[2].img} />
                   </Col>
@@ -358,7 +304,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[3].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[3].img} />
                   </Col>
@@ -402,7 +348,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[4].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[4].img} />
                   </Col>
@@ -446,7 +392,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[5].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[5].img} />
                   </Col>
@@ -490,7 +436,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[6].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[6].img} />
                   </Col>
@@ -534,7 +480,7 @@ const Products = ({ targetposition }) => {
                 <span>{ProductsList[7].num}</span>
               </div>
               <figure className={styles.CardContainer}>
-                <Row>
+                <Row className="m-0 p-0">
                   <Col xl={6} className="text-end">
                     <Image src={ProductsList[7].img} />
                   </Col>

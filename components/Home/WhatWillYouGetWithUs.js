@@ -5,6 +5,7 @@ import AOS from "aos";
 function WhatWillYouGetWithUs() {
   const [value, setValue] = useState(0);
   const [visibility, setVisibility] = useState(false);
+  const [cctv, setCctv] = useState(false);
   const arrText = [
     "HFT Match Engine",
     "Scalable Technology",
@@ -18,6 +19,7 @@ function WhatWillYouGetWithUs() {
     "/assets/images/exchange.svg",
     "/assets/images/feature.svg",
   ];
+
   useEffect(() => {
     AOS.refresh();
     AOS.init();
@@ -36,11 +38,13 @@ function WhatWillYouGetWithUs() {
                 : styles.WhatWillYouGetText
             }
             onClick={() => {
+              setCctv(true);
               setValue(ind);
               setVisibility(true);
               setTimeout(() => {
                 setVisibility(false);
-              }, 1500);
+                setCctv(false);
+              }, 1000);
             }}
           >
             {el}

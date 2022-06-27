@@ -1,0 +1,118 @@
+.MenuContainer {
+  height: 100vw;
+  background: transparent;
+  width: 100%;
+  z-index: 37;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  overflow-x: hidden;
+  transition: 0.5s;
+  padding-left: 5.5rem;
+  /* position: fixed; */
+}
+.MenuBar {
+  height: 100vh;
+  background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
+  width: 30%;
+}
+.Menus {
+  height: 100vh;
+  background: #f8f8f9;
+  width: 30%;
+}
+.Other {
+  height: 100vh;
+  background: #ffffff;
+  width: 40%;
+}
+.MenuBarContent {
+  justify-content: end;
+  text-align: right;
+  padding-top: 4rem;
+  list-style: none;
+}
+.MenuBarContent li {
+  list-style: none;
+  font-size: 40px;
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px #ffffff;
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.6s ease-in-out;
+  -o-transition: background-position 0.6s ease-in-out;
+  transition: background-position 0.6s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffffff),
+    color-stop(50%, #1a1c3c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  padding-right: 3rem;
+}
+.MenuBarContent li:hover,
+.MenuName {
+  background-position: bottom;
+  cursor: pointer;
+}
+.MenuName {
+  height: fit-content;
+  border: none;
+  padding-bottom: 1.5rem;
+}
+.MenusContent {
+  color: #000;
+  padding-top: 10.5rem;
+}
+.MenusContent li {
+  list-style: none;
+  font-weight: 400;
+  font-size: 18px;
+  padding-left: 1rem;
+}
+.MenusContent li:hover {
+  color: #a21d34;
+}
+.MiniLine {
+  width: 40px;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid #ffffff;
+}
+
+.SmallHeading {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+.MainHeading {
+  padding-top: 3.5rem;
+  padding-left: 5rem;
+  display: flex;
+  align-items: center;
+}
+.IconMenuContainer {
+  padding-top: 3rem;
+  padding-left: 4.5rem;
+}
+.IconCard {
+  padding-bottom: 3rem;
+}
+.IconName {
+  padding-top: 0.7rem;
+  font-weight: 500;
+  font-size: 24px;
+}
