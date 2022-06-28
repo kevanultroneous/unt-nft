@@ -1,0 +1,24 @@
+.Herosection{
+    padding-left: 8.5rem ;
+    padding-top: 4rem;
+}
+.Herotitle{
+    display: flex;
+}
+.Herotitle h1{
+ font-size: 90px;
+ font-weight: 500;
+ color: black;
+ line-height: 70px;
+ padding-left: 2rem;
+}
+.Herotitle span{
+    font-size: 50px;
+    font-weight: 300;
+    color: black;
+}
+.productimg{
+ padding: 2rem 0;
+ width: 100%;
+ height: auto;
+}

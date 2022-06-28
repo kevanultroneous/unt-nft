@@ -1,0 +1,50 @@
+.WhatyouWillget{
+    background: #1A1C3C;
+    padding-left: 8.5rem ;
+    padding-right: 3rem;
+    height: 100vh;
+}
+.sectionrow{
+    padding: 6rem 0;
+    justify-content: space-between;
+}
+.sectioncol{
+    width: fit-content;
+}
+.Whatyougetverticaltext{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-left: -5rem;
+    margin-top: 4rem;
+    /* padding-top: 4rem; */
+}
+.Headingcol{
+    text-align: left;
+}
+.WhatyouWillget h2{
+    font-size: 50px;
+    font-weight:600;
+    color: #fff;
+    margin-top: -1.5rem;
+}
+.Headingcol h4{
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;  
+}
+.Headingcol p{
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+}
+.Heading{
+    padding: 3rem 0;
+    padding-bottom: 2rem;
+}
+.Details{
+    border-left: 3px solid #fff;
+    padding: 0 1rem;
+    width: 95%;
+}
