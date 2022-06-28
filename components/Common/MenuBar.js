@@ -1,7 +1,7 @@
 import styles from "@/styles/components/Sidebar.module.css";
 import { useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
-const MenuBar = ({ opacity = "0" }) => {
+const MenuBar = ({ display = "none" }) => {
   const menus = [
     {
       name: "Home",
@@ -78,7 +78,7 @@ const MenuBar = ({ opacity = "0" }) => {
       name: "MxNFT",
     },
   ];
-  const [currentIcon, setCurrentIcon] = useState(0);
+  const [currentIcon, setCurrentIcon] = useState(null);
   const [currentMenu, setCurrentMenu] = useState(0);
   const Heading = ({ name, border, color }) => {
     return (
@@ -97,7 +97,7 @@ const MenuBar = ({ opacity = "0" }) => {
     );
   };
   return (
-    <div className={styles.MenuContainer} style={{ opacity: opacity }}>
+    <div className={styles.MenuContainer} style={{ display: display }}>
       <Row>
         <div className={styles.MenuBar}>
           <Heading name={"MobifinX Home"} />
@@ -109,18 +109,15 @@ const MenuBar = ({ opacity = "0" }) => {
                   key={index}
                   onMouseOver={() => setCurrentMenu(index)}
                 >
-                  <li
+                  <li>{value.name}</li>
+                  <div
+                    className={styles.MenuLine}
                     style={
                       index === currentMenu
-                        ? {
-                            borderRight: "5px solid #fff",
-                            height: "fit-content",
-                          }
-                        : null
+                        ? { opacity: "1", transition: "all 0.5s ease" }
+                        : { opacity: "0", transition: "all 0.5s ease" }
                     }
-                  >
-                    {value.name}
-                  </li>
+                  ></div>
                 </div>
               ))}
             </ul>
@@ -130,7 +127,7 @@ const MenuBar = ({ opacity = "0" }) => {
           <div className={styles.MenusContent}>
             <ul>
               {menus[currentMenu].menus.map((value, index) => (
-                <div className={styles.MenuName} key={index}>
+                <div className={styles.SubMenuName} key={index}>
                   <li>{value}</li>
                 </div>
               ))}
@@ -150,6 +147,7 @@ const MenuBar = ({ opacity = "0" }) => {
                   xl={6}
                   key={index}
                   onMouseOver={() => setCurrentIcon(index)}
+                  onMouseLeave={() => setCurrentIcon(null)}
                 >
                   <div className={styles.IconCard}>
                     <Image src={value.icon} alt={value.icon} />
@@ -158,7 +156,7 @@ const MenuBar = ({ opacity = "0" }) => {
                       style={
                         index === currentIcon
                           ? { color: value.color, transition: "all 0.5s ease" }
-                          : { color: "#000" }
+                          : { color: "#000", transition: "all 0.5s ease" }
                       }
                     >
                       {value.name}

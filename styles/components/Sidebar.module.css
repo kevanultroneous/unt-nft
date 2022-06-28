@@ -11,6 +11,7 @@
   overflow-x: hidden;
   transition: 0.5s;
   padding-left: 5.5rem;
+  display: none;
   /* position: fixed; */
 }
 .MenuBar {
@@ -31,13 +32,13 @@
 .MenuBarContent {
   justify-content: end;
   text-align: right;
-  padding-top: 4rem;
+  padding-top: 6rem;
   list-style: none;
 }
 .MenuBarContent li {
   list-style: none;
   font-size: 40px;
-  font-family: "Avenir LT Std", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
   letter-spacing: 0.05em;
@@ -72,10 +73,22 @@
   height: fit-content;
   border: none;
   padding-bottom: 1.5rem;
+  display: flex;
+  justify-content: end;
+}
+.SubMenuName {
+  height: fit-content;
+  border: none;
+  padding-bottom: 1.5rem;
+}
+.MenuLine {
+  opacity: 0;
+  padding: 0.2rem;
+  background-color: #ffffff;
 }
 .MenusContent {
   color: #000;
-  padding-top: 10.5rem;
+  padding-top: 12.5rem;
 }
 .MenusContent li {
   list-style: none;
@@ -105,11 +118,11 @@
   align-items: center;
 }
 .IconMenuContainer {
-  padding-top: 3rem;
+  padding-top: 6.5rem;
   padding-left: 4.5rem;
 }
 .IconCard {
-  padding-bottom: 3rem;
+  padding-bottom: 1.5rem;
 }
 .IconName {
   padding-top: 0.7rem;
