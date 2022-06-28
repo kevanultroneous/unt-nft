@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import styles from "@/styles/components/WhatYouWillGet.module.css";
+import styles from "@/styles/components/WhatyouGet.module.css";
 
 const WhatyouGet = () => {
   return (

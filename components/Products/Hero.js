@@ -1,4 +1,4 @@
-import styles from "@/styles/components/HeroSection.module.css";
+import styles from "@/styles/components/Hero.module.css";
 import { Image } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
