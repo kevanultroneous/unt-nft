@@ -1,9 +1,9 @@
-import styles from "@/styles/components/SolutionHelp.module.css";
+import styles from "@/styles/components/Solution.module.css";
 import { Image } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
-import ActionButton from "../Common/ActionButton";
+import ActionButtonV2 from "../Common/ActionButtonV2";
 
 const Solution = () => {
   return (
@@ -32,7 +32,7 @@ const Solution = () => {
         </Col>
       </Row>
       <div className={styles.Button}>
-        <ActionButton
+        <ActionButtonV2
           text={
             <>
               Try Free Demo <HiOutlineExternalLink />

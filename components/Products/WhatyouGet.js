@@ -1,5 +1,5 @@
 import { Col, Row } from "react-bootstrap";
-import styles from "@/styles/components/WhatYouWillGet.module.css";
+import styles from "@/styles/components/WhatyouGet.module.css";
 
 const WhatyouGet = () => {
   return (
@@ -50,14 +50,10 @@ const WhatyouGet = () => {
               </div>
             </Col>
             <Col xl={6} className={styles.Heading}>
-              {/* <div className={styles.Details}>
-                <h4>100x leverage engine</h4>
-                <p>
-                  The engine fortifies the performance of the exchange while
-                  allowing traders to amplify their exposure and potential
-                  profit.
-                </p>
-              </div> */}
+              <div className="d-flex align-items-center">
+                <div className={styles.FooterContactusLink}>Explore</div>
+                <HiOutlineExternalLink className={styles.ContactusIcon} />
+              </div>
             </Col>
             <Col xl={6} className={styles.Heading}>
               <div className={styles.Details}>

@@ -1,0 +1,86 @@
+.WhatyouWillget {
+  background: #1a1c3c;
+  padding-left: 8.5rem;
+  padding-right: 3rem;
+  height: 100vh;
+}
+.sectionrow {
+  padding: 6rem 0;
+  justify-content: space-between;
+}
+.sectioncol {
+  width: fit-content;
+}
+.Whatyougetverticaltext {
+  font-size: 14px;
+  font-weight: 400;
+  color: #fff;
+  transform: rotate(-90deg);
+  margin-left: -5rem;
+  margin-top: 4rem;
+  /* padding-top: 4rem; */
+}
+.Headingcol {
+  text-align: left;
+}
+.WhatyouWillget h2 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  margin-top: -1.5rem;
+}
+.Headingcol h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: #fff;
+}
+.Headingcol p {
+  font-size: 16px;
+  font-weight: 300;
+  color: #fff;
+}
+.Heading {
+  padding: 3rem 0;
+  padding-bottom: 2rem;
+}
+.Details {
+  border-left: 3px solid #fff;
+  padding: 0 1rem;
+  width: 95%;
+}
+.FooterContactusLink {
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  font-size: 4em;
+  line-height: 1em;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px #ffffff;
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.6s ease-in-out;
+  -o-transition: background-position 0.6s ease-in-out;
+  transition: background-position 0.6s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffffff),
+    color-stop(50%, #1a1c3c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+}
+.FooterContactusLink:hover {
+  background-position: bottom;
+}
+.ContactusIcon {
+  font-size: 60px;
+  margin-left: 2rem;
+  color: rgba(255, 255, 255, 0.2);
+}

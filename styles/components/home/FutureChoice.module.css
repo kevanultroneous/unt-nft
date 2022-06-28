@@ -116,6 +116,7 @@
 }
 .MainHungry {
   padding: 1px;
+  margin-left: 1.5rem;
   border-radius: 20px;
   background: linear-gradient(138deg, #1a1c3b 60.45%, #a21d34 111.32%);
   /* transition: all 1s ease; */
@@ -148,11 +149,11 @@
   color: #fff;
   /* transition: all 1s ease; */
 }
-.outer {
+.Outer {
   margin-top: 2.5rem;
 }
 
-.button {
+.Button {
   border: 1px solid #ffffff;
   border-radius: 20px;
   width: fit-content;
@@ -166,18 +167,18 @@
   transition: all 0.8s ease-out;
 }
 
-.button:hover {
+.Button:hover {
   color: #a21d34;
   background-position: left bottom;
 }
 .HungryParagraph2 {
   color: #fff;
 }
-.outer {
+.Outer {
   margin-top: 2.5rem;
 }
 
-.button {
+.Button {
   border: 1px solid #ffffff;
   border-radius: 20px;
   width: fit-content;
@@ -191,12 +192,12 @@
   /* transition: all 0.8s ease-out; */
 }
 
-.button:hover {
+.Button:hover {
   color: #a21d34;
   background-position: left bottom;
 }
 
-.text {
+.Text {
   text-align: center;
   font-size: 16px;
   line-height: 30px;
@@ -205,13 +206,13 @@
   display: block;
 }
 
-.text:hover {
+.Text:hover {
   color: #a21d34;
 }
-.rightSb {
+.RightSb {
   transition: all 1s ease;
 }
-.rightSb:hover {
+.RightSb:hover {
   transform: scale(0.8);
   transition: all 1s ease;
 }
@@ -246,7 +247,7 @@
   .CardProfileDOB {
     font-size: 11px;
   }
-  .rightSb {
+  .RightSb {
     height: 36px;
   }
   .ModelF {

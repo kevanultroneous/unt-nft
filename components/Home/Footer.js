@@ -19,7 +19,7 @@ const Footer = () => {
             Subscribe to our Newsletter
           </h4>
         </Col>
-        <Col xl={6}>
+        <Col xl={6} className={styles.MailContainerSpace}>
           <div className={styles.MailContainer}>
             <div className={styles.MailInput}>
               <input type={"email"} placeholder="Enter your Mail" />

@@ -1,0 +1,31 @@
+.WaterText {
+  font-size: 50px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px #ffffff;
+  text-decoration: none;
+  color: transparent;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 0.6s ease-in-out;
+  -o-transition: background-position 0.6s ease-in-out;
+  transition: background-position 0.6s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffffff),
+    color-stop(50%, #1a1c3c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+}
+.WaterText:hover {
+  background-position: bottom;
+  cursor: pointer;
+}

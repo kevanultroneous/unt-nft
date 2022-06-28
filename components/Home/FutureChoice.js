@@ -70,7 +70,7 @@ const FutureChoice = () => {
                       ? "/assets/images/darkb.svg"
                       : "/assets/images/right-sb.svg"
                   }
-                  className={styles.rightSb}
+                  className={styles.RightSb}
                 />
               </Col>
             </Row>
@@ -100,9 +100,9 @@ const FutureChoice = () => {
                 Read more articles on our blog.
               </p>
               {c2 ? (
-                <div className={styles.outer}>
-                  <div className={styles.button}>
-                    <div classNane={styles.text}>Visit Blog Page</div>
+                <div className={styles.Outer}>
+                  <div className={styles.Button}>
+                    <div classNane={styles.Text}>Visit Blog Page</div>
                   </div>
                 </div>
               ) : (

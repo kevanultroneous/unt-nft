@@ -1,7 +1,7 @@
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Accordion } from "react-bootstrap";
-import styles from "@/styles/components/FaqSection.module.css";
+import styles from "@/styles/components/FAQ.module.css";
 
 const FAQ = () => {
   return (

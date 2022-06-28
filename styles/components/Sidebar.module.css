@@ -37,7 +37,7 @@
 }
 .MenuBarContent li {
   list-style: none;
-  font-size: 40px;
+  font-size: 30px;
   font-family: "Poppins", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -49,9 +49,9 @@
   background-clip: text, padding-box;
   background-size: 100% 200%;
   background-position: top;
-  -webkit-transition: background-position 0.6s ease-in-out;
-  -o-transition: background-position 0.6s ease-in-out;
-  transition: background-position 0.6s ease-in-out;
+  -webkit-transition: background-position 0.7s ease-in-out;
+  -o-transition: background-position 0.7s ease-in-out;
+  transition: background-position 0.7s ease-in-out;
   background-image: -webkit-gradient(
     linear,
     left bottom,
@@ -93,7 +93,7 @@
 .MenusContent li {
   list-style: none;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 16px;
   padding-left: 1rem;
 }
 .MenusContent li:hover {
@@ -127,5 +127,5 @@
 .IconName {
   padding-top: 0.7rem;
   font-weight: 500;
-  font-size: 24px;
+  font-size: 20px;
 }

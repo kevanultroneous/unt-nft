@@ -148,6 +148,9 @@
   color: rgba(162, 29, 52, 1);
   transition: all 1s ease;
 }
+.MailContainerSpace {
+  padding-right: 4rem;
+}
 /*  */
 @media (min-width: 320px) and (max-width: 450px) {
   .FooterContainer {

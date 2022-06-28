@@ -6,6 +6,16 @@ const Layout = ({ title, children }) => {
     <div>
       <Head>
         <title>{title}</title>
+        {/* <meta
+          name="description"
+          content={description}
+          key=""
+        />
+        <meta
+          name="keywords"
+          content={keywords}
+          key=""
+        /> */}
       </Head>
       <main>
         {/* <Cursor /> */}

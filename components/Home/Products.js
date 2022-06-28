@@ -6,7 +6,7 @@ import AOS from "aos";
 import { useEffect, useState } from "react";
 import ActionButtonV3 from "../Common/ActionButtonV3";
 import ActionButton from "../Common/ActionButton";
-const Products = ({ targetposition }) => {
+const Products = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
   const [xcord, setXcord] = useState(0);
   const [ycord, setYcord] = useState(0);
@@ -151,7 +151,9 @@ const Products = ({ targetposition }) => {
         onMouseOut={() => setOpacitycord("0")}
         onMouseLeave={() => setOpacitycord("0")}
       >
-        <h3 className={styles.OurProductsHeading}>Our Products</h3>
+        <h3 className={styles.OurProductsHeading}>
+          {text ? text : "Our Products"}
+        </h3>
         <div className={styles.CardsSwrapper}>
           <div
             className={styles.FollowerLight}
@@ -217,7 +219,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[1].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -261,7 +263,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[2].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -305,7 +307,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[3].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -349,7 +351,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[4].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -393,7 +395,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[5].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -437,7 +439,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[6].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -481,7 +483,7 @@ const Products = ({ targetposition }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className="text-end">
+                  <Col xl={6} className={styles.ProductImages}>
                     <Image src={ProductsList[7].img} />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
@@ -518,50 +520,3 @@ const Products = ({ targetposition }) => {
   );
 };
 export default Products;
-{
-  /* <div className={styles.OurProductsContainer} style={targetposition}> */
-}
-{
-  /* <div
-      className={styles.FollowerLight}
-      style={{ left: xcord, top: ycord, opacity: opacitycord }}
-    ></div> */
-}
-
-{
-  /* <div> */
-}
-{
-  /* <h3
-            className={`${styles.OurProductsHeading}`}
-            data-aos="zoom-in"
-            data-aos-duration="2000"
-          >
-            Our Products
-          </h3>
-          <div className={styles.OurProductsCardsContainer}>
-            <div
-              className={styles.OurProductsCard}
-              onMouseMove={(e) => {
-                setXcord(e.pageX);
-                setYcord(e.pageY);
-                setOpacitycord("0.7");
-              } }
-              onMouseOut={() => setOpacitycord("0")}
-              onMouseLeave={() => setOpacitycord("0")}
-            > */
-}
-{
-  /*  */
-}
-{
-  /* {ProductsList.map((value, index) => (
-                
-              ))} */
-}
-{
-  /* </div>
-          </div>
-        </div> */
-}
-// </div>
