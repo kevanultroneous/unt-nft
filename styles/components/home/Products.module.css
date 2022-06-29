@@ -5,8 +5,8 @@
   color: #fff;
 }
 .SectionCards .SectionContent {
-  padding-bottom: 22px;
-  padding-top: 140px;
+  padding-bottom: 1rem;
+  padding-top: 6rem;
   text-align: center;
   background: #1a1c3c;
 }
@@ -18,7 +18,7 @@
 .SectionCards .SectionContent li {
   transform: translateZ(0);
   will-change: transform, opacity;
-  height: 800px;
+  height: 650px;
   position: sticky;
   top: calc(50vh + 52px - 215px - 40px);
 }

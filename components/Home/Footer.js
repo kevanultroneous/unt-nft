@@ -6,6 +6,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect } from "react";
 import { ImMail } from "react-icons/im";
 import AOS from "aos";
+import Link from "next/link";
 const Footer = () => {
   useEffect(() => {
     AOS.refresh();
@@ -35,8 +36,9 @@ const Footer = () => {
       <Row className={styles.FooterLinksContainer}>
         <Col xl={6}>
           <div className="d-flex align-items-center">
-            <div className={styles.FooterContactusLink}>Explore</div>
-            <HiOutlineExternalLink className={styles.ContactusIcon} />
+            <div className={styles.FooterContactusLink}>
+              Explore <HiOutlineExternalLink className={styles.ContactusIcon} />
+            </div>
           </div>
         </Col>
         <Col xl={6} className={styles.FooterIconCol}>
@@ -65,45 +67,6 @@ const Footer = () => {
             </div>
           </div>
         </Col>
-        {/* <Col xl={6} md={12} xs={12}>
-          <Row className="mx-0">
-            <Col xl={3} md={3} xs={6} className="p-0">
-              <ul className={styles.MainLinks}>
-                <li>Home</li>
-                <li>About us</li>
-                <li>Insights</li>
-                <li>Resources</li>
-                <li>Contact us</li>
-              </ul>
-            </Col>
-            <Col
-              xl={4}
-              md={5}
-              xs={6}
-              className="p-0 pt-md-5 p-xl-0 p-lg-0 pt-4"
-            >
-              <p>Product</p>
-              <Row>
-                <Col>
-                  <ul className={styles.SubLinks}>
-                    <li>MxTrade</li>
-                    <li>MxFuture</li>
-                    <li>MxDex</li>
-                    <li>MxFi</li>
-                  </ul>
-                </Col>
-                <Col>
-                  <ul className={`${styles.SubLinks}`}>
-                    <li>MxFund</li>
-                    <li>MxWallet</li>
-                    <li>MxBlock</li>
-                    <li>MxNFT</li>
-                  </ul>
-                </Col>
-              </Row>
-            </Col>
-          </Row>
-        </Col> */}
       </Row>
     </div>
   );

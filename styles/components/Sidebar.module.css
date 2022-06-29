@@ -1,3 +1,12 @@
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .MenuContainer {
   height: 100vw;
   background: transparent;
@@ -9,9 +18,10 @@
   top: 0;
   left: 0;
   overflow-x: hidden;
-  transition: 0.5s;
+  transition: 5s;
   padding-left: 5.5rem;
   display: none;
+  animation-name: fade-in;
   /* position: fixed; */
 }
 .MenuBar {
