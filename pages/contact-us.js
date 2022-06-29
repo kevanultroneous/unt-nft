@@ -16,6 +16,7 @@ const ContactUs = () => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
 
+
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
   myHeaders.append(
@@ -59,6 +60,13 @@ const ContactUs = () => {
       .catch((error) => console.log("error", error));
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
+  }, []);
+
+
   return (
     <Layout title={"Mobifinx | Contact Us"}>
       <Menu />
@@ -70,6 +78,7 @@ const ContactUs = () => {
             <span className={styles.SmallHeading}>MobifinX Contact</span>
           </div>
         </Row>
+
         <Row className={styles.SectionsRow}>
           <Col xl={12}>
             <div className={styles.FirstSection}>
@@ -117,13 +126,16 @@ const ContactUs = () => {
           </Col>
           <Col xl={12}>
             <input
+
               type={"text"}
+
               placeholder="Subject"
               className={styles.SubjectInput}
             />
           </Col>
         </Row>
         <div className={styles.ButtonSpace}>
+
           <ActionButton
             text={"Send a Message"}
             handleAction={() => apicall()}
