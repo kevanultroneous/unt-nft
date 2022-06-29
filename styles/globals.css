@@ -212,6 +212,10 @@ a {
     margin: 0 0px !important;
     /* padding-right: 5rem; */
   }
+
+  .react-tel-input {
+    padding: 0 !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .slick-slider {

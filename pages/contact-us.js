@@ -7,9 +7,10 @@ import ActionButton from "@/components/Common/ActionButton";
 import SmoothScroll from "@/components/SmoothScroll.component";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
+
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -54,6 +55,13 @@ const ContactUs = () => {
       .catch((error) => console.log("error", error));
   };
 
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
+  }, []);
+
+
   return (
     <Layout title={"Mobifinx | Contact Us"}>
       <Menu />
@@ -65,6 +73,7 @@ const ContactUs = () => {
             <span className={styles.SmallHeading}>MobifinX Contact</span>
           </div>
         </Row>
+
         <Row className={styles.SectionsRow}>
           <Col xl={12}>
             <div className={styles.FirstSection}>
@@ -74,12 +83,23 @@ const ContactUs = () => {
                 placeholder="Name and Surname"
                 className={styles.FirstSectionInput}
               />
-              <p className={styles.FirstSectionSentence2}>kindly connect</p>
+
+              {!isMobile && (
+                <p className={styles.FirstSectionSentence2}>kindly connect</p>
+              )}
             </div>
           </Col>
+
+          {isMobile && (
+            <p className={styles.FirstSectionSentence1}>
+              kindly connect with me through
+            </p>
+          )}
           <Col xl={12}>
             <div className={styles.SecondSection}>
-              <p className={styles.FirstSectionSentence1}>with me through</p>
+              {!isMobile && (
+                <p className={styles.FirstSectionSentence1}>with me through</p>
+              )}
               <PhoneInput
                 value={phoneValue}
                 onChange={(phoneValue) => setPhoneValue(phoneValue)}
@@ -103,13 +123,16 @@ const ContactUs = () => {
           </Col>
           <Col xl={12}>
             <input
+
               type={"text"}
+
               placeholder="Subject"
               className={styles.SubjectInput}
             />
           </Col>
         </Row>
         <div className={styles.ButtonSpace}>
+
           <ActionButton
             text={"Send a Message"}
             handleAction={() => apicall()}

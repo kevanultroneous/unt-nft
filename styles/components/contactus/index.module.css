@@ -69,12 +69,19 @@
   .ContactUsMainContainer {
     padding: 1rem 1rem 6rem 1rem;
   }
+
+  .FirstSectionSentence1,
+  .FirstSectionSentence2,
+  .WantSentence {
+    font-size: 30px;
+  }
+
   .FirstSection {
     flex-direction: column;
     align-items: flex-start;
   }
   .FirstSectionSentence1 {
-    padding-bottom: 1rem;
+    padding: 1rem 0;
   }
   .FirstSectionInput {
     margin: 0%;
