@@ -135,7 +135,7 @@ a {
 .SliderGroundCss .slick-initialized .slick-slide {
   width: 245px !important;
 }
-
+/* 
 .scroll-container {
   position: fixed;
   top: 0;
@@ -143,7 +143,7 @@ a {
   width: 100%;
   overflow: hidden;
   will-change: transform;
-}
+} */
 
 /* width */
 ::-webkit-scrollbar {
@@ -184,7 +184,7 @@ a {
 
 /* ==================================== Accodian css ============================================== */
 
-.accordion-button  {
+.accordion-button {
   position: relative;
   display: flex;
   align-items: center;
@@ -194,22 +194,24 @@ a {
   font-weight: 500 !important;
   color: black !important;
   text-align: left;
-  background-color: #F5F5F5 !important;
+  background-color: #f5f5f5 !important;
   border: 0;
   border-radius: 0;
   overflow-anchor: none;
-  transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out,box-shadow .15s ease-in-out,border-radius .15s ease;
+  transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out,
+    border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
+    border-radius 0.15s ease;
 }
 .accordion-button:not(.collapsed) {
   color: #000000 !important;
-  background-color: #F5F5F5 !important;
+  background-color: #f5f5f5 !important;
   box-shadow: inset 0 -1px 0 rgb(255 255 255 / 13%) !important;
 }
 .accordion-button:focus {
   z-index: 3;
   border-color: #ffffff !important;
   outline: 0;
-  box-shadow:none !important;
+  box-shadow: none !important;
 }
 .accordion-flush .accordion-item {
   border-right: 0;
@@ -218,11 +220,10 @@ a {
   padding: 1rem 0 !important;
 }
 .accordion-item {
-  background-color: #F5F5F5 !important;
-  border: 1px solid rgba(0,0,0,.125);
+  background-color: #f5f5f5 !important;
+  border: 1px solid rgba(0, 0, 0, 0.125);
 }
 /* ==================================== Accodian css ============================================== */
-
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
 @media (min-width: 320px) and (max-width: 450px) {

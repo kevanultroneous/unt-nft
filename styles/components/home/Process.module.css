@@ -1,9 +1,9 @@
 .ProcessContainer {
   padding-top: 2.5rem;
   padding-left: 8.5rem;
-  padding-bottom: 2.5rem;
+  /* padding-bottom: 2.5rem; */
   justify-content: center;
-  height: 95vh;
+  height: 100vh;
   background: rgba(26, 28, 60, 0.03);
 }
 .ProcessBoxesContainer {

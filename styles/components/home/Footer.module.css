@@ -53,7 +53,7 @@
   letter-spacing: 0.05em;
   -webkit-text-stroke: 1px #ffffff;
   text-decoration: none;
-  color: transparent;
+  color: transparent !important;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   background-size: 100% 200%;

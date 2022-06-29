@@ -155,10 +155,10 @@ const Products = ({ text }) => {
           {text ? text : "Our Products"}
         </h3>
         <div className={styles.CardsSwrapper}>
-          <div
+          {/* <div
             className={styles.FollowerLight}
             style={{ left: xcord, top: ycord, opacity: opacitycord }}
-          />
+          /> */}
           <ul>
             <li
               className={styles.card01}

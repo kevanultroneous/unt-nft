@@ -16,7 +16,7 @@
   font-style: normal;
   -webkit-text-stroke: 1px #a21d34;
   text-decoration: none;
-  color: transparent;
+  color: transparent !important;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   background-size: 100% 200%;
