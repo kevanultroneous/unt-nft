@@ -10,6 +10,11 @@ import "react-phone-input-2/lib/style.css";
 import { useEffect, useState } from "react";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
+  }, []);
 
 
   var myHeaders = new Headers();
@@ -83,7 +88,6 @@ const ContactUs = () => {
                 placeholder="Name and Surname"
                 className={styles.FirstSectionInput}
               />
-
               {!isMobile && (
                 <p className={styles.FirstSectionSentence2}>kindly connect</p>
               )}
@@ -115,7 +119,6 @@ const ContactUs = () => {
               />
             </div>
           </Col>
-
           <Col xl={12}>
             <p className={styles.WantSentence}>
               I want to get in touch because,
