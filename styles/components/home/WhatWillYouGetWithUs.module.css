@@ -92,3 +92,22 @@
   align-items: center;
   padding-bottom: 5rem;
 }
+@media (min-width: 320px) and (max-width: 767px){
+  .WhatWillYouGetWithUs{
+    padding-left: 0;
+  }
+  .WhatWillYouGetWithUsLeft h2{
+    font-size: 35px;
+  }
+  .WhatWillYouGetWithUsLeft{
+    padding: 1rem;
+  }
+  .SmallImage {
+    width: 13rem;
+    left: 4rem;
+  }
+  .BigImage{
+    padding-left: 1rem;
+    height: 50px;
+  }
+}
