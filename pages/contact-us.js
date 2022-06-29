@@ -10,12 +10,10 @@ import "react-phone-input-2/lib/style.css";
 import { useEffect, useState } from "react";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
-  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
-
 
   var myHeaders = new Headers();
   myHeaders.append("Content-Type", "application/x-www-form-urlencoded");
@@ -65,7 +63,6 @@ const ContactUs = () => {
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
-
 
   return (
     <Layout title={"Mobifinx | Contact Us"}>
@@ -126,16 +123,13 @@ const ContactUs = () => {
           </Col>
           <Col xl={12}>
             <input
-
               type={"text"}
-
               placeholder="Subject"
               className={styles.SubjectInput}
             />
           </Col>
         </Row>
         <div className={styles.ButtonSpace}>
-
           <ActionButton
             text={"Send a Message"}
             handleAction={() => apicall()}
