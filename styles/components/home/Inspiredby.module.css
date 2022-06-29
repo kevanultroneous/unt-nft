@@ -169,6 +169,7 @@
   }
   .InspiredCardCol {
     align-items: flex-start;
+    width: fit-content;
   }
   .InspiredCardView,
   .InspiredCardDes {

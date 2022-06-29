@@ -138,7 +138,7 @@ const Inspiredby = () => {
           </div>
         </Col>
         {/* right */}
-        <Col xl={5} xs={12} md={6}>
+        <Col xl={5} xs={12} md={6} className={styles.InspiredCardCol}>
           <h3 className={styles.InspiredCardDes}>
             Get Inspired by Case Studies
           </h3>
