@@ -15,14 +15,6 @@
   border-bottom: 1px solid #ffffff;
 }
 .RequestDemoButton {
-  /* border: 1px solid #ffffff;
-  border-radius: 22px;
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-  margin-right: 2rem;
-  width: fit-content; */
   width: fit-content;
   border: 1px solid #ffffff;
   padding: 0.5rem 1rem;
@@ -65,8 +57,9 @@
 }
 .SoftwareDevelopmentExpertsBigHeading {
   font-weight: 600;
-  font-size: 60px;
+  font-size: 4.5rem;
   padding-top: 4rem;
+  width: 50rem;
   padding-bottom: 4rem;
 }
 .SoftwareDevelopmentExpertsBtnCol {
@@ -110,17 +103,12 @@
   /* display: flex !important; */
   justify-content: left;
   text-align: left;
-  overflow: hidden;
   align-items: flex-end;
   margin-left: 2rem;
 }
-.SliderCard:hover .SliderImg {
-  opacity: 1;
-  transition: all 0.5s ease;
-}
+
 .SliderImg {
-  opacity: 0;
-  width: 114%;
+  width: 100%;
   height: 160px;
   transition: all 0.5s ease;
 }

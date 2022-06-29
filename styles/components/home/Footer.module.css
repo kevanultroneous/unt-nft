@@ -1,6 +1,10 @@
 .FooterIconContainer {
   display: flex;
 }
+.FooterIconContainer a {
+  color: #fff;
+  text-decoration: none;
+}
 .FooterIconCol {
   display: flex;
   justify-content: end;
@@ -27,7 +31,7 @@
   color: #ffffff;
   outline: none;
   width: 100%;
-  cursor: none;
+  /* cursor: none; */
 }
 .MailContainer input::placeholder {
   color: rgba(255, 255, 255, 0.7);
@@ -44,7 +48,7 @@
 }
 .MailBtn {
 }
-.FooterContactusLink {
+.FooterContactusLink a {
   font-family: "Avenir LT Std", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -72,13 +76,13 @@
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
 }
-.FooterContactusLink:hover {
+.FooterContactusLink a:hover {
   background-position: bottom;
 }
 
 .ContactusIcon {
-  font-size: 60px;
-  margin-left: 2rem;
+  font-size: 50px;
+  margin-left: 0rem;
   color: rgba(255, 255, 255, 0.2);
 }
 
@@ -121,19 +125,24 @@
   margin-right: 0.5rem;
 }
 .MailText:hover {
-  color: rgba(162, 29, 52, 1);
+  color: rgba(162, 29, 52, 1) !important;
   transition: all 1s ease;
+}
+.IconHover {
+  color: #fff;
 }
 .IconHover {
   margin-top: 0rem;
   margin-right: 0.3rem;
 }
 .MailText {
+  color: #ffffff !important;
   font-weight: 600;
   font-size: 22px;
   margin-right: 2rem;
   transition: all 1s ease;
 }
+
 /* .MailText:hover {
   color: rgba(162, 29, 52, 1);
   transition: all 1s ease;

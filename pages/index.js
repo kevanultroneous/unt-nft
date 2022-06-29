@@ -54,9 +54,9 @@ export default function Home() {
         </section>
       ) : pos2 !== null ? (
         <>
-          <section ref={section1}>
+          {/* <section ref={section1}>
             <SDE handleClick={() => scrollToRef(section2)} />
-          </section>
+          </section> */}
           {/* Discover MOBIFINIX */}
           <section ref={section2}>
             <Discover />
@@ -75,7 +75,6 @@ export default function Home() {
           <FutureChoice />
           {/* Speciality */}
           <Speciality />
-
           {/* Footer */}
           <Footer />
         </>

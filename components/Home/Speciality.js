@@ -25,13 +25,13 @@ const Speciality = () => {
       sign: "+",
       text: "Global Blockchain Customers",
     },
-    {
-      key: 4,
-      countstart: 0,
-      countend: 12,
-      sign: "+",
-      text: "Unique Blockchain Experience",
-    },
+    // {
+    //   key: 4,
+    //   countstart: 0,
+    //   countend: 12,
+    //   sign: "+",
+    //   text: "Unique Blockchain Experience",
+    // },
     // {
     //   key: 5,
     //   countstart: 0,

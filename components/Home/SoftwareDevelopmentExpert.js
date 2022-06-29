@@ -14,7 +14,7 @@ const SDE = ({ handleClick }) => {
     slidesToShow: 3.1,
     slidesToScroll: 1,
     centerMode: false,
-    autoplay: true,
+    // autoplay: true,
     cssEase: "linear",
     responsive: [
       {
@@ -64,14 +64,14 @@ const SDE = ({ handleClick }) => {
     ],
   };
   const sliderList = [
-    { name: "MxTrade", img: "/assets/images/MXX1.svg" },
-    { name: "MxFuture", img: "/assets/images/mxx2.svg" },
-    { name: "MxDex", img: "/assets/images/mxx3.svg" },
-    { name: "MxFi", img: "/assets/images/mxx4.svg" },
-    { name: "MxLaunch", img: "/assets/images/mxx5.svg" },
-    { name: "MxWallet", img: "/assets/images/mxx6.svg" },
-    { name: "MxBlock", img: "/assets/images/mxx7.svg" },
-    { name: "MxNFT", img: "/assets/images/mxx8.svg" },
+    { name: "MxTrade", img: "/assets/images/MxTrade.png" },
+    { name: "MxFuture", img: "/assets/images/MxFuture.png" },
+    { name: "MxDex", img: "/assets/images/MxDex.png" },
+    { name: "MxFi", img: "/assets/images/MxFI.png" },
+    { name: "MxLaunch", img: "/assets/images/MxLaunch.png" },
+    { name: "MxWallet", img: "/assets/images/MxWallet.png" },
+    { name: "MxBlock", img: "/assets/images/MxBlock.png" },
+    { name: "MxNFT", img: "/assets/images/MxNFT.png" },
   ];
   useEffect(() => {
     AOS.refresh();
@@ -84,13 +84,7 @@ const SDE = ({ handleClick }) => {
         <Col xl={6} xs={6} md={6} className="p-0">
           <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
             <div className={styles.HomeMiniLine} />
-            <span
-              className={styles.HomeSmallHeading}
-              // data-aos="zoom-in"
-              // data-aos-duration="2000"
-            >
-              MobifinX Home
-            </span>
+            <span className={styles.HomeSmallHeading}>MobifinX Home</span>
           </div>
         </Col>
         <Col
@@ -119,9 +113,7 @@ const SDE = ({ handleClick }) => {
           data-aos="fade"
           data-aos-duration="2000"
         >
-          We’re Crypto Coin Trading
-          <br />
-          Software Development Experts.
+          Redefining Trading Technologies
         </h3>
       </div>
       <Row className="mx-0">
@@ -180,11 +172,7 @@ const SDE = ({ handleClick }) => {
           <Row className={`${styles.SliderGround} SliderGroundCss`}>
             <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
-                <div
-                  className={styles.SliderCard}
-                  // data-aos="slide-up"
-                  // data-aos-duration="2000"
-                >
+                <div className={styles.SliderCard}>
                   <Image src={v.img} className={styles.SliderImg} />
                   <p>{v.name}</p>
                 </div>

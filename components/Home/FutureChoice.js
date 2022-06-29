@@ -63,7 +63,7 @@ const FutureChoice = () => {
                   </div>
                 </div>
               </Col>
-              <Col xl={2} md={2} xs={4}>
+              <Col xl={2} md={2} xs={4} className={styles.Rightarrow}>
                 <Image
                   src={
                     c2

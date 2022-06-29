@@ -160,7 +160,7 @@
   padding-right: 1rem;
   color: #a21d34;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .InspiredContainer {
     padding-top: 2rem;
     padding-left: 1rem;
@@ -179,6 +179,20 @@
   }
   .InspiredCardView2 {
     opacity: 1;
+    display: none;
+  }
+  .InspiredCardOverlay{
+    width: 330px;
+  }
+  .InspiredCardImage{
+    width: 330px;
+    height: 430px;
+  }
+  .InspiredCardText {
+    padding:1rem 1rem
+  }
+  .InspiredDis{
+    width: 330px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
