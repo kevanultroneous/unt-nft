@@ -1,5 +1,6 @@
 import { Col, Row } from "react-bootstrap";
 import styles from "@/styles/components/WhatyouGet.module.css";
+import { HiOutlineExternalLink } from "react-icons/hi";
 
 const WhatyouGet = () => {
   return (

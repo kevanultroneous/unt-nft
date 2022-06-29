@@ -106,7 +106,10 @@ const FutureChoice = () => {
                   </div>
                 </div>
               ) : (
-                <ActionButton text={"Visit Blog Page"} />
+                <ActionButton
+                  text={"Visit Blog Page"}
+                  outerstyle={{ marginTop: "2.5rem" }}
+                />
               )}
             </div>
           </div>

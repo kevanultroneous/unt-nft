@@ -1,18 +1,31 @@
 import Layout from "@/components/Common/Layout";
 import MenuPackage from "@/components/Common/MenuPackage";
+import Exchange from "@/components/Home/Exchange";
 import Footer from "@/components/Home/Footer";
-import FAQ from "@/components/Products/FaqSection";
-import Hero from "@/components/Products/HeroSection";
-import Solution from "@/components/Products/SolutionHelp";
-import WhatyouGet from "@/components/Products/WhatYouWillGet";
+import Products from "@/components/Home/Products";
+import BenefitsToLeverage from "@/components/Products/BenefitsToLeverage";
+import FAQ from "@/components/Products/FAQ";
+import Hero from "@/components/Products/Hero";
+import Introductions from "@/components/Products/Introductions";
+import NextProduct from "@/components/Products/NextProduct";
+import Solution from "@/components/Products/Solution";
+import WhatyouGet from "@/components/Products/WhatyouGet";
+import { useState } from "react";
+import { MxFutureNextLink } from "utils/MxFuture.data";
 
 const MxFuture = () => {
+  const [globalColor, setGlobalColor] = useState("#00ACD7");
   return (
     <Layout title={"MxFuture"}>
       <MenuPackage />
       <Hero />
+      <Introductions />
+      <Products text={"Use Cases"} />
+      <Exchange color={globalColor} />
       <WhatyouGet />
+      <BenefitsToLeverage />
       <Solution />
+      <NextProduct listofdata={MxFutureNextLink} />
       <FAQ />
       <Footer />
     </Layout>

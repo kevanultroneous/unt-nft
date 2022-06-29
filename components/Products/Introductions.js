@@ -8,7 +8,7 @@ const Introductions = () => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 3.1,
     slidesToScroll: 1,
     cssEase: "linear",
   };
@@ -29,6 +29,21 @@ const Introductions = () => {
             including features such as 100x spot leverage, perpetual swaps,
             inverse futures, American options, and European options.
           </p>
+          <div className={styles.SliderActionContainer}>
+            <p className={styles.SliderActionTitle}>Explore 8 Features</p>
+            <div className={styles.SliderActionButtons}>
+              <Image
+                src="/assets/images/redbutton.svg"
+                className={styles.leftButton}
+                onClick={() => sliderRef.current.slickPrev()}
+              />
+              <Image
+                src="/assets/images/redbutton2.svg"
+                className={styles.leftButton}
+                onClick={() => sliderRef.current.slickNext()}
+              />
+            </div>
+          </div>
           <Slider {...settings} arrows={false} ref={sliderRef}>
             {[
               1, 2, 3, 3, 4, 54, 4, 5, 4, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 2, 3,
@@ -48,6 +63,7 @@ const Introductions = () => {
                     options, and European options.
                   </div>
                 </div>
+                <p className={styles.SliderBottomText}>Swap Trading</p>
               </div>
             ))}
           </Slider>
