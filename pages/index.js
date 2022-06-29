@@ -75,7 +75,6 @@ export default function Home() {
           <FutureChoice />
           {/* Speciality */}
           <Speciality />
-
           {/* Footer */}
           <Footer />
         </>

@@ -3,18 +3,21 @@ import MenuBar from "@/components/Common/MenuBar";
 import { useState } from "react";
 
 const MenuPackage = () => {
-  const [menubaropacity, setMenuBarOpacity] = useState("none");
+  const [menubaropacity, setMenuBarOpacity] = useState("0");
   return (
     <>
-      <MenuBar display={menubaropacity} />
+      <MenuBar
+        display={menubaropacity}
+        visibility={menubaropacity === "1" ? "visible" : null}
+      />
       <Menu
         opacity={"1"}
         handleClick={() =>
-          menubaropacity === "block"
-            ? setMenuBarOpacity("none")
-            : setMenuBarOpacity("block")
+          menubaropacity === "1"
+            ? setMenuBarOpacity("0")
+            : setMenuBarOpacity("1")
         }
-        change={menubaropacity == "block" ? true : false}
+        change={menubaropacity == "1" ? true : false}
       />
     </>
   );

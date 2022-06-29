@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import AOS from "aos";
 import { iconsMenu, menus } from "utils/menu.data";
-const MenuBar = ({ display = "none" }) => {
+const MenuBar = ({ display = "none", visibility }) => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
@@ -28,7 +28,10 @@ const MenuBar = ({ display = "none" }) => {
     );
   };
   return (
-    <div className={styles.MenuContainer} style={{ display: display }}>
+    <div
+      className={styles.MenuContainer}
+      style={{ opacity: display, visibility: visibility }}
+    >
       <Row>
         <div className={styles.MenuBar}>
           <Heading name={"MobifinX Home"} />
