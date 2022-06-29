@@ -46,7 +46,7 @@ const Discover = () => {
             // data-aos="zoom-in"
             // data-aos-duration="2000"
           >
-            Redefining Trading Technologies
+            Your Companion for Digital Asset Trading Suite
           </p>
         </div>
         <div className={styles.DiscoverMobifinixPara2Container}>
@@ -81,11 +81,11 @@ const Discover = () => {
         </div>
       </Row>
       <Row className={styles.DiscoverMobifinixRowsUniq}>
-        <Col>
-          <Row>
-            {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
-          </Row>
-        </Col>
+        {/* <Col>
+          <Row> */}
+        {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
+        {/* </Row>
+        </Col> */}
         <Col>
           <div className={styles.DiscoverItemsContainer}>
             <Row className={styles.DiscoverItemsRow}>
