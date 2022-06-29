@@ -36,9 +36,14 @@ const Footer = () => {
       <Row className={styles.FooterLinksContainer}>
         <Col xl={6}>
           <div className="d-flex align-items-center">
-            <div className={styles.FooterContactusLink}>
-              Explore <HiOutlineExternalLink className={styles.ContactusIcon} />
-            </div>
+            <Link href="/">
+              <div className={styles.FooterContactusLink}>
+                <a href="/">
+                  Explore{" "}
+                  <HiOutlineExternalLink className={styles.ContactusIcon} />
+                </a>
+              </div>
+            </Link>
           </div>
         </Col>
         <Col xl={6} className={styles.FooterIconCol}>
@@ -46,24 +51,40 @@ const Footer = () => {
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >
             <div className="d-flex">
-              <span className={styles.MailText}>
-                <ImMail className={styles.MailIconHover} />
-                Sales@mobifinx.com
-              </span>
+              <Link href="/">
+                <a href="/">
+                  <span className={styles.MailText}>
+                    <ImMail className={styles.MailIconHover} />
+                    Sales@mobifinx.com
+                  </span>
+                </a>
+              </Link>
             </div>
             <div>
-              <IoLogoLinkedin
-                style={{ fontSize: "35px" }}
-                className={styles.IconHover}
-              />
-              <IoLogoFacebook
-                style={{ fontSize: "35px", borderRadius: "1rem" }}
-                className={styles.IconHover}
-              />
-              <AiFillTwitterSquare
-                style={{ fontSize: "35px", borderRadius: "0.8rem" }}
-                className={styles.IconHover}
-              />
+              <Link href="/">
+                <a href="/">
+                  <IoLogoLinkedin
+                    style={{ fontSize: "35px" }}
+                    className={styles.IconHover}
+                  />
+                </a>
+              </Link>
+              <Link href="/">
+                <a href="/">
+                  <IoLogoFacebook
+                    style={{ fontSize: "35px", borderRadius: "1rem" }}
+                    className={styles.IconHover}
+                  />
+                </a>
+              </Link>
+              <Link href="/">
+                <a href="/">
+                  <AiFillTwitterSquare
+                    style={{ fontSize: "35px", borderRadius: "0.8rem" }}
+                    className={styles.IconHover}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </Col>
