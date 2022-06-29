@@ -14,16 +14,16 @@ const Speciality = () => {
     {
       key: 2,
       countstart: 0,
-      countend: 32,
+      countend: 20,
       sign: "+",
-      text: "Global Blockchain Customers",
+      text: "Global Cryptocurrency Exchanges",
     },
     {
       key: 3,
       countstart: 0,
-      countend: 7,
+      countend: 30,
       sign: "+",
-      text: "Years of Unique Blockchain Experience",
+      text: "Global Blockchain Customers",
     },
     // {
     //   key: 4,
@@ -78,6 +78,16 @@ const Speciality = () => {
             )}
           </div>
         ))}
+      </div>
+      <div className={styles.SpecialityBoard2}>
+        <p
+          className={styles.SpecialityParagraph}
+          // data-aos={"zoom-in"}
+          // data-aos-duration="2000"
+        >
+          "Our key USP is an excellent model of project management, which helps
+          in providing the most advanced crypto exchange software development.”
+        </p>
       </div>
     </Row>
   );

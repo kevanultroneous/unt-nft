@@ -2,6 +2,7 @@ import styles from "@/styles/components/ActionButton.module.css";
 const ActionButton = ({ text, handleAction = null, outerstyle }) => {
   return (
     <div
+      onClick={handleAction ? handleAction : null}
       className={styles.outer}
       style={outerstyle ? { marginTop: "2.5rem" } : null}
     >
