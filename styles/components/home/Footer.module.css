@@ -27,7 +27,7 @@
   color: #ffffff;
   outline: none;
   width: 100%;
-  cursor: none;
+  /* cursor: none; */
 }
 .MailContainer input::placeholder {
   color: rgba(255, 255, 255, 0.7);
@@ -77,8 +77,8 @@
 }
 
 .ContactusIcon {
-  font-size: 60px;
-  margin-left: 2rem;
+  font-size: 50px;
+  margin-left: 0rem;
   color: rgba(255, 255, 255, 0.2);
 }
 

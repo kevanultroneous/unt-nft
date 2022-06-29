@@ -1,7 +1,12 @@
 import styles from "@/styles/components/Sidebar.module.css";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
+import AOS from "aos";
 const MenuBar = ({ display = "none" }) => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   const menus = [
     {
       name: "Home",

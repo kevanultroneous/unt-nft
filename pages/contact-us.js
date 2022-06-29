@@ -13,64 +13,64 @@ const ContactUs = () => {
   return (
     <Layout title={"Mobifinx | Contact Us"}>
       <Menu />
-      <SmoothScroll>
-        <div className={styles.ContactUsMainContainer}>
-          <Row>
-            <div className={styles.ContactUsHeading}>
-              <div className={styles.MiniLine} />
-              <span className={styles.SmallHeading}>MobifinX Contact</span>
-            </div>
-          </Row>
-          <Row className={styles.SectionsRow}>
-            <Col xl={12}>
-              <div className={styles.FirstSection}>
-                <p className={styles.FirstSectionSentence1}>Hey, My name is</p>
-                <input
-                  type={"text"}
-                  placeholder="Name and Surname"
-                  className={styles.FirstSectionInput}
-                />
-                <p className={styles.FirstSectionSentence2}>kindly connect</p>
-              </div>
-            </Col>
-            <Col xl={12}>
-              <div className={styles.SecondSection}>
-                <p className={styles.FirstSectionSentence1}>with me through</p>
-                <PhoneInput
-                  value={phoneValue}
-                  onChange={(phoneValue) => setPhoneValue(phoneValue)}
-                  country={"in"}
-                  placeholder="Phone number"
-                  enableSearch={true}
-                />
-                <p className={styles.FirstSectionSentence1}>or</p>
-                <input
-                  type={"text"}
-                  placeholder="Mail ID"
-                  className={styles.FirstSectionInput}
-                />
-              </div>
-            </Col>
-
-            <Col xl={12}>
-              <p className={styles.WantSentence}>
-                I want to get in touch because,
-              </p>
-            </Col>
-            <Col xl={12}>
+      {/* <SmoothScroll> */}
+      <div className={styles.ContactUsMainContainer}>
+        <Row>
+          <div className={styles.ContactUsHeading}>
+            <div className={styles.MiniLine} />
+            <span className={styles.SmallHeading}>MobifinX Contact</span>
+          </div>
+        </Row>
+        <Row className={styles.SectionsRow}>
+          <Col xl={12}>
+            <div className={styles.FirstSection}>
+              <p className={styles.FirstSectionSentence1}>Hey, My name is</p>
               <input
                 type={"text"}
-                placeholder="Subject"
-                className={styles.SubjectInput}
+                placeholder="Name and Surname"
+                className={styles.FirstSectionInput}
               />
-            </Col>
-          </Row>
-          <div className={styles.ButtonSpace}>
-            <ActionButton text={"Send a Message"} />
-          </div>
+              <p className={styles.FirstSectionSentence2}>kindly connect</p>
+            </div>
+          </Col>
+          <Col xl={12}>
+            <div className={styles.SecondSection}>
+              <p className={styles.FirstSectionSentence1}>with me through</p>
+              <PhoneInput
+                value={phoneValue}
+                onChange={(phoneValue) => setPhoneValue(phoneValue)}
+                country={"in"}
+                placeholder="Phone number"
+                enableSearch={true}
+              />
+              <p className={styles.FirstSectionSentence1}>or</p>
+              <input
+                type={"text"}
+                placeholder="Mail ID"
+                className={styles.FirstSectionInput}
+              />
+            </div>
+          </Col>
+
+          <Col xl={12}>
+            <p className={styles.WantSentence}>
+              I want to get in touch because,
+            </p>
+          </Col>
+          <Col xl={12}>
+            <input
+              type={"text"}
+              placeholder="Subject"
+              className={styles.SubjectInput}
+            />
+          </Col>
+        </Row>
+        <div className={styles.ButtonSpace}>
+          <ActionButton text={"Send a Message"} />
         </div>
-        <Footer />
-      </SmoothScroll>
+      </div>
+      <Footer />
+      {/* </SmoothScroll> */}
     </Layout>
   );
 };
