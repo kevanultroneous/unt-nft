@@ -45,6 +45,7 @@
   position: relative;
   bottom: -2.5rem;
   left: 12rem;
+  height: 12rem;
 }
 .SmallImageAnim {
   animation: fadeInRight 0.9s ease;
