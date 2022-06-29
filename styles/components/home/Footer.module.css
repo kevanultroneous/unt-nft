@@ -152,27 +152,50 @@
   padding-right: 4rem;
 }
 /*  */
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .FooterContainer {
     padding: 3rem 1rem;
   }
   .SubscribeHeading {
-    font-size: 26px;
-    padding-bottom: 1rem;
+    font-size: 28px;
+    padding-bottom: 2rem;
   }
   .FooterContactusLink {
-    font-size: 39px;
+    font-size: 50px;
     padding-bottom: 1rem;
   }
   .FooterContactusLink:hover {
-    font-size: 39px;
+    font-size: 50px;
   }
   .ContactusIcon {
     font-size: 37px;
     margin-bottom: 1rem;
+    margin-left: 1px;
   }
   .MainLinks {
     padding-top: 2rem;
+  }
+  .IconHover {
+    font-size: 28px !important;
+  }
+  .MailIconHover {
+    font-size: 23px;
+  }
+  .MailText {
+    font-size: 21px;
+  }
+  .FooterIconHelper {
+    padding-right: 0rem;
+    width: 100%;
+  }
+  .FooterIconCol {
+    display: flex;
+    justify-content: inherit;
+    align-items: flex-end;
+    padding-top: 1rem;
+  }
+  .MailContainerSpace {
+    padding-right: 0.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
