@@ -1,11 +1,13 @@
 import Menu from "@/components/Home/Menu";
 import MenuBar from "@/components/Common/MenuBar";
 import { useState } from "react";
+import MobileMenu from "./MobileMenu";
 
 const MenuPackage = () => {
   const [menubaropacity, setMenuBarOpacity] = useState("0");
   return (
     <>
+      <MobileMenu />
       <MenuBar
         display={menubaropacity}
         visibility={menubaropacity === "1" ? "visible" : null}

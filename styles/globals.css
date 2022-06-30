@@ -201,6 +201,19 @@ a {
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
 /* ==================================== Accodian css ============================================== */
+.offcanvas {
+  transform: none;
+  margin-top: 4.3rem;
+}
+.offcanvas-backdrop {
+  background: none !important;
+}
+.offcanvas-start {
+  width: 100% !important;
+}
+.offcanvas-body {
+  padding: 0% !important;
+}
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
 @media (min-width: 320px) and (max-width: 450px) {

@@ -2,19 +2,14 @@ export const menus = [
   {
     name: "Home",
     mainlink: "/",
-    menus: [
-      "Company Overview",
-      "Case study",
-      "Career page",
-      "Events & webinars",
-      "Awards & Certificate",
-      "Client Speak/Customer",
-    ],
+    menus: [],
   },
   {
     name: "About us",
     mainlink: "",
     menus: [
+      "Company Overview",
+      "Case Study",
       "Career page",
       "Events & webinars",
       "Awards & Certificate",
@@ -24,12 +19,12 @@ export const menus = [
   {
     name: "Insights",
     mainlink: "",
-    menus: ["Company Overview", "Case study", "Client Speak/Customer"],
+    menus: ["Blog", "News/Media", "Press Release"],
   },
   {
     name: "Resources",
     mainlink: "",
-    menus: ["Company Overview", "Case study", "Career page"],
+    menus: ["Developers Guidline", "FAQ"],
   },
   {
     name: "Contact us",
@@ -39,42 +34,42 @@ export const menus = [
 ];
 export const iconsMenu = [
   {
-    icon: "/assets/images/menu-1.svg",
+    icon: "/assets/images/mm1.svg",
     color: "#F27E63",
     name: "MxTrade",
   },
   {
-    icon: "/assets/images/menu-2.svg",
+    icon: "/assets/images/mm2.svg",
     color: "#00ACD7",
     name: "MxFuture",
   },
   {
-    icon: "/assets/images/menu-3.svg",
+    icon: "/assets/images/mm3.svg",
     color: "#F2AB27",
     name: "MxDex",
   },
   {
-    icon: "/assets/images/menu-4.svg",
+    icon: "/assets/images/mm4.svg",
     color: "#4BA6A6",
     name: "MxFi",
   },
   {
-    icon: "/assets/images/menu-5.svg",
+    icon: "/assets/images/mm5.svg",
     color: "#9E9BF2",
     name: "MxLaunch",
   },
   {
-    icon: "/assets/images/menu-6.svg",
+    icon: "/assets/images/mm6.svg",
     color: "#BF9A78",
     name: "MxWallet",
   },
   {
-    icon: "/assets/images/menu-7.svg",
+    icon: "/assets/images/mm7.svg",
     color: "#4B99FF",
     name: "MxBlock",
   },
   {
-    icon: "/assets/images/menu-8.svg",
+    icon: "/assets/images/mm8.svg",
     color: "#D95276",
     name: "MxNFT",
   },

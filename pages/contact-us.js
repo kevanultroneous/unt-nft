@@ -79,20 +79,13 @@ const ContactUs = () => {
   const apicall = () => {
     if (name == "" || name.length < 2 || name.includes("https://")) {
       alert("Enter valid name !");
-      reloadImg3837482000049914001();
     } else if (phoneValue == "") {
-      reloadImg3837482000049914001();
       alert("Enter valid Phone !");
     } else if (validateEmail3837482000049914001(email) == false) {
-      reloadImg3837482000049914001();
-
       alert("enter valid email");
     } else if (subject == "") {
-      reloadImg3837482000049914001();
-
       alert("enter valid subject");
     } else if (captchas == "") {
-      reloadImg3837482000049914001();
       alert("Please Enter captcha code");
     } else {
       fetch("https://crm.zoho.com/crm/WebToLeadForm", requestOptions)
@@ -106,7 +99,6 @@ const ContactUs = () => {
           alert(result);
         })
         .catch((error) => alert(error));
-      reloadImg3837482000049914001();
     }
   };
 

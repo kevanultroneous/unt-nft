@@ -1,0 +1,102 @@
+.MobileMenu {
+  align-items: center;
+  padding: 0.9rem;
+  display: none;
+  background-color: #ffffff;
+  position: sticky;
+  top: 0px;
+  z-index: 35;
+}
+.MenuController {
+  display: flex;
+  width: 50%;
+  justify-content: end;
+}
+.MobileMenuLogo {
+  width: 50%;
+}
+.MobifinxXmenu {
+  padding-left: 1rem;
+  background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
+}
+.LinkName {
+  font-size: 35px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: 0.05em;
+  -webkit-text-stroke: 1px #ffffff;
+  text-decoration: none !important;
+  color: transparent !important;
+  -webkit-background-clip: text, padding-box;
+  background-clip: text, padding-box;
+  background-size: 100% 200%;
+  background-position: top;
+  -webkit-transition: background-position 1.5s ease-in-out;
+  -o-transition: background-position 1.5s ease-in-out;
+  transition: background-position 1.5s ease-in-out;
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffffff),
+    color-stop(50%, #1a1c3c)
+  );
+  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  padding-bottom: 0.5rem;
+}
+.LinkName:hover {
+  background-position: bottom;
+  cursor: pointer;
+}
+.SubMenu {
+  font-weight: 400;
+  color: #ffffff;
+  font-size: 18px;
+  padding-bottom: 0.5rem;
+}
+.SubMenu:hover {
+  color: #a21d34;
+}
+.Tabs {
+  padding-top: 1rem;
+  padding-bottom: 3rem;
+  display: flex;
+  color: #ffffff;
+  align-items: center;
+  font-size: 18px;
+}
+.Tabname {
+  width: 2rem;
+  height: 0.1rem;
+  margin-right: 0.5rem;
+  border: 1px solid#ffffff;
+}
+.IconName {
+  padding-top: 0.7rem;
+  font-weight: 500;
+  font-size: 20px;
+  text-align: center;
+}
+.IconName:hover {
+  color: #a21d34;
+}
+.IconCard {
+}
+.IconMenuContainer {
+  justify-content: center;
+  text-align: center;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .MobileMenu {
+    display: flex;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
