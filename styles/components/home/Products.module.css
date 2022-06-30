@@ -218,7 +218,7 @@
     height: 150vh
   } */
   .ProductDetails {
-  padding:0 2rem;
+    padding: 0 2rem;
   }
   .Carddetail {
     width: 100%;
@@ -229,6 +229,10 @@
     height: 1000px;
     position: sticky;
     top: calc(28vh + 52px - 215px - 40px);
+  }
+  .HrBorder {
+    width: 100% !important;
+    margin-left: 1rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

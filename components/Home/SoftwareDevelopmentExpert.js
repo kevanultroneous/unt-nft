@@ -15,7 +15,6 @@ const SDE = ({ handleClick }) => {
     slidesToScroll: 1,
     centerMode: false,
     // autoplay: true,
-    cssEase: "linear",
     responsive: [
       {
         breakpoint: 1400,
@@ -32,31 +31,20 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 3.1,
-          slidesToScroll: 2,
+          slidesToShow: 1,
+          slidesToScroll: 1,
           initialSlide: 2,
           centerMode: true,
           centerPadding: "0px",
         },
       },
-      {
-        breakpoint: 600,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          centerMode: false,
-          autoplay: true,
-          autoplaySpeed: 2000,
-        },
-      },
+
       {
         breakpoint: 480,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 2,
-          initialSlide: 2,
-          centerMode: false,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
           autoplay: true,
           autoplaySpeed: 2000,
         },

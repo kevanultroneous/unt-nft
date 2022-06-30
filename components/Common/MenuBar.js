@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import AOS from "aos";
 import { iconsMenu, menus } from "utils/menu.data";
+import Link from "next/link";
 const MenuBar = ({ display = "none", visibility }) => {
   useEffect(() => {
     AOS.refresh();
@@ -43,7 +44,11 @@ const MenuBar = ({ display = "none", visibility }) => {
                   key={index}
                   onMouseOver={() => setCurrentMenu(index)}
                 >
-                  <li>{value.name}</li>
+                  <Link href={value.mainlink}>
+                    <a href={value.mainlink}>
+                      <li>{value.name}</li>
+                    </a>
+                  </Link>
                   <div
                     className={styles.MenuLine}
                     style={

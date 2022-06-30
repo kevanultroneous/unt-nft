@@ -187,7 +187,8 @@
   }
   .SoftwareDevelopmentExpertsBigHeading {
     font-weight: 600;
-    font-size: 26px;
+    font-size: 3rem;
+    width: 18.5rem;
     /* padding-top: 4rem; */
     /* padding-bottom: 5rem; */
   }

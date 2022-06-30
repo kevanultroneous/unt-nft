@@ -1,6 +1,7 @@
 export const menus = [
   {
     name: "Home",
+    mainlink: "",
     menus: [
       "Company Overview",
       "Case study",
@@ -12,6 +13,7 @@ export const menus = [
   },
   {
     name: "About us",
+    mainlink: "",
     menus: [
       "Career page",
       "Events & webinars",
@@ -21,15 +23,18 @@ export const menus = [
   },
   {
     name: "Insights",
+    mainlink: "",
     menus: ["Company Overview", "Case study", "Client Speak/Customer"],
   },
   {
     name: "Resources",
+    mainlink: "",
     menus: ["Company Overview", "Case study", "Career page"],
   },
   {
     name: "Contact us",
-    menus: ["Company Overview", "Case study"],
+    mainlink: "/contact-us",
+    menus: [],
   },
 ];
 export const iconsMenu = [
