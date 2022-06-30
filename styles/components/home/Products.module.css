@@ -217,6 +217,9 @@
   /* .SectionCards .SectionContent li {
     height: 150vh
   } */
+  .tags {
+    width: 100%;
+  }
   .ProductDetails {
     padding: 0 2rem;
   }
@@ -226,7 +229,7 @@
   .SectionCards .SectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
-    height: 1000px;
+    height: 1300px;
     position: sticky;
     top: calc(28vh + 52px - 215px - 40px);
   }

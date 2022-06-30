@@ -21,12 +21,12 @@ const Discover = () => {
       text: "Partnership based on Common Goals and Trust",
     },
     {
-      image: "/assets/images/trading2.svg",
-      text: "24*7 Multilingual Customer Support Service",
+      image: "/assets/images/disc3.svg",
+      text: "Technology experts in modular system architecture",
     },
     {
       image: "/assets/images/trading1.svg",
-      text: "IT Security Certified to protect customer data",
+      text: "OWASP and SoC2 compliance expert",
     },
   ];
   const defaultOptions = {
@@ -92,11 +92,11 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="500"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos="fade-left"
+                  // data-aos-duration="3000"
+                  // data-aos-delay="500"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image src={arrayBox[0].image} />
@@ -109,11 +109,11 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="500"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos="fade-left"
+                  // data-aos-duration="3000"
+                  // data-aos-delay="500"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image src={arrayBox[1].image} />
@@ -128,11 +128,11 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="800"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos="fade-left"
+                  // data-aos-duration="3000"
+                  // data-aos-delay="800"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image src={arrayBox[2].image} />
@@ -145,11 +145,11 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="800"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos="fade-left"
+                  // data-aos-duration="3000"
+                  // data-aos-delay="800"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image src={arrayBox[3].image} />
