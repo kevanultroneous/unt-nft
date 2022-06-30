@@ -123,7 +123,7 @@ const ContactUs = () => {
               <PhoneInput
                 value={phoneValue}
                 onChange={(value, country) => {
-                  setCountry(country);
+                  setCountry(country.name);
                   setPhone(value);
                 }}
                 country={"in"}

@@ -79,6 +79,10 @@
   padding-top: 1rem;
 }
 .CaptchaInput {
+  outline: none;
+  border: none;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .ContactUsMainContainer {
