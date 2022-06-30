@@ -8,9 +8,15 @@ import SmoothScroll from "@/components/SmoothScroll.component";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useEffect, useState } from "react";
+import CountryPicker from "@/components/Common/CountryPicker";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
-
+  const [captchas, setCaptchas] = useState("");
+  const [country, setCountry] = useState("");
+  const [name, setName] = useState("");
+  const [phone, setPhone] = useState("");
+  const [email, setEmail] = useState("");
+  const [subject, setSubject] = useState("");
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
@@ -35,14 +41,14 @@ const ContactUs = () => {
   urlencoded.append("actionType", "TGVhZHM=");
   urlencoded.append("ldeskuid", "");
   urlencoded.append("LDTuvid", "");
-  urlencoded.append("Last Name", "Niravbhai");
-  urlencoded.append("Phone", "9878987898");
-  urlencoded.append("Email", "niravbhai@gmail.com");
-  urlencoded.append("LEADCF34", "India");
-  urlencoded.append("Description", "");
+  urlencoded.append("Last Name", name);
+  urlencoded.append("Phone", phone);
+  urlencoded.append("Email", email);
+  urlencoded.append("LEADCF34", country);
+  urlencoded.append("Description", subject);
   urlencoded.append("Lead Source", "Web Generated");
   urlencoded.append("LEADCF27", "Govt. & Tendering SI");
-  urlencoded.append("enterdigest", "6nwfpc");
+  urlencoded.append("enterdigest", captchas);
 
   var requestOptions = {
     method: "POST",
@@ -54,12 +60,22 @@ const ContactUs = () => {
   const apicall = () => {
     fetch("https://crm.zoho.com/crm/WebToLeadForm", requestOptions)
       .then((response) => response.text())
-      .then((result) => console.log(result))
-      .catch((error) => console.log("error", error));
+      .then((result) => alert(result))
+      .catch((error) => alert(error));
   };
 
   const [isMobile, setIsMobile] = useState(false);
-
+  function reloadImg3837482000049914001() {
+    var captcha = document.getElementById("imgid3837482000049914001");
+    if (captcha.src.indexOf("&d") !== -1) {
+      captcha.src =
+        captcha.src.substring(0, captcha.src.indexOf("&d")) +
+        "&d" +
+        new Date().getTime();
+    } else {
+      captcha.src = captcha.src + "&d" + new Date().getTime();
+    }
+  }
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
@@ -82,6 +98,8 @@ const ContactUs = () => {
               <p className={styles.FirstSectionSentence1}>Hey, My name is</p>
               <input
                 type={"text"}
+                value={name}
+                onChange={(e) => setName(e.target.value)}
                 placeholder="Name and Surname"
                 className={styles.FirstSectionInput}
               />
@@ -103,14 +121,20 @@ const ContactUs = () => {
               )}
               <PhoneInput
                 value={phoneValue}
-                onChange={(phoneValue) => setPhoneValue(phoneValue)}
+                onChange={(value, country) => {
+                  setCountry(country);
+                  setPhone(value);
+                }}
                 country={"in"}
                 placeholder="Phone number"
                 enableSearch={true}
               />
+              {/* <CountryPicker selection={(e) => setCountry(e.target.value)} /> */}
               <p className={styles.FirstSectionSentence1}>or</p>
               <input
                 type={"text"}
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 placeholder="Mail ID"
                 className={styles.FirstSectionInput}
               />
@@ -124,9 +148,26 @@ const ContactUs = () => {
           <Col xl={12}>
             <input
               type={"text"}
+              value={subject}
+              onChange={(e) => setSubject(e.target.value)}
               placeholder="Subject"
               className={styles.SubjectInput}
             />
+            <input
+              type="text"
+              maxlength="10"
+              name="enterdigest"
+              value={captchas}
+              placeholder="Enter Captcha code"
+              onChange={(e) => setCaptchas(e.target.value)}
+            />
+            <img
+              id="imgid3837482000049914001"
+              src="https://crm.zoho.com/crm/CaptchaServlet?formId=edcc1a64ebc839c248bd5de426f3593a30a1ad9e01cc6c07d1d3fb05527fec90&grpid=8fbc781aa7ba6bcad5844bcf0b2acad2773ca0c450007f1ea3649808c18b175a"
+            />
+            <button onClick={() => reloadImg3837482000049914001()}>
+              reload captcha
+            </button>
           </Col>
         </Row>
         <div className={styles.ButtonSpace}>
