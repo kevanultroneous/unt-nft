@@ -43,7 +43,7 @@ const ContactUs = () => {
   urlencoded.append("ldeskuid", "");
   urlencoded.append("LDTuvid", "");
   urlencoded.append("Last Name", name);
-  urlencoded.append("Phone", phone);
+  urlencoded.append("Phone", phoneValue);
   urlencoded.append("Email", email);
   urlencoded.append("LEADCF34", country);
   urlencoded.append("Description", subject);
@@ -57,15 +57,14 @@ const ContactUs = () => {
     body: urlencoded,
     redirect: "follow",
   };
-
-  const apicall = () => {
-    fetch("https://crm.zoho.com/crm/WebToLeadForm", requestOptions)
-      .then((response) => response.text())
-      .then((result) => alert(result))
-      .catch((error) => alert(error));
-  };
-
-  const [isMobile, setIsMobile] = useState(false);
+  function validateEmail3837482000049914001(email) {
+    const regex =
+      /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
+    if (!email || regex.test(email) === false) {
+      return false;
+    }
+    return true;
+  }
   function reloadImg3837482000049914001() {
     var captcha = document.getElementById("imgid3837482000049914001");
     if (captcha.src.indexOf("&d") !== -1) {
@@ -77,6 +76,42 @@ const ContactUs = () => {
       captcha.src = captcha.src + "&d" + new Date().getTime();
     }
   }
+  const apicall = () => {
+    if (name == "" || name.length < 2 || name.includes("https://")) {
+      alert("Enter valid name !");
+      reloadImg3837482000049914001();
+    } else if (phoneValue == "") {
+      reloadImg3837482000049914001();
+      alert("Enter valid Phone !");
+    } else if (validateEmail3837482000049914001(email) == false) {
+      reloadImg3837482000049914001();
+
+      alert("enter valid email");
+    } else if (subject == "") {
+      reloadImg3837482000049914001();
+
+      alert("enter valid subject");
+    } else if (captchas == "") {
+      reloadImg3837482000049914001();
+      alert("Please Enter captcha code");
+    } else {
+      fetch("https://crm.zoho.com/crm/WebToLeadForm", requestOptions)
+        .then((response) => response.text())
+        .then((result) => {
+          setName("");
+          setEmail("");
+          setPhoneValue("");
+          setSubject("");
+          setCaptchas("");
+          alert(result);
+        })
+        .catch((error) => alert(error));
+      reloadImg3837482000049914001();
+    }
+  };
+
+  const [isMobile, setIsMobile] = useState(false);
+
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
@@ -124,7 +159,7 @@ const ContactUs = () => {
                 value={phoneValue}
                 onChange={(value, country) => {
                   setCountry(country.name);
-                  setPhone(value);
+                  setPhoneValue(value);
                 }}
                 country={"in"}
                 placeholder="Phone number"
