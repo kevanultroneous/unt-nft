@@ -1,7 +1,7 @@
 export const menus = [
   {
     name: "Home",
-    mainlink: "",
+    mainlink: "/",
     menus: [
       "Company Overview",
       "Case study",

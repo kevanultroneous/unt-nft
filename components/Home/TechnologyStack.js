@@ -21,11 +21,12 @@ const TechnologyStack = () => {
       <div className={styles.TechnologyStack}>
         {listOfStack.map((value, index) => (
           <div
+            key={index}
             className={styles.Stack}
             data-aos={"zoom-in"}
             data-aos-duration="2000"
           >
-            <Image src={value} />
+            <Image alt="technostack" src={value} />
           </div>
         ))}
       </div>

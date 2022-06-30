@@ -1,4 +1,4 @@
-import { Col, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import styles from "@/styles/components/home/WhatWillYouGetWithUs.module.css";
 import { useEffect, useState } from "react";
 import AOS from "aos";
@@ -32,6 +32,7 @@ function WhatWillYouGetWithUs() {
         </h2>
         {arrText.map((el, ind) => (
           <p
+            key={ind}
             className={
               ind === value
                 ? styles.WhatWillYouGetTextActive
@@ -55,12 +56,12 @@ function WhatWillYouGetWithUs() {
             visibility ? styles.SmallImageAnim : ""
           }`}
         >
-          <img src={arrImage[value]} alt="Map Image" />
+          <Image src={arrImage[value]} alt="Map Image" />
         </div>
       </Col>
       <Col xs={12} sm={12} md={6} className={styles.WhatWillYouGetWithUsRight}>
         <div className={`${styles.BigImage}`}>
-          <img src={"/assets/images/main.gif"} alt="Graph Image" />
+          <Image src={"/assets/images/main.gif"} alt="Graph Image" />
         </div>
       </Col>
     </Row>

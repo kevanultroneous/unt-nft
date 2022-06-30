@@ -33,11 +33,13 @@ const Introductions = () => {
             <p className={styles.SliderActionTitle}>Explore 8 Features</p>
             <div className={styles.SliderActionButtons}>
               <Image
+                alt="redbutton"
                 src="/assets/images/redbutton.svg"
                 className={styles.leftButton}
                 onClick={() => sliderRef.current.slickPrev()}
               />
               <Image
+                alt="redbutton"
                 src="/assets/images/redbutton2.svg"
                 className={styles.leftButton}
                 onClick={() => sliderRef.current.slickNext()}
@@ -48,7 +50,7 @@ const Introductions = () => {
             {[
               1, 2, 3, 3, 4, 54, 4, 5, 4, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 2, 3,
             ].map((v, i) => (
-              <div className={styles.Container}>
+              <div className={styles.Container} key={i}>
                 <Image
                   src={"/assets/images/cardp.svg"}
                   alt="Avatar"

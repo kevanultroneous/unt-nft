@@ -76,6 +76,7 @@ const Process = () => {
           <div className={styles.ProcessBoxesContainer}>
             {dataProcess.map((v, i) => (
               <div
+                key={i}
                 className={styles.ProcessBox}
                 onMouseEnter={() => setValue(i)}
               >

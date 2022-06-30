@@ -16,6 +16,7 @@ const IntroContainer = ({ handleclick, hidden }) => {
     <div className={styles.IntroContainer}>
       <div className="p-5 p-xl-0 p-md-0 p-lg-0 p-xxl-0">
         <Image
+          alt="logo"
           className={`${ts1 == false ? "fadeoutcss" : ""}`}
           src="/assets/images/mainicon.svg"
           fluid

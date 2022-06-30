@@ -11,7 +11,7 @@ const Solution = () => {
       <h3>This Solution Helps</h3>
       <Row className={styles.Solutionrow}>
         <Col xl={3} className={styles.SolutionDetail}>
-          <Image src={"/assets/images/solutionicon.svg"} />
+          <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>
             Strong Technical Competence{" "}
             <span className={styles.divider}>|</span>
@@ -19,7 +19,7 @@ const Solution = () => {
         </Col>
 
         <Col xl={3} className={styles.SolutionDetail}>
-          <Image src={"/assets/images/solutionicon.svg"} />
+          <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>
             Strong Technical Competence{" "}
             <span className={styles.divider}>|</span>
@@ -27,7 +27,7 @@ const Solution = () => {
         </Col>
 
         <Col xl={3} className={styles.SolutionDetail}>
-          <Image src={"/assets/images/solutionicon.svg"} />
+          <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>Strong Technical Competence</h5>
         </Col>
       </Row>

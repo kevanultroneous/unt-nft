@@ -1,7 +1,7 @@
 import Layout from "@/components/Common/Layout";
 import Footer from "@/components/Home/Footer";
 import Menu from "@/components/Home/Menu";
-import { Col, Row } from "react-bootstrap";
+import { Col, Image, Row } from "react-bootstrap";
 import styles from "@/styles/components/contactus/index.module.css";
 import ActionButton from "@/components/Common/ActionButton";
 import SmoothScroll from "@/components/SmoothScroll.component";
@@ -9,6 +9,7 @@ import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
 import { useEffect, useState } from "react";
 import CountryPicker from "@/components/Common/CountryPicker";
+import MenuPackage from "@/components/Common/MenuPackage";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [captchas, setCaptchas] = useState("");
@@ -82,7 +83,7 @@ const ContactUs = () => {
 
   return (
     <Layout title={"Mobifinx | Contact Us"}>
-      <Menu />
+      <MenuPackage />
       {/* <SmoothScroll> */}
       <div className={styles.ContactUsMainContainer}>
         <Row>
@@ -153,21 +154,32 @@ const ContactUs = () => {
               placeholder="Subject"
               className={styles.SubjectInput}
             />
-            <input
-              type="text"
-              maxlength="10"
-              name="enterdigest"
-              value={captchas}
-              placeholder="Enter Captcha code"
-              onChange={(e) => setCaptchas(e.target.value)}
-            />
-            <img
+          </Col>
+          <Col xl={12}>
+            <Image
+              alt="captcha"
+              className={styles.CaptchaIcon}
               id="imgid3837482000049914001"
               src="https://crm.zoho.com/crm/CaptchaServlet?formId=edcc1a64ebc839c248bd5de426f3593a30a1ad9e01cc6c07d1d3fb05527fec90&grpid=8fbc781aa7ba6bcad5844bcf0b2acad2773ca0c450007f1ea3649808c18b175a"
             />
-            <button onClick={() => reloadImg3837482000049914001()}>
-              reload captcha
-            </button>
+            <br />
+            <div className={styles.CaptchaControllerContainer}>
+              <input
+                className={styles.CaptchaInput}
+                type="text"
+                maxLength="10"
+                name="enterdigest"
+                value={captchas}
+                placeholder="Enter Captcha code"
+                onChange={(e) => setCaptchas(e.target.value)}
+              />
+              <label
+                className={styles.ReloadText}
+                onClick={() => reloadImg3837482000049914001()}
+              >
+                Reload
+              </label>
+            </div>
           </Col>
         </Row>
         <div className={styles.ButtonSpace}>

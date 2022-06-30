@@ -8,21 +8,21 @@ const Speciality = () => {
       key: 1,
       countstart: 0,
       countend: 10,
-      sign: "+",
+      sign: `+`,
       text: "Million Transaction Processed",
     },
     {
       key: 2,
       countstart: 0,
       countend: 20,
-      sign: "+",
+      sign: `+`,
       text: "Global Cryptocurrency Exchanges",
     },
     {
       key: 3,
       countstart: 0,
       countend: 30,
-      sign: "+",
+      sign: `+`,
       text: "Global Blockchain Customers",
     },
     // {
@@ -48,10 +48,10 @@ const Speciality = () => {
     <Row className={styles.SpecialityContainer}>
       <div className={styles.SpecialityBoard1}>
         {datalist.map((value, index) => (
-          <div className={styles.Speciality}>
+          <div className={styles.Speciality} key={index}>
             {value.key % 2 === 0 ? (
               <Row
-                className={`d-flex justify-content-end`}
+                className={"d-flex justify-content-end"}
                 // data-aos={"fade-right"}
                 // data-aos-duration="2000"
               >
@@ -64,7 +64,7 @@ const Speciality = () => {
               </Row>
             ) : (
               <Row
-                className={`d-flex`}
+                className={"d-flex"}
                 // data-aos={"fade-left"}
                 // data-aos-duration="2000"
               >
@@ -85,8 +85,10 @@ const Speciality = () => {
           // data-aos={"zoom-in"}
           // data-aos-duration="2000"
         >
-          "Our key USP is an excellent model of project management, which helps
+          {`
+             "Our key USP is an excellent model of project management, which helps
           in providing the most advanced crypto exchange software development.”
+            `}
         </p>
       </div>
     </Row>

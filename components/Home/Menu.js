@@ -16,10 +16,16 @@ const Menu = ({ opacity, handleClick, change }) => {
       style={{ opacity: opacity, zIndex: "100" }}
     >
       <div>
-        <Image src="/assets/images/xicon.svg" fluid className="pt-4" />
+        <Image
+          alt={"xicon"}
+          src="/assets/images/xicon.svg"
+          fluid
+          className="pt-4"
+        />
       </div>
       <div>
         <Image
+          alt={"menu"}
           src={
             change
               ? "/assets/images/menuopen.svg"

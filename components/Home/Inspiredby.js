@@ -132,6 +132,7 @@ const Inspiredby = () => {
           <div className={styles.InspiredCardView}>
             <p className={styles.Viewall}>View All</p>
             <Image
+              alt={"grad"}
               src="/assets/images/grad.svg"
               className={styles.InspiredCardImg}
             />
@@ -186,6 +187,7 @@ const Inspiredby = () => {
           <div className={styles.InspiredCardView2}>
             <p className={styles.Viewall2}>View All</p>
             <Image
+              alt="grad2"
               src="/assets/images/grad.svg"
               className={styles.InspiredCardImg2}
             />

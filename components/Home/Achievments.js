@@ -33,13 +33,13 @@ const Achievements = () => {
       </h4>
       <Row className={styles.AchievementBoxContainer}>
         {listAch.map((v, i) => (
-          <Col xl={2}>
+          <Col xl={2} key={i}>
             <div
               className={styles.AchievementBox}
               data-aos={"zoom-in"}
               data-aos-duration="3000"
             >
-              <Image src={v} />
+              <Image alt={v} src={v} />
             </div>
           </Col>
         ))}

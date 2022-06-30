@@ -41,6 +41,7 @@ const FutureChoice = () => {
                 <div className={styles.CardProfile}>
                   <div>
                     <Image
+                      alt="model"
                       src="/assets/images/model.png"
                       className={styles.ModelF}
                     />
@@ -65,6 +66,7 @@ const FutureChoice = () => {
               </Col>
               <Col xl={2} md={2} xs={4} className={styles.Rightarrow}>
                 <Image
+                  alt="rightb"
                   src={
                     c2
                       ? "/assets/images/darkb.svg"

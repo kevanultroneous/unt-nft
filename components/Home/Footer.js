@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className={styles.MailBtn}>
               <div className={styles.FooterSendButton}>
-                <Image src="/assets/images/sendBtn.svg" />
+                <Image alt="send" src="/assets/images/sendBtn.svg" />
               </div>
             </div>
           </div>
@@ -38,10 +38,10 @@ const Footer = () => {
           <div className="d-flex align-items-center">
             <Link href="/">
               <div className={styles.FooterContactusLink}>
-                <a href="/">
-                  Explore{" "}
-                  <HiOutlineExternalLink className={styles.ContactusIcon} />
-                </a>
+                {/* <a href="/"> */}
+                Explore{" "}
+                <HiOutlineExternalLink className={styles.ContactusIcon} />
+                {/* </a> */}
               </div>
             </Link>
           </div>
@@ -52,38 +52,38 @@ const Footer = () => {
           >
             <div className="d-flex">
               <Link href="/">
-                <a href="/">
-                  <span className={styles.MailText}>
-                    <ImMail className={styles.MailIconHover} />
-                    Sales@mobifinx.com
-                  </span>
-                </a>
+                {/* <a href="/"> */}
+                <span className={styles.MailText}>
+                  <ImMail className={styles.MailIconHover} />
+                  Sales@mobifinx.com
+                </span>
+                {/* </a> */}
               </Link>
             </div>
             <div>
               <Link href="/">
-                <a href="/">
-                  <IoLogoLinkedin
-                    style={{ fontSize: "35px" }}
-                    className={styles.IconHover}
-                  />
-                </a>
+                {/* <a href="/"> */}
+                <IoLogoLinkedin
+                  style={{ fontSize: "35px" }}
+                  className={styles.IconHover}
+                />
+                {/* </a> */}
               </Link>
               <Link href="/">
-                <a href="/">
-                  <IoLogoFacebook
-                    style={{ fontSize: "35px", borderRadius: "1rem" }}
-                    className={styles.IconHover}
-                  />
-                </a>
+                {/* <a href="/"> */}
+                <IoLogoFacebook
+                  style={{ fontSize: "35px", borderRadius: "1rem" }}
+                  className={styles.IconHover}
+                />
+                {/* </a> */}
               </Link>
               <Link href="/">
-                <a href="/">
-                  <AiFillTwitterSquare
-                    style={{ fontSize: "35px", borderRadius: "0.8rem" }}
-                    className={styles.IconHover}
-                  />
-                </a>
+                {/* <a href="/"> */}
+                <AiFillTwitterSquare
+                  style={{ fontSize: "35px", borderRadius: "0.8rem" }}
+                  className={styles.IconHover}
+                />
+                {/* </a> */}
               </Link>
             </div>
           </div>

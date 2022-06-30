@@ -176,7 +176,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[0].img} />
+                    <Image
+                      alt={ProductsList[0].img}
+                      src={ProductsList[0].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -220,7 +223,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[1].img} />
+                    <Image
+                      alt={ProductsList[1].img}
+                      src={ProductsList[1].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -264,7 +270,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[2].img} />
+                    <Image
+                      alt={ProductsList[2].img}
+                      src={ProductsList[2].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -308,7 +317,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[3].img} />
+                    <Image
+                      alt={ProductsList[3].img}
+                      src={ProductsList[3].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -352,7 +364,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[4].img} />
+                    <Image
+                      alt={ProductsList[4].img}
+                      src={ProductsList[4].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -396,7 +411,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[5].img} />
+                    <Image
+                      alt={ProductsList[5].img}
+                      src={ProductsList[5].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -440,7 +458,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[6].img} />
+                    <Image
+                      alt={ProductsList[6].img}
+                      src={ProductsList[6].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
@@ -484,7 +505,10 @@ const Products = ({ text }) => {
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
                   <Col xl={6} className={styles.ProductImages}>
-                    <Image src={ProductsList[7].img} />
+                    <Image
+                      alt={ProductsList[7].img}
+                      src={ProductsList[7].img}
+                    />
                   </Col>
                   <Col xl={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>

@@ -99,7 +99,7 @@ const Discover = () => {
                   // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image src={arrayBox[0].image} />
+                    <Image alt={arrayBox[0].image} src={arrayBox[0].image} />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[0].text}
@@ -116,7 +116,7 @@ const Discover = () => {
                   // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image src={arrayBox[1].image} />
+                    <Image alt={arrayBox[1].image} src={arrayBox[1].image} />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[1].text}
@@ -135,7 +135,7 @@ const Discover = () => {
                   // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image src={arrayBox[2].image} />
+                    <Image alt={arrayBox[2].image} src={arrayBox[2].image} />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[2].text}
@@ -152,7 +152,7 @@ const Discover = () => {
                   // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image src={arrayBox[3].image} />
+                    <Image alt={arrayBox[3].image} src={arrayBox[3].image} />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[3].text}

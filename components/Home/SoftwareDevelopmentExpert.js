@@ -112,6 +112,7 @@ const SDE = ({ handleClick }) => {
         >
           <div className={styles.Scrolldowncontainer}>
             <Image
+              alt="downimg"
               src="/assets/images/scrollarrow.svg"
               className={styles.ImageDown}
             />
@@ -124,12 +125,14 @@ const SDE = ({ handleClick }) => {
             <Col xl={3} md={4} xs={6}>
               <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
                 <Image
+                  alt={"prev"}
                   onClick={() => sliderRef.current.slickPrev()}
                   fluid
                   src={"/assets/images/left-sb.svg"}
                   className={styles.SoftwareDevelopmentExpertSliderBtnLeft}
                 />
                 <Image
+                  alt="next"
                   onClick={() => sliderRef.current.slickNext()}
                   fluid
                   src={"/assets/images/right-sb.svg"}
@@ -160,8 +163,12 @@ const SDE = ({ handleClick }) => {
           <Row className={`${styles.SliderGround} SliderGroundCss`}>
             <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
-                <div className={styles.SliderCard}>
-                  <Image src={v.img} className={styles.SliderImg} />
+                <div className={styles.SliderCard} key={i}>
+                  <Image
+                    alt="sliderimg"
+                    src={v.img}
+                    className={styles.SliderImg}
+                  />
                   <p>{v.name}</p>
                 </div>
               ))}
