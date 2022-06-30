@@ -48,7 +48,7 @@
 }
 .MailBtn {
 }
-.FooterContactusLink a {
+.FooterContactusLink {
   font-family: "Avenir LT Std", sans-serif;
   font-weight: 900;
   font-style: normal;
@@ -76,7 +76,7 @@
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
 }
-.FooterContactusLink a:hover {
+.FooterContactusLink:hover {
   background-position: bottom;
 }
 
@@ -209,7 +209,7 @@
     padding-right: 0.5rem;
   }
   .FooterContactusLink a {
- font-size: 50px;
+    font-size: 50px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
