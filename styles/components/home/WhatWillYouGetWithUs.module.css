@@ -92,22 +92,34 @@
   align-items: center;
   padding-bottom: 5rem;
 }
-@media (min-width: 320px) and (max-width: 767px){
-  .WhatWillYouGetWithUs{
+@media (min-width: 320px) and (max-width: 767px) {
+  .WhatWillYouGetWithUs {
     padding-left: 0;
   }
-  .WhatWillYouGetWithUsLeft h2{
+  .WhatWillYouGetWithUsLeft h2 {
     font-size: 35px;
   }
-  .WhatWillYouGetWithUsLeft{
+  .WhatWillYouGetWithUsLeft {
     padding: 1rem;
   }
   .SmallImage {
     width: 13rem;
     left: 4rem;
   }
-  .BigImage{
+  .BigImage {
     padding-left: 1rem;
     height: 50px;
   }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .WhatWillYouGetWithUs {
+    padding-left: 4rem;
+  }
+  .WhatWillYouGetWithUs h2 {
+    font-size: 39px;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
 }

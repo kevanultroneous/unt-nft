@@ -15,12 +15,12 @@ const Footer = () => {
   return (
     <div className={styles.FooterContainer}>
       <Row className="mx-0">
-        <Col xl={6}>
+        <Col xl={6} md={12}>
           <h4 className={styles.SubscribeHeading}>
             Subscribe to our Newsletter
           </h4>
         </Col>
-        <Col xl={6} className={styles.MailContainerSpace}>
+        <Col xl={6} md={12} className={styles.MailContainerSpace}>
           <div className={styles.MailContainer}>
             <div className={styles.MailInput}>
               <input type={"email"} placeholder="Enter your Mail" />
@@ -34,7 +34,7 @@ const Footer = () => {
         </Col>
       </Row>
       <Row className={styles.FooterLinksContainer}>
-        <Col xl={6}>
+        <Col xl={6} md={12}>
           <div className="d-flex align-items-center">
             <Link href="/">
               <div className={styles.FooterContactusLink}>
@@ -46,7 +46,7 @@ const Footer = () => {
             </Link>
           </div>
         </Col>
-        <Col xl={6} className={styles.FooterIconCol}>
+        <Col xl={6} md={12} className={styles.FooterIconCol}>
           <div
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >

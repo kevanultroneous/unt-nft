@@ -95,6 +95,9 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .MobileMenu {
+    display: flex;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

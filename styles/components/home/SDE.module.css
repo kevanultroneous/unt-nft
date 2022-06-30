@@ -225,6 +225,9 @@
   .SoftwareDevelopmentExpertsBigHeadingContainer {
     padding-left: 0%;
   }
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 4rem;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

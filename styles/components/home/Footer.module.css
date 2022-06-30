@@ -216,6 +216,13 @@
   .MainLinks {
     padding-top: 3rem;
   }
+  .FooterContainer {
+    padding-left: 4rem;
+  }
+  .FooterIconCol {
+    padding-top: 3rem;
+    justify-content: start;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

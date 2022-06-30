@@ -182,23 +182,37 @@
     opacity: 1;
     display: none;
   }
-  .InspiredCardOverlay{
+  .InspiredCardOverlay {
     width: 330px;
   }
-  .InspiredCardImage{
+  .InspiredCardImage {
     width: 330px;
     height: 430px;
   }
   .InspiredCardText {
-    padding:1rem 1rem
+    padding: 1rem 1rem;
   }
-  .InspiredDis{
+  .InspiredDis {
     width: 330px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .InspiredCardCol {
     align-items: start;
+  }
+  .InspiredContainer {
+    padding-left: 4rem;
+    padding-right: 4rem;
+  }
+  .InspiredCardView,
+  .InspiredCardDes {
+    display: none;
+  }
+  .InspiredCardDesMob {
+    display: block;
+  }
+  .InspiredCardView2 {
+    opacity: 1;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

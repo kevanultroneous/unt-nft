@@ -175,13 +175,13 @@ const Products = ({ text }) => {
 
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[0].img}
                       src={ProductsList[0].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[0].name}</h4>
                       <p>{ProductsList[0].detail}</p>
@@ -222,13 +222,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[1].img}
                       src={ProductsList[1].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[1].name}</h4>
                       <p>{ProductsList[1].detail}</p>
@@ -269,13 +269,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[2].img}
                       src={ProductsList[2].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[2].name}</h4>
                       <p>{ProductsList[2].detail}</p>
@@ -316,13 +316,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[3].img}
                       src={ProductsList[3].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[3].name}</h4>
                       <p>{ProductsList[3].detail}</p>
@@ -363,13 +363,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[4].img}
                       src={ProductsList[4].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[4].name}</h4>
                       <p>{ProductsList[4].detail}</p>
@@ -410,13 +410,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[5].img}
                       src={ProductsList[5].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[5].name}</h4>
                       <p>{ProductsList[5].detail}</p>
@@ -457,13 +457,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[6].img}
                       src={ProductsList[6].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[6].name}</h4>
                       <p>{ProductsList[6].detail}</p>
@@ -504,13 +504,13 @@ const Products = ({ text }) => {
               </div>
               <figure className={styles.CardContainer}>
                 <Row className="m-0 p-0">
-                  <Col xl={6} className={styles.ProductImages}>
+                  <Col xl={6} md={6} className={styles.ProductImages}>
                     <Image
                       alt={ProductsList[7].img}
                       src={ProductsList[7].img}
                     />
                   </Col>
-                  <Col xl={6} className={styles.Carddetail}>
+                  <Col xl={6} md={6} className={styles.Carddetail}>
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[7].name}</h4>
                       <p>{ProductsList[7].detail}</p>

@@ -239,6 +239,15 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .OurProductsHeading {
+    padding-left: 4rem;
+  }
+  .HrBorder {
+    width: 90% !important;
+  }
+  .tags {
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
