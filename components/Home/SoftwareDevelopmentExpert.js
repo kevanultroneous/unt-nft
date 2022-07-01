@@ -83,7 +83,8 @@ const SDE = ({ handleClick }) => {
             href={"/contact-us"}
             text={
               <>
-                Explore Product <HiOutlineExternalLink />
+                <span className={styles.TextBtn}>Explore Product </span>
+                <HiOutlineExternalLink />
               </>
             }
           />

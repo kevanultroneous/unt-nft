@@ -239,6 +239,9 @@ a {
   .react-tel-input .flag-dropdown {
     top: -15% !important;
   }
+  .react-tel-input .form-control {
+    width: 20rem !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .slick-slider {

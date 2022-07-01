@@ -5,7 +5,7 @@
 .button {
   border: 1px solid #a21d34;
   border-radius: 20px;
-  width: fit-content;
+  width: fit-content !important;
   padding: 0.5rem 1rem;
   display: block;
   color: #a21d34;

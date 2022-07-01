@@ -193,7 +193,7 @@
   }
 
   .SoftwareDevelopmentExpertsBtnCol {
-    justify-content: start;
+    justify-content: flex-end;
     margin-top: 0rem;
     padding-right: 1rem;
   }
@@ -212,6 +212,9 @@
   .SliderCard {
     width: 90% !important;
     height: 150px;
+  }
+  .TextBtn {
+    display: none;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
