@@ -12,6 +12,7 @@
   background-size: 200% 200%;
   background-position: right bottom;
   transition: all 0.8s ease-out;
+  cursor: pointer;
 }
 
 .button:hover {

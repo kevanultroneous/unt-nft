@@ -14,7 +14,7 @@ const SDE = ({ handleClick }) => {
     slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: false,
-    // autoplay: true,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1400,
@@ -31,11 +31,9 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 1,
+          slidesToShow: 3.1,
           slidesToScroll: 1,
           initialSlide: 2,
-          centerMode: true,
-          centerPadding: "0px",
         },
       },
 
@@ -82,6 +80,7 @@ const SDE = ({ handleClick }) => {
           className={styles.SoftwareDevelopmentExpertsBtnCol}
         >
           <ActionButtonV2
+            href={"/contact-us"}
             text={
               <>
                 Explore Product <HiOutlineExternalLink />

@@ -1,14 +1,12 @@
 import styles from "@/styles/components/ActionButtonV2.module.css";
-const ActionButtonV2 = ({ text, mobile }) => {
+import Link from "next/link";
+const ActionButtonV2 = ({ text, handleAction = null, outerstyle, href }) => {
   return (
-    <div className={styles.outer}>
+    <div className={styles.outer} onClick={handleAction ? handleAction : null}>
       <div className={styles.button}>
-        <div
-          className={styles.text}
-          style={mobile ? { borderRadius: "100%" } : null}
-        >
-          {mobile ? mobile : text}
-        </div>
+        <Link href={`${href ? href : null}`}>
+          <div>{text}</div>
+        </Link>
       </div>
     </div>
   );

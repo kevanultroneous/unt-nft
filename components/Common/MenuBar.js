@@ -88,19 +88,24 @@ const MenuBar = ({ display = "none", visibility }) => {
                   onMouseOver={() => setCurrentIcon(index)}
                   onMouseLeave={() => setCurrentIcon(null)}
                 >
-                  <div className={styles.IconCard}>
-                    <Image src={value.icon} alt={value.icon} />
-                    <p
-                      className={styles.IconName}
-                      style={
-                        index === currentIcon
-                          ? { color: value.color, transition: "all 0.5s ease" }
-                          : { color: "#000", transition: "all 0.5s ease" }
-                      }
-                    >
-                      {value.name}
-                    </p>
-                  </div>
+                  <Link href={value.link}>
+                    <div className={styles.IconCard}>
+                      <Image src={value.icon} alt={value.icon} />
+                      <p
+                        className={styles.IconName}
+                        style={
+                          index === currentIcon
+                            ? {
+                                color: value.color,
+                                transition: "all 0.5s ease",
+                              }
+                            : { color: "#000", transition: "all 0.5s ease" }
+                        }
+                      >
+                        {value.name}
+                      </p>
+                    </div>
+                  </Link>
                 </Col>
               ))}
             </Row>

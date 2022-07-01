@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import AOS from "aos";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
+import Link from "next/link";
 const FutureChoice = () => {
   useEffect(() => {
     AOS.refresh();
@@ -102,13 +103,16 @@ const FutureChoice = () => {
                 Read more articles on our blog.
               </p>
               {c2 ? (
-                <div className={styles.Outer}>
-                  <div className={styles.Button}>
-                    <div classNane={styles.Text}>Visit Blog Page</div>
+                <Link href={"/"}>
+                  <div className={styles.Outer} style={{ cursor: "pointer" }}>
+                    <div className={styles.Button}>
+                      <div classNane={styles.Text}>Visit Blog Page</div>
+                    </div>
                   </div>
-                </div>
+                </Link>
               ) : (
                 <ActionButton
+                  href={"/"}
                   text={"Visit Blog Page"}
                   outerstyle={{ marginTop: "2.5rem" }}
                 />

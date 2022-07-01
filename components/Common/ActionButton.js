@@ -1,5 +1,6 @@
 import styles from "@/styles/components/ActionButton.module.css";
-const ActionButton = ({ text, handleAction = null, outerstyle }) => {
+import Link from "next/link";
+const ActionButton = ({ text, handleAction = null, outerstyle, href }) => {
   return (
     <div
       onClick={handleAction ? handleAction : null}
@@ -7,7 +8,9 @@ const ActionButton = ({ text, handleAction = null, outerstyle }) => {
       style={outerstyle ? { marginTop: "2.5rem" } : null}
     >
       <div className={styles.button}>
-        <div classNane={styles.text}>{text}</div>
+        <Link href={`${href ? href : null}`}>
+          <div classNane={styles.text}>{text}</div>
+        </Link>
       </div>
     </div>
   );

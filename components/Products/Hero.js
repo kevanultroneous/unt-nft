@@ -8,24 +8,28 @@ const Hero = () => {
   return (
     <section className={styles.Herosection}>
       <Row className={styles.ExpertsRow}>
-        <Col xl={6} xs={6} md={6} className="p-0">
-          <div className={styles.ExpertsSmallHead}>
-            <div className={styles.MiniLine} />
-            <span className={styles.SmallHeading}>
-              MobifinX Product / MxFuture
-            </span>
-          </div>
-        </Col>
-        <Col xl={6} md={6} xs={6} className={styles.ExpertsBtnCol}>
-          <ActionButton
-            text={
-              <>
-                Try Free Demo&nbsp;&nbsp;
-                <HiOutlineExternalLink />
-              </>
-            }
-          />
-        </Col>
+        <Row className={styles.SoftwareDevelopmentExpertsRow}>
+          <Col xl={6} xs={6} md={6} className="p-0">
+            <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
+              <div className={styles.HomeMiniLine} />
+              <span className={styles.HomeSmallHeading}>MobifinX Home</span>
+            </div>
+          </Col>
+          <Col
+            xl={6}
+            md={6}
+            xs={6}
+            className={styles.SoftwareDevelopmentExpertsBtnCol}
+          >
+            <ActionButton
+              text={
+                <>
+                  Try Free Demo <HiOutlineExternalLink />
+                </>
+              }
+            />
+          </Col>
+        </Row>
       </Row>
       <Row>
         <Col xl={4}></Col>

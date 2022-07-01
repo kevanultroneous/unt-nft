@@ -59,11 +59,15 @@
     left bottom,
     left top,
     color-stop(50%, #ffffff),
-    color-stop(50%, #1a1c3c)
+    color-stop(50%, transparent)
   );
-  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  background-image: -webkit-linear-gradient(
+    bottom,
+    #ffffff 50%,
+    transparent 50%
+  );
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
   padding-right: 3rem;
 }
 .MenuBarContent li:hover,
@@ -100,6 +104,7 @@
   font-weight: 400;
   font-size: 18px;
   padding-left: 1rem;
+  cursor: pointer;
 }
 .MenusContent li:hover {
   color: #a21d34;
@@ -118,7 +123,7 @@
 }
 .MainHeading {
   padding-top: 3.5rem;
-  padding-left: 5rem;
+  padding-left: 3rem;
   display: flex;
   align-items: center;
 }
@@ -128,6 +133,7 @@
 }
 .IconCard {
   padding-bottom: 1.5rem;
+  cursor: pointer;
 }
 .IconName {
   padding-top: 0.7rem;

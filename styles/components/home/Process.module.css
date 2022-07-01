@@ -177,6 +177,12 @@
   .ProcessContainer {
     padding-right: 4rem;
   }
+  .ProcessLineContainer {
+    width: 34.5rem;
+  }
+  .ProcessBoxesContainer {
+    width: 44rem;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

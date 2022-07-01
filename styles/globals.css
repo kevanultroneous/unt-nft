@@ -223,7 +223,7 @@ a {
   }
   /* the slides */
   .slick-slide {
-    margin: 0 0px !important;
+    margin: 0 10px !important;
     /* padding-right: 5rem; */
   }
   .react-tel-input {
@@ -232,6 +232,13 @@ a {
   .SliderGroundCss .slick-initialized .slick-slide {
     width: auto !important;
   }
+  .slick-slide img {
+    margin-top: -0.5rem;
+    height: 90%;
+  }
+  .react-tel-input .flag-dropdown {
+    top: -15% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .slick-slider {
@@ -239,8 +246,15 @@ a {
   }
   /* the slides */
   .slick-slide {
-    margin: 0 0px !important;
+    margin: 0px 10px !important;
     /* padding-right: 5rem; */
+  }
+  .SliderGroundCss .slick-initialized .slick-slide {
+    width: 16rem !important;
+  }
+  .slick-slide img {
+    margin-top: -1rem;
+    height: 90%;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

@@ -190,7 +190,7 @@
     font-size: 23px;
   }
   .MailText {
-    font-size: 21px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -198,6 +198,7 @@
   .FooterIconHelper {
     padding-right: 0rem;
     width: 100%;
+    justify-content: flex-start;
   }
   .FooterIconCol {
     display: flex;

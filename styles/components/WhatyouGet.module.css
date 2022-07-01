@@ -2,7 +2,6 @@
   background: #1a1c3c;
   padding-left: 8.5rem;
   padding-right: 3rem;
-  height: 100vh;
 }
 .sectionrow {
   padding: 6rem 0;
@@ -16,7 +15,7 @@
   font-weight: 400;
   color: #fff;
   transform: rotate(-90deg);
-  margin-left: -5rem;
+  margin-left: -3rem;
   margin-top: 4rem;
   /* padding-top: 4rem; */
 }

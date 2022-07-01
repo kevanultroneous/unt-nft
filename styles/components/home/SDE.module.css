@@ -1,9 +1,8 @@
 .SoftwareDevelopmentExpertsContainer {
   background: linear-gradient(90deg, #1a1c3b 28.05%, #a21d34 148.07%);
   color: #ffffff;
-  padding-top: 2.5rem;
+  padding-top: 3rem;
   padding-left: 8.5rem;
-  height: 115vh;
   padding-bottom: 2.5rem;
 }
 .SoftwareDevelopmentExpertsHead {
@@ -220,13 +219,18 @@
     display: none;
   }
   .SoftwareDevelopmentExpertsBigHeading {
-    font-size: 55px;
+    font-size: 65px;
+    width: 25rem;
   }
   .SoftwareDevelopmentExpertsBigHeadingContainer {
     padding-left: 0%;
   }
   .SoftwareDevelopmentExpertsContainer {
-    padding-left: 4rem;
+    padding-left: 2rem;
+  }
+  .SliderCard {
+    height: 215px;
+    width: 222px !important;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {
