@@ -83,11 +83,9 @@ const ContactUs = () => {
       alert("Enter valid name !");
     } else if (phoneValue == "") {
       alert("Enter valid Phone !");
-    } else if (country === "-None-") {
-      alert("Please Select Country !");
     } else if (validateEmail3837482000049914001(email) == false) {
       alert("enter valid email");
-    } else if (subject == "") {
+    } else if (subject == "" || subject.includes("https://")) {
       alert("enter valid subject");
     } else if (captchas == "") {
       alert("Please Enter captcha code");
@@ -100,11 +98,11 @@ const ContactUs = () => {
           setPhoneValue("");
           setSubject("");
           setCaptchas("");
-          setCountry("-None-");
           setDefaultSelected(true);
-          alert(result);
+          console.log(result);
+          alert("thank you");
         })
-        .catch((error) => alert(error));
+        .catch((error) => console.l(error));
     }
   };
 
@@ -155,17 +153,15 @@ const ContactUs = () => {
               )}
               <PhoneInput
                 value={phoneValue}
-                onChange={(value) => {
+                onChange={(value, country) => {
                   setPhoneValue(value);
+                  setCountry(country.name);
                 }}
                 country={"in"}
                 placeholder="Phone number"
                 enableSearch={true}
               />
-              <CountryPicker
-                selection={(e) => setCountry(e.target.value)}
-                selected={defaultSelected}
-              />
+
               <p className={styles.FirstSectionSentence1}>And</p>
               <input
                 type={"text"}

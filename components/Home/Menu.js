@@ -2,6 +2,7 @@ import styles from "@/styles/components/home/Menu.module.css";
 import { useEffect } from "react";
 import { Image } from "react-bootstrap";
 import AOS from "aos";
+import Link from "next/link";
 const Menu = ({ opacity, handleClick, change }) => {
   useEffect(() => {
     AOS.refresh();
@@ -16,12 +17,14 @@ const Menu = ({ opacity, handleClick, change }) => {
       style={{ opacity: opacity, zIndex: "100" }}
     >
       <div>
-        <Image
-          alt={"xicon"}
-          src="/assets/images/xicon.svg"
-          fluid
-          className="pt-4"
-        />
+        <Link href={"/"}>
+          <Image
+            alt={"xicon"}
+            src="/assets/images/xicon.svg"
+            fluid
+            className="pt-4"
+          />
+        </Link>
       </div>
       <div>
         <Image
@@ -29,7 +32,7 @@ const Menu = ({ opacity, handleClick, change }) => {
           src={
             change
               ? "/assets/images/menuopen.svg"
-              : "/assets/images/menuicon.svg"
+              : "/assets/images/deskmenu.svg"
           }
           fluid
           onClick={() => handleClick()}

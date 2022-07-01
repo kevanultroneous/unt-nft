@@ -35,7 +35,7 @@ const MenuBar = ({ display = "none", visibility }) => {
     >
       <Row>
         <div className={styles.MenuBar}>
-          <Heading name={"MobifinX Home"} />
+          <Heading name={"MobifinX Menu"} />
           <div className={styles.MenuBarContent}>
             <ul>
               {menus.map((value, index) => (

@@ -11,7 +11,7 @@ const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 3.1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     centerMode: false,
     // autoplay: true,

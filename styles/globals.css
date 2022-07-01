@@ -45,7 +45,7 @@ a {
   background-color: transparent !important;
   border: none !important;
   border-radius: 3px 0 0 3px;
-  top: 20% !important;
+  top: 12% !important;
 }
 .react-tel-input .selected-flag:hover,
 .react-tel-input .selected-flag:focus {
@@ -63,7 +63,8 @@ a {
   border-left: none !important;
   border-right: none !important;
   border-radius: 0% !important;
-  width: 20.31rem !important;
+  width: 15rem !important;
+  padding-bottom: 1rem;
 }
 .form-control {
   border-radius: 0% !important;
