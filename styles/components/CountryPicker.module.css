@@ -1,0 +1,9 @@
+.DropdownMenus {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  width: 20rem;
+  margin-right: 2rem;
+  height: 3rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}

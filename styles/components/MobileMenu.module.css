@@ -40,11 +40,15 @@
     left bottom,
     left top,
     color-stop(50%, #ffffff),
-    color-stop(50%, #1a1c3c)
+    color-stop(50%, transparent)
   );
-  background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-  background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  background-image: -webkit-linear-gradient(
+    bottom,
+    #ffffff 50%,
+    transparent 50%
+  );
+  background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
   padding-bottom: 0.5rem;
 }
 .LinkName:hover {
@@ -61,7 +65,7 @@
   color: #a21d34;
 }
 .Tabs {
-  padding-top: 1rem;
+  padding-top: 3rem;
   padding-bottom: 3rem;
   display: flex;
   color: #ffffff;

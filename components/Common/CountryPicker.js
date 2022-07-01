@@ -1,7 +1,10 @@
-const CountryPicker = ({ selection }) => {
+import styles from "@/styles/components/CountryPicker.module.css";
+const CountryPicker = ({ selection, selected }) => {
   return (
-    <select onChange={selection}>
-      <option value="-None-">-select country-</option>
+    <select onChange={selection} className={styles.DropdownMenus}>
+      <option value="-None-" selected={selected}>
+        - Select Country -
+      </option>
       <option value="India">India</option>
       <option value="United&#x20;States">United States</option>
       <option value="Indonesia">Indonesia</option>

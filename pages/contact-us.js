@@ -14,8 +14,10 @@ const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [captchas, setCaptchas] = useState("");
   const [country, setCountry] = useState("");
+  const [defaultSelected, setDefaultSelected] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   useEffect(() => {
@@ -81,6 +83,8 @@ const ContactUs = () => {
       alert("Enter valid name !");
     } else if (phoneValue == "") {
       alert("Enter valid Phone !");
+    } else if (country === "-None-") {
+      alert("Please Select Country !");
     } else if (validateEmail3837482000049914001(email) == false) {
       alert("enter valid email");
     } else if (subject == "") {
@@ -96,6 +100,8 @@ const ContactUs = () => {
           setPhoneValue("");
           setSubject("");
           setCaptchas("");
+          setCountry("-None-");
+          setDefaultSelected(true);
           alert(result);
         })
         .catch((error) => alert(error));
@@ -149,16 +155,18 @@ const ContactUs = () => {
               )}
               <PhoneInput
                 value={phoneValue}
-                onChange={(value, country) => {
-                  setCountry(country.name);
+                onChange={(value) => {
                   setPhoneValue(value);
                 }}
                 country={"in"}
                 placeholder="Phone number"
                 enableSearch={true}
               />
-              {/* <CountryPicker selection={(e) => setCountry(e.target.value)} /> */}
-              <p className={styles.FirstSectionSentence1}>or</p>
+              <CountryPicker
+                selection={(e) => setCountry(e.target.value)}
+                selected={defaultSelected}
+              />
+              <p className={styles.FirstSectionSentence1}>And</p>
               <input
                 type={"text"}
                 value={email}
