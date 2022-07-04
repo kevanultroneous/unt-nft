@@ -71,7 +71,7 @@ const Discover = () => {
               href={"/"}
               text={
                 <>
-                  Discover MobifinX&nbsp;
+                  Discover MobifinX
                   <span>
                     <HiOutlineExternalLink />
                   </span>
@@ -93,7 +93,7 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="3000"
                   data-aos-delay="500"
                   data-aos-easing="ease"
@@ -110,7 +110,7 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="3000"
                   data-aos-delay="500"
                   data-aos-easing="ease"
@@ -129,7 +129,7 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="3000"
                   data-aos-delay="800"
                   data-aos-easing="ease"
@@ -146,7 +146,7 @@ const Discover = () => {
               <Col xl={6} xs={6} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
+                  data-aos="fade-right"
                   data-aos-duration="3000"
                   data-aos-delay="800"
                   data-aos-easing="ease"

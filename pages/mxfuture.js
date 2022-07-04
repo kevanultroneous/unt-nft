@@ -7,6 +7,7 @@ import BenefitsToLeverage from "@/components/Products/BenefitsToLeverage";
 import FAQ from "@/components/Products/FAQ";
 import Hero from "@/components/Products/Hero";
 import Introductions from "@/components/Products/Introductions";
+import MxFutureProducts from "@/components/Products/MxFutureProducts";
 import NextProduct from "@/components/Products/NextProduct";
 import Solution from "@/components/Products/Solution";
 import WhatyouGet from "@/components/Products/WhatyouGet";
@@ -20,7 +21,7 @@ const MxFuture = () => {
       <MenuPackage />
       <Hero />
       <Introductions />
-      {/* <Products text={"Use Cases"} /> */}
+      <MxFutureProducts text={"Use Cases"} />
       <Exchange color={globalColor} href="/" />
       <WhatyouGet />
       <BenefitsToLeverage />

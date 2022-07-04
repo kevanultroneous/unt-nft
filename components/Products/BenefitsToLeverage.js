@@ -31,17 +31,17 @@ const BenefitsToLeverage = () => {
   return (
     <div className={styles.BenefitsContainer}>
       <Row>
-        <Col xl={3} xs={12}>
+        <Col xl={3} xs={12} md={12}>
           <p className={styles.MiniIntroduce}>UNIQUE SELLING POINTS</p>
         </Col>
-        <Col xl={9}>
+        <Col xl={9} md={12}>
           <Row>
-            <Col xl={12}>
+            <Col xl={12} md={12}>
               <h5 className={styles.BenefitHeading}>Benefits to Leverage</h5>
             </Col>
           </Row>
           <Row className={styles.ControllerRev}>
-            <Col xl={5} className={styles.Controller}>
+            <Col xl={5} md={5} className={styles.Controller}>
               <MdArrowBackIosNew
                 className={styles.ArrowTop}
                 onClick={() => nextItemHandle()}
@@ -54,7 +54,7 @@ const BenefitsToLeverage = () => {
                 onClick={() => prevItemHandle()}
               />
             </Col>
-            <Col xl={7}>
+            <Col xl={7} md={7}>
               <div
                 className={`${styles.ItemCard}`}
                 style={{ opacity: animopacity }}

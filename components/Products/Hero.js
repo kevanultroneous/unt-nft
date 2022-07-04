@@ -39,7 +39,11 @@ const Hero = () => {
         <Col xl={3}></Col>
         <Col xl={9}>
           <div className={styles.Herotitle}>
-            <Image src={"/assets/images/mm2.svg"} alt="mxfuture" />
+            <Image
+              src={"/assets/images/MxFuture.png"}
+              alt="mxfuture"
+              className={styles.HeroImg}
+            />
             <h1>
               MxFuture
               <br />

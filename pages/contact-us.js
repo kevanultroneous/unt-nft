@@ -148,7 +148,7 @@ const ContactUs = () => {
         </Row>
 
         <Row className={styles.SectionsRow}>
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <div className={styles.FirstSection}>
               <p className={styles.FirstSectionSentence1}>Hey, My name is</p>
               <input
@@ -171,7 +171,7 @@ const ContactUs = () => {
               kindly connect with me through
             </p>
           )}
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <div className={styles.SecondSection}>
               {!isMobile && (
                 <p className={styles.FirstSectionSentence1}>with me through</p>
@@ -202,12 +202,12 @@ const ContactUs = () => {
               />
             </div>
           </Col>
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <p className={styles.WantSentence}>
               I want to get in touch because,
             </p>
           </Col>
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <input
               ref={subjectf}
               style={subjecterror ? { borderBottom: "1px solid red" } : null}
@@ -218,7 +218,7 @@ const ContactUs = () => {
               className={styles.SubjectInput}
             />
           </Col>
-          <Col xl={12}>
+          <Col xl={12} md={12}>
             <Image
               alt="captcha"
               className={styles.CaptchaIcon}

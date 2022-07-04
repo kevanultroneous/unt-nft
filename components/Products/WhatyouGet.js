@@ -6,13 +6,13 @@ const WhatyouGet = () => {
   return (
     <section className={styles.WhatyouWillget}>
       <Row className={styles.sectionrow}>
-        <Col xl={3} className={styles.sectioncol}>
+        <Col xl={3} md={12} className={styles.sectioncol}>
           <p className={styles.Whatyougetverticaltext}>UNIQUE SELLING POINTS</p>
         </Col>
-        <Col xl={9} className={styles.Headingcol}>
+        <Col xl={9} md={12} className={styles.Headingcol}>
           <h2>Here is what you will get</h2>
           <Row>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} md={6} className={styles.Heading}>
               <div className={styles.Details}>
                 <h4>100x leverage engine</h4>
                 <p>
@@ -22,7 +22,7 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} md={6} className={styles.Heading}>
               <div className={styles.Details}>
                 <h4>Auto Deleveraging (ADL) calculator</h4>
                 <p>
@@ -31,7 +31,7 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} md={6} className={styles.Heading}>
               <div className={styles.Details}>
                 <h4>Value at Risk (VaR) engine</h4>
                 <p>
@@ -41,7 +41,7 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} md={6} className={styles.Heading}>
               <div className={styles.Details}>
                 <h4>Portfolio Margining</h4>
                 <p>
@@ -50,13 +50,17 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={`${styles.Heading} ${styles.BigHead}`}>
+            <Col
+              xl={6}
+              md={6}
+              className={`${styles.Heading} ${styles.BigHead}`}
+            >
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>
                 <HiOutlineExternalLink className={styles.ContactusIcon} />
               </div>
             </Col>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} md={6} className={styles.Heading}>
               <div className={styles.Details}>
                 <h4>Portfolio Margining</h4>
                 <p>
@@ -65,7 +69,11 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={`${styles.Heading} ${styles.BigHead2}`}>
+            <Col
+              xl={6}
+              md={6}
+              className={`${styles.Heading} ${styles.BigHead2}`}
+            >
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>
                 <HiOutlineExternalLink className={styles.ContactusIcon} />

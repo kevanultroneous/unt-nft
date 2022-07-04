@@ -48,7 +48,8 @@
   transform: rotate(-90deg);
   letter-spacing: 0.2em;
   width: fit-content;
-  margin-top: 2.5rem;
+  margin-top: 6.5rem;
+  margin-left: -5rem;
 }
 
 @media (min-width: 320px) and (max-width: 450px) {
@@ -87,6 +88,24 @@
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
+  .BenefitsContainer {
+    padding: 3rem 1rem;
+  }
+
+  .Current {
+    font-size: 45px;
+    margin: 0%;
+  }
+  .MiniIntroduce {
+    transform: rotate(0deg);
+    margin: 0%;
+    padding-bottom: 1rem;
+  }
+  .BenefitHeading {
+  }
+  .ItemCard {
+    padding-top: 1rem;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }
