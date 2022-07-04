@@ -65,10 +65,7 @@ const Footer = () => {
                 href="https://www.linkedin.com/company/mobifinx/"
                 target={"_blank"}
               >
-                <a
-                  href="https://www.linkedin.com/company/mobifinx/"
-                  target={"_blank"}
-                >
+                <a href="https://www.linkedin.com/company/mobifinx/">
                   <IoLogoLinkedin
                     style={{ fontSize: "35px" }}
                     className={styles.IconHover}
@@ -76,7 +73,7 @@ const Footer = () => {
                 </a>
               </Link>
               <Link href="https://www.facebook.com/Mobifinx/" target={"_blank"}>
-                <a href="https://www.facebook.com/Mobifinx/" target={"_blank"}>
+                <a href="https://www.facebook.com/Mobifinx/">
                   <IoLogoFacebook
                     style={{ fontSize: "35px", borderRadius: "1rem" }}
                     className={styles.IconHover}
@@ -84,7 +81,7 @@ const Footer = () => {
                 </a>
               </Link>
               <Link href="https://twitter.com/MobifinX" target={"_blank"}>
-                <a href="https://twitter.com/MobifinX" target={"_blank"}>
+                <a href="https://twitter.com/MobifinX">
                   <AiFillTwitterSquare
                     style={{ fontSize: "35px", borderRadius: "0.8rem" }}
                     className={styles.IconHover}

@@ -14,7 +14,7 @@ const FAQ = () => {
           <h3>Frequently Asked Questions</h3>
           <Accordion defaultActiveKey="0" flush>
             {[0, 1, 2, 3, 4, 5].map((value, index) => (
-              <Accordion.Item eventKey={index}>
+              <Accordion.Item eventKey={index} key={index}>
                 <Accordion.Header>
                   Lorem Ipsum is simply dummy text of the printing and
                   typesetting industry?
