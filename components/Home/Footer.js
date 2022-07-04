@@ -61,29 +61,35 @@ const Footer = () => {
               {/* </a> */}
             </div>
             <div>
-              <Link href="/">
-                {/* <a href="/"> */}
-                <IoLogoLinkedin
-                  style={{ fontSize: "35px" }}
-                  className={styles.IconHover}
-                />
-                {/* </a> */}
+              <Link
+                href="https://www.linkedin.com/company/mobifinx/"
+                target={"_blank"}
+              >
+                <a
+                  href="https://www.linkedin.com/company/mobifinx/"
+                  target={"_blank"}
+                >
+                  <IoLogoLinkedin
+                    style={{ fontSize: "35px" }}
+                    className={styles.IconHover}
+                  />
+                </a>
               </Link>
-              <Link href="/">
-                {/* <a href="/"> */}
-                <IoLogoFacebook
-                  style={{ fontSize: "35px", borderRadius: "1rem" }}
-                  className={styles.IconHover}
-                />
-                {/* </a> */}
+              <Link href="https://www.facebook.com/Mobifinx/" target={"_blank"}>
+                <a href="https://www.facebook.com/Mobifinx/" target={"_blank"}>
+                  <IoLogoFacebook
+                    style={{ fontSize: "35px", borderRadius: "1rem" }}
+                    className={styles.IconHover}
+                  />
+                </a>
               </Link>
-              <Link href="/">
-                {/* <a href="/"> */}
-                <AiFillTwitterSquare
-                  style={{ fontSize: "35px", borderRadius: "0.8rem" }}
-                  className={styles.IconHover}
-                />
-                {/* </a> */}
+              <Link href="https://twitter.com/MobifinX" target={"_blank"}>
+                <a href="https://twitter.com/MobifinX" target={"_blank"}>
+                  <AiFillTwitterSquare
+                    style={{ fontSize: "35px", borderRadius: "0.8rem" }}
+                    className={styles.IconHover}
+                  />
+                </a>
               </Link>
             </div>
           </div>
