@@ -232,6 +232,10 @@ a {
   .react-tel-input .form-control {
     width: 20rem !important;
   }
+  .accordion-button {
+    padding-left: 0% !important;
+    padding-right: 0% !important;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .slick-slider {

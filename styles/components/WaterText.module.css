@@ -24,6 +24,7 @@
   background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  margin: 0%;
 }
 .WaterText:hover {
   background-position: bottom;

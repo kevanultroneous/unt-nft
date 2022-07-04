@@ -8,9 +8,13 @@ const ActionButton = ({ text, handleAction = null, outerstyle, href }) => {
       style={outerstyle ? { marginTop: "2.5rem" } : null}
     >
       <div className={styles.button}>
-        <Link href={`${href ? href : null}`}>
+        {href ? (
+          <Link href={`${href ? href : null}`}>
+            <div classNane={styles.text}>{text}</div>
+          </Link>
+        ) : (
           <div classNane={styles.text}>{text}</div>
-        </Link>
+        )}
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ const NextProduct = ({ listofdata = [] }) => {
       className={`${styles.NextProductContainer} m-0 p-0 justify-content-center`}
     >
       {listofdata.map((value, index) => (
-        <Col xl={3} key={index}>
+        <Col xl={3} xs={12} key={index} className={styles.SpaceForMob}>
           <WaterText color={value.color} text={value.name} />
         </Col>
       ))}

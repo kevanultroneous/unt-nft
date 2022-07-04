@@ -50,3 +50,47 @@
   width: fit-content;
   margin-top: 2.5rem;
 }
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .BenefitsContainer {
+    padding: 3rem 1rem;
+  }
+  .ControllerRev {
+    flex-direction: column-reverse;
+  }
+  .Controller {
+    padding-top: 1rem;
+    flex-direction: unset;
+  }
+  .ArrowTop {
+    font-size: 2rem;
+    transform: rotate(360deg);
+  }
+  .ArrowBottom {
+    font-size: 2rem;
+    transform: rotate(180deg);
+  }
+  .Current {
+    font-size: 45px;
+    margin: 0%;
+  }
+  .MiniIntroduce {
+    transform: rotate(0deg);
+    margin: 0%;
+    padding-bottom: 1rem;
+  }
+  .BenefitHeading {
+    font-size: 2.1rem;
+  }
+  .ItemCard {
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 1920px) and (max-height: 1080px) {
+}

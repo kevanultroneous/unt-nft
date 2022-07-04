@@ -10,7 +10,7 @@ const Solution = () => {
     <section className={styles.SolutionHelps}>
       <h3>This Solution Helps</h3>
       <Row className={styles.Solutionrow}>
-        <Col xl={3} className={styles.SolutionDetail}>
+        <Col xl={3} xs={12} className={styles.SolutionDetail}>
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>
             Strong Technical Competence{" "}
@@ -18,7 +18,7 @@ const Solution = () => {
           </h5>
         </Col>
 
-        <Col xl={3} className={styles.SolutionDetail}>
+        <Col xl={3} xs={12} className={styles.SolutionDetail}>
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>
             Strong Technical Competence{" "}
@@ -26,7 +26,7 @@ const Solution = () => {
           </h5>
         </Col>
 
-        <Col xl={3} className={styles.SolutionDetail}>
+        <Col xl={3} xs={12} className={styles.SolutionDetail}>
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>Strong Technical Competence</h5>
         </Col>

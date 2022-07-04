@@ -12,7 +12,7 @@ const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 5,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: false,
     responsive: [
