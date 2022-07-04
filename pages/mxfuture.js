@@ -20,7 +20,7 @@ const MxFuture = () => {
       <MenuPackage />
       <Hero />
       <Introductions />
-      <Products text={"Use Cases"} />
+      {/* <Products text={"Use Cases"} /> */}
       <Exchange color={globalColor} href="/" />
       <WhatyouGet />
       <BenefitsToLeverage />

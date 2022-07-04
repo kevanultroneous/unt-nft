@@ -91,3 +91,36 @@
   display: flex;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 450px) {
+  .Herosection {
+    padding: 2rem 0rem 2rem 1rem;
+  }
+  .TextButton {
+    display: none;
+  }
+  .HomeSmallHeading {
+    font-size: 14px;
+  }
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .Herotitle h1 {
+    font-size: 2.1rem;
+    line-height: 2rem;
+  }
+  .Herotitle span {
+    font-size: 1.3rem;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    padding-bottom: 5rem;
+  }
+  .SpaceRemover {
+    margin: 0% !important;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}

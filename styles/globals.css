@@ -223,8 +223,8 @@ a {
   }
 
   .slick-slide img {
-    margin-top: -0.5rem;
-    height: 90%;
+    margin-top: 0rem;
+    /* height: 90%; */
   }
   .react-tel-input .flag-dropdown {
     top: -15% !important;

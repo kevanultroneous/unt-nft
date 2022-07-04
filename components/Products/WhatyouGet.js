@@ -50,7 +50,7 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} className={styles.Heading}>
+            <Col xl={6} className={`${styles.Heading} ${styles.BigHead}`}>
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>
                 <HiOutlineExternalLink className={styles.ContactusIcon} />
@@ -63,6 +63,12 @@ const WhatyouGet = () => {
                   Designed for active traders, market makers, and institutional
                   clients seeking optimized risk management, cross-hedging.
                 </p>
+              </div>
+            </Col>
+            <Col xl={6} className={`${styles.Heading} ${styles.BigHead2}`}>
+              <div className="d-flex align-items-center">
+                <div className={styles.FooterContactusLink}>Explore</div>
+                <HiOutlineExternalLink className={styles.ContactusIcon} />
               </div>
             </Col>
           </Row>

@@ -1,10 +1,16 @@
 import styles from "@/styles/components/ActionButton.module.css";
 import Link from "next/link";
-const ActionButton = ({ text, handleAction = null, outerstyle, href }) => {
+const ActionButton = ({
+  text,
+  handleAction = null,
+  outerstyle,
+  href,
+  otherclass,
+}) => {
   return (
     <div
       onClick={handleAction ? handleAction : null}
-      className={styles.outer}
+      className={`${styles.outer} ${otherclass ? otherclass : null}`}
       style={outerstyle ? { marginTop: "2.5rem" } : null}
     >
       <div className={styles.button}>

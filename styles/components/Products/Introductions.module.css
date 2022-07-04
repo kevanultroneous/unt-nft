@@ -87,3 +87,27 @@
   transform: scale(0.8);
   transition: all 0.5s ease;
 }
+@media (min-width: 320px) and (max-width: 450px) {
+  .IntroMainContainer {
+    padding: 4rem 1rem;
+  }
+  .IntroMainTitle {
+    font-size: 1.5rem;
+    width: 20rem;
+  }
+  .verticaltext {
+    transform: rotate(0deg);
+    margin: 0%;
+    padding-bottom: 1rem;
+  }
+  .Text {
+    font-size: 10px;
+    top: 35%;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}

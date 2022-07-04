@@ -9,22 +9,26 @@ const Hero = () => {
     <section className={styles.Herosection}>
       <Row className={styles.ExpertsRow}>
         <Row className={styles.SoftwareDevelopmentExpertsRow}>
-          <Col xl={6} xs={6} md={6} className="p-0">
+          <Col xl={6} xs={8} md={6} className="p-0">
             <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
               <div className={styles.HomeMiniLine} />
-              <span className={styles.HomeSmallHeading}>MobifinX Home</span>
+              <span className={styles.HomeSmallHeading}>
+                MobifinX Product / MxFuture
+              </span>
             </div>
           </Col>
           <Col
             xl={6}
             md={6}
-            xs={6}
+            xs={4}
             className={styles.SoftwareDevelopmentExpertsBtnCol}
           >
             <ActionButton
+              otherclass={styles.SpaceRemover}
               text={
                 <>
-                  Try Free Demo <HiOutlineExternalLink />
+                  <span className={styles.TextButton}>Try Free Demo </span>
+                  <HiOutlineExternalLink />
                 </>
               }
             />
@@ -35,7 +39,7 @@ const Hero = () => {
         <Col xl={3}></Col>
         <Col xl={9}>
           <div className={styles.Herotitle}>
-            <Image src={"/assets/images/mxfuture.svg"} alt="mxfuture" />
+            <Image src={"/assets/images/mm2.svg"} alt="mxfuture" />
             <h1>
               MxFuture
               <br />

@@ -7,7 +7,7 @@ import ActionButton from "@/components/Common/ActionButton";
 import SmoothScroll from "@/components/SmoothScroll.component";
 import PhoneInput from "react-phone-input-2";
 import "react-phone-input-2/lib/style.css";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import CountryPicker from "@/components/Common/CountryPicker";
 import MenuPackage from "@/components/Common/MenuPackage";
 const ContactUs = () => {
@@ -17,6 +17,18 @@ const ContactUs = () => {
   const [defaultSelected, setDefaultSelected] = useState(false);
   const [name, setName] = useState("");
   const [phone, setPhone] = useState("");
+  const [nameerror, setNameError] = useState(false);
+  const namef = useRef(null);
+  const [numbererror, setNumberError] = useState(false);
+  const numf = useRef(null);
+  const [mailerror, setMailError] = useState(false);
+  const mailf = useRef(null);
+
+  const [subjecterror, setSubjectError] = useState(false);
+  const subjectf = useRef(null);
+
+  const [captchaerror, setCaptchaError] = useState(false);
+  const captchaf = useRef(null);
 
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -80,15 +92,21 @@ const ContactUs = () => {
   }
   const apicall = () => {
     if (name == "" || name.length < 2 || name.includes("https://")) {
-      alert("Enter valid name !");
+      // alert("Enter valid name !");
+      setNameError(true);
+      namef.current.focus();
     } else if (phoneValue == "") {
-      alert("Enter valid Phone !");
+      setNumberError(true);
     } else if (validateEmail3837482000049914001(email) == false) {
-      alert("enter valid email");
+      mailf.current.focus();
+      setMailError(true);
     } else if (subject == "" || subject.includes("https://")) {
-      alert("enter valid subject");
+      subjectf.current.focus();
+      setSubjectError(true);
     } else if (captchas == "") {
-      alert("Please Enter captcha code");
+      // alert("Please Enter captcha code");
+      captchaf.current.focus();
+      setCaptchaError(true);
     } else {
       fetch("https://crm.zoho.com/crm/WebToLeadForm", requestOptions)
         .then((response) => response.text())
@@ -99,6 +117,11 @@ const ContactUs = () => {
           setSubject("");
           setCaptchas("");
           setDefaultSelected(true);
+          setNameError(false);
+          setNumberError(false);
+          setMailError(false);
+          setSubjectError(false);
+          setCaptchaError(false);
           console.log(result);
           alert("thank you");
         })
@@ -129,6 +152,8 @@ const ContactUs = () => {
             <div className={styles.FirstSection}>
               <p className={styles.FirstSectionSentence1}>Hey, My name is</p>
               <input
+                ref={namef}
+                style={nameerror ? { borderBottom: "1px solid red" } : null}
                 type={"text"}
                 value={name}
                 onChange={(e) => setName(e.target.value)}
@@ -160,10 +185,15 @@ const ContactUs = () => {
                 country={"in"}
                 placeholder="Phone number"
                 enableSearch={true}
+                inputStyle={
+                  numbererror ? { borderBottom: "1px solid red" } : null
+                }
               />
 
               <p className={styles.FirstSectionSentence1}>And</p>
               <input
+                ref={mailf}
+                style={mailerror ? { borderBottom: "1px solid red" } : null}
                 type={"text"}
                 value={email}
                 onChange={(e) => setEmail(e.target.value)}
@@ -179,6 +209,8 @@ const ContactUs = () => {
           </Col>
           <Col xl={12}>
             <input
+              ref={subjectf}
+              style={subjecterror ? { borderBottom: "1px solid red" } : null}
               type={"text"}
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
@@ -196,6 +228,8 @@ const ContactUs = () => {
             <br />
             <div className={styles.CaptchaControllerContainer}>
               <input
+                ref={captchaf}
+                style={captchaerror ? { borderBottom: "1px solid red" } : null}
                 className={styles.CaptchaInput}
                 type="text"
                 maxLength="10"

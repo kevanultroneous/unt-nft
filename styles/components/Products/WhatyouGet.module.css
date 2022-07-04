@@ -83,3 +83,36 @@
   margin-left: 2rem;
   color: rgba(255, 255, 255, 0.2);
 }
+.BigHead2 {
+  display: none;
+}
+@media (min-width: 320px) and (max-width: 450px) {
+  .WhatyouWillget {
+    padding: 3rem 1rem;
+  }
+  .BigHead {
+    display: none;
+  }
+  .BigHead2 {
+    display: block;
+  }
+  .sectionrow {
+    padding: 0%;
+  }
+  .Heading {
+    padding-top: 2rem;
+    padding-bottom: 0%;
+  }
+  .Whatyougetverticaltext {
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    transform: rotate(0deg);
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 740px) {
+}
