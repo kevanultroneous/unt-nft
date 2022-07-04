@@ -1,8 +1,6 @@
 .Container {
   position: relative;
-  width: 50%;
   padding-right: 15px;
-  margin-left: 25px !important;
 }
 
 .Image {
@@ -16,7 +14,7 @@
   bottom: 0;
   left: 0;
   right: 0;
-  height: 85%;
+  height: 100%;
   width: unset;
   opacity: 0;
   transition: 0.5s ease;
@@ -37,7 +35,7 @@
   color: white;
   font-size: 20px;
   position: absolute;
-  top: 50%;
+  top: 15%;
   width: 100%;
   left: 50%;
   padding-left: 1rem;
@@ -45,7 +43,7 @@
   transform: translate(-50%, -50%);
   font-weight: 400;
   font-size: 16px;
-  text-align: left;
+  text-align: justify;
 }
 .IntroMainContainer {
   padding: 4rem 3rem 7rem 8.5rem;

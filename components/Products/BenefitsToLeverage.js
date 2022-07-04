@@ -31,10 +31,10 @@ const BenefitsToLeverage = () => {
   return (
     <div className={styles.BenefitsContainer}>
       <Row>
-        <Col xl={1}>
+        <Col xl={3}>
           <p className={styles.MiniIntroduce}>BENEFITS</p>
         </Col>
-        <Col xl={11}>
+        <Col xl={9}>
           <Row>
             <Col xl={12}>
               <h5 className={styles.BenefitHeading}>Benefits to Leverage</h5>

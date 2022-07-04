@@ -7,57 +7,56 @@ import "slick-carousel/slick/slick-theme.css";
 import AOS from "aos";
 import { useEffect, useRef } from "react";
 import ActionButtonV2 from "../Common/ActionButtonV2";
+import Link from "next/link";
 const SDE = ({ handleClick }) => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     centerMode: false,
-    autoplay: true,
     responsive: [
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 3.1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           centerMode: false,
           autoplay: true,
           cssEase: "linear",
-          // centerPadding: "45px",
         },
       },
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 3.1,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
         },
       },
 
       {
-        breakpoint: 480,
+        breakpoint: 600,
         settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1,
+          slidesToShow: 2,
+          slidesToScroll: 2,
           initialSlide: 1,
-          autoplay: true,
+          // autoplay: true,
           autoplaySpeed: 2000,
         },
       },
     ],
   };
   const sliderList = [
-    { name: "MxTrade", img: "/assets/images/MxTrade.png" },
-    { name: "MxFuture", img: "/assets/images/MxFuture.png" },
-    { name: "MxDex", img: "/assets/images/MxDex.png" },
-    { name: "MxFi", img: "/assets/images/MxFI.png" },
-    { name: "MxLaunch", img: "/assets/images/MxLaunch.png" },
-    { name: "MxWallet", img: "/assets/images/MxWallet.png" },
-    { name: "MxBlock", img: "/assets/images/MxBlock.png" },
-    { name: "MxNFT", img: "/assets/images/MxNFT.png" },
+    { name: "MxTrade", img: "/assets/images/MxTrade.png", link: "/" },
+    { name: "MxFuture", img: "/assets/images/MxFuture.png", link: "/mxfuture" },
+    { name: "MxDex", img: "/assets/images/MxDex.png", link: "/" },
+    { name: "MxFi", img: "/assets/images/MxFI.png", link: "/" },
+    { name: "MxLaunch", img: "/assets/images/MxLaunch.png", link: "/" },
+    { name: "MxWallet", img: "/assets/images/MxWallet.png", link: "/" },
+    { name: "MxBlock", img: "/assets/images/MxBlock.png", link: "/" },
+    { name: "MxNFT", img: "/assets/images/MxNFT.png", link: "/" },
   ];
   useEffect(() => {
     AOS.refresh();
@@ -91,11 +90,7 @@ const SDE = ({ handleClick }) => {
         </Col>
       </Row>
 
-      <div
-        className={styles.SoftwareDevelopmentExpertsBigHeadingContainer}
-        // data-aos="zoom-in"
-        // data-aos-duration="2000"
-      >
+      <div className={styles.SoftwareDevelopmentExpertsBigHeadingContainer}>
         <h3
           className={styles.SoftwareDevelopmentExpertsBigHeading}
           data-aos="fade"
@@ -146,16 +141,8 @@ const SDE = ({ handleClick }) => {
               xs={6}
               className={styles.SoftwareDevelopmentExpertSliderHeading}
             >
-              <div
-                className={styles.HomeMiniLine}
-                // data-aos="fade-right"
-                // data-aos-duration="2000"
-              />
-              <span
-                className={styles.HomeSmallHeading}
-                // data-aos="fade-left"
-                // data-aos-duration="2000"
-              >
+              <div className={styles.HomeMiniLine} />
+              <span className={styles.HomeSmallHeading}>
                 Products we are providing
               </span>
             </Col>
@@ -163,14 +150,16 @@ const SDE = ({ handleClick }) => {
           <Row className={`${styles.SliderGround} SliderGroundCss`}>
             <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
-                <div className={styles.SliderCard} key={i}>
-                  <Image
-                    alt="sliderimg"
-                    src={v.img}
-                    className={styles.SliderImg}
-                  />
-                  <p>{v.name}</p>
-                </div>
+                <Link href={v.link} key={i}>
+                  <div className={styles.SliderCard} key={i}>
+                    <Image
+                      alt="sliderimg"
+                      src={v.img}
+                      className={styles.SliderImg}
+                    />
+                    <p>{v.name}</p>
+                  </div>
+                </Link>
               ))}
             </Slider>
           </Row>

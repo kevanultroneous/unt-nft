@@ -8,23 +8,63 @@ export const menus = [
     name: "About us",
     mainlink: "",
     menus: [
-      "Company Overview",
-      "Case Study",
-      "Career page",
-      "Events & webinars",
-      "Awards & Certificate",
-      "Client Speak/Customer",
+      {
+        name: "Company Overview",
+        link: "/",
+      },
+      {
+        name: "Case Study",
+        link: "/",
+      },
+      {
+        name: "Career page",
+        link: "/",
+      },
+      {
+        name: "Events & webinars",
+        link: "/",
+      },
+      {
+        name: "Awards & Certificate",
+        link: "/",
+      },
+      {
+        name: "Client Speak/Customer",
+        link: "/",
+      },
     ],
   },
   {
     name: "Insights",
     mainlink: "",
-    menus: ["Blog", "News/Media", "Press Release"],
+    menus: [
+      {
+        name: "Blog",
+        link: "/",
+      },
+      {
+        name: "News/Media",
+        link: "/",
+      },
+      {
+        name: "Press Release",
+        link: "/",
+      },
+    ],
   },
   {
     name: "Resources",
     mainlink: "",
-    menus: ["Developers Guidline", "FAQ"],
+    menus: [
+      {
+        name: "Developers Guidline",
+        link: "/",
+      },
+      {
+        name: "FAQ",
+        link: "/",
+      },
+    ],
   },
   {
     name: "Contact us",

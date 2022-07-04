@@ -20,6 +20,7 @@
 }
 
 .WhatWillYouGetText {
+  cursor: pointer;
   color: #5f6076;
   transition: all 0.3s ease;
   font-size: 16px;

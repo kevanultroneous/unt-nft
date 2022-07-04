@@ -1,16 +1,16 @@
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { Accordion } from "react-bootstrap";
-import styles from "@/styles/components/FAQ.module.css";
+import styles from "@/styles/components/Products/FAQ.module.css";
 
 const FAQ = () => {
   return (
     <section className={styles.Askedquestion}>
       <Row>
-        <Col xl={4}>
+        <Col xl={3}>
           <p className={styles.verticaltext}>FAQ’s</p>
         </Col>
-        <Col xl={8}>
+        <Col xl={9}>
           <h3>Frequently Asked Questions</h3>
           <Accordion defaultActiveKey="0" flush>
             <Accordion.Item eventKey="0">

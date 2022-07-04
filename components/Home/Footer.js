@@ -51,14 +51,14 @@ const Footer = () => {
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >
             <div className="d-flex">
-              <Link href="/">
-                {/* <a href="/"> */}
+              {/* <a href="/"> */}
+              <a href="mailto:sales@mobifinx.com">
                 <span className={styles.MailText}>
                   <ImMail className={styles.MailIconHover} />
-                  Sales@mobifinx.com
+                  sales@mobifinx.com
                 </span>
-                {/* </a> */}
-              </Link>
+              </a>
+              {/* </a> */}
             </div>
             <div>
               <Link href="/">

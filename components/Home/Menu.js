@@ -19,6 +19,7 @@ const Menu = ({ opacity, handleClick, change }) => {
       <div>
         <Link href={"/"}>
           <Image
+            style={{ cursor: "pointer" }}
             alt={"xicon"}
             src="/assets/images/xicon.svg"
             fluid
@@ -28,6 +29,7 @@ const Menu = ({ opacity, handleClick, change }) => {
       </div>
       <div>
         <Image
+          style={{ cursor: "pointer" }}
           alt={"menu"}
           src={
             change

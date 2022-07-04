@@ -145,6 +145,7 @@
 }
 .InspiredCardImg {
   height: 5rem;
+  cursor: pointer;
   transition: all 1s ease;
 }
 .InspiredCardImg:hover {

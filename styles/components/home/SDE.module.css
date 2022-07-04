@@ -102,8 +102,9 @@
   /* display: flex !important; */
   justify-content: left;
   text-align: left;
+  cursor: pointer;
   align-items: flex-end;
-  margin-left: 2rem;
+  /* margin-left: 2rem; */
 }
 
 .SliderImg {
@@ -119,6 +120,7 @@
   padding-bottom: 2rem;
 }
 .Scrolldowncontainer {
+  cursor: pointer;
   transform: rotate(-90deg);
   display: flex;
   align-items: center;
@@ -210,8 +212,8 @@
     padding-left: 0.5rem;
   }
   .SliderCard {
-    width: 90% !important;
-    height: 150px;
+    height: 160px;
+    width: 165px !important;
   }
   .TextBtn {
     display: none;

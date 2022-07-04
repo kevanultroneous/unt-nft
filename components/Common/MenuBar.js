@@ -66,9 +66,11 @@ const MenuBar = ({ display = "none", visibility }) => {
           <div className={styles.MenusContent}>
             <ul>
               {menus[currentMenu].menus.map((value, index) => (
-                <div className={styles.SubMenuName} key={index}>
-                  <li>{value}</li>
-                </div>
+                <Link href={value.link} key={index}>
+                  <div className={styles.SubMenuName} key={index}>
+                    <li>{value.name}</li>
+                  </div>
+                </Link>
               ))}
             </ul>
           </div>

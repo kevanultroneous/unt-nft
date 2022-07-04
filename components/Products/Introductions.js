@@ -8,7 +8,7 @@ const Introductions = () => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 3.1,
+    slidesToShow: 3,
     slidesToScroll: 1,
     cssEase: "linear",
   };
@@ -16,10 +16,10 @@ const Introductions = () => {
   return (
     <div className={styles.IntroMainContainer}>
       <Row>
-        <Col xl={4}>
+        <Col xl={3}>
           <p className={styles.verticaltext}>INTRODUCTION</p>
         </Col>
-        <Col xl={8}>
+        <Col xl={9}>
           <h5 className={styles.IntroMainTitle}>
             Mitigate the Risks and Leverage the Power of Crypto Derivatives
           </h5>
@@ -50,23 +50,25 @@ const Introductions = () => {
             {[
               1, 2, 3, 3, 4, 54, 4, 5, 4, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 2, 3,
             ].map((v, i) => (
-              <div className={styles.Container} key={i}>
-                <Image
-                  src={"/assets/images/cardp.svg"}
-                  alt="Avatar"
-                  className={styles.Image}
-                />
-                <div className={styles.Overlay}>
-                  <div className={styles.Text}>
-                    A leverage-based centralized trading environment for
-                    institutional traders and retail audiences with an appetite
-                    for high risks, including features such as 100x spot
-                    leverage, perpetual swaps, inverse futures, American
-                    options, and European options.
+              <>
+                <div className={styles.Container} key={i}>
+                  <Image
+                    src={"/assets/images/cardp.svg"}
+                    alt="Avatar"
+                    className={styles.Image}
+                  />
+                  <div className={styles.Overlay}>
+                    <div className={styles.Text}>
+                      A leverage-based centralized trading environment for
+                      institutional traders and retail audiences with an
+                      appetite for high risks, including features such as 100x
+                      spot leverage, perpetual swaps, inverse futures, American
+                      options, and European options.
+                    </div>
                   </div>
                 </div>
                 <p className={styles.SliderBottomText}>Swap Trading</p>
-              </div>
+              </>
             ))}
           </Slider>
         </Col>

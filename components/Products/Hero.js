@@ -1,4 +1,4 @@
-import styles from "@/styles/components/Hero.module.css";
+import styles from "@/styles/components/Products/Hero.module.css";
 import { Image } from "react-bootstrap";
 import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
@@ -32,8 +32,8 @@ const Hero = () => {
         </Row>
       </Row>
       <Row>
-        <Col xl={4}></Col>
-        <Col xl={8}>
+        <Col xl={3}></Col>
+        <Col xl={9}>
           <div className={styles.Herotitle}>
             <Image src={"/assets/images/mxfuture.svg"} alt="mxfuture" />
             <h1>
@@ -45,8 +45,17 @@ const Hero = () => {
         </Col>
       </Row>
       <Row>
-        <Col xl={4}></Col>
-        <Col xl={8}>
+        <Col xl={3} className={styles.ScrolldownMainCol}>
+          <div className={styles.Scrolldowncontainer}>
+            <Image
+              alt="downimg"
+              src="/assets/images/arrows.svg"
+              className={styles.ImageDown}
+            />
+            <p className={styles.ScrolldownText}>Scroll Down</p>
+          </div>
+        </Col>
+        <Col xl={9}>
           <Image
             src={"/assets/images/productimage.png"}
             alt="productimg"

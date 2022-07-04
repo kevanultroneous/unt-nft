@@ -53,3 +53,41 @@
   display: flex;
   padding-right: 1rem;
 }
+.Scrolldowncontainer {
+  transform: rotate(-90deg);
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  position: relative;
+  animation: scrolldowntotop 4s ease-in 0s infinite normal;
+  animation-direction: alternate;
+  margin-left: -2rem;
+}
+@keyframes scrolldowntotop {
+  0% {
+    top: 10px;
+  }
+  25% {
+    top: -10px;
+  }
+  50% {
+    top: 10px;
+  }
+  75% {
+    top: -10px;
+  }
+  100% {
+    top: 10px;
+  }
+}
+.ImageDown {
+  transform: rotate(90deg);
+}
+.ScrolldownText {
+  margin: 0%;
+  padding-left: 1rem;
+}
+.ScrolldownMainCol {
+  display: flex;
+  align-items: center;
+}

@@ -210,6 +210,7 @@
   color: #a21d34;
 }
 .RightSb {
+  cursor: pointer;
   transition: all 1s ease;
 }
 .RightSb:hover {
@@ -254,7 +255,7 @@
   .ModelF {
     height: 40px;
   }
-  .Rightarrow{
+  .Rightarrow {
     text-align: end;
   }
 }

@@ -11,7 +11,9 @@ const MobileMenu = () => {
     <>
       <div className={styles.MobileMenu}>
         <div className={styles.MobileMenuLogo}>
-          <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
+          <Link href={"/"}>
+            <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
+          </Link>
         </div>
         <div className={styles.MenuController}>
           <Image
@@ -80,15 +82,15 @@ const MobileMenu = () => {
             {menuo === 0 ? (
               <Row>
                 {menus.map((v, i) => (
-                  <Col xl={12}>
+                  <Col xl={12} key={i}>
                     <Link href={v.mainlink}>
                       <p className={styles.LinkName}>{v.name}</p>
                     </Link>
                     {v.menus.length > 0 ? (
                       <>
                         {v.menus.map((v, i) => (
-                          <Link href={"/"}>
-                            <p className={styles.SubMenu}>{v}</p>
+                          <Link href={v.link} key={i}>
+                            <p className={styles.SubMenu}>{v.name}</p>
                           </Link>
                         ))}
                       </>
