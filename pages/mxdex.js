@@ -14,10 +14,10 @@ import WhatyouGet from "@/components/Products/WhatyouGet";
 import { useState } from "react";
 import { MxFutureNextLink } from "utils/MxFuture.data";
 
-const MxFuture = () => {
-  const [globalColor, setGlobalColor] = useState("#83745B");
+const MxDex = () => {
+  const [globalColor, setGlobalColor] = useState("#00ACD7");
   return (
-    <Layout title={"MxFuture"}>
+    <Layout title={"MxDex"}>
       <MenuPackage />
       <Hero />
       <Introductions />
@@ -32,4 +32,4 @@ const MxFuture = () => {
     </Layout>
   );
 };
-export default MxFuture;
+export default MxDex;

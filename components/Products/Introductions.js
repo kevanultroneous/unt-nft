@@ -16,7 +16,7 @@ const Introductions = () => {
         breakpoint: 1400,
         settings: {
           slidesToShow: 3,
-          slidesToScroll: 3,
+          slidesToScroll: 1,
           initialSlide: 1,
           centerMode: false,
           autoplay: true,
@@ -46,10 +46,10 @@ const Introductions = () => {
   return (
     <div className={styles.IntroMainContainer}>
       <Row>
-        <Col xl={3}>
+        <Col xl={2}>
           <p className={styles.verticaltext}>INTRODUCTION</p>
         </Col>
-        <Col xl={9}>
+        <Col xl={10}>
           <h5 className={styles.IntroMainTitle}>
             Mitigate the Risks and Leverage the Power of Crypto Derivatives
           </h5>

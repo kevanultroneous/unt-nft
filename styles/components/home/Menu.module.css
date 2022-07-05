@@ -14,7 +14,7 @@
   top: 0px;
   background: #ffffff;
   /* border-right: 1px solid #000; */
-  border: 3px solid transparent;
+  border: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
   border-top: none;

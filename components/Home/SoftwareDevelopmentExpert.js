@@ -121,7 +121,7 @@ const SDE = ({ handleClick }) => {
         </Col>
         <Col xl={8}>
           <Row>
-            <Col xl={3} md={4} xs={6}>
+            <Col xl={3} md={4} xs={5}>
               <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
                 <Image
                   alt={"prev"}
@@ -142,7 +142,7 @@ const SDE = ({ handleClick }) => {
             <Col
               xl={8}
               md={8}
-              xs={6}
+              xs={7}
               className={styles.SoftwareDevelopmentExpertSliderHeading}
             >
               <div className={styles.HomeMiniLine} />

@@ -27,13 +27,15 @@ export const BenefitsMxFuture = [
     num: "02",
     img: "/assets/images/trading4.svg",
     title: "Protection from volatility",
-    descreption: "kevan kevan kevan",
+    descreption:
+      "A leverage-based centralized trading environment for institutional traders and retail audiences with an appetite for high risks, including features such as 100x spot leverage, perpetual swaps, inverse futures.",
   },
   {
     num: "03",
     img: "/assets/images/trading4.svg",
     title: "Protection from volatility",
-    descreption: "...............................",
+    descreption:
+      "A leverage-based centralized trading environment for institutional traders and retail audiences with an appetite for high risks, including features such as 100x spot leverage, perpetual swaps, inverse futures.",
   },
   {
     num: "04",
@@ -46,7 +48,8 @@ export const BenefitsMxFuture = [
     num: "05",
     img: "/assets/images/trading4.svg",
     title: "Protection from volatility",
-    descreption: "====",
+    descreption:
+      "A leverage-based centralized trading environment for institutional traders and retail audiences with an appetite for high risks, including features such as 100x spot leverage, perpetual swaps, inverse futures.",
   },
 ];
 export const FrequentlyQuestionsMxFuture = [

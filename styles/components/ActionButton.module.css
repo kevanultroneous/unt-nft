@@ -7,13 +7,14 @@
   border-radius: 20px;
   width: fit-content !important;
   padding: 0.5rem 1rem;
-  display: block;
   color: #a21d34;
   background: linear-gradient(to right, #a21d34 50%, white 50%);
   background-size: 200% 200%;
   background-position: right bottom;
   transition: all 0.8s ease-out;
   cursor: pointer;
+  display: flex;
+  align-items: center;
 }
 
 .button:hover {

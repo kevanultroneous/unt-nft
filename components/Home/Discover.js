@@ -72,7 +72,7 @@ const Discover = () => {
               text={
                 <>
                   Discover MobifinX
-                  <span>
+                  <span className={styles.BtnSpan}>
                     <HiOutlineExternalLink />
                   </span>
                 </>

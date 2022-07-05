@@ -194,6 +194,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-right: 1rem;
   }
   .FooterIconHelper {
     padding-right: 0rem;

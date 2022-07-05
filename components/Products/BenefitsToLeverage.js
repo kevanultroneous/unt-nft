@@ -31,24 +31,32 @@ const BenefitsToLeverage = () => {
   return (
     <div className={styles.BenefitsContainer}>
       <Row>
-        <Col xl={3} xs={12} md={12}>
+        <Col xl={2} xs={12} md={12}>
           <p className={styles.MiniIntroduce}>UNIQUE SELLING POINTS</p>
         </Col>
-        <Col xl={9} md={12}>
+        <Col xl={10} md={12}>
           <Row>
             <Col xl={12} md={12}>
               <h5 className={styles.BenefitHeading}>Benefits to Leverage</h5>
             </Col>
           </Row>
           <Row className={styles.ControllerRev}>
-            <Col xl={5} md={5} className={styles.Controller}>
+            <Col xl={3} md={5} className={styles.Controller}>
               <MdArrowBackIosNew
                 className={styles.ArrowTop}
                 onClick={() => nextItemHandle()}
               />
+              <MdArrowBackIosNew
+                className={styles.ArrowTopMob}
+                onClick={() => prevItemHandle()}
+              />
               <h4 className={styles.Current}>
                 {BenefitsMxFuture[currentIndex].num}
               </h4>
+              <MdArrowBackIosNew
+                className={styles.ArrowBottomMob}
+                onClick={() => nextItemHandle()}
+              />
               <MdArrowBackIosNew
                 className={styles.ArrowBottom}
                 onClick={() => prevItemHandle()}

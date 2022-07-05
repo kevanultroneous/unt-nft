@@ -4,6 +4,11 @@
 }
 .Herotitle {
   display: flex;
+  align-items: center;
+}
+.SpaceRemover {
+  margin: 0%;
+  padding-right: 1rem;
 }
 .Herotitle h1 {
   font-size: 4.5rem;
@@ -11,6 +16,7 @@
   color: black;
   line-height: 70px;
   padding-left: 2rem;
+  margin: 0%;
 }
 .Herotitle span {
   font-size: 3rem;
@@ -18,7 +24,7 @@
   color: black;
 }
 .productimg {
-  padding: 2rem 0;
+  padding: 4rem 0;
   width: 100%;
   height: auto;
 }
@@ -31,14 +37,14 @@
 .SoftwareDevelopmentExpertsRow {
   margin: 0%;
   align-items: center;
-  padding-bottom: 10rem;
+  padding-bottom: 6rem;
 }
 .SoftwareDevelopmentExpertsSmallHead {
   display: flex;
   align-items: center;
 }
 .HomeMiniLine {
-  width: 40px;
+  width: 25px;
   padding: 0.1rem;
   margin-right: 1rem;
   border-bottom: 1px solid #000;
@@ -96,7 +102,7 @@
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .Herosection {
-    padding: 2rem 0rem 2rem 1rem;
+    padding: 7.5rem 0rem 2rem 1rem;
   }
   .TextButton {
     display: none;
@@ -122,6 +128,9 @@
   }
   .HeroImg {
     height: 100px;
+  }
+  .productimg {
+    padding-bottom: 0%;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

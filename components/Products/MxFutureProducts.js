@@ -1,7 +1,7 @@
 import { Alert, Col, Image, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 // import styles from "@/styles/components/home/Products.module.css";
-import styles from "@/styles/components/home/Products.module.css";
+import styles from "@/styles/components/Products/UseCases.module.css";
 import AOS from "aos";
 import { useEffect, useState } from "react";
 
@@ -65,25 +65,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[0].name}</h4>
                       <p>{ProductsList[0].detail}</p>
-                      {/* <p style={{ color: ProductsList[0].color }}>
-                        {ProductsList[0].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[0].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[0].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[0].btnc}
-                        borderc={ProductsList[0].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -113,25 +94,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[1].name}</h4>
                       <p>{ProductsList[1].detail}</p>
-                      {/* <p style={{ color: ProductsList[1].color }}>
-                        {ProductsList[1].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[1].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[1].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[1].btnc}
-                        borderc={ProductsList[1].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -161,25 +123,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[2].name}</h4>
                       <p>{ProductsList[2].detail}</p>
-                      {/* <p style={{ color: ProductsList[2].color }}>
-                        {ProductsList[2].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[2].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[2].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[2].btnc}
-                        borderc={ProductsList[2].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -209,25 +152,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[3].name}</h4>
                       <p>{ProductsList[3].detail}</p>
-                      {/* <p style={{ color: ProductsList[3].color }}>
-                        {ProductsList[3].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[3].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[3].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[3].btnc}
-                        borderc={ProductsList[3].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -257,25 +181,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[4].name}</h4>
                       <p>{ProductsList[4].detail}</p>
-                      {/* <p style={{ color: ProductsList[4].color }}>
-                        {ProductsList[4].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[4].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[4].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[4].btnc}
-                        borderc={ProductsList[4].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -305,25 +210,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[5].name}</h4>
                       <p>{ProductsList[5].detail}</p>
-                      {/* <p style={{ color: ProductsList[5].color }}>
-                        {ProductsList[5].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[5].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[5].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[5].btnc}
-                        borderc={ProductsList[5].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -353,25 +239,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[6].name}</h4>
                       <p>{ProductsList[6].detail}</p>
-                      {/* <p style={{ color: ProductsList[6].color }}>
-                        {ProductsList[6].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[6].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[6].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[6].btnc}
-                        borderc={ProductsList[6].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>
@@ -401,25 +268,6 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.ProductDetails}>
                       <h4>{ProductsList[7].name}</h4>
                       <p>{ProductsList[7].detail}</p>
-                      {/* <p style={{ color: ProductsList[7].color }}>
-                        {ProductsList[7].highlight}
-                      </p>
-                      <p className={styles.question}>
-                        {ProductsList[7].question}
-                      </p>
-                      <p className={styles.tags}>{ProductsList[7].tags}</p>
-                      <ActionButtonV3
-                        href={"/"}
-                        opacity={opacity}
-                        text={
-                          <>
-                            Explore Product&nbsp;&nbsp;&nbsp;
-                            <HiOutlineExternalLink />
-                          </>
-                        }
-                        backc={ProductsList[7].btnc}
-                        borderc={ProductsList[7].border}
-                      /> */}
                     </div>
                   </Col>
                 </Row>

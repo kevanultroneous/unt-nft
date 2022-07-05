@@ -21,6 +21,8 @@
   flex-direction: column;
   align-items: center;
   padding-top: 3rem;
+  width: fit-content;
+  padding-right: 6rem;
 }
 .ItemCard {
   padding-top: 3rem;
@@ -51,10 +53,23 @@
   margin-top: 6.5rem;
   margin-left: -5rem;
 }
-
+.ArrowTopMob,
+.ArrowBottomMob {
+  display: none;
+}
 @media (min-width: 320px) and (max-width: 450px) {
+  .ArrowTopMob {
+    font-size: 2rem;
+    transform: rotate(360deg);
+    display: block;
+  }
+  .ArrowBottomMob {
+    font-size: 2rem;
+    transform: rotate(180deg);
+    display: block;
+  }
   .BenefitsContainer {
-    padding: 3rem 1rem;
+    padding: 5rem 1rem;
   }
   .ControllerRev {
     flex-direction: column-reverse;
@@ -66,10 +81,13 @@
   .ArrowTop {
     font-size: 2rem;
     transform: rotate(360deg);
+    display: none;
   }
+
   .ArrowBottom {
     font-size: 2rem;
     transform: rotate(180deg);
+    display: none;
   }
   .Current {
     font-size: 45px;
@@ -85,6 +103,9 @@
   }
   .ItemCard {
     padding-top: 1rem;
+  }
+  .ItemTitle {
+    padding: 1rem 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

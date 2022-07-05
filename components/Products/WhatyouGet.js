@@ -6,10 +6,10 @@ const WhatyouGet = () => {
   return (
     <section className={styles.WhatyouWillget}>
       <Row className={styles.sectionrow}>
-        <Col xl={3} md={12} className={styles.sectioncol}>
+        <Col xl={2} md={12} className={styles.sectioncol}>
           <p className={styles.Whatyougetverticaltext}>UNIQUE SELLING POINTS</p>
         </Col>
-        <Col xl={9} md={12} className={styles.Headingcol}>
+        <Col xl={10} md={12} className={styles.Headingcol}>
           <h2>Here is what you will get</h2>
           <Row>
             <Col xl={6} md={6} className={styles.Heading}>

@@ -9,7 +9,12 @@ const MobileMenu = () => {
   const [menuo, setMenuo] = useState(0);
   return (
     <>
-      <div className={styles.MobileMenu}>
+      <div
+        className={styles.MobileMenu}
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
         <div className={styles.MobileMenuLogo}>
           <Link href={"/"}>
             <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
@@ -42,45 +47,41 @@ const MobileMenu = () => {
                   }
                   onClick={() => setMenuo(0)}
                 >
-                  <span
+                  <hr
                     className={styles.Tabname}
                     style={
                       menuo === 0
-                        ? { border: "1px solid #fff" }
-                        : { border: "1px solid rgba(0, 0, 0, 0.4)" }
+                        ? { border: "0.1px solid #fff" }
+                        : { border: "0.1px solid rgba(0, 0, 0, 0.4)" }
                     }
-                  >
-                    {""}
-                  </span>
+                  />
                   MobifinX Menu
                 </div>
               </Col>
-              <Col xs={6}>
+              <Col xs={6} className={styles.Explorproduct}>
                 <div
                   className={styles.Tabs}
                   style={
                     menuo === 1
                       ? { color: "#000" }
-                      : { color: "rgba(0, 0, 0, 0.4)" }
+                      : { color: "rgba(255, 255, 255, 0.4)" }
                   }
                   onClick={() => setMenuo(1)}
                 >
-                  <span
+                  <hr
                     className={styles.Tabname}
                     style={
                       menuo === 1
-                        ? { border: "1px solid #000" }
-                        : { border: "1px solid rgba(0, 0, 0, 0.4)" }
+                        ? { border: "0.1px solid #000" }
+                        : { border: "0.1px solid rgba(255, 255, 255, 0.4)" }
                     }
-                  >
-                    {""}
-                  </span>
+                  />
                   Explore Product
                 </div>
               </Col>
             </Row>
             {menuo === 0 ? (
-              <Row>
+              <Row className={styles.Menurow}>
                 {menus.map((v, i) => (
                   <Col xl={12} key={i}>
                     <Link href={v.mainlink}>
@@ -101,12 +102,14 @@ const MobileMenu = () => {
             ) : (
               <Row className={styles.IconMenuContainer}>
                 {iconsMenu.map((value, index) => (
-                  <Col xs={5} key={index}>
-                    <div className={styles.IconCard}>
-                      <Image src={value.icon} alt={value.icon} fluid />
-                      <p className={styles.IconName}>{value.name}</p>
-                    </div>
-                  </Col>
+                  <Link href={value.link}>
+                    <Col xs={5} key={index}>
+                      <div className={styles.IconCard}>
+                        <Image src={value.icon} alt={value.icon} fluid />
+                        <p className={styles.IconName}>{value.name}</p>
+                      </div>
+                    </Col>
+                  </Link>
                 ))}
               </Row>
             )}

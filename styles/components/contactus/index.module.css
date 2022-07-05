@@ -44,7 +44,7 @@
   font-size: 40px;
 }
 .MiniLine {
-  width: 40px;
+  width: 25px;
   padding: 0.1rem;
   margin-right: 1rem;
   border-bottom: 1px solid #1a1c3b;
@@ -57,6 +57,7 @@
 .ContactUsHeading {
   display: flex;
   align-items: center;
+  padding-top: 1.5rem;
 }
 .SectionsRow {
   padding-top: 6rem;
@@ -89,9 +90,9 @@
   display: flex;
   width: 100%;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .ContactUsMainContainer {
-    padding: 1rem 1rem 6rem 1rem;
+    padding: 5.5rem 1rem 6rem 1rem;
   }
 
   .FirstSectionSentence1,
@@ -114,6 +115,12 @@
   .SecondSection {
     flex-direction: column;
     padding-top: 1rem;
+  }
+  .SmallHeading {
+    font-size: 14px;
+  }
+  .ContactUsHeading {
+    padding-top: 2.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

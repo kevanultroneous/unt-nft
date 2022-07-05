@@ -10,6 +10,7 @@
 
 .WhatWillYouGetWithUsLeft {
   padding: 2rem;
+  padding-left: 0;
 }
 
 .WhatWillYouGetWithUsLeft h2 {
@@ -79,13 +80,18 @@
     top: 10px;
   }
 }
+.BigImage {
+  overflow-x: hidden;
+}
 .SmallImage img,
 .BigImage img {
   height: auto;
   width: 100%;
-  border-radius: 25px 0 0 25px;
+  border-radius: 10px 0 0 10px;
 }
-
+.BigImage img {
+  width: 120%;
+}
 .WhatWillYouGetWithUsRight {
   padding: 0;
   display: flex;
@@ -96,6 +102,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .WhatWillYouGetWithUs {
     padding-left: 0;
+    padding-bottom: 1rem;
   }
   .WhatWillYouGetWithUsLeft h2 {
     font-size: 35px;
@@ -109,7 +116,9 @@
   }
   .BigImage {
     padding-left: 1rem;
-    height: 50px;
+  }
+  .BigImage img {
+    width: 100%;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

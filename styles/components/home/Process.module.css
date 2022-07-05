@@ -22,10 +22,11 @@
 .ProcessHead {
   font-weight: 600;
   font-size: 14px;
-  line-height: 70px;
+  /* line-height: 70px; */
   text-align: center;
   color: #a21d34;
   margin: 0%;
+  padding-bottom: 2rem;
 }
 .ProcessTitle {
   font-weight: 600;
@@ -142,7 +143,8 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .ProcessContainer {
     padding: 3rem 1rem;
-    height: 100vh;
+    height: 80vh;
+    padding-bottom: 0;
   }
   .ProcessTitle {
     font-size: 34px;
@@ -171,6 +173,12 @@
   }
   .YourNeedContainer {
     padding-top: 0rem;
+  }
+  .ProcessHead {
+    padding-bottom: 2rem;
+  }
+  .MainProcess {
+    padding-top: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

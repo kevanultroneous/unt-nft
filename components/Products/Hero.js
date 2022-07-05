@@ -36,8 +36,8 @@ const Hero = () => {
         </Row>
       </Row>
       <Row>
-        <Col xl={3}></Col>
-        <Col xl={9}>
+        <Col xl={2}></Col>
+        <Col xl={10} xs={12}>
           <div className={styles.Herotitle}>
             <Image
               src={"/assets/images/MxFuture.png"}
@@ -53,7 +53,7 @@ const Hero = () => {
         </Col>
       </Row>
       <Row>
-        <Col xl={3} className={styles.ScrolldownMainCol}>
+        <Col xl={2} className={styles.ScrolldownMainCol}>
           <div className={styles.Scrolldowncontainer}>
             <Image
               alt="downimg"
@@ -63,7 +63,7 @@ const Hero = () => {
             <p className={styles.ScrolldownText}>Scroll Down</p>
           </div>
         </Col>
-        <Col xl={9}>
+        <Col xl={10}>
           <Image
             src={"/assets/images/productimage.png"}
             alt="productimg"

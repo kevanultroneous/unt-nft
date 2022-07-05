@@ -7,10 +7,10 @@ const FAQ = () => {
   return (
     <section className={styles.Askedquestion}>
       <Row>
-        <Col xl={3}>
+        <Col xl={2}>
           <p className={styles.verticaltext}>FAQ’s</p>
         </Col>
-        <Col xl={9}>
+        <Col xl={10}>
           <h3>Frequently Asked Questions</h3>
           <Accordion defaultActiveKey="0" flush>
             {[0, 1, 2, 3, 4, 5].map((value, index) => (

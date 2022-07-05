@@ -3,9 +3,16 @@
   padding: 0.9rem;
   display: none;
   background-color: #ffffff;
-  position: sticky;
+  position: fixed;
   top: 0px;
+  width: 100%;
   z-index: 35;
+  border: 2px solid transparent;
+  border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
+  border-image-slice: 1;
+  border-top: none;
+  border-right: none;
+  border-left: none;
 }
 .MenuController {
   display: flex;
@@ -50,7 +57,10 @@
   );
   background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
   background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+  margin: 0%;
   padding-bottom: 0.5rem;
+  padding-top: 0.5rem;
+  opacity: 0.5;
 }
 .LinkName:hover {
   background-position: bottom;
@@ -59,6 +69,7 @@
 .SubMenu {
   font-weight: 400;
   color: #ffffff;
+  margin-bottom: 0.5rem;
   font-size: 18px;
   padding-bottom: 0.5rem;
 }
@@ -74,10 +85,11 @@
   font-size: 18px;
 }
 .Tabname {
-  width: 2rem;
-  height: 0.1rem;
-  margin-right: 0.5rem;
-  border: 1px solid#ffffff;
+  width: 25px;
+  height: auto;
+  /* padding: 0.1rem; */
+  margin-right: 1rem;
+  border-bottom: 1px solid #ffffff;
 }
 .IconName {
   padding-top: 0.7rem;
@@ -94,15 +106,32 @@
   justify-content: center;
   text-align: center;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .MobileMenu {
     display: flex;
   }
   .MobifinxXmenu {
-    padding-left: 2rem;
+    padding: 0 1rem;
+  }
+  /* .IconMenuContainer {
+    padding-right: 2rem;
+  } */
+  .LinkName {
+    padding-bottom: 1rem;
+  }
+  .Tabs {
+    font-size: 14px;
+  }
+  .Explorproduct {
+    display: flex;
+    justify-content: end;
   }
   .IconMenuContainer {
-    padding-right: 2rem;
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .Menurow {
+    padding-bottom: 4rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

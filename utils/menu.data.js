@@ -17,21 +17,21 @@ export const menus = [
         link: "/",
       },
       {
-        name: "Career page",
+        name: "Career",
         link: "/",
       },
       {
         name: "Events & webinars",
         link: "/",
       },
-      {
-        name: "Awards & Certificate",
-        link: "/",
-      },
-      {
-        name: "Client Speak/Customer",
-        link: "/",
-      },
+      // {
+      //   name: "Awards & Certificate",
+      //   link: "/",
+      // },
+      // {
+      //   name: "Client Speak/Customer",
+      //   link: "/",
+      // },
     ],
   },
   {
@@ -52,20 +52,20 @@ export const menus = [
       },
     ],
   },
-  {
-    name: "Resources",
-    mainlink: "",
-    menus: [
-      {
-        name: "Developers Guidline",
-        link: "/",
-      },
-      {
-        name: "FAQ",
-        link: "/",
-      },
-    ],
-  },
+  // {
+  //   name: "Resources",
+  //   mainlink: "",
+  //   menus: [
+  //     {
+  //       name: "Developers Guidline",
+  //       link: "/",
+  //     },
+  //     {
+  //       name: "FAQ",
+  //       link: "/",
+  //     },
+  //   ],
+  // },
   {
     name: "Contact us",
     mainlink: "/contact-us",
