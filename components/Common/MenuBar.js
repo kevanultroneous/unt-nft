@@ -4,12 +4,16 @@ import { Col, Image, Row } from "react-bootstrap";
 import AOS from "aos";
 import { iconsMenu, menus } from "utils/menu.data";
 import Link from "next/link";
+import { useRouter } from "next/router";
 const MenuBar = ({ display = "none", visibility }) => {
+  const router = useRouter();
   useEffect(() => {
     AOS.refresh();
     AOS.init();
+    menus.map((v, i) =>
+      router.pathname === v.mainlink ? setCurrentMenu(i) : null
+    );
   }, []);
-
   const [currentIcon, setCurrentIcon] = useState(null);
   const [currentMenu, setCurrentMenu] = useState(0);
   const Heading = ({ name, border, color }) => {
