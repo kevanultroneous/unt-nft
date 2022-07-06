@@ -5,6 +5,7 @@ import MobileMenu from "./MobileMenu";
 
 const MenuPackage = () => {
   const [menubaropacity, setMenuBarOpacity] = useState("0");
+  const [addClass, setAddClass] = useState(false);
   return (
     <>
       <MobileMenu />
@@ -14,11 +15,13 @@ const MenuPackage = () => {
       />
       <Menu
         opacity={"1"}
-        handleClick={() =>
+        addClass={addClass}
+        handleClick={() => {
+          setAddClass(!addClass);
           menubaropacity === "1"
             ? setMenuBarOpacity("0")
-            : setMenuBarOpacity("1")
-        }
+            : setMenuBarOpacity("1");
+        }}
         change={menubaropacity == "1" ? true : false}
       />
     </>

@@ -13,7 +13,6 @@ import Solution from "@/components/Products/Solution";
 import WhatyouGet from "@/components/Products/WhatyouGet";
 import { useState } from "react";
 import { MxFutureNextLink } from "utils/MxFuture.data";
-
 const MxFuture = () => {
   const [globalColor, setGlobalColor] = useState("#83745B");
   return (

@@ -81,7 +81,14 @@ const Introductions = () => {
               1, 2, 3, 3, 4, 54, 4, 5, 4, 2, 3, 2, 3, 2, 2, 3, 2, 3, 2, 2, 3,
             ].map((v, i) => (
               <>
-                <div className={styles.Container} key={i}>
+                <div
+                  className={styles.Container}
+                  key={i}
+                  data-aos="zoom-in"
+                  data-aos-duration="3000"
+                  data-aos-delay="500"
+                  data-aos-easing="ease"
+                >
                   <Image
                     src={"/assets/images/cardp.svg"}
                     alt="Avatar"

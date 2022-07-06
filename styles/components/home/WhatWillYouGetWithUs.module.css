@@ -43,10 +43,10 @@
 }
 
 .SmallImage {
-  width: 15rem;
+  width: 16rem;
   position: relative;
-  bottom: -2.5rem;
-  left: 12rem;
+  bottom: 4.5rem;
+  left: 9rem;
   height: 12rem;
 }
 .SmallImageAnim {
@@ -85,19 +85,23 @@
 }
 .SmallImage img,
 .BigImage img {
-  height: auto;
+  height: 62vh;
   width: 100%;
   border-radius: 10px 0 0 10px;
 }
 .BigImage img {
-  width: 120%;
+  width: 150%;
+  /* position: relative;
+  right: 2rem; */
 }
 .WhatWillYouGetWithUsRight {
   padding: 0;
+  position: relative;
+  top: 4rem;
   display: flex;
   justify-content: right;
   align-items: center;
-  padding-bottom: 5rem;
+  padding-bottom: 0rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .WhatWillYouGetWithUs {
@@ -113,12 +117,20 @@
   .SmallImage {
     width: 13rem;
     left: 4rem;
+    bottom: 0%;
   }
   .BigImage {
     padding-left: 1rem;
   }
   .BigImage img {
     width: 100%;
+    height: auto;
+  }
+  .WhatWillYouGetWithUsRight {
+    top: -2rem;
+  }
+  .SmallImage img {
+    height: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

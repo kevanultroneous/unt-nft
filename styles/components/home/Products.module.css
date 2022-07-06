@@ -77,6 +77,9 @@
 .ProductDetails {
   color: #fff;
   text-align: left;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: justify;
 }
 .OurProductsHeading {
   font-weight: 600;
@@ -84,9 +87,10 @@
   color: #ffffff;
   position: sticky;
   top: 20px;
+  margin: 0%;
   width: fit-content;
   padding-left: 8.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 .Carddetail {
   width: 45%;
@@ -94,20 +98,22 @@
 .ProductImages {
   text-align: end !important;
   padding-right: 4rem;
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 .ProductImages img {
-  height: 15rem;
+  height: 22rem;
 }
 .outer {
 }
 
 .button {
   border-radius: 20px;
-  width: 11rem;
+  /* width: 11rem; */
   background-position: right bottom !important;
   padding: 0.5rem 1rem;
   background-size: 200% 100% !important;
-  opacity: 0;
   cursor: pointer;
   transition: all 0.8s ease-out;
 }
@@ -161,7 +167,7 @@
   color: rgb(255, 255, 255);
   width: 65% !important;
   /* float: right; */
-  border: 1.5px solid;
+  border: 0.5px solid;
 }
 .HRcontainer span {
   color: #fff;
@@ -198,6 +204,34 @@
     rgba(22, 21, 94, 0) 100%
   );
 }
+.Sublist {
+  list-style: inside;
+  height: auto !important;
+  font-size: 14px;
+  font-weight: 300;
+  padding: 0.2rem 0;
+}
+.Productbutton {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding-bottom: 2rem;
+}
+.Producth4 {
+  margin: 0 !important;
+  font-size: 36px;
+}
+.List {
+  padding: 1rem 0 !important;
+}
+.Description {
+  padding-bottom: 1rem;
+  font-size: 16px;
+  font-weight: 300;
+}
+.ExpText {
+  padding-right: 5px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .OurProductsHeading {
     font-weight: 600;
@@ -212,6 +246,7 @@
     padding-left: 2rem;
     padding-bottom: 3rem;
   }
+
   .SectionCards .SectionContent {
     padding-top: 4rem;
   }
@@ -232,15 +267,27 @@
     will-change: transform, opacity;
     height: 1300px;
     position: sticky;
-    top: calc(28vh + 52px - 215px - 40px);
+    top: calc(15vh + 52px - 215px - 40px);
   }
   .HrBorder {
     width: 100% !important;
     margin-left: 1rem;
   }
   .ProductImages {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center !important;
     padding-right: 0rem;
+  }
+  .Productbutton {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 2rem;
+  }
+  .ProductImages img {
+    height: 12.6rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

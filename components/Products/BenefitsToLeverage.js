@@ -62,7 +62,13 @@ const BenefitsToLeverage = () => {
                 onClick={() => prevItemHandle()}
               />
             </Col>
-            <Col xl={7} md={7}>
+            <Col
+              xl={7}
+              md={7}
+              data-aos="zoom-in "
+              data-aos-easing="linear"
+              data-aos-duration="1500"
+            >
               <div
                 className={`${styles.ItemCard}`}
                 style={{ opacity: animopacity }}

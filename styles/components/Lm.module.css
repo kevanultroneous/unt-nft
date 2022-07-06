@@ -5,7 +5,9 @@
 }
 .ulc p {
   margin: 0%;
-  padding-right: 0.5rem;
+  cursor: pointer;
+
+  /* padding-right: 0.5rem; */
 }
 .ulc a {
   color: #fff;
@@ -13,10 +15,12 @@
 .menu {
   display: flex;
   justify-content: center;
-  height: 30px;
+  height: 30px !important;
   width: 30px;
-  background-color: #a21d34;
+  background-color: #a21d34 !important;
   border-radius: 100%;
+  margin-left: 1rem;
+  cursor: pointer;
 }
 
 .menu li {
@@ -24,23 +28,24 @@
   width: fit-content;
 }
 
-.menu a {
+.menu p {
   position: relative;
-  display: block;
+  display: flex;
+  align-items: center;
   overflow: hidden;
 }
 
-.menu a span {
+.menu p span {
   transition: transform 0.2s ease-out;
 }
 
-.menu a span:first-child {
+.menu p span:first-child {
   display: inline-block;
-  padding-top: 0.1rem;
-  padding-left: 0.3rem;
+  /* padding-top: 0.1rem;
+  padding-left: 0.3rem; */
 }
 
-.menu a span:last-child {
+.menu p span:last-child {
   position: absolute;
   top: 0;
   right: 0;
@@ -56,23 +61,23 @@
   font-size: 30px;
 }
 
-.menu a:hover span:first-child {
+.menu p:hover span:first-child {
   transform: translateY(100%);
 }
 
-.menu a:hover span:last-child,
-.menu[data-animation] a:hover span:last-child {
+.menu p:hover span:last-child,
+.menu[data-animation] p:hover span:last-child {
   transform: none;
 }
 
 /* ANIMATIONS
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
-.menu[data-animation="to-right"] a span:last-child {
+.menu[data-animation="to-right"] p span:last-child {
   transform: translateX(-100%);
 }
 
-.menu[data-animation="to-right"] a:hover span:first-child {
+.menu[data-animation="to-right"] p:hover span:first-child {
   transform: translateX(100%);
 }
 

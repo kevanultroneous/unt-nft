@@ -4,7 +4,6 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/Products/UseCases.module.css";
 import AOS from "aos";
 import { useEffect, useState } from "react";
-
 import ProductsList from "utils/products.data";
 import ActionButtonV3 from "../Common/ActionButtonV3";
 const MxFutureProducts = ({ text }) => {
@@ -34,7 +33,13 @@ const MxFutureProducts = ({ text }) => {
         <h3 className={styles.OurProductsHeading}>
           {text ? text : "Our Products"}
         </h3>
-        <div className={styles.CardsSwrapper}>
+        <div
+          className={styles.CardsSwrapper}
+          data-aos="zoom-in"
+          data-aos-duration="1000"
+          data-aos-delay="500"
+          data-aos-easing="ease"
+        >
           {/* <div
             className={styles.FollowerLight}
             style={{ left: xcord, top: ycord, opacity: opacitycord }}

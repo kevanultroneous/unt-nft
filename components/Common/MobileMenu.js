@@ -21,13 +21,21 @@ const MobileMenu = () => {
           </Link>
         </div>
         <div className={styles.MenuController}>
-          <Image
+          <div class="three col">
+            <div class="hamburger" id="hamburger-12">
+              <span class="line"></span>
+              <span class="line"></span>
+              <span class="line"></span>
+            </div>
+          </div>
+
+          {/* <Image
             alt={"menu"}
             src={
               show ? "/assets/images/liness.svg" : "/assets/images/mobile.svg"
             }
             onClick={() => setShow(true)}
-          />
+          /> */}
         </div>
       </div>
       <Offcanvas show={show} onHide={() => setShow(false)} placement="start">

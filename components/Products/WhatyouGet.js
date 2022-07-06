@@ -1,8 +1,13 @@
 import { Col, Row } from "react-bootstrap";
 import styles from "@/styles/components/Products/WhatyouGet.module.css";
 import { HiOutlineExternalLink } from "react-icons/hi";
-
+import AOS from "aos";
+import { useEffect } from "react";
 const WhatyouGet = () => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <section className={styles.WhatyouWillget}>
       <Row className={styles.sectionrow}>
@@ -12,7 +17,15 @@ const WhatyouGet = () => {
         <Col xl={10} md={12} className={styles.Headingcol}>
           <h2>Here is what you will get</h2>
           <Row>
-            <Col xl={6} md={6} className={styles.Heading}>
+            <Col
+              xl={6}
+              md={6}
+              className={styles.Heading}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               <div className={styles.Details}>
                 <h4>100x leverage engine</h4>
                 <p>
@@ -22,7 +35,15 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} md={6} className={styles.Heading}>
+            <Col
+              xl={6}
+              md={6}
+              className={styles.Heading}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               <div className={styles.Details}>
                 <h4>Auto Deleveraging (ADL) calculator</h4>
                 <p>
@@ -31,7 +52,15 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} md={6} className={styles.Heading}>
+            <Col
+              xl={6}
+              md={6}
+              className={styles.Heading}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               <div className={styles.Details}>
                 <h4>Value at Risk (VaR) engine</h4>
                 <p>
@@ -41,7 +70,15 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col xl={6} md={6} className={styles.Heading}>
+            <Col
+              xl={6}
+              md={6}
+              className={styles.Heading}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               <div className={styles.Details}>
                 <h4>Portfolio Margining</h4>
                 <p>
@@ -54,13 +91,25 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={`${styles.Heading} ${styles.BigHead}`}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
             >
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>
                 <HiOutlineExternalLink className={styles.ContactusIcon} />
               </div>
             </Col>
-            <Col xl={6} md={6} className={styles.Heading}>
+            <Col
+              xl={6}
+              md={6}
+              className={styles.Heading}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               <div className={styles.Details}>
                 <h4>Portfolio Margining</h4>
                 <p>
@@ -73,6 +122,10 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={`${styles.Heading} ${styles.BigHead2}`}
+              data-aos="fade"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
             >
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>

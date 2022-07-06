@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ActionButton from "../Common/ActionButton";
-import LearnMore from "../Common/LearnMore";
+
 const CardInspired = ({
   style,
   srcimg,
@@ -48,16 +48,6 @@ const CardInspired = ({
           <div className={styles.Inspired}></div>
 
           <p className={styles.InspiredDisParagraph}>{disp2}</p>
-          {/* <p>
-            Learn More{" "}
-            <MdKeyboardArrowRight
-              style={{
-                background: "#fff",
-                color: "#a21d34",
-                borderRadius: "100%",
-              }}
-            />
-          </p> */}
         </div>
       </div>
     </div>

@@ -15,6 +15,7 @@ import Footer from "@/components/Home/Footer";
 import SmoothScroll from "@/components/SmoothScroll.component";
 import MenuBar from "@/components/Common/MenuBar";
 import MenuPackage from "@/components/Common/MenuPackage";
+import Parallax from "@/components/Home/Parallax";
 
 export default function Home() {
   const [on, setOn] = useState("1");
@@ -74,7 +75,8 @@ export default function Home() {
           {/* be a part of future choice */}
           <FutureChoice />
           {/* Speciality */}
-          <Speciality />
+          {/* <Speciality /> */}
+          <Parallax />
           {/* Footer */}
           <Footer />
         </>

@@ -1,13 +1,14 @@
 import styles from "@/styles/components/home/Menu.module.css";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import AOS from "aos";
 import Link from "next/link";
-const Menu = ({ opacity, handleClick, change }) => {
+const Menu = ({ opacity, handleClick, change, addClass }) => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
+
   return (
     <div
       data-aos="fade-right"
@@ -28,7 +29,16 @@ const Menu = ({ opacity, handleClick, change }) => {
         </Link>
       </div>
       <div>
-        <Image
+        <div
+          className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
+          onClick={handleClick}
+          id="hamburger-12"
+        >
+          <span className={`${styles.line} lineHam`}></span>
+          <span className={`${styles.line} lineHam`}></span>
+          <span className={`${styles.line} lineHam`}></span>
+        </div>
+        {/* <Image
           style={{ cursor: "pointer" }}
           alt={"menu"}
           src={
@@ -38,7 +48,7 @@ const Menu = ({ opacity, handleClick, change }) => {
           }
           fluid
           onClick={() => handleClick()}
-        />
+        /> */}
       </div>
       <div>
         <p className={styles.BlockchainTechnologyText}>BLOCKCHAIN TECHNOLOGY</p>

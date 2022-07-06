@@ -55,12 +55,12 @@ const Discover = () => {
             // data-aos="zoom-in"
             // data-aos-duration="2000"
           >
-            We are a leading Crypto Exchange Software Development company based
-            in USA. We are fintech expert established in 2011 to deliver
-            next-generation trading platforms to the businesses who want to take
-            a deep dive into the crypto exchange field. We have a team of more
-            than 100 highly experienced and skilled developers who are always
-            ready to serve you at your conditions.
+            We are a leading crypto exchange software development company based
+            in the USA established in 2016. Mobifinx is a tech partner that
+            enables Banks, Institutional Investors, Hedge Funds, Cryptocurrency
+            Owners, Stock exchanges and Broker-Dealers to efficiently roll out
+            and scale the Trading Ecosystem to take the leap without hassles by
+            offering multiple well-tested blockchain products for consumers.
           </p>
         </div>
         <div className={styles.DiscoverMobifinxBtnContainer}>
@@ -90,10 +90,10 @@ const Discover = () => {
         <Col>
           <div className={styles.DiscoverItemsContainer}>
             <Row className={styles.DiscoverItemsRow}>
-              <Col xl={6} xs={6} md={6}>
+              <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-right"
+                  data-aos="fade-left"
                   data-aos-duration="3000"
                   data-aos-delay="500"
                   data-aos-easing="ease"
@@ -107,10 +107,10 @@ const Discover = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={6} xs={6} md={6}>
+              <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-right"
+                  data-aos="fade-left"
                   data-aos-duration="3000"
                   data-aos-delay="500"
                   data-aos-easing="ease"
@@ -126,10 +126,10 @@ const Discover = () => {
               </Col>
             </Row>
             <Row className={styles.DiscoverItemsRow}>
-              <Col xl={6} xs={6} md={6}>
+              <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-right"
+                  data-aos="fade-left"
                   data-aos-duration="3000"
                   data-aos-delay="800"
                   data-aos-easing="ease"
@@ -143,10 +143,10 @@ const Discover = () => {
                   </p>
                 </div>
               </Col>
-              <Col xl={6} xs={6} md={6}>
+              <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-right"
+                  data-aos="fade-left"
                   data-aos-duration="3000"
                   data-aos-delay="800"
                   data-aos-easing="ease"

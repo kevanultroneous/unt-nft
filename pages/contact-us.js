@@ -98,19 +98,20 @@ const ContactUs = () => {
   };
   const subjectInputOperation = (e) => {
     setSubject(e.target.value);
-    // if (!subject) {
-    //   setSubjectError(true);
-    // } else {
-    //   setSubjectError(false);
-    // }
+
+    if (subject.length > 0) {
+      setSubjectError(false);
+    } else {
+      setSubjectError(true);
+    }
   };
   const captchaInputOperation = (e) => {
     setCaptchas(e.target.value);
-    // if (!(captchas == "")) {
-    //   setCaptchaError(true);
-    // } else {
-    //   setCaptchaError(false);
-    // }
+    if (captchas.length >= 5) {
+      setCaptchaError(false);
+    } else {
+      setCaptchaError(true);
+    }
   };
   function validateEmail3837482000049914001(email) {
     const regex =
@@ -132,7 +133,12 @@ const ContactUs = () => {
     }
   }
   const apicall = () => {
-    if (name == "" || name.length < 2 || name.includes("https://")) {
+    if (
+      name == "" ||
+      name.length < 2 ||
+      name.includes("https://") ||
+      name.includes("http://")
+    ) {
       setNameError(true);
       namef.current.focus();
     } else if (phoneValue == "") {
@@ -140,7 +146,11 @@ const ContactUs = () => {
     } else if (validateEmail3837482000049914001(email) == false) {
       mailf.current.focus();
       setMailError(true);
-    } else if (subject == "" || subject.includes("https://")) {
+    } else if (
+      subject == "" ||
+      subject.includes("https://") ||
+      subject.includes("http://")
+    ) {
       subjectf.current.focus();
       setSubjectError(true);
     } else if (captchas == "") {

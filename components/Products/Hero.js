@@ -4,7 +4,14 @@ import { Col } from "react-bootstrap";
 import { Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import ActionButton from "../Common/ActionButton";
+import AOS from "aos";
+import { useEffect } from "react";
+
 const Hero = () => {
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <section className={styles.Herosection}>
       <Row className={styles.ExpertsRow}>
@@ -40,14 +47,30 @@ const Hero = () => {
         <Col xl={10} xs={12}>
           <div className={styles.Herotitle}>
             <Image
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
               src={"/assets/images/MxFuture.png"}
               alt="mxfuture"
               className={styles.HeroImg}
             />
-            <h1>
+            <h1
+              data-aos="zoom-in"
+              data-aos-duration="3000"
+              data-aos-delay="500"
+              data-aos-easing="ease"
+            >
               MxFuture
               <br />
-              <span>Margin and Derivatives</span>
+              <span
+                data-aos="zoom-in"
+                data-aos-duration="3000"
+                data-aos-delay="500"
+                data-aos-easing="ease"
+              >
+                Margin and Derivatives
+              </span>
             </h1>
           </div>
         </Col>
@@ -65,6 +88,10 @@ const Hero = () => {
         </Col>
         <Col xl={10}>
           <Image
+            data-aos="zoom-in"
+            data-aos-duration="3000"
+            data-aos-delay="500"
+            data-aos-easing="ease"
             src={"/assets/images/productimage.png"}
             alt="productimg"
             className={styles.productimg}

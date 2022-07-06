@@ -23,6 +23,29 @@ a {
   box-sizing: border-box;
 }
 
+/* =====================MENU HAMBURGER ICON=================== */
+
+.hamburger:hover {
+  cursor: pointer;
+}
+#hamburger-12.is-active .lineHam:nth-child(1) {
+  opacity: 0;
+  -webkit-transform: translateX(-100%);
+  -ms-transform: translateX(-100%);
+  -o-transform: translateX(-100%);
+  transform: translateX(-100%);
+}
+
+#hamburger-12.is-active .lineHam:nth-child(3) {
+  opacity: 0;
+  -webkit-transform: translateX(100%);
+  -ms-transform: translateX(100%);
+  -o-transform: translateX(100%);
+  transform: translateX(100%);
+}
+
+/* =====================MENU HAMBURGER ICON=================== */
+
 .fadeoutcss {
   animation: fade-out 1s;
 }

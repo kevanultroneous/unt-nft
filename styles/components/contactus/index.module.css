@@ -75,6 +75,7 @@
   text-decoration: underline;
   color: blue;
   user-select: none;
+  cursor: pointer;
 }
 .CaptchaIcon {
   padding-top: 1rem;
