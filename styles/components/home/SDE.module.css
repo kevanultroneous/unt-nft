@@ -1,7 +1,7 @@
 .SoftwareDevelopmentExpertsContainer {
   background: linear-gradient(90deg, #1a1c3b 28.05%, #a21d34 148.07%);
   color: #ffffff;
-  padding-top: 3rem;
+  padding-top: 3.1rem;
   padding-left: 8.5rem;
   padding-bottom: 2.5rem;
 }
@@ -57,9 +57,10 @@
 .SoftwareDevelopmentExpertsBigHeading {
   font-weight: 600;
   font-size: 4.5rem;
-  padding-top: 4rem;
+  padding-top: 3rem;
   width: 50rem;
-  padding-bottom: 4rem;
+  margin: 0%;
+  padding-bottom: 3.5rem;
 }
 .SoftwareDevelopmentExpertsBtnCol {
   display: flex;

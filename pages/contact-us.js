@@ -71,6 +71,47 @@ const ContactUs = () => {
     body: urlencoded,
     redirect: "follow",
   };
+  const nameInputOperation = (e) => {
+    setName(e.target.value);
+    if (!(name == "" || name.length < 2 || name.includes("https://"))) {
+      setNameError(false);
+    } else {
+      setNameError(true);
+    }
+  };
+  const phoneInputOperation = (value, country) => {
+    setPhoneValue(value);
+    setCountry(country.name);
+    if (!(phoneValue == "")) {
+      setNumberError(false);
+    } else {
+      setNumberError(true);
+    }
+  };
+  const mailInputOperation = (e) => {
+    setEmail(e.target.value);
+    if (!validateEmail3837482000049914001(email)) {
+      setMailError(true);
+    } else {
+      setMailError(false);
+    }
+  };
+  const subjectInputOperation = (e) => {
+    setSubject(e.target.value);
+    // if (!subject) {
+    //   setSubjectError(true);
+    // } else {
+    //   setSubjectError(false);
+    // }
+  };
+  const captchaInputOperation = (e) => {
+    setCaptchas(e.target.value);
+    // if (!(captchas == "")) {
+    //   setCaptchaError(true);
+    // } else {
+    //   setCaptchaError(false);
+    // }
+  };
   function validateEmail3837482000049914001(email) {
     const regex =
       /^(([^<>()[\]\.,;:\s@\"]+(\.[^<>()[\]\.,;:\s@\"]+)*)|(\".+\"))@(([^<>()[\]\.,;:\s@\"]+\.)+[^<>()[\]\.,;:\s@\"]{2,})$/i;
@@ -92,7 +133,6 @@ const ContactUs = () => {
   }
   const apicall = () => {
     if (name == "" || name.length < 2 || name.includes("https://")) {
-      // alert("Enter valid name !");
       setNameError(true);
       namef.current.focus();
     } else if (phoneValue == "") {
@@ -104,7 +144,6 @@ const ContactUs = () => {
       subjectf.current.focus();
       setSubjectError(true);
     } else if (captchas == "") {
-      // alert("Please Enter captcha code");
       captchaf.current.focus();
       setCaptchaError(true);
     } else {
@@ -156,7 +195,7 @@ const ContactUs = () => {
                 style={nameerror ? { borderBottom: "1px solid red" } : null}
                 type={"text"}
                 value={name}
-                onChange={(e) => setName(e.target.value)}
+                onChange={(e) => nameInputOperation(e)}
                 placeholder="Name and Surname"
                 className={styles.FirstSectionInput}
               />
@@ -178,10 +217,9 @@ const ContactUs = () => {
               )}
               <PhoneInput
                 value={phoneValue}
-                onChange={(value, country) => {
-                  setPhoneValue(value);
-                  setCountry(country.name);
-                }}
+                onChange={(value, country) =>
+                  phoneInputOperation(value, country)
+                }
                 country={"in"}
                 placeholder="Phone number"
                 enableSearch={true}
@@ -196,7 +234,7 @@ const ContactUs = () => {
                 style={mailerror ? { borderBottom: "1px solid red" } : null}
                 type={"text"}
                 value={email}
-                onChange={(e) => setEmail(e.target.value)}
+                onChange={(e) => mailInputOperation(e)}
                 placeholder="Mail ID"
                 className={styles.FirstSectionInput}
               />
@@ -213,7 +251,7 @@ const ContactUs = () => {
               style={subjecterror ? { borderBottom: "1px solid red" } : null}
               type={"text"}
               value={subject}
-              onChange={(e) => setSubject(e.target.value)}
+              onChange={(e) => subjectInputOperation(e)}
               placeholder="Subject"
               className={styles.SubjectInput}
             />
@@ -236,7 +274,7 @@ const ContactUs = () => {
                 name="enterdigest"
                 value={captchas}
                 placeholder="Enter Captcha code"
-                onChange={(e) => setCaptchas(e.target.value)}
+                onChange={(e) => captchaInputOperation(e)}
               />
               <label
                 className={styles.ReloadText}
