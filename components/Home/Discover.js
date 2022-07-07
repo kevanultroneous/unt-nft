@@ -100,7 +100,11 @@ const Discover = () => {
                   data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image alt={arrayBox[0].image} src={arrayBox[0].image} />
+                    <Image
+                      alt={arrayBox[0].image}
+                      src={arrayBox[0].image}
+                      className={styles.Discoverimg}
+                    />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[0].text}
@@ -117,7 +121,11 @@ const Discover = () => {
                   data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image alt={arrayBox[1].image} src={arrayBox[1].image} />
+                    <Image
+                      alt={arrayBox[1].image}
+                      src={arrayBox[1].image}
+                      className={styles.Discoverimg}
+                    />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[1].text}
@@ -136,7 +144,11 @@ const Discover = () => {
                   data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image alt={arrayBox[2].image} src={arrayBox[2].image} />
+                    <Image
+                      alt={arrayBox[2].image}
+                      src={arrayBox[2].image}
+                      className={styles.Discoverimg}
+                    />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[2].text}
@@ -153,7 +165,11 @@ const Discover = () => {
                   data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
-                    <Image alt={arrayBox[3].image} src={arrayBox[3].image} />
+                    <Image
+                      alt={arrayBox[3].image}
+                      src={arrayBox[3].image}
+                      className={styles.Discoverimg}
+                    />
                   </div>
                   <p className={styles.DiscoverItemParagraph}>
                     {arrayBox[3].text}

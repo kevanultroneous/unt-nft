@@ -60,7 +60,7 @@
   margin: 0%;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
-  opacity: 0.5;
+  opacity: 0.25;
 }
 .LinkName:hover {
   background-position: bottom;
@@ -90,6 +90,7 @@
   /* padding: 0.1rem; */
   margin-right: 1rem;
   border-bottom: 1px solid #ffffff;
+  /* opacity: 1 !important; */
 }
 .IconName {
   padding-top: 0.7rem;
@@ -133,10 +134,11 @@
   }
   .Tabs {
     font-size: 14px;
+    padding-top: 2rem;
   }
   .Explorproduct {
     display: flex;
-    justify-content: end;
+    justify-content: center;
   }
   .IconMenuContainer {
     justify-content: space-between;

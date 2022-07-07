@@ -1,5 +1,5 @@
 .Parallax {
-  background-image: url("/assets/images/Pera.svg");
+  background-image: url("/assets/images/Parallax.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
@@ -7,10 +7,13 @@
   /* height: 100vh; */
   padding-bottom: 4rem;
 }
+.Effect{
+  padding-top: 4rem;
+}
 .Parallaxrow {
   display: flex;
   align-items: center;
-  padding-top: 5rem;
+  padding-top: 3rem;
   padding-left: 19rem;
   padding-bottom: 0rem;
 }

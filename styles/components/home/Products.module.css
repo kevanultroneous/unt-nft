@@ -265,7 +265,7 @@
   .SectionCards .SectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
-    height: 1300px;
+    height: 800px;
     position: sticky;
     top: calc(15vh + 52px - 215px - 40px);
   }

@@ -155,7 +155,7 @@
   align-items: end;
   padding-right: 0;
   padding-left: 0;
-  padding-bottom: 2rem;
+  padding-bottom: 4rem;
   margin-left: -3rem;
 }
 .ScrolldownText {
@@ -174,13 +174,15 @@
   }
   .HomeMiniLine {
     width: 27px;
+    margin-right: 0.5rem;
   }
   .SoftwareDevelopmentExpertSliderBtnLeft,
   .SoftwareDevelopmentExpertSliderBtnRight {
     height: 40px;
+    padding-right: 0.5rem;
   }
   .SoftwareDevelopmentExpertsContainer {
-    padding-top: 7.5rem;
+    padding-top: 6  .5rem;
     padding-left: 1rem;
     padding-bottom: 2.5rem;
   }
@@ -230,6 +232,9 @@
   }
   .SliderGround {
     padding-top: 0;
+  }
+  .SoftwareDevelopmentExpertsRow{
+    margin-top: 3.3rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
