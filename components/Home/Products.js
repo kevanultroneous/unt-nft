@@ -71,8 +71,12 @@ const Products = ({ text }) => {
                   <ul className={styles.List}>
                     {ProductsList[index].sublist.map((v, i) => {
                       return (
-                        <li className={styles.Sublist} key={i}>
-                          {v}
+                        <li
+                          style={{ color: ProductsList[index].color }}
+                          className={`${styles.Sublist} `}
+                          key={i}
+                        >
+                          <span style={{ color: "#fff" }}>{v}</span>
                         </li>
                       );
                     })}

@@ -141,7 +141,7 @@ const ProductsList = [
     highlight: "USP: Private Blockchain and Consensus Modeling",
     question: "Platform benefits",
     tags: "New coin owners | FX brokers | Traders | Community marketers | DAO | DeFi Projects | VC firms",
-    color: "background: #7945EF",
+    color: "#7945EF",
     sublist: [
       " Custom blockchain consensus setup ",
       " Tokenize any asset class      ",

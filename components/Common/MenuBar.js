@@ -7,15 +7,19 @@ import Link from "next/link";
 import { useRouter } from "next/router";
 const MenuBar = ({ display = "none", visibility }) => {
   const router = useRouter();
+  const [currentIcon, setCurrentIcon] = useState(null);
+  const [currentMenu, setCurrentMenu] = useState(0);
   useEffect(() => {
     AOS.refresh();
     AOS.init();
-    menus.map((v, i) =>
-      router.pathname === v.mainlink ? setCurrentMenu(i) : null
-    );
+    menus.map((v, i) => {
+      if (router.pathname === v.mainlink) {
+        setCurrentMenu(i);
+      } else {
+        return null;
+      }
+    });
   }, []);
-  const [currentIcon, setCurrentIcon] = useState(null);
-  const [currentMenu, setCurrentMenu] = useState(0);
   const Heading = ({ name, border, color }) => {
     return (
       <div className={styles.MainHeading}>
@@ -57,7 +61,10 @@ const MenuBar = ({ display = "none", visibility }) => {
                     className={styles.MenuLine}
                     style={
                       index === currentMenu
-                        ? { opacity: "1", transition: "all 0.5s ease" }
+                        ? {
+                            opacity: "1",
+                            transition: "all 0.5s ease",
+                          }
                         : { opacity: "0", transition: "all 0.5s ease" }
                     }
                   ></div>
@@ -96,7 +103,11 @@ const MenuBar = ({ display = "none", visibility }) => {
                 >
                   <Link href={value.link}>
                     <div className={styles.IconCard}>
-                      <Image src={value.icon} alt={value.icon} />
+                      <Image
+                        src={value.icon}
+                        alt={value.icon}
+                        className={styles.icon}
+                      />
                       <p
                         className={styles.IconName}
                         style={

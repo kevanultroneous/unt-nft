@@ -41,20 +41,12 @@ const Discover = () => {
     <div className={styles.DiscoverMobifinixContainer}>
       <Row className={styles.DiscoverMobifinixSubContainer}>
         <div className={styles.DiscoverMobifinixPara1Container}>
-          <p
-            className={styles.DiscoverMobifinixPara1}
-            // data-aos="zoom-in"
-            // data-aos-duration="2000"
-          >
+          <p className={styles.DiscoverMobifinixPara1}>
             Your Companion for Digital Asset Trading Suite
           </p>
         </div>
         <div className={styles.DiscoverMobifinixPara2Container}>
-          <p
-            className={styles.DiscoverMobifinixPara2}
-            // data-aos="zoom-in"
-            // data-aos-duration="2000"
-          >
+          <p className={styles.DiscoverMobifinixPara2}>
             We are a leading crypto exchange software development company based
             in the USA established in 2016. Mobifinx is a tech partner that
             enables Banks, Institutional Investors, Hedge Funds, Cryptocurrency
@@ -64,9 +56,7 @@ const Discover = () => {
           </p>
         </div>
         <div className={styles.DiscoverMobifinxBtnContainer}>
-          <div
-          // data-aos="zoom-in" data-aos-duration="2000"
-          >
+          <div>
             <ActionButton
               href={"/"}
               text={
@@ -82,12 +72,17 @@ const Discover = () => {
         </div>
       </Row>
       <Row className={styles.DiscoverMobifinixRowsUniq}>
-        {/* <Col>
-          <Row> */}
-        {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
-        {/* </Row>
-        </Col> */}
-        <Col>
+        <Col className={styles.Animcol} xs={12}>
+          <Row>
+            <Image
+              src="/assets/images/anim2.gif"
+              alt={"anim"}
+              className={styles.AnimImage}
+            />
+            {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
+          </Row>
+        </Col>
+        <Col xs={12}>
           <div className={styles.DiscoverItemsContainer}>
             <Row className={styles.DiscoverItemsRow}>
               <Col xl={6} xs={4} md={6}>
