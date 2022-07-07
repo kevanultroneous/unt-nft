@@ -50,15 +50,17 @@ const Introductions = () => {
           <p className={styles.verticaltext}>INTRODUCTION</p>
         </Col>
         <Col xl={10}>
-          <h5 className={styles.IntroMainTitle}>
-            Mitigate the Risks and Leverage the Power of Crypto Derivatives
-          </h5>
-          <p className={styles.IntroMainContent}>
-            A leverage-based centralized trading environment for institutional
-            traders and retail audiences with an appetite for high risks,
-            including features such as 100x spot leverage, perpetual swaps,
-            inverse futures, American options, and European options.
-          </p>
+          <div className={styles.SpecialSpace}>
+            <h5 className={styles.IntroMainTitle}>
+              Mitigate the Risks and Leverage the Power of Crypto Derivatives
+            </h5>
+            <p className={styles.IntroMainContent}>
+              A leverage-based centralized trading environment for institutional
+              traders and retail audiences with an appetite for high risks,
+              including features such as 100x spot leverage, perpetual swaps,
+              inverse futures, American options, and European options.
+            </p>
+          </div>
           <div className={styles.SliderActionContainer}>
             <p className={styles.SliderActionTitle}>Explore 8 Features</p>
             <div className={styles.SliderActionButtons}>

@@ -24,7 +24,7 @@ const FutureChoice = () => {
           >
             <Row>
               <Col xl={12}>
-                <h5
+                <p
                   className={`${styles.CardTitle}  ${
                     c2 ? styles.CardTitle2 : null
                   }`}
@@ -34,7 +34,7 @@ const FutureChoice = () => {
                   </span>
                   <br />
                   Choice & Live it with us!
-                </h5>
+                </p>
               </Col>
             </Row>
             <Row className={styles.ProfileContainer}>

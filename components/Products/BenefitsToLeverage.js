@@ -32,7 +32,7 @@ const BenefitsToLeverage = () => {
     <div className={styles.BenefitsContainer}>
       <Row>
         <Col xl={2} xs={12} md={12}>
-          <p className={styles.MiniIntroduce}>UNIQUE SELLING POINTS</p>
+          <p className={styles.MiniIntroduce}>BENEFITS</p>
         </Col>
         <Col xl={10} md={12}>
           <Row>

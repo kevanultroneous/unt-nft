@@ -187,7 +187,7 @@ a {
   display: flex;
   align-items: center;
   width: 100%;
-  padding: 1rem 1.25rem;
+  padding: 1rem 0.25rem !important;
   font-size: 16px !important;
   font-weight: 500 !important;
   color: black !important;
@@ -234,6 +234,9 @@ a {
 }
 .offcanvas-body {
   padding: 0% !important;
+}
+.accordion-body {
+  padding: 1rem 0.25rem !important; 
 }
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */

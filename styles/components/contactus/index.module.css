@@ -8,7 +8,7 @@
 }
 .FirstSectionSentence1 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 45px;
   margin: 0%;
 }
 .FirstSectionInput {
@@ -23,7 +23,7 @@
 }
 .FirstSectionSentence2 {
   font-weight: 400;
-  font-size: 40px;
+  font-size: 45px;
   margin: 0%;
 }
 .SecondSection {
@@ -41,7 +41,7 @@
 .WantSentence {
   padding-top: 1.5rem;
   font-weight: 400;
-  font-size: 40px;
+  font-size: 45px;
 }
 .MiniLine {
   width: 25px;
@@ -60,7 +60,7 @@
   padding-top: 1.5rem;
 }
 .SectionsRow {
-  padding-top: 6rem;
+  padding-top: 3rem;
 }
 .ButtonSpace {
   padding-top: 3rem;
@@ -73,9 +73,14 @@
 .ReloadText {
   padding-left: 1rem;
   text-decoration: underline;
-  color: blue;
+  color: #7a7a7a;;
   user-select: none;
   cursor: pointer;
+  transition: all 1s ease;
+}
+.ReloadText:hover {
+  color: #a21d34;
+  transition: all 0.5s ease;
 }
 .CaptchaIcon {
   padding-top: 1rem;
@@ -121,7 +126,7 @@
     font-size: 14px;
   }
   .ContactUsHeading {
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

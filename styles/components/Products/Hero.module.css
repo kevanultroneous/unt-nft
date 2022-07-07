@@ -24,7 +24,7 @@
   color: black;
 }
 .productimg {
-  padding: 4rem 0;
+  padding: 2rem 0;
   width: 100%;
   height: auto;
 }
@@ -68,6 +68,7 @@
   animation: scrolldowntotop 4s ease-in 0s infinite normal;
   animation-direction: alternate;
   margin-left: -2rem;
+  margin-bottom: 4rem;
 }
 @keyframes scrolldowntotop {
   0% {
