@@ -72,7 +72,7 @@ const Discover = () => {
         </div>
       </Row>
       <Row className={styles.DiscoverMobifinixRowsUniq}>
-        <Col className={styles.Animcol} xs={12}>
+        <Col className={styles.Animcol} xs={12} xl={6} md={6}>
           <Row>
             <Image
               src="/assets/images/anim2.gif"
@@ -82,7 +82,7 @@ const Discover = () => {
             {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
           </Row>
         </Col>
-        <Col xs={12}>
+        <Col xs={12} xl={6} md={6}>
           <div className={styles.DiscoverItemsContainer}>
             <Row className={styles.DiscoverItemsRow}>
               <Col xl={6} xs={4} md={6}>

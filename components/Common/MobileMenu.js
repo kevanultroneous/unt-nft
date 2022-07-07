@@ -111,7 +111,11 @@ const MobileMenu = () => {
                   <Link href={value.link}>
                     <Col xs={5} key={index}>
                       <div className={styles.IconCard}>
-                        <Image src={value.icon} alt={value.icon} fluid />
+                        <Image
+                          src={value.icon}
+                          alt={value.icon}
+                          className={styles.IconImg}
+                        />
                         <p className={styles.IconName}>{value.name}</p>
                       </div>
                     </Col>

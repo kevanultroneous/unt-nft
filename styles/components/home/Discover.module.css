@@ -92,7 +92,8 @@
 .DiscoverMobifinixRowsUniq {
 }
 .AnimImage {
-  width: 20rem;
+  width: 25rem;
+  margin-left: 3rem;
   height: auto;
 }
 .Animcol {
@@ -145,6 +146,12 @@
   }
   .Discoverimg {
     width: 55px;
+    margin: 0%;
+  }
+  .AnimImage {
+    width: 18rem;
+    margin: 0%;
+    padding: 2rem 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

@@ -90,7 +90,7 @@
   /* padding: 0.1rem; */
   margin-right: 1rem;
   border-bottom: 1px solid #ffffff;
-  /* opacity: 1 !important; */
+  opacity: 1 !important;
 }
 .IconName {
   padding-top: 0.7rem;
@@ -119,6 +119,9 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+.IconImg {
+  max-height: 100px;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .MobileMenu {
     display: flex;
@@ -146,6 +149,11 @@
   }
   .Menurow {
     padding-bottom: 4rem;
+  }
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

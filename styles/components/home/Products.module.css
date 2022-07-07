@@ -267,7 +267,7 @@
     will-change: transform, opacity;
     height: 800px;
     position: sticky;
-    top: calc(15vh + 52px - 215px - 40px);
+    top: calc(28vh + 52px - 215px - 40px);
   }
   .HrBorder {
     width: 100% !important;
