@@ -35,11 +35,14 @@
   background-color: #2e3159;
   display: block;
   margin: 8px auto;
+  border-radius: 20px;
   -webkit-transition: all 0.3s ease-in-out;
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
-
+.hamburger:hover {
+  cursor: pointer;
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .NftMenu {
     display: none;

@@ -106,6 +106,18 @@
   justify-content: center;
   text-align: center;
 }
+.hamburger .line {
+  width: 50px;
+  height: 5px;
+  background-color: #2e3159;
+  display: block;
+  margin: 8px auto;
+  border-radius: 20px;
+  cursor: pointer;
+  -webkit-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .MobileMenu {
     display: flex;

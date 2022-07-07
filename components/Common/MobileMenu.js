@@ -7,6 +7,7 @@ import WaterText from "./WaterText";
 const MobileMenu = () => {
   const [show, setShow] = useState(false);
   const [menuo, setMenuo] = useState(0);
+  const [addClass, setAddClass] = useState(false);
   return (
     <>
       <div
@@ -21,21 +22,18 @@ const MobileMenu = () => {
           </Link>
         </div>
         <div className={styles.MenuController}>
-          <div class="three col">
-            <div class="hamburger" id="hamburger-12">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </div>
+          <div
+            className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
+            onClick={() => {
+              setAddClass(!addClass);
+              setShow(!show);
+            }}
+            id="hamburger-12"
+          >
+            <span className={`${styles.line} lineHam`}></span>
+            <span className={`${styles.line} lineHam`}></span>
+            <span className={`${styles.line} lineHam`}></span>
           </div>
-
-          {/* <Image
-            alt={"menu"}
-            src={
-              show ? "/assets/images/liness.svg" : "/assets/images/mobile.svg"
-            }
-            onClick={() => setShow(true)}
-          /> */}
         </div>
       </div>
       <Offcanvas show={show} onHide={() => setShow(false)} placement="start">
