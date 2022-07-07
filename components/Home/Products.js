@@ -79,6 +79,7 @@ const Products = ({ text }) => {
                   </ul>
                 </p>
                 <LearnMore
+                  bgcolor={ProductsList[index].color}
                   href={"/"}
                   t1={<MdOutlineKeyboardArrowRight />}
                   t2={<MdOutlineKeyboardArrowRight />}
@@ -143,205 +144,21 @@ const Products = ({ text }) => {
               onMouseOver={() => setOpacity(1)}
               onMouseLeave={() => setOpacity(0)}
             >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[5].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[5].img}
-                      src={ProductsList[5].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <div className={styles.Productbutton}>
-                        <h4 className={styles.Producth4}>
-                          {ProductsList[5].name}
-                        </h4>
-                        <ActionButtonV3
-                          href={"/"}
-                          text={
-                            <>
-                              Explore Product&nbsp;&nbsp;&nbsp;
-                              <HiOutlineExternalLink />
-                            </>
-                          }
-                          backc={ProductsList[5].btnc}
-                          borderc={ProductsList[5].border}
-                        />
-                      </div>
-                      {/* <h4>{ProductsList[5].name}</h4> */}
-                      <p className={styles.Description}>
-                        {ProductsList[5].detail}
-                      </p>
-                      {/* <p style={{ color: ProductsList[5].color }}>
-                        {ProductsList[5].highlight}
-                      </p> */}
-                      <p className={styles.question}>
-                        {ProductsList[5].question}
-                        <ul className={styles.List}>
-                          {ProductsList[5].sublist.map((v, i) => {
-                            return (
-                              <li className={styles.Sublist} key={i}>
-                                {v}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </p>
-
-                      {/* <p className={styles.tags}>{ProductsList[5].tags}</p> */}
-                      <LearnMore
-                        href={"/"}
-                        t1={<MdOutlineKeyboardArrowRight />}
-                        t2={<MdOutlineKeyboardArrowRight />}
-                      />
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
+              <CardForProductSection ProductsList={ProductsList} index={5} />
             </li>
             <li
               className={styles.card07}
               onMouseOver={() => setOpacity(1)}
               onMouseLeave={() => setOpacity(0)}
             >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[6].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[6].img}
-                      src={ProductsList[6].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <div className={styles.Productbutton}>
-                        <h4 className={styles.Producth4}>
-                          {ProductsList[6].name}
-                        </h4>
-                        <ActionButtonV3
-                          href={"/"}
-                          text={
-                            <>
-                              Explore Product&nbsp;&nbsp;&nbsp;
-                              <HiOutlineExternalLink />
-                            </>
-                          }
-                          backc={ProductsList[6].btnc}
-                          borderc={ProductsList[6].border}
-                        />
-                      </div>
-                      {/* <h4>{ProductsList[6].name}</h4> */}
-                      <p className={styles.Description}>
-                        {ProductsList[6].detail}
-                      </p>
-                      {/* <p style={{ color: ProductsList[6].color }}>
-                        {ProductsList[6].highlight}
-                      </p> */}
-                      <p className={styles.question}>
-                        {ProductsList[6].question}
-                        <ul className={styles.List}>
-                          {ProductsList[6].sublist.map((v, i) => {
-                            return (
-                              <li className={styles.Sublist} key={i}>
-                                {v}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </p>
-                      {/* <p className={styles.tags}>{ProductsList[6].tags}</p> */}
-                      <LearnMore
-                        href={"/"}
-                        t1={<MdOutlineKeyboardArrowRight />}
-                        t2={<MdOutlineKeyboardArrowRight />}
-                      />
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
+              <CardForProductSection ProductsList={ProductsList} index={6} />
             </li>
             <li
               className={`${styles.card08} last-card`}
               onMouseOver={() => setOpacity(1)}
               onMouseLeave={() => setOpacity(0)}
             >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[7].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[7].img}
-                      src={ProductsList[7].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <div className={styles.Productbutton}>
-                        <h4 className={styles.Producth4}>
-                          {ProductsList[7].name}
-                        </h4>
-                        <ActionButtonV3
-                          href={"/"}
-                          text={
-                            <>
-                              Explore Product&nbsp;&nbsp;&nbsp;
-                              <HiOutlineExternalLink />
-                            </>
-                          }
-                          backc={ProductsList[7].btnc}
-                          borderc={ProductsList[7].border}
-                        />
-                      </div>
-                      {/* <h4>{ProductsList[7].name}</h4> */}
-                      <p className={styles.Description}>
-                        {ProductsList[7].detail}
-                      </p>
-                      {/* <p style={{ color: ProductsList[7].color }}>
-                        {ProductsList[7].highlight}
-                      </p> */}
-                      <p className={styles.question}>
-                        {ProductsList[7].question}
-                        <ul className={styles.List}>
-                          {ProductsList[7].sublist.map((v, i) => {
-                            return (
-                              <li className={styles.Sublist} key={i}>
-                                {v}
-                              </li>
-                            );
-                          })}
-                        </ul>
-                      </p>
-                      {/* <p className={styles.tags}>{ProductsList[7].tags}</p> */}
-                      <LearnMore
-                        href={"/"}
-                        t1={<MdOutlineKeyboardArrowRight />}
-                        t2={<MdOutlineKeyboardArrowRight />}
-                      />
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
+              <CardForProductSection ProductsList={ProductsList} index={7} />
             </li>
           </ul>
         </div>

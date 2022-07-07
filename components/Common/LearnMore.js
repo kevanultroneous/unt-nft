@@ -1,6 +1,6 @@
 import styles from "@/styles/components/Lm.module.css";
 import Link from "next/link";
-const LearnMore = ({ t1, t2, href }) => {
+const LearnMore = ({ t1, t2, href, bgcolor }) => {
   return (
     <Link href={href}>
       <ul
@@ -14,7 +14,11 @@ const LearnMore = ({ t1, t2, href }) => {
         <p className={styles.para} data-animation="to-right">
           Learn More
         </p>
-        <li className={styles.menu} data-animation="to-right">
+        <li
+          style={{ background: bgcolor }}
+          className={styles.menu}
+          data-animation="to-right"
+        >
           <p>
             <span>{t1}</span>
             <span>{t2}</span>
