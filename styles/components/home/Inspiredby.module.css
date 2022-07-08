@@ -114,7 +114,7 @@
   justify-content: center;
 }
 .InspiredCardView {
-  padding-top: 3rem;
+  padding-top: 4rem;
   display: flex;
   align-items: center;
   width: 100%;
@@ -149,7 +149,7 @@
   transition: all 1s ease;
 }
 .InspiredCardImg:hover {
-  transform: scale(0.6);
+  transform: scale(1.3);
   transition: all 1s ease;
 }
 .InspiredCardText {
@@ -158,7 +158,7 @@
 }
 .Viewall {
   margin: 0%;
-  padding-right: 1rem;
+  padding-right: 2rem;
   color: #a21d34;
 }
 @media (min-width: 320px) and (max-width: 767px) {

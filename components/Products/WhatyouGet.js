@@ -21,7 +21,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={styles.Heading}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -39,7 +39,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={styles.Heading}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -56,7 +56,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={styles.Heading}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -74,7 +74,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={styles.Heading}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -91,7 +91,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={`${styles.Heading} ${styles.BigHead}`}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -105,7 +105,7 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={styles.Heading}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -122,14 +122,16 @@ const WhatyouGet = () => {
               xl={6}
               md={6}
               className={`${styles.Heading} ${styles.BigHead2}`}
-              data-aos="fade"
+              data-aos="fade-left"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
             >
               <div className="d-flex align-items-center">
                 <div className={styles.FooterContactusLink}>Explore</div>
-                <HiOutlineExternalLink className={styles.ContactusIcon} />
+                <div className={`${styles.Pulse} Pulse`}>
+                  <HiOutlineExternalLink className={styles.ContactusIcon} />
+                </div>
               </div>
             </Col>
           </Row>

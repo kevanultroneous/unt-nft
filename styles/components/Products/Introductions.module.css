@@ -46,7 +46,7 @@
   text-align: justify;
 }
 .IntroMainContainer {
-  padding: 10rem 0rem 7rem 8.5rem;
+  padding: 4rem 0rem 7rem 8.5rem;
 }
 .IntroMainTitle {
   font-weight: 500;
@@ -62,8 +62,8 @@
 .verticaltext {
   transform: rotate(-90deg);
   width: fit-content;
-  margin-left: -3rem;
-  margin-top: 4rem;
+  margin-left: -4.5rem;
+  margin-top: 6rem;
   letter-spacing: 4px;
   font-weight: 400;
   color: rgba(18, 18, 18, 0.6);
@@ -79,16 +79,16 @@
   font-size: 22px;
 }
 .SliderActionButtons {
-  padding-left: 2rem;
+  padding-left: 2.5rem;
 }
 .leftButton {
   height: 3rem;
-  padding-right: 0.5rem;
+  padding-right: 0.8rem;
   transition: all 0.5s ease;
 }
 
 .leftButton:hover {
-  transform: scale(0.8);
+  transform: scale(1.2);
   transition: all 0.5s ease;
 }
 .SpecialSpace{
@@ -96,7 +96,7 @@
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .IntroMainContainer {
-    padding: 4rem 1rem;
+    padding: 1rem 1rem;
     /* padding-top: 7rem; */
   }
   .IntroMainTitle {
@@ -104,11 +104,14 @@
     margin: 0;
     width: 20rem;
     padding-bottom: 1rem;
+    line-height: 35px;
   }
   .verticaltext {
     transform: rotate(0deg);
     margin: 0%;
     padding-bottom: 1rem;
+    font-size: 14px;
+    letter-spacing: 2px;
   }
   .Text {
     font-size: 10px;

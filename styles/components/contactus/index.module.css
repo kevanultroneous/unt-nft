@@ -44,7 +44,7 @@
   font-size: 45px;
 }
 .MiniLine {
-  width: 25px;
+  width: 40px;
   padding: 0.1rem;
   margin-right: 1rem;
   border-bottom: 1px solid #1a1c3b;
@@ -127,6 +127,9 @@
   }
   .ContactUsHeading {
     padding-top: 1.5rem;
+  }
+  .MiniLine {
+    width: 25px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {

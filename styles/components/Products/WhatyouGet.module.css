@@ -2,6 +2,7 @@
   background: #1a1c3c;
   padding-left: 8.5rem;
   padding-right: 3rem;
+  overflow: hidden;
 }
 .sectionrow {
   padding: 6rem 0;
@@ -15,7 +16,7 @@
   font-weight: 400;
   color: #fff;
   transform: rotate(-90deg);
-  margin-left: -3rem;
+  margin-left: -4.5rem;
   margin-top: 4rem;
   /* padding-top: 4rem; */
 }
@@ -107,7 +108,7 @@
   .Whatyougetverticaltext {
     margin: 0%;
     padding-top: 2rem;
-    padding-bottom: 4rem;
+    padding-bottom: 3rem;
     transform: rotate(0deg);
   }
   .WhatyouWillget h2 {
@@ -116,16 +117,23 @@
   }
   .Headingcol p {
     padding: 0%;
+    text-align: justify;
+    font-size: 14px;
   }
   .Details {
   }
   .FooterContactusLink {
     padding-top: 2rem;
     padding-bottom: 1rem;
+    font-size: 3rem;
   }
   .ContactusIcon {
     margin-top: 2rem;
     padding-bottom: 1rem;
+    margin-left: 0;
+  }
+  .Headingcol h4{
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -151,3 +159,8 @@
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }
+
+
+/* =====================================================================New Css============================================================================================================ */
+
+

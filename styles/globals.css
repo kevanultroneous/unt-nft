@@ -280,3 +280,29 @@ a {
 }
 @media (min-width: 1920px) and (max-height: 1080px) {
 }
+
+/* ======================================= */
+
+.Pulse{
+  width: fit-content;
+  height: fit-content;
+	aspect-ratio: 1;
+	background-color: transparent;
+	border-radius: 50%;
+	animation: Pulse 2s infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  margin-top: 1rem;
+}
+
+@keyframes Pulse{
+	0% {
+			box-shadow: 0 0 0 5px #ccc;
+	}
+
+	100% {
+			box-shadow: 0 0 0 20px transparent;
+	}
+}

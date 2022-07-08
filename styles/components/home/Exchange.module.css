@@ -44,8 +44,7 @@
 .ExchnageParagraph {
   font-weight: 400;
   font-size: 22px;
-
-  color: rgba(162, 29, 52, 0.6);
+  color: #a21d34;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .ExchnageContainer {

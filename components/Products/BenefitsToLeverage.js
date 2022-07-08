@@ -4,6 +4,7 @@ import { MdArrowBackIosNew } from "react-icons/md";
 import { BenefitsMxFuture } from "utils/MxFuture.data";
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
 const BenefitsToLeverage = () => {
   useEffect(() => {
     AOS.refresh();
@@ -42,22 +43,22 @@ const BenefitsToLeverage = () => {
           </Row>
           <Row className={styles.ControllerRev}>
             <Col xl={3} md={5} className={styles.Controller}>
-              <MdArrowBackIosNew
+              <IoIosArrowUp
                 className={styles.ArrowTop}
                 onClick={() => nextItemHandle()}
               />
-              <MdArrowBackIosNew
+              <IoIosArrowDown
                 className={styles.ArrowTopMob}
                 onClick={() => prevItemHandle()}
               />
               <h4 className={styles.Current}>
                 {BenefitsMxFuture[currentIndex].num}
               </h4>
-              <MdArrowBackIosNew
+              <IoIosArrowUp
                 className={styles.ArrowBottomMob}
                 onClick={() => nextItemHandle()}
               />
-              <MdArrowBackIosNew
+              <IoIosArrowDown
                 className={styles.ArrowBottom}
                 onClick={() => prevItemHandle()}
               />

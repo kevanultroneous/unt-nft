@@ -3,14 +3,14 @@
 }
 .ArrowTop {
   font-size: 4rem;
-  transform: rotate(90deg);
+  transform: rotate(0deg);
   display: block;
   text-align: center;
 }
 .ArrowBottom {
   font-size: 4rem;
   text-align: center;
-  transform: rotate(-90deg);
+  transform: rotate(0deg);
 }
 .Current {
   font-weight: 300;
@@ -50,8 +50,8 @@
   transform: rotate(-90deg);
   letter-spacing: 0.2em;
   width: fit-content;
-  margin-top: 1.5rem;
-  margin-left: 0rem;
+  margin-top: 3rem;
+  margin-left: -2rem;
 }
 .ArrowTopMob,
 .ArrowBottomMob {
@@ -60,12 +60,12 @@
 @media (min-width: 320px) and (max-width: 450px) {
   .ArrowTopMob {
     font-size: 2rem;
-    transform: rotate(360deg);
+    transform: rotate(90deg);
     display: block;
   }
   .ArrowBottomMob {
     font-size: 2rem;
-    transform: rotate(180deg);
+    transform: rotate(90deg);
     display: block;
   }
   .BenefitsContainer {

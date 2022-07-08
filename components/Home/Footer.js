@@ -38,10 +38,14 @@ const Footer = () => {
           <div className="d-flex align-items-center">
             <Link href="/">
               <div className={styles.FooterContactusLink}>
-                {/* <a href="/"> */}
                 Explore{" "}
-                <HiOutlineExternalLink className={styles.ContactusIcon} />
-                {/* </a> */}
+                <div className="Pulse">
+                  <HiOutlineExternalLink
+                    className={styles.ContactusIcon}
+                    style={{ color: "#ccc" }}
+                    size={50}
+                  />
+                </div>
               </div>
             </Link>
           </div>
@@ -51,7 +55,6 @@ const Footer = () => {
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >
             <div className="d-flex">
-              {/* <a href="/"> */}
               <a href="mailto:sales@mobifinx.com">
                 <span className={styles.MailText}>
                   <ImMail className={styles.MailIconHover} />
