@@ -91,6 +91,6 @@
     }
     .OurStory{
         background: linear-gradient(180deg, #1A1C3C 61.52%, #A21D34 133.83%);
-      
+      padding: 0;
     }
 }

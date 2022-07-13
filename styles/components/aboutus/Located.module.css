@@ -52,4 +52,7 @@
         width: 100%;
         height: auto;
     }
+    .Detailrow{
+        padding-bottom: 1rem;
+    }
 }

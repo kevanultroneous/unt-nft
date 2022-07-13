@@ -105,14 +105,14 @@
   @media (min-width:320px) and (max-width: 767px) {
     .HeroMainContainer {
       padding-top: 4rem;
-      padding-bottom: 4rem;
+      padding-bottom: 2rem;
       padding-left: 1rem;
   }
   .Herorow{
     justify-content: left;
   }
   .HeroMainContainer h4{
-    font-size: 30px;
+    font-size: 35px;
     padding-left: 0;
   }
   .Crypto{
@@ -125,6 +125,22 @@
     display: none;
   }
   .Heroimg{
+    width: 100%;
+    padding:  0;
+  }
+  .HomeSmallHeading {
+    font-size: 14px;
+  }
+  .HomeMiniLine{
+    width: 25px;
+  }
+  .SoftwareDevelopmentExpertsRow{
+    padding-top: 2rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
+  .Herocol{
     width: 100%;
   }
   }

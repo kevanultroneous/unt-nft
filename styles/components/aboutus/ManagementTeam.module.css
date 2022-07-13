@@ -1,7 +1,6 @@
 .ManagementContainer{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 8.5rem;
+    
+    padding: 4rem 0 4rem 8.5rem;
 }
 .Rotatetext{
     font-size: 14px;
@@ -59,7 +58,8 @@
         display: none;
     }
     .ManagementContainer{
-        padding-left: 1rem;
+    
+        padding: 1rem 0 1rem 1rem;
     }
     .Imgcol{
         width: 100%;

@@ -2,9 +2,7 @@
     background: #1A1C3C;
 }
 .FeedbackContainer{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 8.5rem;
+    padding: 4rem 0 4rem 8.5rem;
 }
 .Feedback h4{
     font-size: 50px;
@@ -78,5 +76,7 @@
     .SliderRow{
         padding-right: 2rem;
     }
-    
+    .FeedbackContainer{
+        padding-bottom: 0;
+    }
 }

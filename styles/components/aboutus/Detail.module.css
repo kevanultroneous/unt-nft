@@ -72,8 +72,19 @@
     }
     .Advantagecol{
         width: 100%;
+        padding-bottom: 1rem;
     }
     .Advantages{
         padding-left: 0;
+    }
+    .Icon{
+        min-width: 20%;
+    }
+    .Aboutcandle{
+        padding: 0;
+        padding-right: 1rem;
+    }
+    .AboutdetailsContainer{
+        padding-bottom: 2rem;
     }
 }
