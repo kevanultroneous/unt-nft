@@ -1,0 +1,96 @@
+.OurStoryContainer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 8.5rem;
+}
+.OurStory{
+    background: linear-gradient(22.6deg, #1A1C3C 61.52%, #A21D34 133.83%);
+    padding: 4rem 0;
+}
+/* .Ourstoryrow{
+    padding-left: 2.5rem;
+} */
+.Rotatetext{
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transform: rotate(270deg);
+  padding-bottom: 11rem;
+  margin-top: -5.5rem;
+  letter-spacing: 2px;
+}
+.HowWeCame h4{
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  padding-left: 0rem;
+}
+.HowWeCame p{
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    padding-left: 0rem;
+    text-align: justify;
+    padding-top: 2rem;
+    padding-right: 2rem;
+}
+.HowWeCame{
+    text-align: left;
+    width: 55%;
+    padding-left: 0rem;
+}
+.Strength{
+    display: flex;
+    justify-content: center;
+    align-items:  flex-start;
+}
+.Strengthcol{
+    width: 25%;
+    padding-top: 4rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.Employeeimg{
+    text-align: end;
+    padding-right: 2rem;
+}
+.Strength h5{
+    font-size: 50px;
+    font-weight: 400;
+    color: #fff ;
+    margin: 0;
+}
+.Strength span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+@media (min-width:320px) and (max-width: 767px){
+    .Rotatetext{
+        display: none;
+    }
+    .OurStoryContainer{
+        padding-left: 1rem;
+    }
+    .HowWeCame{
+        width: 100%;
+    }
+    .Strengthcol{
+        width: 100%;
+    }
+    .Strength{
+        display: flex;
+        justify-content: left;
+        align-items:  flex-start;
+        padding-bottom: 4rem;
+    }
+    .Strengthcol{
+        display: block;
+    }
+    .OurStory{
+        background: linear-gradient(180deg, #1A1C3C 61.52%, #A21D34 133.83%);
+      
+    }
+}

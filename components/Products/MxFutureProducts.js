@@ -19,264 +19,250 @@ const MxFutureProducts = ({ text }) => {
   }, []);
 
   return (
-    <div className={styles.SectionCards} data-anim-scroll-group="cards">
-      <div
-        className={styles.SectionContent}
-        onMouseMove={(e) => {
-          setXcord(e.pageX);
-          setYcord(e.pageY);
-          setOpacitycord("0.7");
-        }}
-        onMouseOut={() => setOpacitycord("0")}
-        onMouseLeave={() => setOpacitycord("0")}
-      >
-        <h3 className={styles.OurProductsHeading}>
-          {text ? text : "Our Products"}
-        </h3>
-        <div
-          className={styles.CardsSwrapper}
-          data-aos="zoom-in"
-          data-aos-duration="1000"
-          data-aos-delay="500"
-          data-aos-easing="ease"
-        >
-          {/* <div
-            className={styles.FollowerLight}
-            style={{ left: xcord, top: ycord, opacity: opacitycord }}
-          /> */}
+    <div
+      className={`${styles.section}  ${styles.sectionCards}`}
+      data-anim-scroll-group="cards"
+    >
+      <div className={`${styles.sectionContent}`}>
+        <h3 className={styles.CardHeading}>Use Cases</h3>
+        <div className={styles.cardsWrapper}>
           <ul>
-            <li
-              className={styles.card01}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[0].num}</span>
-              </div>
+            <li className={styles.card01}>
+              <div className={styles.rows}>
+                <div className="col">
+                  <h2 className={styles.Cardtitle}>Title</h2>
+                  <p className={styles.Carddescription}>
+                    Do you want to own a team but without the hassle of
+                    recruitment, infrastructure investment, heavy running costs
+                    and daily team management issues? If yes then this business
+                    model is for you. It’s suitable for the young entrepreneurs,
+                    CTO, Product managers and other technical people to hire
+                    their offshore team to build a project.
+                  </p>
+                  <p className={styles.Carddescription}>
+                    Your defined team would be dedicatedly working on your
+                    project in Agile methodology, and follow all the guidelines
+                    and reporting required from your end. This business model is
+                    the best suit for your dream project idea which requires
+                    multiple iterations and market research/ feedbacks.
+                  </p>
+                  <span className={styles.number}>01</span>
+                </div>
 
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[0].img}
-                      src={ProductsList[0].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[0].name}</h4>
-                      <p>{ProductsList[0].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
-            </li>
-            <li
-              className={styles.card02}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[1].num}</span>
+                <div className="col">
+                  <div className={styles.rowtext}>
+                    <Row>
+                      <Col xl={4} md={6} className={styles.SpecialImage2}>
+                        <Image
+                          src="/assets/images/Card01.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={5} md={6}>
+                        <Image
+                          src="/assets/images/Card02.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={4} md={6}>
+                        <Image
+                          style={{ paddingTop: "0%" }}
+                          src="/assets/images/Card03.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={5} md={6}>
+                        <Image
+                          style={{ paddingTop: "0%" }}
+                          src="/assets/images/Card04.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
               </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[1].img}
-                      src={ProductsList[1].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[1].name}</h4>
-                      <p>{ProductsList[1].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
             </li>
-            <li
-              className={styles.card03}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[2].num}</span>
+            <li className={styles.card02}>
+              <div className={styles.rows}>
+                <div className="col">
+                  <h2 className={styles.Cardtitle}>Title</h2>
+                  <p className={styles.Carddescription}>
+                    When you have a clear mid-size project requirement with a
+                    defined set of features, the project-based price model will
+                    best meet your needs. With this model, the Business Analyst
+                    team will discuss your project in detail, getting the
+                    technical team involved as required to make sure the concept
+                    has been understood properly. If you are sure about the
+                    project flow and not anticipating run time changes, then
+                    this business model is for you.
+                  </p>
+                  <p className={styles.Carddescription}>
+                    The project manager will be the point of the contact, who
+                    will give you the periodic updates and get the development
+                    done by the team. This Engagement model attracts a waterfall
+                    methodology with a clear set of processes. Any run-time
+                    changes or feature requests might affect the project plan
+                    and terms.
+                  </p>
+                  <span className={styles.number}>02</span>
+                </div>
+                <div className="col">
+                  <div className={styles.rowtext}>
+                    <Row>
+                      <Col xl={4} md={6} className={styles.SpecialImage2}>
+                        <Image
+                          src="/assets/images/Card01.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={5} md={6}>
+                        <Image
+                          src="/assets/images/Card02.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={4} md={6}>
+                        <Image
+                          style={{ paddingTop: "0%" }}
+                          src="/assets/images/Card03.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                      <Col xl={5} md={6}>
+                        <Image
+                          style={{ paddingTop: "0%" }}
+                          src="/assets/images/Card04.svg"
+                          className={styles.imageSpace}
+                        />
+                      </Col>
+                    </Row>
+                  </div>
+                </div>
               </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[2].img}
-                      src={ProductsList[2].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[2].name}</h4>
-                      <p>{ProductsList[2].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
             </li>
-            <li
-              className={styles.card04}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[3].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[3].img}
-                      src={ProductsList[3].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[3].name}</h4>
-                      <p>{ProductsList[3].detail}</p>
+            <li className={styles.card03}>
+              <div className={styles.rows}>
+                <div className="col">
+                  <h2 className={styles.Cardtitle}>Title</h2>
+                  <p className={styles.Carddescription}>
+                    If you are running a team already and missing resources to
+                    fill the team, we have this option available for you. With
+                    this business model, you will be able to hire one or
+                    multiple resources from various technology stacks and as per
+                    the expertise to fill in your remote team. This model works
+                    best for the people who like to choose their team members
+                    directly, and want to take care of their progress and report
+                    on a daily basis.
+                  </p>
+                  {/* <p className={styles.Carddescription}>
+                      Your defined team would be dedicatedly working on your
+                      project in Agile methodology, and follow all the
+                      guidelines and reporting required from your end. This
+                      business model is the best suit for your dream project
+                      idea which requires multiple iterations and market
+                      research/ feedbacks.
+                    </p> */}
+                  <span className={styles.number}>03</span>
+                </div>
+                <div className="col">
+                  <div className={styles.rowtext}>
+                    <div className={styles.rowtext}>
+                      <Row>
+                        <Col xl={4} md={6} className={styles.SpecialImage2}>
+                          <Image
+                            src="/assets/images/Card01.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            src="/assets/images/Card02.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={4} md={6}>
+                          <Image
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card03.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card04.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                      </Row>
                     </div>
-                  </Col>
-                </Row>
-              </figure>
+                  </div>
+                </div>
+              </div>
             </li>
-            <li
-              className={styles.card05}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[4].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[4].img}
-                      src={ProductsList[4].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[4].name}</h4>
-                      <p>{ProductsList[4].detail}</p>
+            <li className={`${styles.card04}  ${styles.lastCard}`}>
+              {/* <div className={styles.CardUid} style={{}}>
+                  <h1>4</h1>
+                </div> */}
+              <div className={styles.rows}>
+                <div className="col">
+                  <h2 className={styles.Cardtitle}>Title</h2>
+                  <p className={styles.Carddescription}>
+                    As a successful organization, we understand the need of
+                    establishing a B2B partnership with an agency. You can not
+                    have the required technology experts all the time, and with
+                    this business model, you will be getting the resources/ team
+                    required on a time-to-time basis. Whether it’s project-based
+                    work or a supply of resources in a dedicated manner, you
+                    will always be getting the best price as per agreement.
+                  </p>
+                  <p className={styles.Carddescription}>
+                    We take pride in being on time, upfront, and transparent. We
+                    respect and value your idea/clients, that is why we sign the
+                    legal non-disclosure agreement (NDA) with you to make sure
+                    your idea and data are completely protected. Being a
+                    technology partner, we will be making sure to win each
+                    project from your end by being flexible in helping you win
+                    clients.
+                  </p>
+                  <span className={styles.number}>04</span>
+                </div>
+                <div className="col">
+                  <div className={styles.rowtext}>
+                    <div className={styles.rowtext}>
+                      <Row>
+                        <Col xl={4} md={6} className={styles.SpecialImage2}>
+                          <Image
+                            src="/assets/images/Card01.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            src="/assets/images/Card02.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={4} md={6}>
+                          <Image
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card03.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card04.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                      </Row>
                     </div>
-                  </Col>
-                </Row>
-              </figure>
-            </li>
-            <li
-              className={styles.card06}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[5].num}</span>
+                  </div>
+                </div>
               </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[5].img}
-                      src={ProductsList[5].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[5].name}</h4>
-                      <p>{ProductsList[5].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
-            </li>
-            <li
-              className={styles.card07}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[6].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[6].img}
-                      src={ProductsList[6].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[6].name}</h4>
-                      <p>{ProductsList[6].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
-            </li>
-            <li
-              className={`${styles.card08} last-card`}
-              onMouseOver={() => setOpacity(1)}
-              onMouseLeave={() => setOpacity(0)}
-            >
-              <div className={styles.HRcontainer}>
-                <hr
-                  className={styles.HrBorder}
-                  style={{ color: "#fff", width: "30%" }}
-                />
-                <span>{ProductsList[7].num}</span>
-              </div>
-              <figure className={styles.CardContainer}>
-                <Row className="m-0 p-0">
-                  <Col xl={6} md={6} className={styles.ProductImages}>
-                    <Image
-                      alt={ProductsList[7].img}
-                      src={ProductsList[7].img}
-                    />
-                  </Col>
-                  <Col xl={6} md={6} className={styles.Carddetail}>
-                    <div className={styles.ProductDetails}>
-                      <h4>{ProductsList[7].name}</h4>
-                      <p>{ProductsList[7].detail}</p>
-                    </div>
-                  </Col>
-                </Row>
-              </figure>
             </li>
           </ul>
         </div>

@@ -1,0 +1,82 @@
+.Feedback{
+    background: #1A1C3C;
+}
+.FeedbackContainer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 8.5rem;
+}
+.Feedback h4{
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    text-align: center;
+    padding-right: 9rem;
+}
+.SliderRow{
+    /* padding-left: 8.5rem; */
+    padding-right: 3rem;
+    padding-top: 6rem;
+}
+.SliderimgCol{
+    display: flex;
+    justify-content: center;
+}
+.ClientName{
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+}
+.CompanyName{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 14px;
+    font-weight: 400;
+   
+}
+.Description{
+    padding-top: 1rem;
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+    text-align: justify;
+}
+.SliderMain{
+    display: flex;
+    align-items: center;
+}
+.FeedbackPrevarrow{
+    display: flex;
+    padding-bottom: 1rem;
+}
+.Arrowcol{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media (min-width:320px) and (max-width: 767px){
+    .FeedbackContainer{
+        padding-left: 1rem;
+    }
+    .Feedback h4{
+        padding-right: 0;
+        text-align: left;
+        font-size: 45px;
+    }
+    .SliderimgCol{
+        justify-content: left;
+    }
+    .ClientName{
+        padding-top: 1rem;
+    }
+    .Arrowcol{
+        justify-content: center;
+    position: relative;
+    left: 16rem;
+    bottom: 32rem;
+    width: 30%;
+    }
+    .SliderRow{
+        padding-right: 2rem;
+    }
+    
+}

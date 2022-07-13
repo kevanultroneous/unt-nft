@@ -1,0 +1,54 @@
+.Alliancecontainer{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    padding-left: 8.5rem;
+}
+.Rotatetext{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    transform: rotate(270deg);
+  padding-bottom: 11rem;
+}
+.Alliance h4{
+    font-size: 50px;
+    font-weight: 600;
+}
+.Alliance{
+    padding: 4rem 0;
+    overflow: hidden;
+}
+/* .Alliancerow{
+    padding-left: 6.5rem;
+
+} */
+.ProudtoWork{
+    width: 32%;
+    padding-left: 0rem;
+    padding-top: 3rem;
+}
+/* .Partnerimg{
+    width: 100%;
+    height: auto;
+} */
+.Partnerrow{
+    padding: 0 1rem;
+}
+@media (min-width:320px) and (max-width: 767px){
+    .Alliancecontainer{
+        padding:0 1rem;
+    }
+    .Rotatetext{
+        display: none;
+    }
+    .ProudtoWork{
+        width: 100%;
+    }
+    .Partnerrow{
+        padding: 0 ;
+    }
+    .AllianceImg{
+        width: 100%;
+        height: auto;
+    }
+}

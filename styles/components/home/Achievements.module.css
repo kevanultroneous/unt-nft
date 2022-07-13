@@ -24,17 +24,30 @@
   padding-top: 4rem;
 }
 .AchievementBox {
-  display: flex;
+  /* display: flex;
   justify-content: center;
   align-items: center;
   background: #ffffff;
   box-shadow: 0px 0px 14px rgba(208, 208, 208, 0.15);
   border-radius: 10px;
   height: 186px;
-  width: 100%;
+  width: 100%; */
 }
 /*  */
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
+  .AchievementsContainer {
+    padding-left: 1rem;
+  }
+  .AchievementsHead{
+    text-align: left;
+  }
+  .AchievementsTitle{
+    text-align: left;
+  }
+  .AchivmentImg{
+    width: 100%;
+    height: auto;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
 }

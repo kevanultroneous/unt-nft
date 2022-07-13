@@ -1,0 +1,57 @@
+import styles from "@/styles/components/aboutus/Located.module.css";
+import { Col, Image, Row } from "react-bootstrap";
+const Located = () => {
+  return (
+    <section className={styles.Location}>
+      <div className={styles.Locationcontainer}>
+        <Row>
+          <Col xl={2}></Col>
+          <Col xl={10} className={styles.Locatecol}>
+            <h4>We are currently located in</h4>
+            <div className={styles.LocatedDetail}>
+              <Col xl={6}>
+                <Row className={styles.Detailrow}>
+                  <Col xl={2} xs={2}>
+                    <Image src={"/assets/images/Location.svg"} />
+                  </Col>
+                  <Col xl={10} xs={10}>
+                    <h5>Address </h5>
+                    <p>
+                      00 Quentin Roosevelt Blvd, Suite 503, Garden City, New
+                      York - 11530{" "}
+                    </p>
+                  </Col>
+                </Row>
+                <Row className={styles.Detailrow}>
+                  <Col xl={2} xs={2}>
+                    <Image src={"/assets/images/Email.svg"} />
+                  </Col>
+                  <Col xl={10} xs={10}>
+                    <h5>Email Id</h5>
+                    <p>sales@mobifinx.com </p>
+                  </Col>
+                </Row>
+                <Row className={styles.Detailrow}>
+                  <Col xs={2} xl={2}>
+                    <Image src={"/assets/images/Mobileicona.svg"} />
+                  </Col>
+                  <Col xs={10} xl={10}>
+                    <h5>Mo No.</h5>
+                    <p>+61488843353 </p>
+                  </Col>
+                </Row>
+              </Col>
+              <Col xl={6}>
+                <Image
+                  src={"/assets/images/Newyork.svg"}
+                  className={styles.Contactimg}
+                />
+              </Col>
+            </div>
+          </Col>
+        </Row>
+      </div>
+    </section>
+  );
+};
+export default Located;

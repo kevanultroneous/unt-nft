@@ -240,7 +240,7 @@ a {
 }
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .react-tel-input {
     padding: 0 !important;
   }
@@ -258,6 +258,7 @@ a {
     padding-left: 0% !important;
     padding-right: 0% !important;
   }
+  
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .accordion-button {
@@ -273,6 +274,7 @@ a {
   .react-tel-input .flag-dropdown {
     top: -15% !important;
   }
+ 
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }
@@ -300,9 +302,11 @@ a {
 @keyframes Pulse{
 	0% {
 			box-shadow: 0 0 0 5px #ccc;
+      opacity: 0.25;
 	}
 
 	100% {
 			box-shadow: 0 0 0 20px transparent;
+      opacity: 0.25;
 	}
 }

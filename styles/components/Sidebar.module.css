@@ -15,7 +15,10 @@
   animation-name: fade-in;
   visibility: hidden;
   transition: visibility 0.5s, opacity 0.5s linear;
+  
+
 }
+
 .MenuBar {
   height: 100vh;
   background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
@@ -34,7 +37,7 @@
 .MenuBarContent {
   justify-content: end;
   text-align: right;
-  padding-top: 6rem;
+  padding-top: 4rem;
   list-style: none;
 }
 .MenuBarContent li {
@@ -130,11 +133,11 @@
   align-items: center;
 }
 .IconMenuContainer {
-  padding-top: 4.5rem;
+  padding-top: 2.5rem;
   padding-left: 4.5rem;
 }
 .IconCard {
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.5rem;
   cursor: pointer;
 }
 .IconName {
@@ -143,5 +146,5 @@
   font-size: 20px;
 }
 .icon {
-  height: 6rem;
+  height: 5rem;
 }

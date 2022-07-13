@@ -34,7 +34,7 @@
 .text:hover {
   color: #fff;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .outer {
     margin-top: 1rem;
   }

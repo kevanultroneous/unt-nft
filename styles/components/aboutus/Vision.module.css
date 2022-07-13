@@ -1,0 +1,74 @@
+.VisionContainer{
+    /* padding-top: 4rem; */
+    /* padding-bottom: 4rem; */
+    padding-left: 8.5rem;
+}
+.Important{
+    padding: 6rem 0;
+    padding-top: 0;
+}
+/* .Visionrow{
+    padding-left: 2.5rem;
+} */
+.Rotatetext{
+    font-size: 16px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(270deg);
+  padding-bottom: 11rem;
+  margin-top: -4rem;
+  letter-spacing: 2px;
+}
+.Heading{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 0rem;
+}
+.Vision ,.span{
+    font-size: 70px;
+    font-weight: 600;
+    padding: 0 ; 
+    margin: 0;
+    padding-right: 0.5rem;
+}
+.Mission{
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    padding: 0 ;
+    margin: 0; 
+}
+.Description{
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 0rem;
+}
+.Detailrow{
+    padding-left: 0rem;
+    padding-top: 0rem;
+}
+.Detailcol{
+    padding: 0 6.5rem;
+    text-align: justify;
+    padding-left: 0;
+}
+
+@media (min-width:320px) and (max-width: 767px){
+    .Rotatetext{
+        display: none;
+    }
+.VisionContainer{
+padding-left: 1rem;
+}
+.Vision ,.span{
+    font-size: 45px;
+}
+.Mission{
+    font-size: 45px;
+}
+.Detailcol{
+    padding-right: 1rem;
+}
+}
