@@ -108,7 +108,7 @@ const MobileMenu = () => {
             ) : (
               <Row className={styles.IconMenuContainer}>
                 {iconsMenu.map((value, index) => (
-                  <Link href={value.link}>
+                  <Link href={value.link} key={index}>
                     <Col xs={5} key={index}>
                       <div className={styles.IconCard}>
                         <Image

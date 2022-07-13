@@ -18,20 +18,24 @@ const ManagementTeam = () => {
                 <Image
                   src={"/assets/images/Team.svg"}
                   className={styles.Teamimg}
+                  alt="team-management"
                 />
                 <div className={styles.TeamName}>
                   <h5>Chris Hemsworth</h5>
 
                   <div className={styles.Socialmedia}>
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Linkdin.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Facebook.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Twit.svg"}
                       className={styles.socialimg}
                     />
@@ -42,6 +46,7 @@ const ManagementTeam = () => {
 
               <Col xl={4} xs={12} className={styles.Imgcol}>
                 <Image
+                  alt="team-management"
                   src={"/assets/images/Team.svg"}
                   className={styles.Teamimg}
                 />
@@ -50,14 +55,17 @@ const ManagementTeam = () => {
 
                   <div className={styles.Socialmedia}>
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Linkdin.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Facebook.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Twit.svg"}
                       className={styles.socialimg}
                     />
@@ -68,6 +76,7 @@ const ManagementTeam = () => {
 
               <Col xl={4} xs={12} className={styles.Imgcol}>
                 <Image
+                  alt="team-management"
                   src={"/assets/images/Team.svg"}
                   className={styles.Teamimg}
                 />
@@ -76,14 +85,17 @@ const ManagementTeam = () => {
 
                   <div className={styles.Socialmedia}>
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Linkdin.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Facebook.svg"}
                       className={styles.socialimg}
                     />
                     <Image
+                      alt="team-management"
                       src={"/assets/images/Twit.svg"}
                       className={styles.socialimg}
                     />

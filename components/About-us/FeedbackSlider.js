@@ -27,7 +27,10 @@ const FeedbackSlider = () => {
               <div>
                 <Row className={styles.SliderMain}>
                   <Col xl={4} className={styles.SliderimgCol}>
-                    <Image src={"/assets/images/Sliderimg.svg"} />
+                    <Image
+                      src={"/assets/images/Sliderimg.svg"}
+                      alt="slider-img"
+                    />
                   </Col>
                   <Col xl={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>
@@ -48,7 +51,10 @@ const FeedbackSlider = () => {
               <div>
                 <Row className={styles.SliderMain}>
                   <Col xl={4} className={styles.SliderimgCol}>
-                    <Image src={"/assets/images/Sliderimg.svg"} />
+                    <Image
+                      src={"/assets/images/Sliderimg.svg"}
+                      alt="slider-img"
+                    />
                   </Col>
                   <Col xl={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>
@@ -69,7 +75,10 @@ const FeedbackSlider = () => {
               <div>
                 <Row className={styles.SliderMain}>
                   <Col xl={4} className={styles.SliderimgCol}>
-                    <Image src={"/assets/images/Sliderimg.svg"} />
+                    <Image
+                      src={"/assets/images/Sliderimg.svg"}
+                      alt="slider-img"
+                    />
                   </Col>
                   <Col xl={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>

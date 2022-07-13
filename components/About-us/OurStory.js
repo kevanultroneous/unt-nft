@@ -31,9 +31,9 @@ const OurStory = () => {
           <Col xl={4} xs={12} className={styles.Strengthcol}>
             {OurStoryData.map((v, i) => {
               return (
-                <div className={styles.Strength}>
+                <div className={styles.Strength} key={i}>
                   <Col xl={6} className={styles.Employeeimg}>
-                    <Image src={v.image} />
+                    <Image src={v.image} alt={v.image} />
                   </Col>
                   <Col xl={6}>
                     <h5>{v.title}</h5>

@@ -12,7 +12,10 @@ const Located = () => {
               <Col xl={6}>
                 <Row className={styles.Detailrow}>
                   <Col xl={2} xs={2}>
-                    <Image src={"/assets/images/Location.svg"} />
+                    <Image
+                      src={"/assets/images/Location.svg"}
+                      alt="located-img"
+                    />
                   </Col>
                   <Col xl={10} xs={10}>
                     <h5>Address </h5>
@@ -24,7 +27,7 @@ const Located = () => {
                 </Row>
                 <Row className={styles.Detailrow}>
                   <Col xl={2} xs={2}>
-                    <Image src={"/assets/images/Email.svg"} />
+                    <Image src={"/assets/images/Email.svg"} alt="located-img" />
                   </Col>
                   <Col xl={10} xs={10}>
                     <h5>Email Id</h5>
@@ -33,7 +36,10 @@ const Located = () => {
                 </Row>
                 <Row className={styles.Detailrow}>
                   <Col xs={2} xl={2}>
-                    <Image src={"/assets/images/Mobileicona.svg"} />
+                    <Image
+                      src={"/assets/images/Mobileicona.svg"}
+                      alt="located-img"
+                    />
                   </Col>
                   <Col xs={10} xl={10}>
                     <h5>Mo No.</h5>
@@ -43,6 +49,7 @@ const Located = () => {
               </Col>
               <Col xl={6}>
                 <Image
+                  alt="located-img"
                   src={"/assets/images/Newyork.svg"}
                   className={styles.Contactimg}
                 />

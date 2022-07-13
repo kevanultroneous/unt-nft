@@ -1,3 +1,5 @@
+import { Image } from "react-bootstrap";
+
 const ScrollDown = () => {
   return (
     <div className={styles.Scrolldowncontainer}>

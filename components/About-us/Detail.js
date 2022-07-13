@@ -24,7 +24,7 @@ const Detail = () => {
       </Row>
       <Row className={styles.Advantages}>
         {AboutDetail.map((v, i) => (
-          <Col xl={4} xs={12} md={12} className={styles.Advantagecol}>
+          <Col xl={4} xs={12} md={12} className={styles.Advantagecol} key={i}>
             <Image src={v.image} className={styles.Icon} alt="About icon" />
             <h4 className={styles.Heading}>{v.title}</h4>
             <p className={styles.Description}>{v.text}</p>
@@ -35,6 +35,7 @@ const Detail = () => {
         <Col xl={12}>
           <div className={styles.Aboutcandle}>
             <Image
+              alt="about-candle"
               src={"/assets/images/About-candle.svg"}
               className={styles.Aboutcandleimg}
             />

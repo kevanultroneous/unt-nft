@@ -16,8 +16,12 @@ const Alliance = () => {
             <Row className={styles.Partnerrow}>
               {AllianceData.map((v, i) => {
                 return (
-                  <Col xl={4} xs={4}>
-                    <Image src={v.image} className={styles.AllianceImg} />
+                  <Col xl={4} xs={4} key={i}>
+                    <Image
+                      src={v.image}
+                      className={styles.AllianceImg}
+                      alt={v.image}
+                    />
                   </Col>
                 );
               })}

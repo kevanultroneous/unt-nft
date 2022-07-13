@@ -54,18 +54,21 @@ const MxFutureProducts = ({ text }) => {
                     <Row>
                       <Col xl={4} md={6} className={styles.SpecialImage2}>
                         <Image
+                          alt="card-img"
                           src="/assets/images/Card01.svg"
                           className={styles.imageSpace}
                         />
                       </Col>
                       <Col xl={5} md={6}>
                         <Image
+                          alt="card-img"
                           src="/assets/images/Card02.svg"
                           className={styles.imageSpace}
                         />
                       </Col>
                       <Col xl={4} md={6}>
                         <Image
+                          alt="card-img"
                           style={{ paddingTop: "0%" }}
                           src="/assets/images/Card03.svg"
                           className={styles.imageSpace}
@@ -73,6 +76,7 @@ const MxFutureProducts = ({ text }) => {
                       </Col>
                       <Col xl={5} md={6}>
                         <Image
+                          alt="card-img"
                           style={{ paddingTop: "0%" }}
                           src="/assets/images/Card04.svg"
                           className={styles.imageSpace}
@@ -112,18 +116,21 @@ const MxFutureProducts = ({ text }) => {
                     <Row>
                       <Col xl={4} md={6} className={styles.SpecialImage2}>
                         <Image
+                          alt="card-img"
                           src="/assets/images/Card01.svg"
                           className={styles.imageSpace}
                         />
                       </Col>
                       <Col xl={5} md={6}>
                         <Image
+                          alt="card-img"
                           src="/assets/images/Card02.svg"
                           className={styles.imageSpace}
                         />
                       </Col>
                       <Col xl={4} md={6}>
                         <Image
+                          alt="card-img"
                           style={{ paddingTop: "0%" }}
                           src="/assets/images/Card03.svg"
                           className={styles.imageSpace}
@@ -131,6 +138,7 @@ const MxFutureProducts = ({ text }) => {
                       </Col>
                       <Col xl={5} md={6}>
                         <Image
+                          alt="card-img"
                           style={{ paddingTop: "0%" }}
                           src="/assets/images/Card04.svg"
                           className={styles.imageSpace}
@@ -171,18 +179,21 @@ const MxFutureProducts = ({ text }) => {
                       <Row>
                         <Col xl={4} md={6} className={styles.SpecialImage2}>
                           <Image
+                            alt="card-img"
                             src="/assets/images/Card01.svg"
                             className={styles.imageSpace}
                           />
                         </Col>
                         <Col xl={5} md={6}>
                           <Image
+                            alt="card-img"
                             src="/assets/images/Card02.svg"
                             className={styles.imageSpace}
                           />
                         </Col>
                         <Col xl={4} md={6}>
                           <Image
+                            alt="card-img"
                             style={{ paddingTop: "0%" }}
                             src="/assets/images/Card03.svg"
                             className={styles.imageSpace}
@@ -190,6 +201,7 @@ const MxFutureProducts = ({ text }) => {
                         </Col>
                         <Col xl={5} md={6}>
                           <Image
+                            alt="card-img"
                             style={{ paddingTop: "0%" }}
                             src="/assets/images/Card04.svg"
                             className={styles.imageSpace}
@@ -234,18 +246,21 @@ const MxFutureProducts = ({ text }) => {
                       <Row>
                         <Col xl={4} md={6} className={styles.SpecialImage2}>
                           <Image
+                            alt="card-img"
                             src="/assets/images/Card01.svg"
                             className={styles.imageSpace}
                           />
                         </Col>
                         <Col xl={5} md={6}>
                           <Image
+                            alt="card-img"
                             src="/assets/images/Card02.svg"
                             className={styles.imageSpace}
                           />
                         </Col>
                         <Col xl={4} md={6}>
                           <Image
+                            alt="card-img"
                             style={{ paddingTop: "0%" }}
                             src="/assets/images/Card03.svg"
                             className={styles.imageSpace}
@@ -253,6 +268,7 @@ const MxFutureProducts = ({ text }) => {
                         </Col>
                         <Col xl={5} md={6}>
                           <Image
+                            alt="card-img"
                             style={{ paddingTop: "0%" }}
                             src="/assets/images/Card04.svg"
                             className={styles.imageSpace}
