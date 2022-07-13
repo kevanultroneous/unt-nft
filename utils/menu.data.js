@@ -80,19 +80,19 @@ export const iconsMenu = [
     link: "/",
   },
   {
-    icon: "/assets/images/MX-future.svg",
+    icon: "/assets/images/Mx-future.svg",
     color: "#C3B091",
     name: "MxFuture",
     link: "/mxfuture",
   },
   {
-    icon: "/assets/images/Mx-Dex.svg",
+    icon: "/assets/images/MX-Dex.svg",
     color: "#0E88F5",
     name: "MxDex",
     link: "/",
   },
   {
-    icon: "/assets/images/Mx-Fi.svg",
+    icon: "/assets/images/MX-Fi.svg",
     color: "#9A9A9A",
     name: "MxFi",
     link: "/",
