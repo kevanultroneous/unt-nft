@@ -20,6 +20,13 @@ const NextProduct = ({ listofdata = [] }) => {
           }`}
         >
           <WaterText color={value.color} text={value.name} />
+          {/* <div className={styles.Outer}>
+            <div className={styles.Bg}>
+              <div className={styles.Inner}>
+                <h1>GRADIENT TEXT ON HOVER</h1>
+              </div>
+            </div>
+          </div> */}
         </Col>
       ))}
     </Row>

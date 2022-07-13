@@ -2,9 +2,8 @@
     overflow: hidden;
 }
 .Locationcontainer{
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    padding-left: 8.5rem;
+    
+    padding: 4rem 0 4rem 8.5rem;
 }
 .Location h4{
     font-size: 50px;
@@ -66,9 +65,7 @@
     .Location h4{
         font-size: 45px;
     }
-    .LocatedDetail{
-        flex-direction: column;
-    }
+  
     .Contactimg{
         width: 100%;
         height: auto;

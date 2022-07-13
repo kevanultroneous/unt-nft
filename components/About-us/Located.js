@@ -11,13 +11,13 @@ const Located = () => {
             <div className={styles.LocatedDetail}>
               <Col xl={6}>
                 <Row className={styles.Detailrow}>
-                  <Col xl={2} xs={2}>
+                  <Col xl={2} xs={2} md={2}>
                     <Image
                       src={"/assets/images/Location.svg"}
                       alt="located-img"
                     />
                   </Col>
-                  <Col xl={10} xs={10}>
+                  <Col xl={10} xs={10} md={10}>
                     <h5>Address </h5>
                     <p>
                       00 Quentin Roosevelt Blvd, Suite 503, Garden City, New
@@ -26,22 +26,22 @@ const Located = () => {
                   </Col>
                 </Row>
                 <Row className={styles.Detailrow}>
-                  <Col xl={2} xs={2}>
+                  <Col xl={2} xs={2} md={2}>
                     <Image src={"/assets/images/Email.svg"} alt="located-img" />
                   </Col>
-                  <Col xl={10} xs={10}>
+                  <Col xl={10} xs={10} md={10}>
                     <h5>Email Id</h5>
                     <p>sales@mobifinx.com </p>
                   </Col>
                 </Row>
                 <Row className={styles.Detailrow}>
-                  <Col xs={2} xl={2}>
+                  <Col xs={2} xl={2} md={2}>
                     <Image
                       src={"/assets/images/Mobileicona.svg"}
                       alt="located-img"
                     />
                   </Col>
-                  <Col xs={10} xl={10}>
+                  <Col xs={10} xl={10} md={10}>
                     <h5>Mo No.</h5>
                     <p>+61488843353 </p>
                   </Col>

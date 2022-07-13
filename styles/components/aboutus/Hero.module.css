@@ -1,7 +1,6 @@
 .HeroMainContainer {
-    padding-top: 2.5rem;
-    padding-bottom: 4rem;
-    padding-left: 8.5rem;
+   
+    padding: 2.5rem 0 4rem 8.5rem;
 }
 .Herorow{
     /* padding-left: 8.5rem; */
@@ -104,9 +103,8 @@
 
   @media (min-width:320px) and (max-width: 767px) {
     .HeroMainContainer {
-      padding-top: 4rem;
-      padding-bottom: 2rem;
-      padding-left: 1rem;
+   
+      padding: 4rem 0 2rem 1rem;
   }
   .Herorow{
     justify-content: left;

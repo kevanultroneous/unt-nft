@@ -23,13 +23,16 @@ const Detail = () => {
         </Col>
       </Row>
       <Row className={styles.Advantages}>
-        {AboutDetail.map((v, i) => (
-          <Col xl={4} xs={12} md={12} className={styles.Advantagecol} key={i}>
-            <Image src={v.image} className={styles.Icon} alt="About icon" />
-            <h4 className={styles.Heading}>{v.title}</h4>
-            <p className={styles.Description}>{v.text}</p>
-          </Col>
-        ))}
+        <Col xl={2}></Col>
+        <Col xl={10} className={styles.Detailcol}>
+          {AboutDetail.map((v, i) => (
+            <Col xl={4} xs={12} md={12} className={styles.Advantagecol} key={i}>
+              <Image src={v.image} className={styles.Icon} alt="About icon" />
+              <h4 className={styles.Heading}>{v.title}</h4>
+              <p className={styles.Description}>{v.text}</p>
+            </Col>
+          ))}
+        </Col>
       </Row>
       <Row>
         <Col xl={12}>

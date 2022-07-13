@@ -12,9 +12,8 @@
     padding-right: 10.5rem;
 }
 .SliderRow{
-    /* padding-left: 8.5rem; */
-    padding-right: 3rem;
-    padding-top: 6rem;
+
+    padding: 6rem 3rem 0 0;
 }
 .SliderimgCol{
     display: flex;
@@ -80,4 +79,33 @@
         padding-bottom: 0;
     }
     
+}
+@media (min-width:768px) and (max-width: 1080px){
+    .FeedbackContainer{
+        padding-left: 1rem;
+    }
+    .Feedback h4{
+        padding-right: 0;
+        text-align: left;
+        font-size: 45px;
+    }
+    .SliderimgCol{
+        justify-content: left;
+    }
+    .ClientName{
+        padding-top: 1rem;
+    }
+    .Arrowcol{
+        justify-content: center;
+    position: relative;
+    left: 22rem;
+    bottom: 25rem;
+    width: 66%;
+    }
+    .SliderRow{
+        padding-right: 2rem;
+    }
+    .FeedbackContainer{
+        padding-bottom: 0;
+    }
 }

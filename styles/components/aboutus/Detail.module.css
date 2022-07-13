@@ -1,7 +1,6 @@
 .AboutdetailsContainer{
-    padding-top: 0rem;
-    padding-bottom: 4rem;
-    padding-left: 8.5rem;
+ 
+    padding: 0 0 4rem 8.5rem;
 }
 .Subtitle p{
     font-size: 16px;
@@ -12,7 +11,7 @@
     margin-top: -4rem;
     padding-bottom: 9rem;
     letter-spacing: 2px;
-    margin-top: -4rem;
+   
 }
 .Subtitle{
     /* padding-left: 6.5rem; */
@@ -20,14 +19,11 @@
     justify-content: end;
 }
 .Advantages{
-    /* padding-left: 8.5rem; */
     justify-content: center;
     padding-top: 4rem;
-    padding-left: 3rem;
 }
 .Advantagecol{
-    width: 25%;
-    padding-right: 2rem;
+    padding-right: 4rem;
 }
 .Detail{
     font-size: 18px;
@@ -59,6 +55,9 @@
  width: 100%;
  height: auto;
 }
+.Detailcol{
+    display: flex;
+}
 @media (min-width:320px) and (max-width: 767px){
     .Subtitle p{
         display: none;
@@ -69,6 +68,7 @@
     .Detail{
         padding-left: 0;
         padding-right: 1rem;
+       
     }
     .Advantagecol{
         width: 100%;
@@ -87,6 +87,10 @@
     .AboutdetailsContainer{
         padding-bottom: 2rem;
     }
+    .Detailcol{
+        flex-direction: column;
+    }
+
 }
 
 @media (min-width:768px) and (max-width: 1080px){
@@ -111,5 +115,8 @@
     }
     .Description{
         font-size: 20px;
+    }
+    .Detailcol{
+        flex-direction: column;
     }
 }
