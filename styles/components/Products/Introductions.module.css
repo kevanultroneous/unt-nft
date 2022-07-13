@@ -80,6 +80,7 @@
 }
 .SliderActionButtons {
   padding-left: 2.5rem;
+  cursor: pointer;
 }
 .leftButton {
   height: 3rem;

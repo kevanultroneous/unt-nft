@@ -56,3 +56,24 @@
         padding-bottom: 1rem;
     }
 }
+@media (min-width:768px) and (max-width: 1080px){
+    .Locationcontainer{
+        padding-left: 1rem;
+    }
+    .Locatecol{
+        width: 100%;
+    }
+    .Location h4{
+        font-size: 45px;
+    }
+    .LocatedDetail{
+        flex-direction: column;
+    }
+    .Contactimg{
+        width: 100%;
+        height: auto;
+    }
+    .Detailrow{
+        padding-bottom: 1rem;
+    }
+}

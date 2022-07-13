@@ -144,3 +144,16 @@
     width: 100%;
   }
   }
+
+  @media (min-width:768px) and (max-width: 1080px){
+    .HeroMainContainer {
+    
+      padding: 4rem 0 2rem 1rem;
+  }
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .Herocol{
+    width: 100%;
+  }
+  } 

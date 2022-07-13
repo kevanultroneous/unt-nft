@@ -94,3 +94,31 @@
       padding: 0;
     }
 }
+
+@media (min-width:768px) and (max-width: 1080px){
+    .Rotatetext{
+        display: none;
+    }
+    .OurStoryContainer{
+        padding-left: 1rem;
+    }
+    .OurStory{
+        background: linear-gradient(180deg, #1A1C3C 61.52%, #A21D34 133.83%);
+      padding: 0;
+    }
+    .HowWeCame{
+        width: 100%;
+    }
+    .Strengthcol{
+        width: 100%;
+    }
+    .Strength{
+        display: flex;
+        justify-content: left;
+        align-items:  flex-start;
+        padding-bottom: 4rem;
+    }
+    .Strengthcol{
+        display: block;
+    }
+}

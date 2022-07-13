@@ -1,11 +1,14 @@
 import Menu from "@/components/Home/Menu";
 import MenuBar from "@/components/Common/MenuBar";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import MobileMenu from "./MobileMenu";
 
 const MenuPackage = () => {
   const [menubaropacity, setMenuBarOpacity] = useState("0");
   const [addClass, setAddClass] = useState(false);
+  useEffect(() => {
+    document.body.style.overflow = menubaropacity === "1" ? "hidden" : null;
+  });
   return (
     <>
       <MobileMenu />

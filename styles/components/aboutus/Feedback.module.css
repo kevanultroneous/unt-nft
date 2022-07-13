@@ -71,7 +71,7 @@
     position: relative;
     left: 16rem;
     bottom: 32rem;
-    width: 30%;
+    width: 28%;
     }
     .SliderRow{
         padding-right: 2rem;
@@ -79,4 +79,5 @@
     .FeedbackContainer{
         padding-bottom: 0;
     }
+    
 }

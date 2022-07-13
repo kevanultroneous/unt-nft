@@ -88,3 +88,28 @@
         padding-bottom: 2rem;
     }
 }
+
+@media (min-width:768px) and (max-width: 1080px){
+    .Subtitle p{
+        display: none;
+    }
+    .AboutdetailsContainer{
+        padding-left: 1rem
+    }
+    .Advantagecol{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .Icon{
+        min-width: 15%;
+    }
+    .Advantages{
+        padding-left: 1rem;
+    }
+    .Heading{
+        font-size: 25px;
+    }
+    .Description{
+        font-size: 20px;
+    }
+}

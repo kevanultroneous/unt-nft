@@ -82,6 +82,7 @@
   padding-right: 1rem;
   transition: all 1s ease;
   height: 3rem;
+  cursor: pointer;
 }
 .SoftwareDevelopmentExpertSliderBtnLeft:hover {
   transform: scale(0.9);
@@ -91,6 +92,7 @@
   padding-right: 1rem;
   transition: all 1s ease;
   height: 3rem;
+  cursor: pointer;
 }
 .SoftwareDevelopmentExpertSliderBtnRight:hover {
   transform: scale(0.9);

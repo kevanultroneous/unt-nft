@@ -8,10 +8,21 @@ const Introductions = () => {
   const settings = {
     infinite: true,
     speed: 2000,
-    slidesToShow: 3,
+    slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: "linear",
     responsive: [
+      // {
+      //   breakpoint: 1920,
+      //   settings: {
+      //     slidesToShow: 4,
+      //     slidesToScroll: 1,
+      //     initialSlide: 1,
+      //     centerMode: false,
+      //     autoplay: true,
+      //     cssEase: "linear",
+      //   },
+      // },
       {
         breakpoint: 1400,
         settings: {

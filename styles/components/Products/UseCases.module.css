@@ -179,6 +179,10 @@
   font-weight: 600;
   text-align: left;
   color: #fff;
+  position: sticky;
+  /* top: 4rem; */
+  padding-bottom: 4rem;
+  top: 0;
 }
 /*  */
 @media (min-width: 320px) and (max-width: 430px) {

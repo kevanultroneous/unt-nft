@@ -72,3 +72,12 @@ padding-left: 1rem;
     padding-right: 1rem;
 }
 }
+
+@media (min-width:768px) and (max-width: 1080px){
+    .Rotatetext{
+        display: none;
+    }
+.VisionContainer{
+padding-left: 1rem;
+}
+}

@@ -55,3 +55,24 @@
         padding-top: 0;
     }
 }
+@media (min-width:768px) and (max-width: 1080px){
+    .Alliancecontainer{
+        padding:0 1rem;
+    }
+    .Rotatetext{
+        display: none;
+    }
+    .ProudtoWork{
+        width: 100%;
+    }
+    .Partnerrow{
+        padding: 0 ;
+    }
+    .AllianceImg{
+        width: 100%;
+        height: auto;
+    }
+    .ProudtoWork{
+        padding-top: 0;
+    }
+}

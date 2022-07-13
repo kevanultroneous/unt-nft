@@ -6,11 +6,14 @@
   transform: rotate(0deg);
   display: block;
   text-align: center;
+  cursor: pointer;
 }
 .ArrowBottom {
   font-size: 4rem;
   text-align: center;
   transform: rotate(0deg);
+  cursor: pointer;
+
 }
 .Current {
   font-weight: 300;
