@@ -8,7 +8,7 @@ const ActionButtonV2 = ({ text, handleAction = null, outerstyle, href }) => {
     >
       <div className={styles.button}>
         <Link href={`${href ? href : null}`}>
-          <div>{text}</div>
+          <div className={styles.Textdiv}>{text}</div>
         </Link>
       </div>
     </div>

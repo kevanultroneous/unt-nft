@@ -1,7 +1,7 @@
 import Menu from "@/components/Home/Menu";
 import MenuBar from "@/components/Common/MenuBar";
 import { useEffect, useState } from "react";
-import MobileMenu from "./MobileMenu";
+import MobileMenu, { TabletMenu } from "./MobileMenu";
 
 const MenuPackage = () => {
   const [menubaropacity, setMenuBarOpacity] = useState("0");
@@ -12,6 +12,7 @@ const MenuPackage = () => {
   return (
     <>
       <MobileMenu />
+      <TabletMenu />
       <MenuBar
         display={menubaropacity}
         visibility={menubaropacity === "1" ? "visible" : null}

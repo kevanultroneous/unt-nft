@@ -155,6 +155,12 @@
     padding-bottom: 4rem;
     transform: rotate(0deg);
   }
+  .ContactusIcon {
+    margin-left: 0;
+  }
+  .Details{
+    width: 100%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

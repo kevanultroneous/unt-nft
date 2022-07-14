@@ -37,6 +37,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .AchievementsContainer {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
   .AchievementsHead{
     text-align: left;
@@ -52,6 +53,7 @@
 @media (min-width: 768px) and (max-width: 1080px) {
   .AchievementsContainer {
     padding-left: 1rem;
+    padding-right: 1rem;
   }
   .AchievementsHead{
     text-align: left;

@@ -22,17 +22,17 @@ const FeedbackSlider = () => {
           </Col>
         </Row>
         <Row className={styles.SliderRow}>
-          <Col xl={10}>
+          <Col xl={10} md={10}>
             <Slider {...settings} arrows={false} ref={sliderRef}>
               <div>
                 <Row className={styles.SliderMain}>
-                  <Col xl={4} className={styles.SliderimgCol}>
+                  <Col xl={4} md={4} className={styles.SliderimgCol}>
                     <Image
                       src={"/assets/images/Sliderimg.svg"}
                       alt="slider-img"
                     />
                   </Col>
-                  <Col xl={8}>
+                  <Col xl={8} md={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>
                     <span className={styles.CompanyName}>
                       Designation/Company Name
@@ -50,13 +50,13 @@ const FeedbackSlider = () => {
               </div>
               <div>
                 <Row className={styles.SliderMain}>
-                  <Col xl={4} className={styles.SliderimgCol}>
+                  <Col xl={4} md={4} className={styles.SliderimgCol}>
                     <Image
                       src={"/assets/images/Sliderimg.svg"}
                       alt="slider-img"
                     />
                   </Col>
-                  <Col xl={8}>
+                  <Col xl={8} md={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>
                     <span className={styles.CompanyName}>
                       Designation/Company Name
@@ -74,13 +74,13 @@ const FeedbackSlider = () => {
               </div>
               <div>
                 <Row className={styles.SliderMain}>
-                  <Col xl={4} className={styles.SliderimgCol}>
+                  <Col xl={4} md={4} className={styles.SliderimgCol}>
                     <Image
                       src={"/assets/images/Sliderimg.svg"}
                       alt="slider-img"
                     />
                   </Col>
-                  <Col xl={8}>
+                  <Col xl={8} md={8}>
                     <h5 className={styles.ClientName}>CLIENT’S NAME</h5>
                     <span className={styles.CompanyName}>
                       Designation/Company Name
@@ -98,7 +98,7 @@ const FeedbackSlider = () => {
               </div>
             </Slider>
           </Col>
-          <Col xl={2} className={styles.Arrowcol}>
+          <Col xl={2} md={2} className={styles.Arrowcol}>
             <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
               <Image
                 alt={"prev"}

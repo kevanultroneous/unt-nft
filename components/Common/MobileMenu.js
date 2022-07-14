@@ -1,13 +1,15 @@
 import styles from "@/styles/components/MobileMenu.module.css";
 import Link from "next/link";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { Col, Image, Offcanvas, Row } from "react-bootstrap";
 import { iconsMenu, menus } from "utils/menu.data";
 import WaterText from "./WaterText";
 const MobileMenu = () => {
   const [show, setShow] = useState(false);
+
   const [menuo, setMenuo] = useState(0);
   const [addClass, setAddClass] = useState(false);
+
   return (
     <>
       <div
@@ -124,6 +126,70 @@ const MobileMenu = () => {
               </Row>
             )}
           </div>
+        </Offcanvas.Body>
+      </Offcanvas>
+    </>
+  );
+};
+export const TabletMenu = () => {
+  const [showTAB, setShowTAB] = useState(false);
+  const [addClass, setAddClass] = useState(false);
+
+  return (
+    <>
+      <div
+        className={styles.TabletMenu}
+        data-aos="fade-down"
+        data-aos-duration="1000"
+        data-aos-easing="ease-in-sine"
+      >
+        <div className={styles.TabletMenuLogo}>
+          <Link href={"/"}>
+            <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
+          </Link>
+        </div>
+        <div className={styles.TabletController}>
+          <div
+            className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
+            onClick={() => {
+              setAddClass(!addClass);
+              setShowTAB(!showTAB);
+            }}
+            id="hamburger-12"
+          >
+            <span className={`${styles.line} lineHam`}></span>
+            <span className={`${styles.line} lineHam`}></span>
+            <span className={`${styles.line} lineHam`}></span>
+          </div>
+        </div>
+      </div>
+      <Offcanvas
+        show={showTAB}
+        onHide={() => setShowTAB(false)}
+        placement="start"
+      >
+        <Offcanvas.Body>
+          <Row>
+            <Col md={6}></Col>
+            <Col md={6}>
+              <Row>
+                {iconsMenu.map((value, index) => (
+                  <Col md={6} key={index}>
+                    <Link href={value.link} key={index}>
+                      <div className={styles.TabIconCard}>
+                        <Image
+                          src={value.icon}
+                          alt={value.icon}
+                          className={styles.IconImg}
+                        />
+                        <p className={styles.IconName}>{value.name}</p>
+                      </div>
+                    </Link>
+                  </Col>
+                ))}
+              </Row>
+            </Col>
+          </Row>
         </Offcanvas.Body>
       </Offcanvas>
     </>

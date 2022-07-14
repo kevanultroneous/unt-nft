@@ -88,6 +88,8 @@
 }
 .BtnSpan {
   margin-left: 0.5rem;
+  position: relative;
+    bottom: 2.5px;
 }
 .DiscoverMobifinixRowsUniq {
 }
@@ -156,14 +158,21 @@
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .DiscoverItemsContainer {
-    padding-left: 8.5em;
+    padding-left: 0;
   }
   .DiscoverMobifinixSubContainer {
     padding-left: 6.5rem;
     padding-right: 4rem;
   }
   .DiscoverItemParagraph {
-    margin-bottom: 3rem;
+    margin-bottom: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .AnimImage {
+    width: 18rem;
+    margin-left: 0rem;
+    height: auto;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {

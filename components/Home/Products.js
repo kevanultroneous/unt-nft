@@ -50,10 +50,10 @@ const Products = ({ text }) => {
                   <ActionButtonV3
                     href={"/"}
                     text={
-                      <>
+                      <div className={styles.Explortxt}>
                         <span className={styles.ExpText}>Explore Product</span>
                         <HiOutlineExternalLink />
-                      </>
+                      </div>
                     }
                     backc={ProductsList[index].btnc}
                     borderc={ProductsList[index].border}

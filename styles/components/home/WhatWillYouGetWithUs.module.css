@@ -137,11 +137,28 @@
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .WhatWillYouGetWithUs {
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
   .WhatWillYouGetWithUs h2 {
     font-size: 39px;
   }
+  .SmallImage img
+{
+  height: auto;
+  width: 100%;
+  border-radius: 10px 0 0 10px;
+}
+.BigImage img {
+  width: 150%;
+  height: auto;
+}
+.SmallImage {
+  width: 16rem;
+    position: relative;
+    bottom: -5rem;
+    left: 3rem;
+    height: 12rem;
+}
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

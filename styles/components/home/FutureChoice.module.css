@@ -263,9 +263,16 @@
 @media (min-width: 768px) and (max-width: 1080px) {
   .MainHungry {
     margin-top: 4rem;
+    margin-left: 0;
   }
   .CardTitle {
     font-size: 45px;
+  }
+  .FutureChoiceContainer {
+    background: #ffffff;
+    padding: 4rem 0;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

@@ -204,7 +204,7 @@
   .FooterIconHelper {
     padding-right: 0rem;
     width: 100%;
-    justify-content: flex-start;
+    justify-content: space-between;
   }
   .FooterIconCol {
     display: flex;
@@ -224,11 +224,14 @@
     padding-top: 3rem;
   }
   .FooterContainer {
-    padding-left: 4rem;
+    padding-left: 1rem;
   }
   .FooterIconCol {
     padding-top: 3rem;
     justify-content: start;
+  }
+  .MailContainerSpace {
+    padding-right: 1rem;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

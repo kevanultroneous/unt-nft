@@ -28,14 +28,18 @@ const OurStory = () => {
               without
             </p>
           </Col>
-          <Col xl={4} xs={12} className={styles.Strengthcol}>
+          <Col xl={4} xs={4} className={styles.Strengthcol}>
             {OurStoryData.map((v, i) => {
               return (
                 <div className={styles.Strength} key={i}>
-                  <Col xl={6} className={styles.Employeeimg}>
-                    <Image src={v.image} alt={v.image} />
+                  <Col xl={4} className={styles.Employeeimg}>
+                    <Image
+                      src={v.image}
+                      alt={v.image}
+                      className={styles.StrengthImg}
+                    />
                   </Col>
-                  <Col xl={6}>
+                  <Col xl={4}>
                     <h5>{v.title}</h5>
                     <span>{v.name}</span>
                   </Col>

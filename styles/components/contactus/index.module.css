@@ -131,6 +131,9 @@
   .MiniLine {
     width: 25px;
   }
+  .SubjectInput {
+    width: 20rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .ContactUsMainContainer {

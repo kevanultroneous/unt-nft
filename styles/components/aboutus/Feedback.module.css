@@ -83,13 +83,14 @@
 @media (min-width:768px) and (max-width: 1080px){
     .FeedbackContainer{
         padding-left: 1rem;
+        padding-bottom: 4rem;
     }
     .Feedback h4{
         padding-right: 0;
         text-align: left;
         font-size: 45px;
     }
-    .SliderimgCol{
+    /* .SliderimgCol{
         justify-content: left;
     }
     .ClientName{
@@ -104,8 +105,16 @@
     }
     .SliderRow{
         padding-right: 2rem;
+    } */
+   
+    .SliderimgCol{
+        display: flex;
+        justify-content: center;
+        padding-bottom: 1rem;
+        padding-right: 1rem;
     }
-    .FeedbackContainer{
-        padding-bottom: 0;
+    .SliderRow{
+
+        padding: 3rem 0rem 0 0;
     }
 }

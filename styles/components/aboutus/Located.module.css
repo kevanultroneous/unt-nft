@@ -24,7 +24,7 @@
 }
 .Detailrow{
     padding-left: 0rem;
-    
+    padding-right: 6rem;
 }
 .LocatedDetail{
     display: flex;
@@ -53,6 +53,7 @@
     }
     .Detailrow{
         padding-bottom: 1rem;
+        padding-right: 1rem;
     }
 }
 @media (min-width:768px) and (max-width: 1080px){

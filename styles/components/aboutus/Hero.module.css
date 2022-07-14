@@ -154,4 +154,10 @@
   .Herocol{
     width: 100%;
   }
+  .SoftwareDevelopmentExpertsRow {
+    padding-top: 3rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol{
+    padding-right: 1rem;
+  }
   } 

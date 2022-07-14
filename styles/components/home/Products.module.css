@@ -39,6 +39,7 @@
 .SectionCards .SectionContent li {
   z-index: 1;
   background-color: #1a1c3c;
+  font-size: 16px;
 }
 .SectionCards .SectionContent li .card {
   width: 100%;
@@ -232,6 +233,11 @@
 .ExpText {
   padding-right: 5px;
 }
+.Explortxt{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .OurProductsHeading {
     font-weight: 600;
@@ -292,7 +298,8 @@
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .OurProductsHeading {
-    padding-left: 4rem;
+    padding-left: 1rem;
+    top: 85px;
   }
   .HrBorder {
     width: 90% !important;
