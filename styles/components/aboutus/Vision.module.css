@@ -75,7 +75,12 @@ padding-left: 1rem;
 
 @media (min-width:768px) and (max-width: 1080px){
     .Rotatetext{
-        display: none;
+        font-size: 18px;
+        color: rgba(18, 18, 18, 0.6);
+        transform: rotate(360deg);
+        margin-top: 0rem;
+        padding-bottom: 0rem;
+        letter-spacing: 2px;
     }
 .VisionContainer{
 padding-left: 1rem;

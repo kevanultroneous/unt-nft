@@ -73,7 +73,11 @@ const Solution = () => {
         <ActionButtonV2
           text={
             <>
-              Try Free Demo <HiOutlineExternalLink />
+              <span className={styles.Btntext}>Try Free Demo </span>
+              <span className={styles.Icon}>
+                {" "}
+                <HiOutlineExternalLink />
+              </span>
             </>
           }
         />

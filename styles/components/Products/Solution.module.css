@@ -67,6 +67,13 @@
   .divider {
     margin-left: 0.5rem;
   }
+  .Btntext{
+    padding-right: 0.5rem;
+    font-size: 20px;
+  }
+  .Icon{
+    font-size: 20px;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }

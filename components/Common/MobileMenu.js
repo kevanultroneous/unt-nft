@@ -97,11 +97,13 @@ const MobileMenu = () => {
                     </Link>
                     {v.menus.length > 0 ? (
                       <>
-                        {v.menus.map((v, i) => (
-                          <Link href={v.link} key={i}>
-                            <p className={styles.SubMenu}>{v.name}</p>
-                          </Link>
-                        ))}
+                        {v.menus.map((v, i) =>
+                          v.description ? null : (
+                            <Link href={v.link} key={i}>
+                              <p className={styles.SubMenu}>{v.name}</p>
+                            </Link>
+                          )
+                        )}
                       </>
                     ) : null}
                   </Col>
@@ -170,9 +172,48 @@ export const TabletMenu = () => {
       >
         <Offcanvas.Body>
           <Row>
-            <Col md={6}></Col>
+            <Col md={6} className={styles.MobifinxTabmenu}>
+              <Row>
+                <Col md={12}>
+                  <div className={styles.Tabs} style={{ color: "#fff" }}>
+                    <hr
+                      className={styles.Tabname}
+                      style={{ border: "0.1px solid rgba(0, 0, 0, 0.4)" }}
+                    />
+                    MobifinX Menu
+                  </div>
+                </Col>
+                {menus.map((v, i) => (
+                  <Col xl={12} key={i}>
+                    <Link href={v.mainlink}>
+                      <p className={styles.LinkName}>{v.name}</p>
+                    </Link>
+                    {v.menus.length > 0 ? (
+                      <>
+                        {v.menus.map((v, i) =>
+                          v.description ? null : (
+                            <Link href={v.link} key={i}>
+                              <p className={styles.SubMenu}>{v.name}</p>
+                            </Link>
+                          )
+                        )}
+                      </>
+                    ) : null}
+                  </Col>
+                ))}
+              </Row>
+            </Col>
             <Col md={6}>
               <Row>
+                <Col md={12} className={styles.Explorproduct}>
+                  <div className={styles.Tabs} style={{ color: "#000" }}>
+                    <hr
+                      className={styles.Tabname}
+                      style={{ border: "0.1px solid #000" }}
+                    />
+                    Explore Product
+                  </div>
+                </Col>
                 {iconsMenu.map((value, index) => (
                   <Col md={6} key={index}>
                     <Link href={value.link} key={index}>

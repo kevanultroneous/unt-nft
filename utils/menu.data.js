@@ -2,7 +2,38 @@ export const menus = [
   {
     name: "Home",
     mainlink: "/",
-    menus: [],
+    menus: [
+      {
+        name: "Introduction",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        name: "Our Product",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content.",
+      },
+      {
+        name: "Core Benefits",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content.",
+      },
+      {
+        name: "Case Studies",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content.",
+      },
+      {
+        name: "Process",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content.",
+      },
+    ],
   },
   {
     name: "About us",
@@ -69,7 +100,20 @@ export const menus = [
   {
     name: "Contact us",
     mainlink: "/contact-us",
-    menus: [],
+    menus: [
+      {
+        name: "Introduction",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+      },
+      {
+        name: "Our Product",
+        link: "/",
+        description:
+          "It is a long established fact that a reader will be distracted by the readable content.",
+      },
+    ],
   },
 ];
 export const iconsMenu = [

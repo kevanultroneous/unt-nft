@@ -68,10 +68,22 @@
     }
   
     .Contactimg{
-        width: 100%;
+        width: 140%;
         height: auto;
     }
     .Detailrow{
         padding-bottom: 1rem;
+        padding-right: 1rem;
+    }
+    .Location h5{
+        margin: 0;
+        font-size: 20px;
+    }
+    .Location p{
+        font-size: 16px;
+        margin: 0;
+    }
+    .LocatedDetail{
+        padding-top: 3rem;
     }
 }

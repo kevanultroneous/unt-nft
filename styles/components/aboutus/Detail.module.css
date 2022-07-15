@@ -96,10 +96,16 @@
 
 @media (min-width:768px) and (max-width: 1080px){
     .Subtitle p{
-        display: none;
+        font-size: 18px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(360deg);
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    letter-spacing: 2px;
     }
     .AboutdetailsContainer{
-        padding-left: 1rem
+        padding-left: 1rem;
+        padding-bottom: 2rem;
     }
     .Advantagecol{
         width: 100%;
@@ -107,7 +113,7 @@
         padding-right: 1rem;
     }
     .Icon{
-        min-width: 15%;
+        min-width: 12%;
     }
     .Advantages{
         padding-left: 1rem;

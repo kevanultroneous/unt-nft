@@ -9,7 +9,7 @@ const OurStory = () => {
           <Col xl={2}>
             <p className={styles.Rotatetext}>OUR STORY</p>
           </Col>
-          <Col xl={8} xs={12} className={styles.HowWeCame}>
+          <Col xl={8} md={8} xs={12} className={styles.HowWeCame}>
             <h4>How we came this long...</h4>
             <p>
               MobifinX began as Espay Exchange in early 2017 and developed a
@@ -28,7 +28,7 @@ const OurStory = () => {
               without
             </p>
           </Col>
-          <Col xl={4} xs={4} className={styles.Strengthcol}>
+          <Col xl={4} md={4} xs={4} className={styles.Strengthcol}>
             {OurStoryData.map((v, i) => {
               return (
                 <div className={styles.Strength} key={i}>

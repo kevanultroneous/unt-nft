@@ -103,7 +103,12 @@
 
 @media (min-width:768px) and (max-width: 1080px){
     .Rotatetext{
-        display: none;
+        font-size: 18px;
+        color:#fff;
+        transform: rotate(360deg);
+        margin-top: 0rem;
+        padding-bottom: 0rem;
+        letter-spacing: 2px;
     }
     .OurStoryContainer{
         padding-left: 1rem;
@@ -112,12 +117,12 @@
         background: linear-gradient(180deg, #1A1C3C 61.52%, #A21D34 133.83%);
       padding: 0;
     }
-    .HowWeCame{
+    /* .HowWeCame{
         width: 100%;
-    }
-    .Strengthcol{
+    } */
+    /* .Strengthcol{
         width: 100%;
-    }
+    } */
     .Strength{
         display: flex;
         justify-content: left;
@@ -126,6 +131,8 @@
     }
     .Strengthcol{
         display: block;
+        padding-left: 5rem;
+        padding-top: 10rem;
     }
     .HowWeCame p{
         padding-right: 1rem;

@@ -124,7 +124,8 @@
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .IntroMainContainer {
-    padding: 4rem 1rem;
+    padding: 0rem 1rem;
+    padding-bottom: 4rem;
   }
   .verticaltext {
     transform: rotate(0deg);

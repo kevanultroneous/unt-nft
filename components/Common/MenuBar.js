@@ -13,11 +13,11 @@ const MenuBar = ({ display = "none", visibility }) => {
     AOS.refresh();
     AOS.init();
     menus.map((v, i) => {
-      if (router.pathname === v.mainlink) {
-        setCurrentMenu(i);
-      } else {
-        return null;
-      }
+      // if (router.pathname === v.mainlink) {
+      //   setCurrentMenu(i);
+      // } else {
+      //   return null;
+      // }
     });
   }, []);
   const Heading = ({ name, border, color }) => {
@@ -54,13 +54,22 @@ const MenuBar = ({ display = "none", visibility }) => {
                 >
                   <Link href={value.mainlink}>
                     <a href={value.mainlink}>
-                      <li>{value.name}</li>
+                      <li
+                        style={
+                          router.pathname === value.mainlink
+                            ? { backgroundPosition: "bottom" }
+                            : null
+                        }
+                      >
+                        {value.name}
+                      </li>
                     </a>
                   </Link>
                   <div
                     className={styles.MenuLine}
                     style={
-                      index === currentMenu
+                      index === currentMenu ||
+                      router.pathname === value.mainlink
                         ? {
                             opacity: "1",
                             transition: "all 0.5s ease",
@@ -75,17 +84,31 @@ const MenuBar = ({ display = "none", visibility }) => {
         </div>
         <div className={styles.Menus}>
           <div className={styles.MenusContent}>
-            <ul>
+            <ul className={styles.UniqueUl}>
               {menus[currentMenu].menus.map((value, index) => (
                 <Link href={value.link} key={index}>
                   <div className={styles.SubMenuName} key={index}>
-                    <li>{value.name}</li>
+                    <li
+                      className={
+                        value.description ? styles.UniqueMenuName : null
+                      }
+                    >
+                      {value.name}
+                    </li>
+                    <li
+                      className={
+                        value.description ? styles.UniqueMenuDescription : null
+                      }
+                    >
+                      {value.description ? value.description : null}
+                    </li>
                   </div>
                 </Link>
               ))}
             </ul>
           </div>
         </div>
+        {/* icon menu */}
         <div className={styles.Other}>
           <Heading
             name={"Explore Products"}

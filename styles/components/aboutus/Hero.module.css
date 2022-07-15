@@ -160,4 +160,7 @@
   .SoftwareDevelopmentExpertsBtnCol{
     padding-right: 1rem;
   }
+  .HeroMainContainer h4, .Crypto{
+    font-size: 70px;
+  }
   } 

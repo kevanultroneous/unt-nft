@@ -149,6 +149,9 @@
   .SpaceRemover {
     margin: 0% !important;
   }
+  .SoftwareDevelopmentExpertsRow {
+    padding-top: 5rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

@@ -59,7 +59,12 @@
         padding:0 1rem;
     }
     .Rotatetext{
-        display: none;
+        font-size: 18px;
+        color: rgba(18, 18, 18, 0.6);
+        transform: rotate(360deg);
+        margin-top: 0rem;
+        padding-bottom: 0rem;
+        letter-spacing: 2px;
     }
     .ProudtoWork{
         width: 100%;

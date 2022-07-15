@@ -161,6 +161,12 @@
   .Details{
     width: 100%;
   }
+  .WhatyouWillget h2{
+    padding-bottom: 2rem;
+  }
+  .Headingcol h4 {
+    font-size: 20px;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
