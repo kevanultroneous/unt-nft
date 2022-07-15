@@ -64,10 +64,7 @@ const Footer = () => {
               {/* </a> */}
             </div>
             <div>
-              <Link
-                href="https://www.linkedin.com/company/mobifinx/"
-                target={"_blank"}
-              >
+              <Link href="https://www.linkedin.com/company/mobifinx/">
                 <a href="https://www.linkedin.com/company/mobifinx/">
                   <IoLogoLinkedin
                     style={{ fontSize: "35px" }}
@@ -75,7 +72,7 @@ const Footer = () => {
                   />
                 </a>
               </Link>
-              <Link href="https://www.facebook.com/Mobifinx/" target={"_blank"}>
+              <Link href="https://www.facebook.com/Mobifinx/">
                 <a href="https://www.facebook.com/Mobifinx/">
                   <IoLogoFacebook
                     style={{ fontSize: "35px", borderRadius: "1rem" }}
@@ -83,7 +80,7 @@ const Footer = () => {
                   />
                 </a>
               </Link>
-              <Link href="https://twitter.com/MobifinX" target={"_blank"}>
+              <Link href="https://twitter.com/MobifinX">
                 <a href="https://twitter.com/MobifinX">
                   <AiFillTwitterSquare
                     style={{ fontSize: "35px", borderRadius: "0.8rem" }}
