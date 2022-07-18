@@ -33,7 +33,7 @@
 .LocatedDetail{
     display: flex;
     align-items: center;
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 .LocatedImg{
     text-align: end;

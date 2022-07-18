@@ -15,7 +15,7 @@ const Partners = () => {
       {
         breakpoint: 1400,
         settings: {
-          slidesToShow: 4,
+          slidesToShow: 3,
           slidesToScroll: 1,
           initialSlide: 2,
           centerMode: false,
@@ -61,14 +61,14 @@ const Partners = () => {
                   alt={"prev"}
                   onClick={() => sliderRef.current.slickPrev()}
                   fluid
-                  src={"/assets/images/ArrowSlider.svg"}
+                  src={"/assets/images/Sliderprev.svg"}
                   className={styles.FeedbackPrevarrow}
                 />
                 <Image
                   alt="next"
                   onClick={() => sliderRef.current.slickNext()}
                   fluid
-                  src={"/assets/images/ArrowSlider.svg"}
+                  src={"/assets/images/Slidernext.svg"}
                   className={styles.FeedbackNextarrow}
                 />
               </div>

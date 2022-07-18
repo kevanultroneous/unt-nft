@@ -51,8 +51,7 @@
     align-items: center;
 }
 .FeedbackPrevarrow{
-    transform: rotate(180deg);
-    padding-left: 1rem;
+    padding-right: 1rem;
     width: 5rem;
     cursor: pointer;
 }
@@ -64,7 +63,7 @@
     padding-right: 0.5rem;
 }
 .SliderRow{
-    padding-top: 4rem;
+    padding-top: 3rem;
 }
 
 

@@ -49,7 +49,7 @@ const Hero = ({ clickHandler }) => {
           </Col>
         </Row>
         {/* Row for Image and scroll down section */}
-        <Row>
+        <Row className={styles.RotateRow}>
           {/* Col for scroll down */}
           <Col xl={2}>
             <div className={styles.Scrolldowncontainer} onClick={clickHandler}>

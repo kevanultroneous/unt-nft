@@ -101,18 +101,18 @@ const FeedbackSlider = () => {
           <Col xl={2} md={2} className={styles.Arrowcol}>
             <div className={styles.SoftwareDevelopmentExpertsBtnImages}>
               <Image
-                alt={"prev"}
-                onClick={() => sliderRef.current.slickPrev()}
-                fluid
-                src={"/assets/images/left-sb.svg"}
-                className={styles.FeedbackPrevarrow}
-              />
-              <Image
                 alt="next"
                 onClick={() => sliderRef.current.slickNext()}
                 fluid
                 src={"/assets/images/right-sb.svg"}
                 className={styles.FeedbackNextarrow}
+              />
+              <Image
+                alt={"prev"}
+                onClick={() => sliderRef.current.slickPrev()}
+                fluid
+                src={"/assets/images/left-sb.svg"}
+                className={styles.FeedbackPrevarrow}
               />
             </div>
           </Col>

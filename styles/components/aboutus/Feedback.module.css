@@ -43,7 +43,7 @@
 }
 .FeedbackPrevarrow{
     display: flex;
-    padding-bottom: 1rem;
+    padding-top: 1rem;
 }
 .FeedbackNextarrow,.FeedbackPrevarrow{
     cursor: pointer;

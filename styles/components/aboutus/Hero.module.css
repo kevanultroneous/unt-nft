@@ -17,6 +17,11 @@
     padding-left: 0rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    margin: 0;
+}
+.RotateRow{
+  justify-content: center;
+  align-items: flex-start;
 }
 .Crypto{
     font-size: 4.5rem;
@@ -33,7 +38,7 @@
 .Heroimg{
     margin: 0;
     width: 100%;
-    padding: 3rem 0;
+    padding: 2.5rem 0;
 }
 .SoftwareDevelopmentExpertsRow {
     margin: 0%;
