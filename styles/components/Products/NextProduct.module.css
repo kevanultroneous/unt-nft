@@ -1,14 +1,13 @@
-.NextProductContainer {
+/* .NextProductContainer {
   padding: 6rem 3rem 6rem 8.5rem !important;
   background-color: #fff;
 }
- .Outer {
+.Outer {
   padding-top: 120px;
   width: 850px;
   margin: auto;
   display: block;
-  /* set the font color here as a background color, in this case black */
-background-color: black;
+  background-color: black;
 }
 
 .Bg {
@@ -31,24 +30,9 @@ background-color: black;
     #8b539e 50%,
     #e53782 100%
   );
-  background: -o-linear-gradient(
-    90deg,
-    #3ebac6 0%,
-    #8b539e 50%,
-    #e53782 100%
-  );
-  background: -ms-linear-gradient(
-    90deg,
-    #3ebac6 0%,
-    #8b539e 50%,
-    #e53782 100%
-  );
-  background: linear-gradient(
-    90deg,
-    #3ebac6 0%,
-    #8b539e 50%,
-    #e53782 100%
-  );
+  background: -o-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
+  background: -ms-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
+  background: linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
   filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#3ebac6', endColorstr='#e53782', GradientType=1);
 }
 
@@ -75,7 +59,7 @@ background-color: black;
 .Outer:hover h1 {
   color: black;
   transition: all 2s ease;
-} 
+}
 @media (min-width: 320px) and (max-width: 450px) {
   .NextProductContainer {
     padding: 4rem 1rem !important;
@@ -99,32 +83,53 @@ background-color: black;
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
 @media (min-width: 1920px) and (max-height: 1080px) {
-}
+} */
 
 /* ====================================================================== */
 
-.Col {
-  background: white;
+.NextRow {
+  padding: 4rem;
+}
+
+.ColZero {
+  text-align: right;
+}
+
+.ColOne {
+  text-align: center;
+}
+
+.ColTwo {
 }
 
 .outer {
-  padding-top: 120px;
-  width: 850px;
-  margin: auto;
-  display: block;
-  /* set the font color here as a background color, in this case black
-  background-color: black; */
- 
+  display: inline-block;
 }
 
 .bg {
-  text-align: center;
-  width: 0%;
+  display: inline-block;
   transition: all 0.6s ease-out;
   background: #3ebac6;
-   background: -moz-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
-  background: -webkit-gradient(linear, 90deg top, right top, color-stop(0%, #3ebac6), color-stop(50%, #8b539e), color-stop(100%, #e53782));
-  background: -webkit-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    #3ebac6 0%,
+    #8b539e 50%,
+    #e53782 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    90deg top,
+    right top,
+    color-stop(0%, #3ebac6),
+    color-stop(50%, #8b539e),
+    color-stop(100%, #e53782)
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #3ebac6 0%,
+    #8b539e 50%,
+    #e53782 100%
+  );
   background: -o-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
   background: -ms-linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
   background: linear-gradient(90deg, #3ebac6 0%, #8b539e 50%, #e53782 100%);
@@ -136,7 +141,7 @@ background-color: black;
   background-color: white;
   mix-blend-mode: screen;
   padding: 5px;
-  width: 850px;
+  transition: all 2s ease;
 }
 
 .h1 {
@@ -145,13 +150,17 @@ background-color: black;
   letter-spacing: 5px;
   -webkit-text-stroke: 1px black;
   font-family: "Avenir LT Std", sans-serif;
+  font-weight: 800;
 }
 
 .outer:hover .bg {
   width: 100%;
 }
 
+.outer .h1 {
+  transition: all 1s ease;
+}
+
 .outer:hover h1 {
-  color: black; 
-  transition: all 2s ease;
+  color: black;
 }

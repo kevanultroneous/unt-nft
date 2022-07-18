@@ -96,6 +96,7 @@
   background-image: -webkit-linear-gradient(bottom, #000 50%, transparent 50%);
   background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
   background-image: linear-gradient(to top, #000 50%, transparent 50%);
+  cursor: pointer;
 }
 .VisionHover:hover {
   background-position: bottom;
