@@ -35,6 +35,7 @@ const NextProduct = ({ listofdata = [] }) => {
     <Row className={styles.NextRow}>
       {vals.map((el, ind) => (
         <Col
+          key={ind}
           xs={12}
           md={4}
           className={
@@ -45,9 +46,9 @@ const NextProduct = ({ listofdata = [] }) => {
               : styles.ColTwo
           }
         >
-          <div class={styles.outer}>
-            <div class={styles.bg}>
-              <div class={styles.inner}>
+          <div className={styles.outer}>
+            <div className={styles.bg}>
+              <div className={styles.inner}>
                 <h1 className={styles.h1}> {el} </h1>
               </div>
             </div>
