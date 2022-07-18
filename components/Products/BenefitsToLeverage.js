@@ -45,17 +45,12 @@ const BenefitsToLeverage = () => {
           <Row className={styles.ControllerRev}>
             <Col xl={3} md={5} className={styles.Controller}>
               <IoIosArrowUp
-                style={
-                  currentIndex === BenefitsMxFuture.length - 1
-                    ? { opacity: "0" }
-                    : null
-                }
                 // style={
-                //   currentIndex ===
-                //   BenefitsMxFuture.indexOf(BenefitsMxFuture - 1)
-                //     ? { display: "none" }
+                //   currentIndex === BenefitsMxFuture.length - 1
+                //     ? { opacity: "0" }
                 //     : null
                 // }
+
                 className={styles.ArrowTop}
                 onClick={() => {
                   setAnimTiming(true);
@@ -91,7 +86,7 @@ const BenefitsToLeverage = () => {
               />
 
               <IoIosArrowDown
-                style={currentIndex === 0 ? { opacity: "0" } : null}
+                // style={currentIndex === 0 ? { opacity: "0" } : null}
                 className={styles.ArrowBottom}
                 onClick={() => {
                   setAnimTiming(true);
