@@ -1,5 +1,8 @@
 import styles from "@/styles/components/aboutus/ManagementTeam.module.css";
 import { Col, Image, Row } from "react-bootstrap";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
 
 const ManagementTeam = () => {
   return (
@@ -13,6 +16,7 @@ const ManagementTeam = () => {
             <div>
               <h4>Partners</h4>
             </div>
+
             <div className={styles.Maindiv}>
               <Col xl={4} xs={12} className={styles.Imgcol}>
                 <Image

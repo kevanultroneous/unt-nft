@@ -45,6 +45,9 @@
     display: flex;
     padding-bottom: 1rem;
 }
+.FeedbackNextarrow,.FeedbackPrevarrow{
+    cursor: pointer;
+}
 .Arrowcol{
     display: flex;
     justify-content: center;

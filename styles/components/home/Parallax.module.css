@@ -34,7 +34,7 @@
 @media (min-width: 320px) and (max-width: 767px) {
   .Parallax {
     background-size: cover;
-    background-position: left;
+   
   }
   .Parallaxrow {
     padding-left: 1rem;

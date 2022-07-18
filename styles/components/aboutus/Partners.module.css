@@ -1,0 +1,118 @@
+.PartnersContainer{
+    padding: 4rem 0 4rem 8.5rem;
+  
+}
+.Rotatetext{
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    transform: rotate(270deg);
+  padding-bottom: 11rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  margin-top: -1rem;
+}
+.Maindiv{
+    display: flex;
+    justify-content: space-between;
+    padding-right: 1rem;
+    padding-top: 4rem;
+}
+.Imagecol{
+    padding-left: 0rem;
+}
+.Imagecol h4{
+    font-size: 50px;
+    font-weight: 600;
+}
+.Teamimg{
+    width: 100%;
+    height: auto;
+}
+.TeamName{
+    display: flex;
+    justify-content:space-between;
+    padding: 1rem 0;
+    padding-bottom: 0;
+}
+.TeamName h5{
+    font-size: 20px;
+    font-weight: 500;
+}
+.socialimg{
+    padding-right: 5px;
+    min-width: 1rem;
+    min-height: 1rem;
+}
+.Imgcol{
+    padding-right: 1rem;
+}
+.Socialmedia{
+    display: flex;
+}
+.SliderArrow{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.FeedbackPrevarrow{
+    transform: rotate(180deg);
+    padding-left: 1rem;
+    width: 5rem;
+    cursor: pointer;
+}
+.FeedbackNextarrow{
+  width: 4rem;
+  cursor: pointer;
+}
+.Arrows{
+    padding-right: 0.5rem;
+}
+
+
+
+
+@media (min-width:320px) and (max-width: 767px){
+    .Rotatetext{
+        display: none;
+    }
+    .PartnersContainer{
+    
+        padding: 1rem 0 1rem 1rem;
+    }
+    .Imgcol{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .Maindiv{
+        display: block;
+    }
+}
+@media (min-width:768px) and (max-width: 1080px){
+    .Rotatetext{
+        font-size: 18px;
+        font-weight: 400;
+        color: #000;
+        transform: rotate(360deg);
+        padding-bottom: 0rem;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        margin-top: 0rem;
+        
+    }
+    .PartnersContainer{
+    
+        padding: 1rem 0 1rem 1rem;
+    }
+    .Imgcol{
+        width: 100%;
+        padding-bottom: 2rem;
+    }
+    .Maindiv{
+        display: block;
+    }
+    .Teamimg{
+        width: 100%;
+        height: auto;
+    }
+}

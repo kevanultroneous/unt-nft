@@ -5,6 +5,7 @@ import Hero from "@/components/About-us/Hero";
 import Located from "@/components/About-us/Located";
 import ManagementTeam from "@/components/About-us/ManagementTeam";
 import OurStory from "@/components/About-us/OurStory";
+import Partners from "@/components/About-us/Partners";
 import Vision from "@/components/About-us/Vision";
 import Layout from "@/components/Common/Layout";
 import MenuPackage from "@/components/Common/MenuPackage";
@@ -26,9 +27,12 @@ const AboutUs = () => {
       <OurStory />
       <Alliance />
       <Achievements />
-      <ManagementTeam />
+      <Partners />
+      {/* <ManagementTeam /> */}
       <FeedbackSlider />
+
       <Located />
+
       <Footer />
     </Layout>
   );
