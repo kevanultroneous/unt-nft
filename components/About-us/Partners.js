@@ -11,6 +11,39 @@ const Partners = () => {
     speed: 500,
     slidesToShow: 3,
     slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 1400,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 1,
+          initialSlide: 2,
+          centerMode: false,
+          autoplay: true,
+          cssEase: "linear",
+        },
+      },
+      {
+        breakpoint: 885,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          //   initialSlide: 2,
+          //   autoplay: true,
+        },
+      },
+
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          // initialSlide: 1,
+          // autoplay: true,
+          // autoplaySpeed: 2000,
+        },
+      },
+    ],
   };
   const sliderRef = useRef();
   return (
