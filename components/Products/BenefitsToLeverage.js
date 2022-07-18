@@ -13,6 +13,7 @@ const BenefitsToLeverage = () => {
 
   const [currentIndex, setCurrentIndex] = useState(0);
   const [animopacity, setAnimOpacity] = useState(1);
+  const [animTiming, setAnimTiming] = useState(false);
   const nextItemHandle = () => {
     if (
       !(
@@ -44,23 +45,61 @@ const BenefitsToLeverage = () => {
           <Row className={styles.ControllerRev}>
             <Col xl={3} md={5} className={styles.Controller}>
               <IoIosArrowUp
+                style={
+                  currentIndex === BenefitsMxFuture.length - 1
+                    ? { opacity: "0" }
+                    : null
+                }
+                // style={
+                //   currentIndex ===
+                //   BenefitsMxFuture.indexOf(BenefitsMxFuture - 1)
+                //     ? { display: "none" }
+                //     : null
+                // }
                 className={styles.ArrowTop}
-                onClick={() => nextItemHandle()}
+                onClick={() => {
+                  setAnimTiming(true);
+                  nextItemHandle();
+                  setTimeout(() => {
+                    setAnimTiming(false);
+                  }, 1000);
+                }}
               />
               <IoIosArrowDown
                 className={styles.ArrowTopMob}
-                onClick={() => prevItemHandle()}
+                onClick={() => {
+                  setAnimTiming(true);
+                  prevItemHandle();
+                  setTimeout(() => {
+                    setAnimTiming(false);
+                  }, 1000);
+                }}
               />
               <h4 className={styles.Current}>
                 {BenefitsMxFuture[currentIndex].num}
               </h4>
+
               <IoIosArrowUp
                 className={styles.ArrowBottomMob}
-                onClick={() => nextItemHandle()}
+                onClick={() => {
+                  setAnimTiming(true);
+                  nextItemHandle();
+                  setTimeout(() => {
+                    setAnimTiming(false);
+                  }, 1000);
+                }}
               />
+
               <IoIosArrowDown
+                style={currentIndex === 0 ? { opacity: "0" } : null}
                 className={styles.ArrowBottom}
-                onClick={() => prevItemHandle()}
+                onClick={() => {
+                  setAnimTiming(true);
+                  prevItemHandle();
+                  setTimeout(() => {
+                    setAnimTiming(false);
+                  }, 1000);
+                }}
               />
             </Col>
             <Col
@@ -71,7 +110,9 @@ const BenefitsToLeverage = () => {
               data-aos-duration="1500"
             >
               <div
-                className={`${styles.ItemCard}`}
+                className={`${styles.ItemCard} ${
+                  animTiming ? `fade-in-anim` : null
+                }`}
                 style={{ opacity: animopacity }}
               >
                 <Image

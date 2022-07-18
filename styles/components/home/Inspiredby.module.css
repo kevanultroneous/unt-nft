@@ -140,7 +140,7 @@
   transition: all 1s ease;
 }
 .InspiredCardImg2:hover {
-  transform: scale(0.6);
+  transform: scale(1.1);
   transition: all 1s ease;
 }
 .InspiredCardImg {
@@ -207,8 +207,8 @@
     align-items: start;
   }
   .InspiredContainer {
-    padding-left: 4rem;
-    padding-right: 4rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .InspiredCardView,
   .InspiredCardDes {
@@ -219,6 +219,31 @@
   }
   .InspiredCardView2 {
     opacity: 1;
+  }
+  .InspiredCardRow {
+    justify-content: space-between;
+  }
+  .InspiredCardImage{
+    width: 310px;
+    height: 460px;
+  }
+  .InspiredDis{
+    width: 310px;
+  }
+  .InspiredCardcontainer:hover .InspiredCardOverlay{
+    width: 310px;
+    height: 460px;
+  }
+  .InspiredCardOverlay{
+    width: 310px;
+    height: 460px;
+  }
+  .InspiredCardText {
+    
+    padding-top: 1rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

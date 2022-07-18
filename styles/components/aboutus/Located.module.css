@@ -8,7 +8,8 @@
 .Location h4{
     font-size: 50px;
     font-weight: 600;
-    padding-left: 0rem;
+    /* padding-left: 18rem; */
+    text-align: left;
 }
 .Address{
     padding-left: 2rem;
@@ -26,14 +27,20 @@
     padding-left: 0rem;
     padding-right: 6rem;
 }
+/* .LocatedDetailCol{
+    padding-left: 18rem;
+} */
 .LocatedDetail{
     display: flex;
     align-items: center;
     padding-top: 4rem;
 }
-.Locatecol{
-    width: 70%;
+.LocatedImg{
+    text-align: end;
 }
+/* .Locatecol{
+    width: 70%;
+} */
 @media (min-width:320px) and (max-width: 767px){
     .Locationcontainer{
         padding-left: 1rem;

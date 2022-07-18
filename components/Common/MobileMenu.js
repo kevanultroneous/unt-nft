@@ -203,7 +203,7 @@ export const TabletMenu = () => {
                 ))}
               </Row>
             </Col>
-            <Col md={6}>
+            <Col md={6} className={styles.TabeMenucol}>
               <Row>
                 <Col md={12} className={styles.Explorproduct}>
                   <div className={styles.Tabs} style={{ color: "#000" }}>
@@ -215,7 +215,7 @@ export const TabletMenu = () => {
                   </div>
                 </Col>
                 {iconsMenu.map((value, index) => (
-                  <Col md={6} key={index}>
+                  <Col md={6} key={index} className={styles.ProductIcon}>
                     <Link href={value.link} key={index}>
                       <div className={styles.TabIconCard}>
                         <Image

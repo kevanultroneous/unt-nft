@@ -12,13 +12,6 @@ const MenuBar = ({ display = "none", visibility }) => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
-    menus.map((v, i) => {
-      // if (router.pathname === v.mainlink) {
-      //   setCurrentMenu(i);
-      // } else {
-      //   return null;
-      // }
-    });
   }, []);
   const Heading = ({ name, border, color }) => {
     return (
@@ -68,7 +61,6 @@ const MenuBar = ({ display = "none", visibility }) => {
                   <div
                     className={styles.MenuLine}
                     style={
-                      index === currentMenu ||
                       router.pathname === value.mainlink
                         ? {
                             opacity: "1",

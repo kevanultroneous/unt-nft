@@ -154,6 +154,7 @@ padding-left: 0.5rem;
 .IconImg {
   max-height: 100px;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .MobileMenu {
     display: flex;
@@ -215,6 +216,21 @@ padding-left: 0.5rem;
   .TabIconCard{
     display: flex;
     flex-direction: column;
+  }
+  .LinkName{
+    padding-left: 1rem;
+  }
+  .SubMenu{
+    padding-left: 1rem;
+  }
+  .Tabs{
+    padding-left: 1rem;
+  }
+  .TabeMenucol{
+    padding-left: 2rem;
+  }
+  .ProductIcon{
+    padding-right: 4rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {

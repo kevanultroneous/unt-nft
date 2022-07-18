@@ -46,6 +46,7 @@
   font-weight: 600;
   padding: 0;
   margin: 0;
+  cursor: pointer;
 }
 .Description {
   font-size: 18px;
@@ -66,6 +67,7 @@
 
 .Active {
   color: #000;
+  cursor: pointer;
 }
 
 
@@ -100,6 +102,7 @@
 }
 .VisionHover:hover {
   background-position: bottom;
+  cursor: pointer;
 }
 
 

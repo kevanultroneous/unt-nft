@@ -9,7 +9,7 @@ const Located = () => {
           <Col xl={10} className={styles.Locatecol}>
             <h4>We are currently located in</h4>
             <div className={styles.LocatedDetail}>
-              <Col xl={6} md={6}>
+              <Col xl={6} md={6} className={styles.LocatedDetailCol}>
                 <Row className={styles.Detailrow}>
                   <Col xl={2} xs={2} md={2}>
                     <Image
@@ -47,7 +47,7 @@ const Located = () => {
                   </Col>
                 </Row>
               </Col>
-              <Col xl={6} md={6}>
+              <Col xl={6} md={6} className={styles.LocatedImg}>
                 <Image
                   alt="located-img"
                   src={"/assets/images/Newyork.svg"}
