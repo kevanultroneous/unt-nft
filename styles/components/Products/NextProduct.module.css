@@ -164,3 +164,21 @@
 .outer:hover h1 {
   color: black;
 }
+
+@media (min-width: 320px) and (max-width: 767px){
+  .NextRow {
+    padding: 4rem 1rem;
+  }
+  .ColZero{
+    text-align: center;
+  }
+  .ColTwo {
+  text-align: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px){
+  .NextRow {
+    padding: 4rem 1rem;
+  }
+  
+}

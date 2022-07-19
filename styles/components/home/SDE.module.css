@@ -251,13 +251,15 @@
   .SoftwareDevelopmentExpertsBigHeading {
     font-size: 65px;
     width: 35rem;
+    padding-top: 4rem;
   }
   .SoftwareDevelopmentExpertsBigHeadingContainer {
     padding-left: 0%;
   }
   .SoftwareDevelopmentExpertsContainer {
     padding-left: 1rem;
-    height: 100vh;
+    height:auto;
+    padding-bottom: 4rem;
   }
   .SliderCard {
     height: 215px;

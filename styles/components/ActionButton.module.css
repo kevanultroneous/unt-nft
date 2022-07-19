@@ -39,6 +39,22 @@
   .outer {
     margin-top: 1rem;
   }
+  .button {
+    border: 1px solid #a21d34;
+    border-radius: 50%;
+    width:2.5rem !important;
+    height: 2.5rem;
+    color: #a21d34;
+    background: linear-gradient(to right, #a21d34 50%, white 50%);
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all 0.8s ease-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .ActionButton {

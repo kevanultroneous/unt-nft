@@ -29,6 +29,7 @@
     justify-content:space-between;
     padding: 1rem 0;
     padding-bottom: 0;
+    align-items: center;
 }
 .TeamName h5{
     font-size: 20px;
@@ -36,8 +37,8 @@
 }
 .socialimg{
     padding-right: 5px;
-    min-width: 1rem;
-    min-height: 1rem;
+    min-width: 1.5rem;
+    min-height: 1.5rem;
 }
 .Imgcol{
     padding-right: 1rem;

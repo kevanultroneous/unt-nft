@@ -37,3 +37,14 @@
   justify-content: center;
   align-items: center;
 }
+@media (min-width: 320px) and (max-width: 430px){
+  .button {
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2.5rem;
+  height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

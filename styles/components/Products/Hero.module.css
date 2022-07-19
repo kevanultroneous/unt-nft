@@ -138,6 +138,7 @@
   .HomeMiniLine{
     width: 25px;
   }
+  
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .Herosection {
@@ -151,6 +152,9 @@
   }
   .SoftwareDevelopmentExpertsRow {
     padding-top: 5rem;
+  }
+  .Herotitle h1 {
+    font-size: 50px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {

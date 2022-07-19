@@ -223,7 +223,7 @@
     text-align: left;
   }
   .sectionCards .sectionContent li {
-    top: calc(44vh + 52px - 215px - 40px);
+    top: calc(50vh + 52px - 215px - 40px);
   }
   .sectionCards .sectionContent {
     padding-bottom: 48px;
@@ -248,7 +248,7 @@
     position: sticky;
     /* top: 4rem; */
     padding-bottom: 2rem;
-    top: 6rem;
+    top: 5rem;
   }
   .sectionCards {
     display: flex;
@@ -271,7 +271,7 @@
     align-items: center;
   }
   .sectionCards .sectionContent li {
-    height: 662px;
+    height: 670px;
   }
   .ParagraphContainer {
     padding-bottom: 0%;

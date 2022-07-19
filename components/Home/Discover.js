@@ -74,8 +74,13 @@ const Discover = () => {
       <Row className={styles.DiscoverMobifinixRowsUniq}>
         <Col className={styles.Animcol} xs={12} xl={6} md={6}>
           <Row>
-            <Image
+            {/* <Image
               src="/assets/images/anim2.gif"
+              alt={"anim"}
+              className={styles.AnimImage}
+            /> */}
+            <Image
+              src="/assets/images/Arrowanim.gif"
               alt={"anim"}
               className={styles.AnimImage}
             />

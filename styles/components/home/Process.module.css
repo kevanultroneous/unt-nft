@@ -196,6 +196,9 @@
   .YourNeedPContainer p{
     font-size: 18px;
   }
+  .MainPs {
+    width: auto;
+  }
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }
