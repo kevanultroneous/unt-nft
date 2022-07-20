@@ -139,6 +139,7 @@
   }
   .SoftwareDevelopmentExpertsRow{
     padding-top: 2rem;
+    align-items: baseline;
   }
   .SoftwareDevelopmentExpertsBtnCol {
     padding-right: 1rem;

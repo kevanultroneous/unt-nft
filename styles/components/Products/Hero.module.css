@@ -8,7 +8,7 @@
 }
 .SpaceRemover {
   margin: 0%;
-  padding-right: 1rem;
+  padding-right: 0rem;
 }
 .Herotitle h1 {
   font-size: 4.5rem;
@@ -167,7 +167,7 @@
     padding-top: 5rem;
   }
   .Herotitle h1 {
-    font-size: 50px;
+    font-size: 60px;
   }
   
 }

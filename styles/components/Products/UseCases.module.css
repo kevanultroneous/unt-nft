@@ -224,6 +224,7 @@
   }
   .sectionCards .sectionContent li {
     top: calc(50vh + 52px - 215px - 40px);
+    height: 650px;
   }
   .sectionCards .sectionContent {
     padding-bottom: 48px;
