@@ -25,6 +25,7 @@ const Hero = ({ clickHandler }) => {
               className={styles.SoftwareDevelopmentExpertsBtnCol}
             >
               <ActionButton
+                partialButton={styles.MobButton}
                 otherclass={styles.SpaceRemover}
                 text={
                   <>

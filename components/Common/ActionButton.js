@@ -6,6 +6,7 @@ const ActionButton = ({
   outerstyle,
   href,
   otherclass,
+  partialButton,
 }) => {
   return (
     <div
@@ -13,7 +14,7 @@ const ActionButton = ({
       className={`${styles.outer} ${otherclass ? otherclass : null}`}
       style={outerstyle ? { marginTop: "2.5rem" } : null}
     >
-      <div className={styles.button}>
+      <div className={`${styles.button} ${partialButton}`}>
         {href ? (
           <Link href={`${href ? href : null}`}>
             <div classNane={styles.text}>{text}</div>

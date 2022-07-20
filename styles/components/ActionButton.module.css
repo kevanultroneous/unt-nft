@@ -5,7 +5,7 @@
 .button {
   border: 1px solid #a21d34;
   border-radius: 20px;
-  width: fit-content !important;
+  width: fit-content;
   padding: 0.5rem 1rem;
   color: #a21d34;
   background: linear-gradient(to right, #a21d34 50%, white 50%);
@@ -39,7 +39,7 @@
   .outer {
     margin-top: 1rem;
   }
-  .button {
+  /* .button {
     border: 1px solid #a21d34;
     border-radius: 50%;
     width:2.5rem !important;
@@ -54,7 +54,7 @@
     justify-content: center;
     align-items: center;
     font-size: 18px;
-  }
+  } */
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .ActionButton {

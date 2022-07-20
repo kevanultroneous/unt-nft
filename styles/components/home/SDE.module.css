@@ -243,6 +243,16 @@
   .SoftwareDevelopmentExpertsRow{
     margin-top: 3.3rem;
   }
+  .MobButton{
+    border: 1px solid #fff;
+    border-radius: 50%;
+    width: 2.5rem !important;
+  height: 2.5rem;
+  padding: 0% !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .Scrolldowncontainer {

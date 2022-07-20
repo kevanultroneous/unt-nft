@@ -31,6 +31,7 @@ const Hero = () => {
             className={styles.SoftwareDevelopmentExpertsBtnCol}
           >
             <ActionButton
+              partialButton={styles.MobButton}
               otherclass={styles.SpaceRemover}
               text={
                 <>
