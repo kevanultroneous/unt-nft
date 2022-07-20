@@ -27,7 +27,7 @@ const MobileMenu = () => {
           <div
             className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
             onClick={() => {
-              setAddClass(!addClass);
+              setAddClass(true);
               setShow(!show);
             }}
             id="hamburger-12"
@@ -38,7 +38,14 @@ const MobileMenu = () => {
           </div>
         </div>
       </div>
-      <Offcanvas show={show} onHide={() => setShow(false)} placement="start">
+      <Offcanvas
+        show={show}
+        onHide={() => {
+          setAddClass(false);
+          setShow(false);
+        }}
+        placement="start"
+      >
         <Offcanvas.Body>
           <div
             className={styles.MobifinxXmenu}
@@ -154,7 +161,7 @@ export const TabletMenu = () => {
           <div
             className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
             onClick={() => {
-              setAddClass(!addClass);
+              setAddClass(true);
               setShowTAB(!showTAB);
             }}
             id="hamburger-12"
@@ -167,7 +174,10 @@ export const TabletMenu = () => {
       </div>
       <Offcanvas
         show={showTAB}
-        onHide={() => setShowTAB(false)}
+        onHide={() => {
+          setAddClass(false);
+          setShowTAB(false);
+        }}
         placement="start"
       >
         <Offcanvas.Body>

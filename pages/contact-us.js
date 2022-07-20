@@ -250,7 +250,7 @@ const ContactUs = () => {
               />
             </div>
           </Col>
-          <Col xl={12} md={12}>
+          <Col xl={12} md={12} className={styles.WantContainer}>
             <p className={styles.WantSentence}>
               I want to get in touch because,
             </p>

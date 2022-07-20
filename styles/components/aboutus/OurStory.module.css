@@ -101,6 +101,7 @@
     .HowWeCame p{
         padding-right: 1rem;
     }
+   
 }
 
 @media (min-width:768px) and (max-width: 1080px){
@@ -138,5 +139,8 @@
     }
     .HowWeCame p{
         padding-right: 1rem;
+    }
+    .Employeeimg{
+        padding-top: 0.8rem;
     }
 }

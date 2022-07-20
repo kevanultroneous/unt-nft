@@ -223,7 +223,7 @@
   font-size: 36px;
 }
 .List {
-  padding: 1rem 0 !important;
+  padding: 0.5rem 0 !important ;
 }
 .Description {
   padding-bottom: 1rem;
@@ -249,7 +249,7 @@
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
-    padding-left: 2rem;
+    padding-left: 1rem;
     padding-bottom: 3rem;
   }
 
@@ -271,7 +271,7 @@
   .SectionCards .SectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
-    height: 900px;
+    height: 800px;
     position: sticky;
     top: calc(28vh + 52px - 215px - 40px);
   }
@@ -290,10 +290,26 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
   }
   .ProductImages img {
     height: 12.6rem;
+  }
+  .button {
+    font-size: 12px;
+  }
+  .Description{
+    margin: 0;
+    font-size: 14px;
+  }
+  .Producth4{
+    font-size: 25PX;
+  }
+  .question{
+    font-size: 14px;
+  }
+  .SectionCards .SectionContent li {
+    font-size: 14px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -316,6 +332,13 @@
     height: 650px;
     /* margin-left: -412.5px; */
   }
+  .SectionCards .SectionContent li{
+    height: 700px;
+  }
+  .Description{
+    margin: 0;
+  }
+
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
