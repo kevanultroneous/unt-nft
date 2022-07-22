@@ -233,7 +233,7 @@
 .ExpText {
   padding-right: 5px;
 }
-.Explortxt{
+.Explortxt {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -298,14 +298,14 @@
   .button {
     font-size: 12px;
   }
-  .Description{
+  .Description {
     margin: 0;
     font-size: 14px;
   }
-  .Producth4{
-    font-size: 25PX;
+  .Producth4 {
+    font-size: 25px;
   }
-  .question{
+  .question {
     font-size: 14px;
   }
   .SectionCards .SectionContent li {
@@ -332,13 +332,18 @@
     height: 650px;
     /* margin-left: -412.5px; */
   }
-  .SectionCards .SectionContent li{
-    height: 700px;
+  .SectionCards .SectionContent li {
+    height: 840px;
+    /* font-size: 18px; */
   }
-  .Description{
+  .Description {
     margin: 0;
+    padding-bottom: 1rem;
+    /* font-size: 18px; */
   }
-
+  .question {
+    padding-bottom: 1rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

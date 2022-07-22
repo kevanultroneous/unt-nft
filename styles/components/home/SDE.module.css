@@ -170,7 +170,7 @@
   /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
   animation-direction: alternate; */
 }
-.TextBtn{
+.TextBtn {
   padding-right: 0.5rem;
   font-size: 18px;
 }
@@ -189,7 +189,7 @@
     padding-right: 0.5rem;
   }
   .SoftwareDevelopmentExpertsContainer {
-    padding-top: 6  .5rem;
+    padding-top: 6 0.5rem;
     padding-left: 1rem;
     padding-bottom: 2.5rem;
   }
@@ -240,15 +240,15 @@
   .SliderGround {
     padding-top: 0;
   }
-  .SoftwareDevelopmentExpertsRow{
+  .SoftwareDevelopmentExpertsRow {
     margin-top: 3.3rem;
   }
-  .MobButton{
+  .MobButton {
     border: 1px solid #fff;
     border-radius: 50%;
     width: 2.5rem !important;
-  height: 2.5rem;
-  padding: 0% !important;
+    height: 2.5rem;
+    padding: 0% !important;
     display: flex !important;
     justify-content: center;
     align-items: center;
@@ -261,14 +261,14 @@
   .SoftwareDevelopmentExpertsBigHeading {
     font-size: 65px;
     width: 35rem;
-    padding-top: 4rem;
+    padding-top: 10rem;
   }
   .SoftwareDevelopmentExpertsBigHeadingContainer {
     padding-left: 0%;
   }
   .SoftwareDevelopmentExpertsContainer {
     padding-left: 1rem;
-    height:auto;
+    height: 100vh;
     padding-bottom: 4rem;
   }
   .SliderCard {
@@ -278,7 +278,7 @@
   .SoftwareDevelopmentExpertsRow {
     margin-top: 4rem;
   }
-  .SoftwareDevelopmentExpertsBtnCol{
+  .SoftwareDevelopmentExpertsBtnCol {
     padding-right: 1rem;
   }
   .SoftwareDevelopmentExpertSliderHeading {
@@ -286,6 +286,9 @@
     align-items: center;
     margin-left: -6.5rem;
     /* padding-left: 2rem; */
+  }
+  .ScrolldownCol {
+    padding-bottom: 6rem;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {
