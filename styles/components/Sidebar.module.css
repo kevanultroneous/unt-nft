@@ -15,8 +15,6 @@
   animation-name: fade-in;
   visibility: hidden;
   transition: visibility 0.5s, opacity 0.5s linear;
-  
-
 }
 
 .MenuBar {
@@ -153,26 +151,25 @@
 .icon {
   height: 5rem;
 }
-.UniqueMenuName{
-font-size: 18px !important;
-font-weight: 400 !important;
-color: #000;
-/* position: relative;
+.UniqueMenuName {
+  font-size: 18px !important;
+  font-weight: 400 !important;
+  color: #000;
+  /* position: relative;
 bottom: 2rem; */
 }
-.UniqueMenuName:hover{
-color: #000 !important;
-
-}
-.UniqueMenuDescription{
-font-weight: 300 !important;
-font-size: 14px !important;
-/* position: relative;
-bottom: 2rem; */
-}
-.UniqueMenuDescription:hover{
+.UniqueMenuName:hover {
   color: #000 !important;
 }
-.UniqueUl{
+.UniqueMenuDescription {
+  font-weight: 300 !important;
+  font-size: 14px !important;
+  /* position: relative;
+bottom: 2rem; */
+}
+.UniqueMenuDescription:hover {
+  color: #000 !important;
+}
+.UniqueUl {
   padding-left: 1rem !important;
 }

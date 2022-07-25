@@ -48,7 +48,7 @@ const Hero = ({ clickHandler }) => {
         <Col xl={10} xs={12}>
           <div className={styles.Herotitle}>
             <Image
-              data-aos="zoom-in"
+              data-aos="fade"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -57,7 +57,7 @@ const Hero = ({ clickHandler }) => {
               className={styles.HeroImg}
             />
             <h1
-              data-aos="zoom-in"
+              data-aos="fade"
               data-aos-duration="3000"
               data-aos-delay="500"
               data-aos-easing="ease"
@@ -65,7 +65,7 @@ const Hero = ({ clickHandler }) => {
               MxFuture
               <br />
               <span
-                data-aos="zoom-in"
+                data-aos="fade"
                 data-aos-duration="3000"
                 data-aos-delay="500"
                 data-aos-easing="ease"
@@ -89,7 +89,7 @@ const Hero = ({ clickHandler }) => {
         </Col>
         <Col xl={10}>
           <Image
-            data-aos="zoom-in"
+            data-aos="fade"
             data-aos-duration="3000"
             data-aos-delay="500"
             data-aos-easing="ease"

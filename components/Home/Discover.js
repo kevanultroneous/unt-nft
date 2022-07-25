@@ -94,8 +94,8 @@ const Discover = () => {
                 <div
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="500"
+                  data-aos-duration="2000"
+                  data-aos-delay="300"
                   data-aos-easing="ease"
                   data-aos-mirror="true"
                 >
@@ -115,8 +115,8 @@ const Discover = () => {
                 <div
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="500"
+                  data-aos-duration="2000"
+                  data-aos-delay="300"
                   data-aos-easing="ease"
                   data-aos-mirror="true"
                 >
@@ -138,8 +138,8 @@ const Discover = () => {
                 <div
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="800"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
                   data-aos-easing="ease"
                   data-aos-mirror="true"
                 >
@@ -159,8 +159,8 @@ const Discover = () => {
                 <div
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
-                  data-aos-duration="3000"
-                  data-aos-delay="800"
+                  data-aos-duration="2000"
+                  data-aos-delay="500"
                   data-aos-easing="ease"
                   data-aos-mirror="true"
                 >

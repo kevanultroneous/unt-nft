@@ -5,7 +5,12 @@ import AOS from "aos";
 import { iconsMenu, menus } from "utils/menu.data";
 import Link from "next/link";
 import { useRouter } from "next/router";
-const MenuBar = ({ display = "none", visibility }) => {
+const MenuBar = ({
+  display = "none",
+  visibility,
+  animatedclass,
+  animatedotherclass,
+}) => {
   const router = useRouter();
   const [currentIcon, setCurrentIcon] = useState(null);
   const [currentMenu, setCurrentMenu] = useState(0);
@@ -35,7 +40,7 @@ const MenuBar = ({ display = "none", visibility }) => {
       style={{ opacity: display, visibility: visibility }}
     >
       <Row>
-        <div className={styles.MenuBar}>
+        <div className={`${styles.MenuBar} ${animatedclass}`}>
           <Heading name={"MobifinX Menu"} />
           <div className={styles.MenuBarContent}>
             <ul>
@@ -74,7 +79,7 @@ const MenuBar = ({ display = "none", visibility }) => {
             </ul>
           </div>
         </div>
-        <div className={styles.Menus}>
+        <div className={`${styles.Menus} ${animatedclass}`}>
           <div className={styles.MenusContent}>
             <ul className={styles.UniqueUl}>
               {menus[currentMenu].menus.map((value, index) => (
@@ -101,7 +106,7 @@ const MenuBar = ({ display = "none", visibility }) => {
           </div>
         </div>
         {/* icon menu */}
-        <div className={styles.Other}>
+        <div className={`${styles.Other} ${animatedotherclass}`}>
           <Heading
             name={"Explore Products"}
             border={"1px solid  #000"}

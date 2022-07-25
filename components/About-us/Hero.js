@@ -49,7 +49,7 @@ const Hero = ({ clickHandler }) => {
           <Col xl={2}></Col>
           {/* Col 1 : Main Heading */}
           <Col xl={10} xs={12} className={styles.Herocol}>
-            <h4>
+            <h4 data-aos="fade" data-aos-duration="2000">
               Your Companion to Decode the{" "}
               <span className={styles.Crypto}>Crypto 101</span>
             </h4>
@@ -75,6 +75,8 @@ const Hero = ({ clickHandler }) => {
                 src={"/assets/images/aboutheroimg.svg"}
                 alt="aboutheroimg"
                 className={styles.Img}
+                data-aos="fade"
+                data-aos-duration="2000"
               />
             </div>
           </Col>

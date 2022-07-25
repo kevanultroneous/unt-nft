@@ -16,7 +16,16 @@ const MenuPackage = () => {
       <MenuBar
         display={menubaropacity}
         visibility={menubaropacity === "1" ? "visible" : null}
+        animatedclass={
+          menubaropacity === "1"
+            ? "fade-in-left-anim "
+            : "fade-in-left-anim-remove"
+        }
+        animatedotherclass={
+          menubaropacity === "1" ? "fade-down" : "fade-down-remove"
+        }
       />
+
       <Menu
         opacity={"1"}
         addClass={addClass}
