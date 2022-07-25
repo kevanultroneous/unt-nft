@@ -2,8 +2,14 @@ import { Col, Image, Row } from "react-bootstrap";
 import styles from "@/styles/components/aboutus/Hero.module.css";
 import ActionButton from "../Common/ActionButton";
 import { HiOutlineExternalLink } from "react-icons/hi";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Hero = ({ clickHandler }) => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <>
       {/* // main container */}

@@ -7,7 +7,7 @@ import ActionButton from "../Common/ActionButton";
 import AOS from "aos";
 import { useEffect } from "react";
 
-const Hero = () => {
+const Hero = ({ clickHandler }) => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
@@ -78,7 +78,7 @@ const Hero = () => {
       </Row>
       <Row>
         <Col xl={2} className={styles.ScrolldownMainCol}>
-          <div className={styles.Scrolldowncontainer}>
+          <div className={styles.Scrolldowncontainer} onClick={clickHandler}>
             <Image
               alt="downimg"
               src="/assets/images/arrows.svg"

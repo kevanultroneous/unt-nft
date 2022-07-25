@@ -26,9 +26,9 @@ const Solution = () => {
           data-aos-easing="ease"
         >
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
-          <h5>
+          <h5 className={styles.Divider}>
             Strong Technical Competence{" "}
-            <span className={styles.divider}>|</span>
+            {/* <span className={styles.divider}>|</span> */}
           </h5>
         </Col>
 
@@ -43,9 +43,9 @@ const Solution = () => {
           data-aos-easing="ease"
         >
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
-          <h5>
+          <h5 className={styles.Divider}>
             Strong Technical Competence{" "}
-            <span className={styles.divider}>|</span>
+            {/* <span className={styles.divider}>|</span> */}
           </h5>
         </Col>
 

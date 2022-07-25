@@ -56,7 +56,14 @@ function WhatWillYouGetWithUs() {
             visibility ? styles.SmallImageAnim : ""
           }`}
         >
-          <Image src={arrImage[value]} alt="Map Image" />
+          <Image
+            src={arrImage[value]}
+            alt="Map Image"
+            data-aos="fade-right"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            data-aos-easing="ease"
+          />
         </div>
       </Col>
       <Col xs={12} sm={12} md={6} className={styles.WhatWillYouGetWithUsRight}>

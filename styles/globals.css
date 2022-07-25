@@ -247,7 +247,7 @@ a {
   padding: 0% !important;
 }
 .accordion-body {
-  padding: 1rem 0.25rem !important; 
+  padding: 1rem 0.25rem !important;
 }
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
@@ -269,7 +269,6 @@ a {
     padding-left: 0% !important;
     padding-right: 0% !important;
   }
- 
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .accordion-button {
@@ -286,7 +285,6 @@ a {
   .react-tel-input .flag-dropdown {
     top: -15% !important;
   }
- 
 }
 @media (min-width: 650px) and (max-width: 740px) {
 }
@@ -322,7 +320,5 @@ a {
       opacity: 0.25;
 	}
 } */
-
-
 
 /* ========================================== */

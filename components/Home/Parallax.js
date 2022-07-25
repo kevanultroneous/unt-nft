@@ -19,7 +19,7 @@ const Parallax = () => {
                 <p className={styles.Pera}>32+ Global Blockchain Customers</p>
               </Col>
               <Col xl={10}>
-                <h3 className={styles.MainHeading}>Secure.</h3>
+                <h3 className={styles.MainHeadingSecure}>Secure.</h3>
               </Col>
             </Row>
             <Row className={styles.Parallaxrow}>
@@ -29,7 +29,7 @@ const Parallax = () => {
                 </p>
               </Col>
               <Col xl={10}>
-                <h3 className={styles.MainHeading}>Successive.</h3>
+                <h3 className={styles.MainHeadingSuccess}>Successive.</h3>
               </Col>
             </Row>
           </div>

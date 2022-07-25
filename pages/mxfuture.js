@@ -11,15 +11,19 @@ import MxFutureProducts from "@/components/Products/MxFutureProducts";
 import NextProduct from "@/components/Products/NextProduct";
 import Solution from "@/components/Products/Solution";
 import WhatyouGet from "@/components/Products/WhatyouGet";
-import { useState } from "react";
+import { useRef, useState } from "react";
 import { MxFutureNextLink } from "utils/MxFuture.data";
 const MxFuture = () => {
   const [globalColor, setGlobalColor] = useState("#83745B");
+  const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const scrollRef = useRef(null);
   return (
     <Layout title={"MxFuture"}>
       <MenuPackage />
-      <Hero />
-      <Introductions />
+      <Hero clickHandler={() => scrollToRef(scrollRef)} />
+      <section ref={scrollRef}>
+        <Introductions />
+      </section>
       <MxFutureProducts text={"Use Cases"} />
       <Exchange color={globalColor} href="/" />
       <WhatyouGet />

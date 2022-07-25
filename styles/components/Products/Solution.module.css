@@ -1,5 +1,5 @@
 .SolutionHelps {
-  background: linear-gradient(180deg, #1A1C3B 1.13%, #A21D34 156.23%);
+  background: linear-gradient(180deg, #1a1c3b 1.13%, #a21d34 156.23%);
   padding-left: 8.5rem;
   padding-right: 3rem;
 }
@@ -28,17 +28,22 @@
   font-size: 22px;
   font-weight: 400;
   color: rgba(255, 255, 255, 0.8);
-  padding-top: 1rem;
+  margin-top: 1rem;
+  width: 20rem;
 }
 .Button {
   display: flex;
   justify-content: center;
   padding-bottom: 5rem;
 }
-.divider {
+/* .divider {
+  margin-left: 1rem;
+} */
+.Divider {
+  border-right: 2px solid #fff;
   margin-left: 1rem;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+@media (min-width: 320px) and (max-width: 767px) {
   .SolutionHelps {
     padding: 4rem 1rem 0 1rem;
   }
@@ -56,6 +61,9 @@
   .SolutionDetail {
     padding: 0 0 4rem 0;
   }
+  .SolutionDetail h5 {
+    border: none;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .SolutionHelps {
@@ -67,11 +75,11 @@
   .divider {
     margin-left: 0.5rem;
   }
-  .Btntext{
+  .Btntext {
     padding-right: 0.5rem;
     font-size: 20px;
   }
-  .Icon{
+  .Icon {
     font-size: 20px;
   }
 }
