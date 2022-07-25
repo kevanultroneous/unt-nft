@@ -98,13 +98,13 @@
 }
 .ProductImages {
   text-align: end !important;
-  padding-right: 4rem;
+  padding-left: 4rem;
   display: flex;
-  justify-content: end;
+  justify-content: center;
   align-items: center;
 }
 .ProductImages img {
-  height: 22rem;
+  height: 26rem;
 }
 .outer {
 }
@@ -285,6 +285,7 @@
     justify-content: center;
     text-align: center !important;
     padding-right: 0rem;
+    padding-left: 0;
   }
   .Productbutton {
     display: flex;
@@ -334,7 +335,7 @@
   }
   .SectionCards .SectionContent li {
     height: 840px;
-    /* font-size: 18px; */
+    font-size: 18px;
   }
   .Description {
     margin: 0;

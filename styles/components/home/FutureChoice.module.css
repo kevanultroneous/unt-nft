@@ -1,6 +1,6 @@
 .FutureChoiceContainer {
   background: #ffffff;
-  padding: 4rem 0;
+  padding: 6rem 0;
   padding-left: 8.5rem;
   padding-right: 4rem;
 }
@@ -281,3 +281,38 @@
 }
 @media (min-width: 1920px) and (max-height: 1080px) {
 }
+
+.wrap {
+  width: 100%;
+}
+/* .gradienttext {
+  font-family: "Abril Fatface", sans-serif;
+  background: linear-gradient(to right, crimson, pink, springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #1a1c3c;
+  font-size: 10rem;
+  width: 80vw;
+  margin: 30vh auto;
+  display: block;
+  text-align: center;
+  transition: color 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+.gradienttext:hover {
+  color: rgba(0, 0, 0, 0);
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+} */

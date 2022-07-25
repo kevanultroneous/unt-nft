@@ -121,6 +121,15 @@ const FutureChoice = () => {
           </div>
         </Col>
       </Row>
+      {/* <Row>
+        <Col xl={12}>
+          <div className={styles.wrap}>
+            <Col xl={12}>
+              <h3 className={styles.gradienttext}>SCALABLE.</h3>
+            </Col>
+          </div>
+        </Col>
+      </Row> */}
     </div>
   );
 };

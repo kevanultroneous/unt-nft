@@ -1,40 +1,92 @@
 .Parallax {
-  background-image: url("/assets/images/Parallax.jpg");
+  /* background-image: url("/assets/images/Parallax.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  /* height: 100vh; */
-  padding-bottom: 4rem;
+  padding-bottom: 4rem; */
 }
-.Effect{
+.Effect {
   padding-top: 4rem;
 }
 .Parallaxrow {
   display: flex;
   align-items: center;
   padding-top: 3rem;
-  padding-left: 19rem;
+  padding-left: 10rem;
   padding-bottom: 0rem;
 }
 .Pera {
   font-size: 22px;
   font-weight: 400;
-  color: #fff;
+  color: #1a1c3c;
+  padding-left: 1rem;
 }
 .MainHeading {
-  font-size: 100px;
+  font-size: 130px;
   font-weight: 700;
   color: #fff;
   text-transform: uppercase;
+  background: linear-gradient(to right, crimson, pink, springgreen);
+  background-size: 200% 200%;
+  animation: rainbow 2s ease-in-out infinite;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: #1a1c3c;
+  /* font-size: 10rem; */
+  /* width: 80vw;
+  margin: 0; */
+  /* display: block; */
+  text-align: left;
+  transition: color 0.2s ease-in-out;
+  text-transform: uppercase;
+  font-weight: 900;
+  /* text-decoration: none;
+  -webkit-transition: 0.2s; */
 }
 .Mainsection {
-  padding: 4rem 0;
+  padding: 4rem 0 4rem 3rem;
 }
+.MainHeading:hover {
+  color: rgba(0, 0, 0, 0);
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
+
+/* @media (-webkit-min-device-pixel-ratio: 0) {
+  .MainHeading {
+    background-color: #fff;
+    background-image: -webkit-linear-gradient(
+      left,
+      hotPink 0%,
+      orange 50%,
+      transparent 50%
+    );
+    background-position: 100% 0;
+    background-size: 200% 200%;
+    color: transparent;
+    -webkit-transition: 0.1s 0.2s;
+    -webkit-background-clip: text;
+  }
+  .MainHeading:hover {
+    background-position: 0 0;
+    color: transparent;
+    transition: 0.4s 0;
+  }
+} */
+
 @media (min-width: 320px) and (max-width: 767px) {
   .Parallax {
     background-size: cover;
-   
   }
   .Parallaxrow {
     padding-left: 1rem;
@@ -45,6 +97,9 @@
   }
   .Mainsection {
     padding: 2rem 0;
+  }
+  .Pera {
+    padding-left: 0;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
