@@ -10,6 +10,7 @@ import "react-phone-input-2/lib/style.css";
 import { useEffect, useRef, useState } from "react";
 import CountryPicker from "@/components/Common/CountryPicker";
 import MenuPackage from "@/components/Common/MenuPackage";
+import Aos from "aos";
 const ContactUs = () => {
   const [phoneValue, setPhoneValue] = useState("");
   const [captchas, setCaptchas] = useState("");
@@ -183,12 +184,19 @@ const ContactUs = () => {
   useEffect(() => {
     window.innerWidth < 756 ? setIsMobile(true) : setIsMobile(false);
   }, []);
-
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <Layout title={"Mobifinx | Contact Us"}>
       <MenuPackage />
       {/* <SmoothScroll> */}
-      <div className={styles.ContactUsMainContainer}>
+      <div
+        className={styles.ContactUsMainContainer}
+        data-aos="fade"
+        data-aos-duration="2000"
+      >
         <Row>
           <div className={styles.ContactUsHeading}>
             <div className={styles.MiniLine} />

@@ -8,8 +8,16 @@
   padding-bottom: 1rem;
   padding-top: 6rem;
   text-align: center;
-  background: #1a1c3c;
+  background-color: #1a1c3c;
+  transition: background-color 1s linear;
 }
+/* .SectionContent:hover {
+  background-color: transparent;
+}
+.SectionCards:hover {
+  background-color: transparent;
+} */
+
 .SectionCards .SectionContent ul {
   list-style: none;
   padding: 0;

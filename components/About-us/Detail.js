@@ -1,8 +1,14 @@
 import { Row, Col, Image } from "react-bootstrap";
 import styles from "@/styles/components/aboutus/Detail.module.css";
 import { AboutDetail } from "utils/AboutusDetail";
+import { useEffect } from "react";
+import Aos from "aos";
 
 const Detail = () => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <div className={styles.AboutdetailsContainer}>
       <Row>
@@ -24,7 +30,12 @@ const Detail = () => {
       </Row>
       <Row className={styles.Advantages}>
         <Col xl={2}></Col>
-        <Col xl={10} className={styles.Detailcol}>
+        <Col
+          xl={10}
+          className={styles.Detailcol}
+          data-aos="fade-left"
+          data-aos-duration="2000"
+        >
           {AboutDetail.map((v, i) => (
             <Col xl={4} xs={12} md={12} className={styles.Advantagecol} key={i}>
               <Image src={v.image} className={styles.Icon} alt="About icon" />

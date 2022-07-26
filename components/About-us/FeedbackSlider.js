@@ -14,7 +14,11 @@ const FeedbackSlider = () => {
   };
   const sliderRef = useRef();
   return (
-    <section className={styles.Feedback}>
+    <section
+      className={styles.Feedback}
+      data-aos="fade"
+      data-aos-duration="500"
+    >
       <div className={styles.FeedbackContainer}>
         <Row>
           <Col xl={12}>

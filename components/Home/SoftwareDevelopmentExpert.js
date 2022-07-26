@@ -8,7 +8,17 @@ import AOS from "aos";
 import { useEffect, useRef } from "react";
 import ActionButtonV2 from "../Common/ActionButtonV2";
 import Link from "next/link";
+import Lottie from "react-lottie";
+import animation from "../../utils/scroll-anim.json";
 const SDE = ({ handleClick }) => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   const settings = {
     infinite: true,
     speed: 2000,
@@ -109,18 +119,23 @@ const SDE = ({ handleClick }) => {
       <Row className="mx-0">
         <Col
           xl={4}
+          data-aos="fade"
+          data-aos-duration="2000"
           className={styles.ScrolldownCol}
           onClick={() => handleClick()}
         >
           <div className={styles.Scrolldowncontainer}>
-            <Image
+            {/* <Image
               alt="downimg"
               src="/assets/images/scrollarrow.svg"
               className={styles.ImageDown}
             />
-            <p className={styles.ScrolldownText}>Scroll Down</p>
-            {/*  */}
+            <p className={styles.ScrolldownText}>Scroll Down</p> */}
+            <div className={styles.whiteMouse}>
+              <Lottie options={defaultOptions} height={100} width={30} />
+            </div>
           </div>
+          {/* https://assets3.lottiefiles.com/packages/lf20_JMhjmh.json */}
         </Col>
         <Col xl={8}>
           <Row>

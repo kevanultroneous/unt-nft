@@ -97,8 +97,17 @@ const Products = ({ text }) => {
     );
   };
   return (
-    <div className={styles.SectionCards} data-anim-scroll-group="cards">
-      <div className={styles.SectionContent}>
+    <div
+      className={styles.SectionCards}
+      data-anim-scroll-group="cards"
+      data-aos="fade"
+      data-aos-duration="500"
+    >
+      <div
+        className={styles.SectionContent}
+        data-aos="fade"
+        data-aos-duration="500"
+      >
         <h3 className={styles.OurProductsHeading}>
           {text ? text : "Our Products"}
         </h3>

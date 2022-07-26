@@ -65,18 +65,24 @@
   display: flex;
   padding-right: 2.5rem;
 }
+
+.whiteMouse {
+  transform: rotate(90deg);
+  padding-top: 0rem;
+}
+
 .Scrolldowncontainer {
-  transform: rotate(-90deg);
+  /* transform: rotate(-90deg); */
   display: flex;
   align-items: center;
-  justify-content: end;
-  position: relative;
-  animation: scrolldowntotop 4s ease-in 0s infinite normal;
-  animation-direction: alternate;
-  margin-left: -11.5rem;
-  margin-top: 24rem;
+  justify-content: unset;
+  /* position: relative; */
+  /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+  animation-direction: alternate; */
+  /* margin-left: -11.5rem; */
+  margin-top: 14rem;
 }
-@keyframes scrolldowntotop {
+/* @keyframes scrolldowntotop {
   0% {
     top: 10px;
   }
@@ -92,7 +98,7 @@
   100% {
     top: 10px;
   }
-}
+} */
 .ImageDown {
   transform: rotate(90deg);
 }

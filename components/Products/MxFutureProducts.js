@@ -22,6 +22,8 @@ const MxFutureProducts = ({ text }) => {
     <div
       className={`${styles.section}  ${styles.sectionCards}`}
       data-anim-scroll-group="cards"
+      data-aos="fade"
+      data-aos-duration="500"
     >
       <div className={`${styles.sectionContent}`}>
         <h3 className={styles.CardHeading}>Use Cases</h3>

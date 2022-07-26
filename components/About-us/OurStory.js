@@ -1,9 +1,19 @@
 import styles from "@/styles/components/aboutus/OurStory.module.css";
+import Aos from "aos";
+import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { AboutDetail, OurStoryData } from "utils/AboutusDetail";
 const OurStory = () => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
-    <section className={styles.OurStory}>
+    <section
+      className={styles.OurStory}
+      data-aos="fade"
+      data-aos-duration="500"
+    >
       <div className={styles.OurStoryContainer}>
         <Row className={styles.Ourstoryrow}>
           <Col xl={2}>

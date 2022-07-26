@@ -36,7 +36,7 @@
   justify-content: end;
   cursor: pointer;
 }
-.TabletController{
+.TabletController {
   display: flex;
   width: 50%;
   justify-content: end;
@@ -45,18 +45,17 @@
 .MobileMenuLogo {
   width: 50%;
 }
-.TabletMenuLogo{
+.TabletMenuLogo {
   width: 50%;
-
 }
 .MobifinxXmenu {
   padding-left: 1rem;
   background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
 }
-.MobifinxTabmenu{
-height: 100vh;
-background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
-padding-left: 0.5rem;
+.MobifinxTabmenu {
+  height: 100vh;
+  background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
+  padding-left: 0.5rem;
 }
 .LinkName {
   font-size: 35px;
@@ -167,6 +166,7 @@ padding-left: 0.5rem;
   } */
   .LinkName {
     padding-bottom: 1rem;
+    opacity: 0.6;
   }
   .Tabs {
     font-size: 14px;
@@ -190,15 +190,14 @@ padding-left: 0.5rem;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
-  .TabletMenu{
+  .TabletMenu {
     display: flex;
   }
   .MobileMenu {
-  
     display: none;
     padding-right: 1rem;
   }
-  .Tabname{
+  .Tabname {
     width: 40px;
   }
   .hamburger .line {
@@ -213,23 +212,23 @@ padding-left: 0.5rem;
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
-  .TabIconCard{
+  .TabIconCard {
     display: flex;
     flex-direction: column;
   }
-  .LinkName{
+  .LinkName {
     padding-left: 1rem;
   }
-  .SubMenu{
+  .SubMenu {
     padding-left: 1rem;
   }
-  .Tabs{
+  .Tabs {
     padding-left: 1rem;
   }
-  .TabeMenucol{
+  .TabeMenucol {
     padding-left: 2rem;
   }
-  .ProductIcon{
+  .ProductIcon {
     padding-right: 4rem;
   }
 }

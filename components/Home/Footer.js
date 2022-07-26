@@ -2,9 +2,8 @@ import styles from "@/styles/components/home/Footer.module.css";
 import { Col, Image, Row } from "react-bootstrap";
 import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
-import { HiOutlineExternalLink } from "react-icons/hi";
+import { HiMail, HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect } from "react";
-import { ImMail } from "react-icons/im";
 import AOS from "aos";
 import Link from "next/link";
 const Footer = () => {
@@ -57,7 +56,7 @@ const Footer = () => {
             <div className="d-flex">
               <a href="mailto:sales@mobifinx.com">
                 <span className={styles.MailText}>
-                  <ImMail className={styles.MailIconHover} />
+                  <HiMail className={styles.MailIconHover} />
                   sales@mobifinx.com
                 </span>
               </a>

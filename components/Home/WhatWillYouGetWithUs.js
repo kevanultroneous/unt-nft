@@ -25,7 +25,11 @@ function WhatWillYouGetWithUs() {
     AOS.init();
   }, []);
   return (
-    <Row className={styles.WhatWillYouGetWithUs}>
+    <Row
+      className={styles.WhatWillYouGetWithUs}
+      data-aos="fade"
+      data-aos-duration="500"
+    >
       <Col xs={12} sm={12} md={6} className={styles.WhatWillYouGetWithUsLeft}>
         <h2>
           What will you get <br /> with us?

@@ -131,10 +131,10 @@
   align-items: center;
   justify-content: end;
   position: relative;
-  animation: scrolldowntotop 4s ease-in 0s infinite normal;
-  animation-direction: alternate;
+  /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+  animation-direction: alternate; */
 }
-@keyframes scrolldowntotop {
+/* @keyframes scrolldowntotop {
   0% {
     top: 10px;
   }
@@ -150,7 +150,7 @@
   100% {
     top: 10px;
   }
-}
+} */
 .ScrolldownCol {
   justify-content: flex-start;
   display: flex;
@@ -175,6 +175,11 @@
   font-size: 18px;
 }
 
+.whiteMouse {
+  transform: rotate(90deg);
+  padding-left: 3rem;
+  padding-top: 11rem;
+}
 @media (min-width: 320px) and (max-width: 767px) {
   .HomeSmallHeading {
     font-size: 14px;

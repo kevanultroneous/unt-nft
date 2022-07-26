@@ -3,20 +3,39 @@ import { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 import AOS from "aos";
 import Link from "next/link";
-const Menu = ({ opacity, handleClick, change, addClass }) => {
+import { useRouter } from "next/router";
+const ParentMenuBar = ({ children, opacity }) => {
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
-
+  const router = useRouter();
   return (
-    <div
-      data-aos="fade-right"
-      data-aos-duration="1000"
-      data-aos-easing="ease-in-sine"
-      className={styles.NftMenu}
-      style={{ opacity: opacity, zIndex: "100" }}
-    >
+    <>
+      {router.pathname === "/" ? (
+        <div
+          data-aos="fade-right"
+          data-aos-duration="1000"
+          data-aos-easing="ease-in-sine"
+          className={styles.NftMenu}
+          style={{ opacity: opacity, zIndex: "100" }}
+        >
+          {children}
+        </div>
+      ) : (
+        <div
+          className={styles.NftMenu}
+          style={{ opacity: opacity, zIndex: "100" }}
+        >
+          {children}
+        </div>
+      )}
+    </>
+  );
+};
+const Menu = ({ opacity, handleClick, change, addClass }) => {
+  return (
+    <ParentMenuBar opacity={opacity}>
       <div>
         <Link href={"/"}>
           <Image
@@ -53,7 +72,7 @@ const Menu = ({ opacity, handleClick, change, addClass }) => {
       <div>
         <p className={styles.BlockchainTechnologyText}>BLOCKCHAIN TECHNOLOGY</p>
       </div>
-    </div>
+    </ParentMenuBar>
   );
 };
 export default Menu;

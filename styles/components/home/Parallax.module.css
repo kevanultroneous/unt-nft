@@ -7,7 +7,7 @@
   padding-bottom: 4rem; */
 }
 .Effect {
-  padding-top: 4rem;
+  padding-top: 0rem;
 }
 .Parallaxrow {
   display: flex;
@@ -45,7 +45,7 @@
   -webkit-transition: 0.2s; */
 }
 .Mainsection {
-  padding: 4rem 0 4rem 3rem;
+  padding: 0rem 0 8rem 3rem;
 }
 .MainHeading:hover {
   color: rgba(0, 0, 0, 0);
@@ -176,8 +176,10 @@
     padding-left: 1rem;
     padding-top: 2rem;
   }
-  .MainHeading {
-    font-size: 55px;
+  .MainHeading,
+  .MainHeadingSecure,
+  .MainHeadingSuccess {
+    font-size: 60px;
   }
   .Mainsection {
     padding: 2rem 0;

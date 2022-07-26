@@ -4,8 +4,18 @@ import ActionButton from "../Common/ActionButton";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect } from "react";
 import Aos from "aos";
+import Lottie from "react-lottie";
+import animation from "../../utils/scroll-anim-black.json";
 
 const Hero = ({ clickHandler }) => {
+  const defaultOptions = {
+    loop: true,
+    autoplay: true,
+    animationData: animation,
+    rendererSettings: {
+      preserveAspectRatio: "xMidYMid slice",
+    },
+  };
   useEffect(() => {
     Aos.refresh();
     Aos.init();
@@ -58,14 +68,17 @@ const Hero = ({ clickHandler }) => {
         {/* Row for Image and scroll down section */}
         <Row className={styles.RotateRow}>
           {/* Col for scroll down */}
-          <Col xl={2}>
+          <Col xl={2} data-aos="fade" data-aos-duration="2000">
             <div className={styles.Scrolldowncontainer} onClick={clickHandler}>
-              <Image
+              <div>
+                <Lottie options={defaultOptions} height={100} width={30} />
+              </div>
+              {/* <Image
                 alt="downimg"
                 src="/assets/images/arrows.svg"
                 className={styles.ImageDown}
               />
-              <p className={styles.ScrolldownText}>Scroll Down</p>
+              <p className={styles.ScrolldownText}>Scroll Down</p> */}
             </div>
           </Col>
           {/* Col for Big Image */}
@@ -75,7 +88,7 @@ const Hero = ({ clickHandler }) => {
                 src={"/assets/images/aboutheroimg.svg"}
                 alt="aboutheroimg"
                 className={styles.Img}
-                data-aos="fade"
+                data-aos="fade-left"
                 data-aos-duration="2000"
               />
             </div>

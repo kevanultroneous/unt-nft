@@ -1,136 +1,133 @@
-.AboutdetailsContainer{
- 
-    padding: 0 0 4rem 8.5rem;
+.AboutdetailsContainer {
+  padding: 0 0 4rem 8.5rem;
 }
-.Subtitle p{
-    font-size: 16px;
-    color: rgba(18, 18, 18, 0.6);
-    transform: rotate(270deg);
-    /* margin-left: -4rem; */
-    /* padding-top: 1.5rem; */
-    margin-top: -4rem;
-    padding-bottom: 9rem;
-    letter-spacing: 2px;
-   
+.Subtitle p {
+  font-size: 16px;
+  color: rgba(18, 18, 18, 0.6);
+  transform: rotate(270deg);
+  /* margin-left: -4rem; */
+  /* padding-top: 1.5rem; */
+  margin-top: -4rem;
+  padding-bottom: 9rem;
+  letter-spacing: 2px;
 }
-.Subtitle{
-    /* padding-left: 6.5rem; */
-    padding-right: 2rem;
-    justify-content: end;
+.Subtitle {
+  /* padding-left: 6.5rem; */
+  padding-right: 2rem;
+  justify-content: end;
 }
-.Advantages{
-    justify-content: center;
-    padding-top: 4rem;
+.Advantages {
+  justify-content: center;
+  padding-top: 4rem;
+  overflow: hidden;
 }
-.Advantagecol{
-    padding-right: 4rem;
+.Advantagecol {
+  padding-right: 4rem;
 }
-.Detail{
-    font-size: 18px;
-    font-weight: 400;
-    padding-left: 0rem;
-    padding-right: 4rem;
-    text-align: justify;
-    color: #2E3159;
+.Detail {
+  font-size: 18px;
+  font-weight: 400;
+  padding-left: 0rem;
+  padding-right: 4rem;
+  text-align: justify;
+  color: #2e3159;
 }
-.Heading{
-    font-size: 18px;
-    font-weight: 600;
+.Heading {
+  font-size: 18px;
+  font-weight: 600;
+  padding-bottom: 1rem;
+  margin: 0;
+}
+.Description {
+  font-size: 16px;
+  font-weight: 400;
+  text-align: justify;
+}
+.Icon {
+  min-width: 3rem;
+  padding-bottom: 1rem;
+}
+.Aboutcandle {
+  padding: 4rem 2rem 4rem 0rem;
+}
+.Aboutcandleimg {
+  width: 100%;
+  height: auto;
+}
+.Detailcol {
+  display: flex;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .Subtitle p {
+    display: none;
+  }
+  .AboutdetailsContainer {
+    padding-left: 1rem;
+  }
+  .Detail {
+    padding-left: 0;
+    padding-right: 1rem;
+  }
+  .Advantagecol {
+    width: 100%;
     padding-bottom: 1rem;
-    margin: 0;
-}
-.Description{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: justify;
-}
-.Icon{
-   min-width: 3rem;
-   padding-bottom: 1rem;
-}
-.Aboutcandle{
-    padding: 4rem 2rem 4rem 0rem;
-}
-.Aboutcandleimg{
- width: 100%;
- height: auto;
-}
-.Detailcol{
-    display: flex;
-}
-@media (min-width:320px) and (max-width: 767px){
-    .Subtitle p{
-        display: none;
-    }
-    .AboutdetailsContainer{
-        padding-left: 1rem
-    }
-    .Detail{
-        padding-left: 0;
-        padding-right: 1rem;
-       
-    }
-    .Advantagecol{
-        width: 100%;
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-    }
-    .Advantages{
-        padding-left: 0;
-    }
-    .Icon{
-        min-width: 15%;
-    }
-    .Aboutcandle{
-        padding: 0;
-        padding-right: 1rem;
-    }
-    .AboutdetailsContainer{
-        padding-bottom: 2rem;
-    }
-    .Detailcol{
-        flex-direction: column;
-    }
-
+    padding-right: 1rem;
+  }
+  .Advantages {
+    padding-left: 0;
+  }
+  .Icon {
+    min-width: 15%;
+  }
+  .Aboutcandle {
+    padding: 0;
+    padding-right: 1rem;
+  }
+  .AboutdetailsContainer {
+    padding-bottom: 2rem;
+  }
+  .Detailcol {
+    flex-direction: column;
+  }
 }
 
-@media (min-width:768px) and (max-width: 1080px){
-    .Subtitle p{
-        font-size: 18px;
+@media (min-width: 768px) and (max-width: 1080px) {
+  .Subtitle p {
+    font-size: 18px;
     color: rgba(18, 18, 18, 0.6);
     transform: rotate(360deg);
     margin-top: 0rem;
     padding-bottom: 0rem;
     letter-spacing: 2px;
-    }
-    .AboutdetailsContainer{
-        padding-left: 1rem;
-        padding-bottom: 2rem;
-    }
-    .Advantagecol{
-        width: 100%;
-        padding-bottom: 2rem;
-        padding-right: 1rem;
-    }
-    .Icon{
-        min-width: 12%;
-    }
-    .Advantages{
-        padding-left: 0rem;
-    }
-    .Heading{
-        font-size: 25px;
-    }
-    .Description{
-        font-size: 20px;
-    }
-    .Detailcol{
-        flex-direction: column;
-    }
-    .Detail{
-        padding-right: 1rem;
-    }
-    .Aboutcandle{
-        padding: 4rem 1rem 4rem 0rem;
-    }
+  }
+  .AboutdetailsContainer {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+  .Advantagecol {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+  }
+  .Icon {
+    min-width: 12%;
+  }
+  .Advantages {
+    padding-left: 0rem;
+  }
+  .Heading {
+    font-size: 25px;
+  }
+  .Description {
+    font-size: 20px;
+  }
+  .Detailcol {
+    flex-direction: column;
+  }
+  .Detail {
+    padding-right: 1rem;
+  }
+  .Aboutcandle {
+    padding: 4rem 1rem 4rem 0rem;
+  }
 }

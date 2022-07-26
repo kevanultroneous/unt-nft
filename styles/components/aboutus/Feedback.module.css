@@ -1,99 +1,111 @@
-.Feedback{
-    background: #1A1C3C;
+.Feedback {
+  background-color: #1a1c3c;
+  transition: background-color 1s linear;
 }
-.FeedbackContainer{
-    padding: 4rem 0 4rem 8.5rem;
-}
-.Feedback h4{
-    font-size: 50px;
-    font-weight: 600;
-    color: #fff;
-    text-align: center;
-    padding-right: 10.5rem;
-}
-.SliderRow{
+/* .Feedback:hover {
+  background-color: transparent;
+} */
 
-    padding: 6rem 3rem 0 0;
+.FeedbackContainer {
+  padding: 4rem 0 4rem 8.5rem;
 }
-.SliderimgCol{
-    display: flex;
-    justify-content: center;
+.Feedback h4 {
+  font-size: 50px;
+  font-weight: 600;
+  color: #fff;
+  text-align: center;
+  padding-right: 10.5rem;
 }
-.ClientName{
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
+.SliderRow {
+  padding: 6rem 3rem 0 0;
 }
-.CompanyName{
-    color: rgba(255, 255, 255, 0.5);
-    font-size: 14px;
-    font-weight: 400;
-   
+.SliderimgCol {
+  display: flex;
+  justify-content: center;
 }
-.Description{
+.ClientName {
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+}
+.CompanyName {
+  color: rgba(255, 255, 255, 0.5);
+  font-size: 14px;
+  font-weight: 400;
+}
+.Description {
+  padding-top: 1rem;
+  font-size: 18px;
+  font-weight: 400;
+  color: #fff;
+  text-align: justify;
+}
+.SliderMain {
+  display: flex;
+  align-items: center;
+}
+.FeedbackPrevarrow {
+  display: flex;
+  padding-top: 1rem;
+}
+.FeedbackNextarrow,
+.FeedbackPrevarrow {
+  cursor: pointer;
+  transition: all 1s ease;
+}
+.FeedbackPrevarrow:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+.FeedbackNextarrow:hover {
+  transform: scale(1.2);
+  transition: all 1s ease;
+}
+.Arrowcol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@media (min-width: 320px) and (max-width: 767px) {
+  .FeedbackContainer {
+    padding-left: 1rem;
+  }
+  .Feedback h4 {
+    padding-right: 0;
+    text-align: left;
+    font-size: 45px;
+  }
+  .SliderimgCol {
+    justify-content: left;
+  }
+  .ClientName {
     padding-top: 1rem;
-    font-size: 18px;
-    font-weight: 400;
-    color: #fff;
-    text-align: justify;
-}
-.SliderMain{
-    display: flex;
-    align-items: center;
-}
-.FeedbackPrevarrow{
-    display: flex;
-    padding-top: 1rem;
-}
-.FeedbackNextarrow,.FeedbackPrevarrow{
-    cursor: pointer;
-}
-.Arrowcol{
-    display: flex;
+  }
+  .Arrowcol {
     justify-content: center;
-    align-items: center;
-}
-@media (min-width:320px) and (max-width: 767px){
-    .FeedbackContainer{
-        padding-left: 1rem;
-    }
-    .Feedback h4{
-        padding-right: 0;
-        text-align: left;
-        font-size: 45px;
-    }
-    .SliderimgCol{
-        justify-content: left;
-    }
-    .ClientName{
-        padding-top: 1rem;
-    }
-    .Arrowcol{
-        justify-content: center;
     position: relative;
     left: 16rem;
     bottom: 31rem;
     width: 28%;
-    }
-    .SliderRow{
-        padding-right: 2rem;
-    }
-    .FeedbackContainer{
-        padding-bottom: 0;
-    }
-    
+  }
+  .SliderRow {
+    padding-right: 2rem;
+  }
+  .FeedbackContainer {
+    padding-bottom: 0;
+  }
 }
-@media (min-width:768px) and (max-width: 1080px){
-    .FeedbackContainer{
-        padding-left: 1rem;
-        padding-bottom: 4rem;
-    }
-    .Feedback h4{
-        padding-right: 0;
-        text-align: left;
-        font-size: 45px;
-    }
-    /* .SliderimgCol{
+@media (min-width: 768px) and (max-width: 1080px) {
+  .FeedbackContainer {
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+  }
+  .Feedback h4 {
+    padding-right: 0;
+    text-align: left;
+    font-size: 45px;
+  }
+  /* .SliderimgCol{
         justify-content: left;
     }
     .ClientName{
@@ -109,15 +121,14 @@
     .SliderRow{
         padding-right: 2rem;
     } */
-   
-    .SliderimgCol{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 1rem;
-        padding-right: 1rem;
-    }
-    .SliderRow{
 
-        padding: 3rem 0rem 0 0;
-    }
+  .SliderimgCol {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+  .SliderRow {
+    padding: 3rem 0rem 0 0;
+  }
 }

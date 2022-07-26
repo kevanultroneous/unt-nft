@@ -9,7 +9,11 @@ const WhatyouGet = () => {
     AOS.init();
   }, []);
   return (
-    <section className={styles.WhatyouWillget}>
+    <section
+      className={styles.WhatyouWillget}
+      data-aos="fade"
+      data-aos-duration="500"
+    >
       <Row className={styles.sectionrow}>
         <Col xl={2} md={12} className={styles.sectioncol}>
           <p className={styles.Whatyougetverticaltext}>UNIQUE SELLING POINTS</p>
