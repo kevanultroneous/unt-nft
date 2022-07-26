@@ -61,7 +61,7 @@ function WhatWillYouGetWithUs() {
             alt="Map Image"
             data-aos="fade-right"
             data-aos-duration="1000"
-            data-aos-delay="500"
+            data-aos-delay="100"
             data-aos-easing="ease"
           />
         </div>

@@ -16,6 +16,7 @@ import SmoothScroll from "@/components/SmoothScroll.component";
 import MenuBar from "@/components/Common/MenuBar";
 import MenuPackage from "@/components/Common/MenuPackage";
 import Parallax from "@/components/Home/Parallax";
+import AnimatedCursor from "react-animated-cursor";
 
 export default function Home() {
   const [on, setOn] = useState("1");
@@ -26,9 +27,11 @@ export default function Home() {
   const [pos2, setPos2] = useState(null);
   const [menubaropacity, setMenuBarOpacity] = useState("none");
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
+  const [cursor, setCursor] = useState(false);
 
   // useEffect for  Animated Section
   useEffect(() => {
+    setCursor(true);
     const timer1 = setTimeout(() => {
       setPos2(true);
       console.log("called");
@@ -46,6 +49,16 @@ export default function Home() {
 
   return (
     <Layout title={"Mobifinx | Home"}>
+      {cursor ? (
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={50}
+          color="162, 29, 52"
+          outerAlpha={0.1}
+          innerScale={0.1}
+          outerScale={2}
+        />
+      ) : null}
       {/* Intro container */}
       {pos1 ? <MenuPackage /> : null}
       {/* <SmoothScroll> */}
