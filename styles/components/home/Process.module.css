@@ -139,8 +139,14 @@
 }
 .YourNeedPContainer p {
   width: 44.93rem;
-  
 }
+
+.ProcessBlinkHover {
+  width: 9rem;
+  height: 9rem;
+  transition: all 1.3s ease;
+}
+
 /*  */
 @media (min-width: 320px) and (max-width: 767px) {
   .ProcessContainer {
@@ -194,7 +200,7 @@
   .ProcessBoxesContainer {
     width: 44rem;
   }
-  .YourNeedPContainer p{
+  .YourNeedPContainer p {
     font-size: 18px;
   }
   .MainPs {

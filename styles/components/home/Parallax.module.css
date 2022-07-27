@@ -1,13 +1,13 @@
-.Parallax {
-  /* background-image: url("/assets/images/Parallax.jpg");
+/* .Parallax {
+  background-image: url("/assets/images/Parallax.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  padding-bottom: 4rem; */
-}
+  padding-bottom: 4rem;
+} */
 .Effect {
-  padding-top: 0rem;
+  padding-top: 4rem;
 }
 .Parallaxrow {
   display: flex;
@@ -20,12 +20,13 @@
   font-size: 22px;
   font-weight: 400;
   color: #1a1c3c;
+  /* color: #fff; */
   padding-left: 1rem;
 }
 .MainHeading {
   font-size: 130px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   background: linear-gradient(to right, #db4cbc, #c75dd4, #b26fed);
   background-size: 200% 200%;
@@ -46,6 +47,7 @@
 }
 .Mainsection {
   padding: 0rem 0 8rem 3rem;
+  /* background-color: blue; */
 }
 .MainHeading:hover {
   color: rgba(0, 0, 0, 0);
@@ -65,7 +67,7 @@
 .MainHeadingSecure {
   font-size: 130px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   background: linear-gradient(to right, #004dfe, #337efe, #75beff);
   background-size: 200% 200%;
@@ -97,9 +99,9 @@
 .MainHeadingSuccess {
   font-size: 130px;
   font-weight: 700;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
-  background: linear-gradient(to right, #c92441, #9b1e32, #701825);
+  background: linear-gradient(to right, #1b0273, #3866f2, #6f04d9);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;

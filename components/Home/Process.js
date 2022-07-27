@@ -82,7 +82,11 @@ const Process = () => {
               >
                 <div className={styles.ProcessBlinkMain}>
                   <div
-                    className={styles.ProcessBlink}
+                    className={
+                      (value === 0 && i === 0) || value === i
+                        ? `${styles.ProcessBlink} ${styles.ProcessBlinkHover}`
+                        : styles.ProcessBlink
+                    }
                     style={{
                       borderColor: v.bcolor,
                       backgroundColor: v.bkcolor,

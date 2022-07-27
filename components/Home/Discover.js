@@ -95,9 +95,9 @@ const Discover = () => {
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  data-aos-delay="300"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos-delay="300"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image
@@ -116,9 +116,9 @@ const Discover = () => {
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  data-aos-delay="300"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos-delay="300"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image
@@ -139,9 +139,9 @@ const Discover = () => {
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  data-aos-delay="500"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos-delay="300"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image
@@ -160,9 +160,9 @@ const Discover = () => {
                   className={styles.DiscoverBox}
                   data-aos="fade-left"
                   data-aos-duration="2000"
-                  data-aos-delay="500"
-                  data-aos-easing="ease"
-                  data-aos-mirror="true"
+                  // data-aos-delay="300"
+                  // data-aos-easing="ease"
+                  // data-aos-mirror="true"
                 >
                   <div className={styles.DiscoverItemBox}>
                     <Image

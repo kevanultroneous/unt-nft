@@ -1,5 +1,6 @@
 .HeroMainContainer {
   padding: 2.5rem 0 4rem 8.5rem;
+  overflow: hidden;
 }
 .Herorow {
   /* padding-left: 8.5rem; */

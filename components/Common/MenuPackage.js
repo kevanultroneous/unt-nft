@@ -22,7 +22,9 @@ const MenuPackage = () => {
             : "fade-in-left-anim-remove"
         }
         animatedotherclass={
-          menubaropacity === "1" ? "fade-down" : "fade-down-remove"
+          menubaropacity === "1"
+            ? "fade-in-left-anim2"
+            : "fade-in-left-anim2-remove"
         }
       />
 

@@ -137,6 +137,32 @@ a {
     transform: translateX(0px);
   }
 }
+.fade-in-left-anim2 {
+  animation: fadeInLeft2 1s ease-in-out;
+  animation-delay: 10ms;
+}
+
+@-webkit-keyframes fadeInLeft2 {
+  0% {
+    transform: translateX(1000px);
+  }
+  100% {
+    transform: translateX(0px);
+  }
+}
+.fade-in-left-anim2-remove {
+  animation: fadeInLeft2remove 1s ease-in-out;
+  animation-delay: 10ms;
+}
+@-webkit-keyframes fadeInLeft2remove {
+  0% {
+    transform: translateX(0px);
+  }
+  100% {
+    transform: translateX(1000px);
+  }
+}
+
 .fade-in-left-anim-remove {
   animation: fadeInLeftremove 1s ease-in-out;
   animation-delay: 10ms;

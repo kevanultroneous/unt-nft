@@ -86,21 +86,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>
@@ -117,21 +123,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>
@@ -148,21 +160,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>
@@ -179,21 +197,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>
@@ -210,21 +234,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>
@@ -241,21 +271,27 @@ const Partners = () => {
                       <h5>Chris Hemsworth</h5>
 
                       <div className={styles.Socialmedia}>
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Linkdin.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Facebook.svg"}
-                          className={styles.socialimg}
-                        />
-                        <Image
-                          alt="team-management"
-                          src={"/assets/images/Twit.svg"}
-                          className={styles.socialimg}
-                        />
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Linkdin.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Facebook.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
+                        <a href="#">
+                          <Image
+                            alt="team-management"
+                            src={"/assets/images/Twit.svg"}
+                            className={styles.socialimg}
+                          />
+                        </a>
                       </div>
                     </div>
                     <p>Founder & CEO</p>

@@ -26,7 +26,7 @@ const Exchange = ({ color, href }) => {
               : null
           }
         >
-          TryFreeDemo{" "}
+          Trade{" "}
           <HiOutlineExternalLink
             className={styles.ContactusIcon}
             style={color ? { color: color } : null}

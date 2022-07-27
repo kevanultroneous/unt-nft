@@ -13,7 +13,6 @@
   text-align: center;
   transform: rotate(0deg);
   cursor: pointer;
-
 }
 .Current {
   font-weight: 300;
@@ -80,6 +79,9 @@
   .Controller {
     padding-top: 1rem;
     flex-direction: unset;
+    padding-right: 0;
+    width: 100%;
+    justify-content: center;
   }
   .ArrowTop {
     font-size: 2rem;
