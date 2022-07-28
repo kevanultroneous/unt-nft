@@ -88,13 +88,17 @@ const Discover = () => {
           </Row>
         </Col>
         <Col xs={12} xl={6} md={6}>
-          <div className={styles.DiscoverItemsContainer}>
+          <div
+            className={styles.DiscoverItemsContainer}
+            data-aos="fade-left"
+            data-aos-duration="2000"
+          >
             <Row className={styles.DiscoverItemsRow}>
               <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
+                  // data-aos="fade-left"
+                  // data-aos-duration="2000"
                   // data-aos-delay="300"
                   // data-aos-easing="ease"
                   // data-aos-mirror="true"
@@ -114,8 +118,8 @@ const Discover = () => {
               <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
+                  // data-aos="fade-left"
+                  // data-aos-duration="2000"
                   // data-aos-delay="300"
                   // data-aos-easing="ease"
                   // data-aos-mirror="true"
@@ -137,8 +141,8 @@ const Discover = () => {
               <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
+                  // data-aos="fade-left"
+                  // data-aos-duration="2000"
                   // data-aos-delay="300"
                   // data-aos-easing="ease"
                   // data-aos-mirror="true"
@@ -158,8 +162,8 @@ const Discover = () => {
               <Col xl={6} xs={4} md={6}>
                 <div
                   className={styles.DiscoverBox}
-                  data-aos="fade-left"
-                  data-aos-duration="2000"
+                  // data-aos="fade-left"
+                  // data-aos-duration="2000"
                   // data-aos-delay="300"
                   // data-aos-easing="ease"
                   // data-aos-mirror="true"

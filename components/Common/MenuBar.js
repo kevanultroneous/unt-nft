@@ -10,6 +10,7 @@ const MenuBar = ({
   visibility,
   animatedclass,
   animatedotherclass,
+  handleClick,
 }) => {
   const router = useRouter();
   const [currentIcon, setCurrentIcon] = useState(null);
@@ -48,6 +49,7 @@ const MenuBar = ({
                 <div
                   className={styles.MenuName}
                   key={index}
+                  onClick={() => handleClick()}
                   onMouseOver={() => setCurrentMenu(index)}
                 >
                   <Link href={value.mainlink}>
@@ -96,8 +98,21 @@ const MenuBar = ({
                       className={
                         value.description ? styles.UniqueMenuDescription : null
                       }
+                      style={
+                        value.paragraph
+                          ? {
+                              color: "#000",
+                              fontWeight: "300",
+                              fontSize: "14px",
+                            }
+                          : null
+                      }
                     >
-                      {value.description ? value.description : null}
+                      {value.description
+                        ? value.description
+                        : value.paragraph
+                        ? value.paragraph
+                        : null}
                     </li>
                   </div>
                 </Link>

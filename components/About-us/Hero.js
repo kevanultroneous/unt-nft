@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect } from "react";
 import Aos from "aos";
 import Lottie from "react-lottie";
-import animation from "../../utils/scroll-anim-black.json";
+import animation from "../../utils/New-2-scroll.json";
 
 const Hero = ({ clickHandler }) => {
   const defaultOptions = {
@@ -71,7 +71,7 @@ const Hero = ({ clickHandler }) => {
           <Col xl={2} data-aos="fade" data-aos-duration="2000">
             <div className={styles.Scrolldowncontainer} onClick={clickHandler}>
               <div>
-                <Lottie options={defaultOptions} height={100} width={30} />
+                <Lottie options={defaultOptions} height={100} width={50} />
               </div>
               {/* <Image
                 alt="downimg"

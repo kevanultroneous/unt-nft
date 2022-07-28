@@ -42,18 +42,22 @@ export const menus = [
       {
         name: "Company Overview",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       {
         name: "Case Study",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       {
         name: "Career",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       {
         name: "Events & webinars",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       // {
       //   name: "Awards & Certificate",
@@ -72,14 +76,17 @@ export const menus = [
       {
         name: "Blog",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       {
         name: "News/Media",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
       {
         name: "Press Release",
         link: "/",
+        paragraph: "Hello i am new paragrphs",
       },
     ],
   },

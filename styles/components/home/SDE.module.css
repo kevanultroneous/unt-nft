@@ -177,8 +177,8 @@
 
 .whiteMouse {
   transform: rotate(90deg);
-  padding-left: 3rem;
-  padding-top: 11rem;
+  padding-left: 2.4rem;
+  padding-top: 11.5rem;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .HomeSmallHeading {

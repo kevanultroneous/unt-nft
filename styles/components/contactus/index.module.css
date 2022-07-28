@@ -18,6 +18,16 @@
   margin-bottom: 1rem;
   margin-right: 2rem;
   margin-left: 2rem;
+  padding-bottom: 0.8rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.SecondSectionInput {
+  border: none;
+  width: 20rem;
+  outline: none;
+  margin-bottom: 1rem;
+  margin-right: 1.5rem;
+  margin-left: 1.5rem;
   padding-bottom: 0.2rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -34,7 +44,7 @@
   margin-top: 1rem;
   border: none;
   outline: none;
-  padding-bottom: 1.5rem;
+  padding-bottom: 0.8rem;
   width: 97%;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
@@ -63,7 +73,7 @@
   padding-top: 3rem;
 }
 .ButtonSpace {
-  padding-top: 3rem;
+  padding-top: 2rem;
 }
 .CaptchaControllerContainer {
   padding-top: 2rem;
@@ -73,7 +83,7 @@
 .ReloadText {
   padding-left: 1rem;
   text-decoration: underline;
-  color: #7a7a7a;;
+  color: #7a7a7a;
   user-select: none;
   cursor: pointer;
   transition: all 1s ease;
@@ -88,13 +98,16 @@
 .CaptchaInput {
   outline: none;
   border: none;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 .Countrysection {
   padding-top: 1.5rem;
   display: flex;
   width: 100%;
+}
+.SecondSectionInputHide {
+  padding-bottom: 0rem !important;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .ContactUsMainContainer {
@@ -118,6 +131,11 @@
     margin: 0%;
     margin-bottom: 1rem;
   }
+  .SecondSectionInput {
+    margin: 0%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
   .SecondSection {
     flex-direction: column;
     padding-top: 1rem;
@@ -133,11 +151,28 @@
   }
   .SubjectInput {
     width: 20rem;
+    padding-bottom: 1rem;
+  }
+  /* .CaptchaInput {
+    
+  } */
+  .SecondSectionInputHide {
+    padding-bottom: 1rem !important;
   }
 }
+.TabWantContainer {
+  display: none;
+}
 @media (min-width: 768px) and (max-width: 1080px) {
-  .WantContainer{
-    padding-top: 2rem;
+  .WantContainer {
+    display: none;
+  }
+  .TabWantContainer {
+    display: flex;
+    align-items: center;
+  }
+  .WantSentence {
+    margin-left: 2.5rem;
   }
   .ContactUsMainContainer {
     padding: 1rem 1rem 6rem 1rem;
@@ -162,7 +197,13 @@
     margin-bottom: 0rem;
   }
   .SecondSection {
-    flex-direction: column;
+    /* flex-direction: column; */
+  }
+  .SecondSectionInputHide {
+    display: none;
+  }
+  .FirstSectionSentenceSpace {
+    margin-right: 2rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {

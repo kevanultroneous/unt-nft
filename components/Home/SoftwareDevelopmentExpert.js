@@ -9,7 +9,7 @@ import { useEffect, useRef } from "react";
 import ActionButtonV2 from "../Common/ActionButtonV2";
 import Link from "next/link";
 import Lottie from "react-lottie";
-import animation from "../../utils/scroll-anim.json";
+import animation from "../../utils/New-1-scroll.json";
 const SDE = ({ handleClick }) => {
   const defaultOptions = {
     loop: true,
@@ -132,7 +132,7 @@ const SDE = ({ handleClick }) => {
             />
             <p className={styles.ScrolldownText}>Scroll Down</p> */}
             <div className={styles.whiteMouse}>
-              <Lottie options={defaultOptions} height={100} width={30} />
+              <Lottie options={defaultOptions} height={100} width={50} />
             </div>
           </div>
           {/* https://assets3.lottiefiles.com/packages/lf20_JMhjmh.json */}

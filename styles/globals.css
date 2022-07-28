@@ -47,7 +47,7 @@ a {
   animation: fade-out 1s;
 }
 .react-tel-input {
-  font-family: "Roboto", sans-serif;
+  font-family: "Jost", sans-serif !important;
   font-size: 15px;
   position: relative;
   width: fit-content !important;
@@ -84,7 +84,7 @@ a {
   border-right: none !important;
   border-radius: 0% !important;
   width: 15rem !important;
-  padding-bottom: 1rem;
+  padding-bottom: 1.3rem;
 }
 .form-control {
   border-radius: 0% !important;
@@ -338,10 +338,11 @@ a {
     margin-top: 0rem;
   }
   .react-tel-input .flag-dropdown {
-    top: -15% !important;
+    top: -25% !important;
   }
   .react-tel-input .form-control {
     width: 20rem !important;
+    padding-bottom: 1.5rem;
   }
   .accordion-button {
     padding-left: 0% !important;
@@ -358,10 +359,12 @@ a {
     padding: 0 !important;
   }
   .react-tel-input .form-control {
-    width: 20rem !important;
+    width: 21rem !important;
+    padding-bottom: 1.5rem !important;
+    margin-right: 2rem;
   }
   .react-tel-input .flag-dropdown {
-    top: -15% !important;
+    top: 15% !important;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

@@ -6,14 +6,15 @@
 }
 .InspiredCardcontainer {
   position: relative;
-  width: 50%;
+  /* width: 50%; */
+  width: 25rem;
 }
 
 .InspiredCardImage {
   display: block;
   height: auto;
-  width: 400px;
-  height: 500px;
+  width: 100%;
+  height: auto;
 }
 .InspiredDis {
   padding: 1rem;
@@ -96,8 +97,9 @@
   flex-direction: column;
 }
 .InspiredCardSpace {
-  margin-bottom: 5rem;
+  margin-bottom: 2rem;
   margin-top: 2rem;
+  width: 25rem;
 }
 .InspiredCardDes {
   font-weight: 600;
@@ -117,10 +119,11 @@
   padding-top: 4rem;
   display: flex;
   align-items: center;
-  width: 100%;
+  /* width: 100%; */
   justify-content: end;
-  padding-right: 4rem;
+  /* padding-right: 4rem; */
   /* padding-left: 5rem; */
+  width: 25rem;
 }
 .InspiredCardView2 {
   padding-top: 3rem;
@@ -161,6 +164,12 @@
   margin: 0%;
   padding-right: 2rem;
   color: #a21d34;
+}
+.LeftdivMain {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 @media (min-width: 320px) and (max-width: 767px) {
   .InspiredContainer {

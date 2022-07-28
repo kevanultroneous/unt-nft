@@ -230,8 +230,13 @@ const ContactUs = () => {
           )}
           <Col xl={12} md={12}>
             <div className={styles.SecondSection}>
+              {/*Tablet: giving some space so adjust PhoneInput */}
               {!isMobile && (
-                <p className={styles.FirstSectionSentence1}>with me through</p>
+                <p
+                  className={`${styles.FirstSectionSentence1} ${styles.FirstSectionSentenceSpace}`}
+                >
+                  with me through
+                </p>
               )}
               <PhoneInput
                 value={phoneValue}
@@ -247,6 +252,7 @@ const ContactUs = () => {
               />
 
               <p className={styles.FirstSectionSentence1}>And</p>
+              {/* its a hide on tablet  */}
               <input
                 ref={mailf}
                 style={mailerror ? { borderBottom: "1px solid red" } : null}
@@ -254,10 +260,26 @@ const ContactUs = () => {
                 value={email}
                 onChange={(e) => mailInputOperation(e)}
                 placeholder="Mail ID"
-                className={styles.FirstSectionInput}
+                className={`${styles.FirstSectionInput} ${styles.SecondSectionInputHide}`}
               />
             </div>
           </Col>
+          {/* saw only on tablet */}
+          <Col xl={12} md={12} className={styles.TabWantContainer}>
+            <input
+              ref={mailf}
+              style={mailerror ? { borderBottom: "1px solid red" } : null}
+              type={"text"}
+              value={email}
+              onChange={(e) => mailInputOperation(e)}
+              placeholder="Mail ID"
+              className={`${styles.FirstSectionInput}`}
+            />
+            <p className={styles.WantSentence}>
+              I want to get in touch because,
+            </p>
+          </Col>
+          {/* want container HIDE ON Tab */}
           <Col xl={12} md={12} className={styles.WantContainer}>
             <p className={styles.WantSentence}>
               I want to get in touch because,

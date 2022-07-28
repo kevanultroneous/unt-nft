@@ -83,49 +83,53 @@ const Inspiredby = () => {
           <h3 className={styles.InspiredCardDesMob}>
             Get Inspired by Case Studies
           </h3>
-          <CardInspired
-            animtype={"fade-up"}
-            srcimg={"/assets/images/case1.png"}
-            style={styles.InspiredCardSpace}
-            inspireTitle={"EtherGo blockchain-based fundraising platform"}
-            inspireParagraph={"In this case, the client wanted a blockchai"}
-            disTitle={"EtherGo blockchain-based fundraising platform"}
-            dish1={"Problem"}
-            disp1={
-              "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising."
-            }
-            dish2={"Solution"}
-            disp2={
-              "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors."
-            }
-          />
-
-          <CardInspired
-            animtype={"fade-up"}
-            srcimg={"/assets/images/case2.png"}
-            inspireTitle={
-              "TRON Private Chain and Centralized Blockchain Ecosystem"
-            }
-            inspireParagraph={
-              "A private blockchain network where all the gambling"
-            }
-            disTitle={"TRON Private Chain and Centralized Blockchain Ecosystem"}
-            dish1={"Problem"}
-            disp1={
-              "A private blockchain network where all the gambling platforms can come and provide faster settlements with no slippage and compel customers to respend the won amount also allows them to use the money for other services."
-            }
-            dish2={"Solution"}
-            disp2={
-              "We offered an HFT exchange for fiat and crypto trading with Tron-based private blockchain, in-house blockchain-based utility tokens, WebSocket-based open APIs for 3rd party platform plug-ins, and a vendor payment system for crypto processing."
-            }
-          />
-          <div className={styles.InspiredCardView}>
-            <p className={styles.Viewall}>View All</p>
-            <Image
-              alt={"grad"}
-              src="/assets/images/grad.svg"
-              className={styles.InspiredCardImg}
+          <div className={styles.LeftdivMain}>
+            <CardInspired
+              animtype={"fade-up"}
+              srcimg={"/assets/images/CS1.png"}
+              style={styles.InspiredCardSpace}
+              inspireTitle={"EtherGo blockchain-based fundraising platform"}
+              inspireParagraph={"In this case, the client wanted a blockchai"}
+              disTitle={"EtherGo blockchain-based fundraising platform"}
+              dish1={"Problem"}
+              disp1={
+                "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising."
+              }
+              dish2={"Solution"}
+              disp2={
+                "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors."
+              }
             />
+
+            <CardInspired
+              animtype={"fade-up"}
+              srcimg={"/assets/images/CS2.png"}
+              inspireTitle={
+                "TRON Private Chain and Centralized Blockchain Ecosystem"
+              }
+              inspireParagraph={
+                "A private blockchain network where all the gambling"
+              }
+              disTitle={
+                "TRON Private Chain and Centralized Blockchain Ecosystem"
+              }
+              dish1={"Problem"}
+              disp1={
+                "A private blockchain network where all the gambling platforms can come and provide faster settlements with no slippage and compel customers to respend the won amount also allows them to use the money for other services."
+              }
+              dish2={"Solution"}
+              disp2={
+                "We offered an HFT exchange for fiat and crypto trading with Tron-based private blockchain, in-house blockchain-based utility tokens, WebSocket-based open APIs for 3rd party platform plug-ins, and a vendor payment system for crypto processing."
+              }
+            />
+            <div className={styles.InspiredCardView}>
+              <p className={styles.Viewall}>View All</p>
+              <Image
+                alt={"grad"}
+                src="/assets/images/grad.svg"
+                className={styles.InspiredCardImg}
+              />
+            </div>
           </div>
         </Col>
         {/* right */}
@@ -135,7 +139,7 @@ const Inspiredby = () => {
           </h3>
           <CardInspired
             animtype={"fade-up"}
-            srcimg={"/assets/images/case3.png"}
+            srcimg={"/assets/images/CS3.png"}
             style={styles.InspiredCardSpace}
             inspireTitle={
               "Public Ether Blockchain based Centralized Product Ecosystem"

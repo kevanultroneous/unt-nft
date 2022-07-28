@@ -1,11 +1,11 @@
-/* .Parallax {
+.Parallax {
   background-image: url("/assets/images/Parallax.jpg");
   background-attachment: fixed;
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   padding-bottom: 4rem;
-} */
+}
 .Effect {
   padding-top: 4rem;
 }
@@ -19,21 +19,21 @@
 .Pera {
   font-size: 22px;
   font-weight: 400;
-  color: #1a1c3c;
-  /* color: #fff; */
+  /* color: #1a1c3c; */
+  color: #fff;
   padding-left: 1rem;
 }
 .MainHeading {
-  font-size: 130px;
-  font-weight: 700;
-  /* color: #fff; */
+  font-size: 100px;
+  font-weight: 500;
+  color: #fff;
   text-transform: uppercase;
-  background: linear-gradient(to right, #db4cbc, #c75dd4, #b26fed);
+  background: linear-gradient(to right, #f2f2f2, #d9d9d9, #a6a6a6);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  color: #1a1c3c;
+  /* color: #1a1c3c; */
   /* font-size: 10rem; */
   /* width: 80vw;
   margin: 0; */
@@ -46,7 +46,7 @@
   -webkit-transition: 0.2s; */
 }
 .Mainsection {
-  padding: 0rem 0 8rem 3rem;
+  padding: 0rem 0 4rem 3rem;
   /* background-color: blue; */
 }
 .MainHeading:hover {
@@ -65,16 +65,16 @@
 }
 
 .MainHeadingSecure {
-  font-size: 130px;
-  font-weight: 700;
-  /* color: #fff; */
+  font-size: 100px;
+  font-weight: 500;
+  color: #fff;
   text-transform: uppercase;
   background: linear-gradient(to right, #004dfe, #337efe, #75beff);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  color: #1a1c3c;
+  /* color: #1a1c3c; */
   text-align: left;
   transition: color 0.2s ease-in-out;
   text-transform: uppercase;
@@ -97,16 +97,16 @@
 }
 
 .MainHeadingSuccess {
-  font-size: 130px;
-  font-weight: 700;
-  /* color: #fff; */
+  font-size: 100px;
+  font-weight: 500;
+  color: #fff;
   text-transform: uppercase;
   background: linear-gradient(to right, #1b0273, #3866f2, #6f04d9);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  color: #1a1c3c;
+  /* color: #1a1c3c; */
   text-align: left;
   transition: color 0.2s ease-in-out;
   text-transform: uppercase;

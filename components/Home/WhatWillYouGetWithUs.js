@@ -67,6 +67,7 @@ function WhatWillYouGetWithUs() {
             data-aos-duration="1000"
             data-aos-delay="100"
             data-aos-easing="ease"
+            className={styles.Small}
           />
         </div>
       </Col>

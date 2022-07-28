@@ -85,11 +85,12 @@ export default function Home() {
           <Inspiredby />
           {/* Process */}
           <Process />
-          {/* be a part of future choice */}
-          <FutureChoice />
           {/* Speciality */}
           {/* <Speciality /> */}
           <Parallax />
+          {/* be a part of future choice */}
+          <FutureChoice />
+
           {/* Footer */}
           <Footer />
         </>

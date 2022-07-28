@@ -38,7 +38,7 @@ const Footer = () => {
             <Link href="/">
               <div className={styles.FooterContactusLink}>
                 Explore{" "}
-                <div className="Pulse">
+                <div className={styles.Pulse}>
                   <HiOutlineExternalLink
                     className={styles.ContactusIcon}
                     style={{ color: "#ccc" }}

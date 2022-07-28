@@ -32,12 +32,12 @@
 .text:hover {
   color: #fff;
 }
-.Textdiv{
+.Textdiv {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-@media (min-width: 320px) and (max-width: 430px){
+@media (min-width: 320px) and (max-width: 430px) {
   /* .button {
 
   } */

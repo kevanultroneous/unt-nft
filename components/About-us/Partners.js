@@ -46,6 +46,54 @@ const Partners = () => {
     ],
   };
   const sliderRef = useRef();
+  const PartnerCard = ({
+    clientname,
+    designation,
+    key,
+    linkedinLink,
+    facebookLink,
+    twitLink,
+  }) => {
+    return (
+      <div>
+        <Col xl={12} xs={12} className={styles.Imgcol} key={key}>
+          <Image
+            src={"/assets/images/Team.svg"}
+            className={styles.Teamimg}
+            alt="team-management"
+          />
+          <div className={styles.TeamName}>
+            <h5>{clientname}</h5>
+
+            <div className={styles.Socialmedia}>
+              <a href={linkedinLink}>
+                <Image
+                  alt="team-management"
+                  src={"/assets/images/Linkdin.svg"}
+                  className={styles.socialimg}
+                />
+              </a>
+              <a href={facebookLink}>
+                <Image
+                  alt="team-management"
+                  src={"/assets/images/Facebook.svg"}
+                  className={styles.socialimg}
+                />
+              </a>
+              <a href={twitLink}>
+                <Image
+                  alt="team-management"
+                  src={"/assets/images/Twit.svg"}
+                  className={styles.socialimg}
+                />
+              </a>
+            </div>
+          </div>
+          <p>{designation}</p>
+        </Col>
+      </div>
+    );
+  };
   return (
     <section className={styles.Partners}>
       <div className={styles.PartnersContainer}>
@@ -75,228 +123,16 @@ const Partners = () => {
             </div>
             <Row className={styles.SliderRow}>
               <Slider {...settings} arrows={false} ref={sliderRef}>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
-                <div>
-                  <Col xl={12} xs={12} className={styles.Imgcol}>
-                    <Image
-                      src={"/assets/images/Team.svg"}
-                      className={styles.Teamimg}
-                      alt="team-management"
-                    />
-                    <div className={styles.TeamName}>
-                      <h5>Chris Hemsworth</h5>
-
-                      <div className={styles.Socialmedia}>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Linkdin.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Facebook.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                        <a href="#">
-                          <Image
-                            alt="team-management"
-                            src={"/assets/images/Twit.svg"}
-                            className={styles.socialimg}
-                          />
-                        </a>
-                      </div>
-                    </div>
-                    <p>Founder & CEO</p>
-                  </Col>
-                </div>
+                {[1, 2, 3, 4, 45, 5, 5, 5, 4].map((value, index) => (
+                  <PartnerCard
+                    clientname="Mukesh Ambani"
+                    designation="CEO"
+                    key={index}
+                    facebookLink=""
+                    linkedinLink=""
+                    twitLink=""
+                  />
+                ))}
               </Slider>
             </Row>
           </Col>

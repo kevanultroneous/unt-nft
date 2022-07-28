@@ -14,6 +14,12 @@ const MenuPackage = () => {
       <MobileMenu />
       <TabletMenu />
       <MenuBar
+        handleClick={() => {
+          setAddClass(!addClass);
+          menubaropacity === "1"
+            ? setMenuBarOpacity("0")
+            : setMenuBarOpacity("1");
+        }}
         display={menubaropacity}
         visibility={menubaropacity === "1" ? "visible" : null}
         animatedclass={
