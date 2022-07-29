@@ -4,12 +4,18 @@ import { useEffect, useState } from "react";
 import { Col, Image, Offcanvas, Row } from "react-bootstrap";
 import { iconsMenu, menus } from "utils/menu.data";
 import WaterText from "./WaterText";
-const MobileMenu = () => {
-  const [show, setShow] = useState(false);
 
+import { useRouter } from "next/router";
+const MobileMenu = () => {
+  const router = useRouter();
+  const [show, setShow] = useState(false);
+  const [currentIcon, setCurrentIcon] = useState(null);
   const [menuo, setMenuo] = useState(0);
   const [addClass, setAddClass] = useState(false);
-
+  const toggleHandler = () => {
+    setAddClass(false);
+    setShow(false);
+  };
   return (
     <>
       <div
@@ -100,7 +106,19 @@ const MobileMenu = () => {
                 {menus.map((v, i) => (
                   <Col xl={12} key={i}>
                     <Link href={v.mainlink}>
-                      <p className={styles.LinkName}>{v.name}</p>
+                      <p
+                        onClick={() => {
+                          v.mainlink === "" ? null : toggleHandler();
+                        }}
+                        className={styles.LinkName}
+                        style={
+                          router.pathname === v.mainlink
+                            ? { color: "#fff" }
+                            : null
+                        }
+                      >
+                        {v.name}
+                      </p>
                     </Link>
                     {v.menus.length > 0 ? (
                       <>
@@ -120,14 +138,31 @@ const MobileMenu = () => {
               <Row className={styles.IconMenuContainer}>
                 {iconsMenu.map((value, index) => (
                   <Link href={value.link} key={index}>
-                    <Col xs={5} key={index}>
+                    <Col
+                      xs={5}
+                      key={index}
+                      onMouseOver={() => setCurrentIcon(index)}
+                      onMouseLeave={() => setCurrentIcon(null)}
+                    >
                       <div className={styles.IconCard}>
                         <Image
                           src={value.icon}
                           alt={value.icon}
                           className={styles.IconImg}
                         />
-                        <p className={styles.IconName}>{value.name}</p>
+                        <p
+                          className={styles.IconName}
+                          style={
+                            index === currentIcon
+                              ? {
+                                  color: value.color,
+                                  transition: "all 0.5s ease",
+                                }
+                              : { color: "#000", transition: "all 0.5s ease" }
+                          }
+                        >
+                          {value.name}
+                        </p>
                       </div>
                     </Col>
                   </Link>
@@ -141,9 +176,16 @@ const MobileMenu = () => {
   );
 };
 export const TabletMenu = () => {
+  const [show, setShow] = useState(false);
   const [showTAB, setShowTAB] = useState(false);
   const [addClass, setAddClass] = useState(false);
-
+  const [currentIcon, setCurrentIcon] = useState(null);
+  const router = useRouter();
+  const toggleHandler = () => {
+    setAddClass(!addClass);
+    setShow(!show);
+    setShowTAB(!showTAB);
+  };
   return (
     <>
       <div
@@ -160,10 +202,7 @@ export const TabletMenu = () => {
         <div className={styles.TabletController}>
           <div
             className={`${styles.hamburger} ${addClass ? "is-active" : ""}`}
-            onClick={() => {
-              setAddClass(true);
-              setShowTAB(!showTAB);
-            }}
+            onClick={() => toggleHandler()}
             id="hamburger-12"
           >
             <span className={`${styles.line} lineHam`}></span>
@@ -174,10 +213,7 @@ export const TabletMenu = () => {
       </div>
       <Offcanvas
         show={showTAB}
-        onHide={() => {
-          setAddClass(false);
-          setShowTAB(false);
-        }}
+        onHide={() => toggleHandler()}
         placement="start"
       >
         <Offcanvas.Body>
@@ -196,7 +232,19 @@ export const TabletMenu = () => {
                 {menus.map((v, i) => (
                   <Col xl={12} key={i}>
                     <Link href={v.mainlink}>
-                      <p className={styles.LinkName}>{v.name}</p>
+                      <p
+                        onClick={() => {
+                          v.mainlink === "" ? null : toggleHandler();
+                        }}
+                        className={styles.LinkName}
+                        style={
+                          router.pathname == v.mainlink
+                            ? { color: "#fff" }
+                            : null
+                        }
+                      >
+                        {v.name}
+                      </p>
                     </Link>
                     {v.menus.length > 0 ? (
                       <>
@@ -225,7 +273,13 @@ export const TabletMenu = () => {
                   </div>
                 </Col>
                 {iconsMenu.map((value, index) => (
-                  <Col md={6} key={index} className={styles.ProductIcon}>
+                  <Col
+                    md={6}
+                    key={index}
+                    className={styles.ProductIcon}
+                    onMouseOver={() => setCurrentIcon(index)}
+                    onMouseLeave={() => setCurrentIcon(null)}
+                  >
                     <Link href={value.link} key={index}>
                       <div className={styles.TabIconCard}>
                         <Image
@@ -233,7 +287,19 @@ export const TabletMenu = () => {
                           alt={value.icon}
                           className={styles.IconImg}
                         />
-                        <p className={styles.IconName}>{value.name}</p>
+                        <p
+                          className={styles.IconName}
+                          style={
+                            index === currentIcon
+                              ? {
+                                  color: value.color,
+                                  transition: "all 0.5s ease",
+                                }
+                              : { color: "#000", transition: "all 0.5s ease" }
+                          }
+                        >
+                          {value.name}
+                        </p>
                       </div>
                     </Link>
                   </Col>

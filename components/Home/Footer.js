@@ -35,7 +35,7 @@ const Footer = () => {
       <Row className={styles.FooterLinksContainer}>
         <Col xl={6} md={12}>
           <div className="d-flex align-items-center">
-            <Link href="/">
+            <Link href="/contact-us">
               <div className={styles.FooterContactusLink}>
                 Explore{" "}
                 <div className={styles.Pulse}>

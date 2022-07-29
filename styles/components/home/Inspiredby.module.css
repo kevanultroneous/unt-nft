@@ -61,7 +61,7 @@
   border-bottom-right-radius: 20px;
   overflow: hidden;
   width: 400px;
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 .InspiredDishead1 {
   font-weight: 700;
@@ -76,9 +76,9 @@
 }
 .InspiredCardcontainer:hover .InspiredCardOverlay {
   height: 100%;
-  border-radius: 20px;
+  border-radius: 15px;
   background: rgba(162, 29, 52, 0.9);
-  transition: all 1s ease;
+  transition: all 0.5s ease;
   opacity: 1;
 }
 .InspiredCardcontainer:hover .InspiredDis {
@@ -171,6 +171,7 @@
   align-items: center;
   flex-direction: column;
 }
+
 @media (min-width: 320px) and (max-width: 767px) {
   .InspiredContainer {
     padding-top: 2rem;
@@ -190,6 +191,7 @@
     display: block;
     padding: 2rem 0;
     font-size: 35px;
+    padding-bottom: 0;
   }
   .InspiredCardView2 {
     opacity: 1;
@@ -200,7 +202,7 @@
   }
   .InspiredCardImage {
     width: 100%;
-    height: auto;
+    height: 26rem;
   }
   .InspiredCardText {
     padding: 1rem 1rem;
@@ -218,6 +220,13 @@
   .InspiredCardcontainer {
     width: 100%;
   }
+  .InspiredDisTitle,
+  .InspiredDishead1 {
+    font-size: 16px;
+  }
+  .InspiredDisParagraph {
+    padding-bottom: 0.5rem;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .InspiredCardCol {
@@ -226,6 +235,7 @@
   .InspiredContainer {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-bottom: 8rem;
   }
   .InspiredCardView,
   .InspiredCardDes {
@@ -235,6 +245,7 @@
     display: block;
     text-align: left;
     width: 24rem;
+    padding-left: 0.5rem;
   }
   .InspiredCardView2 {
     opacity: 1;

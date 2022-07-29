@@ -65,36 +65,21 @@
   letter-spacing: 0.05em;
   -webkit-text-stroke: 1px #ffffff;
   text-decoration: none !important;
-  color: transparent !important;
+  color: transparent;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
-  background-size: 100% 200%;
-  background-position: top;
+
   -webkit-transition: background-position 1.5s ease-in-out;
   -o-transition: background-position 1.5s ease-in-out;
   transition: background-position 1.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(50%, #ffffff),
-    color-stop(50%, transparent)
-  );
-  background-image: -webkit-linear-gradient(
-    bottom,
-    #ffffff 50%,
-    transparent 50%
-  );
-  background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+
   margin: 0%;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   opacity: 0.25;
 }
 .LinkName:hover {
-  background-position: bottom;
-  cursor: pointer;
+  color: #ffffff;
 }
 .SubMenu {
   font-weight: 400;
@@ -218,7 +203,7 @@
   }
   .LinkName {
     padding-left: 1rem;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .SubMenu {
     padding-left: 1rem;

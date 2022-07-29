@@ -16,8 +16,9 @@
   font-style: normal;
   -webkit-text-stroke: 1px #a21d34;
   text-decoration: none;
-  color: transparent !important;
-  -webkit-background-clip: text, padding-box;
+  color: #fff;
+  transition: all 0.3s ease;
+  /* -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   background-size: 100% 200%;
   background-position: top;
@@ -33,13 +34,16 @@
   );
   background-image: -webkit-linear-gradient(bottom, #a21d34 50%, #fff 50%);
   background-image: -o-linear-gradient(bottom, #a21d34 50%, #fff 50%);
-  background-image: linear-gradient(to top, #a21d34 50%, #fff 50%);
+  background-image: linear-gradient(to top, #a21d34 50%, #fff 50%); */
 }
 .ExchnageHead:hover {
-  background-position: bottom;
+  /* background-position: bottom; */
+  color: #a21d34;
+  transition: all 0.3s ease;
 }
 .ContactusIcon {
   color: #a21d34;
+  font-size: 4rem;
 }
 .ExchnageParagraph {
   font-weight: 400;

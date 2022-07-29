@@ -47,8 +47,10 @@
   letter-spacing: 0.05em;
   -webkit-text-stroke: 1px #ffffff;
   text-decoration: none !important;
-  color: transparent;
-  -webkit-background-clip: text, padding-box;
+  color: #1a1c3b;
+  transition: all 0.5s ease;
+
+  /* -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   background-size: 100% 200%;
   background-position: top;
@@ -68,13 +70,15 @@
     transparent 50%
   );
   background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%); */
   padding-right: 3rem;
 }
 .MenuBarContent li:hover,
 .MenuName {
-  background-position: bottom;
+  /* background-position: bottom; */
+  color: #ffffff;
   cursor: pointer;
+  transition: all 0.5s ease;
 }
 /* 
 .MenuBarContent li:active,.MenuName{

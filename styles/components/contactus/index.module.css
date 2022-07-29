@@ -205,6 +205,12 @@
   .FirstSectionSentenceSpace {
     margin-right: 2rem !important;
   }
+  .SectionsRow {
+    padding-top: 3rem;
+  }
+  .ContactUsHeading {
+    padding-top: 6.5rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

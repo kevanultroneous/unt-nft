@@ -8,10 +8,10 @@
   width: fit-content;
   padding: 0.5rem 1rem;
   color: #a21d34;
-  background: linear-gradient(to right, #a21d34 50%, white 50%);
+  /* background: linear-gradient(to right, #a21d34 50%, white 50%);
   background-size: 200% 200%;
-  background-position: right bottom;
-  transition: all 0.8s ease-out;
+  background-position: right bottom; */
+  transition: all 0.3s ease-out;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -20,7 +20,9 @@
 
 .button:hover {
   color: #fff;
-  background-position: left bottom;
+  background: #a21d34;
+  /* background-position: left bottom; */
+  transition: all 0.3s ease-out;
 }
 
 .text {

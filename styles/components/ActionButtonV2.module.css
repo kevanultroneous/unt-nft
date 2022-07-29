@@ -8,17 +8,19 @@
   padding: 0.5rem 1rem;
   display: block;
   color: #fff;
-  background: linear-gradient(to right, #fff 50%, transparent 50%);
+  /* background: linear-gradient(to right, #fff 50%, transparent 50%);
   background-size: 200% 200%;
-  background-position: right bottom;
-  transition: all 0.8s ease-out;
+  background-position: right bottom; */
+  transition: all 0.3s ease-out;
   cursor: pointer;
 }
 
 .button:hover {
   color: #a21d34;
-  background-position: left bottom;
+  /* background-position: left bottom; */
+  background: #fff;
   border: 1px solid #fff;
+  transition: all 0.3s ease-out;
 }
 
 .text {

@@ -49,7 +49,7 @@ const MenuBar = ({
                 <div
                   className={styles.MenuName}
                   key={index}
-                  onClick={() => handleClick()}
+                  onClick={() => (value.mainlink === "" ? null : handleClick())}
                   onMouseOver={() => setCurrentMenu(index)}
                 >
                   <Link href={value.mainlink}>
@@ -57,7 +57,7 @@ const MenuBar = ({
                       <li
                         style={
                           router.pathname === value.mainlink
-                            ? { backgroundPosition: "bottom" }
+                            ? { color: "#fff" }
                             : null
                         }
                       >

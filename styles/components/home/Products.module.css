@@ -23,6 +23,7 @@
   padding: 0;
   margin: 0;
 }
+
 .SectionCards .SectionContent li {
   transform: translateZ(0);
   will-change: transform, opacity;
@@ -124,16 +125,16 @@
   padding: 0.5rem 1rem;
   background-size: 200% 100% !important;
   cursor: pointer;
-  transition: all 0.8s ease-out;
+  transition: all 0.3s ease-out;
 }
 .OurProductsCardsMain:hover .button {
   opacity: 1;
-  transition: all 0.8s ease;
+  transition: all 0.3s ease;
 }
-.button:hover {
+/* .button:hover {
   color: #fff !important;
   background-position: left bottom !important;
-}
+} */
 
 .text {
   text-align: center;
@@ -246,6 +247,11 @@
   justify-content: center;
   align-items: center;
 }
+
+.TopSection {
+  top: calc(20vh + 52px - 215px - 40px) !important;
+}
+
 @media (min-width: 320px) and (max-width: 767px) {
   .OurProductsHeading {
     font-weight: 600;
@@ -334,7 +340,7 @@
   }
   .ProductImages {
     text-align: center !important;
-    padding-right: 0rem;
+    padding-right: 4rem;
   }
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;

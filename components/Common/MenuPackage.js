@@ -9,17 +9,16 @@ const MenuPackage = () => {
   useEffect(() => {
     document.body.style.overflow = menubaropacity === "1" ? "hidden" : null;
   });
+  const MenuHandler = () => {
+    setAddClass(!addClass);
+    menubaropacity === "1" ? setMenuBarOpacity("0") : setMenuBarOpacity("1");
+  };
   return (
     <>
       <MobileMenu />
       <TabletMenu />
       <MenuBar
-        handleClick={() => {
-          setAddClass(!addClass);
-          menubaropacity === "1"
-            ? setMenuBarOpacity("0")
-            : setMenuBarOpacity("1");
-        }}
+        handleClick={() => MenuHandler()}
         display={menubaropacity}
         visibility={menubaropacity === "1" ? "visible" : null}
         animatedclass={
@@ -29,20 +28,16 @@ const MenuPackage = () => {
         }
         animatedotherclass={
           menubaropacity === "1"
-            ? "fade-in-left-anim2"
-            : "fade-in-left-anim2-remove"
+            ? "fade-in-left-anim "
+            : "fade-in-left-anim-remove"
         }
       />
 
       <Menu
+        clicktoCloseMenu={() => MenuHandler()}
         opacity={"1"}
         addClass={addClass}
-        handleClick={() => {
-          setAddClass(!addClass);
-          menubaropacity === "1"
-            ? setMenuBarOpacity("0")
-            : setMenuBarOpacity("1");
-        }}
+        handleClick={() => MenuHandler()}
         change={menubaropacity == "1" ? true : false}
       />
     </>

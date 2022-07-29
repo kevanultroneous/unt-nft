@@ -3,7 +3,7 @@
   padding: 6rem 0;
   padding-left: 8.5rem;
   padding-right: 4rem;
-  padding-top: 2rem;
+  /* padding-top: 2rem; */
 }
 .ReadBlog {
   font-weight: 600;
@@ -170,7 +170,7 @@
 
 .Button:hover {
   color: #a21d34;
-  background-position: left bottom;
+  /* background-position: left bottom; */
 }
 .HungryParagraph2 {
   color: #fff;
@@ -187,15 +187,17 @@
   padding: 0.5rem 1rem;
   display: block;
   color: #fff;
-  background: linear-gradient(to right, #ffffff 50%, transparent 50%);
+  /* background: linear-gradient(to right, #ffffff 50%, transparent 50%);
   background-size: 200% 100%;
-  background-position: right bottom;
-  /* transition: all 0.8s ease-out; */
+  background-position: right bottom; */
+  transition: all 0.3s ease-out;
 }
 
 .Button:hover {
   color: #a21d34;
-  background-position: left bottom;
+  /* background-position: left bottom; */
+  background: #fff;
+  transition: all 0.3s ease-out;
 }
 
 .Text {
@@ -274,6 +276,9 @@
     padding: 4rem 0;
     padding-left: 1rem;
     padding-right: 1rem;
+  }
+  .HungryHeading {
+    font-size: 45px;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

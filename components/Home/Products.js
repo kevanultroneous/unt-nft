@@ -3,12 +3,14 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 // import styles from "@/styles/components/home/Products.module.css";
 import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ActionButtonV3 from "../Common/ActionButtonV3";
 import ActionButton from "../Common/ActionButton";
 import ProductsList from "utils/products.data";
 import LearnMore from "../Common/LearnMore";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import useOnScreen from "../customHook/useOnScreen";
+
 const Products = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
   const [xcord, setXcord] = useState(0);
@@ -20,7 +22,7 @@ const Products = ({ text }) => {
     AOS.refresh();
     AOS.init();
   }, []);
-  const CardForProductSection = ({ ProductsList, index }) => {
+  const CardForProductSection = ({ ProductsList, index, cardStyle }) => {
     return (
       <>
         <div className={styles.HRcontainer}>
@@ -48,14 +50,14 @@ const Products = ({ text }) => {
                     {ProductsList[index].name}
                   </h4>
                   <ActionButtonV3
-                    href={"/"}
+                    href={"/contact-us"}
                     text={
                       <div className={styles.Explortxt}>
                         <span className={styles.ExpText}>Explore Product</span>
                         <HiOutlineExternalLink />
                       </div>
                     }
-                    backc={ProductsList[index].btnc}
+                    backc={ProductsList[index].color}
                     borderc={ProductsList[index].border}
                   />
                 </div>
@@ -167,7 +169,7 @@ const Products = ({ text }) => {
               <CardForProductSection ProductsList={ProductsList} index={6} />
             </li>
             <li
-              className={`${styles.card08} last-card`}
+              className={`${styles.card08} `}
               onMouseOver={() => setOpacity(1)}
               onMouseLeave={() => setOpacity(0)}
             >

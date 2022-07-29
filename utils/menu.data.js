@@ -37,7 +37,7 @@ export const menus = [
   },
   {
     name: "About us",
-    mainlink: "/about-us",
+    mainlink: "",
     menus: [
       {
         name: "Company Overview",
@@ -128,48 +128,48 @@ export const iconsMenu = [
     icon: "/assets/images/MX-trad.svg",
     color: "#EF816F",
     name: "MxTrade",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/Mx-future.svg",
     color: "#C3B091",
     name: "MxFuture",
-    link: "/mxfuture",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Dex.svg",
     color: "#0E88F5",
     name: "MxDex",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Fi.svg",
     color: "#9A9A9A",
     name: "MxFi",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Lunch.svg",
     color: "#D22544",
     name: "MxLaunch",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Wallet.svg",
     color: "#394F18",
     name: "MxWallet",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Block.svg",
     color: "#7945EF",
     name: "MxBlock",
-    link: "/",
+    link: "#",
   },
   {
     icon: "/assets/images/MX-Nft.svg",
     color: "#C34CB8",
     name: "MxNFT",
-    link: "/",
+    link: "#",
   },
 ];

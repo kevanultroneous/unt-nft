@@ -66,7 +66,7 @@
   justify-content: center;
 }
 .DiscoverItemParagraph {
-  padding-top: 2rem;
+  padding-top: 1rem;
   width: 13rem;
   font-weight: 400;
   font-size: 15px;
@@ -96,7 +96,7 @@
 .DiscoverMobifinixRowsUniq {
 }
 .AnimImage {
-  width: 25rem;
+  width: 24rem;
   margin-left: 3rem;
   height: auto;
 }
@@ -104,6 +104,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+.Discoverimg {
+  width: 3.5rem;
+  max-height: 3.4rem;
 }
 @media (min-width: 320px) and (max-width: 450px) {
   .DiscoverMobifinixContainer {
@@ -124,7 +128,7 @@
     font-weight: 600;
     font-size: 25px;
     width: 20rem;
-    line-height: 45px;
+    line-height: 35px;
   }
   .DiscoverMobifinixPara2 {
     font-weight: 400;
@@ -132,7 +136,7 @@
   }
   .DiscoverMobifinixPara2Container {
     padding-bottom: 0%;
-    padding-top: 0.5rem;
+    padding-top: 1rem;
   }
   .DiscoverBox {
     margin-right: 1rem;
@@ -157,14 +161,17 @@
     margin: 0%;
     padding: 2rem 0;
   }
+  .DiscoverMobifinixPara1Container {
+    padding-left: 0;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .DiscoverItemsContainer {
     padding-left: 0;
   }
   .DiscoverMobifinixSubContainer {
-    padding-left: 6.5rem;
-    padding-right: 6.5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .DiscoverItemParagraph {
     margin-bottom: 0rem;
@@ -175,6 +182,12 @@
     width: 18rem;
     margin-left: 0rem;
     height: auto;
+  }
+  .DiscoverMobifinixPara1Container {
+    padding-left: 0;
+  }
+  .Discoverimg {
+    margin-left: 10px;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
