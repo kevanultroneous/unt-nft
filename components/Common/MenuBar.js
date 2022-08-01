@@ -132,6 +132,7 @@ const MenuBar = ({
               {iconsMenu.map((value, index) => (
                 <Col
                   xl={6}
+                  md={6}
                   key={index}
                   onMouseOver={() => setCurrentIcon(index)}
                   onMouseLeave={() => setCurrentIcon(null)}

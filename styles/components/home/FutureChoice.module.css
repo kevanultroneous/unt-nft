@@ -281,7 +281,15 @@
     font-size: 45px;
   }
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .MainHungry {
+    margin-top: 2rem;
+    margin-left: 0;
+  }
+  .FutureChoiceContainer {
+    padding-right: 2rem;
+    padding-top: 4rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

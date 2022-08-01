@@ -214,5 +214,8 @@
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .FirstSectionSentence1 {
+    font-size: 35px;
+  }
 }

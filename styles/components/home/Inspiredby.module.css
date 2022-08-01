@@ -172,7 +172,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 649px) {
   .InspiredContainer {
     padding-top: 2rem;
     padding-left: 1rem;
@@ -282,7 +282,13 @@
     width: 100%;
   }
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .LeftdivMain {
+    padding-right: 4rem;
+  }
+  .InspiredCardSpace {
+    margin-bottom: 2.5rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }

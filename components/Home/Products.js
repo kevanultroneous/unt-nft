@@ -18,10 +18,13 @@ const Products = ({ text }) => {
   const [opacitycord, setOpacitycord] = useState("0");
   const [currentItem, setCurrentItem] = useState(0);
 
+  const [scrollY, setScrollY] = useState(0);
+
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
+
   const CardForProductSection = ({ ProductsList, index, cardStyle }) => {
     return (
       <>
@@ -169,7 +172,7 @@ const Products = ({ text }) => {
               <CardForProductSection ProductsList={ProductsList} index={6} />
             </li>
             <li
-              className={`${styles.card08} `}
+              className={`${styles.card08} last-card`}
               onMouseOver={() => setOpacity(1)}
               onMouseLeave={() => setOpacity(0)}
             >

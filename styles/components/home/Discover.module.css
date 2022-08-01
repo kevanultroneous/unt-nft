@@ -192,5 +192,15 @@
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .DiscoverMobifinixSubContainer {
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+  .DiscoverMobifinixPara1 {
+    font-size: 48px;
+  }
+  .DiscoverMobifinixPara2 {
+    padding: 0 1rem;
+  }
 }

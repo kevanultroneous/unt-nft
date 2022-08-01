@@ -64,6 +64,9 @@
   .ContactusIcon {
     font-size: 35px;
   }
+  .ExchnageHead {
+    font-family: "Avenir LT Std", sans-serif;
+  }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
   .ExchnageContainer {

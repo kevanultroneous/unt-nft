@@ -139,7 +139,7 @@
   max-height: 100px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 320px) and (max-width: 649px) {
   .MobileMenu {
     display: flex;
   }
@@ -220,5 +220,38 @@
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 650px) and (max-width: 767px) {
+  .MobileMenu {
+    display: flex;
+  }
+  .MobifinxXmenu {
+    padding: 0 1rem;
+  }
+  /* .IconMenuContainer {
+    padding-right: 2rem;
+  } */
+  .LinkName {
+    padding-bottom: 1rem;
+    opacity: 0.6;
+  }
+  .Tabs {
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+  .Explorproduct {
+    display: flex;
+    justify-content: center;
+  }
+  .IconMenuContainer {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .Menurow {
+    padding-bottom: 4rem;
+  }
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
+  }
 }
