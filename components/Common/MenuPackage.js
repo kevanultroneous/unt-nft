@@ -34,7 +34,10 @@ const MenuPackage = () => {
       />
 
       <Menu
-        clicktoCloseMenu={() => MenuHandler()}
+        clicktoCloseMenu={() => {
+          setAddClass(false);
+          setMenuBarOpacity("0");
+        }}
         opacity={"1"}
         addClass={addClass}
         handleClick={() => MenuHandler()}

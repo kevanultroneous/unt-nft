@@ -189,7 +189,12 @@ const ContactUs = () => {
     Aos.init();
   }, []);
   return (
-    <Layout title={"Mobifinx | Contact Us"}>
+    <Layout
+      title={"Contact Us for your Crypto Startup | MobifinX"}
+      description={
+        "Have a question about our Product? Contact us 24 hours and 7 days a week for the best customer service! We are here to help you to get answer to your queries. Get in touch with MobifinX! Use our form and one of our expert will be in touch with you soon."
+      }
+    >
       <MenuPackage />
       {/* <SmoothScroll> */}
       <div

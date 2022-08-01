@@ -58,7 +58,7 @@ const Discover = () => {
         <div className={styles.DiscoverMobifinxBtnContainer}>
           <div>
             <ActionButton
-              href={"/"}
+              href={"/contact-us"}
               text={
                 <>
                   Discover MobifinX

@@ -116,7 +116,7 @@
   font-weight: 400;
   font-size: 18px;
   padding-left: 1rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .MenusContent li:hover {
   color: #a21d34;
@@ -145,12 +145,13 @@
 }
 .IconCard {
   padding-bottom: 0.5rem;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .IconName {
   padding-top: 0.7rem;
   font-weight: 500;
   font-size: 20px;
+  cursor: none;
 }
 .icon {
   height: 5rem;
