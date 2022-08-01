@@ -10,6 +10,8 @@ import LearnMore from "../Common/LearnMore";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 
 const Products = ({ text }) => {
+  const [opacity, setOpacity] = useState(0);
+
   useEffect(() => {
     AOS.refresh();
     AOS.init();
