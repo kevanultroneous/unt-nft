@@ -18,12 +18,15 @@ const Products = ({ text }) => {
   const [opacitycord, setOpacitycord] = useState("0");
   const [currentItem, setCurrentItem] = useState(0);
 
-  const [scrollY, setScrollY] = useState(0);
-
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
+
+  useEffect(() => {
+    const el = document.getElementsByClassName("last-card")[0];
+    console.log(el.scrollTop, el.scrollIntoView());
+  });
 
   const CardForProductSection = ({ ProductsList, index, cardStyle }) => {
     return (
