@@ -5,28 +5,15 @@ import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
 import { useEffect, useRef, useState } from "react";
 import ActionButtonV3 from "../Common/ActionButtonV3";
-import ActionButton from "../Common/ActionButton";
 import ProductsList from "utils/products.data";
 import LearnMore from "../Common/LearnMore";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
-import useOnScreen from "../customHook/useOnScreen";
 
 const Products = ({ text }) => {
-  const [opacity, setOpacity] = useState(0);
-  const [xcord, setXcord] = useState(0);
-  const [ycord, setYcord] = useState(0);
-  const [opacitycord, setOpacitycord] = useState("0");
-  const [currentItem, setCurrentItem] = useState(0);
-
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
-
-  useEffect(() => {
-    const el = document.getElementsByClassName("last-card")[0];
-    console.log(el.scrollTop, el.scrollIntoView());
-  });
 
   const CardForProductSection = ({ ProductsList, index, cardStyle }) => {
     return (
@@ -120,10 +107,6 @@ const Products = ({ text }) => {
           {text ? text : "Our Products"}
         </h3>
         <div className={styles.CardsSwrapper}>
-          {/* <div
-            className={styles.FollowerLight}
-            style={{ left: xcord, top: ycord, opacity: opacitycord }}
-          /> */}
           <ul>
             <li
               className={styles.card01}
