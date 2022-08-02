@@ -26,7 +26,11 @@ const MobileMenu = () => {
       >
         <div className={styles.MobileMenuLogo}>
           <Link href={"/"}>
-            <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
+            <Image
+              alt={"xicon"}
+              src={"/assets/images/MobifinxMobile.jpg"}
+              height={50}
+            />
           </Link>
         </div>
         <div className={styles.MenuController}>
@@ -196,7 +200,11 @@ export const TabletMenu = () => {
       >
         <div className={styles.TabletMenuLogo}>
           <Link href={"/"}>
-            <Image alt={"xicon"} src={"/assets/images/mobileicon.svg"} fluid />
+            <Image
+              alt={"xicon"}
+              src={"/assets/images/MobifinxMobile.jpg"}
+              height={50}
+            />
           </Link>
         </div>
         <div className={styles.TabletController}>

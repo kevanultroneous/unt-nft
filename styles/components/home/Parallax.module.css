@@ -199,13 +199,23 @@
   }
   .Mainsection {
     padding: 2rem 0;
+    padding-bottom: 0;
   }
   .Parallax {
     background-size: cover;
     background-image: url("/assets/images/ParallaxMob.png");
     background-position: center;
   }
+  .Pera {
+    padding-left: 0;
+  }
 }
+@media only screen and (min-width: 992px) {
+  .Parallaxrow {
+    padding-left: 5rem;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
 @media (min-width: 650px) and (max-width: 740px) {

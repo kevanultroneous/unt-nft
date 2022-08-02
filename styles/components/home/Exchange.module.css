@@ -68,12 +68,53 @@
     font-family: "Avenir LT Std", sans-serif;
   }
 }
-@media screen and (min-width: 992px) {
+
+@media screen and (min-width: 768px) {
   .ExchnageContainer {
     padding: 6rem 1rem;
   }
 }
-@media (min-width: 1200px) and (max-width: 1730px) {
+
+@media screen and (min-width: 992px) {
+  .ExchnageContainer {
+    padding: 6rem 1rem;
+    padding-left: 6rem;
+  }
 }
-@media (min-width: 650px) and (max-width: 740px) {
+
+@media screen and (min-width: 1200px) {
+  .ExchnageContainer {
+    padding-left: 8.5rem;
+    padding-right: 4rem;
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+    background-color: #fff;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ExchnageHead {
+    font-weight: 600;
+    font-size: 80px;
+    font-family: "Avenir LT Std", sans-serif;
+    font-style: normal;
+    -webkit-text-stroke: 1px #a21d34;
+    text-decoration: none;
+    color: #fff;
+    transition: all 0.3s ease;
+  }
+  .ExchnageHead:hover {
+    color: #a21d34;
+    transition: all 0.3s ease;
+  }
+  .ContactusIcon {
+    color: #a21d34;
+    font-size: 4rem;
+  }
+  .ExchnageParagraph {
+    font-weight: 400;
+    font-size: 22px;
+    color: #a21d34;
+  }
 }
