@@ -172,7 +172,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 320px) and (max-width: 649px) {
+@media screen and (max-width: 600px) {
   .InspiredContainer {
     padding-top: 2rem;
     padding-left: 1rem;
@@ -228,10 +228,10 @@
     padding-bottom: 0.5rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
-  .InspiredCardCol {
+@media screen and (min-width: 992px) {
+  /* .InspiredCardCol {
     align-items: center;
-  }
+  } */
   .InspiredContainer {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -280,6 +280,7 @@
   } */
   .InspiredCardcontainer {
     width: 100%;
+    opacity: 1 !important;
   }
 }
 @media (min-width: 1081px) and (max-width: 1250px) {

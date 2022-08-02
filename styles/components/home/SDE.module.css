@@ -180,7 +180,9 @@
   padding-left: 2.4rem;
   padding-top: 11.5rem;
 }
-@media (min-width: 320px) and (max-width: 649px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
   .HomeSmallHeading {
     font-size: 14px;
   }
@@ -262,7 +264,9 @@
     padding-bottom: 1rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
   .Scrolldowncontainer {
     display: none;
   }
@@ -276,7 +280,7 @@
   }
   .SoftwareDevelopmentExpertsContainer {
     padding-left: 1rem;
-    height: 100vh;
+    /* height: 100vh; */
     padding-bottom: 4rem;
   }
   .SliderCard {
@@ -294,6 +298,111 @@
     align-items: center;
     margin-left: -6.5rem;
     /* padding-left: 2rem; */
+  }
+  .ScrolldownCol {
+    padding-bottom: 6rem;
+  }
+  .SliderImg {
+    height: 300px;
+  }
+  .whiteMouse {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-size: 65px;
+    width: 35rem;
+    padding-top: 10rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeadingContainer {
+    padding-left: 0%;
+  }
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 1rem;
+    /* height: 100vh; */
+    padding-bottom: 4rem;
+  }
+  .SliderCard {
+    height: 215px;
+    width: 222px !important;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin-top: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
+  .SoftwareDevelopmentExpertSliderHeading {
+    display: flex;
+    align-items: center;
+    margin-left: -6.5rem;
+    /* padding-left: 2rem; */
+  }
+  .ScrolldownCol {
+    padding-bottom: 6rem;
+  }
+  .SliderImg {
+    height: 300px;
+  }
+  .whiteMouse {
+    display: none;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 8rem;
+    padding-bottom: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-size: 65px;
+    width: 35rem;
+    padding-top: 10rem;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin-top: 0rem;
+  }
+}
+
+/* ====================================================Old Media Query==================================================================================================================  */
+/* 
+@media screen and (min-width: 992px) {
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-size: 65px;
+    width: 35rem;
+    padding-top: 10rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeadingContainer {
+    padding-left: 0%;
+  }
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+  }
+  .SliderCard {
+    height: 215px;
+    width: 222px !important;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin-top: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
+  .SoftwareDevelopmentExpertSliderHeading {
+    display: flex;
+    align-items: center;
+    margin-left: -6.5rem;
   }
   .ScrolldownCol {
     padding-bottom: 6rem;
@@ -336,4 +445,4 @@
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
 @media (min-width: 1920px) and (max-height: 1080px) {
-}
+} */

@@ -107,7 +107,7 @@
   position: relative;
   top: 10rem;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .WhatWillYouGetWithUs {
     padding-left: 0;
     padding-bottom: 1rem;
@@ -142,9 +142,10 @@
     top: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 992px) {
   .WhatWillYouGetWithUs {
     padding-left: 1rem;
+    opacity: 1 !important;
   }
   .WhatWillYouGetWithUs h2 {
     font-size: 39px;
@@ -153,6 +154,8 @@
     height: auto;
     width: 100%;
     border-radius: 10px 0 0 10px;
+    opacity: 1 !important;
+    left: 3rem;
   }
   .BigImage img {
     width: 150%;

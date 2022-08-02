@@ -87,7 +87,7 @@ const Discover = () => {
             {/* <Lottie options={defaultOptions} height={400} width={400} /> */}
           </Row>
         </Col>
-        <Col xs={12} xl={6} md={6}>
+        <Col className={styles.Discovercol} xs={12} xl={6} md={6}>
           <div
             className={styles.DiscoverItemsContainer}
             data-aos="fade-left"

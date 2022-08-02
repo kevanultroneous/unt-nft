@@ -252,7 +252,8 @@
   top: calc(20vh + 52px - 215px - 40px) !important;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (max-width: 600px) {
   .OurProductsHeading {
     font-weight: 600;
     font-size: 45px;
@@ -327,7 +328,9 @@
     font-size: 14px;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
   .OurProductsHeading {
     padding-left: 1rem;
     top: 125px;
@@ -345,22 +348,176 @@
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;
     height: 650px;
-    /* margin-left: -412.5px; */
   }
   .SectionCards .SectionContent li {
-    height: 840px;
-    font-size: 18px;
+    transform: translateZ(0);
+    will-change: transform, opacity;
+    height: 800px;
+    position: sticky;
+    top: calc(28vh + 52px - 215px - 40px);
   }
   .Description {
     margin: 0;
     padding-bottom: 1rem;
-    /* font-size: 18px; */
   }
   .question {
     padding-bottom: 1rem;
+  }
+  .SectionContent {
+    opacity: 1 !important;
+  }
+  .SectionCards {
+    opacity: 1 !important;
+  }
+  .Carddetail {
+    width: 95%;
+    padding-left: 1rem;
+  }
+  .ProductImages img {
+    height: 20rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .OurProductsHeading {
+    padding-left: 1rem;
+    top: 125px;
+  }
+  .HrBorder {
+    width: 90% !important;
+  }
+  .tags {
+    width: 100%;
+  }
+  .ProductImages {
+    text-align: center !important;
+    padding-right: 4rem;
+  }
+  .SectionCards .SectionContent li .CardContainer {
+    width: 100%;
+    height: 650px;
+  }
+  .SectionCards .SectionContent li {
+    height: 1000px;
+    font-size: 18px;
+    top: calc(28vh + 52px - 215px - 40px);
+  }
+  .Description {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .question {
+    padding-bottom: 1rem;
+  }
+  .SectionContent {
+    opacity: 1 !important;
+  }
+  .SectionCards {
+    opacity: 1 !important;
+  }
+  .Carddetail {
+    width: 95%;
+    padding-left: 1rem;
+  }
+  .ProductImages img {
+    height: 20rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+  .OurProductsHeading {
+    padding-left: 8rem;
+    top: 125px;
+  }
+  .HrBorder {
+    width: 90% !important;
+  }
+  .tags {
+    width: 100%;
+  }
+  .ProductImages {
+    text-align: center !important;
+    padding-right: 12rem;
+  }
+  .SectionCards .SectionContent li .CardContainer {
+    width: 100%;
+    height: 650px;
+  }
+  .SectionCards .SectionContent li {
+    height: 1000px;
+    font-size: 18px;
+    top: calc(18vh + 52px - 215px - 40px);
+  }
+  .Description {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .question {
+    padding-bottom: 1rem;
+  }
+  .SectionContent {
+    opacity: 1 !important;
+  }
+  .SectionCards {
+    opacity: 1 !important;
+  }
+  .Carddetail {
+    width: 95%;
+    padding-left: 8rem;
+  }
+  .ProductImages img {
+    height: 20rem;
+  }
+}
+
+/* @media screen and (min-width: 992px) {
+  .OurProductsHeading {
+    padding-left: 1rem;
+    top: 125px;
+  }
+  .HrBorder {
+    width: 90% !important;
+  }
+  .tags {
+    width: 100%;
+  }
+  .ProductImages {
+    text-align: center !important;
+    padding-right: 4rem;
+  }
+  .SectionCards .SectionContent li .CardContainer {
+    width: 100%;
+    height: 650px;
+  }
+  .SectionCards .SectionContent li {
+    height: 1000px;
+    font-size: 18px;
+    top: calc(28vh + 52px - 215px - 40px);
+  }
+  .Description {
+    margin: 0;
+    padding-bottom: 1rem;
+  }
+  .question {
+    padding-bottom: 1rem;
+  }
+  .SectionContent {
+    opacity: 1 !important;
+  }
+  .SectionCards {
+    opacity: 1 !important;
+  }
+  .Carddetail {
+    width: 95%;
+    padding-left: 1rem;
+  }
+  .ProductImages img {
+    height: 20rem;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
 @media (min-width: 650px) and (max-width: 740px) {
-}
+} */

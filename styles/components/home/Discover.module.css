@@ -94,6 +94,7 @@
   bottom: 2.5px;
 }
 .DiscoverMobifinixRowsUniq {
+  display: flex;
 }
 .AnimImage {
   width: 24rem;
@@ -109,7 +110,8 @@
   width: 3.5rem;
   max-height: 3.4rem;
 }
-@media (min-width: 320px) and (max-width: 450px) {
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
   .DiscoverMobifinixContainer {
     padding: 3rem 1rem;
   }
@@ -165,9 +167,77 @@
     padding-left: 0;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
   .DiscoverItemsContainer {
     padding-left: 0;
+    opacity: 1 !important;
+    justify-content: center;
+  }
+  .DiscoverMobifinixSubContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .DiscoverItemParagraph {
+    margin-bottom: 0rem;
+    padding-right: 2rem;
+    padding-left: 2rem;
+  }
+  .AnimImage {
+    width: 18rem;
+    margin-left: 0rem;
+    height: auto;
+  }
+  .DiscoverMobifinixPara1Container {
+    padding-left: 0;
+  }
+  .Discoverimg {
+    margin-left: 10px;
+  }
+  .Animcol,
+  .Discovercol {
+    width: 50%;
+  }
+  .DiscoverItemsRow {
+    justify-content: space-evenly;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .DiscoverItemParagraph {
+    margin-bottom: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+  .DiscoverItemParagraph {
+    margin-bottom: 0rem;
+    padding-right: 1rem;
+    padding-left: 1rem;
+  }
+  .DiscoverMobifinixSubContainer {
+    padding-left: 6rem;
+    padding-right: 1rem;
+  }
+  .DiscoverMobifinixPara1 {
+    font-size: 48px;
+  }
+  .DiscoverMobifinixPara2 {
+    padding: 0 1rem;
+  }
+}
+/* ====================================================Old Media Query==================================================================================================================  */
+
+/* @media (min-width: 768px) and (max-width: 1080px) { */
+/* @media screen and (min-width: 992px) {
+  .DiscoverItemsContainer {
+    padding-left: 0;
+    opacity: 1 !important;
   }
   .DiscoverMobifinixSubContainer {
     padding-left: 1rem;
@@ -189,6 +259,10 @@
   .Discoverimg {
     margin-left: 10px;
   }
+  .Animcol,
+  .Discovercol {
+    width: 45%;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
@@ -203,4 +277,4 @@
   .DiscoverMobifinixPara2 {
     padding: 0 1rem;
   }
-}
+} */

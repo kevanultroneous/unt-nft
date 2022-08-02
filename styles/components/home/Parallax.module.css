@@ -1,8 +1,11 @@
 .Parallax {
   background-image: url("/assets/images/Parallaxnew1.png");
-  background-attachment: fixed;
-  background-size: cover;
   background-position: center;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 4rem;
 }
@@ -152,10 +155,15 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .Parallax {
-    background-size: cover;
     background-image: url("/assets/images/ParallaxMob.png");
     background-position: center;
     background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
   }
   .Parallaxrow {
     padding-left: 1rem;
