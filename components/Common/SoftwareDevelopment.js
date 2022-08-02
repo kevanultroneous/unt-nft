@@ -11,22 +11,24 @@ const SoftwareDevelopment = (props) => {
           <span className={styles.HomeSmallHeading}>{props.text}</span>
         </div>
       </Col>
-      <Col
-        xl={6}
-        md={6}
-        xs={6}
-        className={styles.SoftwareDevelopmentExpertsBtnCol}
-      >
-        <ActionButtonV2
-          href={"/contact-us"}
-          text={
-            <>
-              <span className={styles.TextBtn}>Explore Product </span>
-              <HiOutlineExternalLink />
-            </>
-          }
-        />
-      </Col>
+      {props.hidebutton ? null : (
+        <Col
+          xl={6}
+          md={6}
+          xs={6}
+          className={styles.SoftwareDevelopmentExpertsBtnCol}
+        >
+          <ActionButtonV2
+            href={"/contact-us"}
+            text={
+              <>
+                <span className={styles.TextBtn}>Explore Product </span>
+                <HiOutlineExternalLink />
+              </>
+            }
+          />
+        </Col>
+      )}
     </Row>
   );
 };

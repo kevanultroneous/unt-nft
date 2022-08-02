@@ -1,0 +1,264 @@
+.exploreWorkMainContainer {
+  padding: 5rem 0rem 3rem 8.5rem;
+}
+
+.exploreWorkDiv {
+  justify-content: space-between;
+}
+
+.sideHeading {
+  margin-top: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
+}
+
+.sideHeading p {
+  color: rgba(18, 18, 18, 0.6);
+  transform: rotate(270deg);
+  margin-left: -2.7rem;
+  padding-bottom: 9rem;
+  letter-spacing: 2px;
+  width: 15rem;
+}
+
+.rightSection {
+  display: flex;
+  flex-direction: column;
+  margin: 0 3.6rem 0 0rem;
+  width: 69vw;
+}
+
+.imageContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 36.7rem;
+}
+
+.imageContRow {
+  flex-wrap: nowrap;
+  width: 67vw;
+}
+
+.groupSmImage {
+  display: flex;
+  width: 33vw;
+  justify-content: space-between;
+}
+
+.groupSmImage img {
+  width: 15vw;
+}
+
+.workPlacesBgImage {
+  display: flex;
+  justify-content: end;
+  width: 36vw;
+}
+
+.workPlacesSecBgImage {
+  margin: 0 1.5rem 0 0;
+  /* width: fit-content; */
+  width: 34vw;
+}
+
+.workPlacesSecBgImage img {
+  width: 33vw;
+}
+
+.workPlacesBgImage img {
+  width: 33vw;
+}
+
+.ctaRow {
+  display: flex;
+}
+
+.ctaText h3 {
+  font-size: 4rem;
+  width: 50vw;
+  font-weight: 800;
+  margin: 2rem 0 0;
+}
+
+.ctaButton {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  width: 60vw;
+  color: #a21d34;
+  margin: -2rem 0 0;
+}
+
+.ctaButton p {
+  margin: 0 1rem 0 0;
+}
+
+.ctaButton img {
+  transform: scale(0.7);
+  transition: transform 0.5s ease;
+}
+.ctaButton img:hover {
+  transform: scale(0.9);
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
+  .sideHeading {
+    display: none;
+  }
+  .exploreWorkMainContainer {
+    padding: 2rem 0 0;
+  }
+  .imageContainer {
+    height: auto;
+  }
+  .imageContRow {
+    flex-direction: column;
+    margin: auto;
+    width: 88.5vw;
+  }
+  .imageSecondRow {
+    flex-direction: column-reverse;
+    margin: auto;
+    width: 88.5vw;
+  }
+  .imageContRow img {
+    width: 88.5vw;
+  }
+  .imageSecondRow img {
+    width: 88.5vw;
+  }
+  .groupSmImage {
+    width: 88.5vw;
+    justify-content: space-between;
+  }
+  .groupSmImage img {
+    width: 40.8vw;
+  }
+  .workPlacesBgImage {
+    width: 88.5vw;
+    margin: 1.6rem 0;
+  }
+  .workPlacesSecBgImage {
+    width: 88.5vw;
+    margin: 1.6rem 0 0;
+  }
+  .ctaRow {
+    width: 88.5vw;
+    margin: 2.5rem auto 0;
+  }
+  .ctaText h3 {
+    font-size: 2.2rem;
+    width: 88.5vw;
+    font-weight: 600;
+  }
+  .ctaButton {
+    width: 88.5vw;
+    margin: 3rem 0 2.6rem;
+  }
+  .ctaButton p {
+    margin: 0 1.5rem 0 0;
+    font-size: 1.2rem;
+  }
+  .ctaButton img {
+    transform: scale(1);
+  }
+  .ctaButton img:hover {
+    transform: scale(1);
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  .exploreWorkMainContainer {
+    padding: 4rem 0 4rem;
+  }
+  .sideHeading {
+    width: 80vw;
+    margin: auto;
+  }
+  .sideHeading p {
+    margin-left: 0rem;
+    padding-bottom: 0;
+    transform: rotate(0deg);
+  }
+  .imageContRow {
+    flex-direction: column;
+    margin: auto;
+    width: 80vw;
+  }
+  .imageContainer {
+    height: auto;
+  }
+  .imageSecondRow {
+    flex-direction: column-reverse;
+    margin: auto;
+    width: 80vw;
+  }
+  .imageContRow img {
+    width: 80vw;
+  }
+  .imageSecondRow img {
+    width: 80vw;
+  }
+  .groupSmImage {
+    width: 80vw;
+    justify-content: space-between;
+  }
+  .groupSmImage img {
+    width: 37.2vw;
+  }
+  .workPlacesBgImage {
+    width: 80vw;
+    margin: 2.9rem 0;
+  }
+  .workPlacesSecBgImage {
+    width: 80vw;
+    margin: 2.9rem 0 0;
+  }
+
+  .ctaRow {
+    width: 80vw;
+    margin: 2.5rem auto 0;
+  }
+  .ctaButton {
+    width: 80vw;
+    margin: 3rem 0 2.6rem;
+  }
+  .ctaText h3 {
+    font-size: 4.4rem;
+    width: 80vw;
+    font-weight: 600;
+    margin: auto;
+  }
+  .ctaButton p {
+    margin: 0 4rem 0 0;
+    font-size: 1.8rem;
+  }
+  .ctaButton img {
+    transform: scale(1.5);
+  }
+  .ctaButton img:hover {
+    transform: scale(1.5);
+  }
+}
+
+@media (min-width: 1300px) and (max-width: 1900px) {
+  .rightSection {
+    margin: 0;
+    width: 72.5vw;
+  }
+  .ctaRow,
+  .imageSecondRow {
+    width: 69.1vw;
+  }
+  .imageContRow {
+    width: 69.1vw;
+  }
+  .imageContainer {
+    height: 53.2rem;
+    width: 69.1vw;
+  }
+  .workPlacesSecBgImage {
+    margin: 0 2.3rem 0 0;
+  }
+}

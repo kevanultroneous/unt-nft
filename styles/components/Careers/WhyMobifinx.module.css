@@ -1,0 +1,36 @@
+.WhyMobifinxMainContainer {
+  padding: 5rem 0rem 3rem 8.5rem;
+}
+
+.sideHeading {
+  margin-top: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
+}
+
+.sideHeading p {
+  color: rgba(18, 18, 18, 0.6);
+  transform: rotate(270deg);
+  margin-top: -3.6rem;
+  padding-bottom: 9rem;
+  letter-spacing: 2px;
+}
+
+.mobifinxBenefits {
+  margin: 5rem 0 0;
+  width: 70vw;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 3rem;
+}
+
+.benefitsBox h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin: 1.2rem 0;
+}
+
+.benefitsBox p {
+  font-size: 0.9rem;
+  text-align: justify;
+}
