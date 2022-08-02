@@ -115,7 +115,7 @@
   width: 100%;
   height: 190px;
   transition: all 0.5s ease;
-  cursor: pointer;
+  /* cursor: pointer; */
 }
 .SliderCard p {
   padding-left: 1rem;
@@ -180,7 +180,9 @@
   padding-left: 2.4rem;
   padding-top: 11.5rem;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+
+/* Extra small devices (phones, 600px and down) */
+@media screen and (max-width: 600px) {
   .HomeSmallHeading {
     font-size: 14px;
   }
@@ -262,7 +264,9 @@
     padding-bottom: 1rem;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media screen and (min-width: 600px) {
   .Scrolldowncontainer {
     display: none;
   }
@@ -276,7 +280,7 @@
   }
   .SoftwareDevelopmentExpertsContainer {
     padding-left: 1rem;
-    height: 100vh;
+    /* height: 100vh; */
     padding-bottom: 4rem;
   }
   .SliderCard {
@@ -298,10 +302,274 @@
   .ScrolldownCol {
     padding-bottom: 6rem;
   }
+  .SliderImg {
+    height: 300px;
+  }
+  .whiteMouse {
+    display: none;
+  }
 }
-@media (min-width: 650px) and (max-width: 740px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-size: 65px;
+    width: 35rem;
+    padding-top: 10rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeadingContainer {
+    padding-left: 0%;
+  }
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 1rem;
+    padding-bottom: 4rem;
+  }
+  .SliderCard {
+    height: 215px;
+    width: 222px !important;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin-top: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
+  .SoftwareDevelopmentExpertSliderHeading {
+    display: flex;
+    align-items: center;
+    margin-left: -6.5rem;
+  }
+  .ScrolldownCol {
+    padding-bottom: 6rem;
+  }
+  .SliderImg {
+    height: 300px;
+  }
+  .whiteMouse {
+    display: none;
+  }
 }
-@media (min-width: 1200px) and (max-width: 1730px) {
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 992px) {
+  .SoftwareDevelopmentExpertsContainer {
+    padding-left: 8rem;
+    padding-bottom: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-size: 65px;
+    width: 35rem;
+    padding-top: 4rem;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin-top: 0rem;
+  }
+  .ScrolldownCol {
+    padding-bottom: 2rem;
+  }
+  .SliderImg {
+    height: 245px;
+  }
+  .SliderGround {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1.5rem;
+  }
+  .SoftwareDevelopmentExpertSliderHeading {
+    position: relative;
+    right: 6rem;
+  }
 }
-@media (min-width: 1920px) and (max-height: 1080px) {
+
+@media only screen and (min-width: 1200px) {
+  .SoftwareDevelopmentExpertsContainer {
+    background: linear-gradient(90deg, #1a1c3b 28.05%, #a21d34 148.07%);
+    color: #ffffff;
+    padding-top: 3.1rem;
+    padding-left: 8.5rem;
+    padding-bottom: 2.5rem;
+  }
+  .SoftwareDevelopmentExpertsHead {
+  }
+  .HomeMiniLine {
+    width: 40px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #ffffff;
+  }
+  .RequestDemoButton {
+    width: fit-content;
+    border: 1px solid #ffffff;
+    padding: 0.5rem 1rem;
+    color: #ffffff;
+    display: inline-block;
+    position: relative;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 22px;
+    background-image: linear-gradient(to top, #fff 50%, #fff 50%),
+      linear-gradient(to top, #a21d34 50%, transparent 50%);
+
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    -webkit-text-fill-color: transparent;
+    background-size: 100% 200%;
+    background-position: top;
+    transition: background-position 0.5s ease-in-out;
+  }
+  .RequestDemoButton:hover {
+    background-position: bottom;
+    border: 1px solid #a21d34;
+    transition: all 1s ease;
+  }
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+  }
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin: 0%;
+    align-items: center;
+  }
+  .SoftwareDevelopmentExpertsBigHeadingContainer {
+    /* padding-top: 4rem;
+    padding-bottom: 4rem; */
+  }
+  .SoftwareDevelopmentExpertsBigHeading {
+    font-weight: 600;
+    font-size: 4.5rem;
+    padding-top: 6rem;
+    width: 50rem;
+    margin: 0%;
+
+    padding-bottom: 4rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    display: flex;
+    justify-content: end;
+    padding-right: 2.5rem;
+  }
+  /* .SoftwareDevelopmentExpertsSliderContainer {
+    display: flex;
+    align-items: center;
+  } */
+  .SoftwareDevelopmentExpertSliderHeading {
+    display: flex;
+    align-items: center;
+    margin-left: -3.5rem;
+    position: relative;
+    right: 0;
+    /* padding-left: 2rem; */
+  }
+  .SoftwareDevelopmentExpertSliderBtnLeft {
+    padding-right: 1rem;
+    transition: all 1s ease;
+    height: 3rem;
+    cursor: pointer;
+  }
+  .SoftwareDevelopmentExpertSliderBtnLeft:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+  .SoftwareDevelopmentExpertSliderBtnRight {
+    padding-right: 1rem;
+    transition: all 1s ease;
+    height: 3rem;
+    cursor: pointer;
+  }
+  .SoftwareDevelopmentExpertSliderBtnRight:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
+  }
+  .SliderCard {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 17px;
+    height: 200px;
+    width: 190px !important;
+    /* display: flex !important; */
+    justify-content: left;
+    text-align: left;
+    cursor: pointer;
+    align-items: flex-end;
+    /* margin-left: 2rem; */
+  }
+
+  .SliderImg {
+    width: 100%;
+    height: 190px;
+    transition: all 0.5s ease;
+    /* cursor: pointer; */
+  }
+  .SliderCard p {
+    padding-left: 1rem;
+  }
+  .SliderGround {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+  }
+  .Scrolldowncontainer {
+    cursor: pointer;
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+    animation-direction: alternate; */
+  }
+  /* @keyframes scrolldowntotop {
+    0% {
+      top: 10px;
+    }
+    25% {
+      top: -10px;
+    }
+    50% {
+      top: 10px;
+    }
+    75% {
+      top: -10px;
+    }
+    100% {
+      top: 10px;
+    }
+  } */
+  .ScrolldownCol {
+    justify-content: flex-start;
+    display: flex;
+    align-items: end;
+    padding-right: 0;
+    padding-left: 0;
+    padding-bottom: 4rem;
+    margin-left: -3rem;
+  }
+  .ScrolldownText {
+    margin: 0%;
+    padding-left: 1rem;
+  }
+  .ImageDown {
+    /* position: relative; */
+    transform: rotate(90deg);
+    /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+    animation-direction: alternate; */
+  }
+  .TextBtn {
+    padding-right: 0.5rem;
+    font-size: 18px;
+  }
+
+  .whiteMouse {
+    transform: rotate(90deg);
+    padding-left: 2.4rem;
+    padding-top: 11.5rem;
+    display: block;
+  }
 }

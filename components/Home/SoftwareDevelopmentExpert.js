@@ -41,7 +41,7 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 885,
         settings: {
-          slidesToShow: 3,
+          slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 2,
           autoplay: true,

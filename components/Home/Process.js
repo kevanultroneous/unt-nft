@@ -13,23 +13,31 @@ const Process = () => {
   const dataProcess = [
     {
       name: "understand",
-      bcolor: "#E27625",
-      bkcolor: "#FFF1E8",
+      // bcolor: "#E27625",
+      bcolor: "#EA8676",
+      // bkcolor: "#FFF1E8",
+      bkcolor: "#4C3549",
     },
     {
       name: "Experience",
-      bcolor: "#00ACD7",
-      bkcolor: "#EAFBFF",
+      // bcolor: "#00ACD7",
+      bcolor: "#75BEFF",
+      // bkcolor: "#EAFBFF",
+      bkcolor: "#30436A",
     },
     {
       name: "Customize",
-      bcolor: "#D95276",
-      bkcolor: "#FFEEF3",
+      // bcolor: "#D95276",
+      bcolor: "#A176FF",
+      // bkcolor: "#FFEEF3",
+      bkcolor: "#3A326A",
     },
     {
       name: "Go-Live",
-      bcolor: "#A199FF",
-      bkcolor: "#F6F5FF",
+      // bcolor: "#A199FF",
+      bcolor: "#C95AB4 ",
+      // bkcolor: "#F6F5FF",
+      bkcolor: "#442B58",
     },
   ];
 
@@ -90,7 +98,7 @@ const Process = () => {
                     style={{
                       borderColor: v.bcolor,
                       backgroundColor: v.bkcolor,
-                      border: `1.13333px solid ${v.bcolor}`,
+                      border: `1px solid ${v.bcolor}`,
                     }}
                   >
                     <div
@@ -103,7 +111,7 @@ const Process = () => {
                   <p
                     className={styles.ProcessParagraph}
                     style={
-                      i === value ? { color: v.bcolor } : { color: "#000" }
+                      i === value ? { color: v.bcolor } : { color: "#fff" }
                     }
                     onClick={() => setValue(i)}
                   >

@@ -109,6 +109,124 @@
 .SecondSectionInputHide {
   padding-bottom: 0rem !important;
 }
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media screen and (max-width: 600px) {
+  .TabWantContainer {
+    display: none;
+  }
+  .ContactUsMainContainer {
+    padding: 5.5rem 1rem 6rem 1rem;
+  }
+
+  .FirstSectionSentence1,
+  .FirstSectionSentence2,
+  .WantSentence {
+    font-size: 30px;
+  }
+
+  .FirstSection {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .FirstSectionSentence1 {
+    padding: 1rem 0;
+  }
+  .FirstSectionInput {
+    margin: 0%;
+    margin-bottom: 1rem;
+  }
+  .SecondSectionInput {
+    margin: 0%;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+  .SecondSection {
+    flex-direction: column;
+    padding-top: 1rem;
+  }
+  .SmallHeading {
+    font-size: 14px;
+  }
+  .ContactUsHeading {
+    padding-top: 1.5rem;
+  }
+  .MiniLine {
+    width: 25px;
+  }
+  .SubjectInput {
+    width: 20rem;
+    padding-bottom: 1rem;
+  }
+
+  .SecondSectionInputHide {
+    padding-bottom: 1rem !important;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  .WantContainer {
+    display: none;
+  }
+  .TabWantContainer {
+    display: flex;
+    align-items: center;
+  }
+  .WantSentence {
+    margin-left: 2.5rem;
+  }
+  .ContactUsMainContainer {
+    padding: 1rem 1rem 6rem 1rem;
+  }
+
+  .FirstSectionSentence1,
+  .FirstSectionSentence2,
+  .WantSentence {
+    font-size: 30px;
+  }
+
+  .FirstSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .FirstSectionSentence1 {
+    padding: 1rem 0;
+  }
+  .FirstSectionInput {
+    margin: 0%;
+    margin-bottom: 0rem;
+  }
+  .SecondSection {
+  }
+  .SecondSectionInputHide {
+    display: none;
+  }
+  .FirstSectionSentenceSpace {
+    margin-right: 2rem !important;
+  }
+  .SectionsRow {
+    padding-top: 3rem;
+  }
+  .ContactUsHeading {
+    padding-top: 6.5rem;
+  }
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 992px) {
+  .ContactUsMainContainer {
+    padding-left: 8rem;
+  }
+  .ContactUsHeading {
+    padding-top: 2rem;
+  }
+  .FirstSection {
+    width: 50rem;
+  }
+} */
+
 @media (min-width: 320px) and (max-width: 767px) {
   .ContactUsMainContainer {
     padding: 5.5rem 1rem 6rem 1rem;
@@ -153,9 +271,7 @@
     width: 20rem;
     padding-bottom: 1rem;
   }
-  /* .CaptchaInput {
-    
-  } */
+
   .SecondSectionInputHide {
     padding-bottom: 1rem !important;
   }
@@ -197,7 +313,6 @@
     margin-bottom: 0rem;
   }
   .SecondSection {
-    /* flex-direction: column; */
   }
   .SecondSectionInputHide {
     display: none;
@@ -205,8 +320,17 @@
   .FirstSectionSentenceSpace {
     margin-right: 2rem !important;
   }
+  .SectionsRow {
+    padding-top: 3rem;
+  }
+  .ContactUsHeading {
+    padding-top: 6.5rem;
+  }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 650px) and (max-width: 740px) {
+@media (min-width: 1081px) and (max-width: 1250px) {
+  .FirstSectionSentence1 {
+    font-size: 35px;
+  }
 }

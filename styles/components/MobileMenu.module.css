@@ -65,36 +65,21 @@
   letter-spacing: 0.05em;
   -webkit-text-stroke: 1px #ffffff;
   text-decoration: none !important;
-  color: transparent !important;
+  color: transparent;
   -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
-  background-size: 100% 200%;
-  background-position: top;
+
   -webkit-transition: background-position 1.5s ease-in-out;
   -o-transition: background-position 1.5s ease-in-out;
   transition: background-position 1.5s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(50%, #ffffff),
-    color-stop(50%, transparent)
-  );
-  background-image: -webkit-linear-gradient(
-    bottom,
-    #ffffff 50%,
-    transparent 50%
-  );
-  background-image: -o-linear-gradient(bottom, #ffffff 50%, transparent 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, transparent 50%);
+
   margin: 0%;
   padding-bottom: 0.5rem;
   padding-top: 0.5rem;
   opacity: 0.25;
 }
 .LinkName:hover {
-  background-position: bottom;
-  cursor: pointer;
+  color: #ffffff;
 }
 .SubMenu {
   font-weight: 400;
@@ -127,7 +112,8 @@
   padding-top: 0.7rem;
   font-weight: 500;
   font-size: 20px;
-  text-align: center;
+  text-align: left;
+  padding-left: 0.5rem;
 }
 .IconName:hover {
   color: #a21d34;
@@ -151,10 +137,11 @@
   transition: all 0.3s ease-in-out;
 }
 .IconImg {
-  max-height: 100px;
+  max-height: 80px;
+  max-width: 80px;
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .MobileMenu {
     display: flex;
   }
@@ -188,7 +175,47 @@
     margin: 5px auto;
     width: 30px;
   }
+  .IconName {
+    text-align: center;
+    padding-left: 0;
+  }
 }
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 600px) {
+  .MobileMenu {
+    display: flex;
+  }
+  .MobifinxXmenu {
+    padding: 0 1rem;
+  }
+
+  .LinkName {
+    padding-bottom: 1rem;
+    opacity: 0.6;
+  }
+  .Tabs {
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+  .Explorproduct {
+    display: flex;
+    justify-content: center;
+  }
+  .IconMenuContainer {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .Menurow {
+    padding-bottom: 4rem;
+  }
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
+  }
+} */
+
 @media (min-width: 768px) and (max-width: 1080px) {
   .TabletMenu {
     display: flex;
@@ -218,7 +245,7 @@
   }
   .LinkName {
     padding-left: 1rem;
-    opacity: 0.6;
+    opacity: 0.8;
   }
   .SubMenu {
     padding-left: 1rem;
@@ -235,5 +262,36 @@
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 650px) and (max-width: 740px) {
-}
+/* @media (min-width: 650px) and (max-width: 767px) {
+  .MobileMenu {
+    display: flex;
+  }
+  .MobifinxXmenu {
+    padding: 0 1rem;
+  }
+  
+  .LinkName {
+    padding-bottom: 1rem;
+    opacity: 0.6;
+  }
+  .Tabs {
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+  .Explorproduct {
+    display: flex;
+    justify-content: center;
+  }
+  .IconMenuContainer {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+  .Menurow {
+    padding-bottom: 4rem;
+  }
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
+  }
+} */

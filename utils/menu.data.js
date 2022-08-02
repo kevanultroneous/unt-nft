@@ -7,57 +7,57 @@ export const menus = [
         name: "Introduction",
         link: "/",
         description:
-          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+          "From startups to enterprise solutions that are more open, efficient, and secure.",
       },
       {
         name: "Our Product",
         link: "/",
         description:
-          "It is a long established fact that a reader will be distracted by the readable content.",
+          "Eighth products. One mission. To empower startups to enterprises worldwide.  ",
       },
       {
         name: "Core Benefits",
         link: "/",
         description:
-          "It is a long established fact that a reader will be distracted by the readable content.",
+          "Strengthening Protection with Robust Security Mechanisms. ",
       },
       {
         name: "Case Studies",
         link: "/",
-        description:
-          "It is a long established fact that a reader will be distracted by the readable content.",
+        description: "Business success stories & Client case studies. ",
       },
       {
         name: "Process",
         link: "/",
-        description:
-          "It is a long established fact that a reader will be distracted by the readable content.",
+        description: "Your roadmap to successful business launch  .",
       },
     ],
   },
   {
     name: "About us",
-    mainlink: "/about-us",
+    mainlink: "",
     menus: [
       {
         name: "Company Overview",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph:
+          "MobifinX is a global leader in next-generation technology .   ",
+      },
+      {
+        name: " Career",
+        link: "/",
+        paragraph: "Join Us in our expanding journey! ",
       },
       {
         name: "Case Study",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
-      },
-      {
-        name: "Career",
-        link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph: " Business success stories & Client case studies.        ",
       },
       {
         name: "Events & webinars",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph:
+          "Join us for Insightful Sessions Across the Globe on Transformation.        ",
       },
       // {
       //   name: "Awards & Certificate",
@@ -76,17 +76,17 @@ export const menus = [
       {
         name: "Blog",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph: "Discover innovation stories .       ",
       },
       {
         name: "News/Media",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph: " Get the latest update and news about our company. ",
       },
       {
         name: "Press Release",
         link: "/",
-        paragraph: "Hello i am new paragrphs",
+        paragraph: " Explore our official statement. ",
       },
     ],
   },
@@ -112,64 +112,64 @@ export const menus = [
         name: "Introduction",
         link: "/",
         description:
-          "It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.",
+          " From startups to enterprise solutions that are more open, efficient, and secure.          ",
       },
       {
         name: "Our Product",
         link: "/",
         description:
-          "It is a long established fact that a reader will be distracted by the readable content.",
+          " Eighth products. One mission. To empower startups to enterprises worldwide.          ",
       },
     ],
   },
 ];
 export const iconsMenu = [
   {
-    icon: "/assets/images/MX-trad.svg",
+    icon: "/assets/images/MXtrad-1.jpg",
     color: "#EF816F",
     name: "MxTrade",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/Mx-future.svg",
+    icon: "/assets/images/Mxfuture-1.jpg",
     color: "#C3B091",
     name: "MxFuture",
-    link: "/mxfuture",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Dex.svg",
+    icon: "/assets/images/MxDex-1.jpg",
     color: "#0E88F5",
     name: "MxDex",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Fi.svg",
+    icon: "/assets/images/MxFi-1.jpg",
     color: "#9A9A9A",
     name: "MxFi",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Lunch.svg",
+    icon: "/assets/images/MxLaunch-1.jpg",
     color: "#D22544",
     name: "MxLaunch",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Wallet.svg",
+    icon: "/assets/images/MxWallet -1.jpg",
     color: "#394F18",
     name: "MxWallet",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Block.svg",
+    icon: "/assets/images/MxBlock-1.jpg",
     color: "#7945EF",
     name: "MxBlock",
-    link: "/",
+    link: "#",
   },
   {
-    icon: "/assets/images/MX-Nft.svg",
+    icon: "/assets/images/MxNFT-1.jpg",
     color: "#C34CB8",
     name: "MxNFT",
-    link: "/",
+    link: "#",
   },
 ];

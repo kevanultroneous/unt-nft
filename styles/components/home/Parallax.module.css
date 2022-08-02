@@ -1,8 +1,11 @@
 .Parallax {
-  background-image: url("/assets/images/Parallax.jpg");
-  background-attachment: fixed;
-  background-size: cover;
+  background-image: url("/assets/images/Parallaxnew1.png");
   background-position: center;
+  background-attachment: fixed;
+  -o-background-size: cover;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 4rem;
 }
@@ -19,21 +22,21 @@
 .Pera {
   font-size: 22px;
   font-weight: 400;
-  /* color: #1a1c3c; */
-  color: #fff;
+  color: #1a1c3c;
+  /* color: #fff; */
   padding-left: 1rem;
 }
 .MainHeading {
   font-size: 100px;
   font-weight: 500;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
-  background: linear-gradient(to right, #f2f2f2, #d9d9d9, #a6a6a6);
+  background: linear-gradient(to right, #a21d34, #b13f76, #7b4396);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  /* color: #1a1c3c; */
+  color: #1a1c3c;
   /* font-size: 10rem; */
   /* width: 80vw;
   margin: 0; */
@@ -46,7 +49,7 @@
   -webkit-transition: 0.2s; */
 }
 .Mainsection {
-  padding: 0rem 0 4rem 3rem;
+  padding: 0rem 0 0rem 3rem;
   /* background-color: blue; */
 }
 .MainHeading:hover {
@@ -67,14 +70,14 @@
 .MainHeadingSecure {
   font-size: 100px;
   font-weight: 500;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
-  background: linear-gradient(to right, #004dfe, #337efe, #75beff);
+  background: linear-gradient(to right, #bf78bb, #615ebf, #035aa6);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  /* color: #1a1c3c; */
+  color: #1a1c3c;
   text-align: left;
   transition: color 0.2s ease-in-out;
   text-transform: uppercase;
@@ -99,18 +102,19 @@
 .MainHeadingSuccess {
   font-size: 100px;
   font-weight: 500;
-  color: #fff;
+  /* color: #fff; */
   text-transform: uppercase;
   background: linear-gradient(to right, #1b0273, #3866f2, #6f04d9);
   background-size: 200% 200%;
   animation: rainbow 2s ease-in-out infinite;
   background-clip: text;
   -webkit-background-clip: text;
-  /* color: #1a1c3c; */
+  color: #1a1c3c;
   text-align: left;
   transition: color 0.2s ease-in-out;
   text-transform: uppercase;
   font-weight: 900;
+  padding-bottom: 4rem;
 }
 
 .MainHeadingSuccess:hover {
@@ -151,7 +155,15 @@
 
 @media (min-width: 320px) and (max-width: 767px) {
   .Parallax {
+    background-image: url("/assets/images/ParallaxMob.png");
+    background-position: center;
+    background-attachment: fixed;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
     background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
   }
   .Parallaxrow {
     padding-left: 1rem;
@@ -160,13 +172,15 @@
   .MainHeading,
   .MainHeadingSecure,
   .MainHeadingSuccess {
-    font-size: 45px;
+    font-size: 40px;
   }
   .Mainsection {
     padding: 2rem 0;
+    padding-bottom: 0;
   }
   .Pera {
     padding-left: 0;
+    font-size: 18px;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -185,8 +199,23 @@
   }
   .Mainsection {
     padding: 2rem 0;
+    padding-bottom: 0;
+  }
+  .Parallax {
+    background-size: cover;
+    background-image: url("/assets/images/ParallaxMob.png");
+    background-position: center;
+  }
+  .Pera {
+    padding-left: 0;
   }
 }
+@media only screen and (min-width: 992px) {
+  .Parallaxrow {
+    padding-left: 5rem;
+  }
+}
+
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
 @media (min-width: 650px) and (max-width: 740px) {

@@ -33,12 +33,13 @@ const ParentMenuBar = ({ children, opacity }) => {
     </>
   );
 };
-const Menu = ({ opacity, handleClick, change, addClass }) => {
+const Menu = ({ opacity, handleClick, change, addClass, clicktoCloseMenu }) => {
   return (
     <ParentMenuBar opacity={opacity}>
       <div>
         <Link href={"/"}>
           <Image
+            onClick={clicktoCloseMenu}
             style={{ cursor: "pointer" }}
             alt={"xicon"}
             src="/assets/images/xicon.svg"

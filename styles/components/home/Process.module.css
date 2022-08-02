@@ -5,7 +5,8 @@
   padding-right: 2rem;
   justify-content: center;
   /* height: 100vh; */
-  background: rgba(26, 28, 60, 0.03);
+  /* background: rgba(26, 28, 60, 0.03); */
+  background: #1a1c3c;
 }
 .ProcessBoxesContainer {
   display: flex;
@@ -25,7 +26,7 @@
   font-size: 14px;
   /* line-height: 70px; */
   text-align: center;
-  color: #a21d34;
+  color: #fff;
   margin: 0%;
   padding-bottom: 2rem;
 }
@@ -33,7 +34,7 @@
   font-weight: 600;
   font-size: 50px;
   text-align: center;
-  color: #000000;
+  color: #fff;
   margin: 0%;
 }
 .ProcessImage {
@@ -64,6 +65,7 @@
   letter-spacing: 0.2em;
   text-align: center;
   /* font-weight: 600; */
+  color: #fff;
 }
 .ProcessBox {
   width: fit-content;
@@ -75,7 +77,9 @@
   z-index: 5;
 }
 .ProcessLine {
-  border: 1px dashed rgba(0, 0, 0, 0.1);
+  /* border: 1px dashed rgba(0, 0, 0, 0.1); */
+  border: 1px dashed #fff;
+  opacity: 0.2;
 }
 .ProcessLineContainer {
   display: flex;
@@ -88,8 +92,8 @@
   flex-direction: column;
 }
 .ProcessBlink {
-  width: 1rem;
-  height: 1rem;
+  width: 1.5rem;
+  height: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -132,6 +136,7 @@
   font-size: 22px;
   margin: 0%;
   padding-bottom: 2rem;
+  color: #fff;
 }
 .YourNeedPContainer {
   display: flex;
@@ -140,13 +145,14 @@
 }
 .YourNeedPContainer p {
   width: 44.93rem;
+  color: #fff;
 }
 
 /*  */
 @media (min-width: 320px) and (max-width: 767px) {
   .ProcessContainer {
     padding: 3rem 1rem;
-    height: 80vh;
+    height: 85vh;
     padding-bottom: 0;
   }
   .ProcessTitle {

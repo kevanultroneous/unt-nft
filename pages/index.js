@@ -48,12 +48,19 @@ export default function Home() {
   }, []);
 
   return (
-    <Layout title={"Mobifinx | Home"}>
+    <Layout
+      title={
+        " Blockchain and Crypto products - All in one exchange product | Mobifinx"
+      }
+      description={
+        " MobifinX is a Leading Crypto and Enterprise Blockchain Solutions Provider that provides DEFI Products, Fundraising Platform, NFT Marketplace, Dex Trading, Spot Trading, OTC Desk, P2P Trading, Margin and Derivatives Exchange for individuals, startups and entrepreneurs."
+      }
+    >
       {cursor ? (
         <AnimatedCursor
           innerSize={10}
           outerSize={50}
-          color="162, 29, 52"
+          color="193, 35, 63"
           outerAlpha={0.1}
           innerScale={0.1}
           outerScale={2}
@@ -78,19 +85,18 @@ export default function Home() {
           {/* Our Products */}
           <Products />
           {/* Exchange */}
-          <Exchange href={"/"} />
+          <Exchange href={"/contact-us"} />
           {/* Get with us */}
           <WhatWillYouGetWithUs />
           {/* Inspiredby */}
           <Inspiredby />
           {/* Process */}
           <Process />
+          {/* be a part of future choice */}
+          <FutureChoice />
           {/* Speciality */}
           {/* <Speciality /> */}
           <Parallax />
-          {/* be a part of future choice */}
-          <FutureChoice />
-
           {/* Footer */}
           <Footer />
         </>

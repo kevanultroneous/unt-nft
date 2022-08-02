@@ -3,24 +3,21 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 // import styles from "@/styles/components/home/Products.module.css";
 import styles from "@/styles/components/home/Products.module.css";
 import AOS from "aos";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import ActionButtonV3 from "../Common/ActionButtonV3";
-import ActionButton from "../Common/ActionButton";
 import ProductsList from "utils/products.data";
 import LearnMore from "../Common/LearnMore";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+
 const Products = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
-  const [xcord, setXcord] = useState(0);
-  const [ycord, setYcord] = useState(0);
-  const [opacitycord, setOpacitycord] = useState("0");
-  const [currentItem, setCurrentItem] = useState(0);
 
   useEffect(() => {
     AOS.refresh();
     AOS.init();
   }, []);
-  const CardForProductSection = ({ ProductsList, index }) => {
+
+  const CardForProductSection = ({ ProductsList, index, cardStyle }) => {
     return (
       <>
         <div className={styles.HRcontainer}>
@@ -48,14 +45,14 @@ const Products = ({ text }) => {
                     {ProductsList[index].name}
                   </h4>
                   <ActionButtonV3
-                    href={"/"}
+                    href={"/contact-us"}
                     text={
                       <div className={styles.Explortxt}>
                         <span className={styles.ExpText}>Explore Product</span>
                         <HiOutlineExternalLink />
                       </div>
                     }
-                    backc={ProductsList[index].btnc}
+                    backc={ProductsList[index].color}
                     borderc={ProductsList[index].border}
                   />
                 </div>
@@ -112,10 +109,6 @@ const Products = ({ text }) => {
           {text ? text : "Our Products"}
         </h3>
         <div className={styles.CardsSwrapper}>
-          {/* <div
-            className={styles.FollowerLight}
-            style={{ left: xcord, top: ycord, opacity: opacitycord }}
-          /> */}
           <ul>
             <li
               className={styles.card01}
