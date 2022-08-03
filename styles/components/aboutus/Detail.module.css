@@ -57,7 +57,7 @@
 .Detailcol {
   display: flex;
 }
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .Subtitle p {
     display: none;
   }
@@ -91,7 +91,32 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 600px) {
+  .AboutdetailsContainer {
+    padding: 0 0 0rem 1rem;
+  }
+  .Detail {
+    font-size: 26px;
+  }
+  .Subtitle {
+    display: none;
+  }
+  .Detailcol {
+    display: flex;
+    opacity: 1 !important;
+  }
+  .Advantagecol {
+    padding-right: 4rem;
+  }
+  /* .Advantagecol {
+    width: 33%;
+  }
+  .Detailcol {
+    flex-direction: row;
+  } */
+}
+
+@media screen and (min-width: 768px) {
   .Subtitle p {
     font-size: 18px;
     color: rgba(18, 18, 18, 0.6);
@@ -131,3 +156,122 @@
     padding: 4rem 1rem 4rem 0rem;
   }
 }
+
+@media screen and (min-width: 992px) {
+  .Detail {
+    padding-right: 1rem;
+    padding-left: 7rem;
+  }
+  .Advantages {
+    padding-left: 7rem;
+  }
+  .Aboutcandle {
+    padding-left: 6rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .AboutdetailsContainer {
+    padding: 0 0 0 8.5rem;
+  }
+  .Subtitle p {
+    font-size: 16px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(270deg);
+    /* margin-left: -4rem; */
+    /* padding-top: 1.5rem; */
+    margin-top: -4rem;
+    padding-bottom: 9rem;
+    letter-spacing: 2px;
+  }
+  .Subtitle {
+    /* padding-left: 6.5rem; */
+    padding-right: 2rem;
+    justify-content: end;
+    display: block;
+  }
+  .Advantages {
+    justify-content: center;
+    padding-top: 4rem;
+    overflow: hidden;
+    padding-left: 0;
+  }
+  .Advantagecol {
+    padding-right: 3rem;
+    width: 33%;
+  }
+  .Detail {
+    font-size: 18px;
+    font-weight: 400;
+    padding-left: 0rem;
+    padding-right: 1rem;
+    text-align: justify;
+    color: #2e3159;
+  }
+  .Heading {
+    font-size: 18px;
+    font-weight: 600;
+    padding-bottom: 1rem;
+    margin: 0;
+  }
+  .Description {
+    font-size: 16px;
+    font-weight: 400;
+    text-align: justify;
+  }
+  .Icon {
+    min-width: 3rem;
+    padding-bottom: 1rem;
+  }
+  .Aboutcandle {
+    padding: 4rem 2rem 4rem 0rem;
+  }
+  .Aboutcandleimg {
+    width: 100%;
+    height: auto;
+  }
+  .Detailcol {
+    display: flex;
+    flex-direction: row;
+  }
+}
+/* @media (min-width: 768px) and (max-width: 1080px) {
+  .Subtitle p {
+    font-size: 18px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(360deg);
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    letter-spacing: 2px;
+  }
+  .AboutdetailsContainer {
+    padding-left: 1rem;
+    padding-bottom: 2rem;
+  }
+  .Advantagecol {
+    width: 100%;
+    padding-bottom: 2rem;
+    padding-right: 1rem;
+  }
+  .Icon {
+    min-width: 12%;
+  }
+  .Advantages {
+    padding-left: 0rem;
+  }
+  .Heading {
+    font-size: 25px;
+  }
+  .Description {
+    font-size: 20px;
+  }
+  .Detailcol {
+    flex-direction: column;
+  }
+  .Detail {
+    padding-right: 1rem;
+  }
+  .Aboutcandle {
+    padding: 4rem 1rem 4rem 0rem;
+  }
+} */

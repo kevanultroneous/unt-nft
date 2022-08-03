@@ -70,7 +70,6 @@
   cursor: pointer;
 }
 
-
 .VisionHover {
   display: flex;
   justify-content: center;
@@ -105,8 +104,172 @@
   cursor: pointer;
 }
 
+@media screen and (max-width: 600px) {
+  .Rotatetext {
+    display: none;
+  }
+  .VisionContainer {
+    padding-left: 1rem;
+  }
+  .Vision,
+  .span {
+    font-size: 45px;
+  }
+  .Mission {
+    font-size: 45px;
+  }
+  .Detailcol {
+    padding-right: 1rem;
+  }
+  .Important {
+    padding-bottom: 8rem;
+  }
+}
+@media screen and (min-width: 600px) {
+  .Rotatetext {
+    display: none;
+  }
+  .Vision,
+  .span,
+  .Mission {
+    font-size: 50px;
+  }
+  .Description {
+    font-size: 26px;
+  }
+  .VisionContainer {
+    padding-left: 1.5rem;
+  }
+  .Important {
+    padding-bottom: 8rem;
+  }
+}
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 768px) {
+  .Important {
+    padding-bottom: 12rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .VisionContainer {
+    padding-left: 8rem;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .VisionContainer {
+    /* padding-top: 4rem; */
+    /* padding-bottom: 4rem; */
+    padding-left: 8.5rem;
+  }
+  .Important {
+    padding: 6rem 0;
+    padding-top: 0;
+  }
+  /* .Visionrow{
+      padding-left: 2.5rem;
+  } */
+  .Rotatetext {
+    font-size: 16px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(270deg);
+    padding-bottom: 11rem;
+    margin-top: -4rem;
+    letter-spacing: 2px;
+  }
+  .Heading {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding-left: 0rem;
+  }
+
+  .Vision,
+  .span {
+    font-size: 70px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    padding-right: 0.5rem;
+    color: #fff;
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+  }
+
+  .span {
+    color: #000;
+  }
+  .Mission {
+    -webkit-text-stroke: 1px rgba(0, 0, 0, 0.4);
+    color: #fff;
+    font-size: 70px;
+    font-weight: 600;
+    padding: 0;
+    margin: 0;
+    cursor: pointer;
+  }
+  .Description {
+    font-size: 18px;
+    font-weight: 300;
+    color: #000000;
+    padding-left: 0rem;
+    height: 4rem;
+  }
+  .Detailrow {
+    padding-left: 0rem;
+    padding-top: 0rem;
+  }
+  .Detailcol {
+    padding: 0 6.5rem;
+    text-align: justify;
+    padding-left: 0;
+  }
+
+  .Active {
+    color: #000;
+    cursor: pointer;
+  }
+
+  .VisionHover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-size: 70px;
+    /* line-height: 1em; */
+    -webkit-text-stroke: 1px #000;
+    text-decoration: none;
+    color: transparent !important;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    background-size: 100% 200%;
+    background-position: top;
+    -webkit-transition: background-position 0.6s ease-in-out;
+    -o-transition: background-position 0.6s ease-in-out;
+    transition: background-position 0.6s ease-in-out;
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(50%, #000),
+      color-stop(50%, transparent)
+    );
+    background-image: -webkit-linear-gradient(
+      bottom,
+      #000 50%,
+      transparent 50%
+    );
+    background-image: -o-linear-gradient(bottom, #000 50%, transparent 50%);
+    background-image: linear-gradient(to top, #000 50%, transparent 50%);
+    cursor: pointer;
+  }
+  .VisionHover:hover {
+    background-position: bottom;
+    cursor: pointer;
+  }
+}
+
+/* @media (min-width: 320px) and (max-width: 767px) {
   .Rotatetext {
     display: none;
   }
@@ -143,4 +306,4 @@
   .Detailcol {
     padding-right: 1rem;
   }
-}
+} */

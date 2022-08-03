@@ -1,82 +1,161 @@
-.Alliancecontainer{
- 
-    padding: 4rem 0 4rem 8.5rem;
+.Alliancecontainer {
+  padding: 4rem 0 4rem 8.5rem;
 }
-.Rotatetext{
-    font-size: 14px;
-    font-weight: 400;
-    color: #000;
-    transform: rotate(270deg);
+.Rotatetext {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  transform: rotate(270deg);
   padding-bottom: 11rem;
 }
-.Alliance h4{
-    font-size: 50px;
-    font-weight: 600;
+.Alliance h4 {
+  font-size: 50px;
+  font-weight: 600;
 }
-.Alliance{
-    padding: 4rem 0;
-    overflow: hidden;
+.Alliance {
+  padding: 4rem 0;
+  overflow: hidden;
 }
 /* .Alliancerow{
     padding-left: 6.5rem;
 
 } */
-.ProudtoWork{
-    width: 32%;
-    padding-left: 0rem;
-    padding-top: 3rem;
+.ProudtoWork {
+  width: 32%;
+  padding-left: 0rem;
+  padding-top: 0rem;
 }
 /* .Partnerimg{
     width: 100%;
     height: auto;
 } */
-.Partnerrow{
+.Partnerrow {
+  padding: 0 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .Alliancecontainer {
     padding: 0 1rem;
+  }
+  .Rotatetext {
+    display: none;
+  }
+  .ProudtoWork {
+    width: 100%;
+  }
+  .Partnerrow {
+    padding: 0;
+  }
+  .AllianceImg {
+    width: 100%;
+    height: auto;
+  }
+  .ProudtoWork {
+    padding-top: 0;
+  }
 }
-@media (min-width:320px) and (max-width: 767px){
-    .Alliancecontainer{
-        padding:0 1rem;
-    }
-    .Rotatetext{
-        display: none;
-    }
-    .ProudtoWork{
-        width: 100%;
-    }
-    .Partnerrow{
-        padding: 0 ;
-    }
-    .AllianceImg{
-        width: 100%;
-        height: auto;
-    }
-    .ProudtoWork{
-        padding-top: 0;
-    }
+
+@media screen and (min-width: 600px) {
+  .Alliance h4 {
+    font-size: 50px;
+  }
+  .Rotatetext {
+    display: none;
+  }
+  .Alliancecontainer {
+    padding-left: 1rem;
+  }
+  .Alliance {
+    padding: 0;
+  }
+  .ProudtoWork {
+    width: 50%;
+  }
+  .AllianceImg {
+    width: 100%;
+    height: auto;
+  }
 }
-@media (min-width:768px) and (max-width: 1080px){
-    .Alliancecontainer{
-        padding:0 1rem;
-    }
-    .Rotatetext{
-        font-size: 18px;
-        color: rgba(18, 18, 18, 0.6);
-        transform: rotate(360deg);
-        margin-top: 0rem;
-        padding-bottom: 0rem;
-        letter-spacing: 2px;
-    }
-    .ProudtoWork{
-        width: 100%;
-    }
-    .Partnerrow{
-        padding: 0 ;
-    }
-    .AllianceImg{
-        width: 100%;
-        height: auto;
-    }
-    .ProudtoWork{
-        padding-top: 0;
-    }
+
+@media screen and (min-width: 768px) {
+  .Alliancecontainer {
+    padding-left: 1rem;
+  }
 }
+@media screen and (min-width: 992px) {
+  .Alliancecontainer {
+    padding-left: 8rem;
+  }
+  .ProudtoWork {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .Alliancecontainer {
+    padding: 4rem 0 4rem 8.5rem;
+  }
+  .Rotatetext {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    transform: rotate(270deg);
+    padding-bottom: 11rem;
+    display: block;
+  }
+  .Alliance h4 {
+    font-size: 50px;
+    font-weight: 600;
+  }
+  .Alliance {
+    padding: 4rem 0;
+    overflow: hidden;
+  }
+  /* .Alliancerow{
+      padding-left: 6.5rem;
+  
+  } */
+  .ProudtoWork {
+    width: 32%;
+    padding-left: 0rem;
+    padding-top: 0rem;
+  }
+  /* .Partnerimg{
+      width: 100%;
+      height: auto;
+  } */
+  .Partnerrow {
+    padding: 0 1rem;
+  }
+}
+
+/* 
+@media (min-width: 320px) and (max-width: 767px) {
+  
+} */
+/* @media (min-width: 768px) and (max-width: 1080px) {
+  .Alliancecontainer {
+    padding: 0 1rem;
+  }
+  .Rotatetext {
+    font-size: 18px;
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(360deg);
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+    letter-spacing: 2px;
+  }
+  .ProudtoWork {
+    width: 100%;
+  }
+  .Partnerrow {
+    padding: 0;
+  }
+  .AllianceImg {
+    width: 100%;
+    height: auto;
+  }
+  .ProudtoWork {
+    padding-top: 0;
+  }
+} */
