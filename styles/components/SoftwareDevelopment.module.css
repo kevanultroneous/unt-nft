@@ -1,27 +1,32 @@
 .SoftwareDevelopmentExpertsContainer {
-   
-    padding-top: 3.1rem;
-    padding-left: 8.5rem;
-    padding-bottom: 2.5rem;
-  }
-  .SoftwareDevelopmentExpertsSmallHead {
-    display: flex;
-    align-items: center;
-    padding-top: 1rem;
-  }
-  .HomeMiniLine {
-    width: 40px;
-    padding: 0.1rem;
-    margin-right: 1rem;
-    border-bottom: 1px solid #ffffff;
-  }
+  padding-top: 3.1rem;
+  padding-left: 8.5rem;
+  padding-bottom: 2.5rem;
+}
+.SoftwareDevelopmentExpertsSmallHead {
+  display: flex;
+  align-items: center;
+  padding-top: 1rem;
+}
+.HomeMiniLine {
+  width: 40px;
+  padding: 0.1rem;
+  margin-right: 1rem;
+  border-bottom: 1px solid #ffffff;
+}
+.HomeSmallHeading {
+  font-weight: 400;
+  font-size: 20px;
+  color: #ffffff;
+}
+.SoftwareDevelopmentExpertsBtnCol {
+  display: flex;
+  justify-content: end;
+  padding-right: 4rem;
+}
+
+@media (min-width: 320px) and (max-width: 768px) {
   .HomeSmallHeading {
-    font-weight: 400;
-    font-size: 20px;
-    color: #ffffff;
+    font-size: 14px;
   }
-  .SoftwareDevelopmentExpertsBtnCol {
-    display: flex;
-    justify-content: end;
-    padding-right: 4rem;
-  }
+}

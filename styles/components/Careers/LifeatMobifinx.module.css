@@ -1,0 +1,36 @@
+.lifeMobifinxMainContainer {
+  padding: 5rem 0rem 3rem 8.5rem;
+}
+
+.sideHeading {
+  margin-top: 2rem;
+  padding-right: 2rem;
+  justify-content: end;
+}
+
+.sideHeading p {
+  color: rgba(18, 18, 18, 0.6);
+  transform: rotate(270deg);
+  margin-left: -2.7rem;
+  padding-bottom: 9rem;
+  letter-spacing: 2px;
+  width: 15rem;
+}
+
+.rightText {
+  width: 53vw;
+}
+
+.rightText h3 {
+  font-size: 4rem;
+  font-weight: 600;
+  line-height: 4rem;
+}
+
+.rightText p {
+  margin: 3rem 0 5rem;
+}
+
+.rightImage img {
+  width: 74.5vw;
+}
