@@ -13,8 +13,8 @@
   align-items: center;
   top: 0px;
   background: #ffffff;
-  border-right: 1px solid #000;
-  border: 2px solid transparent;
+  /* border-right: 1px solid #000; */
+  border-right: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
   /* border-top: none;
@@ -65,9 +65,11 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
 
-@media (min-width: 1920px) and (max-height: 1080px) {}
+@media (min-width: 1920px) and (max-height: 1080px) {
+}
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {

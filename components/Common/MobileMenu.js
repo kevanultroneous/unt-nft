@@ -29,7 +29,7 @@ const MobileMenu = () => {
             <Image
               alt={"xicon"}
               src={"/assets/images/MobifinxMobile.jpg"}
-              height={50}
+              height={45}
             />
           </Link>
         </div>
