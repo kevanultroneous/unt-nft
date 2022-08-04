@@ -5,6 +5,7 @@ import MenuPackage from "@/components/Common/MenuPackage";
 import Footer from "@/components/Home/Footer";
 import LifeatMobifinx from "@/components/Careers/LifeatMobifinx";
 import WhyMobifinx from "@/components/Careers/WhyMobifinx";
+import CareerAccordion from "@/components/Careers/CareerAccordion";
 
 const careers = () => {
   return (
@@ -20,6 +21,9 @@ const careers = () => {
       </section>
       <section>
         <WhyMobifinx />
+      </section>
+      <section>
+        <CareerAccordion />
       </section>
       <section>
         <ExploreWorkplace />

@@ -1,6 +1,6 @@
 .WhyMobifinxMainContainer {
   padding: 5rem 0rem 3rem 8.5rem;
-  height: 100vh;
+  height: 80vh;
 }
 
 .sideHeading {
@@ -15,6 +15,11 @@
   margin-top: -3.6rem;
   padding-bottom: 9rem;
   letter-spacing: 2px;
+}
+
+.rightSection h3 {
+  font-size: 50px;
+  font-weight: 600;
 }
 
 .mobifinxBenefits {
@@ -53,29 +58,36 @@
   }
 }
 /* Mobile Landscape */
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) {
   .WhyMobifinxMainContainer {
-    padding: 2rem 1rem 3rem;
+    padding: 0rem 1rem 1rem;
     height: auto;
+  }
+  .mobifinxBenefits {
+    margin: 2rem 0 0;
   }
   .sideHeading {
     display: none;
   }
 }
 /* Tablet Portrait */
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen and (min-width: 768px) {
   .mobifinxBenefits {
     margin: 2rem 0 0;
   }
   .WhyMobifinxMainContainer {
     padding: 1rem 1rem 3rem;
+    height: auto;
   }
   .sideHeading {
     display: none;
   }
+  .benefitsBox {
+    padding: 1rem 1rem 1rem 0;
+  }
 }
 /* Tablet Landscape */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .WhyMobifinxMainContainer {
     padding: 5rem 0rem 3rem 8.5rem;
   }
@@ -84,5 +96,46 @@
   }
   .sideHeading {
     display: none;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .WhyMobifinxMainContainer {
+    padding: 5rem 0rem 3rem 8.5rem;
+    height: 90vh;
+  }
+
+  .sideHeading {
+    display: block;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    justify-content: end;
+  }
+
+  .sideHeading p {
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(270deg);
+    margin-top: -3.6rem;
+    padding-bottom: 9rem;
+    letter-spacing: 2px;
+  }
+
+  .mobifinxBenefits {
+    margin: 5rem 0 0;
+  }
+
+  .benefitsBox {
+    padding: 1rem 4rem 1rem 0;
+  }
+
+  .benefitsBox h4 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin: 1.2rem 0;
+  }
+
+  .benefitsBox p {
+    font-size: 0.9rem;
+    text-align: justify;
   }
 }

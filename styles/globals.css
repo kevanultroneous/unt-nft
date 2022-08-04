@@ -404,3 +404,135 @@ a {
 } */
 
 /* ========================================== */
+
+/* ===================================== Career Accordion ============================================================== */
+.AccordionNav .AccordionHeader button {
+  background-color: transparent !important;
+  color: rgb(191, 131, 111) !important;
+  display: flex;
+  justify-content: center;
+  align-items: baseline;
+  padding-top: 0%;
+}
+
+.AccordionNav .accordion-button::after {
+  background-image: url("/assets/arrow-up-solid.svg") !important;
+  transition: all 0.5s ease !important;
+  transform: rotate(180deg);
+}
+
+.AccordionNav .accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/arrow-up-solid.svg") !important;
+  transform: rotate(0deg);
+}
+
+.AccordionNav .accordion-button:not(.collapsed) {
+  box-shadow: none;
+  padding-top: 0%;
+}
+.AccordionNav .accordion-body {
+  padding: 0 1.25rem;
+}
+
+.accordion-item {
+  border: none !important;
+  margin: 1.5em 0 !important;
+}
+.accordion-button {
+  background: #1a1c3c !important;
+  color: white !important;
+}
+
+.CareersAccordion .accordion-button::after {
+  background-image: url("/assets/images/plus.svg") !important;
+  transition: all 0.3s ease !important;
+}
+
+.CareersAccordion .accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/images/minus.svg") !important;
+  transform: rotate(0deg) !important;
+}
+
+.CareersAccordion .accordion-body,
+.accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: #1a1c3c !important;
+  color: #fff !important;
+  outline: none !important;
+  border: none !important;
+}
+.CareersAccordion .accordion-button:not(.collapsed) {
+  background-color: #1a1c3c !important;
+  color: #fff !important;
+  outline: none !important;
+  border: none !important;
+}
+
+.CareersAccordion .accordion-body a {
+  text-decoration: none;
+}
+
+.CareersAccordion .accordion-body div {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+/* .forfaq .accordion-button,
+.accordion-button:not(.collapsed) {
+  background-color: #ffffff !important;
+  color: #000 !important;
+}
+
+.forfaq .accordion-button:not(.collapsed) {
+  box-shadow: none !important;
+}
+.forfaq .accordion-button {
+  font-weight: 600;
+  font-size: 22px;
+  height: 6rem;
+}
+.forfaq .accordion-item {
+  margin: 2.5rem 0 !important;
+  border-radius: 10px !important;
+  margin-right: 1rem !important;
+  border: 1px solid rgba(206, 206, 206, 0.3) !important;
+}
+
+.forfaq .accordion-body {
+  font-weight: 400;
+  font-size: 16px;
+  color: rgba(0, 0, 0, 0.6);
+  margin-left: 6rem;
+  text-align: justify;
+}
+.forfaq .accordion-header {
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.forfaq .accordion-button::after {
+  flex-shrink: 0;
+  width: 1.25rem;
+  height: 1.25rem;
+  margin-left: auto;
+  content: "";
+  background-image: url("/assets/plusa.svg");
+  background-repeat: no-repeat;
+  background-size: 1.25rem;
+  transition: all 0.5s ease !important;
+}
+.forfaq .accordion-button:not(.collapsed)::after {
+  background-image: url("/assets/minusa.svg");
+  transform: rotate(0deg);
+  transition: all 0.5s ease !important;
+}
+.forfaq .accordion-button::after {
+}
+.accordon-button:active,
+.accordion-button:focus,
+.accordion-button:visited,
+.accordion-button:hover,
+.accordion-button:focus-visible {
+  box-shadow: none !important;
+} */
+
+/* ===================================== Career Accordion END ============================================================== */

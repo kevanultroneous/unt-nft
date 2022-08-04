@@ -1,5 +1,5 @@
 .CareerAccordion {
-  padding: 6rem 4rem 4rem 20.5rem;
+  padding: 6rem 4rem 4rem 26rem;
   background: #1a1c3c;
 }
 
@@ -7,6 +7,13 @@
   color: white;
   font-size: 5rem;
   margin: 0 0 3rem;
+}
+
+.JobVacancyNumber {
+  /* width: 2.5rem;
+  height: 1.5rem; */
+  background-color: #434343;
+  border-radius: 50%;
 }
 
 /* Mobile Portrait */
@@ -21,7 +28,18 @@
   }
 }
 /* Mobile Landscape and Tablet Portrait*/
-@media screen and (min-width: 600px) and (max-width: 992px) {
+@media screen and (min-width: 600px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 35px;
+    margin: 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
   .CareerAccordion {
     padding: 3rem 1rem;
   }
@@ -31,10 +49,24 @@
     margin: 0 0 3rem;
   }
 }
+
 /* Tablet Landscape */
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (min-width: 992px) {
   .CareerAccordion {
     padding: 6rem 4rem 4rem 8.5rem;
     background: #1a1c3c;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .CareerAccordion {
+    padding: 6rem 4rem 4rem 26.5rem;
+    background: #1a1c3c;
+  }
+
+  .careerAccordionHeading {
+    color: white;
+    font-size: 5rem;
+    margin: 0 0 3rem;
   }
 }

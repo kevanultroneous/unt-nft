@@ -6,10 +6,10 @@ function ExploreWorkplace() {
   return (
     <div className={styles.exploreWorkMainContainer}>
       <Row className={styles.exploreWorkDiv}>
-        <Col xl={2} sm={3} lg={2} className={styles.sideHeading}>
+        <Col xl={2} lg={2} className={styles.sideHeading}>
           <p>EXPLORE OUR WORKPLACE</p>
         </Col>
-        <Col xl={10} sm={9} md={12} lg={10} className={styles.rightSection}>
+        <Col xl={10} sm={12} md={12} lg={10} className={styles.rightSection}>
           <div className={styles.imageContainer}>
             <Row xs={12} xl={6} md={6} lg={6} className={styles.imageContRow}>
               <div className={styles.groupSmImage}>
@@ -37,7 +37,7 @@ function ExploreWorkplace() {
               >
                 <Image
                   fluid
-                  src="/assets/images/Workplace-Desk-Setup.png"
+                  src="/assets/images/Rectangle 109.png"
                   alt="WorkPlace-Desk"
                 />
               </div>
@@ -58,7 +58,7 @@ function ExploreWorkplace() {
               >
                 <Image
                   fluid
-                  src="/assets/images/Workplace-On-Desk.png"
+                  src="/assets/images/Rectangle 112.png"
                   alt="WorkPlace-On-Desk"
                 />
               </div>

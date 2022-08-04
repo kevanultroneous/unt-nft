@@ -31,11 +31,11 @@
 
 .groupSmImage {
   display: flex;
-  width: 33vw;
   justify-content: space-between;
+  width: 33vw;
 }
 
-.groupSmImage img {
+.groupSmImage div {
   width: 15vw;
 }
 
@@ -98,31 +98,31 @@
     height: auto;
   }
   .imageContRow {
-    width: 88.5vw;
+    width: 91vw;
     margin: auto;
   }
   .imageSecondRow {
     flex-direction: column-reverse;
     margin: auto;
-    width: 88.5vw;
+    width: 91vw;
   }
   .groupSmImage {
-    width: 88.5vw;
+    width: 91vw;
     justify-content: space-between;
   }
-  .groupSmImage img {
+  .groupSmImage div {
     width: 40.8vw;
   }
   .workPlacesBgImage {
-    width: 88.5vw;
+    width: 91vw;
     margin: 1.6rem 0;
   }
   .workPlacesSecBgImage {
-    width: 88.5vw;
+    width: 91vw;
     margin: 1.6rem 0 0;
   }
   .ctaRow {
-    width: 88.5vw;
+    width: 91vw;
     margin: 2.5rem auto 0;
   }
   .ctaText h3 {
@@ -147,35 +147,43 @@
 }
 
 /* Mobile Landscape */
-@media screen and (min-width: 600px) and (max-width: 768px) {
+@media screen and (min-width: 600px) {
   .exploreWorkMainContainer {
-    padding: 5rem 0rem 3rem 4rem;
+    padding: 5rem 1rem 4rem;
+  }
+  .sideHeading {
+    display: none;
+  }
+  .imageContainer {
+    width: 95vw;
+    margin: auto;
   }
   .groupSmImage {
     display: flex;
-    width: 60vw;
+    width: 95vw;
     justify-content: space-between;
   }
 
-  .groupSmImage img {
-    width: 28vw;
+  .groupSmImage div {
+    width: 45vw;
   }
 
   .workPlacesBgImage {
     display: flex;
     justify-content: end;
-    width: 60vw;
-    margin: 0 0 0 2rem;
+    width: 95vw;
+    margin: 2.5rem 0 0;
   }
   .workPlacesSecBgImage {
-    width: 57vw;
+    width: 95vw;
+    margin: 2.5rem 0 0;
   }
-  .workPlacesSecBgImage {
-    margin: 0 3.5rem 0 0;
+
+  .imageSecondRow {
+    flex-direction: column-reverse;
   }
   .ctaText h3 {
-    font-size: 4rem;
-    width: 100vw;
+    font-size: 2rem;
     font-weight: 600;
     margin: 2rem 0 0;
   }
@@ -185,12 +193,12 @@
 }
 
 /* Tablet Portrait */
-@media (min-width: 768px) and (max-width: 992px) {
+@media screen and (min-width: 768px) {
   .exploreWorkMainContainer {
     padding: 4rem 0 4rem;
   }
   .sideHeading {
-    width: 80vw;
+    width: 95vw;
     margin: auto;
   }
   .sideHeading p {
@@ -201,7 +209,7 @@
   .imageContRow {
     flex-direction: column;
     margin: auto;
-    width: 80vw;
+    width: 95vw;
   }
   .imageContainer {
     height: auto;
@@ -209,35 +217,35 @@
   .imageSecondRow {
     flex-direction: column-reverse;
     margin: auto;
-    width: 80vw;
+    width: 95vw;
   }
   .groupSmImage {
-    width: 80vw;
+    width: 95vw;
     justify-content: space-between;
   }
-  .groupSmImage img {
-    width: 37.2vw;
+  .groupSmImage div {
+    width: 33vh;
   }
   .workPlacesBgImage {
-    width: 80vw;
-    margin: 2.9rem 0;
+    width: 95vw;
+    margin: 3.5rem 0;
   }
   .workPlacesSecBgImage {
-    width: 80vw;
-    margin: 2.9rem 0 0;
+    width: 95vw;
+    margin: 3.5rem 0 0;
   }
 
   .ctaRow {
-    width: 80vw;
+    width: 95vw;
     margin: 2.5rem auto 0;
   }
   .ctaButton {
-    width: 80vw;
+    width: 90vw;
     margin: 3rem 0 2.6rem;
   }
   .ctaText h3 {
     font-size: 4.4rem;
-    width: 80vw;
+    width: 95vw;
     font-weight: 600;
     margin: auto;
   }
@@ -254,28 +262,103 @@
 }
 
 /* Tablet Landscape */
-@media only screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {
 }
 
-@media (min-width: 1300px) and (max-width: 1900px) {
-  .imageContainer {
-    grid-row-gap: 2.5rem;
+@media screen and (min-width: 1200px) {
+  .exploreWorkMainContainer {
+    padding: 5rem 0rem 3rem 8.5rem;
   }
-  .groupSmImage {
-    display: flex;
-    width: 34vw;
+
+  .exploreWorkDiv {
     justify-content: space-between;
   }
 
-  .groupSmImage img {
-    width: 16vw;
+  .sideHeading {
+    display: block;
+    margin-top: 2rem;
+    padding-right: 2rem;
+    justify-content: end;
+    width: 16.66666667%;
+  }
+
+  .sideHeading p {
+    color: rgba(18, 18, 18, 0.6);
+    transform: rotate(270deg);
+    margin-left: -2.7rem;
+    padding-bottom: 9rem;
+    letter-spacing: 2px;
+    width: 15rem;
+  }
+
+  .imageContRow {
+    margin: 0 0 2rem;
+    flex-direction: row;
+  }
+  .imageSecondRow {
+    flex-direction: row;
+    margin: auto;
+    width: initial;
+  }
+
+  .explorefirstpart {
+    margin: 0 2rem 0 0;
+  }
+
+  .groupSmImage {
+    display: flex;
+    justify-content: space-between;
+    width: 33vw;
+  }
+
+  .groupSmImage div {
+    width: 15vw;
   }
 
   .workPlacesBgImage {
-    width: 34vw;
+    display: flex;
+    justify-content: end;
+    width: 33vw;
+    margin: 0 0 0 2rem;
   }
 
   .workPlacesSecBgImage {
-    width: 34vw;
+    width: 33vw;
+  }
+
+  .workPlacesSecBgImage {
+    margin: 0 2rem 0 0;
+  }
+
+  .ctaRow {
+    display: flex;
+  }
+
+  .ctaText h3 {
+    font-size: 4rem;
+    width: 50vw;
+    font-weight: 600;
+    margin: 2rem 0 0;
+  }
+
+  .ctaButton {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 60vw;
+    color: #a21d34;
+    margin: -2rem 0 0;
+  }
+
+  .ctaButton p {
+    margin: 0 1rem 0 0;
+  }
+
+  .ctaButton img {
+    transform: scale(0.7);
+    transition: transform 0.5s ease;
+  }
+  .ctaButton img:hover {
+    transform: scale(0.9);
   }
 }

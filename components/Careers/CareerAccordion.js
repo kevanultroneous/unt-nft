@@ -52,10 +52,7 @@ function CareerAccordion() {
               </Accordion.Header>
               <Accordion.Body className={styles.AccordionBody}>
                 {el.technology.map((val, ind) => (
-                  <a
-                    href={`mailto:hr@ultroneous.com?subject=Applying for: ${val.technologyName}`}
-                    key={ind}
-                  >
+                  <a href={`#`} key={ind}>
                     <div>
                       <p>
                         {val.technologyName}

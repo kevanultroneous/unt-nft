@@ -37,21 +37,28 @@ function WhyMobifinx() {
         </Col>
         <Col xl={10} className={styles.rightSection}>
           <h3>Benefits of Working with us</h3>
-          <div className={styles.mobifinxBenefits}>
+          <Row className={styles.mobifinxBenefits}>
             {benefitsOfMobifinxCard.map((benefits) => {
               return (
                 <>
-                  <div className={styles.benefitsBox}>
+                  <Col
+                    xl={4}
+                    md={4}
+                    lg={4}
+                    xs={12}
+                    sm={4}
+                    className={styles.benefitsBox}
+                  >
                     <div className={styles.benefitsIcon}>
                       <Image src={benefits.iconUrl} alt={benefits.name} />
                     </div>
                     <h4>{benefits.name}</h4>
                     <p>{benefits.desc}</p>
-                  </div>
+                  </Col>
                 </>
               );
             })}
-          </div>
+          </Row>
         </Col>
       </Row>
     </div>
