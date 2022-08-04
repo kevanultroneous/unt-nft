@@ -7,12 +7,9 @@
   top: 0px;
   width: 100%;
   z-index: 35;
-  border: 2px solid transparent;
+  border-right: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  /* border-top: none;
-  border-right: none;
-  border-left: none; */
 }
 
 .TabletMenu {
@@ -24,12 +21,9 @@
   top: 0px;
   width: 100%;
   z-index: 35;
-  border: 2px solid transparent;
+  border-right: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  /* border-top: none;
-  border-right: none;
-  border-left: none; */
 }
 
 .MenuController {
@@ -134,7 +128,8 @@
   color: #a21d34;
 }
 
-.IconCard {}
+.IconCard {
+}
 
 .IconMenuContainer {
   justify-content: center;
@@ -296,7 +291,8 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
 
 /* @media (min-width: 650px) and (max-width: 767px) {
   .MobileMenu {
@@ -337,6 +333,8 @@
 @media screen and (max-width: 600px) {
   .MobileMenu {
     display: flex;
+    align-items: center;
+    padding: 0.9rem;
   }
 
   .MobifinxXmenu {
@@ -432,10 +430,12 @@
 }
 
 /* (this for Tab) */
-@media only screen and (min-width: 768px) {}
+@media only screen and (min-width: 768px) {
+}
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {
