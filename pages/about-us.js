@@ -17,7 +17,14 @@ const AboutUs = () => {
   const scrollToRef = (ref) => window.scrollTo(0, ref.current.offsetTop);
   const scrollRef = useRef(null);
   return (
-    <Layout title={"about-us"}>
+    <Layout
+      title={
+        "About - Enterprise Blockchain with Trading Solutions Company | MobifinX"
+      }
+      description={
+        " Mobifinx is a global blockchain company focused on building enterprise software products. We are a squad of thoughtful, pragmatic and innovative professionals to deliver customized and holistic solutions. Get in touch to get more details."
+      }
+    >
       <MenuPackage />
       <Hero clickHandler={() => scrollToRef(scrollRef)} />
       <section ref={scrollRef}>
