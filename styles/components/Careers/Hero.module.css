@@ -70,10 +70,17 @@
 .careerBigHeading {
   color: white;
   font-size: 4.5rem;
+  margin: 4rem 0 3rem;
 }
 
 .heroContainer {
   align-items: center;
+  margin-top: -3rem;
+}
+.ReactContainer {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
 }
 .sliderFirstHalf,
 .sliderContainer {
@@ -97,8 +104,6 @@
 }
 
 .sliderContainer {
-  width: 35vw;
-  height: 33rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 1.5rem;
   margin: 8rem 1rem 0;
@@ -134,7 +139,6 @@
 .sliderButton {
   display: flex;
   justify-content: space-between;
-  width: 7vw;
   margin: 2.5rem 0 0;
 }
 
@@ -153,23 +157,13 @@
   transform: scale(0.8);
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
   .HeroContainer {
-    padding: 6rem 0 4rem 1rem;
+    padding: 5.8rem 1rem 5rem 1rem;
   }
-  .heroContainer {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
   .heroContainer {
     justify-content: end;
-  }
-  .HeroContainer {
-    padding: 4.8rem 0 5rem 1rem;
-    background: linear-gradient(77.42deg, #1a1c3b 18.05%, #a21d34 148.07%);
   }
   .careerHeroLeftText h1 {
     margin: 0 0 1.5rem;
@@ -180,13 +174,12 @@
   .heroHead {
     margin: 6rem 0 0;
   }
-  .sliderFirstHalf img {
+  .sliderImage {
     width: 7rem;
   }
 
   .sliderContainer {
-    width: 91vw;
-    height: 28rem;
+    /* width: 91vw; */
     border-radius: 1rem;
     border: 0.3px solid rgba(255, 255, 255, 0.5);
     margin: 10rem 0rem 0;
@@ -211,10 +204,69 @@
   }
 
   .sliderButton img:hover {
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
   .sliderButton div {
     width: 8vw;
     height: 8vw;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 600px) and (max-width: 770px) {
+  .HeroContainer {
+    padding: 4.8rem 1rem 1rem;
+  }
+  .ReactContainer {
+    max-width: fit-content !important;
+  }
+  .heroContainer {
+    justify-content: space-between;
+    margin-top: -6rem;
+  }
+  .heroCard {
+    margin: 0;
+  }
+  .sliderContainer {
+    width: auto;
+    height: auto;
+    margin: 8rem 0 0;
+  }
+  .sliderContainer p {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+  }
+  .sliderButton {
+    width: 15vw;
+  }
+}
+
+/* Tablet portrait */
+@media screen and (min-width: 768px) and (max-width: 992px) {
+  .HeroContainer {
+    padding: 6.8rem 1rem 3rem;
+  }
+  .ReactContainer {
+    max-width: fit-content !important;
+  }
+  .heroContainer {
+    justify-content: space-between;
+  }
+  .sliderContainer {
+    width: auto;
+    height: auto;
+  }
+  .heroCard {
+    margin: 0;
+  }
+  .sliderButton {
+    width: 15vw;
+  }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .heroCard {
+    margin: 0 0 0 -1.3rem;
   }
 }

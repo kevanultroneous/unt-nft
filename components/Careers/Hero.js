@@ -8,12 +8,12 @@ import SoftwareDevelopment from "../Common/SoftwareDevelopment";
 import ActionButton from "../Common/ActionButton";
 import ActionButtonV2 from "../Common/ActionButtonV2";
 import ActionButtonV3 from "../Common/ActionButtonV3";
-import { Col, Image, Row } from "react-bootstrap";
+import { Col, Image, Row, Container } from "react-bootstrap";
 
 // library
 import SlickSlider from "react-slick";
 
-import { useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const Hero = ({ clickHandler }) => {
   const SliderData = [
@@ -48,68 +48,80 @@ const Hero = ({ clickHandler }) => {
     <>
       {/* // main container */}
       <div className={styles.HeroContainer}>
-        <SoftwareDevelopment text="MobifinX Careers" hidebutton />
-        <Row className={styles.heroContainer}>
-          <Col xl={6} className={styles.heroHead}>
-            <div className={styles.careerHeroLeftText}>
-              <h1 className={styles.careerBigHeading}>
-                You are in a Good Company
-              </h1>
-              <ActionButtonV2 text={"See Open Jobs"} />
-            </div>
-          </Col>
-          <Col xl={5} className={styles.heroCard}>
-            <SlickSlider
-              {...settings}
-              className={`careerSlickSLider`}
-              ref={careerSlider}
-            >
-              {SliderData.map((slider) => {
-                return (
-                  <>
-                    <div className={styles.slideMainContainer}>
-                      <div
-                        className={styles.sliderContainer}
-                        key={slider.name.replace(" ", "").toLowerCase()}
-                      >
-                        <div className={styles.sliderFirstHalf}>
-                          <Image src={slider.imageUrl} alt={slider.name} />
-                          <h3>{slider.name}</h3>
-                          <div className={styles.designationRow}>
-                            <div className={styles.designationLines}></div>
-                            <h6>{slider.designation}</h6>
-                            <div className={styles.designationLines}></div>
-                          </div>
-                        </div>
-                        <div className={styles.sliderSecondHalf}>
-                          <div className={styles.descPara}>
-                            <p>&quot;{slider.description}&quot;</p>
-                          </div>
-                          <div className={styles.sliderButton}>
-                            <div className={styles.leftArrow}>
+        <Container fluid className={styles.ReactContainer}>
+          <SoftwareDevelopment text="MobifinX Careers" hidebutton />
+          <Row className={styles.heroContainer}>
+            <Col xl={6} md={6} xs={12} sm={6} className={styles.heroHead}>
+              <div className={styles.careerHeroLeftText}>
+                <h1 className={styles.careerBigHeading}>
+                  You are in a Good Company
+                </h1>
+                <ActionButtonV2 text={"See Open Jobs"} />
+              </div>
+            </Col>
+            <Col xl={5} md={6} xs={12} sm={6} className={styles.heroCard}>
+              <SlickSlider
+                {...settings}
+                className={`careerSlickSLider`}
+                ref={careerSlider}
+              >
+                {SliderData.map((slider) => {
+                  return (
+                    <>
+                      <div className={styles.slideMainContainer}>
+                        <div
+                          className={styles.sliderContainer}
+                          key={slider.name.replace(" ", "").toLowerCase()}
+                        >
+                          <div className={styles.sliderFirstHalf}>
+                            <div className={styles.sliderImage}>
                               <Image
-                                src="/assets/images/left-sb.svg"
-                                alt="Left Arrow"
-                                onClick={() => careerSlider.current.slickPrev()}
+                                fluid
+                                src={slider.imageUrl}
+                                alt={slider.name}
                               />
                             </div>
-                            <div className={styles.rightArrow}>
-                              <Image
-                                src="/assets/images/right-sb.svg"
-                                alt="Right Arrow"
-                                onClick={() => careerSlider.current.slickNext()}
-                              />
+                            <h3>{slider.name}</h3>
+                            <div className={styles.designationRow}>
+                              <div className={styles.designationLines}></div>
+                              <h6>{slider.designation}</h6>
+                              <div className={styles.designationLines}></div>
+                            </div>
+                          </div>
+                          <div className={styles.sliderSecondHalf}>
+                            <div className={styles.descPara}>
+                              <p>&quot;{slider.description}&quot;</p>
+                            </div>
+                            <div className={styles.sliderButton}>
+                              <div className={styles.leftArrow}>
+                                <Image
+                                  src="/assets/images/left-sb.svg"
+                                  alt="Left Arrow"
+                                  onClick={() =>
+                                    careerSlider.current.slickPrev()
+                                  }
+                                />
+                              </div>
+                              <div className={styles.rightArrow}>
+                                <Image
+                                  src="/assets/images/right-sb.svg"
+                                  alt="Right Arrow"
+                                  onClick={() =>
+                                    careerSlider.current.slickNext()
+                                  }
+                                />
+                              </div>
                             </div>
                           </div>
                         </div>
                       </div>
-                    </div>
-                  </>
-                );
-              })}
-            </SlickSlider>
-          </Col>
-        </Row>
+                    </>
+                  );
+                })}
+              </SlickSlider>
+            </Col>
+          </Row>
+        </Container>
       </div>
     </>
   );

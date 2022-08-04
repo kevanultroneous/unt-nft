@@ -21,23 +21,12 @@
   width: 15rem;
 }
 
-.rightSection {
-  display: flex;
-  flex-direction: column;
-  margin: 0 3.6rem 0 0rem;
-  width: 69vw;
-}
-
-.imageContainer {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  height: 36.7rem;
-}
-
 .imageContRow {
-  flex-wrap: nowrap;
-  width: 67vw;
+  margin: 0 0 2rem;
+}
+
+.explorefirstpart {
+  margin: 0 2rem 0 0;
 }
 
 .groupSmImage {
@@ -53,21 +42,16 @@
 .workPlacesBgImage {
   display: flex;
   justify-content: end;
-  width: 36vw;
+  width: 33vw;
+  margin: 0 0 0 2rem;
 }
 
 .workPlacesSecBgImage {
-  margin: 0 1.5rem 0 0;
-  /* width: fit-content; */
-  width: 34vw;
-}
-
-.workPlacesSecBgImage img {
   width: 33vw;
 }
 
-.workPlacesBgImage img {
-  width: 33vw;
+.workPlacesSecBgImage {
+  margin: 0 2rem 0 0;
 }
 
 .ctaRow {
@@ -77,7 +61,7 @@
 .ctaText h3 {
   font-size: 4rem;
   width: 50vw;
-  font-weight: 800;
+  font-weight: 600;
   margin: 2rem 0 0;
 }
 
@@ -102,7 +86,8 @@
   transform: scale(0.9);
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
   .sideHeading {
     display: none;
   }
@@ -113,19 +98,12 @@
     height: auto;
   }
   .imageContRow {
-    flex-direction: column;
-    margin: auto;
     width: 88.5vw;
+    margin: auto;
   }
   .imageSecondRow {
     flex-direction: column-reverse;
     margin: auto;
-    width: 88.5vw;
-  }
-  .imageContRow img {
-    width: 88.5vw;
-  }
-  .imageSecondRow img {
     width: 88.5vw;
   }
   .groupSmImage {
@@ -168,7 +146,46 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+/* Mobile Landscape */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .exploreWorkMainContainer {
+    padding: 5rem 0rem 3rem 4rem;
+  }
+  .groupSmImage {
+    display: flex;
+    width: 60vw;
+    justify-content: space-between;
+  }
+
+  .groupSmImage img {
+    width: 28vw;
+  }
+
+  .workPlacesBgImage {
+    display: flex;
+    justify-content: end;
+    width: 60vw;
+    margin: 0 0 0 2rem;
+  }
+  .workPlacesSecBgImage {
+    width: 57vw;
+  }
+  .workPlacesSecBgImage {
+    margin: 0 3.5rem 0 0;
+  }
+  .ctaText h3 {
+    font-size: 4rem;
+    width: 100vw;
+    font-weight: 600;
+    margin: 2rem 0 0;
+  }
+  .ctaButton {
+    width: 100vw;
+  }
+}
+
+/* Tablet Portrait */
+@media (min-width: 768px) and (max-width: 992px) {
   .exploreWorkMainContainer {
     padding: 4rem 0 4rem;
   }
@@ -192,12 +209,6 @@
   .imageSecondRow {
     flex-direction: column-reverse;
     margin: auto;
-    width: 80vw;
-  }
-  .imageContRow img {
-    width: 80vw;
-  }
-  .imageSecondRow img {
     width: 80vw;
   }
   .groupSmImage {
@@ -242,23 +253,29 @@
   }
 }
 
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) {
+}
+
 @media (min-width: 1300px) and (max-width: 1900px) {
-  .rightSection {
-    margin: 0;
-    width: 72.5vw;
-  }
-  .ctaRow,
-  .imageSecondRow {
-    width: 69.1vw;
-  }
-  .imageContRow {
-    width: 69.1vw;
-  }
   .imageContainer {
-    height: 53.2rem;
-    width: 69.1vw;
+    grid-row-gap: 2.5rem;
   }
+  .groupSmImage {
+    display: flex;
+    width: 34vw;
+    justify-content: space-between;
+  }
+
+  .groupSmImage img {
+    width: 16vw;
+  }
+
+  .workPlacesBgImage {
+    width: 34vw;
+  }
+
   .workPlacesSecBgImage {
-    margin: 0 2.3rem 0 0;
+    width: 34vw;
   }
 }

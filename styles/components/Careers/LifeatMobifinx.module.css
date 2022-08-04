@@ -12,6 +12,7 @@
   color: rgba(18, 18, 18, 0.6);
   transform: rotate(270deg);
   margin-left: -2.7rem;
+  margin-top: -4.4rem;
   padding-bottom: 9rem;
   letter-spacing: 2px;
   width: 15rem;
@@ -31,6 +32,80 @@
   margin: 3rem 0 5rem;
 }
 
-.rightImage img {
-  width: 74.5vw;
+/* Mobile Portrait */
+@media screen and (max-width: 600px) and (max-width: 600px) {
+  .lifeMobifinxMainContainer {
+    padding: 3rem 0 3rem 1rem;
+  }
+  .sideHeading {
+    display: none;
+  }
+  .rightText {
+    width: 93vw;
+  }
+
+  .rightText h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    line-height: 1.5rem;
+  }
+
+  .rightText p {
+    font-size: 0.8rem;
+    margin: 1rem 0 2rem;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 600px) and (max-width: 768px) {
+  .lifeMobifinxMainContainer {
+    padding: 5rem 2rem 3rem;
+  }
+  .sideHeading {
+    display: none;
+  }
+  .rightSection {
+    display: flex;
+    justify-content: space-between;
+  }
+  .rightText {
+    width: 88vw;
+  }
+  .rightText p {
+    margin: 1rem 0 2rem;
+    font-size: 1.4rem;
+  }
+}
+
+/* Tablet Portrait */
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+  .lifeMobifinxMainContainer {
+    padding: 3rem 0 3rem 1rem;
+  }
+  .rightText {
+    width: 95vw;
+  }
+  .sideHeading {
+    display: none;
+  }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .sideHeading {
+    margin-top: 0;
+    padding-right: 0;
+  }
+  .sideHeading p {
+    transform: rotate(0deg);
+    margin-left: 0;
+    margin-top: 0rem;
+    padding-bottom: 0rem;
+  }
+  .rightText {
+    width: 70vw;
+  }
+  .rightText p {
+    margin: 3rem 0;
+  }
 }

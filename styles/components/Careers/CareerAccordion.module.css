@@ -1,0 +1,40 @@
+.CareerAccordion {
+  padding: 6rem 4rem 4rem 20.5rem;
+  background: #1a1c3c;
+}
+
+.careerAccordionHeading {
+  color: white;
+  font-size: 5rem;
+  margin: 0 0 3rem;
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+  }
+}
+/* Mobile Landscape and Tablet Portrait*/
+@media screen and (min-width: 600px) and (max-width: 992px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 4rem;
+    margin: 0 0 3rem;
+  }
+}
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .CareerAccordion {
+    padding: 6rem 4rem 4rem 8.5rem;
+    background: #1a1c3c;
+  }
+}
