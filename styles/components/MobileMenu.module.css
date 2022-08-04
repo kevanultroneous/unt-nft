@@ -7,13 +7,11 @@
   top: 0px;
   width: 100%;
   z-index: 35;
-  border: 2px solid transparent;
+  border-right: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  /* border-top: none;
-  border-right: none;
-  border-left: none; */
 }
+
 .TabletMenu {
   align-items: center;
   padding: 0.9rem;
@@ -23,40 +21,44 @@
   top: 0px;
   width: 100%;
   z-index: 35;
-  border: 2px solid transparent;
+  border-right: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  /* border-top: none;
-  border-right: none;
-  border-left: none; */
 }
+
 .MenuController {
   display: flex;
   width: 50%;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
+
 .TabletController {
   display: flex;
   width: 50%;
-  justify-content: end;
+  justify-content: flex-end;
   cursor: pointer;
 }
+
 .MobileMenuLogo {
   width: 50%;
 }
+
 .TabletMenuLogo {
   width: 50%;
 }
+
 .MobifinxXmenu {
   padding-left: 1rem;
   background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
 }
+
 .MobifinxTabmenu {
   height: 100vh;
   background: linear-gradient(140deg, #1a1c3b 58.4%, #a21d34 124.93%);
   padding-left: 0.5rem;
 }
+
 .LinkName {
   font-size: 35px;
   font-family: "Poppins", sans-serif;
@@ -78,9 +80,11 @@
   padding-top: 0.5rem;
   opacity: 0.25;
 }
+
 .LinkName:hover {
   color: #ffffff;
 }
+
 .SubMenu {
   font-weight: 400;
   color: #ffffff;
@@ -88,9 +92,11 @@
   font-size: 18px;
   padding-bottom: 0.5rem;
 }
+
 .SubMenu:hover {
   color: #a21d34;
 }
+
 .Tabs {
   padding-top: 3rem;
   padding-bottom: 3rem;
@@ -100,6 +106,7 @@
   align-items: center;
   font-size: 18px;
 }
+
 .Tabname {
   width: 25px;
   height: auto;
@@ -108,6 +115,7 @@
   border-bottom: 1px solid #ffffff;
   opacity: 1 !important;
 }
+
 .IconName {
   padding-top: 0.7rem;
   font-weight: 500;
@@ -115,15 +123,19 @@
   text-align: left;
   padding-left: 0.5rem;
 }
+
 .IconName:hover {
   color: #a21d34;
 }
+
 .IconCard {
 }
+
 .IconMenuContainer {
   justify-content: center;
   text-align: center;
 }
+
 .hamburger .line {
   width: 50px;
   height: 5px;
@@ -136,6 +148,7 @@
   -o-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
 }
+
 .IconImg {
   max-height: 80px;
   max-width: 80px;
@@ -145,9 +158,11 @@
   .MobileMenu {
     display: flex;
   }
+
   .MobifinxXmenu {
     padding: 0 1rem;
   }
+
   /* .IconMenuContainer {
     padding-right: 2rem;
   } */
@@ -155,26 +170,32 @@
     padding-bottom: 1rem;
     opacity: 0.6;
   }
+
   .Tabs {
     font-size: 14px;
     padding-top: 2rem;
   }
+
   .Explorproduct {
     display: flex;
     justify-content: center;
   }
+
   .IconMenuContainer {
     justify-content: space-between;
     padding-bottom: 4rem;
   }
+
   .Menurow {
     padding-bottom: 4rem;
   }
+
   .hamburger .line {
     height: 2px;
     margin: 5px auto;
     width: 30px;
   }
+
   .IconName {
     text-align: center;
     padding-left: 0;
@@ -220,13 +241,16 @@
   .TabletMenu {
     display: flex;
   }
+
   .MobileMenu {
     display: none;
     padding-right: 1rem;
   }
+
   .Tabname {
     width: 40px;
   }
+
   .hamburger .line {
     width: 38px;
     height: 3px;
@@ -239,29 +263,37 @@
     -o-transition: all 0.3s ease-in-out;
     transition: all 0.3s ease-in-out;
   }
+
   .TabIconCard {
     display: flex;
     flex-direction: column;
   }
+
   .LinkName {
     padding-left: 1rem;
     opacity: 0.8;
   }
+
   .SubMenu {
     padding-left: 1rem;
   }
+
   .Tabs {
     padding-left: 1rem;
   }
+
   .TabeMenucol {
     padding-left: 2rem;
   }
+
   .ProductIcon {
     padding-right: 4rem;
   }
 }
+
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
+
 /* @media (min-width: 650px) and (max-width: 767px) {
   .MobileMenu {
     display: flex;
@@ -295,3 +327,119 @@
     width: 30px;
   }
 } */
+
+/* ================================= */
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .MobileMenu {
+    display: flex;
+    align-items: center;
+    padding: 0.9rem;
+  }
+
+  .MobifinxXmenu {
+    padding: 0 1rem;
+  }
+
+  /* .IconMenuContainer {
+      padding-right: 2rem;
+    } */
+  .LinkName {
+    padding-bottom: 1rem;
+    opacity: 0.6;
+  }
+
+  .Tabs {
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+
+  .Explorproduct {
+    display: flex;
+    justify-content: center;
+  }
+
+  .IconMenuContainer {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+
+  .Menurow {
+    padding-bottom: 4rem;
+  }
+
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
+  }
+
+  .IconName {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+  .MobileMenu {
+    display: flex;
+  }
+
+  .MobifinxXmenu {
+    padding: 0 1rem;
+  }
+
+  /* .IconMenuContainer {
+        padding-right: 2rem;
+      } */
+  .LinkName {
+    padding-bottom: 1rem;
+    opacity: 0.6;
+  }
+
+  .Tabs {
+    font-size: 14px;
+    padding-top: 2rem;
+  }
+
+  .Explorproduct {
+    display: flex;
+    justify-content: center;
+  }
+
+  .IconMenuContainer {
+    justify-content: space-between;
+    padding-bottom: 4rem;
+  }
+
+  .Menurow {
+    padding-bottom: 4rem;
+  }
+
+  .hamburger .line {
+    height: 2px;
+    margin: 5px auto;
+    width: 30px;
+  }
+
+  .IconName {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {
+}
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {
+}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .MobileMenu {
+    display: none;
+  }
+}

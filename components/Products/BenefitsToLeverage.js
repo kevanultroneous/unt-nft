@@ -54,7 +54,7 @@ const BenefitsToLeverage = () => {
                 className={styles.ArrowTop}
                 onClick={() => {
                   setAnimTiming(true);
-                  nextItemHandle();
+                  prevItemHandle();
                   setTimeout(() => {
                     setAnimTiming(false);
                   }, 1000);
@@ -90,7 +90,7 @@ const BenefitsToLeverage = () => {
                 className={styles.ArrowBottom}
                 onClick={() => {
                   setAnimTiming(true);
-                  prevItemHandle();
+                  nextItemHandle();
                   setTimeout(() => {
                     setAnimTiming(false);
                   }, 1000);
@@ -105,9 +105,8 @@ const BenefitsToLeverage = () => {
               data-aos-duration="1500"
             >
               <div
-                className={`${styles.ItemCard} ${
-                  animTiming ? `fade-in-anim` : null
-                }`}
+                className={`${styles.ItemCard} ${animTiming ? `fade-in-anim` : null
+                  }`}
                 style={{ opacity: animopacity }}
               >
                 <Image
