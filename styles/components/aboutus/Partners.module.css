@@ -82,7 +82,7 @@
     display: none;
   }
   .PartnersContainer {
-    padding: 1rem 0 1rem 1rem;
+    padding: 4rem 0 1rem 1rem;
   }
   .Imgcol {
     width: 100%;
@@ -92,13 +92,16 @@
     display: block;
   }
   .FeedbackPrevarrow {
-    width: 3rem;
+    width: 3.5rem;
   }
   .FeedbackNextarrow {
-    width: 2rem;
+    width: 2.5rem;
   }
   .SliderRow {
     padding-top: 2rem;
+  }
+  .Imagecol h4 {
+    font-size: 35px;
   }
 }
 

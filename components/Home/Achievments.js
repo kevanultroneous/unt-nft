@@ -19,15 +19,15 @@ const Achievements = () => {
     <div className={styles.AchievementsContainer}>
       <p
         className={styles.AchievementsHead}
-        data-aos={"zoom-in"}
-        data-aos-duration="3000"
+        // data-aos={"zoom-in"}
+        // data-aos-duration="3000"
       >
         CERTIFICATES
       </p>
       <h4
         className={styles.AchievementsTitle}
-        data-aos={"zoom-in"}
-        data-aos-duration="3000"
+        // data-aos={"zoom-in"}
+        // data-aos-duration="3000"
       >
         Look at our Achievements
       </h4>
@@ -36,8 +36,8 @@ const Achievements = () => {
           <Col xl={2} xs={4} key={i}>
             <div
               className={styles.AchievementBox}
-              data-aos={"zoom-in"}
-              data-aos-duration="3000"
+              // data-aos={"zoom-in"}
+              // data-aos-duration="3000"
             >
               <Image alt={v} src={v} className={styles.AchivmentImg} />
             </div>

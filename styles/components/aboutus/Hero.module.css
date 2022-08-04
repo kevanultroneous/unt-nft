@@ -182,7 +182,7 @@
     margin: 0%;
     align-items: baseline;
     padding-bottom: 2.5rem;
-    padding-top: 0;
+    padding-top: 3.5rem;
   }
   .SoftwareDevelopmentExpertsSmallHead {
     display: flex;
@@ -257,7 +257,7 @@
     padding: 1rem 0 2rem 8rem;
   }
   .SoftwareDevelopmentExpertsRow {
-    padding-top: 0.5rem;
+    padding-top: 4rem;
   }
   .HomeSmallHeading {
     font-weight: 400;
@@ -295,7 +295,7 @@
   }
   .RotateRow {
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
   }
   .Crypto {
     font-size: 4.5rem;
@@ -355,7 +355,7 @@
     /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
     animation-direction: alternate; */
     /* margin-left: -11.5rem; */
-    margin-top: 14.5rem;
+    margin-top: 0rem;
     margin-left: -0.8rem;
   }
   /* @keyframes scrolldowntotop {
