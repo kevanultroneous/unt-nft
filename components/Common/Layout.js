@@ -1,12 +1,47 @@
 import Head from "next/head";
 
-const Layout = ({ title, children, description, keywords }) => {
+const Layout = ({ title, children, description, ogtitle, ogdescription, twitterdescription, twittertitle, ogurl, keywords }) => {
+  // <meta name=""/>
+  // <meta property="og:title" content="" />
+  // <meta property="og:description" content="" />
+  // <meta name="twitter:description" content="" />
+  // <meta name="twitter:title" content="" />
+  // <meta property="og:url" content="" />
+
+
   return (
     <div>
       <Head>
         <title>{title}</title>
-        <meta name="description" content={description} key="" />
-        <meta name="keywords" content={keywords} key="" />
+        <meta name="description" content={description} />
+        <meta property="og:title" content={ogtitle} />
+        <meta property="og:description" content={ogdescription} />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:type" content="Web" />
+        <meta property="og:url" content={ogurl} />
+        <meta property="og:site_name" content="Mobifinx" />
+        <meta name="twitter:description" content={twitterdescription} />
+        <meta name="twitter:title" content={twittertitle} />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:site" content="@MobifinX" />
+        <meta name="twitter:creator" content="@MobifinX" />
+        <meta name="page-topic" content="Cryptocurrency Exchange, Derivatives Trading, Spot Trading, NFT, DeFi, OTC Desk, P2P Trading, Private Blockchain and Tokenization, Fund Raising Crypto Launchpad" />
+        <meta name="author" content="MobifinX" />
+        <meta name="editors-url" content="MobifinX.com" />
+        <meta name="DC.title" content="MobifinX Redefining Trading Technologies" />
+        <meta name="geo.region" content="US-NY" />
+        <meta name="geo.placename" content="Garden City" />
+        <meta name="geo.position" content="40.730016;-73.6039" />
+        <meta name="ICBM" content="40.730016, -73.6039" />
+        <meta name="YahooSeeker" content="index, follow" />
+        <meta name="msnbot" content="index, follow" />
+        <meta name="googlebot" content="index, follow" />
+        <meta name="robots" content="index, follow" />
+        <meta name="googlerank" content="all" />
+        <meta name="Distribution" content="Global" />
+        <meta name="email" content="hello@mobifinx.com" />
+        <meta name="Rating" content="General" />
+        <meta name="application-name" content="MobifinX" />
       </Head>
       <main>{children}</main>
     </div>

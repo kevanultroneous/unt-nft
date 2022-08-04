@@ -4,13 +4,16 @@
   padding-right: 3rem;
   overflow: hidden;
 }
+
 .sectionrow {
   padding: 6rem 0;
   justify-content: space-between;
 }
+
 .sectioncol {
   width: fit-content;
 }
+
 .Whatyougetverticaltext {
   font-size: 14px;
   font-weight: 400;
@@ -20,35 +23,42 @@
   margin-top: 4rem;
   /* padding-top: 4rem; */
 }
+
 .Headingcol {
   text-align: left;
 }
+
 .WhatyouWillget h2 {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
   margin-top: -1.5rem;
 }
+
 .Headingcol h4 {
   font-size: 22px;
   font-weight: 600;
   color: #fff;
 }
+
 .Headingcol p {
   font-size: 16px;
   font-weight: 300;
   color: #fff;
   padding-right: 3rem;
 }
+
 .Heading {
   padding: 3rem 0;
   padding-bottom: 2rem;
 }
+
 .Details {
   border-left: 3px solid #fff;
   padding: 0 1rem;
   width: 95%;
 }
+
 .FooterContactusLink {
   font-family: "Avenir LT Std", sans-serif;
   font-weight: 900;
@@ -66,78 +76,257 @@
   -webkit-transition: background-position 0.6s ease-in-out;
   -o-transition: background-position 0.6s ease-in-out;
   transition: background-position 0.6s ease-in-out;
-  background-image: -webkit-gradient(
-    linear,
-    left bottom,
-    left top,
-    color-stop(50%, #ffffff),
-    color-stop(50%, #1a1c3c)
-  );
+  background-image: -webkit-gradient(linear,
+      left bottom,
+      left top,
+      color-stop(50%, #ffffff),
+      color-stop(50%, #1a1c3c));
   background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
   cursor: pointer;
 }
+
 .FooterContactusLink:hover {
   background-position: bottom;
 }
+
 .ContactusIcon {
   font-size: 60px;
   margin-left: 2rem;
   color: rgba(255, 255, 255, 0.2);
 }
+
 .BigHead2 {
   display: none;
 }
+
 @media (min-width: 320px) and (max-width: 450px) {
-  .WhatyouWillget {
+  /* .WhatyouWillget {
     padding: 3rem 1rem;
   }
+
   .BigHead {
     display: none;
   }
+
   .BigHead2 {
     display: block;
   }
+
   .sectionrow {
     padding: 0%;
   }
+
   .Heading {
     padding-top: 2rem;
     padding-bottom: 0%;
   }
+
   .Whatyougetverticaltext {
     margin: 0%;
     padding-top: 2rem;
     padding-bottom: 3rem;
     transform: rotate(0deg);
   }
+
   .WhatyouWillget h2 {
     font-size: 35px;
     width: 209px;
   }
+
   .Headingcol p {
     padding: 0%;
     text-align: justify;
     font-size: 14px;
   }
-  .Details {
-  }
+
+  .Details {}
+
   .FooterContactusLink {
     padding-top: 2rem;
     padding-bottom: 1rem;
     font-size: 3rem;
   }
+
   .ContactusIcon {
     margin-top: 2rem;
     padding-bottom: 1rem;
     margin-left: 0;
   }
-  .Headingcol h4{
+
+  .Headingcol h4 {
+    font-size: 18px;
+  } */
+}
+
+@media (min-width: 768px) and (max-width: 1080px) {
+  /* .WhatyouWillget {
+    padding: 3rem 1rem;
+  }
+
+  .sectionrow {
+    padding: 0%;
+  }
+
+  .Heading {
+    padding-top: 2rem;
+    padding-bottom: 0%;
+  }
+
+  .Whatyougetverticaltext {
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 4rem;
+    transform: rotate(0deg);
+  }
+
+  .ContactusIcon {
+    margin-left: 0;
+  }
+
+  .Details {
+    width: 100%;
+  }
+
+  .WhatyouWillget h2 {
+    padding-bottom: 2rem;
+  }
+
+  .Headingcol h4 {
+    font-size: 20px;
+  } */
+}
+
+@media (min-width: 1200px) and (max-width: 1730px) {}
+
+@media (min-width: 650px) and (max-width: 740px) {}
+
+
+/* =====================================================================New Css============================================================================================================ */
+
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .WhatyouWillget {
+    padding: 3rem 1rem;
+  }
+
+  .BigHead {
+    display: none;
+  }
+
+  .BigHead2 {
+    display: block;
+  }
+
+  .sectionrow {
+    padding: 0%;
+  }
+
+  .Heading {
+    padding-top: 2rem;
+    padding-bottom: 0%;
+  }
+
+  .Whatyougetverticaltext {
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    transform: rotate(0deg);
+  }
+
+  .WhatyouWillget h2 {
+    font-size: 35px;
+    width: 209px;
+  }
+
+  .Headingcol p {
+    padding: 0%;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .Details {}
+
+  .FooterContactusLink {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .ContactusIcon {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .Headingcol h4 {
     font-size: 18px;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+  .WhatyouWillget {
+    padding: 3rem 1rem;
+  }
+
+  .BigHead {
+    display: none;
+  }
+
+  .BigHead2 {
+    display: block;
+  }
+
+  .sectionrow {
+    padding: 0%;
+  }
+
+  .Heading {
+    padding-top: 2rem;
+    padding-bottom: 0%;
+  }
+
+  .Whatyougetverticaltext {
+    margin: 0%;
+    padding-top: 2rem;
+    padding-bottom: 3rem;
+    transform: rotate(0deg);
+  }
+
+  .WhatyouWillget h2 {
+    font-size: 35px;
+    /* width: 209px; */
+  }
+
+  .Headingcol p {
+    padding: 0%;
+    text-align: justify;
+    font-size: 14px;
+  }
+
+  .Details {}
+
+  .FooterContactusLink {
+    padding-top: 2rem;
+    padding-bottom: 1rem;
+    font-size: 3rem;
+  }
+
+  .ContactusIcon {
+    margin-top: 2rem;
+    padding-bottom: 1rem;
+    margin-left: 0;
+  }
+
+  .Headingcol h4 {
+    font-size: 18px;
+  }
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {
   .WhatyouWillget {
     padding: 3rem 1rem;
   }
@@ -145,35 +334,141 @@
   .sectionrow {
     padding: 0%;
   }
+
   .Heading {
     padding-top: 2rem;
     padding-bottom: 0%;
   }
+
   .Whatyougetverticaltext {
     margin: 0%;
     padding-top: 2rem;
     padding-bottom: 4rem;
     transform: rotate(0deg);
   }
+
   .ContactusIcon {
     margin-left: 0;
   }
-  .Details{
+
+  .Details {
     width: 100%;
   }
-  .WhatyouWillget h2{
+
+  .WhatyouWillget h2 {
     padding-bottom: 2rem;
   }
+
   .Headingcol h4 {
     font-size: 20px;
   }
 }
-@media (min-width: 1200px) and (max-width: 1730px) {
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .WhatyouWillget {
+    background: #1a1c3c;
+    padding-left: 8.5rem;
+    padding-right: 3rem;
+    overflow: hidden;
+  }
+
+  .sectionrow {
+    padding: 6rem 0;
+    justify-content: space-between;
+  }
+
+  .sectioncol {
+    width: fit-content;
+  }
+
+  .Whatyougetverticaltext {
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+    transform: rotate(-90deg);
+    margin-left: -4.5rem;
+    margin-top: 4rem;
+    /* padding-top: 4rem; */
+  }
+
+  .Headingcol {
+    text-align: left;
+  }
+
+  .WhatyouWillget h2 {
+    font-size: 50px;
+    font-weight: 600;
+    color: #fff;
+    margin-top: -1.5rem;
+  }
+
+  .Headingcol h4 {
+    font-size: 22px;
+    font-weight: 600;
+    color: #fff;
+  }
+
+  .Headingcol p {
+    font-size: 16px;
+    font-weight: 300;
+    color: #fff;
+    padding-right: 3rem;
+  }
+
+  .Heading {
+    padding: 3rem 0;
+    padding-bottom: 2rem;
+  }
+
+  .Details {
+    border-left: 3px solid #fff;
+    padding: 0 1rem;
+    width: 95%;
+  }
+
+  .FooterContactusLink {
+    font-family: "Avenir LT Std", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 4em;
+    line-height: 1em;
+    letter-spacing: 0.05em;
+    -webkit-text-stroke: 1px #ffffff;
+    text-decoration: none;
+    color: transparent;
+    -webkit-background-clip: text, padding-box;
+    background-clip: text, padding-box;
+    background-size: 100% 200%;
+    background-position: top;
+    -webkit-transition: background-position 0.6s ease-in-out;
+    -o-transition: background-position 0.6s ease-in-out;
+    transition: background-position 0.6s ease-in-out;
+    background-image: -webkit-gradient(linear,
+        left bottom,
+        left top,
+        color-stop(50%, #ffffff),
+        color-stop(50%, #1a1c3c));
+    background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+    background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
+    background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+    cursor: pointer;
+  }
+
+  .FooterContactusLink:hover {
+    background-position: bottom;
+  }
+
+  .ContactusIcon {
+    font-size: 60px;
+    margin-left: 2rem;
+    color: rgba(255, 255, 255, 0.2);
+  }
+
+  .BigHead2 {
+    display: none;
+  }
 }
-@media (min-width: 650px) and (max-width: 740px) {
-}
-
-
-/* =====================================================================New Css============================================================================================================ */
-
-

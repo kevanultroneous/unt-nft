@@ -4,6 +4,7 @@
   font-weight: 600;
   color: #fff;
 }
+
 .SectionCards .SectionContent {
   padding-bottom: 1rem;
   padding-top: 6rem;
@@ -25,6 +26,7 @@
   position: sticky;
   top: calc(50vh + 52px - 215px - 40px);
 }
+
 .SectionCards .SectionContent li .CardContainer {
   position: absolute;
   top: 50px;
@@ -34,16 +36,19 @@
   /* margin-left: -375px; */
   transform: translateZ(0);
 }
+
 .SectionCards .SectionContent li .CardContainer {
   width: 100%;
   height: 570px;
   /* margin-left: -412.5px; */
 }
+
 .SectionCards .SectionContent li {
   z-index: 1;
   background-color: #1a1c3c;
   font-size: 16px;
 }
+
 .SectionCards .SectionContent li .card {
   width: 100%;
   height: 100%;
@@ -54,30 +59,39 @@
   background-position: center center;
   box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
 }
+
 .card01 {
   background: #ffff;
 }
+
 .card02 {
   background: #ffff;
 }
+
 .card03 {
   background: #ffff;
 }
+
 .card04 {
   background: #ffff;
 }
+
 .card05 {
   background: #ffff;
 }
+
 .card06 {
   background: #ffff;
 }
+
 .card07 {
   background: #ffff;
 }
+
 .card08 {
   background: #ffff;
 }
+
 .ProductDetails {
   color: #fff;
   text-align: left;
@@ -85,6 +99,7 @@
   font-size: 18px;
   text-align: justify;
 }
+
 .OurProductsHeading {
   font-weight: 600;
   font-size: 70px;
@@ -96,9 +111,11 @@
   padding-left: 8.5rem;
   padding-bottom: 4rem;
 }
+
 .Carddetail {
   width: 45%;
 }
+
 .ProductImages {
   text-align: end !important;
   padding-left: 4rem;
@@ -106,11 +123,12 @@
   justify-content: center;
   align-items: center;
 }
+
 .ProductImages img {
   height: 26rem;
 }
-.outer {
-}
+
+.outer {}
 
 .button {
   border-radius: 20px;
@@ -121,10 +139,12 @@
   cursor: pointer;
   transition: all 0.3s ease-out;
 }
+
 .OurProductsCardsMain:hover .button {
   opacity: 1;
   transition: all 0.3s ease;
 }
+
 /* .button:hover {
   color: #fff !important;
   background-position: left bottom !important;
@@ -142,6 +162,7 @@
 .text:hover {
   color: #fff;
 }
+
 .highlight {
   font-style: italic;
   font-weight: 400;
@@ -150,64 +171,63 @@
   margin: 0%;
   padding-top: 1rem;
 }
+
 .question {
   font-weight: 600;
   font-size: 18px;
   margin-bottom: 0%;
   padding-bottom: 0.5rem;
 }
+
 .tags {
   font-weight: 300;
   font-size: 16px;
   padding-bottom: 1rem;
   width: 34.25rem;
 }
+
 .HRcontainer {
   display: flex;
   justify-content: end;
   align-items: center;
 }
+
 .HrBorder {
   color: rgb(255, 255, 255);
   width: 65% !important;
   /* float: right; */
   border: 0.5px solid;
 }
+
 .HRcontainer span {
   color: #fff;
   padding-right: 1rem;
   padding-left: 1rem;
 }
+
 .FollowerLight {
   position: absolute;
   transform: translate(-50%, -50%);
   z-index: 80;
-  background: radial-gradient(
-    36.88% 29.95% at 44.17% 56.2%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
+  background: radial-gradient(36.88% 29.95% at 44.17% 56.2%,
+      #16155e 0%,
+      rgba(22, 21, 94, 0) 100%);
   pointer-events: none;
   width: 1000px;
   height: 1000px;
-  background: -webkit-radial-gradient(
-    44.17% 56.2%,
-    36.88% 29.95%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
-  background: -o-radial-gradient(
-    44.17% 56.2%,
-    36.88% 29.95%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
-  background: radial-gradient(
-    36.88% 29.95% at 44.17% 56.2%,
-    #16155e 0%,
-    rgba(22, 21, 94, 0) 100%
-  );
+  background: -webkit-radial-gradient(44.17% 56.2%,
+      36.88% 29.95%,
+      #16155e 0%,
+      rgba(22, 21, 94, 0) 100%);
+  background: -o-radial-gradient(44.17% 56.2%,
+      36.88% 29.95%,
+      #16155e 0%,
+      rgba(22, 21, 94, 0) 100%);
+  background: radial-gradient(36.88% 29.95% at 44.17% 56.2%,
+      #16155e 0%,
+      rgba(22, 21, 94, 0) 100%);
 }
+
 .Sublist {
   list-style: inside;
   height: auto !important;
@@ -215,27 +235,33 @@
   font-weight: 300;
   padding: 0.2rem 0;
 }
+
 .Productbutton {
   display: flex;
   justify-content: space-between;
   align-items: end;
   padding-bottom: 2rem;
 }
+
 .Producth4 {
   margin: 0 !important;
   font-size: 36px;
 }
+
 .List {
-  padding: 0.5rem 0 !important ;
+  padding: 0.5rem 0 !important;
 }
+
 .Description {
   padding-bottom: 1rem;
   font-size: 16px;
   font-weight: 300;
 }
+
 .ExpText {
   padding-right: 5px;
 }
+
 .Explortxt {
   display: flex;
   justify-content: center;
@@ -265,18 +291,22 @@
   .SectionCards .SectionContent {
     padding-top: 4rem;
   }
+
   /* .SectionCards .SectionContent li {
     height: 150vh
   } */
   .tags {
     width: 100%;
   }
+
   .ProductDetails {
     padding: 0 1rem;
   }
+
   .Carddetail {
     width: 100%;
   }
+
   .SectionCards .SectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
@@ -284,10 +314,12 @@
     position: sticky;
     top: calc(28vh + 52px - 215px - 40px);
   }
+
   .HrBorder {
     width: 100% !important;
     margin-left: 1rem;
   }
+
   .ProductImages {
     display: flex;
     align-items: center;
@@ -296,28 +328,35 @@
     padding-right: 0rem;
     padding-left: 0;
   }
+
   .Productbutton {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding-bottom: 1rem;
   }
+
   .ProductImages img {
     height: 12.6rem;
   }
+
   .button {
     font-size: 12px;
   }
+
   .Description {
     margin: 0;
     font-size: 14px;
   }
+
   .Producth4 {
     font-size: 25px;
   }
+
   .question {
     font-size: 14px;
   }
+
   .SectionCards .SectionContent li {
     font-size: 14px;
   }
@@ -329,20 +368,25 @@
     padding-left: 1rem;
     top: 125px;
   }
+
   .HrBorder {
     width: 90% !important;
   }
+
   .tags {
     width: 100%;
   }
+
   .ProductImages {
     text-align: center !important;
     padding-right: 4rem;
   }
+
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;
     height: 650px;
   }
+
   .SectionCards .SectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
@@ -350,13 +394,16 @@
     position: sticky;
     top: calc(28vh + 52px - 215px - 40px);
   }
+
   .Description {
     margin: 0;
     padding-bottom: 1rem;
   }
+
   .question {
     padding-bottom: 1rem;
   }
+
   /* .SectionContent {
     opacity: 1 !important;
   } */
@@ -367,6 +414,7 @@
     width: 95%;
     padding-left: 1rem;
   }
+
   .ProductImages img {
     height: 20rem;
   }
@@ -378,33 +426,41 @@
     padding-left: 1rem;
     top: 125px;
   }
+
   .HrBorder {
     width: 90% !important;
   }
+
   .tags {
     width: 100%;
   }
+
   .ProductImages {
     text-align: center !important;
     padding-right: 4rem;
     width: 100%;
   }
+
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;
     height: 650px;
   }
+
   .SectionCards .SectionContent li {
     height: 1000px;
     font-size: 18px;
     top: calc(28vh + 52px - 215px - 40px);
   }
+
   .Description {
     margin: 0;
     padding-bottom: 1rem;
   }
+
   .question {
     padding-bottom: 1rem;
   }
+
   /* .SectionContent {
     opacity: 1 !important;
   } */
@@ -415,6 +471,7 @@
     width: 95%;
     padding-left: 1rem;
   }
+
   .ProductImages img {
     height: 20rem;
   }
@@ -426,32 +483,40 @@
     padding-left: 8rem;
     top: 125px;
   }
+
   .HrBorder {
     width: 85% !important;
   }
+
   .tags {
     width: 100%;
   }
+
   .ProductImages {
     text-align: center !important;
     padding-right: 0rem;
   }
+
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;
     height: 650px;
   }
+
   .SectionCards .SectionContent li {
     height: 1000px;
     font-size: 18px;
     top: calc(18vh + 52px - 215px - 40px);
   }
+
   .Description {
     margin: 0;
     padding-bottom: 1rem;
   }
+
   .question {
     padding-bottom: 1rem;
   }
+
   /* .SectionContent {
     opacity: 1 !important;
   } */
@@ -462,6 +527,7 @@
     width: 95%;
     padding-left: 8rem;
   }
+
   .ProductImages img {
     height: 20rem;
   }
@@ -474,6 +540,7 @@
     font-weight: 600;
     color: #fff;
   }
+
   .SectionCards .SectionContent {
     padding-bottom: 1rem;
     padding-top: 6rem;
@@ -496,6 +563,7 @@
     position: sticky;
     top: calc(50vh + 52px - 215px - 40px);
   }
+
   .SectionCards .SectionContent li .CardContainer {
     position: absolute;
     top: 50px;
@@ -505,16 +573,19 @@
     /* margin-left: -375px; */
     transform: translateZ(0);
   }
+
   .SectionCards .SectionContent li .CardContainer {
     width: 100%;
     height: 570px;
     /* margin-left: -412.5px; */
   }
+
   .SectionCards .SectionContent li {
     z-index: 1;
     background-color: #1a1c3c;
     font-size: 16px;
   }
+
   .SectionCards .SectionContent li .card {
     width: 100%;
     height: 100%;
@@ -525,30 +596,39 @@
     background-position: center center;
     box-shadow: 4px 12px 40px 6px rgba(0, 0, 0, 0.09);
   }
+
   .card01 {
     background: #ffff;
   }
+
   .card02 {
     background: #ffff;
   }
+
   .card03 {
     background: #ffff;
   }
+
   .card04 {
     background: #ffff;
   }
+
   .card05 {
     background: #ffff;
   }
+
   .card06 {
     background: #ffff;
   }
+
   .card07 {
     background: #ffff;
   }
+
   .card08 {
     background: #ffff;
   }
+
   .ProductDetails {
     color: #fff;
     text-align: left;
@@ -556,6 +636,7 @@
     font-size: 18px;
     text-align: justify;
   }
+
   .OurProductsHeading {
     font-weight: 600;
     font-size: 70px;
@@ -567,10 +648,12 @@
     padding-left: 8.5rem;
     padding-bottom: 4rem;
   }
+
   .Carddetail {
     width: 45%;
     padding-left: 0;
   }
+
   .ProductImages {
     text-align: center !important;
     padding-left: 18rem;
@@ -580,11 +663,12 @@
     width: 50%;
     padding-right: 14rem;
   }
+
   .ProductImages img {
     height: 26rem;
   }
-  .outer {
-  }
+
+  .outer {}
 
   .button {
     border-radius: 20px;
@@ -595,10 +679,12 @@
     cursor: pointer;
     transition: all 0.3s ease-out;
   }
+
   .OurProductsCardsMain:hover .button {
     opacity: 1;
     transition: all 0.3s ease;
   }
+
   /* .button:hover {
     color: #fff !important;
     background-position: left bottom !important;
@@ -616,6 +702,7 @@
   .text:hover {
     color: #fff;
   }
+
   .highlight {
     font-style: italic;
     font-weight: 400;
@@ -624,64 +711,63 @@
     margin: 0%;
     padding-top: 1rem;
   }
+
   .question {
     font-weight: 600;
     font-size: 18px;
     margin-bottom: 0%;
     padding-bottom: 0.5rem;
   }
+
   .tags {
     font-weight: 300;
     font-size: 16px;
     padding-bottom: 1rem;
     width: 34.25rem;
   }
+
   .HRcontainer {
     display: flex;
     justify-content: end;
     align-items: center;
   }
+
   .HrBorder {
     color: rgb(255, 255, 255);
     width: 65% !important;
     /* float: right; */
     border: 0.5px solid;
   }
+
   .HRcontainer span {
     color: #fff;
     padding-right: 1rem;
     padding-left: 1rem;
   }
+
   .FollowerLight {
     position: absolute;
     transform: translate(-50%, -50%);
     z-index: 80;
-    background: radial-gradient(
-      36.88% 29.95% at 44.17% 56.2%,
-      #16155e 0%,
-      rgba(22, 21, 94, 0) 100%
-    );
+    background: radial-gradient(36.88% 29.95% at 44.17% 56.2%,
+        #16155e 0%,
+        rgba(22, 21, 94, 0) 100%);
     pointer-events: none;
     width: 1000px;
     height: 1000px;
-    background: -webkit-radial-gradient(
-      44.17% 56.2%,
-      36.88% 29.95%,
-      #16155e 0%,
-      rgba(22, 21, 94, 0) 100%
-    );
-    background: -o-radial-gradient(
-      44.17% 56.2%,
-      36.88% 29.95%,
-      #16155e 0%,
-      rgba(22, 21, 94, 0) 100%
-    );
-    background: radial-gradient(
-      36.88% 29.95% at 44.17% 56.2%,
-      #16155e 0%,
-      rgba(22, 21, 94, 0) 100%
-    );
+    background: -webkit-radial-gradient(44.17% 56.2%,
+        36.88% 29.95%,
+        #16155e 0%,
+        rgba(22, 21, 94, 0) 100%);
+    background: -o-radial-gradient(44.17% 56.2%,
+        36.88% 29.95%,
+        #16155e 0%,
+        rgba(22, 21, 94, 0) 100%);
+    background: radial-gradient(36.88% 29.95% at 44.17% 56.2%,
+        #16155e 0%,
+        rgba(22, 21, 94, 0) 100%);
   }
+
   .Sublist {
     list-style: inside;
     height: auto !important;
@@ -689,27 +775,33 @@
     font-weight: 300;
     padding: 0.2rem 0;
   }
+
   .Productbutton {
     display: flex;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     padding-bottom: 2rem;
   }
+
   .Producth4 {
     margin: 0 !important;
     font-size: 36px;
   }
+
   .List {
-    padding: 0.5rem 0 !important ;
+    padding: 0.5rem 0 !important;
   }
+
   .Description {
     padding-bottom: 1rem;
     font-size: 16px;
     font-weight: 300;
   }
+
   .ExpText {
     padding-right: 5px;
   }
+
   .Explortxt {
     display: flex;
     justify-content: center;

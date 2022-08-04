@@ -83,9 +83,15 @@ const ContactUs = () => {
   const phoneInputOperation = (value, country) => {
     setPhoneValue(value);
     setCountry(country.name);
+    if (phoneValue.length < 12 || phoneValue.length < 11) {
+      setNumberError(true);
+    } else {
+      setNumberError(false);
+    }
     if (!(phoneValue == "")) {
       setNumberError(false);
-    } else {
+    }
+    else {
       setNumberError(true);
     }
   };
@@ -142,7 +148,7 @@ const ContactUs = () => {
     ) {
       setNameError(true);
       namef.current.focus();
-    } else if (phoneValue == "") {
+    } else if (phoneValue == "" || phoneValue.length < 12) {
       setNumberError(true);
     } else if (validateEmail3837482000049914001(email) == false) {
       mailf.current.focus();
