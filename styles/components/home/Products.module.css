@@ -337,7 +337,8 @@
   }
 
   .ProductImages img {
-    height: 12.6rem;
+    height: 12rem;
+    margin-top: 0.5rem;
   }
 
   .button {

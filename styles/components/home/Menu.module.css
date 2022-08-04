@@ -13,13 +13,13 @@
   align-items: center;
   top: 0px;
   background: #ffffff;
-  /* border-right: 1px solid #000; */
+  border-right: 1px solid #000;
   border: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  border-top: none;
+  /* border-top: none;
   border-bottom: none;
-  border-left: none;
+  border-left: none; */
 }
 
 .BlockchainTechnologyText {

@@ -21,7 +21,7 @@ const OurStory = () => {
           </Col>
           <h4>How we came this long...</h4>
           <div className={styles.Mobdiv}>
-            <Col xl={8} md={8} xs={12} className={styles.HowWeCame}>
+            <Col xl={8} md={12} xs={12} className={styles.HowWeCame}>
               <p>
                 MobifinX began as Espay Exchange in early 2017 and developed a
                 complete Digital Asset Trading suite in-house with 24 technical
@@ -39,18 +39,18 @@ const OurStory = () => {
                 leap without
               </p>
             </Col>
-            <Col xl={4} md={4} xs={4} className={styles.Strengthcol}>
+            <Col xl={4} md={12} xs={4} className={styles.Strengthcol}>
               {OurStoryData.map((v, i) => {
                 return (
                   <div className={styles.Strength} key={i}>
-                    <Col xl={4} xs={4} className={styles.Employeeimg}>
+                    <Col xl={4} xs={4} md={4} className={styles.Employeeimg}>
                       <Image
                         src={v.image}
                         alt={v.image}
                         className={styles.StrengthImg}
                       />
                     </Col>
-                    <Col xl={4} xs={4}>
+                    <Col xl={4} xs={4} md={4}>
                       <h5>{v.title}</h5>
                       <span>{v.name}</span>
                     </Col>

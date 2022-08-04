@@ -1,47 +1,88 @@
-.Location{
-    overflow: hidden;
+.Location {
+  overflow: hidden;
 }
-.Locationcontainer{
-    
-    padding: 4rem 0 4rem 8.5rem;
+.Locationcontainer {
+  padding: 4rem 0 4rem 8.5rem;
 }
-.Location h4{
-    font-size: 50px;
-    font-weight: 600;
-    /* padding-left: 18rem; */
-    text-align: left;
+.Location h4 {
+  font-size: 50px;
+  font-weight: 600;
+  /* padding-left: 18rem; */
+  text-align: left;
 }
-.Address{
-    padding-left: 2rem;
+.Address {
+  padding-left: 2rem;
 }
-.Address h5{
-    font-size: 18px;
-    font-weight: 500;
- 
+.Address h5 {
+  font-size: 18px;
+  font-weight: 500;
 }
-.Address p{
-    font-size: 18px;
-    font-weight: 300;
+.Address p {
+  font-size: 18px;
+  font-weight: 300;
 }
-.Detailrow{
-    padding-left: 0rem;
-    padding-right: 6rem;
+.Detailrow {
+  padding-left: 0rem;
+  padding-right: 6rem;
 }
 /* .LocatedDetailCol{
     padding-left: 18rem;
 } */
-.LocatedDetail{
-    display: flex;
-    align-items: center;
-    padding-top: 3rem;
+.LocatedDetail {
+  display: flex;
+  align-items: center;
+  padding-top: 3rem;
 }
-.LocatedImg{
-    text-align: end;
+.LocatedImg {
+  text-align: end;
 }
 /* .Locatecol{
     width: 70%;
 } */
-@media (min-width:320px) and (max-width: 767px){
+
+@media screen and (max-width: 600px) {
+  .Locationcontainer {
+    padding-left: 1rem;
+  }
+  .Locatecol {
+    width: 100%;
+  }
+  .Location h4 {
+    font-size: 45px;
+  }
+  .LocatedDetail {
+    flex-direction: column;
+  }
+  .Contactimg {
+    width: 100%;
+    height: auto;
+  }
+  .Detailrow {
+    padding-bottom: 1rem;
+    padding-right: 1rem;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .Locationcontainer {
+    padding: 4rem 0 4rem 1rem;
+  }
+  .LocatedDetail {
+    justify-content: space-between;
+  }
+  .Location h4 {
+    font-size: 50px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+}
+@media screen and (min-width: 992px) {
+  .Locationcontainer {
+    padding: 4rem 0 4rem 8rem;
+  }
+}
+/* @media (min-width:320px) and (max-width: 767px){
     .Locationcontainer{
         padding-left: 1rem;
     }
@@ -93,4 +134,4 @@
     .LocatedDetail{
         padding-top: 3rem;
     }
-}
+} */

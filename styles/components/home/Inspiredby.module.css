@@ -179,6 +179,7 @@
     padding-left: 1rem;
     padding-bottom: 4rem;
     padding-right: 1rem;
+    overflow: hidden;
   }
   .InspiredCardCol {
     align-items: flex-start;

@@ -1,119 +1,393 @@
-.HeroMainContainer {
-  padding: 2.5rem 0 4rem 8.5rem;
-  overflow: hidden;
-}
-.Herorow {
-  /* padding-left: 8.5rem; */
-  display: flex;
-  justify-content: center;
-}
-.Herocol {
-  width: 83%;
-  text-align: left;
-}
-.HeroMainContainer h4 {
-  font-size: 4.5rem;
-  font-weight: 600;
-  padding-left: 0rem;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
-  margin: 0;
-}
-.RotateRow {
-  justify-content: center;
-  align-items: flex-start;
-}
-.Crypto {
-  font-size: 4.5rem;
-  font-weight: 600;
-  color: #a21d34;
-}
-.Img {
-  width: 100%;
-  height: auto;
-}
-.Aboutcol {
-  text-align: -webkit-right;
-}
-.Heroimg {
-  margin: 0;
-  width: 100%;
-  padding: 2.5rem 0;
-}
-.SoftwareDevelopmentExpertsRow {
-  margin: 0%;
-  align-items: center;
-  padding-bottom: 2.5rem;
-  padding-top: 0;
-}
-.SoftwareDevelopmentExpertsSmallHead {
-  display: flex;
-  align-items: center;
-}
-.HomeMiniLine {
-  width: 40px;
-  padding: 0.1rem;
-  margin-right: 1rem;
-  border-bottom: 1px solid #000;
-}
-.HomeSmallHeading {
-  font-weight: 400;
-  font-size: 20px;
-}
-.SoftwareDevelopmentExpertsBtnCol {
-  justify-content: flex-end;
-  margin-top: 0rem;
-  display: flex;
-  padding-right: 2.5rem;
+@media screen and (max-width: 600px) {
+  .HeroMainContainer {
+    padding: 2.5rem 0 4rem 1rem;
+    overflow: hidden;
+  }
+  .Herorow {
+    /* padding-left: 8.5rem; */
+    display: flex;
+    justify-content: center;
+  }
+  .Herocol {
+    width: 83%;
+    text-align: left;
+  }
+
+  .RotateRow {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .Crypto {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #a21d34;
+  }
+  .Img {
+    width: 100%;
+    height: auto;
+  }
+  .Aboutcol {
+    text-align: -webkit-right;
+  }
+  .Heroimg {
+    margin: 0;
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+  }
+
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    justify-content: flex-end;
+    margin-top: 0rem;
+    display: flex;
+    padding-right: 2.5rem;
+  }
+
+  .whiteMouse {
+    transform: rotate(90deg);
+    padding-top: 0rem;
+  }
+
+  .Scrolldowncontainer {
+    /* transform: rotate(-90deg); */
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    margin-top: 14.5rem;
+    margin-left: -0.8rem;
+  }
+  .ImageDown {
+    transform: rotate(90deg);
+  }
+  .ScrolldownText {
+    margin: 0%;
+    padding-left: 1rem;
+  }
+  .ScrolldownMainCol {
+    display: flex;
+    align-items: center;
+  }
+
+  .HeroMainContainer {
+    padding: 4rem 0 2rem 1rem;
+  }
+  .Herorow {
+    justify-content: left;
+  }
+  .HeroMainContainer h4 {
+    font-size: 35px;
+    padding-left: 0;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+  .Crypto {
+    font-size: 30px;
+  }
+  .Scrolldowncontainer {
+    display: none;
+  }
+  .TextButton {
+    display: none;
+  }
+  .Heroimg {
+    width: 100%;
+    padding: 0;
+  }
+  .HomeSmallHeading {
+    font-size: 14px;
+  }
+  .HomeMiniLine {
+    width: 25px;
+    margin-right: 1rem;
+    border-bottom: 1px solid #000;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    padding-top: 1rem;
+    align-items: baseline;
+    padding-bottom: 1rem;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
+  .Herocol {
+    width: 100%;
+  }
+  .MobButton {
+    border-radius: 50%;
+    width: 2.5rem !important;
+    height: 2.5rem !important;
+    background-size: 200% 200%;
+    background-position: right bottom;
+    transition: all 0.8s ease-out;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+  }
 }
 
-.whiteMouse {
-  transform: rotate(90deg);
-  padding-top: 0rem;
+@media screen and (min-width: 600px) {
+  .HeroMainContainer {
+    padding: 2.5rem 0 4rem 1.5rem;
+    overflow: hidden;
+  }
+  .Herorow {
+    /* padding-left: 8.5rem; */
+    display: flex;
+    justify-content: left;
+  }
+  .Herocol {
+    width: 83%;
+    text-align: left;
+  }
+  .HeroMainContainer h4 {
+    font-size: 35px;
+    font-weight: 600;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  .RotateRow {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .Crypto {
+    font-size: 35px;
+    font-weight: 600;
+    color: #a21d34;
+  }
+  .Img {
+    width: 100%;
+    height: auto;
+  }
+  .Aboutcol {
+    text-align: -webkit-right;
+  }
+  .Heroimg {
+    margin: 0;
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin: 0%;
+    align-items: baseline;
+    padding-bottom: 2.5rem;
+    padding-top: 0;
+  }
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+  }
+  .HomeMiniLine {
+    width: 40px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #000;
+  }
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    justify-content: flex-end;
+    margin-top: 0rem;
+    display: flex;
+    padding-right: 2.5rem;
+  }
+  .TextButton {
+    font-size: 18px;
+  }
+
+  .whiteMouse {
+    transform: rotate(90deg);
+    padding-top: 0rem;
+  }
+
+  .Scrolldowncontainer {
+    display: none;
+  }
+
+  .ImageDown {
+    transform: rotate(90deg);
+  }
+  .ScrolldownText {
+    margin: 0%;
+    padding-left: 1rem;
+  }
+  .ScrolldownMainCol {
+    display: flex;
+    align-items: center;
+  }
 }
 
-.Scrolldowncontainer {
-  /* transform: rotate(-90deg); */
-  display: flex;
-  align-items: center;
-  justify-content: unset;
-  /* position: relative; */
-  /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
-  animation-direction: alternate; */
-  /* margin-left: -11.5rem; */
-  margin-top: 14.5rem;
-  margin-left: -0.8rem;
-}
-/* @keyframes scrolldowntotop {
-  0% {
-    top: 10px;
+@media screen and (min-width: 768px) {
+  .HeroMainContainer {
+    padding: 4rem 0 2rem 1rem;
   }
-  25% {
-    top: -10px;
+  .Scrolldowncontainer {
+    display: none;
   }
-  50% {
-    top: 10px;
+  .Herocol {
+    width: 100%;
   }
-  75% {
-    top: -10px;
+  .SoftwareDevelopmentExpertsRow {
+    padding-top: 3rem;
   }
-  100% {
-    top: 10px;
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
   }
-} */
-.ImageDown {
-  transform: rotate(90deg);
-}
-.ScrolldownText {
-  margin: 0%;
-  padding-left: 1rem;
-}
-.ScrolldownMainCol {
-  display: flex;
-  align-items: center;
+  .HeroMainContainer h4,
+  .Crypto {
+    font-size: 50px;
+  }
 }
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (min-width: 992px) {
+  .HeroMainContainer {
+    padding: 1rem 0 2rem 8rem;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    padding-top: 0.5rem;
+  }
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .HomeMiniLine {
+    width: 25px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #000;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .HeroMainContainer {
+    padding: 2.5rem 0 4rem 8.5rem;
+    overflow: hidden;
+  }
+  .Herorow {
+    /* padding-left: 8.5rem; */
+    display: flex;
+    justify-content: center;
+  }
+  .Herocol {
+    width: 83%;
+    text-align: left;
+  }
+  .HeroMainContainer h4 {
+    font-size: 4.5rem;
+    font-weight: 600;
+    padding-left: 0rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    margin: 0;
+  }
+  .RotateRow {
+    justify-content: center;
+    align-items: flex-start;
+  }
+  .Crypto {
+    font-size: 4.5rem;
+    font-weight: 600;
+    color: #a21d34;
+  }
+  .Img {
+    width: 100%;
+    height: auto;
+  }
+  .Aboutcol {
+    text-align: -webkit-right;
+  }
+  .Heroimg {
+    margin: 0;
+    width: 100%;
+    padding: 2.5rem 0;
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin: 0%;
+    align-items: baseline;
+    padding-bottom: 2.5rem;
+    padding-top: 0;
+  }
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+  }
+  .HomeMiniLine {
+    width: 40px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #000;
+  }
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    justify-content: flex-end;
+    margin-top: 0rem;
+    display: flex;
+    padding-right: 2.5rem;
+  }
+
+  .whiteMouse {
+    transform: rotate(90deg);
+    padding-top: 0rem;
+  }
+
+  .Scrolldowncontainer {
+    /* transform: rotate(-90deg); */
+    display: flex;
+    align-items: center;
+    justify-content: unset;
+    /* position: relative; */
+    /* animation: scrolldowntotop 4s ease-in 0s infinite normal;
+    animation-direction: alternate; */
+    /* margin-left: -11.5rem; */
+    margin-top: 14.5rem;
+    margin-left: -0.8rem;
+  }
+  /* @keyframes scrolldowntotop {
+    0% {
+      top: 10px;
+    }
+    25% {
+      top: -10px;
+    }
+    50% {
+      top: 10px;
+    }
+    75% {
+      top: -10px;
+    }
+    100% {
+      top: 10px;
+    }
+  } */
+  .ImageDown {
+    transform: rotate(90deg);
+  }
+  .ScrolldownText {
+    margin: 0%;
+    padding-left: 1rem;
+  }
+  .ScrolldownMainCol {
+    display: flex;
+    align-items: center;
+  }
+}
+/* @media (min-width: 320px) and (max-width: 767px) {
   .HeroMainContainer {
     padding: 4rem 0 2rem 1rem;
   }
@@ -188,4 +462,4 @@
   .Crypto {
     font-size: 50px;
   }
-}
+} */
