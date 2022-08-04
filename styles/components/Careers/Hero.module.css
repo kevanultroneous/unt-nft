@@ -75,7 +75,7 @@
 
 .heroContainer {
   align-items: center;
-  margin-top: -3rem;
+  margin-top: 0rem;
 }
 .ReactContainer {
   margin: 0;
@@ -375,7 +375,7 @@
 
   .heroContainer {
     align-items: center;
-    margin-top: -3rem;
+    margin-top: 0rem;
   }
   .ReactContainer {
     margin: 0;
@@ -426,6 +426,10 @@
     opacity: 0.5;
     font-style: italic;
   }
+  .sliderContainer p {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
 
   .sliderSecondHalf {
     padding: 3rem 1.5rem 0.5rem;
@@ -437,6 +441,7 @@
   }
 
   .sliderButton {
+    width: 10vw;
     display: flex;
     justify-content: space-between;
     margin: 2.5rem 0 0;

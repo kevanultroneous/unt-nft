@@ -472,11 +472,26 @@ a {
   text-decoration: none;
 }
 
+.accordion-body {
+  padding: 1rem 1.25rem;
+}
+
 .CareersAccordion .accordion-body div {
   display: flex;
   justify-content: space-between;
   color: white;
+  padding: 1rem;
 }
+
+@media screen and (max-width: 600px) {
+  .CareersAccordion .accordion-body div {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 0;
+  }
+}
+
 /* .forfaq .accordion-button,
 .accordion-button:not(.collapsed) {
   background-color: #ffffff !important;

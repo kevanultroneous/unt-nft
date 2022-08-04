@@ -1,6 +1,5 @@
 .WhyMobifinxMainContainer {
   padding: 5rem 0rem 3rem 8.5rem;
-  height: 80vh;
 }
 
 .sideHeading {
@@ -102,7 +101,6 @@
 @media only screen and (min-width: 1200px) {
   .WhyMobifinxMainContainer {
     padding: 5rem 0rem 3rem 8.5rem;
-    height: 90vh;
   }
 
   .sideHeading {

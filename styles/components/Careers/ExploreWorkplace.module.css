@@ -165,18 +165,18 @@
   }
 
   .groupSmImage div {
-    width: 45vw;
+    width: 45vw !important;
   }
 
   .workPlacesBgImage {
     display: flex;
     justify-content: end;
     width: 95vw;
-    margin: 2.5rem 0 0;
+    margin: 2.5rem 0 !important;
   }
   .workPlacesSecBgImage {
     width: 95vw;
-    margin: 2.5rem 0 0;
+    margin: 2.5rem 0 0 !important;
   }
 
   .imageSecondRow {
@@ -291,9 +291,14 @@
     width: 15rem;
   }
 
+  .imageContainer {
+    width: 100%;
+  }
+
   .imageContRow {
     margin: 0 0 2rem;
     flex-direction: row;
+    width: initial;
   }
   .imageSecondRow {
     flex-direction: row;
@@ -332,6 +337,11 @@
 
   .ctaRow {
     display: flex;
+    width: 100%;
+  }
+
+  .ctaText {
+    width: fit-content;
   }
 
   .ctaText h3 {

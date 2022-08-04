@@ -9,12 +9,26 @@
   margin: 0 0 3rem;
 }
 
+.accordionRow {
+  display: flex;
+  flex-direction: column;
+}
+
 .JobVacancyNumber {
-  /* width: 2.5rem;
-  height: 1.5rem; */
+  padding: 2px 7px;
+  font-size: 12px;
   margin: 0 0 0 1rem;
   background-color: #434343;
   border-radius: 50%;
+  text-align: center;
+}
+
+.CareerAccordionExp {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.CareerAccordionTest {
+  margin: 0 0.5rem;
 }
 
 /* Mobile Portrait */
@@ -63,6 +77,11 @@
   .CareerAccordion {
     padding: 6rem 4rem 4rem 20.5rem;
     background: #1a1c3c;
+  }
+
+  .accordionRow {
+    display: flex;
+    flex-direction: row;
   }
 
   .careerAccordionHeading {

@@ -8,15 +8,18 @@ const data = [
     technology: [
       {
         technologyName: "flutter",
-        count: 10,
+        count: 2,
+        experienceYears: "2-4 yrs",
       },
       {
         technologyName: "MERN Stack",
         count: 5,
+        experienceYears: "1-2 yrs",
       },
       {
         technologyName: "React",
         count: 3,
+        experienceYears: "2-4 yrs",
       },
     ],
   },
@@ -25,11 +28,13 @@ const data = [
     technology: [
       {
         technologyName: "flutter",
-        count: 10,
+        count: 2,
+        experienceYears: "2-5 yrs",
       },
       {
         technologyName: "MERN Stack",
         count: 5,
+        experienceYears: "2-4 yrs",
       },
     ],
   },
@@ -53,7 +58,7 @@ function CareerAccordion() {
               <Accordion.Body className={styles.AccordionBody}>
                 {el.technology.map((val, ind) => (
                   <a href={`#`} key={ind}>
-                    <div>
+                    <div className={styles.accordionRow}>
                       <p>
                         {val.technologyName}
                         <span className={styles.JobVacancyNumber}>
@@ -61,6 +66,16 @@ function CareerAccordion() {
                         </span>
                       </p>
                       <p>
+                        <span className={styles.CareerAccordionExp}>
+                          Experience
+                        </span>
+                        <span className={styles.CareerAccordionTest}>
+                          {val.experienceYears}
+                        </span>
+                        |
+                        <span className={styles.CareerAccordionTest}>
+                          Apply Now
+                        </span>
                         <IoIosArrowForward />
                       </p>
                     </div>
