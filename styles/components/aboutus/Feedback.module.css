@@ -159,6 +159,7 @@
   .Feedback {
     background-color: #1a1c3c;
     transition: background-color 1s linear;
+    overflow: hidden;
   }
   /* .Feedback:hover {
     background-color: transparent;
@@ -221,10 +222,10 @@
   }
   .Arrowcol {
     display: flex;
-    justify-content: center;
+    justify-content: end;
     align-items: center;
     position: relative;
-    left: 30rem;
+    /* left: 30rem; */
     bottom: 12rem;
     width: 100%;
   }

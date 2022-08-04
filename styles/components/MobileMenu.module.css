@@ -10,9 +10,9 @@
   border: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  border-top: none;
+  /* border-top: none;
   border-right: none;
-  border-left: none;
+  border-left: none; */
 }
 .TabletMenu {
   align-items: center;
@@ -26,9 +26,9 @@
   border: 2px solid transparent;
   border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
   border-image-slice: 1;
-  border-top: none;
+  /* border-top: none;
   border-right: none;
-  border-left: none;
+  border-left: none; */
 }
 .MenuController {
   display: flex;
