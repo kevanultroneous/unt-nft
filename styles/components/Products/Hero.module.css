@@ -204,14 +204,15 @@
   } */
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
 
-@media (min-width: 650px) and (max-width: 740px) {}
+@media (min-width: 650px) and (max-width: 740px) {
+}
 
 /* ================================= */
 /* (this for mobile) */
 @media screen and (max-width: 600px) {
-
   .Herosection {
     padding: 5.3rem 0rem 2rem 1rem;
   }
@@ -270,7 +271,9 @@
     align-items: center;
     font-size: 18px;
   }
-
+  .SoftwareDevelopmentExpertsBtnCol {
+    padding-right: 1rem;
+  }
 }
 
 /* (this for mobile landscape) */
@@ -278,7 +281,6 @@
   .Herosection {
     padding: 5.3rem 0rem 2rem 1rem;
   }
-
 
   .HomeSmallHeading {
     font-size: 14px;
@@ -356,7 +358,8 @@
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {

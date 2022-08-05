@@ -31,9 +31,12 @@ const MxFutureProducts = ({ text }) => {
           <ul>
             <li className={styles.card01}>
               <div className={styles.rows}>
-                <div className="col">
-                  <h2 className={styles.Cardtitle}>Title</h2>
-                  <p className={styles.Carddescription}>
+                <Row>
+                  <Col xl={4}>
+                    <div className="col">
+                      <h2 className={styles.Cardtitle}>Title</h2>
+                      <Image src={""} alt="card-img" />
+                      {/* <p className={styles.Carddescription}>
                     Do you want to own a team but without the hassle of
                     recruitment, infrastructure investment, heavy running costs
                     and daily team management issues? If yes then this business
@@ -47,46 +50,78 @@ const MxFutureProducts = ({ text }) => {
                     and reporting required from your end. This business model is
                     the best suit for your dream project idea which requires
                     multiple iterations and market research/ feedbacks.
-                  </p>
-                  <span className={styles.number}>01</span>
-                </div>
+                  </p> */}
 
-                <div className="col">
-                  <div className={styles.rowtext}>
-                    <Row>
-                      <Col xl={4} md={6} className={styles.SpecialImage2}>
-                        <Image
-                          alt="card-img"
-                          src="/assets/images/Card01.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={5} md={6}>
-                        <Image
-                          alt="card-img"
-                          src="/assets/images/Card02.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={4} md={6}>
-                        <Image
-                          alt="card-img"
-                          style={{ paddingTop: "0%" }}
-                          src="/assets/images/Card03.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={5} md={6}>
-                        <Image
-                          alt="card-img"
-                          style={{ paddingTop: "0%" }}
-                          src="/assets/images/Card04.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                    </Row>
-                  </div>
-                </div>
+                      <span className={styles.number}>01</span>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className="col">
+                      <p className={styles.Carddescription}>
+                        Do you want to own a team but without the hassle of
+                        recruitment, infrastructure investment, heavy running
+                        costs and daily team management issues? If yes then this
+                        business model is for you. It’s suitable for the young
+                        entrepreneurs, CTO, Product managers and other technical
+                        people to hire their offshore team to build a project.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    {/* <div className="col"> */}
+                    <div className={styles.rowtext}>
+                      <Row>
+                        <Col xl={4}>
+                          <div>
+                            <h1>Helloo</h1>
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1>Hiii</h1>
+                          </di>
+                          <div>
+                            <p>How are you</p>
+                          </div>
+                        </Col>
+                      </Row>
+
+                      {/* <Row>
+                        <Col xl={4} md={6} className={styles.SpecialImage2}>
+                          <Image
+                            alt="card-img"
+                            src="/assets/images/Card01.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            alt="card-img"
+                            src="/assets/images/Card02.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={4} md={6}>
+                          <Image
+                            alt="card-img"
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card03.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                        <Col xl={5} md={6}>
+                          <Image
+                            alt="card-img"
+                            style={{ paddingTop: "0%" }}
+                            src="/assets/images/Card04.svg"
+                            className={styles.imageSpace}
+                          />
+                        </Col>
+                      </Row> */}
+                    </div>
+                    {/* </div> */}
+                  </Col>
+                </Row>
               </div>
             </li>
             <li className={styles.card02}>

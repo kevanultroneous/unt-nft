@@ -280,6 +280,13 @@
   .HungryHeading {
     font-size: 45px;
   }
+  .HungryCard {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    height: 15rem;
+    padding: 3rem 5.5rem 2rem 4.5rem;
+  }
 }
 @media (min-width: 1081px) and (max-width: 1250px) {
   .MainHungry {

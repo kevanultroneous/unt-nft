@@ -20,7 +20,7 @@
   margin-top: -5.5rem;
   letter-spacing: 2px;
 }
-.Ourstoryrow h4 {
+.HeadingRow h4 {
   font-size: 50px;
   font-weight: 600;
   color: #fff;
@@ -82,6 +82,9 @@
   position: relative;
   bottom: 8rem;
 }
+.HeadingRow {
+  padding-left: 0rem;
+}
 
 @media screen and (max-width: 600px) {
   .Rotatetext {
@@ -101,7 +104,7 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    padding-bottom: 2rem;
+    padding-bottom: 1rem;
     flex-direction: column;
     width: 25%;
   }
@@ -112,6 +115,7 @@
   .OurStory {
     background: linear-gradient(180deg, #1a1c3c 61.52%, #a21d34 133.83%);
     padding: 0;
+    height: fit-content;
   }
   .StrengthImg {
     margin-top: 4px;
@@ -129,10 +133,12 @@
     font-size: 22px;
     width: auto;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     padding-right: 0;
     text-align: left;
-    padding-bottom: 1rem;
+    padding-bottom: 2rem;
+    font-size: 35px;
+    padding-top: 4rem;
   }
 }
 
@@ -148,7 +154,7 @@
     padding-top: 12rem;
     overflow: hidden;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     text-align: left;
     font-size: 50px;
     padding-bottom: 2rem;
@@ -167,7 +173,7 @@
   .StrengthImg {
     min-width: 3rem;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     padding-right: 0;
     text-align: left;
   }
@@ -228,7 +234,7 @@
     justify-content: left;
     flex-direction: column-reverse;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     padding-right: 0;
     text-align: left;
   }
@@ -266,18 +272,19 @@
     color: #fff;
     transform: rotate(270deg);
     padding-bottom: 11rem;
-    margin-top: -5.5rem;
+    margin-top: -11.5rem;
     letter-spacing: 2px;
     display: block;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     font-size: 50px;
     font-weight: 600;
     color: #fff;
-    text-align: center;
+    text-align: left;
     padding-right: 12rem;
     position: relative;
-    bottom: 8rem;
+    bottom: 0rem;
+    /* padding-left: 13rem; */
   }
   .HowWeCame p {
     font-size: 18px;
@@ -297,7 +304,7 @@
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    padding-bottom: 2rem;
+    padding-bottom: 1.5rem;
   }
   .Strengthcol {
     width: 25%;
@@ -328,9 +335,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-left: 5rem;
+    padding-left: 6rem;
     position: relative;
-    bottom: 8rem;
+    bottom: 3rem;
     flex-direction: row;
   }
 }
@@ -384,7 +391,7 @@
     padding-left: 0;
     justify-content: left;
   }
-  .Ourstoryrow h4 {
+  .HeadingRow h4 {
     padding-right: 0;
     text-align: left;
   }

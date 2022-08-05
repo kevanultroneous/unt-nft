@@ -15,11 +15,20 @@ const OurStory = () => {
       data-aos-duration="500"
     >
       <div className={styles.OurStoryContainer}>
+        <Row className={styles.HeadingRow}>
+          <Col xl={2}></Col>
+          <Col xl={10}>
+            <h4>How we came this long...</h4>
+          </Col>
+        </Row>
+
         <Row className={styles.Ourstoryrow}>
           <Col xl={2}>
             <p className={styles.Rotatetext}>OUR STORY</p>
           </Col>
-          <h4>How we came this long...</h4>
+          {/* <Row className={styles.HeadingRow}>
+            <h4>How we came this long...</h4>
+          </Row> */}
           <div className={styles.Mobdiv}>
             <Col xl={8} md={12} xs={12} className={styles.HowWeCame}>
               <p>

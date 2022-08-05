@@ -53,6 +53,9 @@
   .ProudtoWork {
     padding-top: 0;
   }
+  .Alliance h4 {
+    font-size: 35px;
+  }
 }
 
 @media screen and (min-width: 600px) {

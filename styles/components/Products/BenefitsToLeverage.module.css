@@ -158,7 +158,6 @@
   } */
 }
 
-
 /* ================================= */
 
 /* (this for mobile) */
@@ -229,7 +228,7 @@
 
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
-  /* .ArrowTopMob {
+  .ArrowTopMob {
     font-size: 2rem;
     transform: rotate(90deg);
     display: block;
@@ -290,7 +289,7 @@
 
   .ItemTitle {
     padding: 1rem 0;
-  } */
+  }
 }
 
 /* (this for Tab) */
@@ -311,7 +310,8 @@
     padding-bottom: 1rem;
   }
 
-  .BenefitHeading {}
+  .BenefitHeading {
+  }
 
   .ItemCard {
     padding-top: 1rem;
@@ -319,7 +319,8 @@
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {
