@@ -1,5 +1,6 @@
-import styles from "@/styles/components/Careers/WhyMobifinx.module.css";
+import SideHeading from "../Common/SideHeading";
 import { Row, Col, Image } from "react-bootstrap";
+import styles from "@/styles/components/Careers/WhyMobifinx.module.css";
 
 function WhyMobifinx() {
   const benefitsOfMobifinxCard = [
@@ -29,11 +30,15 @@ function WhyMobifinx() {
       desc: "In this world of constant information exchange, we tend to thrive by building synergy.",
     },
   ];
+
+  const styling = {
+    marginLeft: "-3.8rem",
+  };
   return (
     <div className={styles.WhyMobifinxMainContainer}>
       <Row>
-        <Col xl={2} className={styles.sideHeading}>
-          <p>WHY MOBIFINX</p>
+        <Col xl={2} className={styles.WhyMobifinxSideHeading}>
+          <SideHeading customstyle={styling} heading={"WHY MOBIFINX"} />
         </Col>
         <Col xl={10} className={styles.rightSection}>
           <h3>Benefits of Working with us</h3>

@@ -1,5 +1,5 @@
 .HeroContainer {
-  padding: 2.5rem 0 4rem 8.5rem;
+  padding: 2.5rem 4rem 4rem 8.5rem;
   background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
 }
 .SoftwareDevelopmentExpertsRow {
@@ -71,6 +71,7 @@
   color: white;
   font-size: 4.5rem;
   margin: 4rem 0 3rem;
+  font-weight: 600;
 }
 
 .heroContainer {
@@ -168,7 +169,7 @@
     margin: 0 0 1.5rem;
   }
   .careerBigHeading {
-    font-size: 3rem;
+    font-size: 40px;
   }
   .heroHead {
     margin: 6rem 0 0;
@@ -299,7 +300,8 @@
 
 @media only screen and (min-width: 1200px) {
   .HeroContainer {
-    padding: 2.5rem 0 4rem 8.5rem;
+    padding: 2.5rem 2.2rem 4rem 8.5rem;
+    height: 100vh;
     background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
   }
   .SoftwareDevelopmentExpertsRow {
@@ -373,9 +375,13 @@
     margin: 4rem 0 3rem;
   }
 
+  .buttonStyling {
+    padding: 0.5rem 1.5rem;
+  }
+
   .heroContainer {
     align-items: center;
-    margin-top: 0rem;
+    margin-top: -3rem;
   }
   .ReactContainer {
     margin: 0;
@@ -428,7 +434,8 @@
   }
   .sliderContainer p {
     font-size: 1rem;
-    line-height: 1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
   }
 
   .sliderSecondHalf {
@@ -441,10 +448,10 @@
   }
 
   .sliderButton {
-    width: 10vw;
+    width: 8vw;
     display: flex;
     justify-content: space-between;
-    margin: 2.5rem 0 0;
+    margin: 1.5rem 0 0;
   }
 
   .sliderButton div {
