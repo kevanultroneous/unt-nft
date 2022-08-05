@@ -88,7 +88,7 @@
 
 /* Mobile Portrait */
 @media screen and (max-width: 600px) {
-  .sideHeading {
+  .ExploreMobifinxSideHeading {
     display: none;
   }
   .exploreWorkMainContainer {
@@ -151,7 +151,7 @@
   .exploreWorkMainContainer {
     padding: 5rem 1rem 4rem;
   }
-  .sideHeading {
+  .ExploreMobifinxSideHeading {
     display: none;
   }
   .imageContainer {
@@ -273,22 +273,8 @@
   .exploreWorkDiv {
     justify-content: space-between;
   }
-
-  .sideHeading {
+  .ExploreMobifinxSideHeading {
     display: block;
-    margin-top: 2rem;
-    padding-right: 2rem;
-    justify-content: end;
-    width: 16.66666667%;
-  }
-
-  .sideHeading p {
-    color: rgba(18, 18, 18, 0.6);
-    transform: rotate(270deg);
-    margin-left: -2.7rem;
-    padding-bottom: 9rem;
-    letter-spacing: 2px;
-    width: 15rem;
   }
 
   .imageContainer {
@@ -296,7 +282,7 @@
   }
 
   .imageContRow {
-    margin: 0 0 2rem;
+    margin: 0 0 3rem;
     flex-direction: row;
     width: initial;
   }
@@ -313,26 +299,26 @@
   .groupSmImage {
     display: flex;
     justify-content: space-between;
-    width: 33vw;
+    width: 33vw !important;
   }
 
   .groupSmImage div {
-    width: 15vw;
+    width: 15vw !important;
   }
 
   .workPlacesBgImage {
     display: flex;
     justify-content: end;
-    width: 33vw;
-    margin: 0 0 0 2rem;
+    width: 33vw !important;
+    margin: 0 0 0 3rem !important;
   }
 
   .workPlacesSecBgImage {
-    width: 33vw;
+    width: 33vw !important;
   }
 
   .workPlacesSecBgImage {
-    margin: 0 2rem 0 0;
+    margin: 0 3rem 0 0 !important;
   }
 
   .ctaRow {

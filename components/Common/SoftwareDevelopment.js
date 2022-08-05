@@ -7,8 +7,10 @@ const SoftwareDevelopment = (props) => {
     <Row className={styles.SoftwareDevelopmentExpertsRow}>
       <Col xl={6} xs={6} md={6} className="p-0">
         <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
-          <div className={styles.HomeMiniLine} />
-          <span className={styles.HomeSmallHeading}>{props.text}</span>
+          <div className={`${styles.HomeMiniLine} ${props.miniLineStyle}`} />
+          <span className={`${styles.HomeSmallHeading} ${props.textStyle}`}>
+            {props.text}
+          </span>
         </div>
       </Col>
       {props.hidebutton ? null : (

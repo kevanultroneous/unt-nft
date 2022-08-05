@@ -42,7 +42,6 @@ const Hero = ({ clickHandler }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-
   };
 
   return (
@@ -57,7 +56,10 @@ const Hero = ({ clickHandler }) => {
                 <h1 className={styles.careerBigHeading}>
                   You are in a Good Company
                 </h1>
-                <ActionButtonV2 text={"See Open Jobs"} />
+                <ActionButtonV2
+                  partialstyle={styles.buttonStyling}
+                  text={"See Open Jobs"}
+                />
               </div>
             </Col>
             <Col xl={5} md={6} xs={12} sm={6} className={styles.heroCard}>

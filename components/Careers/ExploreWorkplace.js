@@ -1,13 +1,21 @@
 import React from "react";
-import styles from "@/styles/components/Careers/ExploreWorkplace.module.css";
 import { Row, Col, Image } from "react-bootstrap";
+import SideHeading from "../Common/SideHeading";
+import styles from "@/styles/components/Careers/ExploreWorkplace.module.css";
 
 function ExploreWorkplace() {
+  const styling = {
+    marginLeft: "-7.1rem",
+    marginTop: "6.8rem",
+  };
   return (
     <div className={styles.exploreWorkMainContainer}>
       <Row className={styles.exploreWorkDiv}>
-        <Col xl={2} lg={2} className={styles.sideHeading}>
-          <p>EXPLORE OUR WORKPLACE</p>
+        <Col xl={2} className={styles.ExploreMobifinxSideHeading}>
+          <SideHeading
+            customstyle={styling}
+            heading={"EXPLORE OUR WORKPLACE"}
+          />
         </Col>
         <Col xl={10} sm={12} md={12} lg={10} className={styles.rightSection}>
           <div className={styles.imageContainer}>

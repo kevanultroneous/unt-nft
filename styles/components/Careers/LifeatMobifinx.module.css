@@ -2,21 +2,8 @@
   padding: 5rem 0rem 3rem 8.5rem;
 }
 
-.sideHeading {
-  display: block;
-  margin-top: 2rem;
-  padding-right: 2rem;
-  justify-content: end;
-}
-
-.sideHeading p {
-  color: rgba(18, 18, 18, 0.6);
-  transform: rotate(270deg);
-  margin-left: -2.7rem;
-  margin-top: -4.4rem;
-  padding-bottom: 9rem;
-  letter-spacing: 2px;
-  width: 15rem;
+.lifeAtMobifinxSideHeading {
+  padding: 0 1rem 0 0;
 }
 
 .rightText {
@@ -38,7 +25,7 @@
   .lifeMobifinxMainContainer {
     padding: 3rem 0 3rem 1rem;
   }
-  .sideHeading {
+  .lifeAtMobifinxSideHeading {
     display: none;
   }
   .rightText {
@@ -62,7 +49,7 @@
   .lifeMobifinxMainContainer {
     padding: 5rem 0 3rem 1rem !important;
   }
-  .sideHeading {
+  .lifeAtMobifinxSideHeading {
     display: none;
   }
 
@@ -125,28 +112,14 @@
 
 @media only screen and (min-width: 1200px) {
   .lifeMobifinxMainContainer {
-    padding: 5rem 0rem 3rem 8.5rem !important;
+    padding: 5rem 0rem 0rem 8.5rem !important;
   }
-
-  .sideHeading {
+  .lifeAtMobifinxSideHeading {
     display: block;
-    margin-top: 2rem;
-    padding-right: 2rem;
-    justify-content: end;
-  }
-
-  .sideHeading p {
-    color: rgba(18, 18, 18, 0.6);
-    transform: rotate(270deg);
-    margin-left: -2.7rem;
-    margin-top: -4.4rem;
-    padding-bottom: 9rem;
-    letter-spacing: 2px;
-    width: 15rem;
   }
 
   .rightText {
-    width: 53vw !important;
+    width: 48vw !important;
   }
 
   .rightText h3 {
@@ -157,5 +130,9 @@
 
   .rightText p {
     margin: 3rem 0 5rem;
+  }
+  .rightImage {
+    text-align: -webkit-right;
+    width: 100%;
   }
 }

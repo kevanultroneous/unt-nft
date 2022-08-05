@@ -1,4 +1,5 @@
 import styles from "@/styles/components/Careers/LifeatMobifinx.module.css";
+import SideHeading from "../Common/SideHeading";
 import { Row, Col, Image } from "react-bootstrap";
 
 import React from "react";
@@ -7,8 +8,8 @@ function LifeatMobifinx() {
   return (
     <div className={styles.lifeMobifinxMainContainer}>
       <Row>
-        <Col xl={2} className={styles.sideHeading}>
-          <p>LIFE AT MOBIFINX</p>
+        <Col xl={2} className={styles.lifeAtMobifinxSideHeading}>
+          <SideHeading heading={"LIFE AT MOBIFINX"} />
         </Col>
         <Col xl={10} md={12} className={styles.rightSection}>
           <Col xl={12} md={12} lg={12} sm={12} className={styles.rightText}>
