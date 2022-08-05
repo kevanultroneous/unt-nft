@@ -372,6 +372,9 @@
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
+  .MobileMenu {
+    display: none;
+  }
 }
 
 /* (this for large device) */

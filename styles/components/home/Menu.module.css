@@ -73,9 +73,9 @@
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
-  .NftMenu {
+  /* .NftMenu {
     display: none;
-  }
+  } */
 }
 
 /* (this for large device) */

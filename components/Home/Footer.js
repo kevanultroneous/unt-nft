@@ -14,7 +14,7 @@ const Footer = () => {
   return (
     <div className={styles.FooterContainer}>
       <Row className="mx-0">
-        <Col xl={6} md={12}>
+        <Col xl={6} md={6}>
           <h4 className={styles.SubscribeHeading}>
             Subscribe to our Newsletter
           </h4>
@@ -33,7 +33,7 @@ const Footer = () => {
         </Col>
       </Row>
       <Row className={styles.FooterLinksContainer}>
-        <Col xl={6} md={12}>
+        <Col xl={6} md={6}>
           <div className="d-flex align-items-center">
             <Link href="/contact-us">
               <div className={styles.FooterContactusLink}>
@@ -49,7 +49,7 @@ const Footer = () => {
             </Link>
           </div>
         </Col>
-        <Col xl={6} md={12} className={styles.FooterIconCol}>
+        <Col xl={6} md={6} className={styles.FooterIconCol}>
           <div
             className={`${styles.FooterIconContainer} ${styles.FooterIconHelper}`}
           >
