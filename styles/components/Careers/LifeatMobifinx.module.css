@@ -82,6 +82,21 @@
   .rightText {
     width: 95vw !important;
   }
+  .rightText h3 {
+    font-size: 50px;
+    line-height: 4rem;
+    text-align: center;
+  }
+  .rightText p {
+    width: 95vw;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2e3159;
+    font-style: normal;
+    margin: 0%;
+    text-align: center;
+    margin: 1.5rem 0;
+  }
   .sideHeading {
     display: none;
   }
@@ -92,6 +107,9 @@
 
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
+  .lifeMobifinxMainContainer {
+    padding: 5rem 0 3rem 8rem !important;
+  }
   .sideHeading {
     margin-top: 0;
     padding-right: 0;
@@ -103,10 +121,21 @@
     padding-bottom: 0rem;
   }
   .rightText {
-    width: 70vw;
+    width: 88vw !important;
+  }
+  .rightText h3 {
+    text-align: left;
   }
   .rightText p {
+    width: initial;
     margin: 3rem 0;
+    text-align: left;
+    /* text-align: left; */
+  }
+  .rightImage {
+    display: flex !important;
+    justify-content: right !important;
+    padding: 0 0 0 3rem;
   }
 }
 

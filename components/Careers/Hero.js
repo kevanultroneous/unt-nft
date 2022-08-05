@@ -51,7 +51,14 @@ const Hero = ({ clickHandler }) => {
         <Container fluid className={styles.ReactContainer}>
           <SoftwareDevelopment text="MobifinX Careers" hidebutton />
           <Row className={styles.heroContainer}>
-            <Col xl={6} md={6} xs={12} sm={6} className={styles.heroHead}>
+            <Col
+              xl={6}
+              md={12}
+              lg={6}
+              xs={12}
+              sm={6}
+              className={styles.heroHead}
+            >
               <div className={styles.careerHeroLeftText}>
                 <h1 className={styles.careerBigHeading}>
                   You are in a Good Company
@@ -62,7 +69,14 @@ const Hero = ({ clickHandler }) => {
                 />
               </div>
             </Col>
-            <Col xl={5} md={6} xs={12} sm={6} className={styles.heroCard}>
+            <Col
+              xl={5}
+              md={12}
+              lg={6}
+              xs={12}
+              sm={6}
+              className={styles.heroCard}
+            >
               <SlickSlider
                 {...settings}
                 className={`careerSlickSLider`}

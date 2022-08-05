@@ -60,7 +60,7 @@
   }
   .careerAccordionHeading {
     color: white;
-    font-size: 4rem;
+    font-size: 50px !important;
     margin: 0 0 3rem;
   }
 }
@@ -86,7 +86,7 @@
 
   .careerAccordionHeading {
     color: white;
-    font-size: 5rem;
+    font-size: 5rem !important;
     margin: 0 0 3rem;
   }
 }

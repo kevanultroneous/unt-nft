@@ -250,14 +250,14 @@
     margin: auto;
   }
   .ctaButton p {
-    margin: 0 4rem 0 0;
+    margin: 0 3rem 0 0;
     font-size: 1.8rem;
   }
   .ctaButton img {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
   .ctaButton img:hover {
-    transform: scale(1.5);
+    transform: scale(1.2);
   }
 }
 

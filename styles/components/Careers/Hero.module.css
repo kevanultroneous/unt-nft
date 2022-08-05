@@ -271,7 +271,14 @@
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
   .HeroContainer {
-    padding: 6.8rem 1rem 3rem;
+    padding: 5.5rem 1rem 3rem;
+    height: 100vh;
+  }
+  .careerBigHeading {
+    color: white;
+    font-size: 4.5rem;
+    margin: 17rem 0 3rem;
+    font-weight: 600;
   }
   .ReactContainer {
     max-width: fit-content !important;
@@ -282,19 +289,39 @@
   .sliderContainer {
     width: auto;
     height: auto;
+    margin: 5rem 1rem 0;
+  }
+  .sliderFirstHalf h3 {
+    margin: 2rem 0;
+  }
+  .sliderSecondHalf {
+    padding: 3rem 1.5rem 0.5rem;
+  }
+  .sliderContainer p {
+    font-size: 1rem;
+    line-height: 1.4rem;
   }
   .heroCard {
     margin: 0;
   }
   .sliderButton {
-    width: 15vw;
+    width: 10vw;
   }
 }
 
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
+  .HeroContainer {
+    padding: 4rem 1rem 3rem 8rem;
+  }
   .heroCard {
     margin: 0 0 0 -1.3rem;
+  }
+  .heroContainer {
+    margin-top: -1.5rem;
+  }
+  .careerBigHeading {
+    margin: 5rem 0 3rem;
   }
 }
 
