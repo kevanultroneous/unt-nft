@@ -7,10 +7,10 @@ const Alliance = () => {
       <div className={styles.Alliancecontainer}>
         <Row className={styles.Alliancerow}>
           <Col xl={2}>
-            <p className={styles.Rotatetext}>ALLIANCES & PARTNERSHIPS</p>
+            <p className={styles.Rotatetext}>CERTIFICATES</p>
           </Col>
           <Col xl={4} className={styles.ProudtoWork}>
-            <h4>We are Proud to work with</h4>
+            <h4>Look at our Achievements</h4>
           </Col>
           <Col xl={6}>
             <Row className={styles.Partnerrow}>

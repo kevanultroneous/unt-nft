@@ -32,12 +32,30 @@
   border-radius: 10px;
   height: 186px;
   width: 100%; */
+  background: #fff;
+  margin: 1rem;
+  border-radius: 10px;
+}
+.AchivementCol {
+  text-align: center;
+}
+.AchivmentImg {
+  padding: 2rem 0;
+  min-width: 10rem;
+  min-height: 14rem;
+}
+.AchievementsDetails {
+  padding: 2rem 1rem;
+  text-align: justify;
+}
+.Border {
+  border-bottom: 5px solid #f8f8f9;
 }
 /*  */
-@media (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .AchievementsContainer {
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
   }
   .AchievementsHead {
     text-align: left;
@@ -47,8 +65,30 @@
     font-size: 35px;
   }
   .AchivmentImg {
-    width: 100%;
+    min-width: 8rem;
     height: auto;
+    padding-right: 1rem;
+  }
+  .AchievementBox {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .AchievementsDetails {
+    padding: 0.5rem;
+    text-align: left;
+  }
+}
+@media only screen and (min-width: 600px) {
+  .AchievementsContainer {
+    padding: 2.5rem 1rem 4rem 1rem;
+  }
+  .AchievementBox {
+    margin: 0.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
 @media (min-width: 768px) and (max-width: 1080px) {
@@ -65,6 +105,62 @@
   .AchivmentImg {
     width: 100%;
     height: auto;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .AchievementsContainer {
+    padding-top: 2.5rem;
+    padding-left: 8.5rem;
+    padding-right: 3rem;
+    padding-bottom: 4rem;
+    background: rgba(26, 28, 60, 0.03);
+  }
+  .AchievementsHead {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 70px;
+    text-align: center;
+    color: #a21d34;
+    margin: 0%;
+  }
+  .AchievementsTitle {
+    font-weight: 600;
+    font-size: 50px;
+    text-align: center;
+    color: #000000;
+    margin: 0%;
+  }
+  .AchievementBoxContainer {
+    padding-top: 4rem;
+  }
+  .AchievementBox {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #ffffff;
+    box-shadow: 0px 0px 14px rgba(208, 208, 208, 0.15);
+    border-radius: 10px;
+    height: 186px;
+    width: 100%; */
+    background: #fff;
+    margin: 1rem;
+    border-radius: 10px;
+    display: block;
+  }
+  .AchivementCol {
+    text-align: center;
+  }
+  .AchivmentImg {
+    padding: 2rem 0;
+    min-width: 10rem;
+    min-height: 14rem;
+  }
+  .AchievementsDetails {
+    padding: 2rem 1rem;
+    text-align: justify;
+  }
+  .Border {
+    border-bottom: 5px solid #f8f8f9;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

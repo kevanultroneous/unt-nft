@@ -2,15 +2,8 @@ import styles from "@/styles/components/home/Achievements.module.css";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
+import { AchivmentData } from "utils/AchivmentsData";
 const Achievements = () => {
-  const listAch = [
-    "/assets/images/CMMi.svg",
-    "/assets/images/GoogleCloud.svg",
-    "/assets/images/ISO.svg",
-    "/assets/images/ISO1.svg",
-    "/assets/images/Azure.svg",
-    "/assets/images/CMMi.svg",
-  ];
   // useEffect(() => {
   //   AOS.refresh();
   //   AOS.init();
@@ -22,24 +15,30 @@ const Achievements = () => {
         // data-aos={"zoom-in"}
         // data-aos-duration="3000"
       >
-        CERTIFICATES
+        ALLIANCES & PARTNERSHIP
       </p>
       <h4
         className={styles.AchievementsTitle}
         // data-aos={"zoom-in"}
         // data-aos-duration="3000"
       >
-        Look at our Achievements
+        We are proud to Work with
       </h4>
       <Row className={styles.AchievementBoxContainer}>
-        {listAch.map((v, i) => (
-          <Col xl={2} xs={4} key={i}>
+        {AchivmentData.map((v, i) => (
+          <Col xl={3} xs={12} key={i} className={styles.AchivementCol}>
             <div
               className={styles.AchievementBox}
               // data-aos={"zoom-in"}
               // data-aos-duration="3000"
             >
-              <Image alt={v} src={v} className={styles.AchivmentImg} />
+              <Image
+                alt={v.image}
+                src={v.image}
+                className={styles.AchivmentImg}
+              />
+              <div className={styles.Border}></div>
+              <p className={styles.AchievementsDetails}>{v.Detail}</p>
             </div>
           </Col>
         ))}

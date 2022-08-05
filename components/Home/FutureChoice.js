@@ -88,35 +88,39 @@ const FutureChoice = () => {
               onMouseOver={() => setC2(true)}
               onMouseLeave={() => setC2(false)}
             >
-              <h5
-                className={`${styles.HungryHeading} ${
-                  c2 ? styles.HungryHeading2 : null
-                }`}
-              >
-                Hungry for more?
-              </h5>
-              <p
-                className={`${styles.HungryParagraph} ${
-                  c2 ? styles.HungryParagraph2 : null
-                }`}
-              >
-                Read more articles on our blog.
-              </p>
-              {c2 ? (
-                <Link href={"/"}>
-                  <div className={styles.Outer} style={{ cursor: "pointer" }}>
-                    <div className={styles.Button}>
-                      <div classNane={styles.Text}>Visit Blog Page</div>
+              <div>
+                <h5
+                  className={`${styles.HungryHeading} ${
+                    c2 ? styles.HungryHeading2 : null
+                  }`}
+                >
+                  Hungry for more?
+                </h5>
+                <p
+                  className={`${styles.HungryParagraph} ${
+                    c2 ? styles.HungryParagraph2 : null
+                  }`}
+                >
+                  Read more articles on our blog.
+                </p>
+              </div>
+              <div>
+                {c2 ? (
+                  <Link href={"/"}>
+                    <div className={styles.Outer} style={{ cursor: "pointer" }}>
+                      <div className={styles.Button}>
+                        <div classNane={styles.Text}>Visit Blog Page</div>
+                      </div>
                     </div>
-                  </div>
-                </Link>
-              ) : (
-                <ActionButton
-                  href={"/"}
-                  text={"Visit Blog Page"}
-                  outerstyle={{ marginTop: "2.5rem" }}
-                />
-              )}
+                  </Link>
+                ) : (
+                  <ActionButton
+                    href={"/"}
+                    text={"Visit Blog Page"}
+                    outerstyle={{ marginTop: "2.5rem" }}
+                  />
+                )}
+              </div>
             </div>
           </div>
         </Col>
