@@ -1,4 +1,5 @@
 import styles from "@/styles/components/Careers/LifeatMobifinx.module.css";
+import SideHeading from "../Common/SideHeading";
 import { Row, Col, Image } from "react-bootstrap";
 
 import React from "react";
@@ -7,11 +8,11 @@ function LifeatMobifinx() {
   return (
     <div className={styles.lifeMobifinxMainContainer}>
       <Row>
-        <Col xl={2} className={styles.sideHeading}>
-          <p>EXPLORE OUR WORKPLACE</p>
+        <Col xl={2} className={styles.lifeAtMobifinxSideHeading}>
+          <SideHeading heading={"LIFE AT MOBIFINX"} />
         </Col>
-        <Col xl={10} className={styles.rightSection}>
-          <div className={styles.rightText}>
+        <Col xl={10} md={12} className={styles.rightSection}>
+          <Col xl={12} md={12} lg={12} sm={12} className={styles.rightText}>
             <h3>We Believe in adding X-Factor to everywhere</h3>
             <p>
               It is a long established fact that a reader will be distracted by
@@ -23,13 +24,14 @@ function LifeatMobifinx() {
               Ipsum as their default model text, and a search for &apos;lorem
               ipsum&apos; will uncover many web sites still in their infancy.
             </p>
-          </div>
-          <div className={styles.rightImage}>
+          </Col>
+          <Col xl={12} md={12} lg={12} sm={12} className={styles.rightImage}>
             <Image
+              fluid
               src="/assets/images/Career-Life-Mobifinx.png"
               alt="Life At MobifinX"
             />
-          </div>
+          </Col>
         </Col>
       </Row>
     </div>

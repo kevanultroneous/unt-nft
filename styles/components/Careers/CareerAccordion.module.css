@@ -1,0 +1,92 @@
+.CareerAccordion {
+  padding: 6rem 4rem 4rem 20.5rem;
+  background: #1a1c3c;
+}
+
+.careerAccordionHeading {
+  color: white;
+  font-size: 5rem;
+  margin: 0 0 3rem;
+}
+
+.accordionRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.JobVacancyNumber {
+  padding: 2px 7px;
+  font-size: 12px;
+  margin: 0 0 0 1rem;
+  background-color: #434343;
+  border-radius: 50%;
+  text-align: center;
+}
+
+.CareerAccordionExp {
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.CareerAccordionTest {
+  margin: 0 0.5rem;
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 2rem;
+    margin: 0 0 3rem;
+  }
+}
+/* Mobile Landscape and Tablet Portrait*/
+@media screen and (min-width: 600px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 35px !important;
+    margin: 0 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .CareerAccordion {
+    padding: 3rem 1rem;
+  }
+  .careerAccordionHeading {
+    color: white;
+    font-size: 4rem;
+    margin: 0 0 3rem;
+  }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) {
+  .CareerAccordion {
+    padding: 6rem 4.1rem 4rem 8.5rem;
+    background: #1a1c3c;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .CareerAccordion {
+    padding: 6rem 5rem 4rem 21.8rem;
+    background: #1a1c3c;
+  }
+
+  .accordionRow {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .careerAccordionHeading {
+    color: white;
+    font-size: 5rem;
+    margin: 0 0 3rem;
+  }
+}

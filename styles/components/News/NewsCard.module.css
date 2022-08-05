@@ -1,0 +1,137 @@
+.newsMainContainer {
+  padding: 0rem 1.5rem 0rem 7.8rem;
+}
+
+.newsBox {
+  background: #f8f8f9;
+  padding: 2rem 1.3rem 2.4rem;
+  margin: 0.7rem;
+  border-radius: 12px;
+}
+
+.newsImageBox {
+  margin: 0 0 7rem;
+  position: relative;
+}
+
+.newsCount {
+  display: flex;
+  justify-content: right;
+}
+
+.newsCount span {
+  font-size: 165px;
+  font-weight: 600;
+  color: white;
+  position: absolute;
+  top: -5.5rem;
+  right: -2.1rem;
+}
+
+.newsHeadLine {
+  padding: 0 2rem 1rem 0;
+}
+
+.newsHeadLine h6 {
+  font-size: 22px;
+  font-weight: 600;
+}
+
+.newsBody p {
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 23px;
+  text-align: justify;
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
+  .newsMainContainer {
+    padding: 0 1rem 0;
+  }
+  .newsBox {
+    margin: 0 0 1rem;
+  }
+  .newsCount span {
+    font-size: 100px;
+    top: -4.5rem;
+    right: -1rem;
+  }
+  .newsImageBox {
+    margin: 0 0 3rem;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+}
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+  .newsMainContainer {
+    padding: 0 1rem 0;
+  }
+  .newsBox {
+    margin: 0 0 2rem;
+  }
+
+  .newsLogo {
+  }
+  .newsCount span {
+    font-size: 150px;
+    top: -6.5rem;
+    right: -2rem;
+  }
+  .newsImageBox {
+    margin: 0 0 4rem;
+  }
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .newsMainContainer {
+    padding: 0rem 1.5rem 0rem 7.8rem !important;
+  }
+
+  .newsBox {
+    background: #f8f8f9;
+    padding: 2rem 1.3rem 2.4rem;
+    margin: 0.7rem !important;
+    border-radius: 12px;
+  }
+
+  .newsImageBox {
+    margin: 0 0 7rem;
+    position: relative;
+  }
+
+  .newsCount {
+    display: flex;
+    justify-content: right;
+  }
+
+  .newsCount span {
+    font-size: 165px !important;
+    font-weight: 600;
+    color: white;
+    position: absolute;
+    top: -5.5rem !important;
+    right: -2.1rem !important;
+  }
+
+  .newsHeadLine {
+    padding: 0 2rem 1rem 0;
+  }
+
+  .newsHeadLine h6 {
+    font-size: 22px;
+    font-weight: 600;
+  }
+
+  .newsBody p {
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 23px;
+    text-align: justify;
+  }
+}

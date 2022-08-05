@@ -1,5 +1,5 @@
 .HeroContainer {
-  padding: 2.5rem 0 4rem 8.5rem;
+  padding: 2.5rem 4rem 4rem 8.5rem;
   background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
 }
 .SoftwareDevelopmentExpertsRow {
@@ -70,10 +70,18 @@
 .careerBigHeading {
   color: white;
   font-size: 4.5rem;
+  margin: 4rem 0 3rem;
+  font-weight: 600;
 }
 
 .heroContainer {
   align-items: center;
+  margin-top: 0rem;
+}
+.ReactContainer {
+  margin: 0;
+  padding: 0;
+  max-width: 100vw;
 }
 .sliderFirstHalf,
 .sliderContainer {
@@ -97,8 +105,6 @@
 }
 
 .sliderContainer {
-  width: 35vw;
-  height: 33rem;
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 1.5rem;
   margin: 8rem 1rem 0;
@@ -134,7 +140,6 @@
 .sliderButton {
   display: flex;
   justify-content: space-between;
-  width: 7vw;
   margin: 2.5rem 0 0;
 }
 
@@ -152,41 +157,29 @@
 .sliderButton img:hover {
   transform: scale(0.8);
 }
-
-@media (min-width: 768px) and (max-width: 1080px) {
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
   .HeroContainer {
-    padding: 6rem 0 4rem 1rem;
+    padding: 5.8rem 1rem 5rem 1rem;
   }
-  .heroContainer {
-    flex-direction: column;
-    justify-content: center;
-  }
-}
-
-@media (min-width: 320px) and (max-width: 768px) {
   .heroContainer {
     justify-content: end;
-  }
-  .HeroContainer {
-    padding: 4.8rem 0 5rem 1rem;
-    background: linear-gradient(77.42deg, #1a1c3b 18.05%, #a21d34 148.07%);
   }
   .careerHeroLeftText h1 {
     margin: 0 0 1.5rem;
   }
   .careerBigHeading {
-    font-size: 3rem;
+    font-size: 40px;
   }
   .heroHead {
     margin: 6rem 0 0;
   }
-  .sliderFirstHalf img {
+  .sliderImage {
     width: 7rem;
   }
 
   .sliderContainer {
-    width: 91vw;
-    height: 28rem;
+    /* width: 91vw; */
     border-radius: 1rem;
     border: 0.3px solid rgba(255, 255, 255, 0.5);
     margin: 10rem 0rem 0;
@@ -211,10 +204,268 @@
   }
 
   .sliderButton img:hover {
-    transform: scale(0.8);
+    transform: scale(0.6);
   }
   .sliderButton div {
     width: 8vw;
     height: 8vw;
+  }
+}
+
+/* Mobile Landscape */
+@media screen and (min-width: 600px) {
+  .HeroContainer {
+    padding: 4.8rem 1rem 1rem;
+  }
+  .ReactContainer {
+    max-width: fit-content !important;
+  }
+  .heroContainer {
+    justify-content: space-between;
+    margin-top: -6rem;
+  }
+  .careerBigHeading {
+    color: white;
+    font-size: 2rem;
+    margin: 4rem 0 3rem;
+  }
+  .heroCard {
+    margin: 0;
+  }
+  .sliderContainer {
+    width: auto;
+    height: auto;
+    margin: 8rem 1rem 0;
+  }
+  .sliderImage {
+    width: 12vw;
+  }
+  .sliderFirstHalf {
+    margin: -3rem 0 0;
+  }
+  .sliderContainer p {
+    font-size: 0.8rem;
+    line-height: 0.8rem;
+  }
+  .sliderSecondHalf {
+    padding: 1rem 0.5rem 0.5rem;
+  }
+  .sliderButton {
+    width: 13vw;
+    margin: 0.5rem 0 0;
+  }
+  .sliderButton div {
+    width: 6vw;
+    height: 6vw;
+  }
+  .sliderButton img {
+    transform: scale(0.55);
+    transition: all 0.3s ease;
+  }
+
+  .sliderButton img:hover {
+    transform: scale(0.6);
+  }
+}
+
+/* Tablet portrait */
+@media screen and (min-width: 768px) {
+  .HeroContainer {
+    padding: 6.8rem 1rem 3rem;
+  }
+  .ReactContainer {
+    max-width: fit-content !important;
+  }
+  .heroContainer {
+    justify-content: space-between;
+  }
+  .sliderContainer {
+    width: auto;
+    height: auto;
+  }
+  .heroCard {
+    margin: 0;
+  }
+  .sliderButton {
+    width: 15vw;
+  }
+}
+
+/* Tablet Landscape */
+@media only screen and (min-width: 992px) {
+  .heroCard {
+    margin: 0 0 0 -1.3rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .HeroContainer {
+    padding: 2.5rem 2.2rem 4rem 8.5rem;
+    height: 100vh;
+    background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
+  }
+  .SoftwareDevelopmentExpertsRow {
+    margin: 0%;
+    align-items: center;
+    padding-bottom: 2.5rem;
+    padding-top: 0;
+  }
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+  }
+  .HomeMiniLine {
+    width: 40px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #000;
+  }
+  .HomeSmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+  }
+  .SoftwareDevelopmentExpertsBtnCol {
+    justify-content: flex-end;
+    margin-top: 0rem;
+    display: flex;
+    padding-right: 4rem;
+  }
+  .Scrolldowncontainer {
+    transform: rotate(-90deg);
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    position: relative;
+    animation: scrolldowntotop 4s ease-in 0s infinite normal;
+    animation-direction: alternate;
+    margin-left: -11.5rem;
+    margin-top: 24rem;
+  }
+  @keyframes scrolldowntotop {
+    0% {
+      top: 10px;
+    }
+    25% {
+      top: -10px;
+    }
+    50% {
+      top: 10px;
+    }
+    75% {
+      top: -10px;
+    }
+    100% {
+      top: 10px;
+    }
+  }
+  .ImageDown {
+    transform: rotate(90deg);
+  }
+  .ScrolldownText {
+    margin: 0%;
+    padding-left: 1rem;
+  }
+  .ScrolldownMainCol {
+    display: flex;
+    align-items: center;
+  }
+  .careerBigHeading {
+    color: white;
+    font-size: 4.5rem;
+    margin: 4rem 0 3rem;
+  }
+
+  .buttonStyling {
+    padding: 0.5rem 1.5rem;
+  }
+
+  .heroContainer {
+    align-items: center;
+    margin-top: -3rem;
+  }
+  .ReactContainer {
+    margin: 0;
+    padding: 0;
+    max-width: 100vw;
+  }
+  .sliderFirstHalf,
+  .sliderContainer {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .heroCard {
+    margin: 0 0 0 3rem;
+  }
+
+  .sliderFirstHalf {
+    width: 100%;
+    margin: -5rem 0 0;
+  }
+
+  .sliderFirstHalf h3 {
+    margin: 1rem 0;
+  }
+
+  .sliderContainer {
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    border-radius: 1.5rem;
+    margin: 8rem 1rem 0;
+  }
+
+  .designationRow {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    align-items: center;
+  }
+  .designationLines {
+    height: 1px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 30%;
+  }
+
+  .sliderContainer h6 {
+    margin: 0;
+    opacity: 0.5;
+    font-style: italic;
+  }
+  .sliderContainer p {
+    font-size: 1rem;
+    line-height: 1.4rem;
+    font-weight: 300;
+  }
+
+  .sliderSecondHalf {
+    padding: 3rem 1.5rem 0.5rem;
+    text-align: center;
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .sliderButton {
+    width: 8vw;
+    display: flex;
+    justify-content: space-between;
+    margin: 1.5rem 0 0;
+  }
+
+  .sliderButton div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .sliderButton img {
+    transform: scale(0.7);
+    transition: all 0.3s ease;
+  }
+
+  .sliderButton img:hover {
+    transform: scale(0.8);
   }
 }
