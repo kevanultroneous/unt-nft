@@ -1,14 +1,11 @@
 .Parallax {
   background-image: url("/assets/images/Parallaxnew1.png");
   background-position: center;
-  /* background-attachment: fixed; */
-  -o-background-size: cover;
-  -moz-background-size: cover;
-  -webkit-background-size: cover;
+  background-attachment: fixed;
+
   background-size: cover;
   background-repeat: no-repeat;
   padding-bottom: 4rem;
-  background-position-x: center;
 }
 
 .Effect {
@@ -193,13 +190,16 @@
   }
 
   .Mainsection {
-    padding: 2rem 0;
+    padding: 0rem 0;
     padding-bottom: 0;
   }
 
   .Pera {
     padding-left: 0;
     font-size: 18px;
+  }
+  .Effect {
+    padding-top: 0rem;
   }
 }
 
@@ -242,8 +242,156 @@
   }
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {
+@media only screen and (min-width: 1200px) {
+  .Parallax {
+    background-image: url("/assets/images/Parallaxnew1.png");
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+    background-repeat: no-repeat;
+    padding-bottom: 4rem;
+  }
+
+  .Effect {
+    padding-top: 4rem;
+  }
+
+  .Parallaxrow {
+    display: flex;
+    align-items: center;
+    padding-top: 3rem;
+    padding-left: 10rem;
+    padding-bottom: 0rem;
+  }
+
+  .Pera {
+    font-size: 22px;
+    font-weight: 400;
+    color: #1a1c3c;
+    /* color: #fff; */
+    padding-left: 1rem;
+  }
+
+  .MainHeading {
+    font-size: 100px;
+    font-weight: 500;
+    /* color: #fff; */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #a21d34, #b13f76, #7b4396);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #1a1c3c;
+    /* font-size: 10rem; */
+    /* width: 80vw;
+    margin: 0; */
+    /* display: block; */
+    text-align: left;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 900;
+    /* text-decoration: none;
+    -webkit-transition: 0.2s; */
+  }
+
+  .Mainsection {
+    padding: 0rem 0 0rem 3rem;
+    /* background-color: blue; */
+  }
+
+  .MainHeading:hover {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: left;
+    }
+
+    50% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
+
+  .MainHeadingSecure {
+    font-size: 100px;
+    font-weight: 500;
+    /* color: #fff; */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #bf78bb, #615ebf, #035aa6);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #1a1c3c;
+    text-align: left;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 900;
+  }
+
+  .MainHeadingSecure:hover {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: left;
+    }
+
+    50% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
+
+  .MainHeadingSuccess {
+    font-size: 100px;
+    font-weight: 500;
+    /* color: #fff; */
+    text-transform: uppercase;
+    background: linear-gradient(to right, #1b0273, #3866f2, #6f04d9);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: #1a1c3c;
+    text-align: left;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding-bottom: 4rem;
+  }
+
+  .MainHeadingSuccess:hover {
+    color: rgba(0, 0, 0, 0);
+  }
+
+  @keyframes rainbow {
+    0% {
+      background-position: left;
+    }
+
+    50% {
+      background-position: right;
+    }
+
+    100% {
+      background-position: left;
+    }
+  }
+}
+
+/* @media (min-width: 1200px) and (max-width: 1730px) {
 }
 
 @media (min-width: 650px) and (max-width: 740px) {
-}
+} */
