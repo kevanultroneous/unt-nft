@@ -105,13 +105,16 @@
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
   .WhyMobifinxMainContainer {
-    padding: 5rem 0rem 3rem 8.5rem;
+    padding: 5rem 2.5rem 3rem 8.5rem;
   }
   .mobifinxBenefits {
     margin: 2rem 0 0;
   }
   .sideHeading {
     display: none;
+  }
+  .benefitsBox {
+    padding: 1rem 0rem 1rem 1rem;
   }
 }
 

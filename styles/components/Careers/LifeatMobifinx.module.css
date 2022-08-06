@@ -121,16 +121,17 @@
     padding-bottom: 0rem;
   }
   .rightText {
-    width: 88vw !important;
+    width: auto !important;
+    padding: 0 2.5rem 0 0;
   }
   .rightText h3 {
     text-align: left;
+    width: 60vw;
   }
   .rightText p {
     width: initial;
     margin: 3rem 0;
-    text-align: left;
-    /* text-align: left; */
+    text-align: justify;
   }
   .rightImage {
     display: flex !important;

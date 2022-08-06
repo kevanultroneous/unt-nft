@@ -19,7 +19,7 @@ function ExploreWorkplace() {
         </Col>
         <Col xl={10} sm={12} md={12} lg={10} className={styles.rightSection}>
           <div className={styles.imageContainer}>
-            <Row xs={12} xl={6} md={6} lg={6} className={styles.imageContRow}>
+            <Row xs={12} xl={6} md={6} lg={6} sm={6} className={styles.imageContRow}>
               <div className={styles.groupSmImage}>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
@@ -53,7 +53,7 @@ function ExploreWorkplace() {
             <Row
               xs={12}
               xl={6}
-              sm={12}
+              sm={6}
               lg={6}
               className={(styles.imageContRow, styles.imageSecondRow)}
             >

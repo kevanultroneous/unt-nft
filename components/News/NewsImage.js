@@ -43,7 +43,7 @@ function NewsImage({ reverse, newsData }) {
       <Row className={reverse ? styles.imageNewsRow : null}>
         {newsData.map((news, ind) => {
           return (
-            <Col key={ind} xl={colLength(ind)} xs={12} md={12}>
+            <Col key={ind} xl={colLength(ind)} lg={colLength(ind)} xs={12} md={12}>
               <div className={styles.NewsCard}>
                 <NewsImageCard
                   srcimg={news.srcimg}

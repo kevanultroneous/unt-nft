@@ -63,6 +63,20 @@
 }
 /* mobile landscape */
 @media screen and (min-width: 600px) {
+  .newsMainContainer {
+    padding: 0 1rem 0;
+  }
+  .newsBox {
+    margin: 0 0 1rem;
+  }
+  .newsCount span {
+    font-size: 100px;
+    top: -4.5rem;
+    right: -1rem;
+  }
+  .newsImageBox {
+    margin: 0 0 3rem;
+  }
 }
 /* tablet portrait */
 @media only screen and (min-width: 768px) {
@@ -83,6 +97,15 @@
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
+  .newsMainContainer {
+    padding: 0rem 1.5rem 0rem 7.8rem !important;
+  }
+  .newsBox {
+    background: #f8f8f9;
+    padding: 2rem 1.3rem 2.4rem;
+    margin: 0.7rem !important;
+    border-radius: 12px;
+  }
 }
 /* PC */
 @media only screen and (min-width: 1200px) {
