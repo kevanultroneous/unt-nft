@@ -1,0 +1,82 @@
+.HeroDetailsWrraper {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.HeroHeading {
+  font-size: 60px;
+  text-align: left;
+  margin-bottom: 4rem;
+  width: 61.7rem;
+  margin-left: 6rem;
+}
+.ImageWrraper {
+  display: flex;
+  justify-content: flex-end;
+  margin-left: 6rem;
+}
+.HeroDetailContainer {
+  padding: 4rem 0 0rem 0rem;
+}
+
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .HiddenInMobile {
+    display: none;
+  }
+  .HeroDetailContainer {
+    padding: 2.5rem 0rem 2rem 1rem;
+  }
+  .HeroDetailsWrraper {
+    padding: 0 0rem 0 1rem;
+  }
+  .HeroHeading {
+    margin: 0%;
+    width: auto;
+    font-size: 35px;
+    /* text-align: justify; */
+  }
+  .ImageWrraper {
+    margin: 0%;
+    margin-top: 2.5rem;
+  }
+}
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {
+  .HeroDetailsWrraper {
+    padding: 0rem 1rem;
+  }
+}
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {
+}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .HeroDetailsWrraper {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+  .HeroHeading {
+    font-size: 60px;
+    text-align: left;
+    margin-bottom: 4rem;
+    width: 61.7rem;
+    margin-left: 6rem;
+  }
+  .ImageWrraper {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: 6rem;
+  }
+  .HeroDetailContainer {
+    padding: 4rem 0 0rem 0rem;
+  }
+}
