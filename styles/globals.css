@@ -1,5 +1,5 @@
 /* @import url("https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"); */
-@import "../public/assets/fonts/jost-Font-Stylesheet.css";
+@import "/assets/fonts/jost-Font-Stylesheet.css";
 
 html,
 body {
@@ -29,6 +29,7 @@ a {
   padding-top: 1.5rem;
   width: 50px;
 }
+
 /* =====================MENU HAMBURGER ICON=================== */
 
 #hamburger-12.is-active .lineHam:nth-child(1) {
@@ -52,6 +53,7 @@ a {
 .fadeoutcss {
   animation: fade-out 1s;
 }
+
 .react-tel-input {
   font-family: "Jost", sans-serif !important;
   font-size: 15px;
@@ -62,6 +64,7 @@ a {
   padding-right: 1.5rem !important;
   padding-left: 1.5rem !important;
 }
+
 .react-tel-input .flag-dropdown {
   position: absolute;
   bottom: 0;
@@ -73,10 +76,12 @@ a {
   border-radius: 3px 0 0 3px;
   top: 12% !important;
 }
+
 .react-tel-input .selected-flag:hover,
 .react-tel-input .selected-flag:focus {
   background-color: transparent !important;
 }
+
 .form-control:focus {
   color: #212529;
   background-color: #fff;
@@ -84,6 +89,7 @@ a {
   outline: 0;
   box-shadow: none !important;
 }
+
 .react-tel-input .form-control {
   border-top: none !important;
   border-left: none !important;
@@ -92,13 +98,16 @@ a {
   width: 15rem !important;
   padding-bottom: 1.3rem;
 }
+
 .form-control {
   border-radius: 0% !important;
 }
+
 @keyframes fade-in {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -108,28 +117,35 @@ a {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
     display: none;
   }
 }
+
 @keyframes colorchange {
   0% {
     box-shadow: 0px 0px 10px 0px rgba(201, 76, 151, 1);
   }
+
   25% {
     box-shadow: 0px 0px 10px 0px rgba(226, 118, 37, 1);
   }
+
   50% {
     box-shadow: 0px 0px 10px 0px rgba(0, 172, 215, 1);
   }
+
   75% {
     box-shadow: 0px 0px 10px 0px rgba(63, 224, 197, 1);
   }
+
   100% {
     box-shadow: 0px 0px 10px 0px rgba(161, 153, 255, 1);
   }
 }
+
 .fade-in-left-anim {
   animation: fadeInLeft 1s ease-in-out;
   animation-delay: 5ms;
@@ -139,10 +155,12 @@ a {
   0% {
     transform: translateX(-1000px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
+
 .fade-in-left-anim2 {
   animation: fadeInLeft2 1s ease-in-out;
   animation-delay: 10ms;
@@ -152,18 +170,22 @@ a {
   0% {
     transform: translateX(1000px);
   }
+
   100% {
     transform: translateX(0px);
   }
 }
+
 .fade-in-left-anim2-remove {
   animation: fadeInLeft2remove 1s ease-in-out;
   animation-delay: 10ms;
 }
+
 @-webkit-keyframes fadeInLeft2remove {
   0% {
     transform: translateX(0px);
   }
+
   100% {
     transform: translateX(1000px);
   }
@@ -178,10 +200,12 @@ a {
   0% {
     transform: translateX(0px);
   }
+
   100% {
     transform: translateX(-1000px);
   }
 }
+
 .fade-down {
   animation: fadedown 1s ease-in-out;
   animation-delay: 10ms;
@@ -191,10 +215,12 @@ a {
   0% {
     transform: translateY(-100vh);
   }
+
   100% {
     transform: translateY(0px);
   }
 }
+
 .fade-down-remove {
   animation: fadedownremove 1s ease-in-out;
   animation-delay: 10ms;
@@ -204,10 +230,12 @@ a {
   0% {
     transform: translateY(0px);
   }
+
   100% {
     transform: translateY(-100vh);
   }
 }
+
 .fade-in-anim {
   animation: fadeIn 1.5s;
 }
@@ -216,10 +244,12 @@ a {
   0% {
     opacity: 0;
   }
+
   100% {
     opacity: 1;
   }
 }
+
 /* .slick-slider {
   padding: 0% !important;
 } */
@@ -244,19 +274,20 @@ a {
 }
 
 /* Track */
-::-webkit-scrollbar-track {
-}
+::-webkit-scrollbar-track {}
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
   background: #323232;
   border-radius: 20px;
 }
+
 @keyframes fadeInRight {
   0% {
     opacity: 0;
     transform: translateX(20px);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
@@ -267,9 +298,11 @@ a {
   -webkit-animation-name: fadeInRight;
   animation-name: fadeInRight;
 }
+
 .row {
   --bs-gutter-x: 0rem !important;
 }
+
 /* Handle on hover */
 /* ::-webkit-scrollbar-thumb:hover {
   background:;
@@ -295,41 +328,50 @@ a {
     border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out,
     border-radius 0.15s ease;
 }
+
 .accordion-button:not(.collapsed) {
   color: #000000 !important;
   background-color: #f5f5f5 !important;
   box-shadow: inset 0 -1px 0 rgb(255 255 255 / 13%) !important;
 }
+
 .accordion-button:focus {
   z-index: 3;
   border-color: #ffffff !important;
   outline: 0;
   box-shadow: none !important;
 }
+
 .accordion-flush .accordion-item {
   border-right: 0;
   border-left: 0;
   border-radius: 0;
   padding: 1rem 0 !important;
 }
+
 .accordion-item {
   background-color: #f5f5f5 !important;
   border: 1px solid rgba(0, 0, 0, 0.125);
 }
+
 /* ==================================== Accodian css ============================================== */
 .offcanvas {
   transform: none;
   margin-top: 4.6rem;
 }
+
 .offcanvas-backdrop {
   background: none !important;
 }
+
 .offcanvas-start {
   width: 100% !important;
 }
+
 .offcanvas-body {
   padding: 0% !important;
 }
+
 .accordion-body {
   padding: 1rem 0.25rem !important;
 }
@@ -343,42 +385,49 @@ a {
   .slick-slide img {
     margin-top: 0rem;
   }
+
   .react-tel-input .flag-dropdown {
     top: -25% !important;
   }
+
   .react-tel-input .form-control {
     width: 20rem !important;
     padding-bottom: 1.5rem;
   }
+
   .accordion-button {
     padding-left: 0% !important;
     padding-right: 0% !important;
   }
 }
+
 @media (min-width: 768px) and (max-width: 1080px) {
   .accordion-button {
     padding-left: 0% !important;
     padding-right: 0% !important;
     font-size: 16px !important;
   }
+
   .react-tel-input {
     padding: 0 !important;
   }
+
   .react-tel-input .form-control {
     width: 21rem !important;
     padding-bottom: 1.5rem !important;
     margin-right: 2rem;
   }
+
   .react-tel-input .flag-dropdown {
     top: 15% !important;
   }
 }
-@media (min-width: 650px) and (max-width: 740px) {
-}
-@media (min-width: 1200px) and (max-width: 1730px) {
-}
-@media (min-width: 1920px) and (max-height: 1080px) {
-}
+
+@media (min-width: 650px) and (max-width: 740px) {}
+
+@media (min-width: 1200px) and (max-width: 1730px) {}
+
+@media (min-width: 1920px) and (max-height: 1080px) {}
 
 /* ======================================= */
 

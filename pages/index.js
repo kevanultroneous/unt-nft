@@ -18,6 +18,7 @@ import MenuPackage from "@/components/Common/MenuPackage";
 import Parallax from "@/components/Home/Parallax";
 import AnimatedCursor from "react-animated-cursor";
 
+
 export default function Home() {
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
@@ -46,6 +47,16 @@ export default function Home() {
     }, 5000);
     return () => clearTimeout(timer3);
   }, []);
+
+  const insideStyles = {
+    background: "white",
+    padding: 20,
+    position: "absolute",
+    top: "50%",
+    left: "50%",
+    transform: "translate(-50%,-50%)"
+  };
+
 
   return (
     <Layout
@@ -97,6 +108,8 @@ export default function Home() {
           {/* Speciality */}
           {/* <Speciality /> */}
           <Parallax />
+
+
           {/* Footer */}
           <Footer />
         </>
