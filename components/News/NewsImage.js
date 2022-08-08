@@ -9,6 +9,7 @@ const NewsImageCard = ({
   animdelay,
   BigNewsTitle,
   NewsDate,
+  imageTitle,
   disTitle,
   dish1,
   dish2,
@@ -25,7 +26,7 @@ const NewsImageCard = ({
       // data-aos-mirror="true"
     >
       <div className={styles.newsImage}>
-        <Image src={srcimg} fluid alt="Avatar" />
+        <Image src={srcimg} fluid alt={imageTitle} />
       </div>
       <div className={styles.NewsImageCardText}>
         <p className={styles.NewsImageCardParagraph}>{NewsDate}</p>
@@ -43,9 +44,16 @@ function NewsImage({ reverse, newsData }) {
       <Row className={reverse ? styles.imageNewsRow : null}>
         {newsData.map((news, ind) => {
           return (
-            <Col key={ind} xl={colLength(ind)} lg={colLength(ind)} xs={12} md={12}>
+            <Col
+              key={ind}
+              xl={colLength(ind)}
+              lg={colLength(ind)}
+              xs={12}
+              md={12}
+            >
               <div className={styles.NewsCard}>
                 <NewsImageCard
+                  imageTitle={news.BigNewsTitle}
                   srcimg={news.srcimg}
                   NewsDate={news.NewsDate}
                   BigNewsTitle={news.BigNewsTitle}
