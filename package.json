@@ -23,6 +23,7 @@
     "react-icons": "^4.3.1",
     "react-locomotive-scroll": "^0.2.0",
     "react-lottie": "^1.2.3",
+    "react-parallax": "^3.5.1",
     "react-phone-input-2": "^2.15.0",
     "react-slick": "^0.29.0",
     "resize-observer-polyfill": "^1.5.1",
