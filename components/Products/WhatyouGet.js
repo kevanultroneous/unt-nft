@@ -91,39 +91,42 @@ const WhatyouGet = () => {
                 </p>
               </div>
             </Col>
-            <Col
-              xl={6}
-              md={6}
-              className={`${styles.Heading} ${styles.BigHead}`}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="500"
-              data-aos-easing="ease"
-            >
-              <div className="d-flex align-items-center">
-                <div className={styles.FooterContactusLink}>Explore</div>
-                <HiOutlineExternalLink className={styles.ContactusIcon} />
-              </div>
-            </Col>
+            <div className={styles.ExplorDesign}>
+              <Col
+                xl={6}
+                md={6}
+                className={`${styles.Heading} `}
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-delay="500"
+                data-aos-easing="ease"
+              >
+                <div className="d-flex align-items-center">
+                  <div className={styles.FooterContactusLink}>Explore</div>
+                  <HiOutlineExternalLink className={styles.ContactusIcon} />
+                </div>
+              </Col>
 
-            <Col
-              xl={6}
-              md={6}
-              className={styles.Heading}
-              data-aos="fade-left"
-              data-aos-duration="3000"
-              data-aos-delay="500"
-              data-aos-easing="ease"
-            >
-              <div className={styles.Details}>
-                <h4>Portfolio Margining</h4>
-                <p>
-                  Designed for active traders, market makers, and institutional
-                  clients seeking optimized risk management, cross-hedging.
-                </p>
-              </div>
-            </Col>
-            <Col
+              <Col
+                xl={6}
+                md={6}
+                className={styles.Heading}
+                data-aos="fade-left"
+                data-aos-duration="3000"
+                data-aos-delay="500"
+                data-aos-easing="ease"
+              >
+                <div className={styles.Details}>
+                  <h4>Portfolio Margining</h4>
+                  <p>
+                    Designed for active traders, market makers, and
+                    institutional clients seeking optimized risk management,
+                    cross-hedging.
+                  </p>
+                </div>
+              </Col>
+            </div>
+            {/* <Col
               xl={6}
               md={6}
               className={`${styles.Heading} ${styles.BigHead2}`}
@@ -138,7 +141,7 @@ const WhatyouGet = () => {
                   <HiOutlineExternalLink className={styles.ContactusIcon} />
                 </div>
               </div>
-            </Col>
+            </Col> */}
           </Row>
         </Col>
       </Row>

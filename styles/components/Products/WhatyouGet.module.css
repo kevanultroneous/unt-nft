@@ -267,6 +267,10 @@
   .Headingcol h4 {
     font-size: 18px;
   }
+  .ExplorDesign {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 /* (this for mobile landscape) */
@@ -328,6 +332,10 @@
   .Headingcol h4 {
     font-size: 18px;
   }
+  .ExplorDesign {
+    display: flex;
+    flex-direction: column-reverse;
+  }
 }
 
 /* (this for Tab) */
@@ -366,6 +374,9 @@
 
   .Headingcol h4 {
     font-size: 20px;
+  }
+  .ExplorDesign {
+    display: flex;
   }
 }
 
@@ -478,5 +489,8 @@
 
   .BigHead2 {
     display: block;
+  }
+  .ExplorDesign {
+    display: flex;
   }
 }
