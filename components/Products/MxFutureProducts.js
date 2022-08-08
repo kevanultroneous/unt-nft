@@ -35,7 +35,10 @@ const MxFutureProducts = ({ text }) => {
                   <Col xl={4}>
                     <div className="col">
                       <h2 className={styles.Cardtitle}>Title</h2>
-                      <Image src={""} alt="card-img" />
+                      <Image
+                        src={"/assets/images/Cardsample.svg"}
+                        alt="card-img"
+                      />
                       {/* <p className={styles.Carddescription}>
                     Do you want to own a team but without the hassle of
                     recruitment, infrastructure investment, heavy running costs
@@ -73,7 +76,11 @@ const MxFutureProducts = ({ text }) => {
                       <Row>
                         <Col xl={4}>
                           <div>
-                            <h1>Helloo</h1>
+                            {/* <h1>Helloo</h1> */}
+                            <Image
+                              src={"/assets/images/Cardsample.svg"}
+                              alt="Image"
+                            />
                           </div>
                         </Col>
                         <Col xl={8}>
