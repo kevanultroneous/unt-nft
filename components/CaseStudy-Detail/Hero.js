@@ -11,7 +11,7 @@ export default function Hero() {
             Platform
           </h4>
           <div className={styles.ImageWrraper}>
-            <Image src="/assets/images/etherium.png" alt="etherium" fluid />
+            <Image src="/assets/images/etherium.png" alt="etherium" className={styles.HeroImage} />
           </div>
         </div>
       </Col>

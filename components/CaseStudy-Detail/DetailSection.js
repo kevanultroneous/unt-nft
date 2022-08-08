@@ -10,7 +10,45 @@ export default function DetailSection() {
     { name: "Solution", link: "#solution" },
     { name: "Result", link: "#result" },
   ];
+  useEffect(() => {
 
+    window.addEventListener('scroll', () => {
+      let tab1 = document.getElementById('about-the-client')
+      let tab1Rect = tab1.getBoundingClientRect()
+      let tab2 = document.getElementById('business')
+      let tab2Rect = tab2.getBoundingClientRect()
+      let tab3 = document.getElementById('solution')
+      let tab3Rect = tab3.getBoundingClientRect()
+      let tab4 = document.getElementById('result')
+      let tab4Rect = tab4.getBoundingClientRect()
+      // do uncomment for testing
+      // console.log("1 : " + tab1Rect.y)
+      // console.log("2 : " + tab2Rect.y)
+      // console.log("3 : " + tab3Rect.y)
+      // console.log("4 : " + tab4Rect.y)
+
+      /*
+        why choose -302.32  
+        when click to any tabs  , selected tab upper tab  Y  cordinate is  generate the space for reading the current tab
+      */
+      if (tab1Rect.y < 0 || tab2Rect.y > -302.32) {
+        setCurrentTab(0)
+      }
+
+      if (tab1Rect.y < -302.32 || tab2Rect.y < 0.67) {
+        setCurrentTab(1)
+      }
+
+      if (tab2Rect.y < -302.32 || tab3Rect.y < 0.67) {
+        setCurrentTab(2)
+      }
+
+      if (tab3Rect.y < -302.32 || tab4Rect.y < 0.67) {
+        setCurrentTab(3)
+      }
+
+    })
+  })
   return (
     <Row className={styles.DetailSectionWrraper}>
       <Col xl={2} lg={2}>
@@ -18,11 +56,10 @@ export default function DetailSection() {
           {TabList.map((value, index) => (
             <Link href={value.link} key={index}>
               <div
-                className={`${
-                  index === CurrentTab
-                    ? styles.TabSelectedContainer
-                    : styles.TabContainer
-                }`}
+                className={`${index === CurrentTab
+                  ? styles.TabSelectedContainer
+                  : styles.TabContainer
+                  }`}
                 onClick={() => setCurrentTab(index)}
               >
                 <span></span>
@@ -119,7 +156,7 @@ export default function DetailSection() {
               appropriately and on time.
             </p>
             <div className={styles.SolutionImage}>
-              <Image src="/assets/images/solution-img.png" fluid />
+              <Image src="/assets/images/solution-img.png" className={styles.SolutionImageConfigure} />
             </div>
           </div>
         </div>

@@ -91,7 +91,7 @@ const CaseStudy = () => {
       <div className={styles.CaseStudyContainer}>
         {/* heading row */}
         {/* made this component duplicate */}
-        <Row>
+        <Row className={styles.TitleForTab}>
           <h4 className={styles.HeadingText}>Get inspired by Case Studies</h4>
         </Row>
         {/* cards and side mini actions bar */}
@@ -106,10 +106,9 @@ const CaseStudy = () => {
               <p className={styles.CategoriesTitle}>Categories</p>
               {categories.map((value, index) => (
                 <p
-                  className={`${styles.CategoriesList} ${
-                    index === currentTab &&
+                  className={`${styles.CategoriesList} ${index === currentTab &&
                     `${styles.CategoriesListSelected} ${styles.BorderSelected}`
-                  }`}
+                    }`}
                   onClick={() => setCurrentTab(index)}
                 >
                   {value}

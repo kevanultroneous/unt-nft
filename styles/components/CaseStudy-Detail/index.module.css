@@ -1,6 +1,7 @@
 .MainTitleContainer {
   padding: 2rem 0 0rem 8.5rem;
 }
+
 .DetailSectionContainer {
   padding-bottom: 10rem;
 }
@@ -15,16 +16,19 @@
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
   .MainTitleContainer {
-    padding: 4.5rem 0rem 2rem 1rem;
+    padding: 2.5rem 0rem 2rem 1rem;
   }
 }
 
 /* (this for Tab) */
-@media only screen and (min-width: 768px) {
-}
+@media only screen and (min-width: 768px) {}
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
+  .MainTitleContainer {
+    padding: 2.5rem 0rem 2rem 8.5rem;
+  }
+
 }
 
 /* (this for large device) */
@@ -32,6 +36,7 @@
   .MainTitleContainer {
     padding: 2rem 0 0rem 8.5rem;
   }
+
   .DetailSectionContainer {
     padding-bottom: 10rem;
   }

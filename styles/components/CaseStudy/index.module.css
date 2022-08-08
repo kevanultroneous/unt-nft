@@ -34,7 +34,7 @@
 }
 
 .CardWrraper {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 
 .CardRightSectionBottomTitle {
@@ -75,7 +75,7 @@
 
 .TabSection {
   position: sticky;
-  top: 0;
+  top: 20px;
   margin-left: 0.2rem;
 }
 
@@ -291,6 +291,10 @@
     transition: all 0s ease;
   }
 
+  .TitleForTab {
+    justify-content: center;
+  }
+
   .BorderSelected {
     border-bottom: 2.5px solid #000000;
     transition: all 1s ease;
@@ -365,6 +369,10 @@
   .CardWrraper {
     margin-bottom: 3rem;
   }
+
+  .TitleForTab {
+    justify-content: flex-start;
+  }
 }
 
 /* (this for large device) */
@@ -401,7 +409,7 @@
   }
 
   .CardWrraper {
-    margin-bottom: 2.5rem;
+    margin-bottom: 3rem;
   }
 
   .CardRightSectionBottomTitle {
@@ -445,7 +453,7 @@
   .TabSection {
     display: block;
     position: sticky;
-    top: 0;
+    top: 20px;
     margin-left: 0.2rem;
   }
 

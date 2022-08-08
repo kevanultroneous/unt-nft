@@ -3,20 +3,28 @@
   flex-direction: column;
   justify-content: flex-end;
 }
+
 .HeroHeading {
-  font-size: 60px;
+  font-size: 57px;
   text-align: left;
   margin-bottom: 4rem;
-  width: 61.7rem;
+  width: 59rem;
   margin-left: 6rem;
 }
+
 .ImageWrraper {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  margin-left: 6rem;
+  padding-left: 6rem;
 }
+
 .HeroDetailContainer {
   padding: 4rem 0 0rem 0rem;
+}
+
+.HeroImage {
+  width: 100%;
 }
 
 /* (this for mobile) */
@@ -24,37 +32,78 @@
   .HiddenInMobile {
     display: none;
   }
+
   .HeroDetailContainer {
-    padding: 2.5rem 0rem 2rem 1rem;
+    padding: 0rem 0rem 0rem 1rem;
   }
+
   .HeroDetailsWrraper {
-    padding: 0 0rem 0 1rem;
+    padding: 0 0rem 0 0rem;
   }
+
   .HeroHeading {
     margin: 0%;
     width: auto;
     font-size: 35px;
     /* text-align: justify; */
   }
+
   .ImageWrraper {
     margin: 0%;
     margin-top: 2.5rem;
+    padding: 0%;
   }
 }
 
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
+
+  .HeroDetailContainer {
+    padding-top: 0%;
+  }
+
+  .HeroHeading {
+    margin: 0%;
+    padding-left: 1rem;
+    width: 100%;
+  }
+
+  .ImageWrraper {
+    padding-left: 1rem;
+    margin-top: 5rem;
+  }
 }
 
 /* (this for Tab) */
 @media only screen and (min-width: 768px) {
+  .HeroDetailContainer {
+    padding-top: 0rem;
+  }
+
   .HeroDetailsWrraper {
-    padding: 0rem 1rem;
+    padding: 0rem 0rem;
+  }
+
+  .HeroHeading {
+    margin: 0%;
+    padding-left: 1rem;
+    font-size: 48px;
+    padding-right: 1rem;
+    width: 100%;
+  }
+
+  .ImageWrraper {
+    margin: 0%;
+    margin-top: 2.5rem;
+    padding-left: 1rem;
   }
 }
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
+  .HeroHeading {
+    font-size: 58px;
+  }
 }
 
 /* (this for large device) */
@@ -64,18 +113,22 @@
     flex-direction: column;
     justify-content: flex-end;
   }
+
   .HeroHeading {
-    font-size: 60px;
+    font-size: 57px !important;
     text-align: left;
     margin-bottom: 4rem;
-    width: 61.7rem;
-    margin-left: 6rem;
+    width: 100% !important;
+    padding-left: 6rem;
   }
+
   .ImageWrraper {
+    width: 100%;
     display: flex;
     justify-content: flex-end;
-    margin-left: 6rem;
+    padding-left: 6rem;
   }
+
   .HeroDetailContainer {
     padding: 4rem 0 0rem 0rem;
   }
