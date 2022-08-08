@@ -41,10 +41,11 @@ const Menu = ({ opacity, handleClick, change, addClass, clicktoCloseMenu }) => {
           <Image
             onClick={clicktoCloseMenu}
             style={{ cursor: "pointer" }}
-            alt={"xicon"}
-            src="/assets/images/xicon.svg"
+            alt={"MobifinX"}
+            title={"MobifinX"}
+            src="/assets/images/Mobifinx.svg"
             fluid
-            className="pt-4"
+            className="mobifinxlogo"
           />
         </Link>
       </div>

@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Jost';
+    src: url('../fonts/Jost-Regular.eot');
+    src: url('../fonts/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/Jost-Regular.woff2') format('woff2'),
+        url('../fonts/Jost-Regular.woff') format('woff'),
+        url('../fonts/Jost-Regular.ttf') format('truetype'),
+        url('../fonts/Jost-Regular.svg#Jost-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
