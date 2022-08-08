@@ -5,12 +5,10 @@
 .miniLineStyling {
   border-color: #000000;
 }
-
 .LightHeroHeading {
   width: 60vw;
   margin: 6.5rem 0 0;
 }
-
 .LightHeroHeading h3 {
   font-weight: 600;
   font-size: 4.5rem;
@@ -20,8 +18,8 @@
 /* mobile portrait */
 @media screen and (max-width: 600px) {
   .LightHeroHeading {
-    width: 95vw !important;
-    margin: 1rem 0 0;
+    width: 80vw !important;
+    margin: 4rem 0 0;
   }
   .LightHeroHeading h3 {
     font-weight: 600;
@@ -48,11 +46,16 @@
     width: 95vw !important;
     margin: 5rem 0 0;
   }
+  .LightHeroHeading h3 {
+    font-weight: 600;
+    font-size: 50px;
+  }
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
-  .LightHeroHeading {
-    width: 60vw !important;
+  .LightHeroHeading h3 {
+    font-weight: 600;
+    font-size: 60px;
   }
 }
 /* PC */
@@ -66,7 +69,7 @@
   }
 
   .LightHeroHeading {
-    width: 60vw !important;
+    width: 40rem !important;
     margin: 6.5rem 0 0;
   }
 

@@ -8,13 +8,14 @@ const EventCard = ({
   imageTitle,
   EventsTitle,
   EventsParagraph,
+  customStyle,
 }) => {
   return (
     <div className={`${styles.NewsImageCard} ${style}`}>
       <div className={styles.newsImage}>
         <Image src={srcimg} fluid alt={imageTitle} />
       </div>
-      <div className={styles.NewsImageCardText}>
+      <div className={`${styles.NewsImageCardText} ${customStyle}`}>
         <p className={styles.NewsImageCardTitle}>{EventsTitle}</p>
         <p className={styles.NewsImageCardParagraph}>{EventsParagraph}</p>
       </div>
@@ -23,27 +24,3 @@ const EventCard = ({
 };
 
 export default EventCard;
-
-// function NewsImage({ reverse, newsData }) {
-//   return (
-//     <div className={styles.NewsImageCardContainer}>
-//       <Row className={reverse ? styles.imageNewsRow : null}>
-//         {newsData.map((news, ind) => {
-//           return (
-//             <Col key={ind} xl={12} lg={12} xs={12} md={12}>
-//               <div className={styles.NewsCard}>
-//                 <NewsImageCard
-//                   srcimg={news.srcimg}
-//                   NewsDate={news.NewsDate}
-//                   BigNewsTitle={news.BigNewsTitle}
-//                 />
-//               </div>
-//             </Col>
-//           );
-//         })}
-//       </Row>
-//     </div>
-//   );
-// }
-
-// export default NewsImage;

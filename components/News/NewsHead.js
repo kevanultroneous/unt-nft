@@ -7,7 +7,7 @@ function NewsHead() {
     <div className={styles.newsHeadContainer}>
       <LightHead
         text={"Mobifinx News"}
-        heading={"Know everything at one place"}
+        heading={`Know everything at one place`}
       />
     </div>
   );

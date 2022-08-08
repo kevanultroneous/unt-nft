@@ -41,6 +41,52 @@
   display: flex;
   flex-direction: row-reverse;
 }
+.NewsCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  opacity: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.NewsDishead1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0%;
+}
+.NewsInspire {
+  width: 3rem;
+  height: 2px;
+  background: #ffffff;
+  margin-bottom: 1rem;
+}
+.NewsImageCard:hover .NewsCardOverlay {
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(162, 29, 52, 0.9);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.NewsImageCard:hover .NewsImageCardText {
+  opacity: 0;
+}
+.NewsCardOverlayText {
+  color: white;
+  font-size: 20px;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+}
 
 /* mobile portrait */
 @media screen and (max-width: 600px) {
@@ -66,13 +112,31 @@
     font-weight: 400;
     font-size: 12px;
     text-align: justify;
-    margin: 0%;
+    margin: 0 0 0.5em;
     padding: 0;
   }
   .newsImage {
     height: 190px;
     overflow: hidden;
     border-radius: 15px;
+  }
+  .NewsCardOverlay {
+    width: 100%;
+  }
+  .NewsCardOverlayText {
+    padding: 1rem 1rem;
+  }
+  .NewsImageCardText {
+    width: 100%;
+  }
+  .InspiredCardcontainer {
+    width: 100%;
+  }
+  .NewsImageCardTitle {
+    font-size: 16px;
+  }
+  .NewsImageCardParagraph {
+    padding-bottom: 0.5rem;
   }
 }
 /* mobile landscape */
@@ -99,7 +163,7 @@
     font-weight: 400;
     font-size: 12px;
     text-align: justify;
-    margin: 0 0 0.5rem;
+    margin: 0 0 0.2rem;
     padding: 0;
   }
   .newsImage {
@@ -141,6 +205,22 @@
     height: 470px;
     overflow: hidden;
     border-radius: 15px;
+  }
+  .NewsCardOverlay {
+    width: 100%;
+  }
+  .NewsCardOverlayText {
+    padding: 1rem 1rem;
+  }
+  .NewsImageCardText {
+    width: 100%;
+  }
+
+  .NewsImageCardTitle {
+    font-size: 16px;
+  }
+  .NewsImageCardParagraph {
+    padding-bottom: 0.5rem;
   }
 }
 /* tablet landscape */
@@ -229,5 +309,18 @@
   .imageNewsRow {
     display: flex;
     flex-direction: row-reverse;
+  }
+  .newsImage {
+    height: 55vh;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .newsImage {
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
   }
 }

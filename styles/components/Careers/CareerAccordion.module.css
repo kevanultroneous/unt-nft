@@ -75,7 +75,7 @@
 
 @media only screen and (min-width: 1200px) {
   .CareerAccordion {
-    padding: 6rem 5rem 4rem 20.5rem;
+    padding: 6rem 5rem 4rem 22rem;
     background: #1a1c3c;
   }
 
@@ -86,7 +86,8 @@
 
   .careerAccordionHeading {
     color: white;
-    font-size: 5rem !important;
+    font-size: 50px !important;
     margin: 0 0 3rem;
+    font-weight: 600;
   }
 }

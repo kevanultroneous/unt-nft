@@ -149,13 +149,14 @@
   }
 
   .rightText {
-    width: 48vw !important;
+    width: 57vw !important;
   }
 
   .rightText h3 {
     font-size: 4rem;
     font-weight: 600;
     line-height: 4rem;
+    width: 100%;
   }
 
   .rightText p {
@@ -164,5 +165,6 @@
   .rightImage {
     text-align: -webkit-right;
     width: 100%;
+    padding: 0;
   }
 }

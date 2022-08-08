@@ -25,8 +25,11 @@
   padding-right: 4rem;
 }
 
-@media (min-width: 320px) and (max-width: 768px) {
+@media (max-width: 600px) {
   .HomeSmallHeading {
     font-size: 14px;
+  }
+  .HomeMiniLine {
+    width: 25px;
   }
 }

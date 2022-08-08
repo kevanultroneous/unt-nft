@@ -1,0 +1,70 @@
+.UpComingEventsRow {
+  background: rgba(162, 29, 52, 0.04);
+  padding: 1rem 2rem 2rem 4rem;
+  margin: 1rem 0;
+}
+
+.upcomingEventDesc,
+.upcomingEventDate,
+.alignItemsCenter {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.upcomingEventDate h4 {
+  font-size: 44px;
+  font-weight: 500;
+  margin: 0%;
+}
+
+.upcomingEventDate p {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.6);
+  margin: 0%;
+  font-size: 12px;
+}
+
+.upcomingEventDesc h6 {
+  font-size: 18px;
+  margin: 0%;
+}
+.upcomingEventDesc p {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 14px;
+  margin: 0%;
+}
+
+.UpComingEventsRegisterButton {
+  color: #a21d34;
+  border-color: #a21d34;
+  padding: 0.3rem 1.5rem;
+}
+
+/* mobile portrait */
+@media screen and (max-width: 600px) {
+  .UpComingEventsRow {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+  }
+  .upcomingEventDesc {
+    margin: 1rem 0;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+  .UpComingEventsRow {
+    padding: 1.5rem 1rem;
+    margin: 1rem 0;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+}

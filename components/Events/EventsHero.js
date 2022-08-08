@@ -7,13 +7,15 @@ function EventsHero() {
   return (
     <div className={styles.EventsHeroContainer}>
       <EventsHead />
-      <EventCard
-        srcimg={"assets/images/event-hero.png"}
-        EventsTitle={
-          "A network-driven platform integrating e-commerce, a wallet, and trading features"
-        }
-        EventsParagraph={"An ecosystem where all the gambling platforms"}
-      />
+      <div className={styles.EventHeroCard}>
+        <EventCard
+          srcimg={"assets/images/event-hero.png"}
+          EventsTitle={
+            "A network-driven platform integrating e-commerce, a wallet, and trading features"
+          }
+          EventsParagraph={"An ecosystem where all the gambling platforms"}
+        />
+      </div>
     </div>
   );
 }
