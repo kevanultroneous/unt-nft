@@ -2,6 +2,7 @@ import React from "react";
 import EventsHead from "./EventsHead";
 import EventCard from "./EventCard";
 import styles from "@/styles/components/Events/EventsHero.module.css";
+import { refresh } from "aos";
 
 function EventsHero() {
   return (
