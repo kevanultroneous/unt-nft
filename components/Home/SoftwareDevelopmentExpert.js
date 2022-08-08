@@ -52,12 +52,12 @@ const SDE = ({ handleClick }) => {
       {
         breakpoint: 600,
         settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
+          slidesToShow: 1.35,
+          slidesToScroll: 2,
           initialSlide: 1,
+          centerMode: true,
           autoplay: true,
-          autoplaySpeed: 2000,
-          easing: "linear",
+          autoplaySpeed: 5000,
           // swipeToSlide: true,
         },
       },
