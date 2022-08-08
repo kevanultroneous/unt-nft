@@ -32,7 +32,7 @@ const MxFutureProducts = ({ text }) => {
             <li className={styles.card01}>
               <div className={styles.rows}>
                 <Row className={styles.MainRowCard}>
-                  <Col xl={4}>
+                  <Col xl={4} xs={4}>
                     <div className="col">
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
@@ -43,7 +43,7 @@ const MxFutureProducts = ({ text }) => {
                       <span className={styles.number}>01</span>
                     </div>
                   </Col>
-                  <Col xl={4}>
+                  <Col xl={4} xs={4}>
                     <div className="col">
                       <p className={styles.Carddescription}>
                         Do you want to own a team but without the hassle of
@@ -55,10 +55,10 @@ const MxFutureProducts = ({ text }) => {
                       </p>
                     </div>
                   </Col>
-                  <Col xl={4}>
+                  <Col xl={4} xs={4}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
-                        <Col xl={4}>
+                        <Col xl={4} xs={4}>
                           <div className={styles.Detaildiv}>
                             <Image
                               src={"/assets/images/Detail-1.svg"}
@@ -67,7 +67,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} xs={8} className={styles.CardcolDetail}>
                           <div>
                             <h1 className={styles.CardHead}>Review Profile</h1>
                           </div>
@@ -78,7 +78,7 @@ const MxFutureProducts = ({ text }) => {
                             </p>
                           </div>
                         </Col>
-                        <Col xl={4}>
+                        <Col xl={4} xs={4}>
                           <div className={styles.Detaildiv}>
                             <Image
                               src={"/assets/images/Detail-2.svg"}
@@ -87,7 +87,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} xs={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Meet the Candidate
@@ -100,7 +100,7 @@ const MxFutureProducts = ({ text }) => {
                             </p>
                           </div>
                         </Col>
-                        <Col xl={4}>
+                        <Col xl={4} xs={4}>
                           <div className={styles.Detaildiv}>
                             <Image
                               src={"/assets/images/Detail-3.svg"}
@@ -109,7 +109,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} xs={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Pricing & Contract
@@ -166,7 +166,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <div>
                             <h1 className={styles.CardHead}>Review Profile</h1>
                           </div>
@@ -186,7 +186,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Meet the Candidate
@@ -208,7 +208,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Pricing & Contract
@@ -265,7 +265,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <div>
                             <h1 className={styles.CardHead}>Review Profile</h1>
                           </div>
@@ -285,7 +285,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Meet the Candidate
@@ -307,7 +307,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Pricing & Contract
@@ -364,7 +364,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <div>
                             <h1 className={styles.CardHead}>Review Profile</h1>
                           </div>
@@ -384,7 +384,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Meet the Candidate
@@ -406,7 +406,7 @@ const MxFutureProducts = ({ text }) => {
                             />
                           </div>
                         </Col>
-                        <Col xl={8}>
+                        <Col xl={8} className={styles.CardcolDetail}>
                           <di>
                             <h1 className={styles.CardHead}>
                               Pricing & Contract

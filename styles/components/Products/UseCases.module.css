@@ -208,6 +208,9 @@
 .Detaildiv {
   padding: 0 0.5rem;
 }
+.CardcolDetail {
+  padding-right: 1rem;
+}
 
 /* (this for mobile) */
 @media screen and (max-width: 600px) {
@@ -257,7 +260,7 @@
 
   .sectionCards .sectionContent li {
     top: calc(50vh + 52px - 215px - 40px);
-    height: 650px;
+    height: 1000px;
   }
 
   .sectionCards .sectionContent {
@@ -297,6 +300,10 @@
     padding-bottom: 4rem;
     padding-left: 0rem;
   }
+  /* .MainImage {
+    width: 50%;
+    padding: 0;
+  } */
 }
 
 /* (this for mobile landscape) */

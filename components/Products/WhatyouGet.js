@@ -105,6 +105,7 @@ const WhatyouGet = () => {
                 <HiOutlineExternalLink className={styles.ContactusIcon} />
               </div>
             </Col>
+
             <Col
               xl={6}
               md={6}

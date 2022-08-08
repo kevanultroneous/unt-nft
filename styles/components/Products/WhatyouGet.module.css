@@ -76,11 +76,13 @@
   -webkit-transition: background-position 0.6s ease-in-out;
   -o-transition: background-position 0.6s ease-in-out;
   transition: background-position 0.6s ease-in-out;
-  background-image: -webkit-gradient(linear,
-      left bottom,
-      left top,
-      color-stop(50%, #ffffff),
-      color-stop(50%, #1a1c3c));
+  background-image: -webkit-gradient(
+    linear,
+    left bottom,
+    left top,
+    color-stop(50%, #ffffff),
+    color-stop(50%, #1a1c3c)
+  );
   background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
@@ -198,10 +200,11 @@
   } */
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
 
-@media (min-width: 650px) and (max-width: 740px) {}
-
+@media (min-width: 650px) and (max-width: 740px) {
+}
 
 /* =====================================================================New Css============================================================================================================ */
 
@@ -246,7 +249,8 @@
     font-size: 14px;
   }
 
-  .Details {}
+  .Details {
+  }
 
   .FooterContactusLink {
     padding-top: 2rem;
@@ -306,7 +310,8 @@
     font-size: 14px;
   }
 
-  .Details {}
+  .Details {
+  }
 
   .FooterContactusLink {
     padding-top: 2rem;
@@ -365,7 +370,8 @@
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {
@@ -447,11 +453,13 @@
     -webkit-transition: background-position 0.6s ease-in-out;
     -o-transition: background-position 0.6s ease-in-out;
     transition: background-position 0.6s ease-in-out;
-    background-image: -webkit-gradient(linear,
-        left bottom,
-        left top,
-        color-stop(50%, #ffffff),
-        color-stop(50%, #1a1c3c));
+    background-image: -webkit-gradient(
+      linear,
+      left bottom,
+      left top,
+      color-stop(50%, #ffffff),
+      color-stop(50%, #1a1c3c)
+    );
     background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
     background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
     background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
@@ -469,6 +477,6 @@
   }
 
   .BigHead2 {
-    display: none;
+    display: block;
   }
 }

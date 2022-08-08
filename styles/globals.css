@@ -406,7 +406,7 @@ a {
 /* ========================================== */
 
 /* ===================================== Career Accordion ============================================================== */
-.AccordionNav .AccordionHeader button {
+/* .AccordionNav .AccordionHeader button {
   background-color: transparent !important;
   color: rgb(191, 131, 111) !important;
   display: flex;
@@ -481,7 +481,7 @@ a {
   justify-content: space-between;
   color: white;
   padding: 1rem;
-}
+} */
 
 @media screen and (max-width: 600px) {
   .CareersAccordion .accordion-body div {
