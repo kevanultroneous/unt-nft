@@ -263,6 +263,10 @@
   .ScrolldownCol {
     padding-bottom: 1rem;
   }
+  .SoftwareDevelopmentExpertSliderBtnLeft:hover,
+  .SoftwareDevelopmentExpertSliderBtnRight:hover {
+    transform: none;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */

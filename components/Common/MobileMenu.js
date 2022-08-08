@@ -28,7 +28,7 @@ const MobileMenu = () => {
           <Link href={"/"}>
             <Image
               alt={"xicon"}
-              src={"/assets/images/MobifinxMobile.jpg"}
+              src={"/assets/images/Mobifinx.svg"}
               height={45}
             />
           </Link>
@@ -202,7 +202,7 @@ export const TabletMenu = () => {
           <Link href={"/"}>
             <Image
               alt={"xicon"}
-              src={"/assets/images/MobifinxMobile.jpg"}
+              src={"/assets/images/Mobifinx.svg"}
               height={50}
             />
           </Link>
