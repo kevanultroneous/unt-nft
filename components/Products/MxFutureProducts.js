@@ -31,30 +31,15 @@ const MxFutureProducts = ({ text }) => {
           <ul>
             <li className={styles.card01}>
               <div className={styles.rows}>
-                <Row>
+                <Row className={styles.MainRowCard}>
                   <Col xl={4}>
                     <div className="col">
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
                         src={"/assets/images/Cardsample.svg"}
                         alt="card-img"
+                        className={styles.MainImage}
                       />
-                      {/* <p className={styles.Carddescription}>
-                    Do you want to own a team but without the hassle of
-                    recruitment, infrastructure investment, heavy running costs
-                    and daily team management issues? If yes then this business
-                    model is for you. It’s suitable for the young entrepreneurs,
-                    CTO, Product managers and other technical people to hire
-                    their offshore team to build a project.
-                  </p>
-                  <p className={styles.Carddescription}>
-                    Your defined team would be dedicatedly working on your
-                    project in Agile methodology, and follow all the guidelines
-                    and reporting required from your end. This business model is
-                    the best suit for your dream project idea which requires
-                    multiple iterations and market research/ feedbacks.
-                  </p> */}
-
                       <span className={styles.number}>01</span>
                     </div>
                   </Col>
@@ -71,196 +56,377 @@ const MxFutureProducts = ({ text }) => {
                     </div>
                   </Col>
                   <Col xl={4}>
-                    {/* <div className="col"> */}
                     <div className={styles.rowtext}>
-                      <Row>
+                      <Row className={styles.ImageRow}>
                         <Col xl={4}>
-                          <div>
-                            {/* <h1>Helloo</h1> */}
+                          <div className={styles.Detaildiv}>
                             <Image
-                              src={"/assets/images/Cardsample.svg"}
+                              src={"/assets/images/Detail-1.svg"}
                               alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <div>
+                            <h1 className={styles.CardHead}>Review Profile</h1>
+                          </div>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-2.svg"}
+                              alt="Image"
+                              fluid
                             />
                           </div>
                         </Col>
                         <Col xl={8}>
                           <di>
-                            <h1>Hiii</h1>
+                            <h1 className={styles.CardHead}>
+                              Meet the Candidate
+                            </h1>
                           </di>
                           <div>
-                            <p>How are you</p>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-3.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Pricing & Contract
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
                           </div>
                         </Col>
                       </Row>
-
-                      {/* <Row>
-                        <Col xl={4} md={6} className={styles.SpecialImage2}>
-                          <Image
-                            alt="card-img"
-                            src="/assets/images/Card01.svg"
-                            className={styles.imageSpace}
-                          />
-                        </Col>
-                        <Col xl={5} md={6}>
-                          <Image
-                            alt="card-img"
-                            src="/assets/images/Card02.svg"
-                            className={styles.imageSpace}
-                          />
-                        </Col>
-                        <Col xl={4} md={6}>
-                          <Image
-                            alt="card-img"
-                            style={{ paddingTop: "0%" }}
-                            src="/assets/images/Card03.svg"
-                            className={styles.imageSpace}
-                          />
-                        </Col>
-                        <Col xl={5} md={6}>
-                          <Image
-                            alt="card-img"
-                            style={{ paddingTop: "0%" }}
-                            src="/assets/images/Card04.svg"
-                            className={styles.imageSpace}
-                          />
-                        </Col>
-                      </Row> */}
                     </div>
-                    {/* </div> */}
                   </Col>
                 </Row>
               </div>
             </li>
             <li className={styles.card02}>
               <div className={styles.rows}>
-                <div className="col">
-                  <h2 className={styles.Cardtitle}>Title</h2>
-                  <p className={styles.Carddescription}>
-                    When you have a clear mid-size project requirement with a
-                    defined set of features, the project-based price model will
-                    best meet your needs. With this model, the Business Analyst
-                    team will discuss your project in detail, getting the
-                    technical team involved as required to make sure the concept
-                    has been understood properly. If you are sure about the
-                    project flow and not anticipating run time changes, then
-                    this business model is for you.
-                  </p>
-                  <p className={styles.Carddescription}>
-                    The project manager will be the point of the contact, who
-                    will give you the periodic updates and get the development
-                    done by the team. This Engagement model attracts a waterfall
-                    methodology with a clear set of processes. Any run-time
-                    changes or feature requests might affect the project plan
-                    and terms.
-                  </p>
-                  <span className={styles.number}>02</span>
-                </div>
-                <div className="col">
-                  <div className={styles.rowtext}>
-                    <Row>
-                      <Col xl={4} md={6} className={styles.SpecialImage2}>
-                        <Image
-                          alt="card-img"
-                          src="/assets/images/Card01.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={5} md={6}>
-                        <Image
-                          alt="card-img"
-                          src="/assets/images/Card02.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={4} md={6}>
-                        <Image
-                          alt="card-img"
-                          style={{ paddingTop: "0%" }}
-                          src="/assets/images/Card03.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                      <Col xl={5} md={6}>
-                        <Image
-                          alt="card-img"
-                          style={{ paddingTop: "0%" }}
-                          src="/assets/images/Card04.svg"
-                          className={styles.imageSpace}
-                        />
-                      </Col>
-                    </Row>
-                  </div>
-                </div>
+                <Row className={styles.MainRowCard}>
+                  <Col xl={4}>
+                    <div className="col">
+                      <h2 className={styles.Cardtitle}>Title</h2>
+                      <Image
+                        src={"/assets/images/Cardsample.svg"}
+                        alt="card-img"
+                        className={styles.MainImage}
+                      />
+                      <span className={styles.number}>02</span>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className="col">
+                      <p className={styles.Carddescription}>
+                        Do you want to own a team but without the hassle of
+                        recruitment, infrastructure investment, heavy running
+                        costs and daily team management issues? If yes then this
+                        business model is for you. It’s suitable for the young
+                        entrepreneurs, CTO, Product managers and other technical
+                        people to hire their offshore team to build a project.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className={styles.rowtext}>
+                      <Row className={styles.ImageRow}>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-1.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <div>
+                            <h1 className={styles.CardHead}>Review Profile</h1>
+                          </div>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-2.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Meet the Candidate
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-3.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Pricing & Contract
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
               </div>
             </li>
             <li className={styles.card03}>
               <div className={styles.rows}>
-                <div className="col">
-                  <h2 className={styles.Cardtitle}>Title</h2>
-                  <p className={styles.Carddescription}>
-                    If you are running a team already and missing resources to
-                    fill the team, we have this option available for you. With
-                    this business model, you will be able to hire one or
-                    multiple resources from various technology stacks and as per
-                    the expertise to fill in your remote team. This model works
-                    best for the people who like to choose their team members
-                    directly, and want to take care of their progress and report
-                    on a daily basis.
-                  </p>
-                  {/* <p className={styles.Carddescription}>
-                      Your defined team would be dedicatedly working on your
-                      project in Agile methodology, and follow all the
-                      guidelines and reporting required from your end. This
-                      business model is the best suit for your dream project
-                      idea which requires multiple iterations and market
-                      research/ feedbacks.
-                    </p> */}
-                  <span className={styles.number}>03</span>
-                </div>
-                <div className="col">
-                  <div className={styles.rowtext}>
+                <Row className={styles.MainRowCard}>
+                  <Col xl={4}>
+                    <div className="col">
+                      <h2 className={styles.Cardtitle}>Title</h2>
+                      <Image
+                        src={"/assets/images/Cardsample.svg"}
+                        alt="card-img"
+                        className={styles.MainImage}
+                      />
+                      <span className={styles.number}>03</span>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className="col">
+                      <p className={styles.Carddescription}>
+                        Do you want to own a team but without the hassle of
+                        recruitment, infrastructure investment, heavy running
+                        costs and daily team management issues? If yes then this
+                        business model is for you. It’s suitable for the young
+                        entrepreneurs, CTO, Product managers and other technical
+                        people to hire their offshore team to build a project.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
                     <div className={styles.rowtext}>
-                      <Row>
-                        <Col xl={4} md={6} className={styles.SpecialImage2}>
-                          <Image
-                            alt="card-img"
-                            src="/assets/images/Card01.svg"
-                            className={styles.imageSpace}
-                          />
+                      <Row className={styles.ImageRow}>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-1.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
                         </Col>
-                        <Col xl={5} md={6}>
-                          <Image
-                            alt="card-img"
-                            src="/assets/images/Card02.svg"
-                            className={styles.imageSpace}
-                          />
+                        <Col xl={8}>
+                          <div>
+                            <h1 className={styles.CardHead}>Review Profile</h1>
+                          </div>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
                         </Col>
-                        <Col xl={4} md={6}>
-                          <Image
-                            alt="card-img"
-                            style={{ paddingTop: "0%" }}
-                            src="/assets/images/Card03.svg"
-                            className={styles.imageSpace}
-                          />
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-2.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
                         </Col>
-                        <Col xl={5} md={6}>
-                          <Image
-                            alt="card-img"
-                            style={{ paddingTop: "0%" }}
-                            src="/assets/images/Card04.svg"
-                            className={styles.imageSpace}
-                          />
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Meet the Candidate
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-3.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Pricing & Contract
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
                         </Col>
                       </Row>
                     </div>
-                  </div>
-                </div>
+                  </Col>
+                </Row>
               </div>
             </li>
-            <li className={`${styles.card04}  ${styles.lastCard}`}>
-              {/* <div className={styles.CardUid} style={{}}>
-                  <h1>4</h1>
-                </div> */}
+            <li className={styles.card04}>
+              <div className={styles.rows}>
+                <Row className={styles.MainRowCard}>
+                  <Col xl={4}>
+                    <div className="col">
+                      <h2 className={styles.Cardtitle}>Title</h2>
+                      <Image
+                        src={"/assets/images/Cardsample.svg"}
+                        alt="card-img"
+                        className={styles.MainImage}
+                      />
+                      <span className={styles.number}>04</span>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className="col">
+                      <p className={styles.Carddescription}>
+                        Do you want to own a team but without the hassle of
+                        recruitment, infrastructure investment, heavy running
+                        costs and daily team management issues? If yes then this
+                        business model is for you. It’s suitable for the young
+                        entrepreneurs, CTO, Product managers and other technical
+                        people to hire their offshore team to build a project.
+                      </p>
+                    </div>
+                  </Col>
+                  <Col xl={4}>
+                    <div className={styles.rowtext}>
+                      <Row className={styles.ImageRow}>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-1.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <div>
+                            <h1 className={styles.CardHead}>Review Profile</h1>
+                          </div>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-2.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Meet the Candidate
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                        <Col xl={4}>
+                          <div className={styles.Detaildiv}>
+                            <Image
+                              src={"/assets/images/Detail-3.svg"}
+                              alt="Image"
+                              fluid
+                            />
+                          </div>
+                        </Col>
+                        <Col xl={8}>
+                          <di>
+                            <h1 className={styles.CardHead}>
+                              Pricing & Contract
+                            </h1>
+                          </di>
+                          <div>
+                            <p className={styles.CardPera}>
+                              Do you want to own a team but without the hassle
+                              of recruitment.
+                            </p>
+                          </div>
+                        </Col>
+                      </Row>
+                    </div>
+                  </Col>
+                </Row>
+              </div>
+            </li>
+            {/* <li className={`${styles.card04}  ${styles.lastCard}`}>
+             
               <div className={styles.rows}>
                 <div className="col">
                   <h2 className={styles.Cardtitle}>Title</h2>
@@ -323,7 +489,7 @@ const MxFutureProducts = ({ text }) => {
                   </div>
                 </div>
               </div>
-            </li>
+            </li> */}
           </ul>
         </div>
       </div>

@@ -184,6 +184,31 @@
   top: 0;
 }
 
+.MainRowCard {
+  align-items: center;
+}
+.ImageRow {
+  align-items: baseline;
+}
+.MainImage {
+  padding: 2rem 0;
+}
+.CardHead {
+  font-size: 16px;
+  font-weight: 500;
+  color: #a21d34;
+  text-align: left;
+}
+.CardPera {
+  font-size: 14px;
+  font-weight: 400;
+  color: #1b1414;
+  text-align: left;
+}
+.Detaildiv {
+  padding: 0 0.5rem;
+}
+
 /* (this for mobile) */
 @media screen and (max-width: 600px) {
   .Paragraph1,
@@ -443,7 +468,7 @@
   .sectionCards .sectionContent li {
     transform: translateZ(0);
     will-change: transform, opacity;
-    height: 630px;
+    height: 650px;
     position: sticky;
     top: calc(50vh + 52px - 215px - 40px);
     scroll-behavior: smooth;
@@ -556,6 +581,7 @@
     color: #1a1112;
     text-align: left;
     padding-left: 4rem;
+    padding-top: 2rem;
     display: flex;
     /* padding-top: 1.5rem; */
   }
