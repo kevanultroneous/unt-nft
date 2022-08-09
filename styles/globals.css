@@ -378,7 +378,7 @@ a {
 }
 
 /* 1.MOBILE , 2.TABLET , 3.PORTRAIT ,4.  */
-@media (min-width: 320px) and (max-width: 767px) {
+@media screen and (max-width: 600px) {
   .react-tel-input {
     padding: 0 !important;
   }
@@ -401,12 +401,12 @@ a {
     padding-right: 0% !important;
   }
   .react-parallax-bgimage {
-    left: 30% !important;
-    height: 600px !important;
+    left: 40% !important;
+    height: 525px !important;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media screen and (min-width: 768px) {
   .accordion-button {
     padding-left: 0% !important;
     padding-right: 0% !important;
@@ -428,16 +428,23 @@ a {
   }
 
   .react-parallax-bgimage {
-    height: auto !important;
+    left: 38% !important;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .react-parallax-bgimage {
+    left: 50% !important;
   }
 }
 
 @media (min-width: 650px) and (max-width: 740px) {
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {
+@media screen and (min-width: 1200px) {
   .react-parallax-bgimage {
     height: auto !important;
+    left: 60% !important;
   }
 }
 

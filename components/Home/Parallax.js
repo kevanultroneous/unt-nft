@@ -1,8 +1,17 @@
 import styles from "@/styles/components/home/Parallax.module.css";
+import { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import { Parallax } from "react-parallax";
 
 const ParallaxComponent = () => {
+  const [parallaxImage, setParallaxImage] = useState(
+    "/assets/images/Parallaxnew1.png"
+  );
+  useEffect(() => {
+    if (window.innerWidth <= 1080) {
+      setParallaxImage("/assets/images/MobP.png");
+    }
+  }, []);
   return (
     <div>
       {/* <section className={styles.Mainsection}>
@@ -43,8 +52,8 @@ const ParallaxComponent = () => {
                 </Col>
               </div> */}
 
-      <Parallax bgImage={"/assets/images/Parallaxnew1.png"} strength={600}>
-        <div style={{ height: 800 }}>
+      <Parallax bgImage={parallaxImage} strength={200}>
+        <div>
           <div className={styles.Effect}>
             <Row className={styles.Parallaxrow}>
               <Col xl={10}>

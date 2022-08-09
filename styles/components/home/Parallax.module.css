@@ -167,16 +167,16 @@
   }
 } */
 
-@media (min-width: 320px) and (max-width: 767px) {
-  .Parallax {
+@media only screen and (max-width: 600px) {
+  /* .Parallax {
     background-image: url("/assets/images/ParallaxMob.png");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
-    /* background-size: cover; */
+    background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
-  }
+  } */
 
   .Parallaxrow {
     padding-left: 1rem;
@@ -196,14 +196,14 @@
 
   .Pera {
     padding-left: 0;
-    font-size: 18px;
+    font-size: 14px;
   }
   .Effect {
     padding-top: 0rem;
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .Parallax {
     background-size: cover;
     background-position: center;
@@ -225,11 +225,11 @@
     padding-bottom: 0;
   }
 
-  .Parallax {
+  /* .Parallax {
     background-size: cover;
     background-image: url("/assets/images/ParallaxMob.png");
     background-position: center;
-  }
+  } */
 
   .Pera {
     padding-left: 0;
@@ -240,17 +240,20 @@
   .Parallaxrow {
     padding-left: 5rem;
   }
+  .Effect {
+    padding-left: 3rem;
+  }
 }
 
 @media only screen and (min-width: 1200px) {
-  .Parallax {
+  /* .Parallax {
     background-image: url("/assets/images/Parallaxnew1.png");
     background-position: center;
     background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
     padding-bottom: 4rem;
-  }
+  } */
 
   .Effect {
     padding-top: 4rem;

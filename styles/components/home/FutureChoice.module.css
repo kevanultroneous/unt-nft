@@ -299,8 +299,8 @@
     display: block;
     /* justify-content: space-between; */
     /* align-items: baseline; */
-    height: 30rem;
-    padding: 8rem 5.5rem 2rem 4.5rem;
+    height: 25rem;
+    padding: 2rem 5.5rem 2rem 1rem;
   }
   .FutureChoiceContainer {
     padding-left: 8rem;
@@ -308,7 +308,7 @@
   }
   .CardBg {
     width: 30rem;
-    height: 30rem;
+    height: 25rem;
   }
 }
 @media only screen and (min-width: 1200px) {
