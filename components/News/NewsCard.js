@@ -8,7 +8,7 @@ function NewsCard({ trendingNews }) {
       <Row className={styles.newsCardRow}>
         {trendingNews.map((news, index) => {
           return (
-            <Col key={index} xl={4}>
+            <Col key={index} xl={4} lg={4}>
               <div className={styles.newsBox}>
                 <Row className={styles.newsImageBox}>
                   <Col xl={2} md={2} xs={2} className={styles.newsLogo}>

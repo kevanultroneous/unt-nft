@@ -1,0 +1,49 @@
+.PastEventContainer {
+  padding: 2.5rem 2.5rem 3rem 8.5rem;
+}
+
+.PastEventHeading {
+  margin: 0 0 1.5rem;
+}
+
+.PastEventHeading h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+.PastEventTextColumnReverse {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+/* mobile portrait */
+@media screen and (max-width: 600px) {
+  .PastEventContainer {
+    padding: 1rem;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+  .PastEventContainer {
+    padding: 5.8rem 1rem 2rem;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+  .PastEventContainer {
+    padding: 2rem 1rem;
+  }
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+  .PastEventContainer {
+    padding: 2.5rem 2.5rem 2rem 8.5rem;
+  }
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .PastEventContainer {
+    padding: 2.5rem 2.5rem 2rem 8.5rem;
+  }
+}
