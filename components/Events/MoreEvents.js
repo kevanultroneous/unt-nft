@@ -24,11 +24,12 @@ function MoreEvents() {
           <div className={styles.moreEventHead}>
             <h3>More Coming Events</h3>
           </div>
-          {UpComingEventsData.map((events) => {
+          {UpComingEventsData.map((events, ind) => {
             return (
               <>
                 {mobileView ? (
                   <UpComingEventsMobile
+                    key={ind}
                     date={events.date}
                     monthAndYear={events.monthAndYear}
                     DescHeading={events.DescHeading}
@@ -37,6 +38,7 @@ function MoreEvents() {
                   />
                 ) : (
                   <UpComingEvents
+                    key={ind}
                     date={events.date}
                     monthAndYear={events.monthAndYear}
                     DescHeading={events.DescHeading}

@@ -69,7 +69,7 @@
   background: #ffffff;
   margin-bottom: 1rem;
 }
-.PressImageCard:hover .PressCardOverlay {
+/* .PressImageCard:hover .PressCardOverlay {
   height: 100%;
   border-radius: 15px;
   background: rgba(162, 29, 52, 0.9);
@@ -78,7 +78,7 @@
 }
 .PressImageCard:hover .PressImageCardText {
   opacity: 0;
-}
+} */
 .PressCardOverlayText {
   color: white;
   font-size: 20px;

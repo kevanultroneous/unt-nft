@@ -25,7 +25,7 @@ const PressImageCard = ({
         <p className={styles.PressImageCardParagraph}>{PressDate}</p>
         <p className={styles.PressImageCardTitle}>{BigPressTitle}</p>
       </div>
-      <div className={styles.PressCardOverlay}>
+      {/* <div className={styles.PressCardOverlay}>
         <div className={styles.PressCardOverlayText}>
           <p
             className={styles.PressImageCardTitle}
@@ -41,7 +41,7 @@ const PressImageCard = ({
 
           <p className={styles.PressImageCardParagraph}>{disp2}</p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 };
