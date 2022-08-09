@@ -1,11 +1,17 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { Col, Row } from "react-bootstrap";
 import SideHeading from "../Common/SideHeading";
-import UpComingEvents from "./UpComingEvents";
+import { UpComingEvents, UpComingEventsMobile } from "./UpComingEvents";
 import { UpComingEventsData } from "utils/EventsData";
 import styles from "@/styles/components/Events/MoreEvents.module.css";
 
 function MoreEvents() {
+  const [mobileView, setMobileView] = useState(false);
+
+  useEffect(() => {
+    window.innerWidth <= 600 ? setMobileView(true) : setMobileView(false);
+  }, []);
+
   return (
     <div className={styles.moreEventsContainer}>
       <Row>
@@ -21,13 +27,23 @@ function MoreEvents() {
           {UpComingEventsData.map((events) => {
             return (
               <>
-                <UpComingEvents
-                  date={events.date}
-                  monthAndYear={events.monthAndYear}
-                  DescHeading={events.DescHeading}
-                  DescPara={events.DescPara}
-                  LinkTo={events.LinkTo}
-                />
+                {mobileView ? (
+                  <UpComingEventsMobile
+                    date={events.date}
+                    monthAndYear={events.monthAndYear}
+                    DescHeading={events.DescHeading}
+                    DescPara={events.DescPara}
+                    LinkTo={events.LinkTo}
+                  />
+                ) : (
+                  <UpComingEvents
+                    date={events.date}
+                    monthAndYear={events.monthAndYear}
+                    DescHeading={events.DescHeading}
+                    DescPara={events.DescPara}
+                    LinkTo={events.LinkTo}
+                  />
+                )}
               </>
             );
           })}

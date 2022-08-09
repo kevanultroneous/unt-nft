@@ -1,0 +1,332 @@
+.PressImageCardContainer {
+  padding: 1rem 1.5rem 1rem 7.8rem;
+}
+.PressImageCard {
+  position: relative;
+  margin: 1rem 0.7rem;
+}
+
+.PressImageCardText {
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  height: 160px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+
+.PressImageCardTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0%;
+}
+.PressImageCardParagraph {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0%;
+  padding: 0 0 0.5rem;
+}
+
+.imagePressRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+.PressCardOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  opacity: 0;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  overflow: hidden;
+  transition: all 0.5s ease;
+}
+.PressDishead1 {
+  font-weight: 700;
+  font-size: 18px;
+  margin: 0%;
+}
+.PressInspire {
+  width: 3rem;
+  height: 2px;
+  background: #ffffff;
+  margin-bottom: 1rem;
+}
+.PressImageCard:hover .PressCardOverlay {
+  height: 100%;
+  border-radius: 15px;
+  background: rgba(162, 29, 52, 0.9);
+  transition: all 0.5s ease;
+  opacity: 1;
+}
+.PressImageCard:hover .PressImageCardText {
+  opacity: 0;
+}
+.PressCardOverlayText {
+  color: white;
+  font-size: 20px;
+  padding-top: 3rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  position: absolute;
+}
+
+/* mobile portrait */
+@media screen and (max-width: 600px) {
+  .PressImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .PressImageCard {
+    margin: 0 0 1rem;
+  }
+  .PressImageCardText {
+    padding: 0.4rem 1rem;
+    height: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .PressImageCardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0%;
+  }
+  .PressImageCardParagraph {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0;
+    padding: 0;
+  }
+  .PressImage {
+    height: 190px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .PressImageCard:hover .PressCardOverlay {
+    display: none;
+  }
+  .PressImageCard:hover .PressImageCardText {
+    opacity: 1;
+  }
+  .PressCardOverlay {
+    width: 100%;
+  }
+  .PressCardOverlayText {
+    padding: 1rem 1rem;
+  }
+  .PressImageCardText {
+    width: 100%;
+  }
+  .InspiredCardcontainer {
+    width: 100%;
+  }
+  .PressImageCardTitle {
+    font-size: 16px;
+  }
+  .PressImageCardParagraph {
+    padding-bottom: 0.5rem;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+  .PressImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .PressImageCard {
+    margin: 0 0 1rem;
+  }
+  .PressImageCardText {
+    padding: 0.4rem;
+    height: 80px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .PressImageCardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0%;
+  }
+  .PressImageCardParagraph {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0 0 0.2rem;
+    padding: 0;
+  }
+  .PressImage {
+    height: 280px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+  .PressImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .PressImageCard {
+    margin: 0 0 2rem;
+  }
+  .PressImageCardText {
+    padding: 1.5rem;
+    height: 160px;
+  }
+  .PressImageCardTitle {
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 30px;
+    margin: 0%;
+  }
+  .PressImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0;
+  }
+  .PressImageCardText {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .PressImage {
+    height: 470px;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+  .PressCardOverlay {
+    width: 100%;
+  }
+  .PressCardOverlayText {
+    padding: 1rem 1rem;
+  }
+  .PressImageCardText {
+    width: 100%;
+  }
+
+  .PressImageCardTitle {
+    font-size: 16px;
+  }
+  .PressImageCardParagraph {
+    padding-bottom: 0.5rem;
+  }
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+  .PressImageCardContainer {
+    padding: 1rem 1.5rem 1rem 7.8rem;
+  }
+  .PressImageCard {
+    position: relative;
+    margin: 1rem 0.7rem;
+  }
+  .PressImageCardText {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      3.41deg,
+      rgba(0, 0, 0, 0.8) 15.7%,
+      rgba(26, 28, 59, 0) 140.06%
+    );
+    height: 160px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+  }
+  .PressImageCardTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0%;
+  }
+  .PressImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0 0 0.5rem;
+  }
+  .PressImage {
+    height: auto;
+  }
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .PressImageCardContainer {
+    padding: 0.4rem 1.5rem 0.4rem 7.8rem;
+  }
+  .PressImageCard {
+    position: relative;
+    margin: 1rem 0.7rem;
+  }
+
+  .PressImageCardText {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      3.41deg,
+      rgba(0, 0, 0, 0.8) 15.7%,
+      rgba(26, 28, 59, 0) 140.06%
+    );
+    height: 160px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+  }
+
+  .PressImageCardTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0%;
+  }
+  .PressImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0 0 0.5rem;
+  }
+
+  .imagePressRow {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+  .PressImage {
+    height: 55vh;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+
+@media only screen and (min-width: 1800px) {
+  .PressImage {
+    height: 70vh;
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}

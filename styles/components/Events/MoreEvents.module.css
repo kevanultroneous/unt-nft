@@ -37,27 +37,27 @@
 /* mobile landscape */
 @media screen and (min-width: 600px) {
   .moreEventsContainer {
-    padding: 5.8rem 1rem 2rem;
+    padding: 1rem 1rem 2rem;
+  }
+  .rightHeadingDisplay {
+    display: none;
   }
 }
 
 /* tablet portrait */
 @media only screen and (min-width: 768px) {
   .moreEventsContainer {
-    padding: 2rem 1rem;
-  }
-  .rightHeadingDisplay {
-    display: none;
+    padding: 1rem;
   }
   .moreEventHead {
-    padding: 0 0 0 1rem;
+    padding: 0;
     margin: 0 0 2rem;
   }
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
   .moreEventsContainer {
-    padding: 2.5rem 2.5rem 2rem 8.5rem;
+    padding: 2.5rem 0rem 2rem 8.5rem;
   }
 }
 /* PC */

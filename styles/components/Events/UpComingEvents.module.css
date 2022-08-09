@@ -1,15 +1,18 @@
 .UpComingEventsRow {
   background: rgba(162, 29, 52, 0.04);
-  padding: 1rem 2rem 2rem 4rem;
+  padding: 2rem 2rem 2rem 4rem;
   margin: 1rem 0;
 }
 
 .upcomingEventDesc,
 .upcomingEventDate,
-.alignItemsCenter {
+.upComingEventButton {
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+.upComingEventButton {
+  padding: 0 0 0 0.3rem;
 }
 
 .upcomingEventDate h4 {
@@ -48,20 +51,23 @@
   padding: 0.3rem 1.5rem;
 }
 
+.dateAndButtonRow {
+  align-items: center;
+  margin: 0 0 0.5rem;
+}
+
 /* mobile portrait */
 @media screen and (max-width: 600px) {
   .UpComingEventsRow {
-    padding: 1.5rem 1rem;
+    padding: 1rem 1rem;
     margin: 1rem 0;
-    position: relative;
+    /* position: relative; */
   }
   .upcomingEventDesc {
     margin: 1rem 0;
   }
-  .UpComingEventsRegisterButton {
-    position: absolute;
-    top: 42px;
-    right: 20px;
+  .upComingEventButton {
+    align-items: flex-end;
   }
 }
 /* mobile landscape */
@@ -77,12 +83,18 @@
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
+  .upComingEventButton {
+    padding: 0 0 0 0.7rem;
+  }
 }
 /* PC */
 @media only screen and (min-width: 1200px) {
   .UpComingEventsRow {
     background: rgba(162, 29, 52, 0.04);
-    padding: 1rem 2rem 2rem 4rem;
+    padding: 2rem 2rem 2rem 4rem;
     margin: 1rem 0;
+  }
+  .upComingEventButton {
+    padding: 0 0 0 0.3rem;
   }
 }
