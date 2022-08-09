@@ -104,7 +104,7 @@ const FutureChoice = () => {
                   Read more articles on our blog.
                 </p>
               </div>
-              <div>
+              <div className={styles.BlogbuttonTab}>
                 {c2 ? (
                   <Link href={"/"}>
                     <div className={styles.Outer} style={{ cursor: "pointer" }}>

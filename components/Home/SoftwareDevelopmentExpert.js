@@ -61,6 +61,18 @@ const SDE = ({ handleClick }) => {
           // swipeToSlide: true,
         },
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.35,
+          slidesToScroll: 2,
+          initialSlide: 1,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          // swipeToSlide: true,
+        },
+      },
     ],
   };
   const sliderList = [
