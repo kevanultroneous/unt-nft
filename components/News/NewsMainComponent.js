@@ -14,11 +14,7 @@ function NewsMainComponent() {
               newsData={news.mainNews}
               reverse={ind % 2 === 0 ? false : true}
             />
-            <NewsCard
-              trendingNews={news.trend}
-              indexMainArray={ind}
-              mainArray={NewsData}
-            />
+            <NewsCard trendingNews={news.trend} />
           </div>
         );
       })}

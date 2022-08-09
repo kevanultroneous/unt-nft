@@ -1,9 +1,14 @@
-import React from "react";
+import styles from "@/styles/components/Press/PressHead.module.css";
+
+import LightHead from "../Common/LightHead";
 
 function PressHead() {
   return (
-    <div>
-      <p style={{ margin: "0 0 0 8.5rem" }}>PressHead</p>
+    <div className={styles.pressHeadContainer}>
+      <LightHead
+        text={"MobifinX Press Release"}
+        heading={`MobifinX in Media`}
+      />
     </div>
   );
 }

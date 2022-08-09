@@ -6,7 +6,7 @@ import PressMainComponent from "@/components/Press/PressMainComponent";
 
 const press = () => {
   return (
-    <Layout title={press}>
+    <Layout title={"Press"}>
       <MenuPackage />
       <PressHead />
       <PressMainComponent />

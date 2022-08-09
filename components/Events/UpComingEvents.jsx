@@ -4,11 +4,19 @@ import { Col, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/Events/UpComingEvents.module.css";
 
-function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
+export function UpComingEvents({
+  date,
+  monthAndYear,
+  DescHeading,
+  DescPara,
+  LinkTo,
+}) {
   return (
     <Row className={styles.UpComingEventsRow}>
       <Col
         xl={2}
+        md={2}
+        sm={2}
         className={(styles.alignItemsCenter, styles.upcomingEventDate)}
       >
         <h4>{date}</h4>
@@ -16,6 +24,8 @@ function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
       </Col>
       <Col
         xl={8}
+        md={8}
+        sm={8}
         className={(styles.alignItemsCenter, styles.upcomingEventDesc)}
       >
         <h6>{DescHeading}</h6>
@@ -23,6 +33,8 @@ function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
       </Col>
       <Col
         xl={2}
+        md={2}
+        sm={2}
         className={(styles.alignItemsCenter, styles.upComingEventButton)}
       >
         <ActionButtonV2
@@ -30,11 +42,7 @@ function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
           partialstyle={styles.UpComingEventsRegisterButton}
           text={
             <>
-              <span
-              //   className={styles.TextBtn}
-              >
-                Register
-              </span>
+              <span>Register</span>
               <HiOutlineExternalLink />
             </>
           }
@@ -44,4 +52,46 @@ function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
   );
 }
 
-export default UpComingEvents;
+export function UpComingEventsMobile({
+  date,
+  monthAndYear,
+  DescHeading,
+  DescPara,
+  LinkTo,
+}) {
+  return (
+    <Row className={styles.UpComingEventsRow}>
+      <Row className={styles.dateAndButtonRow}>
+        <Col
+          xs={6}
+          className={(styles.alignItemsCenter, styles.upcomingEventDate)}
+        >
+          <h4>{date}</h4>
+          <p>{monthAndYear}</p>
+        </Col>
+        <Col
+          xs={6}
+          className={(styles.alignItemsCenter, styles.upComingEventButton)}
+        >
+          <ActionButtonV2
+            href={LinkTo}
+            partialstyle={styles.UpComingEventsRegisterButton}
+            text={
+              <>
+                <span>Register</span>
+                <HiOutlineExternalLink />
+              </>
+            }
+          />
+        </Col>
+      </Row>
+      <Col
+        xs={12}
+        className={(styles.alignItemsCenter, styles.upcomingEventDesc)}
+      >
+        <h6>{DescHeading}</h6>
+        <p>{DescPara}</p>
+      </Col>
+    </Row>
+  );
+}

@@ -1,0 +1,19 @@
+.mainContainer {
+  padding: 0 0 3rem;
+}
+
+/* Mobile Portrait */
+@media screen and (max-width: 600px) {
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+}
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+}

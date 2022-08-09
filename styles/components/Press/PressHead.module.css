@@ -1,46 +1,35 @@
-.EventsHeroContainer {
+.pressHeadContainer {
   padding: 2.5rem 2.5rem 2rem 8.5rem;
-}
-
-.EventHeroCard {
-  padding: 2.5rem 0;
 }
 
 /* mobile portrait */
 @media screen and (max-width: 600px) {
-  .EventsHeroContainer {
-    padding: 5.8rem 1rem 1rem;
-  }
-
-  .EventHeroCard {
-    padding: 2rem 0 0;
+  .pressHeadContainer {
+    padding: 5.8rem 1rem 2rem 1rem;
   }
 }
 /* mobile landscape */
 @media screen and (min-width: 600px) {
-  .EventsHeroContainer {
-    padding: 5.8rem 1rem 1rem;
+  .pressHeadContainer {
+    padding: 5.8rem 1rem 2rem;
   }
 }
 
 /* tablet portrait */
 @media only screen and (min-width: 768px) {
-  .EventsHeroContainer {
-    padding: 5.7rem 1rem 1rem;
-  }
-  .EventHeroCard {
-    padding: 2rem 0 0;
+  .pressHeadContainer {
+    padding: 6.5rem 1rem 3rem;
   }
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
-  .EventsHeroContainer {
+  .pressHeadContainer {
     padding: 2.5rem 2.5rem 2rem 8.5rem;
   }
 }
 /* PC */
 @media only screen and (min-width: 1200px) {
-  .EventsHeroContainer {
-    padding: 2rem 2.5rem 2rem 8.5rem;
+  .pressHeadContainer {
+    padding: 2.5rem 2.5rem 2rem 8.5rem;
   }
 }
