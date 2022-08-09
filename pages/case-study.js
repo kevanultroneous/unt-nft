@@ -168,17 +168,19 @@ const CaseStudy = () => {
           </Col>
           {/* for only tablet */}
           <Col md={12} className={styles.VisibilityTabOn}>
-            <h4 className={styles.CardRightSectionBottomTitle}>
-              Want to Experience Our platforms?
-            </h4>
-            <div className={styles.ButtonWrraper}>
-              <ActionButton
-                text={
-                  <div className={styles.ButtonText}>
-                    <span>Yes, Please</span> <HiOutlineExternalLink />
-                  </div>
-                }
-              />
+            <div>
+              <h4 className={styles.CardRightSectionBottomTitle}>
+                Want to Experience Our platforms?
+              </h4>
+              <div className={styles.ButtonWrraper}>
+                <ActionButton
+                  text={
+                    <div className={styles.ButtonText}>
+                      <span>Yes, Please</span> <HiOutlineExternalLink />
+                    </div>
+                  }
+                />
+              </div>
             </div>
           </Col>
           {/* for only tablet section over */}

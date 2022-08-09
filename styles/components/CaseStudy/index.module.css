@@ -11,6 +11,7 @@
   font-size: 4.5rem;
   width: 40rem;
   margin-top: 3.5rem;
+  text-align: left;
 }
 
 .Rotatetext {
@@ -24,9 +25,9 @@
 .LeftCol {
   margin-top: 4rem;
   margin-right: 0%;
-  /* display: flex;
-    align-items: center;
-    flex-direction: column; */
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
 }
 
 .RightCol {
@@ -84,7 +85,7 @@
   display: flex !important;
   align-items: flex-end !important;
   justify-content: unset !important;
-  margin-top: -12rem !important;
+  margin-top: -8rem !important;
   margin-left: -0.8rem !important;
   margin-bottom: 6rem !important;
 }
@@ -94,6 +95,10 @@
 }
 
 .VisibilityTabOn {
+  display: none;
+}
+
+.CaseStudyContainer ::-webkit-scrollbar {
   display: none;
 }
 
@@ -155,14 +160,18 @@
 
   .LeftCol {
     margin-top: 1.5rem;
+    align-items: center;
   }
 
   .RightCol {
     margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 
   .CardWrraper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 2rem;
   }
 
   .TextBtn {
@@ -177,7 +186,7 @@
   }
 
   .MainTitleContain {
-    padding: 4rem 0 0rem 1rem;
+    padding: 2rem 0 0rem 1rem;
   }
 
   .ScrollDownContainer {
@@ -185,7 +194,7 @@
   }
 
   .HeadingText {
-    margin-top: 2.5rem;
+    margin-top: 0rem;
     font-size: 45px;
   }
 
@@ -228,10 +237,12 @@
 
   .LeftCol {
     margin-top: 1.5rem;
+    align-items: flex-start;
   }
 
   .RightCol {
     margin-top: 0%;
+    padding-left: 2rem;
   }
 
   .CardWrraper {
@@ -249,13 +260,20 @@
     padding: 0rem 1rem 2rem 1rem;
   }
 
+  /* latest */
+  .MainTitleContain {
+    padding: 2.8rem 0 0rem 1rem;
+  }
+
   .ScrollDownContainer {
     display: none !important;
   }
 
   .HeadingText {
-    margin-top: 2.5rem;
-    font-size: 45px;
+    margin-top: 1rem;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
   }
 
   .CategoriesTitle {
@@ -271,7 +289,7 @@
 
   .CardRightSectionBottomTitle {
     font-size: 50px;
-    margin-top: 5rem;
+    margin-top: 1rem;
     width: 33rem;
   }
 
@@ -302,15 +320,16 @@
 
   .LeftCol {
     margin-top: 2rem;
-    margin-right: 2rem;
+    margin-right: 0rem;
   }
 
   .RightCol {
     margin-top: 2rem;
+    padding-left: 2rem;
   }
 
   .CardWrraper {
-    margin-bottom: 1.5rem;
+    margin-bottom: 3.5rem;
     margin-right: 2rem;
   }
 
@@ -328,7 +347,16 @@
   }
 
   .VisibilityTabOn {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ButtonWrraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
   }
 }
 
@@ -343,6 +371,7 @@
   }
 
   .HeadingText {
+    padding-left: 3rem;
     margin-top: 0% !important;
   }
 
@@ -361,9 +390,10 @@
   .LeftCol {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
     margin-right: 0%;
+    padding-right: 1rem;
   }
 
   .CardWrraper {
@@ -371,6 +401,16 @@
   }
 
   .TitleForTab {
+    justify-content: flex-start;
+  }
+
+  .VisibilityTabOn {
+    padding-left: 15rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .ButtonWrraper {
     justify-content: flex-start;
   }
 }
@@ -386,6 +426,7 @@
     font-size: 4.5rem;
     width: 40rem;
     margin-top: 3.5rem;
+    text-align: left;
   }
 
   .Rotatetext {
@@ -399,9 +440,10 @@
   .LeftCol {
     margin-top: 4rem;
     margin-right: 0%;
-    /* display: flex;
-        align-items: center;
-        flex-direction: column; */
+    padding-right: 1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
   }
 
   .RightCol {
@@ -424,6 +466,7 @@
 
   .ButtonWrraper {
     margin-top: 2.9rem;
+    justify-content: flex-start;
   }
 
   .CategoriesTitle {
@@ -462,7 +505,7 @@
     display: flex !important;
     align-items: flex-end !important;
     justify-content: unset !important;
-    margin-top: -12rem !important;
+    margin-top: -8rem !important;
     margin-left: -0.8rem !important;
   }
 
