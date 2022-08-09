@@ -109,68 +109,86 @@
 .ColZero .bg {
   text-align: right;
   background: #fff;
-  background: -moz-linear-gradient(90deg,
-      #004DFE 0%,
-      #3B86FF 50%,
-      #75BEFF 100%);
-  background: -webkit-gradient(linear,
-      90deg top,
-      right top,
-      color-stop(0%, #004DFE),
-      color-stop(50%, #3B86FF),
-      color-stop(100%, #75BEFF));
-  background: -webkit-linear-gradient(90deg,
-      #004DFE 0%,
-      #3B86FF 50%,
-      #75BEFF 100%);
-  background: -o-linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
-  background: -ms-linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
-  background: linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    #004dfe 0%,
+    #3b86ff 50%,
+    #75beff 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    90deg top,
+    right top,
+    color-stop(0%, #004dfe),
+    color-stop(50%, #3b86ff),
+    color-stop(100%, #75beff)
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #004dfe 0%,
+    #3b86ff 50%,
+    #75beff 100%
+  );
+  background: -o-linear-gradient(90deg, #004dfe 0%, #3b86ff 50%, #75beff 100%);
+  background: -ms-linear-gradient(90deg, #004dfe 0%, #3b86ff 50%, #75beff 100%);
+  background: linear-gradient(90deg, #004dfe 0%, #3b86ff 50%, #75beff 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#004DFE', endColorstr='#75BEFF', GradientType=1);
 }
 
 .ColOne .bg {
   text-align: center;
   background: #fff;
-  background: -moz-linear-gradient(90deg,
-      #363637 0%,
-      #79797A 50%,
-      #BCBCBC 100%);
-  background: -webkit-gradient(linear,
-      90deg top,
-      right top,
-      color-stop(0%, #363637),
-      color-stop(50%, #79797A),
-      color-stop(100%, #BCBCBC));
-  background: -webkit-linear-gradient(90deg,
-      #363637 0%,
-      #79797A 50%,
-      #BCBCBC 100%);
-  background: -o-linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
-  background: -ms-linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
-  background: linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    #363637 0%,
+    #79797a 50%,
+    #bcbcbc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    90deg top,
+    right top,
+    color-stop(0%, #363637),
+    color-stop(50%, #79797a),
+    color-stop(100%, #bcbcbc)
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #363637 0%,
+    #79797a 50%,
+    #bcbcbc 100%
+  );
+  background: -o-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+  background: -ms-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+  background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
 }
 
 .ColTwo .bg {
   background: #fff;
-  background: -moz-linear-gradient(90deg,
-      #781A28 0%,
-      #79797A 50%,
-      #BCBCBC 100%);
-  background: -webkit-gradient(linear,
-      90deg top,
-      right top,
-      color-stop(0%, #781A28),
-      color-stop(50%, #79797A),
-      color-stop(100%, #BCBCBC));
-  background: -webkit-linear-gradient(90deg,
-      #781A28 0%,
-      #A92037 50%,
-      #D62645 100%);
-  background: -o-linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
-  background: -ms-linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
-  background: linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
+  background: -moz-linear-gradient(
+    90deg,
+    #781a28 0%,
+    #79797a 50%,
+    #bcbcbc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    90deg top,
+    right top,
+    color-stop(0%, #781a28),
+    color-stop(50%, #79797a),
+    color-stop(100%, #bcbcbc)
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #781a28 0%,
+    #a92037 50%,
+    #d62645 100%
+  );
+  background: -o-linear-gradient(90deg, #781a28 0%, #a92037 50%, #d62645 100%);
+  background: -ms-linear-gradient(90deg, #781a28 0%, #a92037 50%, #d62645 100%);
+  background: linear-gradient(90deg, #781a28 0%, #a92037 50%, #d62645 100%);
   filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#781A28', endColorstr='#D62645', GradientType=1);
 }
 
@@ -332,7 +350,8 @@
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {
@@ -358,68 +377,116 @@
   .ColZero .bg {
     text-align: right;
     background: #fff;
-    background: -moz-linear-gradient(90deg,
-        #004DFE 0%,
-        #3B86FF 50%,
-        #75BEFF 100%);
-    background: -webkit-gradient(linear,
-        90deg top,
-        right top,
-        color-stop(0%, #004DFE),
-        color-stop(50%, #3B86FF),
-        color-stop(100%, #75BEFF));
-    background: -webkit-linear-gradient(90deg,
-        #004DFE 0%,
-        #3B86FF 50%,
-        #75BEFF 100%);
-    background: -o-linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
-    background: -ms-linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
-    background: linear-gradient(90deg, #004DFE 0%, #3B86FF 50%, #75BEFF 100%);
+    background: -moz-linear-gradient(
+      90deg,
+      #004dfe 0%,
+      #3b86ff 50%,
+      #75beff 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      90deg top,
+      right top,
+      color-stop(0%, #004dfe),
+      color-stop(50%, #3b86ff),
+      color-stop(100%, #75beff)
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      #004dfe 0%,
+      #3b86ff 50%,
+      #75beff 100%
+    );
+    background: -o-linear-gradient(
+      90deg,
+      #004dfe 0%,
+      #3b86ff 50%,
+      #75beff 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      #004dfe 0%,
+      #3b86ff 50%,
+      #75beff 100%
+    );
+    background: linear-gradient(90deg, #004dfe 0%, #3b86ff 50%, #75beff 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#004DFE', endColorstr='#75BEFF', GradientType=1);
   }
 
   .ColOne .bg {
     text-align: center;
     background: #fff;
-    background: -moz-linear-gradient(90deg,
-        #363637 0%,
-        #79797A 50%,
-        #BCBCBC 100%);
-    background: -webkit-gradient(linear,
-        90deg top,
-        right top,
-        color-stop(0%, #363637),
-        color-stop(50%, #79797A),
-        color-stop(100%, #BCBCBC));
-    background: -webkit-linear-gradient(90deg,
-        #363637 0%,
-        #79797A 50%,
-        #BCBCBC 100%);
-    background: -o-linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
-    background: -ms-linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
-    background: linear-gradient(90deg, #363637 0%, #79797A 50%, #BCBCBC 100%);
+    background: -moz-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      90deg top,
+      right top,
+      color-stop(0%, #363637),
+      color-stop(50%, #79797a),
+      color-stop(100%, #bcbcbc)
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -o-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
   }
 
   .ColTwo .bg {
     background: #fff;
-    background: -moz-linear-gradient(90deg,
-        #781A28 0%,
-        #79797A 50%,
-        #BCBCBC 100%);
-    background: -webkit-gradient(linear,
-        90deg top,
-        right top,
-        color-stop(0%, #781A28),
-        color-stop(50%, #79797A),
-        color-stop(100%, #BCBCBC));
-    background: -webkit-linear-gradient(90deg,
-        #781A28 0%,
-        #A92037 50%,
-        #D62645 100%);
-    background: -o-linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
-    background: -ms-linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
-    background: linear-gradient(90deg, #781A28 0%, #A92037 50%, #D62645 100%);
+    background: -moz-linear-gradient(
+      90deg,
+      #781a28 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      90deg top,
+      right top,
+      color-stop(0%, #781a28),
+      color-stop(50%, #79797a),
+      color-stop(100%, #bcbcbc)
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      #781a28 0%,
+      #a92037 50%,
+      #d62645 100%
+    );
+    background: -o-linear-gradient(
+      90deg,
+      #781a28 0%,
+      #a92037 50%,
+      #d62645 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      #781a28 0%,
+      #a92037 50%,
+      #d62645 100%
+    );
+    background: linear-gradient(90deg, #781a28 0%, #a92037 50%, #d62645 100%);
     filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#781A28', endColorstr='#D62645', GradientType=1);
   }
 

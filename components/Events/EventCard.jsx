@@ -13,7 +13,12 @@ const EventCard = ({
   return (
     <div className={`${styles.NewsImageCard} ${style}`}>
       <div className={styles.newsImage}>
-        <Image src={srcimg} fluid alt={imageTitle} />
+        <Image
+          src={srcimg}
+          fluid
+          alt={imageTitle}
+          className={styles.mobileHeightIncrese}
+        />
       </div>
       <div className={`${styles.NewsImageCardText} ${customStyle}`}>
         <p className={styles.NewsImageCardTitle}>{EventsTitle}</p>
