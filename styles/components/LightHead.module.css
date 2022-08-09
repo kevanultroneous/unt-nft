@@ -19,7 +19,7 @@
 @media screen and (max-width: 600px) {
   .LightHeroHeading {
     width: 80vw !important;
-    margin: 4rem 0 0;
+    margin: 2.8rem 0 0;
   }
   .LightHeroHeading h3 {
     font-weight: 600;
@@ -44,7 +44,7 @@
 @media only screen and (min-width: 768px) {
   .LightHeroHeading {
     width: 95vw !important;
-    margin: 5rem 0 0;
+    margin: 4rem 0 0;
   }
   .LightHeroHeading h3 {
     font-weight: 600;
@@ -53,6 +53,10 @@
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
+  .LightHeroHeading {
+    width: 95vw !important;
+    margin: 3.5rem 0 0;
+  }
   .LightHeroHeading h3 {
     font-weight: 600;
     font-size: 60px;
@@ -70,7 +74,7 @@
 
   .LightHeroHeading {
     width: 40rem !important;
-    margin: 6.5rem 0 0;
+    margin: 5rem 0 0;
   }
 
   .LightHeroHeading h3 {

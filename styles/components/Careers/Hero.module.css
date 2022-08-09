@@ -172,7 +172,7 @@
     font-size: 40px;
   }
   .heroHead {
-    margin: 6rem 0 0;
+    margin: 2.8rem 0 0;
   }
   .sliderImage {
     width: 7rem;
@@ -277,7 +277,7 @@
   .careerBigHeading {
     color: white;
     font-size: 4.5rem;
-    margin: 17rem 0 3rem;
+    margin: 11rem 0 3rem;
     font-weight: 600;
   }
   .ReactContainer {
@@ -289,7 +289,7 @@
   .sliderContainer {
     width: auto;
     height: auto;
-    margin: 5rem 1rem 0;
+    margin: 7rem 1rem 0;
   }
   .sliderFirstHalf h3 {
     margin: 2rem 0;
@@ -318,7 +318,7 @@
     margin: 0 0 0 -1.3rem;
   }
   .heroContainer {
-    margin-top: -1.5rem;
+    margin-top: -3.5rem;
   }
   .careerBigHeading {
     margin: 5rem 0 3rem;

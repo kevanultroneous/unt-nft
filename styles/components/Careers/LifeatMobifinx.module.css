@@ -23,7 +23,7 @@
 /* Mobile Portrait */
 @media screen and (max-width: 600px) {
   .lifeMobifinxMainContainer {
-    padding: 3rem 0 3rem 1rem;
+    padding: 3rem 0 1rem 1rem;
   }
   .lifeAtMobifinxSideHeading {
     display: none;
@@ -33,9 +33,10 @@
   }
 
   .rightText h3 {
-    font-size: 1.5rem;
+    width: 90vw;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 40px;
   }
 
   .rightText p {
@@ -83,9 +84,10 @@
     width: 95vw !important;
   }
   .rightText h3 {
+    width: 90vw;
     font-size: 50px;
     line-height: 4rem;
-    text-align: center;
+    text-align: left;
   }
   .rightText p {
     width: 95vw;
@@ -94,7 +96,7 @@
     color: #2e3159;
     font-style: normal;
     margin: 0%;
-    text-align: center;
+    text-align: left;
     margin: 1.5rem 0;
   }
   .sideHeading {
@@ -136,7 +138,7 @@
   .rightImage {
     display: flex !important;
     justify-content: right !important;
-    padding: 0 0 0 3rem;
+    padding: 0;
   }
 }
 
@@ -149,7 +151,7 @@
   }
 
   .rightText {
-    width: 57vw !important;
+    width: 50vw !important;
   }
 
   .rightText h3 {

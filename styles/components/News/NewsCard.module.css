@@ -50,6 +50,7 @@
     padding: 0 1rem 0;
   }
   .newsBox {
+    padding: 2rem 1.2rem 2.4rem;
     margin: 0 0 1rem;
   }
   .newsCount span {
@@ -117,7 +118,7 @@
     background: #f8f8f9;
     padding: 2rem 1.3rem 2.4rem;
     margin: 0.7rem !important;
-    border-radius: 12px;
+    border-radius: 15px;
   }
 
   .newsImageBox {
@@ -135,7 +136,7 @@
     font-weight: 600;
     color: white;
     position: absolute;
-    top: -5.5rem !important;
+    top: -5.9rem !important;
     right: -2.1rem !important;
   }
 

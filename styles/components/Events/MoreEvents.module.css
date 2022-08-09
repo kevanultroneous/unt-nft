@@ -65,7 +65,15 @@
   .moreEventsContainer {
     padding: 2.5rem 0rem 2rem 8.5rem;
   }
+  .rightHeadingDisplay {
+    display: flex;
+  }
   .rightHeadingCont {
     padding: 0 0 0 1.2rem;
+  }
+
+  .moreEventHead {
+    padding: 0 0 0 4rem;
+    margin: 0 0 3rem;
   }
 }

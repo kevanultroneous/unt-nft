@@ -111,7 +111,7 @@
     justify-content: space-between;
   }
   .groupSmImage div {
-    width: 40.8vw;
+    width: 42.5vw;
   }
   .workPlacesBgImage {
     width: 91vw;
@@ -132,7 +132,7 @@
   }
   .ctaButton {
     width: 88.5vw;
-    margin: 3rem 0 2.6rem;
+    margin: 0 0 2.6rem;
   }
   .ctaButton p {
     margin: 0 1.5rem 0 0;
@@ -262,9 +262,9 @@
 }
 
 /* Tablet Landscape */
-@media  (min-width: 992px) {
+@media (min-width: 992px) {
   .exploreWorkMainContainer {
-    padding: 6rem 2.5rem 4rem 8.5rem ;
+    padding: 6rem 2.5rem 4rem 8rem;
     overflow: hidden;
   }
   .groupSmImage div {
@@ -284,10 +284,10 @@
     margin: 0 2.3rem 0 0 !important;
   }
   .imageContRow {
-   flex-direction: row;
-   align-items: center;
-   margin: 0 0 2.3rem;
-   width: auto;
+    flex-direction: row;
+    align-items: center;
+    margin: 0 0 2.3rem;
+    width: auto;
   }
   .imageSecondRow {
     flex-direction: row;
@@ -296,9 +296,9 @@
   }
   .ctaRow {
     width: auto;
-    margin:  2.5rem 0 0;
+    margin: 2.5rem 0 0;
   }
-  .ctaText{
+  .ctaText {
     width: 50vw;
   }
   .ctaText h3 {

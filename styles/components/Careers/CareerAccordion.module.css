@@ -68,7 +68,7 @@
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
   .CareerAccordion {
-    padding: 6rem 2.5rem 4rem 8.5rem;
+    padding: 6rem 2.5rem 4rem 8rem;
     background: #1a1c3c;
   }
 }
