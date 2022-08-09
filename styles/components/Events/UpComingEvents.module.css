@@ -41,14 +41,27 @@
   padding: 0.3rem 1.5rem;
 }
 
+.UpComingEventsRegisterButton:hover {
+  color: white;
+  border-color: #a21d34;
+  background-color: #a21d34;
+  padding: 0.3rem 1.5rem;
+}
+
 /* mobile portrait */
 @media screen and (max-width: 600px) {
   .UpComingEventsRow {
     padding: 1.5rem 1rem;
     margin: 1rem 0;
+    position: relative;
   }
   .upcomingEventDesc {
     margin: 1rem 0;
+  }
+  .UpComingEventsRegisterButton {
+    position: absolute;
+    top: 42px;
+    right: 20px;
   }
 }
 /* mobile landscape */

@@ -41,6 +41,6 @@
 /* PC */
 @media only screen and (min-width: 1200px) {
   .EventsHeroContainer {
-    padding: 2.5rem 2.5rem 2rem 8.5rem;
+    padding: 2rem 2.5rem 2rem 8.5rem;
   }
 }

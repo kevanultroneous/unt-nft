@@ -21,7 +21,10 @@ function UpComingEvents({ date, monthAndYear, DescHeading, DescPara, LinkTo }) {
         <h6>{DescHeading}</h6>
         <p>{DescPara}</p>
       </Col>
-      <Col xl={2} className={styles.alignItemsCenter}>
+      <Col
+        xl={2}
+        className={(styles.alignItemsCenter, styles.upComingEventButton)}
+      >
         <ActionButtonV2
           href={LinkTo}
           partialstyle={styles.UpComingEventsRegisterButton}
