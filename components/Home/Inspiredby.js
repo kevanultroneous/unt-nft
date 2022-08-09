@@ -5,7 +5,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
 import ActionButton from "../Common/ActionButton";
 
-const CardInspired = ({
+export const CardInspired = ({
   style,
   srcimg,
   animtype,
@@ -26,7 +26,7 @@ const CardInspired = ({
       data-aos-delay={animdelay}
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
-      // data-aos-offset={animOf}
+    // data-aos-offset={animOf}
     >
       <Image src={srcimg} alt="Avatar" className={styles.InspiredCardImage} />
       <div className={styles.InspiredDis}>
@@ -75,6 +75,7 @@ const Inspiredby = () => {
     AOS.refresh();
     AOS.init();
   }, []);
+
   return (
     <div className={styles.InspiredContainer}>
       <Row className={styles.InspiredCardRow}>

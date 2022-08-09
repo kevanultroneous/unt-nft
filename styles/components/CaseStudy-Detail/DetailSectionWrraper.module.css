@@ -1,0 +1,165 @@
+.DetailSectionWrraper {
+  padding: 2.5rem 4rem 0rem 8.5rem;
+}
+
+.HeadingOfDetails {
+  font-weight: 600;
+  font-size: 35px;
+}
+
+.ParagraphOfDetails {
+  font-weight: 400;
+  font-size: 18px;
+  color: #2e3159;
+  text-align: justify;
+}
+
+.ParagraphWrraper {
+  margin-top: 1.5rem;
+}
+
+.SolutionImage {
+  margin-top: 4rem;
+}
+
+.DetailWrraper {
+  margin-top: 3rem;
+}
+
+.TabSelectedContainer {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.2rem;
+}
+
+.TabSelectedContainer span {
+  padding: 0.5rem;
+  border-left: 3px solid #000;
+}
+
+.TabContainer {
+  font-weight: 500;
+  font-size: 18px;
+  padding: 0.2rem;
+  color: #ebebeb;
+  cursor: pointer;
+}
+
+.TabContainer span {
+  padding: 0.5rem;
+  border-left: 3px solid #ebebeb;
+}
+
+.TabWrraper {
+  margin-top: 3rem;
+  position: sticky;
+  top: 0;
+  bottom: 10;
+}
+
+.SolutionImageConfigure {
+  width: 100%;
+}
+
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .TabWrraper {
+    display: none;
+  }
+
+  .DetailSectionWrraper {
+    padding: 1rem 1rem;
+  }
+}
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+
+  .TabWrraper {
+    display: none;
+  }
+
+  .DetailSectionWrraper {
+    padding: 1rem 1rem;
+  }
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {
+  .TabWrraper {
+    display: none;
+  }
+
+  .DetailSectionWrraper {
+    padding: 0rem 1rem 2rem 1rem;
+  }
+}
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .DetailSectionWrraper {
+    padding: 2.5rem 4rem 0rem 8.5rem;
+  }
+
+  .HeadingOfDetails {
+    font-weight: 600;
+    font-size: 35px;
+  }
+
+  .ParagraphOfDetails {
+    font-weight: 400;
+    font-size: 18px;
+    color: #2e3159;
+    text-align: justify;
+  }
+
+  .ParagraphWrraper {
+    margin-top: 1.5rem;
+  }
+
+  .SolutionImage {
+    margin-top: 4rem;
+  }
+
+  .DetailWrraper {
+    margin-top: 3rem;
+  }
+
+  .TabSelectedContainer {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.2rem;
+  }
+
+  .TabSelectedContainer span {
+    padding: 0.5rem;
+    border-left: 3px solid #000;
+  }
+
+  .TabContainer {
+    font-weight: 500;
+    font-size: 18px;
+    padding: 0.2rem;
+    color: #ebebeb;
+    cursor: pointer;
+  }
+
+  .TabContainer span {
+    padding: 0.5rem;
+    border-left: 3px solid #ebebeb;
+  }
+
+  .TabWrraper {
+    margin-top: 3rem;
+    position: sticky;
+    top: 20px;
+    display: block;
+  }
+
+  .SolutionImageConfigure {
+    width: 100%;
+  }
+}

@@ -1,0 +1,43 @@
+.MainTitleContainer {
+  padding: 2rem 0 0rem 8.5rem;
+}
+
+.DetailSectionContainer {
+  padding-bottom: 10rem;
+}
+
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .MainTitleContainer {
+    padding: 4rem 0rem 2rem 1rem;
+  }
+}
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+  .MainTitleContainer {
+    padding: 2.5rem 0rem 2rem 1rem;
+  }
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {}
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {
+  .MainTitleContainer {
+    padding: 2.5rem 0rem 2rem 8.5rem;
+  }
+
+}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .MainTitleContainer {
+    padding: 2rem 0 0rem 8.5rem;
+  }
+
+  .DetailSectionContainer {
+    padding-bottom: 10rem;
+  }
+}

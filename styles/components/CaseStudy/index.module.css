@@ -1,0 +1,527 @@
+.CaseStudyContainer {
+  padding: 2.5rem 0 0rem 8.5rem;
+}
+
+.MainTitleContain {
+  padding: 2.5rem 0 0rem 8.5rem;
+}
+
+.HeadingText {
+  font-weight: 600;
+  font-size: 4.5rem;
+  width: 40rem;
+  margin-top: 3.5rem;
+  text-align: left;
+}
+
+.Rotatetext {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000;
+  transform: rotate(270deg);
+  padding-bottom: 11rem;
+}
+
+.LeftCol {
+  margin-top: 4rem;
+  margin-right: 0%;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+
+.RightCol {
+  margin-top: -6rem;
+}
+
+.CardWrraper {
+  margin-bottom: 3rem;
+}
+
+.CardRightSectionBottomTitle {
+  font-weight: 600;
+  font-size: 45px;
+  width: 28rem;
+}
+
+.ButtonText {
+  padding: 0 0.5rem;
+}
+
+.ButtonWrraper {
+  margin-top: 2.9rem;
+}
+
+.CategoriesTitle {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.CategoriesList {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.3);
+  transition: all 1s ease;
+}
+
+.CategoriesList:hover {
+  color: #000;
+  transition: all 1s ease;
+}
+
+.CategoriesListSelected {
+  color: #000;
+  transition: all 1s ease;
+}
+
+.TabSection {
+  position: sticky;
+  top: 20px;
+  margin-left: 0.2rem;
+}
+
+.ScrollDownContainer {
+  height: 65vh !important;
+  display: flex !important;
+  align-items: flex-end !important;
+  justify-content: unset !important;
+  margin-top: -8rem !important;
+  margin-left: -0.8rem !important;
+  margin-bottom: 6rem !important;
+}
+
+.MainHeadingContainer {
+  margin-bottom: 4.5rem;
+}
+
+.VisibilityTabOn {
+  display: none;
+}
+
+.CaseStudyContainer ::-webkit-scrollbar {
+  display: none;
+}
+
+/* (this for mobile) */
+@media screen and (max-width: 600px) {
+  .CaseStudyContainer {
+    padding: 0rem 1rem 2rem 1rem;
+  }
+
+  .MainTitleContain {
+    padding: 4rem 0 0rem 1rem;
+  }
+
+  .ScrollDownContainer {
+    display: none !important;
+  }
+
+  .HeadingText {
+    margin-top: 2.5rem;
+    font-size: 45px;
+  }
+
+  .CategoriesTitle {
+    display: none;
+  }
+
+  .TabSection {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 2rem;
+  }
+
+  .CardRightSectionBottomTitle {
+    font-size: 40px;
+    margin-top: 6rem;
+    width: fit-content;
+  }
+
+  .CategoriesList {
+    margin-right: 1.3rem;
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0s ease;
+  }
+
+  .CategoriesList:hover {
+    transition: all 0s ease;
+  }
+
+  .CategoriesListSelected {
+    transition: all 0s ease;
+  }
+
+  .BorderSelected {
+    border-bottom: 2.5px solid #000000;
+    transition: all 1s ease;
+  }
+
+  .LeftCol {
+    margin-top: 1.5rem;
+    align-items: center;
+  }
+
+  .RightCol {
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .CardWrraper {
+    margin-bottom: 2rem;
+  }
+
+  .TextBtn {
+    display: none;
+  }
+}
+
+/* (this for mobile landscape) */
+@media screen and (min-width: 600px) {
+  .CaseStudyContainer {
+    padding: 4rem 1rem 2rem 1rem;
+  }
+
+  .MainTitleContain {
+    padding: 2rem 0 0rem 1rem;
+  }
+
+  .ScrollDownContainer {
+    display: none !important;
+  }
+
+  .HeadingText {
+    margin-top: 0rem;
+    font-size: 45px;
+  }
+
+  .CategoriesTitle {
+    display: none;
+  }
+
+  .TabSection {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 2rem;
+  }
+
+  .CardRightSectionBottomTitle {
+    font-size: 40px;
+    margin-top: 6rem;
+    width: fit-content;
+  }
+
+  .CategoriesList {
+    margin-right: 1.3rem;
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0s ease;
+  }
+
+  .CategoriesList:hover {
+    transition: all 0s ease;
+  }
+
+  .CategoriesListSelected {
+    transition: all 0s ease;
+  }
+
+  .BorderSelected {
+    border-bottom: 2.5px solid #000000;
+    transition: all 1s ease;
+  }
+
+  .LeftCol {
+    margin-top: 1.5rem;
+    align-items: flex-start;
+  }
+
+  .RightCol {
+    margin-top: 0%;
+    padding-left: 2rem;
+  }
+
+  .CardWrraper {
+    margin-bottom: 1.5rem;
+  }
+
+  .TextBtn {
+    display: none;
+  }
+}
+
+/* (this for Tab) */
+@media only screen and (min-width: 768px) {
+  .CaseStudyContainer {
+    padding: 0rem 1rem 2rem 1rem;
+  }
+
+  /* latest */
+  .MainTitleContain {
+    padding: 2.8rem 0 0rem 1rem;
+  }
+
+  .ScrollDownContainer {
+    display: none !important;
+  }
+
+  .HeadingText {
+    margin-top: 1rem;
+    font-size: 50px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .CategoriesTitle {
+    display: none;
+  }
+
+  .TabSection {
+    display: flex;
+    overflow-x: scroll;
+    margin-top: 2rem;
+    justify-content: center;
+  }
+
+  .CardRightSectionBottomTitle {
+    font-size: 50px;
+    margin-top: 1rem;
+    width: 33rem;
+  }
+
+  .CategoriesList {
+    margin-right: 1.3rem;
+    font-weight: 300;
+    font-size: 18px;
+    font-weight: 500;
+    transition: all 0s ease;
+  }
+
+  .CategoriesList:hover {
+    transition: all 0s ease;
+  }
+
+  .CategoriesListSelected {
+    transition: all 0s ease;
+  }
+
+  .TitleForTab {
+    justify-content: center;
+  }
+
+  .BorderSelected {
+    border-bottom: 2.5px solid #000000;
+    transition: all 1s ease;
+  }
+
+  .LeftCol {
+    margin-top: 2rem;
+    margin-right: 0rem;
+  }
+
+  .RightCol {
+    margin-top: 2rem;
+    padding-left: 2rem;
+  }
+
+  .CardWrraper {
+    margin-bottom: 3.5rem;
+    margin-right: 2rem;
+  }
+
+  .TextBtn {
+    display: none;
+  }
+
+  .CenterModeTab {
+    display: flex;
+    justify-content: center;
+  }
+
+  .VisibilityTabOff {
+    display: none;
+  }
+
+  .VisibilityTabOn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .ButtonWrraper {
+    display: flex;
+    justify-content: center;
+    margin-top: 2rem;
+  }
+}
+
+/* (this for Tab landscap) */
+@media only screen and (min-width: 992px) {
+  .CaseStudyContainer {
+    padding: 1rem 0 2rem 8rem;
+  }
+
+  .MainTitleContain {
+    padding: 0rem 0 0rem 8rem;
+  }
+
+  .HeadingText {
+    padding-left: 3rem;
+    margin-top: 0% !important;
+  }
+
+  .TabSection {
+    display: block;
+  }
+
+  .BorderSelected {
+    border: none;
+  }
+
+  .CategoriesTitle {
+    display: block;
+  }
+
+  .LeftCol {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    margin-right: 0%;
+    padding-right: 1rem;
+  }
+
+  .CardWrraper {
+    margin-bottom: 3rem;
+  }
+
+  .TitleForTab {
+    justify-content: flex-start;
+  }
+
+  .VisibilityTabOn {
+    padding-left: 15rem;
+    text-align: left;
+    align-items: flex-start;
+  }
+
+  .ButtonWrraper {
+    justify-content: flex-start;
+  }
+}
+
+/* (this for large device) */
+@media only screen and (min-width: 1200px) {
+  .CaseStudyContainer {
+    padding: 2.5rem 0 0rem 8.5rem;
+  }
+
+  .HeadingText {
+    font-weight: 600;
+    font-size: 4.5rem;
+    width: 40rem;
+    margin-top: 3.5rem;
+    text-align: left;
+  }
+
+  .Rotatetext {
+    font-size: 14px;
+    font-weight: 400;
+    color: #000;
+    transform: rotate(270deg);
+    padding-bottom: 11rem;
+  }
+
+  .LeftCol {
+    margin-top: 4rem;
+    margin-right: 0%;
+    padding-right: 1rem;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+  }
+
+  .RightCol {
+    margin-top: -6rem;
+  }
+
+  .CardWrraper {
+    margin-bottom: 3rem;
+  }
+
+  .CardRightSectionBottomTitle {
+    font-weight: 600;
+    font-size: 45px;
+    width: 28rem;
+  }
+
+  .ButtonText {
+    padding: 0 0.5rem;
+  }
+
+  .ButtonWrraper {
+    margin-top: 2.9rem;
+    justify-content: flex-start;
+  }
+
+  .CategoriesTitle {
+    font-weight: 400;
+    font-size: 16px;
+    display: block;
+  }
+
+  .CategoriesList {
+    font-weight: 500;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.3);
+    transition: all 1s ease;
+  }
+
+  .CategoriesList:hover {
+    color: #000;
+    transition: all 1s ease;
+  }
+
+  .CategoriesListSelected {
+    color: #000;
+    transition: all 1s ease;
+    border: none;
+  }
+
+  .TabSection {
+    display: block;
+    position: sticky;
+    top: 20px;
+    margin-left: 0.2rem;
+  }
+
+  .ScrollDownContainer {
+    height: 65vh !important;
+    display: flex !important;
+    align-items: flex-end !important;
+    justify-content: unset !important;
+    margin-top: -8rem !important;
+    margin-left: -0.8rem !important;
+  }
+
+  .MainHeadingContainer {
+    margin-bottom: 4.5rem;
+  }
+
+  .VisibilityTabOff {
+    display: block;
+  }
+
+  .MainTitleContain {
+    padding: 2.5rem 0 0rem 8.5rem;
+  }
+
+  .VisibilityTabOn {
+    display: none;
+  }
+}
