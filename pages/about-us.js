@@ -4,6 +4,7 @@ import FeedbackSlider from "@/components/About-us/FeedbackSlider";
 import Hero from "@/components/About-us/Hero";
 import Located from "@/components/About-us/Located";
 import ManagementTeam from "@/components/About-us/ManagementTeam";
+import Mission from "@/components/About-us/Mission";
 import OurStory from "@/components/About-us/OurStory";
 import Partners from "@/components/About-us/Partners";
 import Vision from "@/components/About-us/Vision";
@@ -30,6 +31,7 @@ const AboutUs = () => {
       <section ref={scrollRef}>
         <Detail />
       </section>
+      <Mission />
       <Vision />
       <OurStory />
       <Alliance />
