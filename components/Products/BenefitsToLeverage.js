@@ -105,8 +105,9 @@ const BenefitsToLeverage = () => {
               data-aos-duration="1500"
             >
               <div
-                className={`${styles.ItemCard} ${animTiming ? `fade-in-anim` : null
-                  }`}
+                className={`${styles.ItemCard} ${
+                  animTiming ? `fade-in-anim` : null
+                }`}
                 style={{ opacity: animopacity }}
               >
                 <Image

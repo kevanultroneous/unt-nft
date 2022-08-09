@@ -9,6 +9,10 @@
   margin: 0 0 3rem;
 }
 
+.jobNumber {
+  padding: 0 0 0 1rem;
+}
+
 .accordionRow {
   display: flex;
   flex-direction: column;
