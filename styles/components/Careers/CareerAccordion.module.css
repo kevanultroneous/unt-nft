@@ -1,5 +1,5 @@
 .CareerAccordion {
-  padding: 6rem 4rem 4rem 20.5rem;
+  padding: 6rem 4rem 4rem 21rem;
   background: #1a1c3c;
 }
 
@@ -60,7 +60,7 @@
   }
   .careerAccordionHeading {
     color: white;
-    font-size: 4rem;
+    font-size: 50px !important;
     margin: 0 0 3rem;
   }
 }
@@ -68,14 +68,14 @@
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
   .CareerAccordion {
-    padding: 6rem 4.1rem 4rem 8.5rem;
+    padding: 6rem 2.5rem 4rem 8rem;
     background: #1a1c3c;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .CareerAccordion {
-    padding: 6rem 5rem 4rem 21.8rem;
+    padding: 6rem 5rem 4rem 22rem;
     background: #1a1c3c;
   }
 
@@ -86,7 +86,8 @@
 
   .careerAccordionHeading {
     color: white;
-    font-size: 5rem;
+    font-size: 50px !important;
     margin: 0 0 3rem;
+    font-weight: 600;
   }
 }
