@@ -9,6 +9,7 @@
   left: 0px;
   flex-direction: column;
   display: flex;
+  bottom: 0;
   justify-content: space-between;
   align-items: center;
   top: 0px;
@@ -78,7 +79,8 @@
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
   /* .NftMenu {
-    display: none;
+    display: flex;
+    justify-content: space-evenly;
   } */
 }
 
@@ -86,5 +88,6 @@
 @media only screen and (min-width: 1200px) {
   .NftMenu {
     display: flex;
+    justify-content: space-between;
   }
 }

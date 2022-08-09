@@ -324,7 +324,7 @@
   }
 
   .ContactusIcon {
-    margin-top: 2rem;
+    margin-top: 3rem;
     padding-bottom: 1rem;
     margin-left: 0;
   }
@@ -377,6 +377,7 @@
   }
   .ExplorDesign {
     display: flex;
+    flex-direction: row;
   }
 }
 
@@ -483,7 +484,7 @@
 
   .ContactusIcon {
     font-size: 60px;
-    margin-left: 2rem;
+    margin-left: 0rem;
     color: rgba(255, 255, 255, 0.2);
   }
 
@@ -492,5 +493,6 @@
   }
   .ExplorDesign {
     display: flex;
+    flex-direction: row;
   }
 }

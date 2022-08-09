@@ -16,7 +16,7 @@ const FutureChoice = () => {
   return (
     <div className={styles.FutureChoiceContainer}>
       <Row>
-        <Col xl={8} md={6}>
+        <Col xl={8} md={8}>
           <div
             className={`${styles.CardBg} ${c2 ? styles.CardBg2 : null}`}
             // onMouseLeave={() => setC1(false)}
@@ -79,7 +79,7 @@ const FutureChoice = () => {
             </Row>
           </div>
         </Col>
-        <Col xl={4} md={6}>
+        <Col xl={4} md={4}>
           <div className={styles.MainHungry}>
             <div
               className={`${styles.HungryCard} ${

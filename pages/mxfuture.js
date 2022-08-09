@@ -25,7 +25,7 @@ const MxFuture = () => {
         <Introductions />
       </section>
       <MxFutureProducts text={"Use Cases"} />
-      <Exchange color={globalColor} href="/" />
+      {/* <Exchange color={globalColor} href="/" /> */}
       <WhatyouGet />
       <BenefitsToLeverage />
       <Solution />

@@ -80,7 +80,7 @@ const SDE = ({ handleClick }) => {
     {
       name: "MxFuture",
       img: "/assets/images/pro2.svg",
-      link: "/mxfuture",
+      link: "/",
     },
     { name: "MxDex", img: "/assets/images/pro3.svg", link: "/" },
     { name: "MxFi", img: "/assets/images/pro4.svg", link: "/" },

@@ -285,16 +285,16 @@
     display: block;
     /* justify-content: space-between; */
     /* align-items: baseline; */
-    height: 24rem;
-    padding: 2rem 1rem 2rem 1rem;
+    height: 19rem;
+    padding: 2rem 1rem 2rem 1.5rem;
   }
   .CardBg {
-    width: 24rem;
-    height: 24rem;
-    padding: 2rem 1rem 2rem 1rem;
+    width: 32rem;
+    height: 19rem;
+    padding: 2rem 1rem 2rem 1.5rem;
   }
   .BlogbuttonTab {
-    margin-top: 8.5rem;
+    margin-top: 0rem;
   }
 }
 @media only screen and (min-width: 992px) {
@@ -303,21 +303,21 @@
     /* justify-content: space-between; */
     /* align-items: baseline; */
     height: 18rem;
-    padding: 2rem 5.5rem 2rem 2rem;
+    padding: 2rem 1.5rem 2rem 1.5rem;
   }
   .FutureChoiceContainer {
     padding-left: 8rem;
     padding-right: 2rem;
   }
   .CardBg {
-    width: 30rem;
+    width: 40rem;
     height: 18rem;
   }
   .CardBg {
-    padding: 2rem 1rem 2rem 2rem;
+    padding: 2rem 1rem 2rem 1.5rem;
   }
   .BlogbuttonTab {
-    margin-top: 5rem;
+    margin-top: 0rem;
   }
 }
 @media only screen and (min-width: 1200px) {
