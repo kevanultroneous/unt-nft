@@ -66,6 +66,7 @@ const Hero = ({ clickHandler }) => {
                 <ActionButtonV2
                   partialstyle={styles.buttonStyling}
                   text={"See Open Jobs"}
+                  href={"#careerJobOpening"}
                 />
               </div>
             </Col>
