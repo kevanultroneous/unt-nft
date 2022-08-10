@@ -393,6 +393,7 @@
     display: none;
   }
 
+
   .ControllerRev {
     flex-direction: row;
   }
@@ -400,4 +401,5 @@
   .ArrowBottom {
     display: block;
   }
+
 }
