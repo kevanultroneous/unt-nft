@@ -9,7 +9,10 @@ function last(array) {
 
 function CareerAccordion() {
   return (
-    <div className={`${styles.CareerAccordion} CareersAccordion`}>
+    <div
+      className={`${styles.CareerAccordion} CareersAccordion`}
+      id="careerJobOpening"
+    >
       <h2 className={styles.careerAccordionHeading}>Current Openings</h2>
       <Accordion>
         {careerAccordionData.map((el, index) => (

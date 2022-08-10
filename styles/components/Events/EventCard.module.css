@@ -52,7 +52,7 @@
   }
   .NewsImageCardText {
     padding: 1rem 0.8rem;
-    height: 120px;
+    height: 90px;
     border-bottom-left-radius: 15px;
     border-bottom-right-radius: 15px;
   }
@@ -60,13 +60,13 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 18px;
-    margin: 0%;
+    margin: 0 0 0.5rem;
   }
   .NewsImageCardParagraph {
     font-weight: 400;
     font-size: 12px;
     text-align: justify;
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem;
     padding: 0;
   }
   .newsImage {
@@ -122,14 +122,14 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 22px;
-    margin: 0.5rem 0;
+    margin: 0 0 0.5rem;
   }
   .NewsImageCardParagraph {
     font-weight: 400;
     font-size: 16px;
     text-align: justify;
     margin: 0%;
-    padding: 0;
+    padding: 0 0 0.5rem;
   }
   .NewsImageCardText {
     border-bottom-left-radius: 15px;
@@ -160,16 +160,16 @@
       rgba(0, 0, 0, 0.8) 15.7%,
       rgba(26, 28, 59, 0) 140.06%
     );
-    height: 160px;
+    height: 140px;
     border-bottom-left-radius: 20px;
     border-bottom-right-radius: 20px;
     color: #fff;
   }
   .NewsImageCardTitle {
     font-weight: 500;
-    font-size: 20px;
+    font-size: 22px;
     line-height: 30px;
-    margin: 0%;
+    padding: 0 0 0.5rem;
   }
   .NewsImageCardParagraph {
     font-weight: 400;
