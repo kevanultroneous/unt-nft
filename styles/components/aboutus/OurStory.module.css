@@ -203,6 +203,7 @@
   }
   .OurStoryContainer {
     padding-left: 1rem;
+    padding-top: 16rem;
   }
   .OurStory {
     background: linear-gradient(180deg, #1a1c3c 61.52%, #a21d34 133.83%);
@@ -213,12 +214,12 @@
     display: flex;
     justify-content: left;
     align-items: flex-start;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
   }
   .Strengthcol {
     display: flex;
-    padding-left: 8rem;
-    padding-top: 4rem;
+    padding-left: 2rem;
+    padding-top: 2rem;
     flex-direction: row;
   }
   .HowWeCame p {
@@ -226,7 +227,7 @@
   }
   .Employeeimg {
     padding-top: 0.8rem;
-    padding-right: 4rem;
+    padding-right: 2rem;
   }
   .Mobdiv {
     display: flex;

@@ -9,7 +9,8 @@ const Mission = () => {
         {/* style={{ height: 800 }} */}
         <div style={{ height: 700 }}>
           <Row>
-            <Col xl={8}>
+            <Col xl={2}></Col>
+            <Col xl={10}>
               <div className={styles.MissionTitle}>
                 <h2>Our Mission</h2>
                 <p>

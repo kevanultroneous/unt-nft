@@ -135,7 +135,7 @@
     padding-right: 1rem;
   }
   .Icon {
-    min-width: 12%;
+    min-width: 10%;
   }
   .Advantages {
     padding-left: 0rem;
@@ -145,6 +145,7 @@
   }
   .Description {
     font-size: 20px;
+    width: 36rem;
   }
   .Detailcol {
     flex-direction: column;
@@ -218,6 +219,7 @@
     font-size: 16px;
     font-weight: 400;
     text-align: justify;
+    width: auto;
   }
   .Icon {
     min-width: 3rem;
@@ -233,6 +235,9 @@
   .Detailcol {
     display: flex;
     flex-direction: row;
+  }
+  .Icon {
+    min-width: 15%;
   }
 }
 /* @media (min-width: 768px) and (max-width: 1080px) {
