@@ -6,8 +6,7 @@ export default function Trade({ firstcolor = "#363637", secondcolor = "#79797a",
         <Row className={styles.NextRow}>
             <Col xl={12} className={styles.ColOne}
             >
-                <div className={"d-flex align-items-center justify-content-center"}>
-
+                <div className={styles.TradeHeadingWrraper}>
                     <div className={styles.outer}>
                         <div className={styles.bg}
                             style={{
@@ -32,7 +31,7 @@ export default function Trade({ firstcolor = "#363637", secondcolor = "#79797a",
                     <span>
                         <HiOutlineExternalLink
                             className={styles.ContactusIcon}
-                            style={{ color: firstcolor, fontSize: "4rem" }}
+                            style={{ color: firstcolor }}
                         />
                     </span>
                 </div>
