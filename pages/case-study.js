@@ -107,10 +107,9 @@ const CaseStudy = () => {
               {categories.map((value, index) => (
                 <p
                   key={index}
-                  className={`${styles.CategoriesList} ${
-                    index === currentTab &&
+                  className={`${styles.CategoriesList} ${index === currentTab &&
                     `${styles.CategoriesListSelected} ${styles.BorderSelected}`
-                  }`}
+                    }`}
                   onClick={() => setCurrentTab(index)}
                 >
                   {value}
