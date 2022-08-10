@@ -5,9 +5,3 @@
 .textwidth {
   width: 100% !important;
 }
-
-@media (max-width: 600px) {
-  .eventHeadWidth {
-    width: 70vw !important;
-  }
-}

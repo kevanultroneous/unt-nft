@@ -5,10 +5,10 @@ import { PastEventData } from "utils/EventsData";
 import styles from "@/styles/components/Events/PastEvents.module.css";
 
 function PastEvent() {
-  const [mobileView, setMobileView] = useState(false);
+  const [mobileView, setMobileView] = useState(0);
 
   useEffect(() => {
-    window.innerWidth <= 600 ? setMobileView(true) : setMobileView(false);
+    setMobileView(window.innerWidth);
   }, []);
   return (
     <div className={styles.PastEventContainer}>
@@ -19,9 +19,17 @@ function PastEvent() {
         {PastEventData.map((pastEvents) => {
           return (
             <>
-              {mobileView ? (
+              {mobileView <= 600 ? (
                 <EventCard
                   srcimg={pastEvents.srcimgMobile}
+                  imageTitle={pastEvents.imageTitle}
+                  EventsTitle={pastEvents.EventsTitle}
+                  EventsParagraph={pastEvents.EventsParagraph}
+                  customStyle={styles.PastEventTextColumnReverse}
+                />
+              ) : mobileView > 600 && mobileView <= 992 ? (
+                <EventCard
+                  srcimg={pastEvents.srcimgTablet}
                   imageTitle={pastEvents.imageTitle}
                   EventsTitle={pastEvents.EventsTitle}
                   EventsParagraph={pastEvents.EventsParagraph}
