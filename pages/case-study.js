@@ -120,7 +120,7 @@ const CaseStudy = () => {
           </Col>
           <Col xl={5} lg={5} md={5} className={styles.LeftCol}>
             {carddatas.map((v, i) => (
-              <div className={styles.CardWrraper}>
+              <div className={styles.CardWrraper} key={i}>
                 <CardInspired
                   animtype={v.animtype}
                   srcimg={v.srcimg}
@@ -138,7 +138,7 @@ const CaseStudy = () => {
           </Col>
           <Col md={5} xl={5} lg={5} className={styles.RightCol}>
             {carddatas.map((v, i) => (
-              <div className={styles.CardWrraper}>
+              <div className={styles.CardWrraper} key={i}>
                 <CardInspired
                   animtype={v.animtype}
                   srcimg={v.srcimg}
