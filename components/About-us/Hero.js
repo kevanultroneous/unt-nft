@@ -85,7 +85,7 @@ const Hero = ({ clickHandler }) => {
           <Col xl={10} className={styles.Aboutcol}>
             <div className={styles.Heroimg}>
               <Image
-                src={"/assets/images/AboutTimeline.png"}
+                src={"/assets/images/AboutTimeline-1.jpg"}
                 alt="aboutheroimg"
                 className={styles.Img}
                 data-aos="fade-left"
