@@ -160,6 +160,7 @@
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
     border-image-slice: 1;
+    border-right: none;
   }
 
   .MobifinxXmenu {
@@ -212,6 +213,7 @@
     border-bottom: 2px solid transparent;
     border-image: linear-gradient(99deg, #2e3159 28.05%, #a21d34 148.07%);
     border-image-slice: 1;
+    border-right: none;
   }
 
   .MobileMenu {

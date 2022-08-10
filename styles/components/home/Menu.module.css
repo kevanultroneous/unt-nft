@@ -78,10 +78,13 @@
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
-  /* .NftMenu {
+  .NftMenu {
     display: flex;
     justify-content: space-evenly;
-  } */
+  }
+  .hamburger {
+    margin: 14rem 0;
+  }
 }
 
 /* (this for large device) */
@@ -89,5 +92,8 @@
   .NftMenu {
     display: flex;
     justify-content: space-between;
+  }
+  .hamburger {
+    margin: 0;
   }
 }
