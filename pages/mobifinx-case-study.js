@@ -14,6 +14,7 @@ import { Col, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import Lottie from "react-lottie";
 import animation from "../utils/New-2-scroll.json";
+
 const CaseStudy = () => {
   const [currentTab, setCurrentTab] = useState(0);
   const carddatas = [
