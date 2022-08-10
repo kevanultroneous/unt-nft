@@ -111,7 +111,7 @@ const SDE = ({ handleClick }) => {
         >
           <ActionButtonV2
             partialstyle={styles.MobButton}
-            href={"/contact-us"}
+            href={"/get-in-touch"}
             text={
               <>
                 <span className={styles.TextBtn}>Explore Product </span>

@@ -20,18 +20,19 @@ const SoftwareDevelopment = (props) => {
           xs={6}
           className={styles.SoftwareDevelopmentExpertsBtnCol}
         >
-          {
-            props.custombutton ? props.custombutton :
-              <ActionButtonV2
-                href={"/contact-us"}
-                text={
-                  <>
-                    <span className={styles.TextBtn}>Explore Product </span>
-                    <HiOutlineExternalLink />
-                  </>
-                }
-              />
-          }
+          {props.custombutton ? (
+            props.custombutton
+          ) : (
+            <ActionButtonV2
+              href={"/get-in-touch"}
+              text={
+                <>
+                  <span className={styles.TextBtn}>Explore Product </span>
+                  <HiOutlineExternalLink />
+                </>
+              }
+            />
+          )}
         </Col>
       )}
     </Row>

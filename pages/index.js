@@ -18,7 +18,6 @@ import MenuPackage from "@/components/Common/MenuPackage";
 import Parallax from "@/components/Home/Parallax";
 import AnimatedCursor from "react-animated-cursor";
 
-
 export default function Home() {
   const [on, setOn] = useState("1");
   const section1 = useRef(null);
@@ -54,9 +53,8 @@ export default function Home() {
     position: "absolute",
     top: "50%",
     left: "50%",
-    transform: "translate(-50%,-50%)"
+    transform: "translate(-50%,-50%)",
   };
-
 
   return (
     <Layout
@@ -96,7 +94,7 @@ export default function Home() {
           {/* Our Products */}
           <Products />
           {/* Exchange */}
-          <Exchange href={"/contact-us"} />
+          <Exchange href={"/get-in-touch"} />
           {/* Get with us */}
           <WhatWillYouGetWithUs />
           {/* Inspiredby */}
@@ -108,7 +106,6 @@ export default function Home() {
           {/* Speciality */}
           {/* <Speciality /> */}
           <Parallax />
-
 
           {/* Footer */}
           <Footer />

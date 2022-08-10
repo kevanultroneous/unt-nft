@@ -45,7 +45,7 @@ const Products = ({ text }) => {
                     {ProductsList[index].name}
                   </h4>
                   <ActionButtonV3
-                    href={"/contact-us"}
+                    href={"/get-in-touch"}
                     text={
                       <div className={styles.Explortxt}>
                         <span className={styles.ExpText}>Explore Product</span>
