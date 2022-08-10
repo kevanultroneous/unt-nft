@@ -50,10 +50,11 @@
   } */
 }
 
-@media (min-width: 1200px) and (max-width: 1730px) {}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
 
-@media (min-width: 650px) and (max-width: 740px) {}
-
+@media (min-width: 650px) and (max-width: 740px) {
+}
 
 /* (this for mobile) */
 @media screen and (max-width: 600px) {
@@ -104,7 +105,11 @@
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+  .Askedquestion {
+    padding-left: 8.5rem;
+  }
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {

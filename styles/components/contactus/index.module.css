@@ -227,7 +227,7 @@
   }
 } */
 
-@media (min-width: 320px) and (max-width: 767px) {
+@media only screen and (max-width: 600px) {
   .ContactUsMainContainer {
     padding: 5.5rem 1rem 6rem 1rem;
   }
@@ -279,7 +279,7 @@
 .TabWantContainer {
   display: none;
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .WantContainer {
     display: none;
   }
@@ -325,6 +325,141 @@
   }
   .ContactUsHeading {
     padding-top: 6.5rem;
+  }
+  .ButtonSpace {
+    padding-top: 2rem;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .ContactUsMainContainer {
+    padding-left: 8rem;
+  }
+  .ContactUsHeading {
+    padding-top: 4rem;
+  }
+  .ButtonSpace {
+    padding-top: 1rem;
+  }
+  .FirstSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 50rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .ContactUsMainContainer {
+    padding: 2rem 4rem 6rem 8.5rem;
+  }
+  .FirstSection {
+    display: flex;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: left;
+  }
+  .FirstSectionSentence1 {
+    font-weight: 400;
+    font-size: 45px;
+    margin: 0%;
+  }
+  .FirstSectionInput {
+    border: none;
+    width: 20rem;
+    outline: none;
+    margin-bottom: 1rem;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .SecondSectionInput {
+    border: none;
+    width: 20rem;
+    outline: none;
+    margin-bottom: 1rem;
+    margin-right: 1.5rem;
+    margin-left: 1.5rem;
+    padding-bottom: 0.2rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .FirstSectionSentence2 {
+    font-weight: 400;
+    font-size: 45px;
+    margin: 0%;
+  }
+  .SecondSection {
+    padding-top: 1rem;
+    display: flex;
+  }
+  .SubjectInput {
+    margin-top: 1rem;
+    border: none;
+    outline: none;
+    padding-bottom: 0.8rem;
+    width: 97%;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .WantSentence {
+    padding-top: 1.5rem;
+    font-weight: 400;
+    font-size: 45px;
+  }
+  .MiniLine {
+    width: 40px;
+    padding: 0.1rem;
+    margin-right: 1rem;
+    border-bottom: 1px solid #1a1c3b;
+  }
+  .SmallHeading {
+    font-weight: 400;
+    font-size: 20px;
+    color: #1a1c3b;
+  }
+  .ContactUsHeading {
+    display: flex;
+    align-items: center;
+    padding-top: 1.5rem;
+  }
+  .SectionsRow {
+    padding-top: 3rem;
+  }
+  .ButtonSpace {
+    padding-top: 1rem;
+  }
+  .CaptchaControllerContainer {
+    padding-top: 1rem;
+    display: flex;
+    align-items: center;
+  }
+  .ReloadText {
+    padding-left: 1rem;
+    text-decoration: underline;
+    color: #7a7a7a;
+    user-select: none;
+    cursor: pointer;
+    transition: all 1s ease;
+  }
+  .ReloadText:hover {
+    color: #a21d34;
+    transition: all 0.5s ease;
+  }
+  .CaptchaIcon {
+    padding-top: 1rem;
+  }
+  .CaptchaInput {
+    outline: none;
+    border: none;
+    padding-bottom: 0.8rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+  }
+  .Countrysection {
+    padding-top: 1.5rem;
+    display: flex;
+    width: 100%;
+  }
+  .SecondSectionInputHide {
+    padding-bottom: 0rem !important;
   }
 }
 @media (min-width: 1200px) and (max-width: 1730px) {

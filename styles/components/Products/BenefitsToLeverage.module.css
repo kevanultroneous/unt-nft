@@ -316,10 +316,56 @@
   .ItemCard {
     padding-top: 1rem;
   }
+  .ControllerRev {
+    flex-direction: row;
+  }
+  .Controller {
+    width: auto;
+    flex-direction: column;
+  }
+  .ArrowTopMob {
+    font-size: 3rem;
+    transform: rotate(180deg);
+    display: block;
+  }
+  .ArrowBottomMob {
+    font-size: 3rem;
+    transform: rotate(180deg);
+    display: block;
+  }
+  .ControllerRev {
+    justify-content: left;
+  }
+  .ItemCard {
+    padding-left: 4rem;
+  }
 }
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
+  .BenefitsContainer {
+    padding-left: 8.5rem;
+  }
+  .Controller {
+    width: auto;
+    flex-direction: column;
+  }
+  .ArrowTopMob {
+    font-size: 3rem;
+    transform: rotate(180deg);
+    display: block;
+  }
+  .ArrowBottomMob {
+    font-size: 3rem;
+    transform: rotate(180deg);
+    display: block;
+  }
+  .ControllerRev {
+    justify-content: left;
+  }
+  .ItemCard {
+    padding-left: 4rem;
+  }
 }
 
 /* (this for large device) */

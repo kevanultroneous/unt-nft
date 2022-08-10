@@ -453,6 +453,9 @@
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
+  .sectionCards {
+    padding-left: 6rem;
+  }
 }
 
 /* (this for large device) */
