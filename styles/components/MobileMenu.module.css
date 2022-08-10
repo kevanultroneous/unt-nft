@@ -373,6 +373,9 @@
     display: flex;
     justify-content: left;
   }
+  .IconName {
+    text-align: left;
+  }
 }
 
 /* (this for Tab landscap) */
