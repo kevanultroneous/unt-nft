@@ -23,7 +23,7 @@
 }
 @media screen and (max-width: 600px) {
   .VisionContainer {
-    padding-left: 1rem;
+    padding-left: 0rem;
   }
   .VisionRow {
     padding-left: 1rem;
@@ -61,6 +61,6 @@
 
 @media screen and (min-width: 1200px) {
   .VisionRow {
-    padding-left: 8.5rem;
+    padding-left: 3rem;
   }
 }
