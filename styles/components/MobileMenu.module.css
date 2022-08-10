@@ -369,6 +369,10 @@
 
 /* (this for Tab) */
 @media only screen and (min-width: 768px) {
+  .Explorproduct {
+    display: flex;
+    justify-content: left;
+  }
 }
 
 /* (this for Tab landscap) */
