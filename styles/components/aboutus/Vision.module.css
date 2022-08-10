@@ -54,9 +54,9 @@
 }
 
 @media screen and (min-width: 992px) {
-  /* .VisionContainer {
-    padding-left: 8rem;
-  } */
+  .VisionContainer {
+    padding-left: 6rem;
+  }
 }
 
 @media screen and (min-width: 1200px) {

@@ -91,7 +91,7 @@
     align-items: center;
   }
 }
-@media (min-width: 768px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .AchievementsContainer {
     padding-left: 1rem;
     padding-right: 1rem;
@@ -105,6 +105,28 @@
   .AchivmentImg {
     width: 100%;
     height: auto;
+  }
+  .AchievementBoxContainer {
+    padding-left: 0;
+  }
+}
+@media only screen and (min-width: 992px) {
+  .AchievementsContainer {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .AchievementsHead {
+    text-align: center;
+  }
+  .AchievementsTitle {
+    text-align: center;
+  }
+  .AchivmentImg {
+    width: auto;
+    height: auto;
+  }
+  .AchievementBoxContainer {
+    padding-left: 6rem;
   }
 }
 @media only screen and (min-width: 1200px) {
@@ -132,6 +154,7 @@
   }
   .AchievementBoxContainer {
     padding-top: 4rem;
+    padding-left: 0;
   }
   .AchievementBox {
     /* display: flex;
