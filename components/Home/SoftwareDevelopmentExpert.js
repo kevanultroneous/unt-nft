@@ -61,6 +61,18 @@ const SDE = ({ handleClick }) => {
           // swipeToSlide: true,
         },
       },
+      {
+        breakpoint: 480,
+        settings: {
+          slidesToShow: 1.35,
+          slidesToScroll: 2,
+          initialSlide: 1,
+          centerMode: true,
+          autoplay: true,
+          autoplaySpeed: 5000,
+          // swipeToSlide: true,
+        },
+      },
     ],
   };
   const sliderList = [
@@ -68,7 +80,7 @@ const SDE = ({ handleClick }) => {
     {
       name: "MxFuture",
       img: "/assets/images/pro2.svg",
-      link: "/mxfuture",
+      link: "/",
     },
     { name: "MxDex", img: "/assets/images/pro3.svg", link: "/" },
     { name: "MxFi", img: "/assets/images/pro4.svg", link: "/" },

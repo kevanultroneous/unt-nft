@@ -10,6 +10,7 @@ import Introductions from "@/components/Products/Introductions";
 import MxFutureProducts from "@/components/Products/MxFutureProducts";
 import NextProduct from "@/components/Products/NextProduct";
 import Solution from "@/components/Products/Solution";
+import Trade from "@/components/Products/Trade";
 import WhatyouGet from "@/components/Products/WhatyouGet";
 import { useRef, useState } from "react";
 import { MxFutureNextLink } from "utils/MxFuture.data";
@@ -25,7 +26,8 @@ const MxFuture = () => {
         <Introductions />
       </section>
       <MxFutureProducts text={"Use Cases"} />
-      <Exchange color={globalColor} href="/" />
+      {/* <Exchange color={globalColor} href="/" /> */}
+      <Trade />
       <WhatyouGet />
       <BenefitsToLeverage />
       <Solution />

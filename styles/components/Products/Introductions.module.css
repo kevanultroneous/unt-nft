@@ -170,7 +170,6 @@
   .SliderActionContainer {
     justify-content: space-between;
   } */
-
 }
 
 /* ================================= */
@@ -280,11 +279,18 @@
   .SliderActionContainer {
     justify-content: space-between;
   }
-
+  .IntroMainTitle {
+    font-size: 50px;
+    margin: 0;
+    width: 50rem;
+    padding-bottom: 1rem;
+    line-height: normal;
+  }
 }
 
 /* (this for Tab landscap) */
-@media only screen and (min-width: 992px) {}
+@media only screen and (min-width: 992px) {
+}
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {

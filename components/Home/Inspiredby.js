@@ -90,7 +90,9 @@ const Inspiredby = () => {
               srcimg={"/assets/images/CS1.png"}
               style={styles.InspiredCardSpace}
               inspireTitle={"EtherGo blockchain-based fundraising platform"}
-              inspireParagraph={"In this case, the client wanted a blockchai"}
+              inspireParagraph={
+                "In this case, the client wanted a blockchain-based fundraising platform that allows investors... "
+              }
               disTitle={"EtherGo blockchain-based fundraising platform"}
               dish1={"Problem"}
               disp1={
@@ -109,7 +111,7 @@ const Inspiredby = () => {
                 "TRON Private Chain and Centralized Blockchain Ecosystem"
               }
               inspireParagraph={
-                "A private blockchain network where all the gambling"
+                "A private blockchain network where all the gambling platforms can come and provide faster..."
               }
               disTitle={
                 "TRON Private Chain and Centralized Blockchain Ecosystem"
@@ -146,7 +148,7 @@ const Inspiredby = () => {
               "Public Ether Blockchain based Centralized Product Ecosystem"
             }
             inspireParagraph={
-              "The client wanted a network-driven platform that integrates"
+              "The client wanted a network-driven platform that integrates a network marketing platform..."
             }
             disTitle={
               "Public Ether Blockchain based Centralized Product Ecosystem"
@@ -166,7 +168,9 @@ const Inspiredby = () => {
             inspireTitle={
               "HFT Derivatives Platform with Risk Engine and Custom Contracts"
             }
-            inspireParagraph={""}
+            inspireParagraph={
+              "The client wanted an extremely scalable system with a highly supportive risk engine to support..."
+            }
             disTitle={
               "HFT Derivatives Platform with Risk Engine and Custom Contracts"
             }

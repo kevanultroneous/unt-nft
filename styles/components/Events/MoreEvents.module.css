@@ -1,0 +1,79 @@
+.moreEventsContainer {
+  padding: 2.5rem 0rem 3rem 8.5rem;
+}
+
+.rightHeadingCont {
+  padding: 0 0 0 1.2rem;
+  margin: -0.8rem 0 0;
+}
+
+.moreEventHead {
+  padding: 0 0 0 4rem;
+  margin: 0 0 3rem;
+}
+
+.moreEventHead h3 {
+  font-size: 50px;
+  font-weight: 600;
+}
+
+/* mobile portrait */
+@media screen and (max-width: 600px) {
+  .moreEventsContainer {
+    padding: 1rem;
+  }
+  .rightHeadingDisplay {
+    display: none;
+  }
+  .moreEventHead {
+    padding: 0;
+    margin: 0;
+  }
+  .moreEventHead h3 {
+    font-size: 35px;
+    font-weight: 600;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+  .moreEventsContainer {
+    padding: 1rem 1rem 2rem;
+  }
+  .rightHeadingDisplay {
+    display: none;
+  }
+}
+
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+  .moreEventsContainer {
+    padding: 1rem;
+  }
+  .moreEventHead {
+    padding: 0;
+    margin: 0 0 2rem;
+  }
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+  .moreEventsContainer {
+    padding: 2.5rem 0rem 2rem 8.5rem;
+  }
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .moreEventsContainer {
+    padding: 2.5rem 0rem 2rem 8.5rem;
+  }
+  .rightHeadingDisplay {
+    display: flex;
+  }
+  .rightHeadingCont {
+    padding: 0 0 0 1.2rem;
+  }
+
+  .moreEventHead {
+    padding: 0 0 0 4rem;
+    margin: 0 0 3rem;
+  }
+}

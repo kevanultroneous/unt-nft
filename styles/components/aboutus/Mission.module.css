@@ -1,0 +1,97 @@
+.MissionContainer {
+  padding-left: 8.5rem;
+  background-color: #04040c;
+}
+
+@media screen and (max-width: 600px) {
+  .MissionContainer {
+    padding-left: 0rem;
+    background-color: #05102c;
+  }
+  .MissionTitle {
+    padding: 14rem 0;
+  }
+  .MissionTitle h2 {
+    font-size: 35px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 1rem;
+  }
+  .MissionTitle p {
+    font-size: 22px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+    width: auto;
+  }
+}
+@media screen and (min-width: 600px) {
+  .MissionContainer {
+    padding-left: 0rem;
+  }
+  .MissionTitle {
+    padding: 6rem 0;
+  }
+  .MissionTitle h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 1rem;
+  }
+  .MissionTitle p {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .MissionContainer {
+    padding-left: 0rem;
+  }
+  .MissionTitle {
+    padding: 6rem 0;
+  }
+  .MissionTitle h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 1rem;
+  }
+  .MissionTitle p {
+    font-size: 40px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 1rem;
+    padding-top: 2rem;
+  }
+}
+@media screen and (min-width: 992px) {
+  .MissionContainer {
+    padding-left: 6rem;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .MissionContainer {
+    padding-left: 0rem;
+  }
+  .MissionTitle {
+    padding: 12rem 0;
+  }
+  .MissionTitle h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #fff;
+    padding-left: 8rem;
+  }
+  .MissionTitle p {
+    font-size: 30px;
+    font-weight: 400;
+    color: #fff;
+    padding-left: 8rem;
+    padding-top: 2rem;
+    width: 48rem;
+  }
+}

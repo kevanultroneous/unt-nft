@@ -45,7 +45,7 @@ const Menu = ({ opacity, handleClick, change, addClass, clicktoCloseMenu }) => {
             title={"MobifinX"}
             src="/assets/images/Mobifinx.svg"
             fluid
-            className="mobifinxlogo"
+            className={styles.MobifinxLogo}
           />
         </Link>
       </div>

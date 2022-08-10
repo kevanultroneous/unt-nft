@@ -50,6 +50,7 @@
     padding: 0 1rem 0;
   }
   .newsBox {
+    padding: 2rem 1.2rem 2.4rem;
     margin: 0 0 1rem;
   }
   .newsCount span {
@@ -63,6 +64,20 @@
 }
 /* mobile landscape */
 @media screen and (min-width: 600px) {
+  .newsMainContainer {
+    padding: 0 1rem 0;
+  }
+  .newsBox {
+    margin: 0 0 1rem;
+  }
+  .newsCount span {
+    font-size: 100px;
+    top: -4.5rem;
+    right: -1rem;
+  }
+  .newsImageBox {
+    margin: 0 0 3rem;
+  }
 }
 /* tablet portrait */
 @media only screen and (min-width: 768px) {
@@ -71,9 +86,6 @@
   }
   .newsBox {
     margin: 0 0 2rem;
-  }
-
-  .newsLogo {
   }
   .newsCount span {
     font-size: 150px;
@@ -86,6 +98,15 @@
 }
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
+  .newsMainContainer {
+    padding: 0rem 1.5rem 0rem 7.8rem !important;
+  }
+  .newsBox {
+    background: #f8f8f9;
+    padding: 2rem 1.3rem 2.4rem;
+    margin: 0.7rem !important;
+    border-radius: 12px;
+  }
 }
 /* PC */
 @media only screen and (min-width: 1200px) {
@@ -97,7 +118,7 @@
     background: #f8f8f9;
     padding: 2rem 1.3rem 2.4rem;
     margin: 0.7rem !important;
-    border-radius: 12px;
+    border-radius: 15px;
   }
 
   .newsImageBox {
@@ -115,7 +136,7 @@
     font-weight: 600;
     color: white;
     position: absolute;
-    top: -5.5rem !important;
+    top: -5.9rem !important;
     right: -2.1rem !important;
   }
 

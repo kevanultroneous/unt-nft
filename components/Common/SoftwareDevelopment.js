@@ -5,7 +5,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 const SoftwareDevelopment = (props) => {
   return (
     <Row className={styles.SoftwareDevelopmentExpertsRow}>
-      <Col xl={6} xs={6} md={6} className="p-0">
+      <Col xl={6} xs={6} md={6} className={`p-0 ${props.textwidth}`}>
         <div className={styles.SoftwareDevelopmentExpertsSmallHead}>
           <div className={`${styles.HomeMiniLine} ${props.miniLineStyle}`} />
           <span className={`${styles.HomeSmallHeading} ${props.textStyle}`}>

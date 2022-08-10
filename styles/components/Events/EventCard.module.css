@@ -1,0 +1,230 @@
+.NewsImageCardContainer {
+  padding: 1rem 1.5rem 1rem 7.8rem;
+}
+.NewsImageCard {
+  position: relative;
+  margin: 1rem 0;
+}
+
+.NewsImageCardText {
+  padding: 2rem;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    3.41deg,
+    rgba(0, 0, 0, 0.8) 15.7%,
+    rgba(26, 28, 59, 0) 140.06%
+  );
+  height: 120px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  color: #fff;
+}
+
+.NewsImageCardTitle {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0%;
+}
+.NewsImageCardParagraph {
+  font-weight: 400;
+  font-size: 16px;
+  text-align: justify;
+  margin: 0%;
+  padding: 0 0 0.5rem;
+}
+
+.imageNewsRow {
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+/* mobile portrait */
+@media screen and (max-width: 600px) {
+  .NewsImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .NewsImageCard {
+    margin: 0 0 1rem;
+  }
+  .NewsImageCardText {
+    padding: 1rem 0.8rem;
+    height: 120px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .NewsImageCardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    margin: 0%;
+  }
+  .NewsImageCardParagraph {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0.5rem 0;
+    padding: 0;
+  }
+  .newsImage {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+/* mobile landscape */
+@media screen and (min-width: 600px) {
+  .NewsImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .NewsImageCard {
+    margin: 0 0 1rem;
+  }
+  .NewsImageCardText {
+    padding: 0.4rem 2rem;
+    height: 100px;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .NewsImageCardTitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    margin: 0%;
+  }
+  .NewsImageCardParagraph {
+    font-weight: 400;
+    font-size: 12px;
+    text-align: justify;
+    margin: 0 0 0.5rem;
+    padding: 0;
+  }
+  .newsImage {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+/* tablet portrait */
+@media only screen and (min-width: 768px) {
+  .NewsImageCardContainer {
+    padding: 0 1rem 0;
+  }
+  .NewsImageCard {
+    margin: 0 0 2rem;
+  }
+  .NewsImageCardText {
+    padding: 1.5rem 1rem;
+    height: 100px;
+  }
+  .NewsImageCardTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 22px;
+    margin: 0.5rem 0;
+  }
+  .NewsImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0;
+  }
+  .NewsImageCardText {
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  .newsImage {
+    overflow: hidden;
+    border-radius: 15px;
+  }
+}
+/* tablet landscape */
+@media only screen and (min-width: 992px) {
+  .NewsImageCardContainer {
+    padding: 1rem 1.5rem 1rem 7.8rem;
+  }
+  .NewsImageCard {
+    position: relative;
+    margin: 1rem 0;
+  }
+  .NewsImageCardText {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      3.41deg,
+      rgba(0, 0, 0, 0.8) 15.7%,
+      rgba(26, 28, 59, 0) 140.06%
+    );
+    height: 160px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+  }
+  .NewsImageCardTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0%;
+  }
+  .NewsImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0 0 0.5rem;
+  }
+  .newsImage {
+    height: auto;
+  }
+}
+/* PC */
+@media only screen and (min-width: 1200px) {
+  .NewsImageCardContainer {
+    padding: 1rem 1.5rem 1rem 7.8rem;
+  }
+  .NewsImageCard {
+    position: relative;
+    margin: 1rem 0;
+  }
+
+  .NewsImageCardText {
+    padding: 2rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(
+      3.41deg,
+      rgba(0, 0, 0, 0.8) 15.7%,
+      rgba(26, 28, 59, 0) 140.06%
+    );
+    height: 120px;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+    color: #fff;
+  }
+
+  .NewsImageCardTitle {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0%;
+  }
+  .NewsImageCardParagraph {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: justify;
+    margin: 0%;
+    padding: 0 0 0.5rem;
+  }
+
+  .imageNewsRow {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+}

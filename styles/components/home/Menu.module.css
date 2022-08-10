@@ -9,6 +9,7 @@
   left: 0px;
   flex-direction: column;
   display: flex;
+  bottom: 0;
   justify-content: space-between;
   align-items: center;
   top: 0px;
@@ -24,9 +25,9 @@
 
 .BlockchainTechnologyText {
   font-weight: 400;
-  width: 8rem;
+  /* width: 8rem; */
   font-size: 14px;
-  margin-bottom: 6rem;
+  margin-bottom: 4rem;
   color: rgba(0, 0, 0, 0.8);
   transform: rotate(-90deg);
 }
@@ -46,6 +47,10 @@
 .hamburger:hover {
   cursor: pointer;
 }
+.MobifinxLogo {
+  width: 3rem;
+  padding-top: 2.5rem;
+}
 
 @media (min-width: 320px) and (max-width: 450px) {
   .NftMenu {
@@ -53,7 +58,7 @@
   }
 }
 
-@media (min-width: 768px) and (max-width: 1080px) {
+@media only screen and (min-width: 768px) {
   .NftMenu {
     display: none;
   }
@@ -73,14 +78,33 @@
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
-  /* .NftMenu {
-    display: none;
-  } */
+  .NftMenu {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .hamburger {
+    margin: 14rem 0;
+  }
+  .BlockchainTechnologyText {
+    margin-bottom: 4rem;
+  }
 }
 
 /* (this for large device) */
 @media only screen and (min-width: 1200px) {
   .NftMenu {
     display: flex;
+    justify-content: space-between;
+  }
+  .hamburger {
+    margin: 0;
+  }
+  .BlockchainTechnologyText {
+    font-weight: 400;
+    /* width: 8rem; */
+    font-size: 14px;
+    margin-bottom: 4rem;
+    color: rgba(0, 0, 0, 0.8);
+    transform: rotate(-90deg);
   }
 }

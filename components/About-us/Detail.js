@@ -45,7 +45,7 @@ const Detail = () => {
           ))}
         </Col>
       </Row>
-      <Row>
+      {/* <Row>
         <Col xl={12}>
           <div className={styles.Aboutcandle}>
             <Image
@@ -55,7 +55,7 @@ const Detail = () => {
             />
           </div>
         </Col>
-      </Row>
+      </Row> */}
     </div>
   );
 };

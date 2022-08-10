@@ -23,7 +23,7 @@
 /* Mobile Portrait */
 @media screen and (max-width: 600px) {
   .lifeMobifinxMainContainer {
-    padding: 3rem 0 3rem 1rem;
+    padding: 3rem 0 1rem 1rem;
   }
   .lifeAtMobifinxSideHeading {
     display: none;
@@ -33,9 +33,10 @@
   }
 
   .rightText h3 {
-    font-size: 1.5rem;
+    width: 90vw;
+    font-size: 35px;
     font-weight: 600;
-    line-height: 1.5rem;
+    line-height: 40px;
   }
 
   .rightText p {
@@ -82,6 +83,22 @@
   .rightText {
     width: 95vw !important;
   }
+  .rightText h3 {
+    width: 90vw;
+    font-size: 50px;
+    line-height: 4rem;
+    text-align: left;
+  }
+  .rightText p {
+    width: 95vw;
+    font-weight: 400;
+    font-size: 16px;
+    color: #2e3159;
+    font-style: normal;
+    margin: 0%;
+    text-align: left;
+    margin: 1.5rem 0;
+  }
   .sideHeading {
     display: none;
   }
@@ -92,6 +109,9 @@
 
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
+  .lifeMobifinxMainContainer {
+    padding: 5rem 0 3rem 8rem !important;
+  }
   .sideHeading {
     margin-top: 0;
     padding-right: 0;
@@ -103,10 +123,22 @@
     padding-bottom: 0rem;
   }
   .rightText {
-    width: 70vw;
+    width: auto !important;
+    padding: 0 2.5rem 0 0;
+  }
+  .rightText h3 {
+    text-align: left;
+    width: 60vw;
   }
   .rightText p {
+    width: initial;
     margin: 3rem 0;
+    text-align: justify;
+  }
+  .rightImage {
+    display: flex !important;
+    justify-content: right !important;
+    padding: 0;
   }
 }
 
@@ -119,13 +151,14 @@
   }
 
   .rightText {
-    width: 48vw !important;
+    width: 50vw !important;
   }
 
   .rightText h3 {
     font-size: 4rem;
     font-weight: 600;
     line-height: 4rem;
+    width: 100%;
   }
 
   .rightText p {
@@ -134,5 +167,6 @@
   .rightImage {
     text-align: -webkit-right;
     width: 100%;
+    padding: 0;
   }
 }

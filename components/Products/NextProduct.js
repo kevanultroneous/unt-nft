@@ -42,8 +42,8 @@ const NextProduct = ({ listofdata = [] }) => {
             ind === 0
               ? styles.ColZero
               : ind === 1
-              ? styles.ColOne
-              : styles.ColTwo
+                ? styles.ColOne
+                : styles.ColTwo
           }
         >
           <div className={styles.outer}>

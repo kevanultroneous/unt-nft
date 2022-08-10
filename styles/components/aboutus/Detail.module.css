@@ -172,7 +172,7 @@
 
 @media screen and (min-width: 1200px) {
   .AboutdetailsContainer {
-    padding: 0 0 0 8.5rem;
+    padding: 0 0 4rem 8.5rem;
   }
   .Subtitle p {
     font-size: 16px;
