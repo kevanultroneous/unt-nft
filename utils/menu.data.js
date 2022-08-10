@@ -106,7 +106,7 @@ export const menus = [
   // },
   {
     name: "Contact us",
-    mainlink: "/contact-us",
+    mainlink: "/get-in-touch",
     menus: [
       {
         name: "Introduction",
