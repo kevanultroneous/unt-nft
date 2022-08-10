@@ -10,6 +10,8 @@ function EventsHero() {
   useEffect(() => {
     window.innerWidth <= 600
       ? setMobileView("hero-mobile")
+      : window.innerWidth > 600 && window.innerWidth <= 992
+      ? setMobileView("hero-tab")
       : setMobileView("hero");
   }, []);
 
