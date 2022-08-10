@@ -133,5 +133,6 @@
     width: fit-content;
     margin-left: -0.8rem;
     margin-top: 2rem;
+    display: block;
   }
 }
