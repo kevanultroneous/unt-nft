@@ -35,7 +35,7 @@ export const menus = [
   },
   {
     name: "About us",
-    mainlink: "/about-mobifinx",
+    mainlink: "",
     menus: [
       {
         name: "Company Overview",
