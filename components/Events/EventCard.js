@@ -9,6 +9,11 @@ const EventCard = ({
   EventsTitle,
   EventsParagraph,
   customStyle,
+  disTitle,
+  dish1,
+  dish2,
+  disp1,
+  disp2,
 }) => {
   return (
     <div className={`${styles.NewsImageCard} ${style}`}>
@@ -24,6 +29,23 @@ const EventCard = ({
         <p className={styles.NewsImageCardTitle}>{EventsTitle}</p>
         <p className={styles.NewsImageCardParagraph}>{EventsParagraph}</p>
       </div>
+      {/* <div className={styles.NewsCardOverlay}>
+        <div className={styles.NewsCardOverlayText}>
+          <p
+            className={styles.NewsImageCardTitle}
+            style={{ paddingBottom: "1rem" }}
+          >
+            {disTitle}
+          </p>
+          <p className={styles.NewsDishead1}>{dish1}</p>
+          <div className={styles.NewsInspire}></div>
+          <p className={styles.NewsImageCardParagraph}>{disp1}</p>
+          <p className={styles.NewsDishead1}>{dish2}</p>
+          <div className={styles.NewsInspire}></div>
+
+          <p className={styles.NewsImageCardParagraph}>{disp2}</p>
+        </div>
+      </div> */}
     </div>
   );
 };
