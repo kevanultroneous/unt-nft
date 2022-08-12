@@ -1,6 +1,7 @@
 .HeroContainer {
   padding: 2.5rem 4rem 4rem 8.5rem;
   background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
+  height: 100vh;
 }
 .SoftwareDevelopmentExpertsRow {
   margin: 0%;
@@ -161,6 +162,7 @@
 @media screen and (max-width: 600px) {
   .HeroContainer {
     padding: 5.8rem 1rem 5rem 1rem;
+    height: auto;
   }
   .heroContainer {
     justify-content: end;
@@ -216,6 +218,7 @@
 @media screen and (min-width: 600px) {
   .HeroContainer {
     padding: 4.8rem 1rem 1rem;
+    height: auto;
   }
   .ReactContainer {
     max-width: fit-content !important;
@@ -241,7 +244,7 @@
     width: 12vw;
   }
   .sliderFirstHalf {
-    margin: -3rem 0 0;
+    margin: -4.5rem 0 0;
   }
   .sliderContainer p {
     font-size: 0.8rem;
@@ -276,7 +279,7 @@
   }
   .careerBigHeading {
     color: white;
-    font-size: 4.5rem;
+    font-size: 50px;
     margin: 11rem 0 3rem;
     font-weight: 600;
   }
@@ -318,7 +321,7 @@
     margin: 0 0 0 -1.3rem;
   }
   .heroContainer {
-    margin-top: -3.5rem;
+    margin-top: -4.5rem;
   }
   .careerBigHeading {
     margin: 5rem 0 3rem;
@@ -328,7 +331,6 @@
 @media only screen and (min-width: 1200px) {
   .HeroContainer {
     padding: 2.5rem 2.2rem 4rem 8.5rem;
-    height: 100vh;
     background: linear-gradient(77.42deg, #1a1c3b 28.05%, #a21d34 148.07%);
   }
   .SoftwareDevelopmentExpertsRow {

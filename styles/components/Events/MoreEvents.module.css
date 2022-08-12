@@ -27,7 +27,7 @@
   }
   .moreEventHead {
     padding: 0;
-    margin: 0;
+    margin: 0 0 1.5rem;
   }
   .moreEventHead h3 {
     font-size: 35px;
@@ -57,7 +57,7 @@
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
   .moreEventsContainer {
-    padding: 2.5rem 0rem 2rem 8.5rem;
+    padding: 2.5rem 0rem 2rem 8rem;
   }
 }
 /* PC */

@@ -156,8 +156,9 @@ export default function DetailSection() {
             </p>
             <div className={styles.SolutionImage}>
               <Image
-                src="/assets/images/solution-img.png"
+                src="/assets/images/big-news-two.png"
                 className={styles.SolutionImageConfigure}
+                alt="news detail solution image"
               />
             </div>
           </div>

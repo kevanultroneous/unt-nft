@@ -26,8 +26,8 @@ const EventCard = ({
         />
       </div>
       <div className={`${styles.NewsImageCardText} ${customStyle}`}>
-        <p className={styles.NewsImageCardTitle}>{EventsTitle}</p>
         <p className={styles.NewsImageCardParagraph}>{EventsParagraph}</p>
+        <p className={styles.NewsImageCardTitle}>{EventsTitle}</p>
       </div>
       {/* <div className={styles.NewsCardOverlay}>
         <div className={styles.NewsCardOverlayText}>

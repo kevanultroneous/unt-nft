@@ -7,13 +7,13 @@ export default function Hero() {
       <Col xl={10} lg={10} xs={12} md={12}>
         <div className={styles.HeroDetailsWrraper}>
           <h4 className={styles.HeroHeading}>
-            A Technical Analysis Toolset for a US-Based Investing Education
-            Platform
+            A network-driven platform integrating e-commerce and trading
+            features
           </h4>
           <div className={styles.ImageWrraper}>
             <Image
-              src="/assets/images/etherium.png"
-              alt="etherium"
+              src="/assets/images/big-news-image.png"
+              alt="News Detail Hero"
               className={styles.HeroImage}
             />
           </div>
