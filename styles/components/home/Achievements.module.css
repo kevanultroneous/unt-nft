@@ -59,6 +59,7 @@
   }
   .AchievementsHead {
     text-align: left;
+    display: none;
   }
   .AchievementsTitle {
     text-align: left;

@@ -312,10 +312,12 @@
   }
 
   .BenefitHeading {
+    font-size: 50px;
   }
 
   .ItemCard {
     padding-top: 1rem;
+    width: 150%;
   }
   .ControllerRev {
     flex-direction: row;

@@ -341,7 +341,8 @@
 /* (this for Tab) */
 @media only screen and (min-width: 768px) {
   .WhatyouWillget {
-    padding: 3rem 1rem;
+    padding: 6rem 1rem;
+    padding-bottom: 5rem;
   }
 
   .sectionrow {
@@ -371,6 +372,7 @@
 
   .WhatyouWillget h2 {
     padding-bottom: 2rem;
+    font-size: 50px;
   }
 
   .Headingcol h4 {
