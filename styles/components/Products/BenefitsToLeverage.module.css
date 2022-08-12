@@ -308,6 +308,7 @@
     transform: rotate(0deg);
     margin: 0%;
     padding-bottom: 1rem;
+    display: none;
   }
 
   .BenefitHeading {

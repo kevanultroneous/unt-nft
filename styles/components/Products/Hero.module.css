@@ -270,6 +270,9 @@
   .Herotitle h1 {
     font-size: 60px;
   }
+  .HeroImg {
+    height: 130px;
+  }
 }
 
 /* (this for Tab landscap) */
