@@ -405,6 +405,7 @@
 
   .ItemCard {
     padding-top: 4rem;
+    padding-left: 0;
   }
 
   .ItemTitle {
