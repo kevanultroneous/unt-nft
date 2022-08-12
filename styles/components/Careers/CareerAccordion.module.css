@@ -46,7 +46,7 @@
     margin: 0 0 3rem;
   }
 }
-/* Mobile Landscape and Tablet Portrait*/
+/* Mobile Landscape */
 @media screen and (min-width: 600px) {
   .CareerAccordion {
     padding: 3rem 1rem;
@@ -57,7 +57,7 @@
     margin: 0 0 3rem;
   }
 }
-
+/* Tablet Portrait*/
 @media only screen and (min-width: 768px) {
   .CareerAccordion {
     padding: 3rem 1rem;
@@ -72,7 +72,7 @@
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
   .CareerAccordion {
-    padding: 6rem 2.5rem 4rem 8rem;
+    padding: 6rem 2rem 4rem 8rem;
     background: #1a1c3c;
   }
 }

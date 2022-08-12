@@ -26,6 +26,7 @@ export const PastEventData = [
   {
     srcimg: "assets/images/past-event-image-one.png",
     srcimgMobile: "assets/images/past-event-image-one-mobile.png",
+    srcimgTablet: "assets/images/past-event-image-one-tab.png",
     imageTitle:
       "A network-driven platform integrating e-commerce, a wallet, and trading features",
     EventsTitle:
@@ -42,6 +43,7 @@ export const PastEventData = [
   {
     srcimg: "assets/images/past-event-image-two.png",
     srcimgMobile: "assets/images/past-event-image-two-mobile.png",
+    srcimgTablet: "assets/images/past-event-image-two-tab.png",
     imageTitle:
       "A network-driven platform integrating e-commerce, a wallet, and trading features",
     EventsTitle:

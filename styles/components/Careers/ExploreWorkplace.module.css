@@ -80,7 +80,7 @@
 
 .ctaButton img {
   transform: scale(0.7);
-  transition: transform 0.5s ease;
+  transition: transform 1s ease-in-out;
 }
 .ctaButton img:hover {
   transform: scale(0.9);
@@ -122,27 +122,28 @@
     margin: 1.6rem 0 0;
   }
   .ctaRow {
-    width: 91vw;
-    margin: 2.5rem auto 0;
+    width: 100%;
+    margin: 2.5rem 1rem 0;
   }
   .ctaText h3 {
     font-size: 2.2rem;
     width: 88.5vw;
     font-weight: 600;
+    margin: 0;
   }
   .ctaButton {
-    width: 88.5vw;
+    width: 100%;
     margin: 0 0 2.6rem;
   }
   .ctaButton p {
-    margin: 0 1.5rem 0 0;
+    margin: 0;
     font-size: 1.2rem;
   }
   .ctaButton img {
-    transform: scale(1);
+    transform: scale(0.5);
   }
   .ctaButton img:hover {
-    transform: scale(1);
+    transform: scale(0.6);
   }
 }
 

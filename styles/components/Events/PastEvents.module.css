@@ -11,11 +11,11 @@
   font-weight: 600;
 }
 
-.PastEventTextColumnReverse {
+/* .PastEventTextColumnReverse {
   display: flex;
   flex-direction: column-reverse;
   justify-content: center;
-}
+} */
 
 /* mobile portrait */
 @media screen and (max-width: 600px) {
@@ -43,7 +43,7 @@
 /* tablet landscape */
 @media only screen and (min-width: 992px) {
   .PastEventContainer {
-    padding: 2.5rem 2.5rem 2rem 8.5rem;
+    padding: 2.5rem 2.5rem 2rem 8rem;
   }
 }
 /* PC */
