@@ -99,6 +99,9 @@
   .FeedbackContainer {
     padding-bottom: 0;
   }
+  .Description {
+    font-size: 16px;
+  }
 }
 
 @media screen and (min-width: 600px) {
