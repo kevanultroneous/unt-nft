@@ -91,6 +91,10 @@
   }
   .SliderRow {
     padding-right: 2rem;
+    height: 100vh;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
   }
   .FeedbackContainer {
     padding-bottom: 0;

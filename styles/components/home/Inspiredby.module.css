@@ -197,7 +197,8 @@
   }
   .InspiredCardView2 {
     opacity: 1;
-    display: none;
+    display: flex;
+    padding-right: 1rem;
   }
   .InspiredCardOverlay {
     width: 100%;
