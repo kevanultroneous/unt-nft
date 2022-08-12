@@ -349,7 +349,7 @@
 }
 
 @media only screen and (min-width: 1200px) {
-  .ContactUsMainContainer {
+  /* .ContactUsMainContainer {
     padding: 2rem 4rem 6rem 8.5rem;
   }
   .FirstSection {
@@ -460,12 +460,68 @@
   }
   .SecondSectionInputHide {
     padding-bottom: 0rem !important;
+  } */
+  /* --- */
+  .ContactUsMainContainer {
+    padding: 2rem 4rem 6rem 8.5rem;
   }
+  .WantContainer {
+    display: none;
+  }
+  .TabWantContainer {
+    display: flex;
+    align-items: center;
+  }
+  .WantSentence {
+    margin-left: 2.5rem;
+  }
+  /* .ContactUsMainContainer {
+    padding: 1rem 1rem 6rem 1rem;
+  } */
+
+  .FirstSectionSentence1,
+  .FirstSectionSentence2,
+  .WantSentence {
+    font-size: 50px;
+  }
+
+  .FirstSection {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 70rem;
+  }
+  .FirstSectionSentence1 {
+    padding: 1rem 0;
+  }
+  .FirstSectionInput {
+    margin: 0%;
+    margin-bottom: 0rem;
+    width: 22rem;
+  }
+  .SecondSection {
+  }
+  .SecondSectionInputHide {
+    display: none;
+  }
+  .FirstSectionSentenceSpace {
+    margin-right: 2rem !important;
+  }
+  .SectionsRow {
+    padding-top: 2rem;
+  }
+  .ContactUsHeading {
+    padding-top: 1.5rem;
+  }
+  .ButtonSpace {
+    padding-top: 2rem;
+  }
+  /* ========================================================================================================================================================= */
 }
 @media (min-width: 1200px) and (max-width: 1730px) {
 }
-@media (min-width: 1081px) and (max-width: 1250px) {
+/* @media (min-width: 1081px) and (max-width: 1250px) {
   .FirstSectionSentence1 {
     font-size: 35px;
   }
-}
+} */
