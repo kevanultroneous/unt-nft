@@ -14,6 +14,7 @@ import { Col, Image, Row, Container } from "react-bootstrap";
 import SlickSlider from "react-slick";
 
 import { useEffect, useRef, useState } from "react";
+import Aos from "aos";
 
 const Hero = ({ clickHandler }) => {
   const SliderData = [
@@ -43,12 +44,21 @@ const Hero = ({ clickHandler }) => {
     slidesToScroll: 1,
     arrows: false,
   };
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
 
   return (
     <>
       {/* // main container */}
       <div className={styles.HeroContainer}>
-        <Container fluid className={styles.ReactContainer}>
+        <Container
+          fluid
+          className={styles.ReactContainer}
+          data-aos="fade"
+          data-aos-duration="500"
+        >
           <SoftwareDevelopment text="MobifinX Careers" hidebutton />
           <Row className={styles.heroContainer}>
             <Col
