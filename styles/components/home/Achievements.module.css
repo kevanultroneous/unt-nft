@@ -47,6 +47,7 @@
 .AchievementsDetails {
   padding: 2rem 1rem;
   text-align: justify;
+  font-size: 20px;
 }
 .Border {
   border-bottom: 5px solid #f8f8f9;
@@ -81,6 +82,9 @@
     padding: 0.5rem;
     text-align: left;
   }
+  .AchievementBoxContainer {
+    padding-top: 2rem;
+  }
 }
 @media only screen and (min-width: 600px) {
   .AchievementsContainer {
@@ -97,9 +101,11 @@
   .AchievementsContainer {
     padding-left: 1rem;
     padding-right: 1rem;
+    padding-top: 4.5rem;
   }
   .AchievementsHead {
     text-align: left;
+    display: none;
   }
   .AchievementsTitle {
     text-align: left;
@@ -111,6 +117,9 @@
   .AchievementBoxContainer {
     padding-left: 0;
   }
+  .AchievementsDetails {
+    width: auto;
+  }
 }
 @media only screen and (min-width: 992px) {
   .AchievementsContainer {
@@ -121,7 +130,8 @@
     text-align: center;
   }
   .AchievementsTitle {
-    text-align: center;
+    text-align: left;
+    padding-left: 7rem;
   }
   .AchivmentImg {
     width: auto;
@@ -130,10 +140,13 @@
   .AchievementBoxContainer {
     padding-left: 6rem;
   }
+  .AchievementsDetails {
+    width: 52rem;
+  }
 }
 @media only screen and (min-width: 1200px) {
   .AchievementsContainer {
-    padding-top: 2.5rem;
+    padding-top: 4rem;
     padding-left: 8.5rem;
     padding-right: 3rem;
     padding-bottom: 4rem;
@@ -153,6 +166,7 @@
     text-align: center;
     color: #000000;
     margin: 0%;
+    padding-left: 0;
   }
   .AchievementBoxContainer {
     padding-top: 4rem;
@@ -183,9 +197,13 @@
   .AchievementsDetails {
     padding: 2rem 1rem;
     text-align: justify;
+    font-size: 18px;
   }
   .Border {
     border-bottom: 5px solid #f8f8f9;
+  }
+  .AchievementsDetails {
+    width: auto;
   }
 }
 @media (min-width: 650px) and (max-width: 740px) {

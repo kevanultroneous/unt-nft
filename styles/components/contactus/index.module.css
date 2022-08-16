@@ -262,10 +262,11 @@
     font-size: 14px;
   }
   .ContactUsHeading {
-    padding-top: 1.5rem;
+    padding-top: 0rem;
   }
   .MiniLine {
     width: 25px;
+    margin-right: 0.5rem;
   }
   .SubjectInput {
     width: 20rem;
@@ -335,7 +336,7 @@
     padding-left: 8rem;
   }
   .ContactUsHeading {
-    padding-top: 2rem;
+    padding-top: 2.5rem;
   }
   .ButtonSpace {
     padding-top: 1rem;
@@ -508,13 +509,13 @@
     margin-right: 2rem !important;
   }
   .SectionsRow {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   .ContactUsHeading {
     padding-top: 1.5rem;
   }
   .ButtonSpace {
-    padding-top: 2rem;
+    padding-top: 1rem;
   }
   /* ========================================================================================================================================================= */
 }

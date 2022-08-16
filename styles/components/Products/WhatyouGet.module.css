@@ -236,11 +236,13 @@
     padding-top: 2rem;
     padding-bottom: 3rem;
     transform: rotate(0deg);
+    display: none;
   }
 
   .WhatyouWillget h2 {
     font-size: 35px;
     width: 209px;
+    margin-top: 1rem;
   }
 
   .Headingcol p {
@@ -342,7 +344,7 @@
 @media only screen and (min-width: 768px) {
   .WhatyouWillget {
     padding: 6rem 1rem;
-    padding-bottom: 5rem;
+    padding-bottom: 6rem;
   }
 
   .sectionrow {
@@ -414,9 +416,10 @@
     font-weight: 400;
     color: #fff;
     transform: rotate(-90deg);
-    margin-left: -4.5rem;
+    margin-left: -3.5rem;
     margin-top: 1rem;
     /* padding-top: 4rem; */
+    display: block;
   }
 
   .Headingcol {

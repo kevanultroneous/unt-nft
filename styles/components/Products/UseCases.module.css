@@ -456,6 +456,9 @@
   .sectionCards {
     padding-left: 6rem;
   }
+  .CardHeading {
+    top: 2rem;
+  }
 }
 
 /* (this for large device) */

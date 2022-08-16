@@ -106,7 +106,7 @@ const FutureChoice = () => {
               </div>
               <div className={styles.BlogbuttonTab}>
                 {c2 ? (
-                  <Link href={"/"}>
+                  <Link href={"#"}>
                     <div className={styles.Outer} style={{ cursor: "pointer" }}>
                       <div className={styles.Button}>
                         <div classNane={styles.Text}>Visit Blog Page</div>
@@ -115,7 +115,7 @@ const FutureChoice = () => {
                   </Link>
                 ) : (
                   <ActionButton
-                    href={"/"}
+                    href={"#"}
                     text={"Visit Blog Page"}
                     outerstyle={{ marginTop: "2.5rem" }}
                   />

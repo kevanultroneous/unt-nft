@@ -212,6 +212,11 @@
     width: 8vw;
     height: 8vw;
   }
+  /* .slideMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
 }
 
 /* Mobile Landscape */
@@ -274,7 +279,7 @@
 /* Tablet portrait */
 @media screen and (min-width: 768px) {
   .HeroContainer {
-    padding: 5.5rem 1rem 3rem;
+    padding: 6.5rem 1rem 3rem;
     height: 100vh;
   }
   .careerBigHeading {
@@ -315,7 +320,7 @@
 /* Tablet Landscape */
 @media only screen and (min-width: 992px) {
   .HeroContainer {
-    padding: 4rem 1rem 3rem 8rem;
+    padding: 2.5rem 1rem 3rem 8rem;
   }
   .heroCard {
     margin: 0 0 0 -1.3rem;
@@ -496,5 +501,12 @@
 
   .sliderButton img:hover {
     transform: scale(0.8);
+  }
+  /* .slideMainContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  } */
+  .SliderMain {
   }
 }

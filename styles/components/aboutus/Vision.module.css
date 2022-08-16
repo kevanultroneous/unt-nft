@@ -37,7 +37,7 @@
   .VisionContainer {
     /* padding-top: 4rem; */
     /* padding-bottom: 4rem; */
-    padding-left: 0rem;
+    padding-left: 1rem;
   }
   .VisionRow {
     padding-left: 0;
@@ -54,16 +54,29 @@
   .VisionTitle h2 {
     font-size: 50px;
   }
+  .VisionTitle p {
+    font-size: 26px;
+    text-align: justify;
+  }
 }
 
 @media screen and (min-width: 992px) {
   .VisionContainer {
-    padding-left: 6rem;
+    padding-left: 7rem;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .VisionRow {
     padding-left: 3rem;
+  }
+  .VisionTitle h2 {
+    font-size: 70px;
+    font-weight: 600;
+    color: #000;
+    padding-top: 2rem;
+  }
+  .VisionTitle p {
+    font-size: 18px;
   }
 }

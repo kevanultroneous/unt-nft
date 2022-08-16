@@ -88,40 +88,41 @@ const Hero = ({ clickHandler }) => {
               sm={6}
               className={styles.heroCard}
             >
-              <SlickSlider
-                {...settings}
-                className={`careerSlickSLider`}
-                ref={careerSlider}
-              >
-                {SliderData.map((slider) => {
-                  return (
-                    <>
-                      <div className={styles.slideMainContainer}>
-                        <div
-                          className={styles.sliderContainer}
-                          key={slider.name.replace(" ", "").toLowerCase()}
-                        >
-                          <div className={styles.sliderFirstHalf}>
-                            <div className={styles.sliderImage}>
-                              <Image
-                                fluid
-                                src={slider.imageUrl}
-                                alt={slider.name}
-                              />
+              <div className={styles.SliderMain}>
+                <SlickSlider
+                  {...settings}
+                  className={`careerSlickSLider`}
+                  ref={careerSlider}
+                >
+                  {SliderData.map((slider) => {
+                    return (
+                      <>
+                        <div className={styles.slideMainContainer}>
+                          <div
+                            className={styles.sliderContainer}
+                            key={slider.name.replace(" ", "").toLowerCase()}
+                          >
+                            <div className={styles.sliderFirstHalf}>
+                              <div className={styles.sliderImage}>
+                                <Image
+                                  fluid
+                                  src={slider.imageUrl}
+                                  alt={slider.name}
+                                />
+                              </div>
+                              <h3>{slider.name}</h3>
+                              <div className={styles.designationRow}>
+                                <div className={styles.designationLines}></div>
+                                <h6>{slider.designation}</h6>
+                                <div className={styles.designationLines}></div>
+                              </div>
                             </div>
-                            <h3>{slider.name}</h3>
-                            <div className={styles.designationRow}>
-                              <div className={styles.designationLines}></div>
-                              <h6>{slider.designation}</h6>
-                              <div className={styles.designationLines}></div>
-                            </div>
-                          </div>
-                          <div className={styles.sliderSecondHalf}>
-                            <div className={styles.descPara}>
-                              <p>&quot;{slider.description}&quot;</p>
-                            </div>
-                            <div className={styles.sliderButton}>
-                              <div className={styles.leftArrow}>
+                            <div className={styles.sliderSecondHalf}>
+                              <div className={styles.descPara}>
+                                <p>&quot;{slider.description}&quot;</p>
+                              </div>
+                              {/* <div className={styles.sliderButton}> */}
+                              {/* <div className={styles.leftArrow}>
                                 <Image
                                   src="/assets/images/left-sb.svg"
                                   alt="Left Arrow"
@@ -138,15 +139,32 @@ const Hero = ({ clickHandler }) => {
                                     careerSlider.current.slickNext()
                                   }
                                 />
-                              </div>
+                              </div> */}
+                              {/* </div> */}
                             </div>
                           </div>
                         </div>
-                      </div>
-                    </>
-                  );
-                })}
-              </SlickSlider>
+                      </>
+                    );
+                  })}
+                </SlickSlider>
+                <div className={styles.sliderButton}>
+                  <div className={styles.leftArrow}>
+                    <Image
+                      src="/assets/images/left-sb.svg"
+                      alt="Left Arrow"
+                      onClick={() => careerSlider.current.slickPrev()}
+                    />
+                  </div>
+                  <div className={styles.rightArrow}>
+                    <Image
+                      src="/assets/images/right-sb.svg"
+                      alt="Right Arrow"
+                      onClick={() => careerSlider.current.slickNext()}
+                    />
+                  </div>
+                </div>
+              </div>
             </Col>
           </Row>
         </Container>

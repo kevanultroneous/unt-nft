@@ -1,6 +1,8 @@
 import SideHeading from "../Common/SideHeading";
 import { Row, Col, Image } from "react-bootstrap";
 import styles from "@/styles/components/Careers/WhyMobifinx.module.css";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function WhyMobifinx() {
   const benefitsOfMobifinxCard = [
@@ -34,6 +36,10 @@ function WhyMobifinx() {
   const styling = {
     marginLeft: "-3.8rem",
   };
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <div className={styles.WhyMobifinxMainContainer}>
       <Row>
@@ -53,9 +59,15 @@ function WhyMobifinx() {
                     xs={12}
                     sm={4}
                     className={styles.benefitsBox}
+                    data-aos="fade-left"
+                    data-aos-duration="2000"
                   >
                     <div className={styles.benefitsIcon}>
-                      <Image src={benefits.iconUrl} alt={benefits.name} />
+                      <Image
+                        src={benefits.iconUrl}
+                        alt={benefits.name}
+                        className={styles.WHyMobifinxImg}
+                      />
                     </div>
                     <h4>{benefits.name}</h4>
                     <p>{benefits.desc}</p>

@@ -102,6 +102,7 @@
   }
   .Description {
     font-size: 16px;
+    padding-right: 1.5rem;
   }
   .FeedbackPrevarrow:hover {
     transform: none;
@@ -140,7 +141,7 @@
 @media screen and (min-width: 768px) {
   .FeedbackContainer {
     padding-left: 1rem;
-    padding-bottom: 4rem;
+    padding-bottom: 0rem;
   }
   .Feedback h4 {
     padding-right: 0;
@@ -156,11 +157,12 @@
   }
   .SliderRow {
     padding: 3rem 0rem 0 0;
+    height: 35vh;
   }
   .Arrowcol {
     justify-content: end;
     position: relative;
-    right: 4rem;
+    right: 2rem;
     bottom: 12rem;
     width: 100%;
   }
@@ -168,6 +170,8 @@
 @media screen and (min-width: 992px) {
   .FeedbackContainer {
     padding-left: 8rem;
+    height: 72vh;
+    padding-top: 5rem;
   }
 }
 

@@ -72,7 +72,7 @@
     padding: 0;
   }
   .ProudtoWork {
-    width: 50%;
+    width: 100%;
   }
   .AllianceImg {
     width: 100%;
@@ -105,13 +105,15 @@
     transform: rotate(270deg);
     padding-bottom: 11rem;
     display: block;
+    margin-top: -5rem;
+    letter-spacing: 2px;
   }
   .Alliance h4 {
     font-size: 50px;
     font-weight: 600;
   }
   .Alliance {
-    padding: 4rem 0;
+    padding: 2rem 0;
     overflow: hidden;
   }
   /* .Alliancerow{

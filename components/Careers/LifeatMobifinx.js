@@ -13,7 +13,9 @@ function LifeatMobifinx() {
         </Col>
         <Col xl={10} md={12} className={styles.rightSection}>
           <Col xl={12} md={12} lg={12} sm={12} className={styles.rightText}>
-            <h3>We Believe in adding X-Factor to everywhere</h3>
+            <h3>
+              We Believe in adding <br /> X-Factor to everywhere
+            </h3>
             <p>
               It is a long established fact that a reader will be distracted by
               the readable content of a page when looking at its layout. The
@@ -30,6 +32,8 @@ function LifeatMobifinx() {
               fluid
               src="/assets/images/Career-Life-Mobifinx.png"
               alt="Life At MobifinX"
+              data-aos="fade-left"
+              data-aos-duration="2000"
             />
           </Col>
         </Col>

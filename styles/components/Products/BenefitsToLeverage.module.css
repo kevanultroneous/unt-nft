@@ -211,6 +211,7 @@
     transform: rotate(0deg);
     margin: 0%;
     padding-bottom: 1rem;
+    display: none;
   }
 
   .BenefitHeading {
@@ -295,7 +296,7 @@
 /* (this for Tab) */
 @media only screen and (min-width: 768px) {
   .BenefitsContainer {
-    padding: 3rem 1rem;
+    padding: 6rem 1rem;
   }
 
   .Current {
@@ -409,6 +410,7 @@
   .ItemCard {
     padding-top: 4rem;
     padding-left: 0;
+    width: 100%;
   }
 
   .ItemTitle {
@@ -438,6 +440,7 @@
     width: fit-content;
     margin-top: 3rem;
     margin-left: -2rem;
+    display: block;
   }
 
   .ArrowTopMob,

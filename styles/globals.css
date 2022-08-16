@@ -353,6 +353,10 @@ a {
     left: 40% !important;
     height: 525px !important;
   }
+  .offcanvas {
+    transform: none;
+    margin-top: 3.6rem;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -497,11 +501,27 @@ a {
     color: white;
     padding: 0;
   }
+  .CareersAccordion .accordion-body,
+  .CareersAccordion .accordion-button,
+  .CareersAccordion .accordion-button:not(.collapsed) {
+    background-color: #1a1c3c !important;
+    color: #fff !important;
+    outline: none !important;
+    border: none !important;
+  }
 }
 @media screen and (min-width: 768px) {
   .CareersAccordion .accordion-button {
     font-size: 1.5rem !important;
     padding: 1.5rem 1.25rem !important;
+  }
+  .CareersAccordion .accordion-body,
+  .CareersAccordion .accordion-button,
+  .CareersAccordion .accordion-button:not(.collapsed) {
+    background-color: #1a1c3c !important;
+    color: #fff !important;
+    outline: none !important;
+    border: none !important;
   }
 }
 

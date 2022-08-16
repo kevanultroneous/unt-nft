@@ -3,6 +3,7 @@ import ActionButton from "@/components/Common/ActionButton";
 import ActionButtonV2 from "@/components/Common/ActionButtonV2";
 import AllianceForCommon from "@/components/Common/AllianceForCommon";
 import Layout from "@/components/Common/Layout";
+import LightHead from "@/components/Common/LightHead";
 import MainTitle from "@/components/Common/MainTitle";
 import MenuPackage from "@/components/Common/MenuPackage";
 import SoftwareDevelopment from "@/components/Common/SoftwareDevelopment";
@@ -88,6 +89,8 @@ const CaseStudy = () => {
           btntext={"Try Free Demo"}
           href=""
         />
+        {/* <SoftwareDevelopment text="MobifinX Case Studies" hidebutton /> */}
+        {/* <LightHead text="MobifinX Case Studies" /> */}
       </div>
       <div className={styles.CaseStudyContainer}>
         {/* heading row */}
@@ -191,7 +194,7 @@ const CaseStudy = () => {
         </Row>
       </div>
       {/* Alliance section */}
-      <AllianceForCommon />
+      {/* <AllianceForCommon /> */}
       {/* Footer section */}
       <Footer />
     </Layout>

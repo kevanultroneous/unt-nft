@@ -162,7 +162,7 @@
   }
   .Mobdiv {
     justify-content: left;
-    padding-left: 1rem;
+    padding-left: 0rem;
     flex-direction: column-reverse;
   }
   .HowWeCame p {

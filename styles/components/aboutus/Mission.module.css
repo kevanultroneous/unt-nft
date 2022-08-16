@@ -24,6 +24,7 @@
     padding-left: 1rem;
     padding-top: 2rem;
     width: auto;
+    padding-right: 4rem;
   }
 }
 @media screen and (min-width: 600px) {
@@ -52,7 +53,7 @@
     padding-left: 0rem;
   }
   .MissionTitle {
-    padding: 6rem 0;
+    padding: 10rem 0;
   }
   .MissionTitle h2 {
     font-size: 50px;
@@ -61,16 +62,24 @@
     padding-left: 1rem;
   }
   .MissionTitle p {
-    font-size: 40px;
+    font-size: 30px;
     font-weight: 400;
     color: #fff;
     padding-left: 1rem;
     padding-top: 2rem;
+    padding-right: 10rem;
+    text-align: justify;
   }
 }
 @media screen and (min-width: 992px) {
   .MissionContainer {
     padding-left: 6rem;
+  }
+  .MissionTitle p {
+    padding-right: 10rem;
+  }
+  .MissionTitle {
+    padding-left: 1rem;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -93,5 +102,8 @@
     padding-left: 7rem;
     padding-top: 2rem;
     width: 46rem;
+  }
+  .MissionTitle p {
+    padding-right: 0;
   }
 }

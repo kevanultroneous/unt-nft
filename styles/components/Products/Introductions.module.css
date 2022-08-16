@@ -194,6 +194,7 @@
     padding-bottom: 1rem;
     font-size: 14px;
     letter-spacing: 2px;
+    display: none;
   }
 
   .Text {
@@ -213,6 +214,15 @@
   }
   .SpecialSpace {
     padding-right: 0rem;
+  }
+  .leftButton:hover {
+    transform: none;
+  }
+  .Overlay {
+    border-radius: 8px;
+  }
+  .IntroMainContent {
+    padding-bottom: 2rem;
   }
 }
 
@@ -293,12 +303,18 @@
   .leftButton {
     height: 4.5rem;
   }
+  .leftButton:hover {
+    transform: none;
+  }
 }
 
 /* (this for Tab landscap) */
 @media only screen and (min-width: 992px) {
   .IntroMainContainer {
     padding-left: 8.5rem;
+  }
+  .leftButton:hover {
+    transform: none;
   }
 }
 
@@ -376,11 +392,12 @@
   .verticaltext {
     transform: rotate(-90deg);
     width: fit-content;
-    margin-left: -4.5rem;
+    margin-left: -3.5rem;
     margin-top: 4.5rem;
     letter-spacing: 4px;
     font-weight: 400;
     color: rgba(18, 18, 18, 0.6);
+    display: block;
   }
 
   .SliderActionContainer {

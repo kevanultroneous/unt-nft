@@ -31,5 +31,32 @@
   }
   .HomeMiniLine {
     width: 25px;
+    margin-right: 0.5rem;
+  }
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+    padding-top: 0rem;
+  }
+}
+@media (min-width: 768px) {
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 992px) {
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
+  }
+}
+@media (min-width: 1200px) {
+  .SoftwareDevelopmentExpertsSmallHead {
+    display: flex;
+    align-items: center;
+    padding-top: 1rem;
   }
 }

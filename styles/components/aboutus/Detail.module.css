@@ -20,6 +20,7 @@
   justify-content: center;
   padding-top: 4rem;
   overflow: hidden;
+  padding-bottom: 2rem;
 }
 .Advantagecol {
   padding-right: 4rem;
@@ -97,6 +98,7 @@
   }
   .Detail {
     font-size: 26px;
+    padding-left: 1rem;
   }
   .Subtitle {
     display: none;
