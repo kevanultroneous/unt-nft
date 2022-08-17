@@ -199,6 +199,7 @@
     opacity: 1;
     display: flex;
     padding-right: 1rem;
+    padding-top: 2rem;
   }
   .InspiredCardOverlay {
     width: 100%;
@@ -229,6 +230,15 @@
   }
   .InspiredDisParagraph {
     padding-bottom: 0.5rem;
+  }
+  .InspiredCardImg:hover {
+    transform: none;
+  }
+  .InspiredCardImg2:hover {
+    transform: none;
+  }
+  .InspiredCardImg2 {
+    height: 65px;
   }
 }
 
