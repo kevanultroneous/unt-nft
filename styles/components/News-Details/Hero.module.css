@@ -57,7 +57,6 @@
 
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
-
   .HeroDetailContainer {
     padding-top: 0%;
   }
@@ -117,7 +116,7 @@
   .HeroHeading {
     font-size: 57px !important;
     text-align: left;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     width: 100% !important;
     padding-left: 6rem;
   }
@@ -130,6 +129,6 @@
   }
 
   .HeroDetailContainer {
-    padding: 4rem 0 0rem 0rem;
+    padding: 2.2rem 0 0rem 0rem;
   }
 }

@@ -525,6 +525,38 @@ a {
   }
 }
 
+/* Career page hero slider changes */
+
+.careerSlickSLider {
+  margin: -5rem 0 0;
+}
+
+@media screen and (max-width: 600px) {
+  .careerSlickSLider {
+    margin: -3.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .careerSlickSLider {
+    margin: -11.5rem 0 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .careerSlickSLider {
+    margin: -12.2rem 0 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .careerSlickSLider {
+    margin: -5rem 0 0;
+  }
+}
+
+/* Career page hero slider changes */
+
 /* .forfaq .accordion-button,
 .accordion-button:not(.collapsed) {
   background-color: #ffffff !important;
