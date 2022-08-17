@@ -44,7 +44,7 @@ export const menus = [
           "MobifinX is a global leader in next-generation technology .   ",
       },
       {
-        name: " Career",
+        name: " Careers",
         link: "#",
         paragraph: "Join Us in our expanding journey! ",
       },
