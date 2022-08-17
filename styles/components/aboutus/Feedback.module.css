@@ -134,9 +134,9 @@
     bottom: 20rem;
     width: 100%;
   }
-  .Feedback {
+  /* .Feedback {
     opacity: 1 !important;
-  }
+  } */
 }
 @media screen and (min-width: 768px) {
   .FeedbackContainer {

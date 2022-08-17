@@ -147,9 +147,9 @@
   .Rotatetext {
     display: none;
   }
-  .OurStory {
+  /* .OurStory {
     opacity: 1 !important;
-  }
+  } */
   .OurStoryContainer {
     padding-left: 1rem;
     padding-top: 12rem;
@@ -342,6 +342,9 @@
     bottom: 3rem;
     flex-direction: row;
   }
+  /* .OurStory {
+    opacity: none !important;
+  } */
 }
 
 /* @media (min-width: 320px) and (max-width: 767px) {

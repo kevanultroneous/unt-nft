@@ -2,6 +2,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import styles from "@/styles/components/CaseStudy-Detail/DetailSectionWrraper.module.css";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+import Aos from "aos";
 export default function DetailSection() {
   const [CurrentTab, setCurrentTab] = useState(0);
   const TabList = [
@@ -47,6 +48,10 @@ export default function DetailSection() {
       }
     });
   });
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <Row className={styles.DetailSectionWrraper}>
       <Col xl={2} lg={2}>
@@ -158,6 +163,8 @@ export default function DetailSection() {
               <Image
                 src="/assets/images/solution-img.png"
                 className={styles.SolutionImageConfigure}
+                data-aos="fade-left"
+                data-aos-duration="2000"
               />
             </div>
           </div>

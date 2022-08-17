@@ -2,16 +2,25 @@ import { Accordion, Col, Row } from "react-bootstrap";
 import { IoIosArrowForward } from "react-icons/io";
 import { careerAccordionData } from "utils/CareerAccordion";
 import styles from "@/styles/components/Careers/CareerAccordion.module.css";
+import { useEffect } from "react";
+import Aos from "aos";
 
 function last(array) {
   return array.indexOf(array[array.length - 1]);
 }
 
 function CareerAccordion() {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
+
   return (
     <div
       className={`${styles.CareerAccordion} CareersAccordion`}
       id="careerJobOpening"
+      data-aos="fade"
+      data-aos-duration="500"
     >
       <Row>
         <Col xl={2}>

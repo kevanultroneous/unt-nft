@@ -12,7 +12,11 @@ const Solution = () => {
     AOS.init();
   }, []);
   return (
-    <section className={styles.SolutionHelps}>
+    <section
+      className={styles.SolutionHelps}
+      data-aos="fade"
+      data-aos-duration="500"
+    >
       <h3>This Solution Helps</h3>
       <Row className={styles.Solutionrow}>
         <Col
@@ -20,10 +24,10 @@ const Solution = () => {
           xs={12}
           md={4}
           className={styles.SolutionDetail}
-        // data-aos="fade"
-        // data-aos-duration="3000"
-        // data-aos-delay="500"
-        // data-aos-easing="ease"
+          // data-aos="fade"
+          // data-aos-duration="3000"
+          // data-aos-delay="500"
+          // data-aos-easing="ease"
         >
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5 className={styles.Divider}>
@@ -37,10 +41,10 @@ const Solution = () => {
           xs={12}
           md={4}
           className={styles.SolutionDetail}
-        // data-aos="fade"
-        // data-aos-duration="3000"
-        // data-aos-delay="500"
-        // data-aos-easing="ease"
+          // data-aos="fade"
+          // data-aos-duration="3000"
+          // data-aos-delay="500"
+          // data-aos-easing="ease"
         >
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5 className={styles.Divider}>
@@ -54,10 +58,10 @@ const Solution = () => {
           xs={12}
           md={4}
           className={styles.SolutionDetail}
-        // data-aos="fade"
-        // data-aos-duration="3000"
-        // data-aos-delay="500"
-        // data-aos-easing="ease"
+          // data-aos="fade"
+          // data-aos-duration="3000"
+          // data-aos-delay="500"
+          // data-aos-easing="ease"
         >
           <Image alt="solution" src={"/assets/images/solutionicon.svg"} />
           <h5>Strong Technical Competence</h5>
@@ -65,10 +69,10 @@ const Solution = () => {
       </Row>
       <div
         className={styles.Button}
-      // data-aos="fade"
-      // data-aos-duration="3000"
-      // data-aos-delay="500"
-      // data-aos-easing="ease"
+        // data-aos="fade"
+        // data-aos-duration="3000"
+        // data-aos-delay="500"
+        // data-aos-easing="ease"
       >
         <ActionButtonV2
           text={
