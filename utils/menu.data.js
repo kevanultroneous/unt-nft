@@ -35,27 +35,27 @@ export const menus = [
   },
   {
     name: "About us",
-    mainlink: "/about-mobifinx",
+    mainlink: "#",
     menus: [
       {
         name: "Company Overview",
-        link: "/",
+        link: "#",
         paragraph:
           "MobifinX is a global leader in next-generation technology .   ",
       },
       {
         name: " Career",
-        link: "/",
+        link: "#",
         paragraph: "Join Us in our expanding journey! ",
       },
       {
         name: "Case Study",
-        link: "/",
+        link: "#",
         paragraph: " Business success stories & Client case studies.        ",
       },
       {
         name: "Events & webinars",
-        link: "/",
+        link: "#",
         paragraph:
           "Join us for Insightful Sessions Across the Globe on Transformation.        ",
       },
@@ -75,17 +75,17 @@ export const menus = [
     menus: [
       {
         name: "Blog",
-        link: "/",
+        link: "#",
         paragraph: "Discover innovation stories .       ",
       },
       {
         name: "News/Media",
-        link: "/",
+        link: "#",
         paragraph: " Get the latest update and news about our company. ",
       },
       {
         name: "Press Release",
-        link: "/",
+        link: "#",
         paragraph: " Explore our official statement. ",
       },
     ],
