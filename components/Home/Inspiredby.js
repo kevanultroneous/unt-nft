@@ -127,14 +127,16 @@ const Inspiredby = () => {
               }
             />
             <div className={styles.InspiredCardView}>
-              <a href="/mobifinx-case-study" className={styles.LinkTag}>
-                <p className={styles.Viewall}>View All</p>
-                <Image
-                  alt={"grad"}
-                  src="/assets/images/grad.svg"
-                  className={styles.InspiredCardImg}
-                />
-              </a>
+              <Link href="/mobifinx-case-study">
+                <a className={styles.LinkTag}>
+                  <p className={styles.Viewall}>View All</p>
+                  <Image
+                    alt={"grad"}
+                    src="/assets/images/grad.svg"
+                    className={styles.InspiredCardImg}
+                  />
+                </a>
+              </Link>
             </div>
           </div>
         </Col>
@@ -187,14 +189,16 @@ const Inspiredby = () => {
             }
           />
           <div className={styles.InspiredCardView2}>
-            <a href="/mobifinx-case-study" className={styles.LinkTag}>
-              <p className={styles.Viewall2}>View All</p>
-              <Image
-                alt="grad2"
-                src="/assets/images/grad.svg"
-                className={styles.InspiredCardImg2}
-              />
-            </a>
+            <Link href="/mobifinx-case-study">
+              <a className={styles.LinkTag}>
+                <p className={styles.Viewall2}>View All</p>
+                <Image
+                  alt="grad2"
+                  src="/assets/images/grad.svg"
+                  className={styles.InspiredCardImg2}
+                />
+              </a>
+            </Link>
           </div>
         </Col>
       </Row>
