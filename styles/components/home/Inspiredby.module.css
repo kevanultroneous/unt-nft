@@ -172,6 +172,10 @@
   flex-direction: column;
 }
 
+.LinkTag {
+  display: contents;
+}
+
 /* Medium devices (landscape tablets, 768px and up) */
 @media only screen and (max-width: 600px) {
   .InspiredContainer {

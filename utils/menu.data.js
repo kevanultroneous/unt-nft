@@ -44,12 +44,12 @@ export const menus = [
           "MobifinX is a global leader in next-generation technology .   ",
       },
       {
-        name: " Careers",
-        link: "#",
+        name: "Careers",
+        link: "/mobifinx-careers",
         paragraph: "Join Us in our expanding journey! ",
       },
       {
-        name: "Case Study",
+        name: "Case Studies",
         link: "#",
         paragraph: " Business success stories & Client case studies.        ",
       },
@@ -110,13 +110,13 @@ export const menus = [
     menus: [
       {
         name: "Introduction",
-        link: "/",
+        link: "/a",
         description:
           " From startups to enterprise solutions that are more open, efficient, and secure.          ",
       },
       {
         name: "Our Product",
-        link: "/",
+        link: "/a",
         description:
           " Eighth products. One mission. To empower startups to enterprises worldwide.          ",
       },

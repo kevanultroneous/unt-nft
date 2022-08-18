@@ -1,5 +1,6 @@
 import styles from "@/styles/components/home/Inspiredby.module.css";
 import AOS from "aos";
+import Link from "next/link";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { MdKeyboardArrowRight } from "react-icons/md";
@@ -26,7 +27,7 @@ export const CardInspired = ({
       data-aos-delay={animdelay}
       data-aos-easing="ease-in-out"
       data-aos-mirror="true"
-    // data-aos-offset={animOf}
+      // data-aos-offset={animOf}
     >
       <Image src={srcimg} alt="Avatar" className={styles.InspiredCardImage} />
       <div className={styles.InspiredDis}>
@@ -126,12 +127,14 @@ const Inspiredby = () => {
               }
             />
             <div className={styles.InspiredCardView}>
-              <p className={styles.Viewall}>View All</p>
-              <Image
-                alt={"grad"}
-                src="/assets/images/grad.svg"
-                className={styles.InspiredCardImg}
-              />
+              <a href="/mobifinx-case-study" className={styles.LinkTag}>
+                <p className={styles.Viewall}>View All</p>
+                <Image
+                  alt={"grad"}
+                  src="/assets/images/grad.svg"
+                  className={styles.InspiredCardImg}
+                />
+              </a>
             </div>
           </div>
         </Col>
@@ -184,12 +187,14 @@ const Inspiredby = () => {
             }
           />
           <div className={styles.InspiredCardView2}>
-            <p className={styles.Viewall2}>View All</p>
-            <Image
-              alt="grad2"
-              src="/assets/images/grad.svg"
-              className={styles.InspiredCardImg2}
-            />
+            <a href="/mobifinx-case-study" className={styles.LinkTag}>
+              <p className={styles.Viewall2}>View All</p>
+              <Image
+                alt="grad2"
+                src="/assets/images/grad.svg"
+                className={styles.InspiredCardImg2}
+              />
+            </a>
           </div>
         </Col>
       </Row>

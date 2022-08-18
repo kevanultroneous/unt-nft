@@ -300,6 +300,7 @@ a {
   border-color: #ffffff !important;
   outline: 0;
   box-shadow: none !important;
+  cursor: pointer !important;
 }
 .accordion-flush .accordion-item {
   border-right: 0;

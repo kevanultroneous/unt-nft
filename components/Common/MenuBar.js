@@ -68,7 +68,8 @@ const MenuBar = ({
                   <div
                     className={styles.MenuLine}
                     style={
-                      router.pathname === value.mainlink
+                      router.pathname === value.mainlink ||
+                      value.menus.map((el) => el.link).includes(router.pathname) // checks if router link is same as the link present in sub menu
                         ? {
                             opacity: "1",
                             transition: "all 0.5s ease",

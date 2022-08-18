@@ -453,7 +453,7 @@
     color: #ffffff;
     outline: none;
     width: 100%;
-    /* cursor: none; */
+    cursor: pointer !important;
   }
 
   .MailContainer input::placeholder {
