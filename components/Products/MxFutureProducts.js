@@ -32,7 +32,7 @@ const MxFutureProducts = ({ text }) => {
             <li className={styles.card01}>
               <div className={styles.rows}>
                 <Row className={styles.MainRowCard}>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
@@ -43,7 +43,7 @@ const MxFutureProducts = ({ text }) => {
                       <span className={styles.number}>01</span>
                     </div>
                   </Col>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className="col">
                       <p className={styles.Carddescription}>
                         Do you want to own a team but without the hassle of
@@ -55,11 +55,11 @@ const MxFutureProducts = ({ text }) => {
                       </p>
                     </div>
                   </Col>
-                  <Col xl={4} md={12}>
+                  <Col xl={4} md={12} xs={12}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
                         <Col md={4} xl={12} className={styles.Contentdiv}>
-                          <Col xl={4} md={4}>
+                          <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
                               <Image
                                 src={"/assets/images/Detail-1.svg"}
@@ -68,7 +68,12 @@ const MxFutureProducts = ({ text }) => {
                               />
                             </div>
                           </Col>
-                          <Col xl={8} md={8} className={styles.CardcolDetail}>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
                             <div>
                               <h1 className={styles.CardHead}>
                                 Review Profile
@@ -83,7 +88,7 @@ const MxFutureProducts = ({ text }) => {
                           </Col>
                         </Col>
                         <Col md={4} xl={12} className={styles.Contentdiv}>
-                          <Col xl={4} md={4}>
+                          <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
                               <Image
                                 src={"/assets/images/Detail-2.svg"}
@@ -92,7 +97,12 @@ const MxFutureProducts = ({ text }) => {
                               />
                             </div>
                           </Col>
-                          <Col xl={8} md={8} className={styles.CardcolDetail}>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
                             <di>
                               <h1 className={styles.CardHead}>
                                 Meet the Candidate
@@ -107,7 +117,7 @@ const MxFutureProducts = ({ text }) => {
                           </Col>
                         </Col>
                         <Col md={4} xl={12} className={styles.Contentdiv}>
-                          <Col xl={4} md={4}>
+                          <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
                               <Image
                                 src={"/assets/images/Detail-3.svg"}
@@ -116,7 +126,12 @@ const MxFutureProducts = ({ text }) => {
                               />
                             </div>
                           </Col>
-                          <Col xl={8} md={8} className={styles.CardcolDetail}>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
                             <di>
                               <h1 className={styles.CardHead}>
                                 Pricing & Contract
@@ -139,7 +154,7 @@ const MxFutureProducts = ({ text }) => {
             <li className={styles.card02}>
               <div className={styles.rows}>
                 <Row className={styles.MainRowCard}>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
@@ -150,7 +165,7 @@ const MxFutureProducts = ({ text }) => {
                       <span className={styles.number}>02</span>
                     </div>
                   </Col>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className="col">
                       <p className={styles.Carddescription}>
                         Do you want to own a team but without the hassle of
@@ -162,72 +177,95 @@ const MxFutureProducts = ({ text }) => {
                       </p>
                     </div>
                   </Col>
-                  <Col xl={4} md={12}>
+                  <Col xl={4} md={12} xs={12}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-1.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-1.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <div>
+                              <h1 className={styles.CardHead}>
+                                Review Profile
+                              </h1>
+                            </div>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <div>
-                            <h1 className={styles.CardHead}>Review Profile</h1>
-                          </div>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-2.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Meet the Candidate
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-2.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Meet the Candidate
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
-                        </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-3.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Pricing & Contract
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-3.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Pricing & Contract
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
                       </Row>
                     </div>
@@ -238,7 +276,7 @@ const MxFutureProducts = ({ text }) => {
             <li className={styles.card03}>
               <div className={styles.rows}>
                 <Row className={styles.MainRowCard}>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
@@ -249,7 +287,7 @@ const MxFutureProducts = ({ text }) => {
                       <span className={styles.number}>03</span>
                     </div>
                   </Col>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className="col">
                       <p className={styles.Carddescription}>
                         Do you want to own a team but without the hassle of
@@ -261,72 +299,95 @@ const MxFutureProducts = ({ text }) => {
                       </p>
                     </div>
                   </Col>
-                  <Col xl={4} md={12}>
+                  <Col xl={4} md={12} xs={12}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-1.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-1.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <div>
+                              <h1 className={styles.CardHead}>
+                                Review Profile
+                              </h1>
+                            </div>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <div>
-                            <h1 className={styles.CardHead}>Review Profile</h1>
-                          </div>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-2.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Meet the Candidate
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-2.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Meet the Candidate
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
-                        </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-3.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Pricing & Contract
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-3.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Pricing & Contract
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
                       </Row>
                     </div>
@@ -337,7 +398,7 @@ const MxFutureProducts = ({ text }) => {
             <li className={styles.card04}>
               <div className={styles.rows}>
                 <Row className={styles.MainRowCard}>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
@@ -348,7 +409,7 @@ const MxFutureProducts = ({ text }) => {
                       <span className={styles.number}>04</span>
                     </div>
                   </Col>
-                  <Col xl={4} md={6}>
+                  <Col xl={4} md={6} xs={6}>
                     <div className="col">
                       <p className={styles.Carddescription}>
                         Do you want to own a team but without the hassle of
@@ -360,72 +421,95 @@ const MxFutureProducts = ({ text }) => {
                       </p>
                     </div>
                   </Col>
-                  <Col xl={4} md={12}>
+                  <Col xl={4} md={12} xs={12}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-1.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-1.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <div>
+                              <h1 className={styles.CardHead}>
+                                Review Profile
+                              </h1>
+                            </div>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <div>
-                            <h1 className={styles.CardHead}>Review Profile</h1>
-                          </div>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-2.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Meet the Candidate
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-2.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Meet the Candidate
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
-                        </Col>
-                        <Col xl={4} md={4}>
-                          <div className={styles.Detaildiv}>
-                            <Image
-                              src={"/assets/images/Detail-3.svg"}
-                              alt="Image"
-                              fluid
-                            />
-                          </div>
-                        </Col>
-                        <Col xl={8} md={8} className={styles.CardcolDetail}>
-                          <di>
-                            <h1 className={styles.CardHead}>
-                              Pricing & Contract
-                            </h1>
-                          </di>
-                          <div>
-                            <p className={styles.CardPera}>
-                              Do you want to own a team but without the hassle
-                              of recruitment.
-                            </p>
-                          </div>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
+                            <div className={styles.Detaildiv}>
+                              <Image
+                                src={"/assets/images/Detail-3.svg"}
+                                alt="Image"
+                                fluid
+                              />
+                            </div>
+                          </Col>
+                          <Col
+                            xl={8}
+                            md={8}
+                            xs={8}
+                            className={styles.CardcolDetail}
+                          >
+                            <di>
+                              <h1 className={styles.CardHead}>
+                                Pricing & Contract
+                              </h1>
+                            </di>
+                            <div>
+                              <p className={styles.CardPera}>
+                                Do you want to own a team but without the hassle
+                                of recruitment.
+                              </p>
+                            </div>
+                          </Col>
                         </Col>
                       </Row>
                     </div>

@@ -7,7 +7,7 @@ import { useRef } from "react";
 const Introductions = () => {
   const settings = {
     infinite: true,
-    speed: 2000,
+    speed: 1000,
     slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: "linear",
@@ -48,7 +48,7 @@ const Introductions = () => {
           slidesToShow: 2,
           slidesToScroll: 1,
           initialSlide: 1,
-          autoplaySpeed: 2000,
+          autoplaySpeed: 1000,
         },
       },
     ],
