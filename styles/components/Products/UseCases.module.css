@@ -204,6 +204,7 @@
   font-weight: 400;
   color: #1b1414;
   text-align: left;
+  margin-right: 2rem;
 }
 .Detaildiv {
   padding: 0 0.5rem;
@@ -339,6 +340,7 @@
 
   .number {
     padding-left: 1rem;
+    position: none;
   }
 
   .Pheading {
@@ -419,10 +421,14 @@
 
   .number {
     padding-left: 2rem;
+    width: fit-content;
+    position: relative;
+    left: 18rem;
+    bottom: 2rem;
   }
 
   .Carddescription {
-    padding-left: 2rem;
+    padding-left: 0rem;
     padding-right: 2rem;
   }
 
@@ -433,6 +439,15 @@
 
   .Pheading {
     font-size: 45px;
+  }
+
+  .Detaildiv {
+    padding: 0;
+    max-width: 5rem;
+  }
+
+  .ImageRow {
+    margin: 0 2rem;
   }
 
   .sectionCards {
@@ -448,6 +463,28 @@
     /* top: 4rem; */
     padding-bottom: 6rem;
     top: 6rem;
+  }
+  .Colusecase {
+    display: flex;
+  }
+  .MainImage {
+    position: relative;
+    right: 4rem;
+  }
+
+  .CardcolDetail {
+    margin-top: 1rem;
+  }
+
+  .CardcolDetail {
+    width: 85%;
+    padding: 0;
+  }
+  .Contentdiv {
+    display: block;
+  }
+  .CardPera {
+    margin-right: 0;
   }
 }
 
@@ -597,6 +634,10 @@
     padding-top: 2rem;
     display: flex;
     /* padding-top: 1.5rem; */
+    position: initial;
+    left: 0;
+    bottom: 0;
+    padding-bottom: 1rem;
   }
 
   .Cardtitle {
@@ -659,5 +700,26 @@
     /* top: 4rem; */
     padding-bottom: 4rem;
     top: 0;
+  }
+  .MainImage {
+    position: initial;
+  }
+  .Colusecase {
+    display: block;
+  }
+  /* .number {
+    width: auto;
+    position: initial;
+    left: 0;
+    bottom: 0;
+  } */
+  /* .CardcolDetail {
+    width: 60%;
+  } */
+  .Contentdiv {
+    display: flex;
+  }
+  .CardPera {
+    margin-right: 2rem;
   }
 }
