@@ -6,6 +6,7 @@ import { HiOutlineExternalLink } from "react-icons/hi";
 import ActionButtonV2 from "../Common/ActionButtonV2";
 import AOS from "aos";
 import { useEffect } from "react";
+import Link from "next/link";
 const Solution = () => {
   useEffect(() => {
     AOS.refresh();
@@ -79,11 +80,11 @@ const Solution = () => {
             <>
               <span className={styles.Btntext}>Try Free Demo </span>
               <span className={styles.Icon}>
-                {" "}
                 <HiOutlineExternalLink />
               </span>
             </>
           }
+          href={"#"}
         />
       </div>
     </section>

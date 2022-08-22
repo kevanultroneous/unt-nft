@@ -2,6 +2,7 @@ import React from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import SideHeading from "../Common/SideHeading";
 import styles from "@/styles/components/Careers/ExploreWorkplace.module.css";
+import Link from "next/link";
 
 function ExploreWorkplace() {
   const styling = {
@@ -103,10 +104,12 @@ function ExploreWorkplace() {
                 <div className={styles.ctaText}>
                   <h3>Got skills we should know about?</h3>
                 </div>
-                <div className={styles.ctaButton}>
-                  <p>Contact us</p>
-                  <Image src="/assets/images/grad.svg" alt="Career Cta Btn" />
-                </div>
+                <Link href={"/get-in-touch"}>
+                  <div className={styles.ctaButton}>
+                    <p>Contact us</p>
+                    <Image src="/assets/images/grad.svg" alt="Career Cta Btn" />
+                  </div>
+                </Link>
               </Row>
             </div>
           </div>

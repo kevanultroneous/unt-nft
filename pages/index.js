@@ -17,6 +17,7 @@ import MenuBar from "@/components/Common/MenuBar";
 import MenuPackage from "@/components/Common/MenuPackage";
 import Parallax from "@/components/Home/Parallax";
 import AnimatedCursor from "react-animated-cursor";
+import Head from "next/head";
 
 export default function Home() {
   const [on, setOn] = useState("1");
@@ -65,6 +66,12 @@ export default function Home() {
         " MobifinX is a Leading Crypto and Enterprise Blockchain Solutions Provider that provides DEFI Products, Fundraising Platform, NFT Marketplace, Dex Trading, Spot Trading, OTC Desk, P2P Trading, Margin and Derivatives Exchange for individuals, startups and entrepreneurs."
       }
     >
+      <Head>
+        <meta
+          property="og:image"
+          content="https://test-mobifinx.vercel.app/assets/images/Og-home.jpg"
+        />
+      </Head>
       {cursor ? (
         <AnimatedCursor
           innerSize={10}
