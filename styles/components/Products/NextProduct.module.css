@@ -534,11 +534,11 @@
 
   .h1 {
     color: white;
-    font-size: 50px;
+    font-size: 60px;
     letter-spacing: 5px;
-    -webkit-text-stroke: 1px black;
+    -webkit-text-stroke: 1.3px black;
     font-family: "Avenir LT Std", sans-serif;
-    font-weight: 800;
+    font-weight: 900;
   }
 
   .outer:hover .bg {

@@ -3,11 +3,13 @@ import styles from "@/styles/components/Products/Introductions.module.css";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import Aos from "aos";
 const Introductions = () => {
   const settings = {
     infinite: true,
-    speed: 1000,
+    autoplay: true,
+    speed: 1500,
     slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: "linear",
@@ -54,6 +56,10 @@ const Introductions = () => {
     ],
   };
   const sliderRef = useRef();
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <div className={styles.IntroMainContainer}>
       <Row>

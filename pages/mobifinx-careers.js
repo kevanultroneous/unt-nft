@@ -9,7 +9,12 @@ import CareerAccordion from "@/components/Careers/CareerAccordion";
 
 const careers = () => {
   return (
-    <Layout title={"careers"}>
+    <Layout
+      title={" MobifinX Careers & Job Opportunities, Work Culture"}
+      description={
+        " Are you an innovator or passionate about the potential of Blockchain technology? we have an opportunity for you to fuel your growth. Join Us in our expanding journey! "
+      }
+    >
       <MenuPackage />
       {/* <Hero clickHandler={() => scrollToRef(scrollRef)} />
     <section ref={scrollRef}>

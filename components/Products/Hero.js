@@ -8,6 +8,7 @@ import AOS from "aos";
 import { useEffect } from "react";
 import Lottie from "react-lottie";
 import animation from "../../utils/New-2-scroll.json";
+import { Parallax } from "react-parallax";
 
 const Hero = ({ clickHandler }) => {
   const defaultOptions = {
@@ -103,8 +104,9 @@ const Hero = ({ clickHandler }) => {
           </div>
         </Col>
         <Col xl={10}>
+          {/* <Parallax bgImage={"/assets/images/productimage.png"} strength={300}> */}
           <Image
-            data-aos="fade"
+            data-aos="fade-left"
             data-aos-duration="3000"
             data-aos-delay="500"
             data-aos-easing="ease"
@@ -112,6 +114,7 @@ const Hero = ({ clickHandler }) => {
             alt="productimg"
             className={styles.productimg}
           />
+          {/* </Parallax> */}
         </Col>
       </Row>
     </section>

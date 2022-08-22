@@ -295,6 +295,7 @@
   .Herosection {
     padding-left: 8.5rem;
     padding-top: 2rem;
+    overflow: hidden;
   }
 
   .Herotitle {

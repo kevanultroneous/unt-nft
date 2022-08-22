@@ -6,7 +6,12 @@ import NewsMainComponent from "@/components/News/NewsMainComponent";
 
 const News = () => {
   return (
-    <Layout title={"news"}>
+    <Layout
+      title={"  MobifinX Newsroom "}
+      description={
+        " Here you can get our company-related latest news and updates about awards, global presence, and global influencers that talking about our brands "
+      }
+    >
       <MenuPackage />
       <NewsHead />
       <NewsMainComponent />

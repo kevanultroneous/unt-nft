@@ -27,7 +27,7 @@ const WhatyouGet = () => {
               className={styles.Heading}
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="500"
+              // data-aos-delay="500"
               data-aos-easing="ease"
             >
               <div className={styles.Details}>
@@ -45,7 +45,7 @@ const WhatyouGet = () => {
               className={styles.Heading}
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="500"
+              // data-aos-delay="500"
               data-aos-easing="ease"
             >
               <div className={styles.Details}>
@@ -62,7 +62,7 @@ const WhatyouGet = () => {
               className={styles.Heading}
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="500"
+              // data-aos-delay="500"
               data-aos-easing="ease"
             >
               <div className={styles.Details}>
@@ -80,7 +80,7 @@ const WhatyouGet = () => {
               className={styles.Heading}
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="500"
+              // data-aos-delay="500"
               data-aos-easing="ease"
             >
               <div className={styles.Details}>
@@ -98,7 +98,7 @@ const WhatyouGet = () => {
                 className={`${styles.Heading} `}
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                data-aos-delay="500"
+                // data-aos-delay="500"
                 data-aos-easing="ease"
               >
                 <div className="d-flex align-items-center">
@@ -113,7 +113,7 @@ const WhatyouGet = () => {
                 className={styles.Heading}
                 data-aos="fade-left"
                 data-aos-duration="3000"
-                data-aos-delay="500"
+                // data-aos-delay="500"
                 data-aos-easing="ease"
               >
                 <div className={styles.Details}>

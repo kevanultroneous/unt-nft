@@ -8,9 +8,10 @@ const Partners = () => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1800,
     slidesToShow: 3,
     slidesToScroll: 1,
+    autoplaySpeed: 5000,
     responsive: [
       {
         breakpoint: 1400,

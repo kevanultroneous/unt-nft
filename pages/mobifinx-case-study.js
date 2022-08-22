@@ -79,7 +79,12 @@ const CaseStudy = () => {
     },
   };
   return (
-    <Layout title={"case-study"}>
+    <Layout
+      title={"Case Studies for Blockchain and Crypto industries | MobifinX"}
+      description={
+        " MobifiX gathered Business success stories, Client case studies & future of blockchain technology. Here you can read various case studies by MobifinX on the crypto and blockchain industries. "
+      }
+    >
       {/* menu package */}
       <MenuPackage />
       {/*  main container  for main title container */}

@@ -69,7 +69,7 @@
   -webkit-text-stroke: 1px #ffffff;
   text-decoration: none;
   color: transparent;
-  -webkit-background-clip: text, padding-box;
+  /* -webkit-background-clip: text, padding-box;
   background-clip: text, padding-box;
   background-size: 100% 200%;
   background-position: top;
@@ -85,12 +85,14 @@
   );
   background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
   background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+  background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%); */
   cursor: pointer;
 }
 
 .FooterContactusLink:hover {
-  background-position: bottom;
+  /* background-position: bottom; */
+  color: #fff;
+  transition: all 0.3s ease;
 }
 
 .ContactusIcon {
@@ -467,7 +469,7 @@
     -webkit-text-stroke: 1px #ffffff;
     text-decoration: none;
     color: transparent;
-    -webkit-background-clip: text, padding-box;
+    /* -webkit-background-clip: text, padding-box;
     background-clip: text, padding-box;
     background-size: 100% 200%;
     background-position: top;
@@ -483,12 +485,14 @@
     );
     background-image: -webkit-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
     background-image: -o-linear-gradient(bottom, #ffffff 50%, #1a1c3c 50%);
-    background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%);
+    background-image: linear-gradient(to top, #ffffff 50%, #1a1c3c 50%); */
     cursor: pointer;
   }
 
   .FooterContactusLink:hover {
-    background-position: bottom;
+    /* background-position: bottom; */
+    color: #fff;
+    transition: all 0.3s ease;
   }
 
   .ContactusIcon {

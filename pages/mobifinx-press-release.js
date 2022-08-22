@@ -6,7 +6,12 @@ import PressMainComponent from "@/components/Press/PressMainComponent";
 
 const press = () => {
   return (
-    <Layout title={"Press"}>
+    <Layout
+      title={" MobifinX Announcements for Crypto world"}
+      description={
+        "Here you can Explore our official statement and announcement for the growth of our brand and product. "
+      }
+    >
       <MenuPackage />
       <PressHead />
       <PressMainComponent />
