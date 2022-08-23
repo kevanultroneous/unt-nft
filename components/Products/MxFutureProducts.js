@@ -180,8 +180,8 @@ const MxFutureProducts = ({ text }) => {
                   <Col xl={4} md={12}>
                     <div className={styles.rowtext}>
                       <Row className={styles.ImageRow}>
-                        <Col md={4} className={styles.Contentdiv}>
-                          <Col xl={4} md={4}>
+                        <Col md={4} xl={12} className={styles.Contentdiv}>
+                          <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
                               <Image
                                 src={"/assets/images/Detail-1.svg"}
@@ -210,7 +210,7 @@ const MxFutureProducts = ({ text }) => {
                           </Col>
                         </Col>
                         <Col md={4} xl={12} className={styles.Contentdiv}>
-                          <Col xl={4} md={4} xs={4}>
+                          <Col xl={4} md={4}>
                             <div className={styles.Detaildiv}>
                               <Image
                                 src={"/assets/images/Detail-2.svg"}

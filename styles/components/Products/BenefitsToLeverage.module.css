@@ -384,6 +384,12 @@
     display: block;
     text-align: center;
     cursor: pointer;
+    transition: all 1s ease;
+  }
+
+  .ArrowTop:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
   }
 
   .ArrowBottom {
@@ -454,5 +460,10 @@
 
   .ArrowBottom {
     display: block;
+    transition: all 1s ease;
+  }
+  .ArrowBottom:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
   }
 }

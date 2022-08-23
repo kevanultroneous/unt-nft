@@ -1,9 +1,14 @@
 import styles from "@/styles/components/Products/NextProduct.module.css";
+import Aos from "aos";
+import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import WaterText from "../Common/WaterText";
 const NextProduct = ({ listofdata = [] }) => {
   const vals = ["MxDex", "MxFi", "MxLaunch"];
-
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     // <Row
     //   className={`${styles.NextProductContainer} m-0 p-0 justify-content-center`}
@@ -42,9 +47,11 @@ const NextProduct = ({ listofdata = [] }) => {
             ind === 0
               ? styles.ColZero
               : ind === 1
-                ? styles.ColOne
-                : styles.ColTwo
+              ? styles.ColOne
+              : styles.ColTwo
           }
+          data-aos="fade-up"
+          data-aos-duration="1500"
         >
           <div className={styles.outer}>
             <div className={styles.bg}>
