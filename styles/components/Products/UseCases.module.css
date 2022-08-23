@@ -223,10 +223,11 @@
   }
 
   .Cardtitle {
-    font-size: 20px;
+    font-size: 30px;
     line-height: 0;
     padding-left: 1rem;
     padding-top: 0%;
+    padding-bottom: 1rem;
   }
 
   .Carddescription {
@@ -246,6 +247,7 @@
 
   .number {
     padding-left: 1rem;
+    font-size: 30px;
   }
 
   .Pheading {
@@ -261,7 +263,7 @@
 
   .sectionCards .sectionContent li {
     top: calc(50vh + 52px - 215px - 40px);
-    height: 1000px;
+    height: 650px;
   }
 
   .sectionCards .sectionContent {
@@ -301,9 +303,12 @@
     padding-bottom: 4rem;
     padding-left: 0rem;
   }
-  .MainImage {
+  /* .MainImage {
     width: 50%;
     padding: 0;
+  } */
+  .ImageRow {
+    display: none;
   }
 }
 
