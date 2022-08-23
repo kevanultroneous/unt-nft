@@ -12,6 +12,7 @@ import Layout from "@/components/Common/Layout";
 import MenuPackage from "@/components/Common/MenuPackage";
 import Achievements from "@/components/Home/Achievments";
 import Footer from "@/components/Home/Footer";
+import Head from "next/head";
 import { useRef } from "react";
 
 const AboutUs = () => {
@@ -26,6 +27,12 @@ const AboutUs = () => {
         " Mobifinx is a global blockchain company focused on building enterprise software products. We are a squad of thoughtful, pragmatic and innovative professionals to deliver customized and holistic solutions. Get in touch to get more details."
       }
     >
+      <Head>
+        <meta
+          property="og:image"
+          content="https://test-mobifinx.vercel.app/assets/images/OG-Aboutus.jpg"
+        />
+      </Head>
       <MenuPackage />
       <Hero clickHandler={() => scrollToRef(scrollRef)} />
       <section ref={scrollRef}>

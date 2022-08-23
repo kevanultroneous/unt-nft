@@ -69,7 +69,7 @@ export default function Home() {
       <Head>
         <meta
           property="og:image"
-          content="https://test-mobifinx.vercel.app/assets/images/Og-home.jpg"
+          content="https://test-mobifinx.vercel.app/assets/images/OG-Homepage.jpg"
         />
       </Head>
       {cursor ? (

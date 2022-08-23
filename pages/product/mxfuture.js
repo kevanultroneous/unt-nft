@@ -12,6 +12,7 @@ import NextProduct from "@/components/Products/NextProduct";
 import Solution from "@/components/Products/Solution";
 import Trade from "@/components/Products/Trade";
 import WhatyouGet from "@/components/Products/WhatyouGet";
+import Head from "next/head";
 import { useRef, useState } from "react";
 import { MxFutureNextLink } from "utils/MxFuture.data";
 const MxFuture = () => {
@@ -20,6 +21,12 @@ const MxFuture = () => {
   const scrollRef = useRef(null);
   return (
     <Layout title={"MxFuture"}>
+      <Head>
+        <meta
+          property="og:image"
+          content="https://test-mobifinx.vercel.app/assets/images/OG-MXFuture.jpg"
+        />
+      </Head>
       <MenuPackage />
       <Hero clickHandler={() => scrollToRef(scrollRef)} />
       <section ref={scrollRef}>
