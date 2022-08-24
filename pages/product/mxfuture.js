@@ -24,7 +24,7 @@ const MxFuture = () => {
       <Head>
         <meta
           property="og:image"
-          content="https://test-mobifinx.vercel.app/assets/images/OG-MXFuture.jpg"
+          content="https://mobifinx.com/product/mxfuture/assets/images/OG-MXFuture.jpg"
         />
       </Head>
       <MenuPackage />

@@ -30,7 +30,7 @@ const AboutUs = () => {
       <Head>
         <meta
           property="og:image"
-          content="https://test-mobifinx.vercel.app/assets/images/OG-Aboutus.jpg"
+          content="https://mobifinx.com/about-mobifinx/assets/images/OG-Aboutus.jpg"
         />
       </Head>
       <MenuPackage />
