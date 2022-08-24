@@ -36,6 +36,7 @@ function ExploreWorkplace() {
                     fluid
                     src="/assets/images/Workplace-Chair.png"
                     alt="WorkPlace-Chair"
+                    className={styles.Imageanimation}
                   />
                 </div>
                 <div
@@ -45,6 +46,7 @@ function ExploreWorkplace() {
                     fluid
                     src="/assets/images/Workplace-Meeting.png"
                     alt="WorkPlace-Meeting"
+                    className={styles.Imageanimation}
                   />
                 </div>
               </div>
@@ -55,6 +57,7 @@ function ExploreWorkplace() {
                   fluid
                   src="/assets/images/Rectangle 109.png"
                   alt="WorkPlace-Desk"
+                  className={styles.Imageanimation}
                 />
               </div>
             </Row>
@@ -76,6 +79,7 @@ function ExploreWorkplace() {
                   fluid
                   src="/assets/images/Rectangle 112.png"
                   alt="WorkPlace-On-Desk"
+                  className={styles.Imageanimation}
                 />
               </div>
               <div className={styles.groupSmImage}>
@@ -86,6 +90,7 @@ function ExploreWorkplace() {
                     fluid
                     src="/assets/images/Workplace-activity.png"
                     alt="WorkPlace-Activity"
+                    className={styles.Imageanimation}
                   />
                 </div>
                 <div
@@ -95,6 +100,7 @@ function ExploreWorkplace() {
                     fluid
                     src="/assets/images/Workplace-girl.png"
                     alt="WorkPlace-Girl"
+                    className={styles.Imageanimation}
                   />
                 </div>
               </div>

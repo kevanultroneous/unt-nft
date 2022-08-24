@@ -375,7 +375,7 @@
     position: relative;
     animation: scrolldowntotop 4s ease-in 0s infinite normal;
     animation-direction: alternate;
-    margin-left: -1.5rem;
+    margin-left: -1rem;
     margin-bottom: 4rem;
     cursor: pointer;
   }
@@ -419,4 +419,16 @@
   .HeroImg {
     height: 200px;
   }
+  .Imageanimation {
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding: 0;
+  }
+
+  /* .productimg:hover {
+    transform: scale(1.1) !important;
+    transition: all 5ms ease;
+    padding: 0;
+  } */
 }

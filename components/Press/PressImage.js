@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import styles from "@/styles/components/Press/PressImage.module.css";
+import Aos from "aos";
 
 const PressImageCard = ({
   style,
@@ -16,8 +17,16 @@ const PressImageCard = ({
   disp1,
   disp2,
 }) => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
-    <div className={`${styles.PressImageCard} ${style}`}>
+    <div
+      className={`${styles.PressImageCard} ${style}`}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className={styles.PressImage}>
         <Image src={srcimg} fluid alt={imageTitle} />
       </div>
@@ -50,7 +59,11 @@ const colLength = (ind) => (ind % 2 === 0 ? 8 : 4);
 
 function PressImage({ reverse, PressData }) {
   return (
-    <div className={styles.PressImageCardContainer}>
+    <div
+      className={styles.PressImageCardContainer}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <Row className={reverse ? styles.imagePressRow : null}>
         {PressData.map((Press, ind) => {
           return (

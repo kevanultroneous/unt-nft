@@ -50,8 +50,8 @@ const NextProduct = ({ listofdata = [] }) => {
               ? styles.ColOne
               : styles.ColTwo
           }
-          data-aos="fade-up"
-          data-aos-duration="1500"
+          // data-aos="fade-up"
+          // data-aos-duration="1500"
         >
           <div className={styles.outer}>
             <div className={styles.bg}>

@@ -700,6 +700,10 @@
     display: flex;
   }
   .CardPera {
-    margin-right: 2rem;
+    margin-right: 3rem;
+  }
+  .Detaildiv:hover {
+    transform: scale(1.2);
+    transition: all 1s ease;
   }
 }

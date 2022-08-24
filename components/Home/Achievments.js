@@ -4,10 +4,10 @@ import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { AchivmentData } from "utils/AchivmentsData";
 const Achievements = () => {
-  // useEffect(() => {
-  //   AOS.refresh();
-  //   AOS.init();
-  // }, []);
+  useEffect(() => {
+    AOS.refresh();
+    AOS.init();
+  }, []);
   return (
     <div className={styles.AchievementsContainer}>
       <p
@@ -24,7 +24,11 @@ const Achievements = () => {
       >
         We are proud to Work with
       </h4>
-      <Row className={styles.AchievementBoxContainer}>
+      <Row
+        className={styles.AchievementBoxContainer}
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         {AchivmentData.map((v, i) => (
           <Col xl={3} xs={12} key={i} className={styles.AchivementCol}>
             <div

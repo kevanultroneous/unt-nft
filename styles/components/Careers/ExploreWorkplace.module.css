@@ -363,6 +363,8 @@
 
   .groupSmImage div {
     width: 15vw !important;
+    overflow: hidden;
+    border-radius: 10px;
   }
 
   .workPlacesBgImage {
@@ -370,6 +372,9 @@
     justify-content: end;
     width: 33vw !important;
     margin: 0 0 0 3rem !important;
+    overflow: hidden;
+    transition: all 1s ease;
+    border-radius: 10px;
   }
 
   .workPlacesSecBgImage {
@@ -378,6 +383,9 @@
 
   .workPlacesSecBgImage {
     margin: 0 3rem 0 0 !important;
+    overflow: hidden;
+    transition: all 1s ease;
+    border-radius: 10px;
   }
 
   .ctaRow {
@@ -416,4 +424,14 @@
   .ctaButton img:hover {
     transform: scale(0.9);
   }
+  .Imageanimation {
+    transition: all 1s ease;
+  }
+  .Imageanimation:hover {
+    transform: scale(1.15);
+    transition: all 1s ease;
+  }
+  /* .workPlaceImages {
+    overflow: hidden;
+  } */
 }

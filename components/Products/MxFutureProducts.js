@@ -57,7 +57,11 @@ const MxFutureProducts = ({ text }) => {
                   </Col>
                   <Col xl={4} md={12}>
                     <div className={styles.rowtext}>
-                      <Row className={styles.ImageRow}>
+                      <Row
+                        className={styles.ImageRow}
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                      >
                         <Col md={4} xl={12} className={styles.Contentdiv}>
                           <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
@@ -179,7 +183,11 @@ const MxFutureProducts = ({ text }) => {
                   </Col>
                   <Col xl={4} md={12}>
                     <div className={styles.rowtext}>
-                      <Row className={styles.ImageRow}>
+                      <Row
+                        className={styles.ImageRow}
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                      >
                         <Col md={4} xl={12} className={styles.Contentdiv}>
                           <Col xl={4} md={4} xs={4}>
                             <div className={styles.Detaildiv}>
@@ -301,7 +309,11 @@ const MxFutureProducts = ({ text }) => {
                   </Col>
                   <Col xl={4} md={12}>
                     <div className={styles.rowtext}>
-                      <Row className={styles.ImageRow}>
+                      <Row
+                        className={styles.ImageRow}
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                      >
                         <Col md={4} xl={12} className={styles.Contentdiv}>
                           <Col xl={4} md={4}>
                             <div className={styles.Detaildiv}>
@@ -423,7 +435,11 @@ const MxFutureProducts = ({ text }) => {
                   </Col>
                   <Col xl={4} md={12}>
                     <div className={styles.rowtext}>
-                      <Row className={styles.ImageRow}>
+                      <Row
+                        className={styles.ImageRow}
+                        data-aos="fade-up"
+                        data-aos-duration="1500"
+                      >
                         <Col md={4} xl={12} className={styles.Contentdiv}>
                           <Col xl={4} md={4}>
                             <div className={styles.Detaildiv}>

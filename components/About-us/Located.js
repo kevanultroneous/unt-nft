@@ -1,6 +1,12 @@
 import styles from "@/styles/components/aboutus/Located.module.css";
+import Aos from "aos";
+import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 const Located = () => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <section className={styles.Location}>
       <div className={styles.Locationcontainer}>
@@ -47,7 +53,13 @@ const Located = () => {
                   </Col>
                 </Row>
               </Col>
-              <Col xl={6} md={6} className={styles.LocatedImg}>
+              <Col
+                xl={6}
+                md={6}
+                className={styles.LocatedImg}
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
                 <Image
                   alt="located-img"
                   src={"/assets/images/Newyork.svg"}

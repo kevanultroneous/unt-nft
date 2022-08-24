@@ -19,7 +19,11 @@ const Solution = () => {
       data-aos-duration="500"
     >
       <h3>This Solution Helps</h3>
-      <Row className={styles.Solutionrow}>
+      <Row
+        className={styles.Solutionrow}
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
         <Col
           xl={3}
           xs={12}
