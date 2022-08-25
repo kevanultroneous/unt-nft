@@ -59,14 +59,14 @@ const Layout = ({
         <meta name="email" content="hello@mobifinx.com" />
         <meta name="Rating" content="General" />
         <meta name="application-name" content="MobifinX" />
-        <Script
-          type="text/javascript"
-          src="https://nqtl-zgph.maillist-manage.com/js/optin.min.js"
-          onLoad={
-            "setupSF('sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268','ZCFORMVIEW',false,'light',false,'0')"
-          }
-        ></Script>
       </Head>
+      <Script
+        type="text/javascript"
+        src="https://nqtl-zgph.maillist-manage.com/js/optin.min.js"
+        onLoad={
+          "setupSF('sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268','ZCFORMVIEW',false,'light',false,'0')"
+        }
+      ></Script>
       <main>{children}</main>
     </div>
   );
