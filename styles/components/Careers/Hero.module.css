@@ -166,6 +166,7 @@
   .HeroContainer {
     padding: 5.8rem 1rem 5rem 1rem;
     height: auto;
+    overflow: hidden;
   }
   .heroContainer {
     justify-content: end;
@@ -220,6 +221,7 @@
   }
   .heroCard {
     margin-top: 1rem;
+    overflow: hidden;
   }
 }
 
@@ -331,6 +333,7 @@
 @media only screen and (min-width: 992px) {
   .HeroContainer {
     padding: 2.5rem 1rem 3rem 8rem;
+    overflow: hidden;
   }
   .heroCard {
     margin: 0 0 0 -1.3rem;
@@ -448,6 +451,7 @@
 
   .heroCard {
     margin: 0 0 0 3rem;
+    overflow: hidden;
   }
 
   .SliderMain {
