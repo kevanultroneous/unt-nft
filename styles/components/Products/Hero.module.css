@@ -32,6 +32,18 @@
   padding: 2rem 0;
   width: 100%;
   height: auto;
+  padding-left: 1.2rem;
+}
+
+.productimg:hover {
+  transform: scale(1.05) !important;
+  transition: all 1s ease;
+}
+
+.HeroImgdiv {
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
 .MiniLine {
@@ -327,6 +339,7 @@
     padding: 2rem 0;
     width: 100%;
     height: auto;
+    padding-left: 1.2rem;
   }
 
   .MiniLine {
@@ -419,16 +432,4 @@
   .HeroImg {
     height: 200px;
   }
-  .Imageanimation {
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    padding: 0;
-  }
-
-  /* .productimg:hover {
-    transform: scale(1.1) !important;
-    transition: all 5ms ease;
-    padding: 0;
-  } */
 }

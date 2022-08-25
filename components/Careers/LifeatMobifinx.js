@@ -28,13 +28,16 @@ function LifeatMobifinx() {
             </p>
           </Col>
           <Col xl={12} md={12} lg={12} sm={12} className={styles.rightImage}>
-            <Image
-              fluid
-              src="/assets/images/Career-Life-Mobifinx.png"
-              alt="Life At MobifinX"
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
+            <div className={styles.CareerImgdiv}>
+              <Image
+                fluid
+                src="/assets/images/Career-Life-Mobifinx.png"
+                alt="Life At MobifinX"
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                className={styles.CareeraImaganim}
+              />
+            </div>
           </Col>
         </Col>
       </Row>

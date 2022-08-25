@@ -120,18 +120,18 @@ const Hero = ({ clickHandler }) => {
             <p className={styles.ScrolldownText}>Scroll Down</p> */}
           </div>
         </Col>
-        <Col xl={10} className={styles.Imageanimation}>
+        <Col xl={10}>
           {/* <Parallax
             bgImage={"/assets/images/productimage.png"}
             strength={300}
             style={{ height: 700 }}
           > */}
-          <div className="Imageanimation">
+          <div className={styles.HeroImgdiv}>
             <Image
               data-aos="fade-left"
               data-aos-duration="3000"
-              data-aos-delay="500"
-              data-aos-easing="ease"
+              // data-aos-delay="500"
+              // data-aos-easing="ease"
               src={"/assets/images/productimage.png"}
               alt="productimg"
               className={styles.productimg}

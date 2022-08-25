@@ -16,9 +16,10 @@ function PressCard({ trendingpress }) {
             <Col key={index} xl={4} lg={4}>
               <div
                 className={styles.pressBox}
-                data-aos="fade-up"
-                data-aos-delay={`${300 + parseInt(index + "000")}`}
-                data-aos-duration={`${1000 + parseInt(index + "000")}`}
+                data-aos="fade-left"
+                data-aos-duration="2000"
+                // data-aos-delay={`${50 + parseInt(index + "000")}`}
+                // data-aos-duration={`${1000 + parseInt(index + "000")}`}
               >
                 <Row className={styles.pressImageBox}>
                   <Col xl={2} md={2} xs={2} className={styles.pressLogo}>

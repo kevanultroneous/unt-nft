@@ -64,6 +64,7 @@
 @media only screen and (min-width: 1200px) {
   .moreEventsContainer {
     padding: 2.5rem 0rem 2rem 8.5rem;
+    overflow: hidden;
   }
   .rightHeadingDisplay {
     display: flex;

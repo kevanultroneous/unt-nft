@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Image } from "react-bootstrap";
 import styles from "@/styles/components/Events/EventCard.module.css";
+import Aos from "aos";
 
 const EventCard = ({
   style,
@@ -15,8 +16,16 @@ const EventCard = ({
   disp1,
   disp2,
 }) => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
-    <div className={`${styles.NewsImageCard} ${style}`}>
+    <div
+      className={`${styles.NewsImageCard} ${style}`}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className={styles.newsImage}>
         <Image
           src={srcimg}

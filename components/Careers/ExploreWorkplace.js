@@ -31,9 +31,9 @@ function ExploreWorkplace() {
               <div className={styles.groupSmImage}>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  data-aos="fade-up"
-                  data-aos-duration="500"
-                  data-aos-delay="200"
+                  // data-aos="fade-up"
+                  // data-aos-duration="500"
+                  // data-aos-delay="200"
                 >
                   <Image
                     fluid
@@ -44,9 +44,9 @@ function ExploreWorkplace() {
                 </div>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  data-aos="fade-up"
-                  data-aos-duration="1000"
-                  data-aos-delay="250"
+                  // data-aos="fade-up"
+                  // data-aos-duration="1000"
+                  // data-aos-delay="250"
                 >
                   <Image
                     fluid
@@ -58,9 +58,9 @@ function ExploreWorkplace() {
               </div>
               <div
                 className={(styles.workPlaceImages, styles.workPlacesBgImage)}
-                data-aos="fade-up"
-                data-aos-duration="1500"
-                data-aos-delay="300"
+                // data-aos="fade-up"
+                // data-aos-duration="1500"
+                // data-aos-delay="300"
               >
                 <Image
                   fluid
@@ -83,9 +83,9 @@ function ExploreWorkplace() {
                   styles.workPlacesBgImage,
                   styles.workPlacesSecBgImage)
                 }
-                data-aos="fade-up"
-                data-aos-duration="2000"
-                data-aos-delay="350"
+                // data-aos="fade-up"
+                // data-aos-duration="2000"
+                // data-aos-delay="350"
               >
                 <Image
                   fluid
@@ -97,9 +97,9 @@ function ExploreWorkplace() {
               <div className={styles.groupSmImage}>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  data-aos="fade-up"
-                  data-aos-duration="2500"
-                  data-aos-delay="400"
+                  // data-aos="fade-up"
+                  // data-aos-duration="2500"
+                  // data-aos-delay="400"
                 >
                   <Image
                     fluid
@@ -110,9 +110,9 @@ function ExploreWorkplace() {
                 </div>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  data-aos="fade-up"
-                  data-aos-duration="3000"
-                  data-aos-delay="450"
+                  // data-aos="fade-up"
+                  // data-aos-duration="3000"
+                  // data-aos-delay="450"
                 >
                   <Image
                     fluid

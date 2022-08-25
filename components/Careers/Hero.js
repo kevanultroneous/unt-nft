@@ -43,7 +43,7 @@ const Hero = ({ clickHandler }) => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
-    autoplaySpeed: 8000,
+    autoplaySpeed: 6000,
     autoplay: true,
   };
   useEffect(() => {
@@ -89,6 +89,8 @@ const Hero = ({ clickHandler }) => {
               xs={12}
               sm={6}
               className={styles.heroCard}
+              data-aos="fade-left"
+              data-aos-duration="1500"
             >
               <div className={styles.SliderMain}>
                 <SlickSlider

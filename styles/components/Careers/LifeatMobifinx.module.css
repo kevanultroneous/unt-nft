@@ -176,4 +176,13 @@
     width: 100%;
     padding: 0;
   }
+  .CareeraImaganim:hover {
+    transform: scale(1.1) !important;
+    transition: all 0.5s ease;
+  }
+  .CareerImgdiv {
+    overflow: hidden;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+  }
 }

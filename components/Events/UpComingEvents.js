@@ -1,8 +1,9 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ActionButtonV2 from "../Common/ActionButtonV2";
 import { Col, Row } from "react-bootstrap";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import styles from "@/styles/components/Events/UpComingEvents.module.css";
+import Aos from "aos";
 
 export function UpComingEvents({
   date,
@@ -11,8 +12,16 @@ export function UpComingEvents({
   DescPara,
   LinkTo,
 }) {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
-    <Row className={styles.UpComingEventsRow}>
+    <Row
+      className={styles.UpComingEventsRow}
+      data-aos="fade-left"
+      data-aos-duration="2000"
+    >
       <Col
         xl={2}
         md={2}
