@@ -58,6 +58,17 @@ const Layout = ({
         <meta name="email" content="hello@mobifinx.com" />
         <meta name="Rating" content="General" />
         <meta name="application-name" content="MobifinX" />
+        <script
+          type="text/javascript"
+          src="https://nqtl-zgph.maillist-manage.com/js/optin.min.js"
+          onload="setupSF('sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268','ZCFORMVIEW',false,'light',false,'0')"
+        ></script>
+        <script type="text/javascript">
+          function
+          runOnFormSubmit_sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268(th)
+          {/*Before submit, if you want to trigger your event, "include your code here"*/}
+          ;
+        </script>
       </Head>
       <main>{children}</main>
     </div>

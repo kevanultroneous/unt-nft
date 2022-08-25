@@ -59,11 +59,7 @@ const colLength = (ind) => (ind % 2 === 0 ? 8 : 4);
 
 function PressImage({ reverse, PressData }) {
   return (
-    <div
-      className={styles.PressImageCardContainer}
-      data-aos="fade-up"
-      data-aos-duration="2000"
-    >
+    <div className={styles.PressImageCardContainer}>
       <Row className={reverse ? styles.imagePressRow : null}>
         {PressData.map((Press, ind) => {
           return (

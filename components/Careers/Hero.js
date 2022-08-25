@@ -39,10 +39,12 @@ const Hero = ({ clickHandler }) => {
   const settings = {
     dots: false,
     infinite: true,
-    speed: 500,
+    speed: 1800,
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: false,
+    autoplaySpeed: 8000,
+    autoplay: true,
   };
   useEffect(() => {
     Aos.refresh();

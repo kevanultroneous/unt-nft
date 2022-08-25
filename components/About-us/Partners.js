@@ -12,6 +12,7 @@ const Partners = () => {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplaySpeed: 3000,
+    autoplay: true,
     responsive: [
       {
         breakpoint: 1400,

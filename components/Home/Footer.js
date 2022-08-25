@@ -1,5 +1,5 @@
 import styles from "@/styles/components/home/Footer.module.css";
-import { Col, Image, Row } from "react-bootstrap";
+import { Button, Col, Image, Row } from "react-bootstrap";
 import { IoLogoFacebook, IoLogoLinkedin } from "react-icons/io";
 import { AiFillTwitterSquare } from "react-icons/ai";
 import { HiMail, HiOutlineExternalLink } from "react-icons/hi";
@@ -21,14 +21,147 @@ const Footer = () => {
         </Col>
         <Col xl={6} md={12} className={styles.MailContainerSpace}>
           <div className={styles.MailContainer}>
-            <div className={styles.MailInput}>
-              <input type={"email"} placeholder="Enter your Mail" />
-            </div>
-            <div className={styles.MailBtn}>
-              <div className={styles.FooterSendButton}>
-                <Image alt="send" src="/assets/images/sendBtn.svg" />
+            <form
+              className={styles.SubscriptionForm}
+              method="POST"
+              id="zcampaignOptinForm"
+              // style="margin: 0px; width: 100%; padding: 0px 25px"
+              action="https://nqtl-zgph.maillist-manage.com/weboptin.zc"
+              target="_zcSignup"
+            >
+              <div
+                style={{
+                  backgroundColor: "rgb(255, 235, 232)",
+                  padding: "10px",
+                  color: "rgb(210, 0, 0)",
+                  fontSize: "11px",
+                  margin: "20px 10px 0px",
+                  border: "1px solid rgb(255, 217, 211)",
+                  opacity: "1",
+                  display: "none",
+                }}
+                id="errorMsgDiv"
+              >
+                Please correct the marked field(s) below.
               </div>
-            </div>
+              <div
+                // style="position: relative; margin: 15px 0 30px; width: 320px; height: 36px; display: inline-block"
+                class="SIGNUP_FLD"
+              >
+                <div className={styles.MailInput}>
+                  <input
+                    required
+                    type={"email"}
+                    placeholder="Enter your Mail"
+                    changeitem="SIGNUP_FORM_FIELD"
+                    name="CONTACT_EMAIL"
+                    id="EMBED_FORM_EMAIL_LABEL"
+                  />
+                </div>
+                {/* <input
+                  type="text"
+                  placeholder="Email"
+                
+                /> */}
+              </div>
+              {/* <div
+                style={{
+                  position: "relative",
+                  width: "180px",
+                  height: "38px",
+                  margin: "0 0 0 20px",
+                  textAlign: "left",
+                  display: "inline-block",
+                }}
+                class="SIGNUP_FLD"
+              > */}
+              <div className={styles.MailBtn}>
+                <div className={styles.FooterSendButton}></div>
+              </div>
+
+              {/* <input
+                  type="submit"
+                  style="text-align: center; width: 100%; height: 100%; z-index: 5; border: 0; color: rgb(255, 255, 255); cursor: pointer; outline: none; font-size: 14px; background: linear-gradient(to right, rgb(138, 104, 215) 40%, rgb(192, 73, 164) 80%); border-radius: 50px"
+                  name="SIGNUP_SUBMIT_BUTTON"
+                  id="zcWebOptin"
+                  value="Join Now"
+                /> */}
+              {/* </div> */}
+              <input type="hidden" id="fieldBorder" value="" />
+              <input
+                type="hidden"
+                id="submitType"
+                name="submitType"
+                value="optinCustomView"
+              />
+              <input
+                type="hidden"
+                id="emailReportId"
+                name="emailReportId"
+                value=""
+              />
+              <input
+                type="hidden"
+                id="formType"
+                name="formType"
+                value="QuickForm"
+              />
+              <input type="hidden" name="zx" id="cmpZuid" value="12dbd3c07" />
+              <input type="hidden" name="zcvers" value="3.0" />
+              <input
+                type="hidden"
+                name="oldListIds"
+                id="allCheckedListIds"
+                value=""
+              />
+              <input
+                type="hidden"
+                id="mode"
+                name="mode"
+                value="OptinCreateView"
+              />
+              <input
+                type="hidden"
+                id="zcld"
+                name="zcld"
+                value="195a18787ca15b11"
+              />
+              <input type="hidden" id="zctd" name="zctd" value="" />
+              <input type="hidden" id="document_domain" value="" />
+              <input
+                type="hidden"
+                id="zc_Url"
+                value="nqtl-zgph.maillist-manage.com"
+              />
+              <input type="hidden" id="new_optin_response_in" value="0" />
+              <input type="hidden" id="duplicate_optin_response_in" value="0" />
+              <input
+                type="hidden"
+                name="zc_trackCode"
+                id="zc_trackCode"
+                value="ZCFORMVIEW"
+              />
+              <input
+                type="hidden"
+                id="zc_formIx"
+                name="zc_formIx"
+                value="3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268"
+              />
+              <input type="hidden" id="viewFrom" value="URL_ACTION" />
+              <span style={{ display: "none" }} id="dt_CONTACT_EMAIL">
+                1,true,6,Contact Email,2
+              </span>
+
+              <button
+                type="submit"
+                name="SIGNUP_SUBMIT_BUTTON"
+                id="zcWebOptin"
+                value="Join Now"
+                style={{ background: "none", border: "none" }}
+              >
+                <Image alt="send" src="/assets/images/sendBtn.svg" />
+              </button>
+            </form>
           </div>
         </Col>
       </Row>
