@@ -25,7 +25,6 @@ const Footer = () => {
               className={styles.SubscriptionForm}
               method="POST"
               id="zcampaignOptinForm"
-              // style="margin: 0px; width: 100%; padding: 0px 25px"
               action="https://nqtl-zgph.maillist-manage.com/weboptin.zc"
               target="_zcSignup"
             >
@@ -44,10 +43,7 @@ const Footer = () => {
               >
                 Please correct the marked field(s) below.
               </div>
-              <div
-                // style="position: relative; margin: 15px 0 30px; width: 320px; height: 36px; display: inline-block"
-                class="SIGNUP_FLD"
-              >
+              <div className="SIGNUP_FLD">
                 <div className={styles.MailInput}>
                   <input
                     required
@@ -64,29 +60,11 @@ const Footer = () => {
                 
                 /> */}
               </div>
-              {/* <div
-                style={{
-                  position: "relative",
-                  width: "180px",
-                  height: "38px",
-                  margin: "0 0 0 20px",
-                  textAlign: "left",
-                  display: "inline-block",
-                }}
-                class="SIGNUP_FLD"
-              > */}
+
               <div className={styles.MailBtn}>
                 <div className={styles.FooterSendButton}></div>
               </div>
 
-              {/* <input
-                  type="submit"
-                  style="text-align: center; width: 100%; height: 100%; z-index: 5; border: 0; color: rgb(255, 255, 255); cursor: pointer; outline: none; font-size: 14px; background: linear-gradient(to right, rgb(138, 104, 215) 40%, rgb(192, 73, 164) 80%); border-radius: 50px"
-                  name="SIGNUP_SUBMIT_BUTTON"
-                  id="zcWebOptin"
-                  value="Join Now"
-                /> */}
-              {/* </div> */}
               <input type="hidden" id="fieldBorder" value="" />
               <input
                 type="hidden"

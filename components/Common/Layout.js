@@ -61,7 +61,9 @@ const Layout = ({
         <script
           type="text/javascript"
           src="https://nqtl-zgph.maillist-manage.com/js/optin.min.js"
-          onload="setupSF('sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268','ZCFORMVIEW',false,'light',false,'0')"
+          onLoad={
+            "setupSF('sf3z5ce9c16be8709aa8aa22ac8ddde609847c7c40617ba32586d78cf79bec7cc268','ZCFORMVIEW',false,'light',false,'0')"
+          }
         ></script>
         <script type="text/javascript">
           function
