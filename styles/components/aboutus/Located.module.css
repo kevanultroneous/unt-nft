@@ -35,10 +35,23 @@
 }
 .LocatedImg {
   text-align: end;
+  overflow: hidden;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 /* .Locatecol{
     width: 70%;
 } */
+
+.Contactimg {
+  width: 100%;
+  height: auto;
+  transition: all 1s ease;
+}
+.Contactimg:hover {
+  transform: scale(1.1);
+  transition: all 1s ease;
+}
 
 @media screen and (max-width: 600px) {
   .Locationcontainer {

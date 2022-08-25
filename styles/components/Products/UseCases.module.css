@@ -442,6 +442,7 @@
   .Detaildiv {
     padding: 0;
     max-width: 5rem;
+    transition: all 1s ease;
   }
 
   .ImageRow {

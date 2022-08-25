@@ -1,6 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image } from "react-bootstrap";
 import styles from "@/styles/components/News/NewsImage.module.css";
+import Aos from "aos";
 
 const NewsImageCard = ({
   style,
@@ -16,8 +17,16 @@ const NewsImageCard = ({
   disp1,
   disp2,
 }) => {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
-    <div className={`${styles.NewsImageCard} ${style}`}>
+    <div
+      className={`${styles.NewsImageCard} ${style}`}
+      data-aos="fade-up"
+      data-aos-duration="2000"
+    >
       <div className={styles.newsImage}>
         <Image src={srcimg} fluid alt={imageTitle} />
       </div>

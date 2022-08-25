@@ -274,7 +274,7 @@
 /* PC */
 @media only screen and (min-width: 1200px) {
   .NewsImageCardContainer {
-    padding: 4rem 1.5rem 0.4rem 7.8rem;
+    padding: 1rem 1.5rem 0.4rem 7.8rem;
   }
   .NewsImageCard {
     position: relative;

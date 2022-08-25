@@ -1,15 +1,24 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Row, Col, Image, Container } from "react-bootstrap";
 import styles from "@/styles/components/News/NewsCard.module.css";
+import Aos from "aos";
 
 function NewsCard({ trendingNews }) {
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <div className={styles.newsMainContainer}>
       <Row className={styles.newsCardRow}>
         {trendingNews.map((news, index) => {
           return (
             <Col key={index} xl={4} lg={4}>
-              <div className={styles.newsBox}>
+              <div
+                className={styles.newsBox}
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              >
                 <Row className={styles.newsImageBox}>
                   <Col xl={2} md={2} xs={2} className={styles.newsLogo}>
                     <Image fluid src={news.newsLogo} alt={news.newsHead} />

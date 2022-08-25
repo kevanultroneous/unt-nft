@@ -29,14 +29,15 @@
 }
 
 .productimg {
-  padding: 2rem 0;
+  /* padding: 2rem 0; */
+  padding: 0;
   width: 100%;
   height: auto;
-  padding-left: 1.2rem;
+  /* padding-left: 1.2rem; */
 }
 
 .productimg:hover {
-  transform: scale(1.05) !important;
+  transform: scale(1.1) !important;
   transition: all 1s ease;
 }
 
@@ -313,6 +314,7 @@
   .Herotitle {
     display: flex;
     align-items: center;
+    padding-bottom: 2rem;
   }
 
   .SpaceRemover {
@@ -336,10 +338,10 @@
   }
 
   .productimg {
-    padding: 2rem 0;
+    /* padding: 2rem 0; */
     width: 100%;
     height: auto;
-    padding-left: 1.2rem;
+    padding: 0;
   }
 
   .MiniLine {

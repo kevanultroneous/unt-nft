@@ -293,7 +293,7 @@
     font-weight: 600;
     padding-left: 0rem;
     padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 4rem;
     margin: 0;
   }
   .RotateRow {
@@ -309,13 +309,22 @@
     width: 100%;
     height: auto;
   }
+
+  .Img:hover {
+    transform: scale(1.1) !important;
+    transition: all 1s ease;
+  }
+
   .Aboutcol {
     text-align: -webkit-right;
   }
   .Heroimg {
     margin: 0;
     width: 100%;
-    padding: 2.5rem 0;
+    padding: 0;
+    overflow: hidden;
+    border-bottom-left-radius: 20px;
+    border-top-left-radius: 20px;
   }
   .SoftwareDevelopmentExpertsRow {
     margin: 0%;

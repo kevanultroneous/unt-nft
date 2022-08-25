@@ -45,6 +45,20 @@ const Detail = () => {
           ))}
         </Col>
       </Row>
+      <Row
+        className={styles.Aboutcandle}
+        data-aos="fade-up"
+        data-aos-duration="2000"
+      >
+        <Col xl={2}></Col>
+        <Col xl={10}>
+          <Image
+            alt="about-candle"
+            src={"/assets/images/Timeline.jpg"}
+            className={styles.Aboutcandleimg}
+          />
+        </Col>
+      </Row>
       {/* <Row>
         <Col xl={12}>
           <div className={styles.Aboutcandle}>
