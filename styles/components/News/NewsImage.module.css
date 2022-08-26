@@ -92,6 +92,7 @@
 @media screen and (max-width: 600px) {
   .NewsImageCardContainer {
     padding: 0 1rem 0;
+    overflow: hidden;
   }
   .NewsImageCard {
     margin: 0 0 1rem;

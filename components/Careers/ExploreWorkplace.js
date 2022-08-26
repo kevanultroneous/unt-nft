@@ -31,8 +31,8 @@ function ExploreWorkplace() {
               <div className={styles.groupSmImage}>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  // data-aos="fade-up"
-                  // data-aos-duration="500"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   // data-aos-delay="200"
                 >
                   <Image
@@ -44,8 +44,8 @@ function ExploreWorkplace() {
                 </div>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  // data-aos="fade-up"
-                  // data-aos-duration="1000"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   // data-aos-delay="250"
                 >
                   <Image
@@ -58,8 +58,8 @@ function ExploreWorkplace() {
               </div>
               <div
                 className={(styles.workPlaceImages, styles.workPlacesBgImage)}
-                // data-aos="fade-up"
-                // data-aos-duration="1500"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 // data-aos-delay="300"
               >
                 <Image
@@ -83,8 +83,8 @@ function ExploreWorkplace() {
                   styles.workPlacesBgImage,
                   styles.workPlacesSecBgImage)
                 }
-                // data-aos="fade-up"
-                // data-aos-duration="2000"
+                data-aos="fade-up"
+                data-aos-duration="1000"
                 // data-aos-delay="350"
               >
                 <Image
@@ -97,8 +97,8 @@ function ExploreWorkplace() {
               <div className={styles.groupSmImage}>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  // data-aos="fade-up"
-                  // data-aos-duration="2500"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   // data-aos-delay="400"
                 >
                   <Image
@@ -110,8 +110,8 @@ function ExploreWorkplace() {
                 </div>
                 <div
                   className={(styles.workPlaceImages, styles.workPlacesSmImage)}
-                  // data-aos="fade-up"
-                  // data-aos-duration="3000"
+                  data-aos="fade-up"
+                  data-aos-duration="1000"
                   // data-aos-delay="450"
                 >
                   <Image

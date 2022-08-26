@@ -4,6 +4,10 @@
 
 /* Mobile Portrait */
 @media screen and (max-width: 600px) {
+  .mainContainer {
+    padding: 0 0 3rem;
+    overflow: hidden;
+  }
 }
 /* mobile landscape */
 @media screen and (min-width: 600px) {

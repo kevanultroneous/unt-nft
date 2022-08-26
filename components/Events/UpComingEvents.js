@@ -69,7 +69,11 @@ export function UpComingEventsMobile({
   LinkTo,
 }) {
   return (
-    <Row className={styles.UpComingEventsRow}>
+    <Row
+      className={styles.UpComingEventsRow}
+      data-aos="fade-left"
+      data-aos-duration="2000"
+    >
       <Row className={styles.dateAndButtonRow}>
         <Col
           xs={6}

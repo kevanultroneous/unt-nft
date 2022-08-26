@@ -25,6 +25,7 @@
 
 .HeroImage {
   width: 100%;
+  transition: all 1s ease;
 }
 
 /* (this for mobile) */
@@ -35,6 +36,7 @@
 
   .HeroDetailContainer {
     padding: 0rem 0rem 0rem 1rem;
+    overflow: hidden;
   }
 
   .HeroDetailsWrraper {
@@ -57,7 +59,6 @@
 
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
-
   .HeroDetailContainer {
     padding-top: 0%;
   }
@@ -127,9 +128,16 @@
     display: flex;
     justify-content: flex-end;
     padding-left: 6rem;
+    overflow: hidden;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
   }
 
   .HeroDetailContainer {
     padding: 4rem 0 0rem 0rem;
   }
+  /* .HeroImage:hover {
+    transform: scale(1.1) !important;
+    transition: all 1s ease;
+  } */
 }

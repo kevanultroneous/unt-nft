@@ -69,6 +69,7 @@
 
   .DetailSectionWrraper {
     padding: 1rem 1rem;
+    overflow: hidden;
   }
 }
 
@@ -122,6 +123,8 @@
 
   .SolutionImage {
     margin-top: 4rem;
+    overflow: hidden;
+    border-radius: 20px;
   }
 
   .DetailWrraper {
@@ -161,5 +164,11 @@
 
   .SolutionImageConfigure {
     width: 100%;
+    transition: all 1s ease;
+  }
+  .SolutionImageConfigure:hover {
+    width: 100%;
+    transform: scale(1.1) !important;
+    transition: all 1s ease;
   }
 }
