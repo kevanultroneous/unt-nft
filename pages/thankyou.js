@@ -1,4 +1,4 @@
 const thankYou = () => {
-  return <></>;
+  return <>{/* <h1>Tahnk You</h1> */}</>;
 };
 export default thankYou;
