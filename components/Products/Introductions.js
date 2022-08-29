@@ -9,7 +9,8 @@ const Introductions = () => {
   const settings = {
     infinite: true,
     autoplay: true,
-    speed: 1500,
+    autoplaySpeed: 2000,
+    speed: 800,
     slidesToShow: 4,
     slidesToScroll: 1,
     cssEase: "linear",

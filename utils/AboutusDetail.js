@@ -23,18 +23,21 @@ export const AboutDetail = [
 export const OurStoryData = [
   {
     image: "/assets/images/employees.svg",
-    title: "500+",
+    title: "500",
     name: "Employees",
+    start: "475",
   },
   {
     image: "/assets/images/Clients.svg",
-    title: "1200+",
+    title: "1200",
     name: "Clients",
+    start: "1175",
   },
   {
     image: "/assets/images/Offices.svg",
-    title: "6+",
+    title: "6",
     name: "Offices ",
+    start: "0",
   },
 ];
 

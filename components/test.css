@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap");
+
+.CounterContainer {
+  background: #1a1112;
+  justify-content: space-evenly;
+  padding: 4rem 2.5rem;
+}
+
+.CounterContainerMain {
+  text-align: left;
+}
+
+.Counter,
+.CounterSign {
+  font-size: 70px;
+  -webkit-text-stroke: 0.8px #fff;
+  font-family: "Poppins", sans-serif;
+  font-weight: 700;
+  color: #1b1414;
+}
+
+.CounterText {
+  color: #c4c4c4;
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.CounterComponentCol {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+@media (min-width: 320px) and (max-width: 450px) {
+  .CounterContainer {
+    justify-content: initial;
+    padding: 0;
+    border-radius: 0 !important;
+  }
+
+  .Counter,
+  .CounterSign {
+    font-size: 40px;
+  }
+
+  .CounterComponentCol {
+    align-items: initial;
+    justify-content: center;
+    padding: 1rem;
+  }
+
+  .CounterContainerMain {
+    text-align: center;
+  }
+
+  .CounterContainerMainDiv {
+    text-align: left;
+  }
+
+  .CounterText {
+    font-size: 19px;
+    text-align: left;
+    width: 80%;
+    margin-top: -0.6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 1080px) {
+  .CounterContainer {
+    justify-content: initial;
+  }
+}
+@media (min-width: 1200px) and (max-width: 1730px) {
+}
+@media (min-width: 650px) and (max-width: 765px) {
+}

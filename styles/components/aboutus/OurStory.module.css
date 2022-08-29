@@ -70,7 +70,7 @@
   width: 11rem;
 }
 .Strength span {
-  font-size: 16px;
+  font-size: 50px;
   font-weight: 400;
   color: #fff;
 }
@@ -141,6 +141,24 @@
     font-size: 35px;
     padding-top: 4rem;
   }
+  .Tabdiv {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .Strength span {
+    font-size: 35px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Counterdetail {
+    font-size: 18px;
+    font-weight: 400;
+    color: #fff;
+  }
+  .Counter {
+    font-size: 35px !important;
+  }
 }
 
 @media screen and (min-width: 600px) {
@@ -168,8 +186,9 @@
   .HowWeCame p {
     font-size: 26px;
   }
-  .Strength span {
+  .Counterdetail {
     font-size: 22px;
+    color: #fff;
   }
   .StrengthImg {
     min-width: 3rem;
@@ -246,6 +265,11 @@
   .Strengthcol {
     width: 100%;
   }
+  .Tabdiv {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -255,6 +279,17 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .Tabdiv {
+    display: block;
+  }
+  .CounterMain {
+    display: flex;
+    /* justify-content: center; */
+    align-items: baseline;
+  }
+  .Counter {
+    font-size: 50px !important;
+  }
   .OurStoryContainer {
     padding-top: 4rem;
     padding-bottom: 0rem;
@@ -305,7 +340,7 @@
   .Strength {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: baseline;
     padding-bottom: 1.5rem;
   }
   .Strengthcol {
@@ -328,10 +363,13 @@
     margin: 0;
     width: 11rem;
   }
-  .Strength span {
-    font-size: 16px;
+  .Counterdetail {
+    font-size: 22px;
     font-weight: 400;
     color: #fff;
+  }
+  .Countericon {
+    font-size: 50px;
   }
   .Mobdiv {
     display: flex;

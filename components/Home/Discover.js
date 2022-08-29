@@ -92,6 +92,8 @@ const Discover = () => {
             className={styles.DiscoverItemsContainer}
             data-aos="fade-left"
             data-aos-duration="2000"
+            // data-aos-offset="100"
+            // data-aos-easing="ease-in-sine"
           >
             <Row className={styles.DiscoverItemsRow}>
               <Col xl={6} xs={4} md={6}>

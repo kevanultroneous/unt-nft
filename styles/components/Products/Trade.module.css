@@ -1,244 +1,264 @@
 .TradeHeadingWrraper {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .ContactusIcon {
-    font-size: 4rem;
+  font-size: 4rem;
 }
 
 .ExchnageParagraph {
-    font-weight: 400;
-    font-size: 22px;
+  font-weight: 400;
+  font-size: 22px;
 }
 
 .NextRow {
-    padding: 6rem 3rem 6rem 8.5rem !important;
-    text-align: center;
+  padding: 6rem 3rem 6rem 8.5rem !important;
+  text-align: center;
 }
 
 .outer {
-    display: inline-block;
+  display: inline-block;
 }
 
 .bg {
-    display: inline-block;
-    transition: all 0.6s ease-out;
+  display: inline-block;
+  transition: all 0.6s ease-out;
 }
 
 .inner {
-    display: inline-block;
-    background-color: white;
-    mix-blend-mode: screen;
-    padding: 5px;
-    transition: all 2s ease;
+  display: inline-block;
+  background-color: white;
+  mix-blend-mode: screen;
+  padding: 5px;
+  transition: all 2s ease;
 }
 
 .h1 {
-    color: white;
-    font-size: 80px;
-    letter-spacing: 5px;
-    -webkit-text-stroke: 1px black;
-    font-family: "Avenir LT Std", sans-serif;
-    font-weight: 800;
+  color: white;
+  font-size: 80px;
+  letter-spacing: 5px;
+  -webkit-text-stroke: 1px black;
+  font-family: "Avenir LT Std", sans-serif;
+  font-weight: 800;
 }
 
 .outer:hover .bg {
-    width: 100%;
+  width: 100%;
 }
 
 .outer .h1 {
-    transition: all 1s ease;
+  transition: all 1s ease;
 }
 
 .outer:hover h1 {
-    color: black;
+  color: black;
 }
 
 .ColOne .bg {
-    text-align: center;
-    background: #fff;
-    background: -moz-linear-gradient(90deg,
-            #363637 0%,
-            #79797a 50%,
-            #bcbcbc 100%);
-    background: -webkit-gradient(linear,
-            90deg top,
-            right top,
-            color-stop(0%, #363637),
-            color-stop(50%, #79797a),
-            color-stop(100%, #bcbcbc));
-    background: -webkit-linear-gradient(90deg,
-            #363637 0%,
-            #79797a 50%,
-            #bcbcbc 100%);
-    background: -o-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-    background: -ms-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-    background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
+  text-align: center;
+  background: #fff;
+  background: -moz-linear-gradient(
+    90deg,
+    #363637 0%,
+    #79797a 50%,
+    #bcbcbc 100%
+  );
+  background: -webkit-gradient(
+    linear,
+    90deg top,
+    right top,
+    color-stop(0%, #363637),
+    color-stop(50%, #79797a),
+    color-stop(100%, #bcbcbc)
+  );
+  background: -webkit-linear-gradient(
+    90deg,
+    #363637 0%,
+    #79797a 50%,
+    #bcbcbc 100%
+  );
+  background: -o-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+  background: -ms-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+  background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+  filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
 }
 
 @media screen and (max-width: 600px) {
-    .NextRow {
-        padding: 4rem 1rem !important;
-        text-align: center;
-    }
+  .NextRow {
+    padding: 4rem 1rem !important;
+    text-align: center;
+  }
 
-    .h1 {
-        font-size: 40px;
-        padding-bottom: 1rem;
-    }
+  .h1 {
+    font-size: 40px;
+    padding-bottom: 1rem;
+  }
 
-    .ContactusIcon {
-        margin-bottom: 1rem;
-    }
+  .ContactusIcon {
+    margin-bottom: 1rem;
+  }
 
-    .ExchnageParagraph {
-        font-size: 14px;
-    }
+  .ExchnageParagraph {
+    font-size: 14px;
+  }
 
-    .ContactusIcon {
-        font-size: 35px;
-    }
-
+  .ContactusIcon {
+    font-size: 35px;
+  }
 }
 
 /* (this for mobile landscape) */
 @media screen and (min-width: 600px) {
-    .NextRow {
-        padding: 4rem 1rem !important;
-        text-align: center;
-    }
+  .NextRow {
+    padding: 4rem 1rem !important;
+    text-align: center;
+  }
 
-    .h1 {
-        font-size: 40px;
-        padding-bottom: 1rem;
-    }
+  .h1 {
+    font-size: 40px;
+    padding-bottom: 1rem;
+  }
 
-    .ContactusIcon {
-        margin-bottom: 1rem;
-    }
+  .ContactusIcon {
+    margin-bottom: 1rem;
+  }
 
-    .ExchnageParagraph {
-        font-size: 14px;
-    }
+  .ExchnageParagraph {
+    font-size: 14px;
+  }
 
-    .ContactusIcon {
-        font-size: 35px;
-    }
+  .ContactusIcon {
+    font-size: 35px;
+  }
 }
 
 @media screen and (min-width: 768px) {
-    .ContactusIcon {
-        font-size: 4rem;
-    }
+  .ContactusIcon {
+    font-size: 4rem;
+  }
 
-    .ExchnageParagraph {
-        font-weight: 400;
-        font-size: 22px;
-    }
+  .ExchnageParagraph {
+    font-weight: 400;
+    font-size: 22px;
+  }
 
-    .h1 {
-        font-size: 80px;
-    }
-
+  .h1 {
+    font-size: 80px;
+  }
 }
 
 @media screen and (min-width: 992px) {
-    .ContactusIcon {
-        font-size: 4rem;
-    }
+  .ContactusIcon {
+    font-size: 4rem;
+  }
 
-    .ExchnageParagraph {
-        font-weight: 400;
-        font-size: 22px;
-    }
+  .ExchnageParagraph {
+    font-weight: 400;
+    font-size: 22px;
+  }
 
-    .h1 {
-        font-size: 80px;
-    }
+  .h1 {
+    font-size: 80px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
-    .TradeHeadingWrraper {
-        display: flex;
-        align-items: center;
-        justify-content: center;
-    }
+  .TradeHeadingWrraper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
-    .ContactusIcon {
-        font-size: 4rem;
-    }
+  .ContactusIcon {
+    font-size: 4rem;
+  }
 
-    .ExchnageParagraph {
-        font-weight: 400;
-        font-size: 22px;
-    }
+  .ExchnageParagraph {
+    font-weight: 400;
+    font-size: 22px;
+  }
 
-    .NextRow {
-        padding: 6rem 3rem 6rem 8.5rem !important;
-        text-align: center;
-    }
+  .NextRow {
+    padding: 6rem 3rem 6rem 8.5rem !important;
+    text-align: center;
+  }
 
-    .outer {
-        display: inline-block;
-    }
+  .outer {
+    display: inline-block;
+  }
 
-    .bg {
-        display: inline-block;
-        transition: all 0.6s ease-out;
-    }
+  .bg {
+    display: inline-block;
+    transition: all 0.6s ease-out;
+  }
 
-    .inner {
-        display: inline-block;
-        background-color: white;
-        mix-blend-mode: screen;
-        padding: 5px;
-        transition: all 2s ease;
-    }
+  .inner {
+    display: inline-block;
+    background-color: white;
+    mix-blend-mode: screen;
+    padding: 3px;
+    transition: all 2s ease;
+  }
 
-    .h1 {
-        color: white;
-        font-size: 80px;
-        letter-spacing: 5px;
-        -webkit-text-stroke: 1px black;
-        font-family: "Avenir LT Std", sans-serif;
-        font-weight: 800;
-    }
+  .h1 {
+    color: white;
+    font-size: 70px;
+    letter-spacing: 5px;
+    -webkit-text-stroke: 1px black;
+    font-family: "Avenir LT Std", sans-serif;
+    font-weight: 700;
+  }
 
-    .outer:hover .bg {
-        width: 100%;
-    }
+  .outer:hover .bg {
+    width: 100%;
+  }
 
-    .outer .h1 {
-        transition: all 1s ease;
-    }
+  .outer .h1 {
+    transition: all 1s ease;
+  }
 
-    .outer:hover h1 {
-        color: black;
-    }
+  .outer:hover h1 {
+    color: black;
+  }
 
-    .ColOne .bg {
-        text-align: center;
-        background: #fff;
-        background: -moz-linear-gradient(90deg,
-                #363637 0%,
-                #79797a 50%,
-                #bcbcbc 100%);
-        background: -webkit-gradient(linear,
-                90deg top,
-                right top,
-                color-stop(0%, #363637),
-                color-stop(50%, #79797a),
-                color-stop(100%, #bcbcbc));
-        background: -webkit-linear-gradient(90deg,
-                #363637 0%,
-                #79797a 50%,
-                #bcbcbc 100%);
-        background: -o-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-        background: -ms-linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-        background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
-        filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
-    }
+  .ColOne .bg {
+    text-align: center;
+    background: #fff;
+    background: -moz-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -webkit-gradient(
+      linear,
+      90deg top,
+      right top,
+      color-stop(0%, #363637),
+      color-stop(50%, #79797a),
+      color-stop(100%, #bcbcbc)
+    );
+    background: -webkit-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -o-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: -ms-linear-gradient(
+      90deg,
+      #363637 0%,
+      #79797a 50%,
+      #bcbcbc 100%
+    );
+    background: linear-gradient(90deg, #363637 0%, #79797a 50%, #bcbcbc 100%);
+    filter: progid: DXImageTransform.Microsoft.gradient(startColorstr='#363637', endColorstr='#BCBCBC', GradientType=1);
+  }
 }

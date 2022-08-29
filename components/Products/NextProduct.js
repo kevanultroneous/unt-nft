@@ -5,6 +5,7 @@ import { Col, Row } from "react-bootstrap";
 import WaterText from "../Common/WaterText";
 const NextProduct = ({ listofdata = [] }) => {
   const vals = ["MxDex", "MxFi", "MxLaunch"];
+  // "MxFi"
   useEffect(() => {
     Aos.refresh();
     Aos.init();
@@ -43,6 +44,7 @@ const NextProduct = ({ listofdata = [] }) => {
           key={ind}
           xs={12}
           md={4}
+          xl={4}
           className={
             ind === 0
               ? styles.ColZero
