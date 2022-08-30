@@ -35,7 +35,7 @@ export const menus = [
   },
   {
     name: "About us",
-    mainlink: "#",
+    mainlink: "/about-mobifinx",
     menus: [
       {
         name: "Company Overview",
@@ -44,18 +44,18 @@ export const menus = [
           "MobifinX is a global leader in next-generation technology .   ",
       },
       {
-        name: "Careers",
+        name: " Careers",
         link: "/mobifinx-careers",
         paragraph: "Join Us in our expanding journey! ",
       },
       {
         name: "Case Studies",
-        link: "#",
+        link: "/mobifinx-case-study",
         paragraph: " Business success stories & Client case studies.        ",
       },
       {
         name: "Events & webinars",
-        link: "#",
+        link: "/mobifinx-event-and-webinars",
         paragraph:
           "Join us for Insightful Sessions Across the Globe on Transformation.        ",
       },
@@ -75,17 +75,17 @@ export const menus = [
     menus: [
       {
         name: "Blog",
-        link: "#",
+        link: "",
         paragraph: "Discover innovation stories .       ",
       },
       {
         name: "News/Media",
-        link: "#",
+        link: "/mobifinx-news",
         paragraph: " Get the latest update and news about our company. ",
       },
       {
         name: "Press Release",
-        link: "#",
+        link: "/mobifinx-press-release",
         paragraph: " Explore our official statement. ",
       },
     ],
@@ -134,7 +134,7 @@ export const iconsMenu = [
     icon: "/assets/images/Mxfuture-1.jpg",
     color: "#C3B091",
     name: "MxFuture",
-    link: "#",
+    link: "/product/mxfuture",
   },
   {
     icon: "/assets/images/MxDex-1.jpg",
