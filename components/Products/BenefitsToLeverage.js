@@ -5,10 +5,11 @@ import { BenefitsMxFuture } from "utils/MxFuture.data";
 import { useEffect, useState } from "react";
 import AOS from "aos";
 import { IoIosArrowDown, IoIosArrowUp } from "react-icons/io";
+import Aos from "aos";
 const BenefitsToLeverage = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   const [currentIndex, setCurrentIndex] = useState(0);

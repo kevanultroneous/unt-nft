@@ -7,10 +7,11 @@ import ActionButtonV2 from "../Common/ActionButtonV2";
 import AOS from "aos";
 import { useEffect } from "react";
 import Link from "next/link";
+import Aos from "aos";
 const Solution = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <section

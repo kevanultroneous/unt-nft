@@ -3,10 +3,11 @@ import styles from "@/styles/components/Products/WhatyouGet.module.css";
 import { HiOutlineExternalLink } from "react-icons/hi";
 import AOS from "aos";
 import { useEffect } from "react";
+import Aos from "aos";
 const WhatyouGet = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <section

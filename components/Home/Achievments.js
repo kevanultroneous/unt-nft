@@ -1,12 +1,13 @@
 import styles from "@/styles/components/home/Achievements.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Image, Row } from "react-bootstrap";
 import { AchivmentData } from "utils/AchivmentsData";
 const Achievements = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <div className={styles.AchievementsContainer}>

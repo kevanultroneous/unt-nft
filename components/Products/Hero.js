@@ -10,6 +10,7 @@ import Lottie from "react-lottie";
 import animation from "../../utils/New-2-scroll.json";
 import { Parallax } from "react-parallax";
 import $ from "jquery";
+import Aos from "aos";
 
 const Hero = ({ clickHandler }) => {
   const defaultOptions = {
@@ -22,8 +23,8 @@ const Hero = ({ clickHandler }) => {
   };
 
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   // useEffect(() => {

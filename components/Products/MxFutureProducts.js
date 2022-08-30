@@ -6,6 +6,7 @@ import AOS from "aos";
 import { useEffect, useState } from "react";
 import ProductsList from "utils/products.data";
 import ActionButtonV3 from "../Common/ActionButtonV3";
+import Aos from "aos";
 const MxFutureProducts = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
   const [xcord, setXcord] = useState(0);
@@ -14,8 +15,8 @@ const MxFutureProducts = ({ text }) => {
   const [currentItem, setCurrentItem] = useState(0);
 
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   return (
