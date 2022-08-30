@@ -16,6 +16,7 @@ const Achievements = () => {
         className={styles.AchievementBoxContainer}
         data-aos="fade-up"
         data-aos-duration="2000"
+        data-aos-delay="500"
       >
         {AchivmentData.map((v, i) => (
           <Col xl={3} xs={12} key={i} className={styles.AchivementCol}>
