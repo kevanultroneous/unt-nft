@@ -1,4 +1,5 @@
 import styles from "@/styles/components/home/Inspiredby.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import Link from "next/link";
 import { useEffect } from "react";
@@ -73,8 +74,8 @@ const Inspiredby = () => {
     },
   ];
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   return (

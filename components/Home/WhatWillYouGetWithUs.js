@@ -2,6 +2,7 @@ import { Col, Image, Row } from "react-bootstrap";
 import styles from "@/styles/components/home/WhatWillYouGetWithUs.module.css";
 import { useEffect, useState } from "react";
 import AOS from "aos";
+import Aos from "aos";
 function WhatWillYouGetWithUs() {
   const [value, setValue] = useState(0);
   const [visibility, setVisibility] = useState(false);
@@ -21,8 +22,8 @@ function WhatWillYouGetWithUs() {
   ];
 
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <Row

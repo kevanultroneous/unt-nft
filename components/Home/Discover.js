@@ -6,10 +6,11 @@ import { useEffect } from "react";
 import Lottie from "react-lottie";
 import ActionButton from "../Common/ActionButton";
 import animdata from "../../utils/anim.json";
+import Aos from "aos";
 const Discover = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   const arrayBox = [
     {

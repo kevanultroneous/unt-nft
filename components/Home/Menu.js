@@ -4,10 +4,11 @@ import { Image } from "react-bootstrap";
 import AOS from "aos";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Aos from "aos";
 const ParentMenuBar = ({ children, opacity }) => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   const router = useRouter();
   return (

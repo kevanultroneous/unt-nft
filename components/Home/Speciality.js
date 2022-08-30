@@ -1,4 +1,5 @@
 import styles from "@/styles/components/home/Speciality.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
@@ -27,8 +28,8 @@ const Speciality = () => {
     },
   ];
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <Row className={styles.SpecialityContainer}>

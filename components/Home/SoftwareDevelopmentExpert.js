@@ -10,6 +10,7 @@ import ActionButtonV2 from "../Common/ActionButtonV2";
 import Link from "next/link";
 import Lottie from "react-lottie";
 import animation from "../../utils/New-1-scroll.json";
+import Aos from "aos";
 const SDE = ({ handleClick }) => {
   const defaultOptions = {
     loop: true,
@@ -90,8 +91,8 @@ const SDE = ({ handleClick }) => {
     { name: "MxNFT", img: "/assets/images/pro8.svg", link: "/" },
   ];
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   const sliderRef = useRef();
   return (

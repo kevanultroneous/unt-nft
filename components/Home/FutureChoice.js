@@ -5,10 +5,11 @@ import AOS from "aos";
 import { Col, Image, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
 import Link from "next/link";
+import Aos from "aos";
 const FutureChoice = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   const [c1, setC1] = useState(false);
   const [c2, setC2] = useState(false);

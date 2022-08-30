@@ -5,6 +5,7 @@ import AOS from "aos";
 import { iconsMenu, menus } from "utils/menu.data";
 import Link from "next/link";
 import { useRouter } from "next/router";
+import Aos from "aos";
 const MenuBar = ({
   display = "none",
   visibility,
@@ -16,8 +17,8 @@ const MenuBar = ({
   const [currentIcon, setCurrentIcon] = useState(null);
   const [currentMenu, setCurrentMenu] = useState(0);
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   const Heading = ({ name, border, color }) => {
     return (

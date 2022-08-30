@@ -8,13 +8,14 @@ import ActionButtonV3 from "../Common/ActionButtonV3";
 import ProductsList from "utils/products.data";
 import LearnMore from "../Common/LearnMore";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import Aos from "aos";
 
 const Products = ({ text }) => {
   const [opacity, setOpacity] = useState(0);
 
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   const CardForProductSection = ({ ProductsList, index, cardStyle }) => {

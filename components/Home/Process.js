@@ -1,11 +1,12 @@
 import styles from "@/styles/components/home/Process.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 const Process = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
 
   const [value, setValue] = useState(0);

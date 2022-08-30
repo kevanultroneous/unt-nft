@@ -1,12 +1,13 @@
 import styles from "@/styles/components/home/IntroContainer.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect, useState } from "react";
 import { Image } from "react-bootstrap";
 const IntroContainer = ({ handleclick, hidden }) => {
   const [ts1, setTs1] = useState(true);
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
     const t1 = setTimeout(() => {
       setTs1(false);
     }, 4000);

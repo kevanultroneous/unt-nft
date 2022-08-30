@@ -1,12 +1,13 @@
 import styles from "@/styles/components/home/GetInTouch.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Col, Row } from "react-bootstrap";
 import ActionButton from "../Common/ActionButton";
 const GetInTouch = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <div className={styles.GetInTouchContainer}>

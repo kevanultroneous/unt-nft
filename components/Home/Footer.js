@@ -6,10 +6,11 @@ import { HiMail, HiOutlineExternalLink } from "react-icons/hi";
 import { useEffect } from "react";
 import AOS from "aos";
 import Link from "next/link";
+import Aos from "aos";
 const Footer = () => {
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <div className={styles.FooterContainer}>

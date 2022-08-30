@@ -1,4 +1,5 @@
 import styles from "@/styles/components/home/TechnologyStack.module.css";
+import Aos from "aos";
 import AOS from "aos";
 import { useEffect } from "react";
 import { Image } from "react-bootstrap";
@@ -12,8 +13,8 @@ const TechnologyStack = () => {
     "/assets/images/stack6.png",
   ];
   useEffect(() => {
-    AOS.refresh();
-    AOS.init();
+    Aos.refresh();
+    Aos.init();
   }, []);
   return (
     <div className={styles.TechnologyStackContainer}>
