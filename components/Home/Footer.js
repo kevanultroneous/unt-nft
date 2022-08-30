@@ -54,11 +54,6 @@ const Footer = () => {
                     id="EMBED_FORM_EMAIL_LABEL"
                   />
                 </div>
-                {/* <input
-                  type="text"
-                  placeholder="Email"
-                
-                /> */}
               </div>
 
               <div className={styles.MailBtn}>

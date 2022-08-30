@@ -34,9 +34,7 @@ const OurStory = () => {
           <Col xl={2}>
             <p className={styles.Rotatetext}>OUR STORY</p>
           </Col>
-          {/* <Row className={styles.HeadingRow}>
-            <h4>How we came this long...</h4>
-          </Row> */}
+
           <div className={styles.Mobdiv}>
             <Col xl={8} md={12} xs={12} className={styles.HowWeCame}>
               <p>

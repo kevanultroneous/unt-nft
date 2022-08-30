@@ -125,26 +125,6 @@ const Hero = ({ clickHandler }) => {
                               <div className={styles.descPara}>
                                 <p>&quot;{slider.description}&quot;</p>
                               </div>
-                              {/* <div className={styles.sliderButton}> */}
-                              {/* <div className={styles.leftArrow}>
-                                <Image
-                                  src="/assets/images/left-sb.svg"
-                                  alt="Left Arrow"
-                                  onClick={() =>
-                                    careerSlider.current.slickPrev()
-                                  }
-                                />
-                              </div>
-                              <div className={styles.rightArrow}>
-                                <Image
-                                  src="/assets/images/right-sb.svg"
-                                  alt="Right Arrow"
-                                  onClick={() =>
-                                    careerSlider.current.slickNext()
-                                  }
-                                />
-                              </div> */}
-                              {/* </div> */}
                             </div>
                           </div>
                         </div>

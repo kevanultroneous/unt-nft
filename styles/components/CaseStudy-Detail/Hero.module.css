@@ -138,10 +138,12 @@
     width: 100%;
     display: flex;
     justify-content: flex-end;
-    padding-left: 6rem;
     overflow: hidden;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
+    margin: 0;
+    padding: 0;
+    /* padding-left: 6rem; */
   }
 
   .HeroDetailContainer {
@@ -153,9 +155,6 @@
     transition: all 1s ease;
   }
   .ImageanimDiv {
-    overflow: hidden;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    transition: all 1s ease;
+    padding-left: 6rem;
   }
 }

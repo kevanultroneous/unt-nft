@@ -132,7 +132,7 @@ const Hero = ({ clickHandler }) => {
               data-aos-duration="3000"
               // data-aos-delay="500"
               // data-aos-easing="ease"
-              src={"/assets/images/productimage.png"}
+              src={"/assets/images/product-img.jpg"}
               alt="productimg"
               className={styles.productimg}
             />

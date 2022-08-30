@@ -70,6 +70,357 @@ const CaseStudy = () => {
     "MxBlock",
     "MxNFT",
   ];
+  const datatabs = [
+    {
+      title: "All",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS2.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS2.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxTrade",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxFuture",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxDex",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxFi",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxLaunch",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxWallet",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxBlock",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+    {
+      title: "MxNFT",
+      leftdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+      rightdata: [
+        {
+          animtype: "fade-up",
+          srcimg: "/assets/images/CS1.png",
+          title: "EtherGo blockchain-based fundraising platform",
+          paragraph: "In this case, the client wanted a blockchai",
+          distitle: "EtherGo blockchain-based fundraising platform",
+          dish1: "Problem",
+          disp1:
+            "In this case, the client wanted a blockchain-based fundraising platform that allows investors and start-ups to meet and create an ecosystem of transparency with native security tokens for fundraising.",
+          dish2: "Solution",
+          disp2:
+            "We provided a product with an EtherGo Blockchain-based Investor-Relationship dashboard. That has SEC Complaint ERC 700 series Security token also Reg D offering for Accredited investors.",
+        },
+      ],
+    },
+  ];
   const defaultOptions = {
     loop: true,
     autoplay: true,
@@ -120,7 +471,9 @@ const CaseStudy = () => {
                     index === currentTab &&
                     `${styles.CategoriesListSelected} ${styles.BorderSelected}`
                   }`}
-                  onClick={() => setCurrentTab(index)}
+                  onClick={() => {
+                    setCurrentTab(index);
+                  }}
                 >
                   {value}
                 </p>
@@ -128,7 +481,7 @@ const CaseStudy = () => {
             </div>
           </Col>
           <Col xl={5} lg={5} md={5} className={styles.LeftCol}>
-            {carddatas.map((v, i) => (
+            {datatabs[currentTab].leftdata.map((v, i) => (
               <div className={styles.CardWrraper} key={i}>
                 <CardInspired
                   animtype={v.animtype}
@@ -146,7 +499,7 @@ const CaseStudy = () => {
             ))}
           </Col>
           <Col md={5} xl={5} lg={5} className={styles.RightCol}>
-            {carddatas.map((v, i) => (
+            {datatabs[currentTab].rightdata.map((v, i) => (
               <div className={styles.CardWrraper} key={i}>
                 <CardInspired
                   animtype={v.animtype}

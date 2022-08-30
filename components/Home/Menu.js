@@ -59,17 +59,6 @@ const Menu = ({ opacity, handleClick, change, addClass, clicktoCloseMenu }) => {
           <span className={`${styles.line} lineHam`}></span>
           <span className={`${styles.line} lineHam`}></span>
         </div>
-        {/* <Image
-          style={{ cursor: "pointer" }}
-          alt={"menu"}
-          src={
-            change
-              ? "/assets/images/menuopen.svg"
-              : "/assets/images/deskmenu.svg"
-          }
-          fluid
-          onClick={() => handleClick()}
-        /> */}
       </div>
       <div>
         <p className={styles.BlockchainTechnologyText}>BLOCKCHAIN TECHNOLOGY</p>

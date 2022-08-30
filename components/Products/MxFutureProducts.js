@@ -36,7 +36,7 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
-                        src={"/assets/images/Cardsample.svg"}
+                        src={"/assets/images/usecase-1.png"}
                         alt="card-img"
                         className={styles.MainImage}
                       />
@@ -162,7 +162,7 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
-                        src={"/assets/images/Cardsample.svg"}
+                        src={"/assets/images/usecase-2.png"}
                         alt="card-img"
                         className={styles.MainImage}
                       />
@@ -288,7 +288,7 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
-                        src={"/assets/images/Cardsample.svg"}
+                        src={"/assets/images/usecase-3.png"}
                         alt="card-img"
                         className={styles.MainImage}
                       />
@@ -414,7 +414,7 @@ const MxFutureProducts = ({ text }) => {
                     <div className={styles.Colusecase}>
                       <h2 className={styles.Cardtitle}>Title</h2>
                       <Image
-                        src={"/assets/images/Cardsample.svg"}
+                        src={"/assets/images/usecase-4.png"}
                         alt="card-img"
                         className={styles.MainImage}
                       />

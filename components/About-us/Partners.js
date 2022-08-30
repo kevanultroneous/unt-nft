@@ -30,8 +30,6 @@ const Partners = () => {
         settings: {
           slidesToShow: 2,
           slidesToScroll: 1,
-          //   initialSlide: 2,
-          //   autoplay: true,
         },
       },
 
@@ -40,9 +38,6 @@ const Partners = () => {
         settings: {
           slidesToShow: 1,
           slidesToScroll: 1,
-          // initialSlide: 1,
-          // autoplay: true,
-          // autoplaySpeed: 2000,
         },
       },
     ],

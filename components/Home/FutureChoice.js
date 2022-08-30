@@ -17,11 +17,7 @@ const FutureChoice = () => {
     <div className={styles.FutureChoiceContainer}>
       <Row>
         <Col xl={8} md={8}>
-          <div
-            className={`${styles.CardBg} ${c2 ? styles.CardBg2 : null}`}
-            // onMouseLeave={() => setC1(false)}
-            // onMouseOver={() => setC1(true)}
-          >
+          <div className={`${styles.CardBg} ${c2 ? styles.CardBg2 : null}`}>
             <Row>
               <Col xl={12}>
                 <p
@@ -125,15 +121,6 @@ const FutureChoice = () => {
           </div>
         </Col>
       </Row>
-      {/* <Row>
-        <Col xl={12}>
-          <div className={styles.wrap}>
-            <Col xl={12}>
-              <h3 className={styles.gradienttext}>SCALABLE.</h3>
-            </Col>
-          </div>
-        </Col>
-      </Row> */}
     </div>
   );
 };

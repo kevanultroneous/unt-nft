@@ -12,13 +12,6 @@ const Layout = ({
   ogurl,
   keywords,
 }) => {
-  // <meta name=""/>
-  // <meta property="og:title" content="" />
-  // <meta property="og:description" content="" />
-  // <meta name="twitter:description" content="" />
-  // <meta name="twitter:title" content="" />
-  // <meta property="og:url" content="" />
-
   return (
     <div>
       <Head>

@@ -60,9 +60,7 @@ const Products = ({ text }) => {
                 <p className={styles.Description}>
                   {ProductsList[index].detail}
                 </p>
-                {/* <p style={{ color: ProductsList[0].color }}>
-                        {ProductsList[0].highlight}
-                      </p> */}
+
                 <p className={styles.question}>
                   {ProductsList[index].question}
                   <ul className={styles.List}>
@@ -85,7 +83,6 @@ const Products = ({ text }) => {
                   t1={<MdOutlineKeyboardArrowRight />}
                   t2={<MdOutlineKeyboardArrowRight />}
                 />
-                {/* <p className={styles.tags}>{ProductsList[0].tags}</p> */}
               </div>
             </Col>
           </Row>

@@ -140,17 +140,10 @@ const SDE = ({ handleClick }) => {
           onClick={() => handleClick()}
         >
           <div className={styles.Scrolldowncontainer}>
-            {/* <Image
-              alt="downimg"
-              src="/assets/images/scrollarrow.svg"
-              className={styles.ImageDown}
-            />
-            <p className={styles.ScrolldownText}>Scroll Down</p> */}
             <div className={styles.whiteMouse}>
               <Lottie options={defaultOptions} height={100} width={50} />
             </div>
           </div>
-          {/* https://assets3.lottiefiles.com/packages/lf20_JMhjmh.json */}
         </Col>
         <Col xl={8}>
           <Row>
@@ -188,14 +181,11 @@ const SDE = ({ handleClick }) => {
             <Slider {...settings} arrows={false} ref={sliderRef}>
               {sliderList.map((v, i) => (
                 <Link href={v.link} key={i}>
-                  {/* <div className={styles.SliderCard} key={i}> */}
                   <Image
                     alt="sliderimg"
                     src={v.img}
                     className={styles.SliderImg}
                   />
-                  {/* <p>{v.name}</p> */}
-                  {/* </div> */}
                 </Link>
               ))}
             </Slider>

@@ -34,23 +34,6 @@ const PressImageCard = ({
         <p className={styles.PressImageCardParagraph}>{PressDate}</p>
         <p className={styles.PressImageCardTitle}>{BigPressTitle}</p>
       </div>
-      {/* <div className={styles.PressCardOverlay}>
-        <div className={styles.PressCardOverlayText}>
-          <p
-            className={styles.PressImageCardTitle}
-            style={{ paddingBottom: "1rem" }}
-          >
-            {disTitle}
-          </p>
-          <p className={styles.PressDishead1}>{dish1}</p>
-          <div className={styles.PressInspire}></div>
-          <p className={styles.PressImageCardParagraph}>{disp1}</p>
-          <p className={styles.PressDishead1}>{dish2}</p>
-          <div className={styles.PressInspire}></div>
-
-          <p className={styles.PressImageCardParagraph}>{disp2}</p>
-        </div>
-      </div> */}
     </div>
   );
 };

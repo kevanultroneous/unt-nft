@@ -10,20 +10,8 @@ const Achievements = () => {
   }, []);
   return (
     <div className={styles.AchievementsContainer}>
-      <p
-        className={styles.AchievementsHead}
-        // data-aos={"zoom-in"}
-        // data-aos-duration="3000"
-      >
-        ALLIANCES & PARTNERSHIP
-      </p>
-      <h4
-        className={styles.AchievementsTitle}
-        // data-aos={"zoom-in"}
-        // data-aos-duration="3000"
-      >
-        We are proud to Work with
-      </h4>
+      <p className={styles.AchievementsHead}>ALLIANCES & PARTNERSHIP</p>
+      <h4 className={styles.AchievementsTitle}>We are proud to Work with</h4>
       <Row
         className={styles.AchievementBoxContainer}
         data-aos="fade-up"
@@ -31,11 +19,7 @@ const Achievements = () => {
       >
         {AchivmentData.map((v, i) => (
           <Col xl={3} xs={12} key={i} className={styles.AchivementCol}>
-            <div
-              className={styles.AchievementBox}
-              // data-aos={"zoom-in"}
-              // data-aos-duration="3000"
-            >
+            <div className={styles.AchievementBox}>
               <Image
                 alt={v.image}
                 src={v.image}

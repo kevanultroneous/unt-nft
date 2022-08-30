@@ -20,11 +20,6 @@ export default function DetailSection() {
       let tab3Rect = tab3.getBoundingClientRect();
       let tab4 = document.getElementById("result");
       let tab4Rect = tab4.getBoundingClientRect();
-      // do uncomment for testing
-      // console.log("1 : " + tab1Rect.y)
-      // console.log("2 : " + tab2Rect.y)
-      // console.log("3 : " + tab3Rect.y)
-      // console.log("4 : " + tab4Rect.y)
 
       /*
         why choose -302.32  

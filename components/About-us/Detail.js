@@ -59,17 +59,6 @@ const Detail = () => {
           />
         </Col>
       </Row>
-      {/* <Row>
-        <Col xl={12}>
-          <div className={styles.Aboutcandle}>
-            <Image
-              alt="about-candle"
-              src={"/assets/images/About-candle.svg"}
-              className={styles.Aboutcandleimg}
-            />
-          </div>
-        </Col>
-      </Row> */}
     </div>
   );
 };

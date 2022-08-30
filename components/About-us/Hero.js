@@ -73,12 +73,6 @@ const Hero = ({ clickHandler }) => {
               <div>
                 <Lottie options={defaultOptions} height={100} width={50} />
               </div>
-              {/* <Image
-                alt="downimg"
-                src="/assets/images/arrows.svg"
-                className={styles.ImageDown}
-              />
-              <p className={styles.ScrolldownText}>Scroll Down</p> */}
             </div>
           </Col>
           {/* Col for Big Image */}
