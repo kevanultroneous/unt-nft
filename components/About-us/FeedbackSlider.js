@@ -3,7 +3,8 @@ import { Col, Image, Row } from "react-bootstrap";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
+import Aos from "aos";
 const FeedbackSlider = () => {
   var settings = {
     dots: false,
@@ -13,6 +14,10 @@ const FeedbackSlider = () => {
     slidesToScroll: 1,
   };
   const sliderRef = useRef();
+  useEffect(() => {
+    Aos.refresh();
+    Aos.init();
+  }, []);
   return (
     <section
       className={styles.Feedback}
