@@ -17,13 +17,15 @@ export default function Hero() {
             Platform
           </h4>
           <div className={styles.ImageWrraper}>
-            <Image
-              src="/assets/images/etherium.png"
-              alt="etherium"
-              className={styles.HeroImage}
-              data-aos="fade-left"
-              data-aos-duration="2000"
-            />
+            <div className={styles.ImageanimDiv}>
+              <Image
+                src="/assets/images/etherium.png"
+                alt="etherium"
+                className={styles.HeroImage}
+                data-aos="fade-left"
+                data-aos-duration="2000"
+              />
+            </div>
           </div>
         </div>
       </Col>
