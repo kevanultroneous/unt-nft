@@ -112,13 +112,13 @@ export const menus = [
         name: "Introduction",
         link: "/a",
         description:
-          " From startups to enterprise solutions that are more open, efficient, and secure.          ",
+          " From startups to enterprise solutions that are more open, efficient, and secure. ",
       },
       {
         name: "Our Product",
         link: "/a",
         description:
-          " Eighth products. One mission. To empower startups to enterprises worldwide.          ",
+          " Eighth products. One mission. To empower startups to enterprises worldwide. ",
       },
     ],
   },
