@@ -10,6 +10,7 @@
 @media screen and (max-width: 600px) {
   .EventsHeroContainer {
     padding: 5.8rem 1rem 1rem;
+    overflow: hidden;
   }
 
   .EventHeroCard {
@@ -42,5 +43,6 @@
 @media only screen and (min-width: 1200px) {
   .EventsHeroContainer {
     padding: 2rem 2.5rem 2rem 8.5rem;
+    overflow: hidden;
   }
 }

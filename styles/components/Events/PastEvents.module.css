@@ -21,6 +21,7 @@
 @media screen and (max-width: 600px) {
   .PastEventContainer {
     padding: 1rem;
+    overflow: hidden;
   }
   .PastEventHeading h3 {
     font-size: 35px;
@@ -50,5 +51,6 @@
 @media only screen and (min-width: 1200px) {
   .PastEventContainer {
     padding: 2.5rem 2.5rem 2rem 8.5rem;
+    overflow: hidden;
   }
 }
