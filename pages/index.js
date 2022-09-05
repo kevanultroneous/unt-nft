@@ -72,7 +72,7 @@ export default function Home() {
           content="https://mobifinx.com/assets/images/OG-Homepage.jpg"
         />
       </Head>
-      {cursor ? (
+      {/* {cursor ? (
         <AnimatedCursor
           innerSize={10}
           outerSize={50}
@@ -81,7 +81,7 @@ export default function Home() {
           innerScale={0.1}
           outerScale={2}
         />
-      ) : null}
+      ) : null} */}
       {/* Intro container */}
       {pos1 ? <MenuPackage /> : null}
       {/* <SmoothScroll> */}
